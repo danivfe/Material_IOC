@@ -1,0 +1,1524 @@
+<!doctype html>
+
+<!--[if lt IE 7 ]> <html class="ie ie6 no-js" lang="ca"> <![endif]-->
+<!--[if IE 7 ]>    <html class="ie ie7 no-js" lang="ca"> <![endif]-->
+<!--[if IE 8 ]>    <html class="ie ie8 no-js" lang="ca"> <![endif]-->
+<!--[if IE 9 ]>    <html class="ie ie9 no-js" lang="ca"> <![endif]-->
+<!--[if gt IE 9]><!--><html class="no-js" lang="ca"><!--<![endif]-->
+<!-- the "no-js" class is for Modernizr. -->
+
+<head id="www-sitename-com" data-template-set="html5-reset">
+
+	<meta charset="utf-8">
+	
+	<!-- Always force latest IE rendering engine (even in intranet) & Chrome Frame -->
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	
+	<title>Llenguatges de marques i sistemes de gestió d'informació</title>
+	
+<!-- <meta name="title" content=""> --> 
+	<meta name="description" content="">
+	<!-- Google will often use this as its description of your page/site. Make it good. -->
+	
+	<meta name="google-site-verification" content="">
+	<!-- Speaking of Google, don't forget to set your site up: http://google.com/webmasters -->
+	
+	<meta name="author" content="Institut Obert de Catalunya">
+	<meta name="Copyright" content="Copyright Institut Obert de Catalunya 2011. All Rights Reserved.">
+
+	<!-- Dublin Core Metadata : http://dublincore.org/ -->
+	<meta name="DC.title" content="Llenguatges de marques i sistemes de gestió d'informació">
+	<meta name="DC.subject" content="Informàtica i comunicacions">
+	<meta name="DC.creator" content="Institut Obert de Catalunya">
+	
+	<!--  Mobile Viewport Fix
+	j.mp/mobileviewport & davidbcalhoun.com/2010/viewport-metatag 
+	device-width : Occupy full width of the screen in its current orientation
+	initial-scale = 1.0 retains dimensions instead of zooming out if page height > device height
+	maximum-scale = 1.0 retains dimensions instead of zooming in if page width < device width
+	-->
+	<!-- Uncomment to use � use thoughtfully!
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+	-->
+
+	<link rel="shortcut icon" href="../../../img/favicon.ico">
+	<!-- This is the traditional favicon.
+		 - size: 16x16 or 32x32
+		 - transparency is OK
+		 - see wikipedia for info on browser support: http://mky.be/favicon/ -->
+		 
+	<link rel="apple-touch-icon" href="../../../img/apple-touch-icon.png">
+	<!-- The is the icon for iOS's Web Clip.
+		 - size: 57x57 for older iPhones, 72x72 for iPads, 114x114 for iPhone4's retina display (IMHO, just go ahead and use the biggest one)
+		 - To prevent iOS from applying its styles to the icon name it thusly: apple-touch-icon-precomposed.png
+		 - Transparency is not recommended (iOS will put a black BG behind the icon) -->
+	
+	<!-- CSS: screen, mobile & print are all in the same file -->
+	<link rel="stylesheet" href="../../../_/css/style.css">
+
+	<!-- CSS: jQuery UI -->
+	<link rel="stylesheet" href="../../../_/css/jquery-ui.css">
+	
+	<!-- all our JS is at the bottom of the page, except for Modernizr. -->
+	<script src="../../../_/js/modernizr-1.7.min.js"></script>
+	<script src="../../../_/js/Hyphenator.js" type="text/javascript"></script>
+	<script type="text/javascript">
+	   Hyphenator.config({
+		minwordlength : 4
+	   });
+	   Hyphenator.run();
+	</script>
+    <script src="../../../_/js/build.js" type="text/javascript"></script>
+</head>
+
+<body class="style-newspaper">
+
+<div class="wrapper"><!-- not needed? up to you: http://camendesign.com/code/developpeurs_sans_frontieres -->
+
+	<header id="header">
+		<div class="head"><a href="http://ioc.gencat.cat"><img src="../../../img/logo.png" alt="Institut Obert de Catalunya"/></a><a href="http://creativecommons.org/licenses/by-nc-sa/3.0/es/deed.ca"><img src="../../../img/license.png" alt="Llic&egrave;ncia" class="license"/></a></div>
+		<div class="headdocument"><a href="../../../index.html">Llenguatges de marques i sistemes de gestió d'informació</a></div>
+        <div id="search" class="search" name="search">
+         <form id="frmsearch" action="../../../search.html" method="get">
+          <input type="text" name="q"/>
+        </form>
+        </div>
+	</header>
+   <div id="upbutton" class="upbutton" style="display:none;"><img src="../../../img/uparrow.png" alt="Pujar a l'inici de p&agrave;gina"/></div>
+   <aside id="aside">
+    <div id="menu">
+      <ul>
+       <li name="toc"><div><img src="../../../img/toc.png" alt="&Iacute;ndex"/></div></li>
+       <li name="settings"><div><img src="../../../img/settings.png" alt="Configuraci&oacute;"/></div></li>
+       <li name="printer"><div><img src="../../../img/printer.png" alt="Imprimir"/></div></li>
+       <li name="favorites"><div><img src="../../../img/favorites.png" alt="Favorits"/></div></li>
+       <li name="help_icon" class="help_icon"><div><img src="../../../img/help_icon.png" alt="Ajuda"/></div></li>
+      </ul>
+     </div>
+   </aside>
+   <div id="sidebar-hide" name="sidebar-hide"><img src="../../../img/arrows.png"/></div>
+   <section>
+     <div id="toc" class="hidden">
+      <div class="menucontent">
+        <ul>
+        <li id="u4" class="parentnode"><p><a class="unit" href="../../../WebContent/u4/introduccio.html">4. Sistemes de gestió empresarial</a></p><ul class="expander"><li id="u4introduccio"><a href="../../../WebContent/u4/introduccio.html">Introducció</a></li><li id="u4resum"><a href="../../../WebContent/u4/resum.html">Resum</a></li><li id="u4objectius"><a href="../../../WebContent/u4/objectius.html">Resultats d'aprenentatge</a></li><li id="u4referencies"><a href="../../../WebContent/u4/referencies.html">Referències</a></li><li id="u4a1" class="tocsection"><p id='u4a1continguts'><a class="section" href="../../../WebContent/u4/a1/continguts.html">Sistemes empresarials de gestió d'informació</a><span class="buttonexp"></span></p><ul><li id="u4a1activitats"><a href="../../../WebContent/u4/a1/activitats.html">Activitats</a></li><li id="u4a1exercicis"><a href="../../../WebContent/u4/a1/exercicis.html">Exercicis d'autoavaluació</a></li></ul></li><li id="u4a2" class="tocsection"><p id='u4a2continguts'><a class="section" href="../../../WebContent/u4/a2/continguts.html">Serveis web</a><span class="buttonexp"></span></p><ul><li id="u4a2activitats"><a href="../../../WebContent/u4/a2/activitats.html">Activitats</a></li><li id="u4a2exercicis"><a href="../../../WebContent/u4/a2/exercicis.html">Exercicis d'autoavaluació</a></li></ul></li><li id="u4a3" class="tocsection"><p id='u4a3continguts'><a class="section" href="../../../WebContent/u4/a3/continguts.html">Informàtica en núvol</a><span class="buttonexp"></span></p><ul><li id="u4a3activitats"><a href="../../../WebContent/u4/a3/activitats.html">Activitats</a></li><li id="u4a3exercicis"><a href="../../../WebContent/u4/a3/exercicis.html">Exercicis d'autoavaluació</a></li></ul></li></ul></li><li id="" class="indexnode"><p><a href="../../../index.html">Anar a l&#39;&iacute;ndex general</a></p></li>
+        </ul>
+      </div>
+    </div>
+   </section>
+   <section>
+   <div id="settings" class="hidden">
+    <div class="menucontent">
+     <div class="allsettings">
+     <div class="settings">
+      <label>Font i Color</label>
+		<div class="setting-option">
+	        <ul class="fontBackground">
+				<li id="style-newspaper" title="Newspaper" class="appearance-style-newspaper"><span>Newspaper</span></li>
+                <li id="style-novel" title="Novel" class="appearance-style-novel"><span>Novel</span></li>
+                <li id="style-ebook" title="eBook" class="appearance-style-ebook"><span>eBook</span></li>
+				<li id="style-inverse" title="Inverse" class="appearance-style-inverse active"><span>Inverse</span></li>
+				<li id="style-athelas" title="Athelas" class="appearance-style-athelas"><span>Athelas</span></li>
+			</ul>
+		</div>
+     </div>
+	<div class="settings">
+      <label>Amplada</label>
+		<div class="setting-option">
+	        <div id="slider-width"></div>
+		</div>
+     </div>
+     <div class="settings">
+      <label>Mida de la font</label>
+		<div class="setting-option">
+	        <div id="slider-font"></div>
+		</div>
+     </div>
+     <div class="settings">
+      <label>Mida de la font</label>
+	  <div class="setting-option">
+       <form action="" class="sett-options">
+		<ul>
+		    <li><input type="checkbox" id="secondary-content" /><label for="secondary-content">Mostra recursos complementaris</label></li>
+		    <li><input type="checkbox" id="main-images" /><label for="main-images">Mostra imatges</label></li>
+		    <li><input type="checkbox" id="text-alignment" /><label for="text-alignment">Text justificat</label></li>
+			<li><input type="checkbox" id="text-hyphen" /><label for="text-hyphen">Partici&oacute; sil·l&agrave;bica</label></li>
+		</ul>
+       </form>
+	  </div>
+     </div>
+     </div>
+    </div>
+   </div>
+   </section>
+ <section>
+ <div id="favorites" class="hidden"></div>
+ </section>   
+ <div id="bridge" class="hidden"></div>
+ <div id="help" class="hidden">
+  <div class="helptitle">Dreceres del teclat<hr></div>
+  <div class="helpsection"><span>General</span>
+   <ul>
+    <li><span class="shortcut">g</span>: Anar al men&uacute; de navegaci&oacute;</li>
+    <li><span class="shortcut">o</span>: Anar a opcions</li>
+    <li><span class="shortcut">s</span>: Guardar la p&agrave;gina actual a favorits</li>
+    <li><span class="shortcut">p</span>: Imprimir la p&agrave;gina actual</li>
+    <li><span class="shortcut">?</span>: Mostrar/Ocultar l&#39;ajuda</li>
+   </ul>
+  </div>
+  <div class="helpsection"><span>Navegaci&oacute;</span>
+   <ul>
+    <li><span class="shortcut">i</span>: Anar a l&#39;&iacute;ndex general</li>
+    <li><span class="shortcut">t</span>: Anar a l&#39;inici de p&agrave;gina</li>
+    <li><span class="shortcut">b</span>: Anar al final de p&agrave;gina</li>
+    <li><span class="shortcut">j</span>: Anar cap endavant dintre la p&agrave;gina</li>
+    <li><span class="shortcut">k</span>: Anar cap enrere dintre la p&agrave;gina</li>
+    <li><span class="shortcut">h</span>: Anar a la p&agrave;gina anterior:</li>
+    <li><span class="shortcut">l</span>: Anar a la p&agrave;gina seg&uuml;ent:</li>
+   </ul>
+   </div>
+ </div>
+ <div id="favcounter" name="favcounter" class="hidden"><span></span></div>
+ <div id="navmenu" class="navmenu"><ul class="webnav"><li><a href="../../../index.html" title="Anar a l&#39;&iacute;ndex general">Inici</a></li><li><a href="../introduccio.html">Sistemes de gestió empresarial</a></li><li>Serveis web</li></ul></div>
+	<div id="content" lang="ca" class="hyphenate text">
+     <article lang="ca" class="sheet">
+        <h1><a id="serveis_web"> Serveis web </a></h1>
+    	
+<p>
+Si Internet ha tingut l’èxit que ha tingut ha estat gràcies a la creació de la World Wide Web. Però quan es va crear la web durant els anys vuitanta, la idea de manera com havien de ser les pàgines era molt diferent de l’actual. En el moment en què es van crear aquestes pàgines, estaven pensades només per mostrar informació estàtica. Per aquest motiu es va implementar <strong>un sistema senzill basat en dos protocols simples: HTTP i <acronym title="HyperText Markup Language">HTML</acronym></strong>.
+</p>
+
+<p>
+El llenguatge de marques <acronym title="HyperText Markup Language">HTML</acronym> és l’encarregat d’especificar de quina manera s’han de representar les pàgines.
+</p>
+
+<p>
+HTTP és un protocol simple basat en ordres simples (<code>GET</code>, <code>POST</code>, <code>PUT</code>, <code>HEAD</code>, <code>DELETE</code>) que permeten recuperar un recurs mitjançant una simple petició. El protocol pot ser tan simple perquè el resultat és representat en local pel navegador. Un client des d’un navegador demana un arxiu i el servidor simplement l’envia (<span class="figref"><a href="#fig188"><span>figura</span></a></span>).
+</p>
+<div class="iocfigure"><a name="fig188"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+ Esquema de funcionament de la web
+
+</figcaption><img src="../media/asxm04u4_09.png" alt="" /></figure>
+</div>
+<p>
+Un aspecte clau d’aquestes pàgines és que un cop representada la pàgina és l’usuari el que se l’ha de mirar i interpretar el contingut.
+</p>
+
+<p>
+L’èxit d’Internet va començar a fer que la gent cada vegada demanés més de les pàgines web, que van començar a permetre la interacció amb els usuaris mitjançant el que s’anomenen <strong>pàgines web dinàmiques</strong>. La idea és que, en comptes de limitar-se a enviar un fitxer des del servidor web, es generi la pàgina segons la informació enviada per l’usuari.
+</p>
+
+<p>
+
+</p>
+
+<p>
+Com que la tasca es fa en el servidor això no afecta gens cap dels protocols bàsics. El fet que la pàgina es generi per encàrrec no canvia gens el fet que en realitat es continuï enviant amb el protocol HTTP un arxiu <acronym title="HyperText Markup Language">HTML</acronym> (<span class="figref"><a href="#fig189"><span>figura</span></a></span>).
+</p>
+<div class="iocfigure"><a name="fig189"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+ Web amb pàgines dinàmiques
+
+</figcaption><img src="../media/asxm04u4_10.png" alt="" /></figure>
+</div>
+<p>
+Si ens ho mirem bé veurem que en realitat el que estan fent les pàgines web dinàmiques és <strong>oferir un servei</strong>. Es pot entrar en un cercador qualsevol o en una botiga d’Internet i escriure-hi una paraula i això generarà una llista de resultats. El web fa el servei de cercar i presentar els resultats i evita que sigui l’usuari qui ho hagi de fer.
+</p>
+
+<p>
+Així, doncs, el web és un lloc ple de <strong>dades</strong> (com preus, articles, horaris de trens o imatges)  i de <strong>serveis</strong> (com cercadors, jocs o botigues) que han estat causa de l’èxit d’Internet.
+</p>
+<div class="iocimportant"><div class="ioccontent">
+<p>
+El problema del web actual està en el fet que la majoria de les pàgines que conté comparteixen una idea comuna:  <strong>estan pensades perquè sigui una persona la que s’encarregui d’interpretar-ne el contingut</strong>.
+</p>
+</div></div>
+<p>
+Per a un programa la informació de les webs és realment complicada d’interpretar ja que els que han creat les pàgines les han creades pensant de quina manera es poden representar les dades, i no que aquestes dades s’hagin de processar.
+</p>
+
+<h2><a id="la_web_programable" >La web programable</a></h2>
+<div class="level2">
+<div class="iocimportant"><div class="ioccontent">
+<p>
+El que es coneix com la web programable és el mateix que la web normal però pensada per ser interpretada per programes. 
+</p>
+</div></div>
+<p>
+En comptes d’estar basada en <acronym title="HyperText Markup Language">HTML</acronym> està basada en documents de marques que puguin ser processats fàcilment per determinats programes (XML, JSON…) i, per tant, que serveixin perquè els programes puguin fer tasques automatitzades a partir de la informació que han recollit.
+</p>
+
+<p>
+La idea és aconseguir que un programa d’ordinador, a partir d’una informació inicial -per exemple que es vol anar a “la platja a Roses”-, s’encarregui automàticament de comprovar quin dia farà, de contractar el bitllet d’autobús i reservar una taula per dinar en un restaurant. I tot sense que calgui intervenció de l’usuari (<span class="figref"><a href="#fig190"><span>figura</span></a></span>).
+</p>
+<div class="iocfigure"><a name="fig190"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+ Contractar un viatge a Roses amb servei web
+
+</figcaption><img src="../media/asxm04u4_11.png" alt="" /></figure>
+</div>
+<p>
+La idea és crear una web diferent de l’actual, que algú ha anomenat <strong>la web semàntica</strong>, que sigui comprensible per a les màquines i per als humans de manera que els programes hi pugin fer tasques automatitzades amb el mínim d’intervenció humana.
+</p>
+
+<p>
+Els <strong>serveis web</strong> ens permeten crear programes amb components distribuïts que no tinguin cap problema per ser executats en qualsevol tipus de plataformes o de  sistemes operatius. Això ho aconsegueixen basant-se fonamentalment en protocols estàndard i oberts.
+</p>
+
+</div>
+
+<h2><a id="els_serveis_web" >Els serveis web</a></h2>
+<div class="level2">
+
+<p>
+Microsoft va definir el terme <em>servei web</em> (<em>Web services</em>) l’any 2000 per descriure un conjunt d’estàndards que permetien als ordinadors comunicar-se per una xarxa. El nom prové d’aquí:
+</p>
+<ul>
+<li class="level1"><div class="li"> <em>Web</em> va sorgir perquè, tot i que tal com estan especificats aquests serveis no tenen cap problema per funcionar amb altres protocols, la comunicació es fa sobretot mitjançant el protocol HTTP. </div>
+</li>
+<li class="level1"><div class="li"> La idea que hi ha al darrere de <em>servei</em> és que es pugui aconseguir que el sistema remot faci una tasca de manera que no calgui que aquesta tasca es faci en el sistema local.</div>
+</li>
+</ul>
+<div class="iocimportant"><div class="ioccontent">
+<p>
+Un servei web és un programari que ofereix una interfície per fer una tasca, que pot ser usat per altres sistemes independentment de quina plataforma i llenguatge faci servir. 
+</p>
+</div></div>
+<p>
+Fent servir un llenguatge més proper als programadors també es podria definir un servei web com <strong>un mètode disponible remotament mitjançant una xarxa</strong>, mitjançant un protocol particular que normalment és l’HTTP.
+</p>
+
+<p>
+Com que es vol que el sistema sigui multiplataforma cal que tots els sistemes entenguin i puguin interpretar correctament les dades que s’hi transmeten. Per aquest motiu el més corrent és que es faci servir un llenguatge de marques (XML, JSON…) per passar les dades d’un extrem a l’altre de la comunicació. 
+</p>
+
+</div>
+
+<h3><a id="caracteristiques_dels_serveis_web" >Característiques dels serveis web</a></h3>
+<div class="level3">
+
+<p>
+Hi ha unes característiques que distingeixen els serveis web dels altres sistemes distribuïts:
+</p>
+<ul>
+<li class="level1"><div class="li"> Fan servir una infraestructura oberta.</div>
+</li>
+<li class="level1"><div class="li"> Són interoperables. </div>
+</li>
+<li class="level1"><div class="li"> Fan servir un disseny modular.</div>
+</li>
+</ul>
+
+<p>
+O sigui que <strong>es desenvolupen fent servir estàndards públics que siguin independents del fabricant</strong> (com per exemple amb els protocols HTTP o XML) de manera que s’afavoreix que s’hi pugui accedir des de pràcticament tots els sistemes i plataformes.
+</p>
+
+<p>
+La interoperativitat garanteix que <strong>no importi en quin llenguatge de programació estiguin desenvolupats</strong> (C, C#, Java, Python, Perl…) ni tampoc des de <strong> quina plataforma es treballi</strong> (Windows, Linux…) ja que si poden interpretar les dades (i com que estan en un estàndard públic ho faran) poden operar entre si sense problemes. 
+</p>
+
+<p>
+El disseny modular és un altre aspecte clau, ja que permet que <strong>els serveis web es pugin integrar amb altres serveis per formar-ne de més grans i complexos</strong>, de manera que permet crear serveis complexos a partir de components més senzills i a més sense que sigui important en quines plataformes s’estiguin executant cadascun dels components.
+</p>
+
+<p>
+Un programa pot ser descomposat en tasques més senzilles, algunes de les quals també les fan altres programes. Si es parteix d’un disseny modular es pot aprofitar el codi que executen aquests serveis per no haver de reprogramar-los una vegada i una altra.  
+</p>
+<div class="iocnote"><div class="ioccontent">
+<p>
+La <strong>modularitat</strong> dels serveis web és un dels factors bàsics a l’hora de definir el que s’ha anomenat <strong>arquitectura basada en serveis (SOA)</strong>.
+</p>
+</div></div>
+<p>
+Els serveis que s’ofereixen en els serveis web són diferents dels tradicionals a Internet, que principalment es basaven en el contingut, ja que en aquests serveis <strong>el que es genera són <em>dades</em></strong> que poden ser usades per uns determinats programes per dur a terme tasques.
+</p>
+
+</div>
+
+<h3><a id="tipus_de_serveis_web" >Tipus de serveis web</a></h3>
+<div class="level3">
+
+<p>
+Segons el <acronym title="World Wide Web Consortium">W3C</acronym> hi ha dos grans tipus de serveis web: “[E]ls que són <strong>compatibles amb REST</strong>, que tenen com a objectiu principal manipular representacions XML de recursos fent servir un conjunt uniforme d’operacions sense estat; i els <strong>arbitraris</strong>, en què el servei exposa un conjunt arbitrari d’operacions.” De manera que tenim dos grans grups de serveis web:
+</p>
+<ul>
+<li class="level1"><div class="li"> <strong>Big Web services</strong>: serveis que exposen operacions perquè les facin servir els servidors. Estan basats en el protocol SOAP.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Web <acronym title="Application Programming Interface">API</acronym></strong>: serveis basats en l’arquitectura REST -que basa el seu funcionament en els recursos-.</div>
+</li>
+</ul>
+
+</div>
+
+<h2><a id="big_web_services" >Big Web services</a></h2>
+<div class="level2">
+
+<p>
+Els coneguts com a <em>big Web services</em> són serveis web que envien i reben la informació empaquetada en un format XML anomenat SOAP. Es poden definir a partir de tres funcions, tot i que no totes són estrictament necessàries per treballar:
+</p>
+<ul>
+<li class="level1"><div class="li"> Una manera de definir i transmetre els missatges.</div>
+</li>
+<li class="level1"><div class="li"> Un llenguatge de definició de la manera com es poden fer servir els serveis.</div>
+</li>
+<li class="level1"><div class="li"> Un sistema de descobriment de serveis.</div>
+</li>
+</ul>
+
+</div>
+
+<h3><a id="funcionament" >Funcionament</a></h3>
+<div class="level3">
+
+<p>
+Els <em>big Web services</em> es basen molt en XML, ja que fer servir aquest llenguatge en sistemes distribuïts aporta alguns avantatges amb els quals no es comptava anteriorment:
+</p>
+<ul>
+<li class="level1"><div class="li"> Es poden comunicar dos sistemes totalment diferents ja que XML garanteix la portabilitat. Com que les dades que s’envien són XML cap sistema no té problemes per entendre’n la informació.</div>
+</li>
+<li class="level1"><div class="li"> En definir el que es vol fer i les respostes en SOAP no importa quin és el protocol de transport que es faci servir sinó la informació continguda en les dades XML.</div>
+</li>
+<li class="level1"><div class="li"> Es poden definir els tipus de dades fent servir XSD (XML Schemas Definition) per definir les dades que s’han de passar entre sistemes. Això permet que es puguin fer comprovacions de tipus, que els programes sàpiguen quins tipus de dades han d’enviar o han de rebre…</div>
+</li>
+<li class="level1"><div class="li"> Es poden expandir les possibilitats del protocol fent servir els espais de noms. Com qualsevol altre document XML es poden expandir les capacitats d’aquests protocols per afegir-hi funcionalitats mitjançant els espais de noms.</div>
+</li>
+</ul>
+
+</div>
+
+<h4><a id="format_dels_missatges" >Format dels missatges</a></h4>
+<div class="level4">
+
+<p>
+Per <strong>definir el format dels missatges</strong> que es transmeten es fa servir el protocol <strong>SOAP</strong>, que està basat en XML.
+</p>
+
+<p>
+Per <strong>transportar aquests missatges</strong> se sol fer servir <strong>HTTP</strong> (protocol de transferència d’hipertext o <em>hypertext transfer protocol</em>) tot i que es poden fer servir altres protocols de transport com els de correu electrònic, <acronym title="File Transfer Protocol">FTP</acronym> (protocol de transferència de fitxers o <em>file transfer protocol</em>) o BEEP (<em>blocks extensible exchange protocol</em>).  
+</p>
+
+</div>
+
+<h4><a id="definicio_del_servei" >Definició del servei</a></h4>
+<div class="level4">
+
+<p>
+Per poder fer servir un servei web que no s’ha fet servir mai i que fins i tot pot haver estat descobert automàticament és molt important disposar d’una manera de conèixer quins serveis ofereix i com s’ha de fer per usar-los. 
+</p>
+
+<p>
+La manera que tenen aquests serveis web de definir com s’ha de fer per poder usar el servei i quin serveis s’ofereixen és mitjançant un altre protocol anomenat <strong>WSDL</strong> (<em>Web services description language</em>), que també està basat en XML.
+</p>
+
+</div>
+
+<h4><a id="descobriment_de_serveis" >Descobriment de serveis</a></h4>
+<div class="level4">
+
+<p>
+Si es pretén que els programes funcionin sols cal que tinguin alguna manera de poder descobrir serveis que no coneixien anteriorment de manera automàtica.
+</p>
+
+<p>
+Es va definir <strong>UDDI</strong> (descripció, descoberta i integració universals o <em>universal description, discovery and integration</em>) per  <strong>proporcionar la capacitat de permetre als programes descobrir serveis web</strong>  que s’adeqüin a les necessitats que tinguin.
+</p>
+
+</div>
+
+<h4><a id="altres_protocols" >Altres protocols</a></h4>
+<div class="level4">
+
+<p>
+A part dels que s’anomenen <em>protocols bàsics</em>, els <em>big Web services</em> disposen d’un grup més important de protocols per afegir noves funcions a SOAP.
+</p>
+
+<p>
+Aquests protocols, el nom dels quals normalment comença per les lletres <strong>WS-</strong>, solen ser definits per tres organitzacions d’estàndard:
+</p>
+<ul>
+<li class="level1"><div class="li"> El World Wide Web Consortium (<acronym title="World Wide Web Consortium">W3C</acronym>).</div>
+</li>
+<li class="level1"><div class="li"> L’Organization for the Advancement of Structured Information Standards (OASIS).</div>
+</li>
+<li class="level1"><div class="li"> La Web Services Interoperatibility Organization (WS-I).</div>
+</li>
+</ul>
+
+<p>
+Aquestes organitzacions han definit més de cinquanta estàndards diferents per permetre definir qualsevol aspecte que afecti els serveis web com seguretat, gestió de serveis, gestió d’errors, o confiança entre els comunicants (<span class="tabref"><a href="#table65"><span>taula</span></a></span>).
+</p>
+<div class="ioctable ">
+<div class="titletable"><a name="table65"><span>Taula: </span></a>Alguns dels estàndards serveis web</div>
+<div class="table"><table class="inline">
+	<tr class="row0">
+		<th class="col0 leftalign"> Estàndard       </th><th class="col1 leftalign"> Ús                                                                                                                          </th>
+	</tr>
+	<tr class="row1">
+		<td class="col0 leftalign"> WS-Discovery   </td><td class="col1 leftalign"> Defineix un protocol per descobrir serveis en la xarxa local.                                                                </td>
+	</tr>
+	<tr class="row2">
+		<td class="col0 leftalign"> WS-Addressing  </td><td class="col1 leftalign"> Defineix un mecanisme per transportar informació d’adreces.                                                                  </td>
+	</tr>
+	<tr class="row3">
+		<td class="col0 leftalign"> WS-Security    </td><td class="col1 leftalign"> És una extensió per afegir seguretat a SOAP.                                                                                 </td>
+	</tr>
+	<tr class="row4">
+		<td class="col0 leftalign"> WS-Resource    </td><td class="col1 leftalign"> És una família d’especificacions que permeten manipular estructures de dades remotes.                                           </td>
+	</tr>
+	<tr class="row5">
+		<td class="col0"> WS-Reliability </td><td class="col1 leftalign"> Permet assegurar l’enviament de missatges crítics.                                                                           </td>
+	</tr>
+	<tr class="row6">
+		<td class="col0 leftalign"> WS-Policy      </td><td class="col1 leftalign"> Permet als serveis web definir les seves característiques de seguretat, qualitat de servei…                           </td>
+	</tr>
+	<tr class="row7">
+		<td class="col0 leftalign"> WS-Trust       </td><td class="col1"> Afegeix extensions de seguretat per gestionar testimonis d’autenticació (<em>Security-Token</em>) i relacions entre els participants en un intercanvi segur. </td>
+	</tr>
+</table></div>
+</div>
+</div>
+
+<h4><a id="interoperativitat" >Interoperativitat</a></h4>
+<div class="level4">
+
+<p>
+Una de les crítiques que es fan a aquest tipus de serveis web és que el fet d’haver-hi tants estàndards definits per diferents organitzacions crea una dispersió que fa difícil poder oferir productes que garanteixin la tan volguda interoperativitat.
+</p>
+<div class="iocnote"><div class="ioccontent">
+<p>
+WS-I ara és membre d’OASIS tot i que no ha canviat el seu objectiu fonamental.
+</p>
+</div></div>
+<p>
+Per posar ordre al desgavell, un grup d’empreses el 2002 van crear una organització d’estàndards anomenada WS-I. Es tracta d’una organització que no té com a objectiu definir noves versions dels protocols, sinó que se centra a definir de quina manera es pot aconseguir desenvolupar serveis web interoperables. Per fer-ho va definint el que anomena <strong>perfils</strong> (<em>profiles</em>), que són una sèrie de normes i estàndards que s’han de fer servir per assegurar que el servei és compatible amb els altres. 
+</p>
+
+<p>
+Un dels perfils que defineixen i que és més usat és el WSI-BP (WSI Basic Profile) que només fa servir els protocols més elementals: SOAP, WSDL, WS-Addressing, UDDI. Amb el WSI-BP es limiten les possibilitats a l’hora de crear serveis web però s’aconsegueix que aquells que el compleixin siguin interoperables amb total seguretat. Moltes de les plataformes de generació de serveis web només creen <em>Web services</em> compatibles amb WSI-BP.
+</p>
+
+</div>
+
+<h3><a id="soap" >SOAP</a></h3>
+<div class="level3">
+
+<p>
+SOAP va ser el primer estàndard de serveis web que es va desenvolupar i actualment és una recomanació del <acronym title="World Wide Web Consortium">W3C</acronym> tot i que originalment va ser desenvolupat per un grup d’empreses. És un acrònim de <em>simple object access protocol</em> (protocol d’accés d’objecte simple), però actualment aquest nom ha perdut sentit ja que ha quedat demostrat que SOAP no és simple, i a més no té gaire a veure amb l’accés a objectes.
+</p>
+
+<p>
+Han anat sorgint diferents versions de SOAP al llarg dels anys i actualment se’n fan servir dues, les versions 1.1 i  1.2, l’especificació de les quals es pot trobar a la pàgina del <acronym title="World Wide Web Consortium">W3C</acronym> (<a href="http://www.w3.org/TR/soap/" class="urlextern" title="http://www.w3.org/TR/soap/"  rel="nofollow">www.w3.org/TR/soap</a>).
+</p>
+
+<p>
+És un entorn de missatges que permet la comunicació entre programes que corren en diferents servidors amb independència del llenguatge i del sistema operatiu en què funcionin. Un dels avantatges que aporta SOAP és que fa molt més simple la comunicació entre sistemes que estiguin en xarxes diferents del que es podia fer abans amb altres sistemes com CORBA o DCOM. 
+</p>
+
+<p>
+Aconsegueix la independència del llenguatge i de la plataforma basant els missatges en XML i s’aprofita que l’èxit de la web ha fet que tots els sistemes tinguin implementat el protocol HTTP (tot i que pot funcionar en altres protocols) per fer-lo servir per l’intercanvi de missatges.
+</p>
+
+<p>
+A més de definir el format dels missatges també defineix quines són les regles que han de regir aquest intercanvi, què passa en cas d’error i com s’ha de lligar amb els altres protocols.
+</p>
+
+<p>
+Amb els serveis web d’aquest tipus s’exposen tota una sèrie de funcions mitjançant les quals es poden fer programes que poden fer que el servei faci tasques determinades i retorni resultats amb els quals es pugui treballar. 
+</p>
+<div class="iocexample"><div class="ioccontent"><p class="ioctitle"> Big Web services a OpenBravo</p>
+<p>
+Per exemple, en el servei de vendes externes de l’ERP OpenBravo accessibles per mitjà de SOAP s’hi exposen les funcions següents:
+</p>
+<ul>
+<li class="level1"><div class="li"> <code>getProductsCatalog</code> (entitat, organització, origen, usuari, contrasenya).</div>
+</li>
+<li class="level1"><div class="li"> <code>uploadOrders</code> (entitat, organització, origen, llistacomandes, usuari, contrasenya).</div>
+</li>
+<li class="level1"><div class="li"> <code>getOrders</code> (entitat, organització, usuari, contrasenya, llistacomandes).</div>
+</li>
+</ul>
+
+<p>
+Es pot veure que els noms són prou explicatius de quina és la funció que ofereix cadascun dels serveis: obtenir el catàleg de productes d’una empresa, carregar comandes, i obtenir les comandes i veure en quin estat es troben.
+</p>
+
+<p>
+Per tant, no és difícil fer un programa que comuniqui amb OpenBravo i que n’obtingui aquestes dades. Gràcies a això els clients d’OpenBravo poden desenvolupar programes externs que interactuïn amb el sistema.
+</p>
+</div></div>
+<p>
+
+</p>
+
+<p>
+Per tant, qualsevol missatge que s’enviï cap a un servei web va dins d’un missatge SOAP en el qual s’especifica quin és el servei que es vol fer servir i quines són les dades que s’hi envien.
+</p>
+
+</div>
+
+<h4><a id="missatges_soap" >Missatges SOAP</a></h4>
+<div class="level4">
+
+<p>
+SOAP és un entorn de missatges basat en XML i per tant necessita definir tot allò que fa referència a la manera com s’han de gestionar els elements següents:
+</p>
+<ul>
+<li class="level1"><div class="li"> Tipus de missatges. </div>
+</li>
+<li class="level1"><div class="li"> Format dels missatges.</div>
+</li>
+<li class="level1"><div class="li"> Protocols de transport.</div>
+</li>
+</ul>
+
+</div>
+
+<h5><a id="tipus_de_missatges" >Tipus de missatges</a></h5>
+<div class="level5">
+
+<p>
+L’estàndard SOAP defineix dos tipus de patrons de missatges:
+</p>
+
+<p>
+El més habitual, que està basat en petició i resposta, que és l’habitual en el protocol HTTP (<span class="figref"><a href="#fig191"><span>figura</span></a></span>).
+</p>
+<div class="iocfigure"><a name="fig191"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+ Missatge SOAP de petició i resposta
+
+</figcaption><img src="../media/asxm04u4_12b.png" alt="" /></figure>
+</div>
+<p>
+I un altre tipus de només resposta, que l’estàndard anomena <em>SOAP Response</em>. La idea és que el servei respongui quan rep un missatge no SOAP amb una resposta SOAP (<span class="figref"><a href="#fig192"><span>figura</span></a></span>).
+</p>
+<div class="iocfigure"><a name="fig192"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+ Missatge SOAP de només resposta
+
+</figcaption><img src="../media/asxm04u4_12.png" alt="" /></figure>
+</div>
+<p>
+Però els dos patrons també es poden combinar per aconseguir altres patrons, com definir missatges només d’entrada, o fins i tot establir una conversa.
+</p>
+
+</div>
+
+<h5><a id="composicio_dels_missatges" >Composició dels missatges</a></h5>
+<div class="level5">
+
+<p>
+Un missatge SOAP és bàsicament un document XML i per tant ha de complir totes les normes de creació de documents XML. Per tant, ha de tenir un element arrel anomenat <strong>Envelope</strong> que serveix per identificar els missatges SOAP i la versió que es fa servir. La versió s’identifica a partir de l’espai de noms especificat. Vegeu els espais de noms de cada versió en la <span class="tabref"><a href="#table66"><span>taula</span></a></span>.
+</p>
+<div class="ioctable ">
+<div class="titletable"><a name="table66"><span>Taula: </span></a>Espais de noms de SOAP</div>
+<div class="table"><table class="inline">
+	<tr class="row0">
+		<th class="col0 leftalign" colspan="2"> Versió 1.1                                          </th>
+	</tr>
+	<tr class="row1">
+		<td class="col0"> Envelope </td><td class="col1"> <a href="http://schemas.xmlsoap.org/soap/envelope/" class="urlextern" title="http://schemas.xmlsoap.org/soap/envelope/"  rel="nofollow">http://schemas.xmlsoap.org/soap/envelope/</a> </td>
+	</tr>
+	<tr class="row2">
+		<td class="col0"> Encoding </td><td class="col1"> <a href="http://schemas.xmlsoap.org/soap/encoding/" class="urlextern" title="http://schemas.xmlsoap.org/soap/encoding/"  rel="nofollow">http://schemas.xmlsoap.org/soap/encoding/</a> </td>
+	</tr>
+	<tr class="row3">
+		<th class="col0 leftalign" colspan="2"> Versió 1.2                                          </th>
+	</tr>
+	<tr class="row4">
+		<td class="col0"> Envelope </td><td class="col1 leftalign"> <a href="http://www.w3.org/2003/05/soap-envelope" class="urlextern" title="http://www.w3.org/2003/05/soap-envelope"  rel="nofollow">http://www.w3.org/2003/05/soap-envelope</a>   </td>
+	</tr>
+</table></div>
+</div>
+<p>
+Dins de l’element arrel hi pot haver un element <code>&lt;Header&gt;</code> opcional i un <code>&lt;Body&gt;</code>, que és el que representa el contingut del missatge. 
+</p>
+
+<p>
+L’estàndard no defineix cap funció per a l’element <code>&lt;Header&gt;</code> però generalment se sol fer servir per donar informació o definir el contingut del missatge.
+</p>
+
+<p>
+L’exemple següent és un missatge de petició SOAP que crida a una funció anomenada <code>suma</code> de l’espai de noms privat <code>ioc</code> que rep dos paràmetres, <code>in</code> i <code>in2</code>.
+</p>
+<pre class="code xml"><ol><li class="li1"><div class="de1"><span class="sc3"><span class="re1">&lt;?xml</span> <span class="re0">version</span>=<span class="st0">&quot;1.0&quot;</span> <span class="re2">?&gt;</span></span></div></li><li class="li1"><div class="de1"><span class="sc3"><span class="re1">&lt;soapenv:Envelope</span> <span class="re0">xmlns:soapenv</span>=<span class="st0">&quot;http://schemas.xmlsoap.org/soap/envelope/&quot;</span></span></div></li><li class="li1"><div class="de1"><span class="sc3">                  <span class="re0">xmlns:ioc</span>=<span class="st0">&quot;http://ioc.xtec.cat/Bencalculat/&quot;</span><span class="re2">&gt;</span></span></div></li><li class="li1"><div class="de1">   <span class="sc3"><span class="re1">&lt;soapenv:Header</span><span class="re2">/&gt;</span></span></div></li><li class="li1"><div class="de1">   <span class="sc3"><span class="re1">&lt;soapenv:Body<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1">      <span class="sc3"><span class="re1">&lt;ioc:suma<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1">         <span class="sc3"><span class="re1">&lt;in<span class="re2">&gt;</span></span></span>8<span class="sc3"><span class="re1">&lt;/in<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1">         <span class="sc3"><span class="re1">&lt;in2<span class="re2">&gt;</span></span></span>5<span class="sc3"><span class="re1">&lt;/in2<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1">      <span class="sc3"><span class="re1">&lt;/ioc:suma<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1">   <span class="sc3"><span class="re1">&lt;/soapenv:Body<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1"><span class="sc3"><span class="re1">&lt;/soapenv:Envelope<span class="re2">&gt;</span></span></span></div></li></ol></pre>
+
+<p>
+La resposta del servei web pot ser que el servei s’ha dut a terme i ha retornat el resultat següent:
+</p>
+<pre class="code xml"><ol><li class="li1"><div class="de1"><span class="sc3"><span class="re1">&lt;env:Envelope</span> <span class="re0">xmlns:env</span>=<span class="st0">&quot;http://www.w3.org/2003/05/soap-envelope&quot;</span><span class="re2">&gt;</span></span></div></li><li class="li1"><div class="de1">   <span class="sc3"><span class="re1">&lt;env:Body<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1">      <span class="sc3"><span class="re1">&lt;ns:sumaResponse</span> <span class="re0">xmlns:ns</span>=<span class="st0">&quot;http://ioc.xtec.cat/Bencalculat/&quot;</span><span class="re2">&gt;</span></span></div></li><li class="li1"><div class="de1">         <span class="sc3"><span class="re1">&lt;ns:return<span class="re2">&gt;</span></span></span>13<span class="sc3"><span class="re1">&lt;/ns:return<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1">      <span class="sc3"><span class="re1">&lt;/ns:sumaResponse<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1">   <span class="sc3"><span class="re1">&lt;/env:Body<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1"><span class="sc3"><span class="re1">&lt;/env:Envelope<span class="re2">&gt;</span></span></span></div></li></ol></pre>
+
+<p>
+O bé un error que es defineix amb l’element <code>&lt;Fault&gt;</code>, que sempre va dins de l’element <code>&lt;Body&gt;</code> i que representa diferents estats d’error:
+</p>
+<pre class="code xml"><ol><li class="li1"><div class="de1"><span class="sc3"><span class="re1">&lt;env:Envelope</span> <span class="re0">xmlns:env</span>=<span class="st0">&quot;http://www.w3.org/2003/05/soap-envelope&quot;</span><span class="re2">&gt;</span></span></div></li><li class="li1"><div class="de1">   <span class="sc3"><span class="re1">&lt;env:Body<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1">      <span class="sc3"><span class="re1">&lt;env:Fault<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1">         <span class="sc3"><span class="re1">&lt;env:Code<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1">            <span class="sc3"><span class="re1">&lt;env:Value<span class="re2">&gt;</span></span></span>soapenv:Receiver<span class="sc3"><span class="re1">&lt;/soapenv:Value<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1">         <span class="sc3"><span class="re1">&lt;/env:Code<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1">         <span class="sc3"><span class="re1">&lt;env:Reason<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1">            <span class="sc3"><span class="re1">&lt;env:Text</span> <span class="re0">xml:lang</span>=<span class="st0">&quot;en-US&quot;</span><span class="re2">&gt;</span></span></div></li><li class="li1"><div class="de1">                 For input string: &quot;A&quot;</div></li><li class="li1"><div class="de1">            <span class="sc3"><span class="re1">&lt;/senv:Text<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1">         <span class="sc3"><span class="re1">&lt;/env:Reason<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1">         <span class="sc3"><span class="re1">&lt;env:Detail</span><span class="re2">/&gt;</span></span></div></li><li class="li1"><div class="de1">      <span class="sc3"><span class="re1">&lt;/env:Fault<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1">   <span class="sc3"><span class="re1">&lt;/env:Body<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1"><span class="sc3"><span class="re1">&lt;/env:Envelope<span class="re2">&gt;</span></span></span></div></li></ol></pre>
+
+<p>
+Dins de l’element <code>&lt;Fault&gt;</code> hi ha sempre un codi i un text descriptiu de l’error que s’ha produït. És mitjançant els codis que es pot saber de quin tipus és el missatge d’error rebut (<span class="tabref"><a href="#table67"><span>taula</span></a></span>).
+</p>
+<div class="ioctable ">
+<div class="titletable"><a name="table67"><span>Taula: </span></a>Codis d’error de SOAP 1.2</div>
+<div class="table"><table class="inline">
+	<tr class="row0">
+		<th class="col0 leftalign"> Codi d’error        </th><th class="col1 leftalign"> Significat                                                                                                                                             </th>
+	</tr>
+	<tr class="row1">
+		<td class="col0 leftalign"> VersionMismatch     </td><td class="col1 leftalign"> Hi ha algun element invàlid o hi ha alguna cosa que no quadra (típic d’enviar missatges 1.1 a servidors 1.2).                                                     </td>
+	</tr>
+	<tr class="row2">
+		<td class="col0 leftalign"> MustUnderstand      </td><td class="col1 leftalign"> Un fill del <code>Header</code> no ha estat entès o no compleix les regles.                                                                                          </td>
+	</tr>
+	<tr class="row3">
+		<td class="col0"> DataEncodingUnknown </td><td class="col1 leftalign"> S’ha enviat la informació en un format amb el qual no és compatible.                                                                                                     </td>
+	</tr>
+	<tr class="row4">
+		<td class="col0 leftalign"> Sender              </td><td class="col1"> El missatge està format incorrectament o hi falten coses (per exemple, hi falta la identificació de l’usuari). En la versió 1.1 el nom era <em>Client</em>. </td>
+	</tr>
+	<tr class="row5">
+		<td class="col0 leftalign"> Receiver            </td><td class="col1 leftalign"> El missatge no pot ser processat perquè no s’ha pogut processar (no existeix la funció, per exemple.). En la versió 1.1 era <em>Server</em>.                          </td>
+	</tr>
+</table></div>
+</div>
+<p>
+Com que SOAP és XML, diem que hi ha un format de missatges que es pot expandir mitjançant espais de noms. 
+</p>
+
+</div>
+
+<h5><a id="protocol_de_transport" >Protocol de transport</a></h5>
+<div class="level5">
+
+<p>
+Els missatges poden viatjar en qualsevol protocol però el més usat és HTTP i per tant és el que explicarem aquí. 
+</p>
+
+<p>
+Per fer una petició cal enviar un missatge amb el mètode <code>POST</code> al servei web en què s’identifiqui on és el servei, i en el tipus hi ha d’haver <code>application/soap+xml</code> o bé <code>text/xml</code>.
+</p>
+<pre class="code">POST http://ioc.xtec.cat:8080/Calculadora HTTP/1.1
+Content-Type: application/soap+xml;charset=UTF-8;action=&quot;urn:sumar&quot;
+
+&lt;soap:Envelope xmlns:soap=&quot;http://www.w3.org/2003/05/soap-envelope&quot; 
+...</pre>
+
+<p>
+La resposta també ens donarà informació de què ha passat. Si rebem un codi 200 és que tot ha anat bé. 
+</p>
+<pre class="code">HTTP/1.1 200 OK
+Content-Type: application/soap+xml; action=&quot;urn:sumarResponse&quot;;charset=UTF-8
+
+&lt;?xml version=&#039;1.0&#039; encoding=&#039;UTF-8&#039;?&gt;
+&lt;soapenv:Envelope xmlns:soapenv=&quot;http://www.w3.org/2003/05/soap-envelope&quot;&gt;
+  ...
+&lt;/soapenv:Envelope&gt;</pre>
+
+<p>
+I si hi ha algun error hem de rebre un codi 500.
+</p>
+<pre class="code">HTTP/1.1 
+500 Internal Server Error
+Content-Type: application/soap+xml; action=&quot;urn:sumarResponse&quot;;charset=UTF-8
+
+&lt;?xml version=&#039;1.0&#039; encoding=&#039;UTF-8&#039;?&gt;
+&lt;soapenv:Envelope xmlns:soapenv=&quot;http://www.w3.org/2003/05/soap-envelope&quot;&gt;
+  ...
+&lt;/soapenv:Envelope&gt;</pre>
+
+</div>
+
+<h4><a id="problemes" >Problemes</a></h4>
+<div class="level4">
+
+<p>
+Una de les crítiques que es fa a SOAP és la mateixa que es fa a XML: malgrat tenir molts avantatges té la tendència a fer-se molt gran i això fa que SOAP acabi essent més lent que les altres tecnologies existents com CORBA o DCOM, que fan servir missatges binaris, de manera que són molt més curts i ràpids.
+</p>
+
+<p>
+Tot i que aquests problemes són certs, per molta gent els avantatges que aporta -com la facilitat de lectura per als humans, la facilitat de detecció d’errors i el fet que solucioni els problemes de compatibilitat entre plataformes- el fan una opció que s’ha de tenir en compte.
+</p>
+
+</div>
+
+<h3><a id="wsdl" >WSDL</a></h3>
+<div class="level3">
+
+<p>
+El WSDL (<em>Web services definition language</em>) és un llenguatge XML per descriure quins serveis ofereix un servei web i com s’ha de fer per accedir-hi (<span class="figref"><a href="#fig193"><span>figura</span></a></span>). Normalment l’ús d’un servei web requereix que el client obtingui abans el fitxer WSDL per saber quin servei s’ofereix i com s’ha de fer servir.
+</p>
+<div class="iocfigure"><a name="fig193"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+ WSDL serveix per obtenir les característiques tècniques d’un servei web
+
+</figcaption><img src="../media/asxm04u4_14.png" alt="" /></figure>
+</div>
+<p>
+S’han desenvolupat diverses versions de WSDL: les originals, basades en el número 1 (1.0, 1.1); i la nova versió 2.0, que és incompatible amb les versions anteriors. 
+</p>
+<div class="iocnote"><div class="ioccontent">
+<p>
+La versió 2.0 és més senzilla que les versions 1.X i ofereix compatibilitat amb un nombre més gran de característiques, però no està totalment implementada per als entorns de desenvolupament.
+</p>
+</div></div>
+<p>
+El format en que està definit el fitxer WSDL, a pesar de ser XML, està pensat per ser llegit i interpretat per una màquina i no pas per una persona. S’hi defineixen un ampli ventall d’aspectes: des de les adreces mitjançant les quals es pot comunicar amb les diferents funcions del servei web, fins al format en què ha d’estar cada tipus de dades.
+</p>
+
+<p>
+El WSDL no és necessari per fer la comunicació, de manera que si ja es té informació sobre quins serveis ofereix un servei web i de quina manera s’hi pot accedir es pot desenvolupar un programa que faci servir el servei web sense problemes.
+</p>
+
+<p>
+A pesar d’això obtenir el WSDL abans de comunicar amb un servei web pot servir per obtenir més informació sobre la manera com funciona el servei, i per detectar si s’hi han produït canvis.
+</p>
+
+</div>
+
+<h4><a id="el_fitxer_wsdl" >El fitxer WSDL</a></h4>
+<div class="level4">
+
+<p>
+El fitxer WSDL és un document XML que té per arrel <code>&lt;definitions&gt;</code> i que fa servir XSD per definir els tipus de dades implicades en el servei. Dins seu conté diferents etiquetes que s’encarreguen de definir quins serveis s’ofereixen i com es pot fer per accedir-hi.
+</p>
+
+<p>
+Dins de l’element <code>&lt;definitions&gt;</code> hi podem tenir diferents elements segons si el document correspon a la versió 1 o a la 2. Vegem una comparació entre les versions en la <span class="figref"><a href="#fig194"><span>figura</span></a></span>.
+</p>
+<div class="iocfigure"><a name="fig194"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+ Comparació entre els WSDL 1.0 i 2.0
+
+</figcaption><img src="../media/asxm04u4_15.png" alt="" /></figure>
+</div>
+<p>
+L’element <code>&lt;types&gt;</code> es fa servir per definir amb XSD els tipus de dades que s’empren en tots els serveis oferts. Es defineixen tots els tipus de dades, tant paràmetres d’entrada com de sortida, tipus complexos…
+</p>
+
+<p>
+L’element <code>&lt;portType&gt;</code>, o <code>&lt;interface&gt;</code> en la versió 2, defineix les operacions que es poden fer en un servei web i els paràmetres que es fan servir per dur-les a terme. En aquesta part d’un document WSDL veiem que el servei web ofereix l’operació suma que rep com a paràmetres d’entrada un <code>sumaRequest</code> i que retorna un <code>sumaResponse</code>. Tots dos tipus han d’haver estat definits en la definició de tipus <code>&lt;types&gt;</code>, o <code>&lt;messages&gt;</code> en les versions 1.
+</p>
+<pre class="code xml"><ol><li class="li1"><div class="de1">...</div></li><li class="li1"><div class="de1"><span class="sc3"><span class="re1">&lt;wsdl:portType</span> <span class="re0">name</span>=<span class="st0">&quot;CalculadoraPortType&quot;</span><span class="re2">&gt;</span></span></div></li><li class="li1"><div class="de1">  <span class="sc3"><span class="re1">&lt;wsdl:operation</span> <span class="re0">name</span>=<span class="st0">&quot;suma&quot;</span><span class="re2">&gt;</span></span></div></li><li class="li1"><div class="de1">    <span class="sc3"><span class="re1">&lt;wsdl:input</span> <span class="re0">message</span>=<span class="st0">&quot;ns:sumaRequest&quot;</span> <span class="re0">wsaw:Action</span>=<span class="st0">&quot;urn:suma&quot;</span><span class="re2">/&gt;</span></span></div></li><li class="li1"><div class="de1">    <span class="sc3"><span class="re1">&lt;wsdl:output</span> <span class="re0">message</span>=<span class="st0">&quot;ns:sumaResponse&quot;</span> <span class="re0">wsaw:Action</span>=<span class="st0">&quot;urn:sumaResponse&quot;</span><span class="re2">/&gt;</span></span></div></li><li class="li1"><div class="de1">  <span class="sc3"><span class="re1">&lt;/wsdl:operation<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1"><span class="sc3"><span class="re1">&lt;/wsdl:portType<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1">...</div></li></ol></pre>
+
+<p>
+L’element <code>&lt;binding&gt;</code> defineix el protocol i el format en què es poden fer les operacions. 
+</p>
+
+<p>
+L’element <code>&lt;services&gt;</code>, per la seva part, defineix el lloc físic on hi ha el servei web (adreça <acronym title="Uniform Resource Locator">URL</acronym>) mitjançant una col·lecció de punts de connexió <code>&lt;binding&gt;</code>.
+</p>
+
+</div>
+
+<h3><a id="uddi" >UDDI</a></h3>
+<div class="level3">
+
+<p>
+El protocol UDDI (descripció, descoberta i integració universals o <em>universal description, discovery and integration</em>) serveix perquè els creadors de serveis web puguin registrar-los en una base de dades, i alhora permetre als clients localitzar serveis web que facin allò que volen i proporcionar-los el seu WSDL (<span class="figref"><a href="#fig195"><span>figura</span></a></span>).
+</p>
+<div class="iocfigure"><a name="fig195"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+ Funcionament dels serveis web amb UDDI
+
+</figcaption><img src="../media/asxm04u4_16.png" alt="" /></figure>
+</div>
+<p>
+Des d’un punt de vista d’automatització això és l’ideal. Es pot fer que els programes automàticament localitzin el servei que busquen sense que ni tan sols en tinguin informació prèvia, simplement accedint al registre UDDI.
+</p>
+
+<p>
+Per aquest motiu, UDDI va ser creat per donar servei a un registre anomenat <strong>UDDI Bussiness Registry o UBR</strong>, amb el propòsit de proporcionar una manera senzilla de localitzar serveis web basats en SOAP a Internet. La idea era crear una mena de “pàgines grogues” que continguessin tots els serveis web de manera que es poguessin localitzar a partir de les funcions que oferien. 
+</p>
+
+<p>
+Però UBR va fracassar i va tancar el 12 de gener del 2006. Era molt difícil crear categories de serveis que tinguessin prou significat per ser útils; i també s’ha de tenir en compte que UDDI no és necessari per poder fer servir serveis web. 
+</p>
+
+<p>
+A pesar d’això algunes organitzacions encara fan servir UDDI internament. Però també és cert que altres organitzacions fan servir sistemes diferents per localitzar serveis web: LDAP, bases de dades…
+</p>
+
+</div>
+
+<h3><a id="provar_serveis_web" >Provar serveis web</a></h3>
+<div class="level3">
+
+<p>
+Per veure com funcionen els serveis web no hi ha res que vagi tan bé com provar-ne algun. Malauradament el fracàs de crear un sistema de registre ha fet que no sigui fàcil localitzar serveis per fer proves, i moltes de les funcions dels serveis web es fan servir en xarxes locals. Per exemple, molts dels programes de gestió d’empreses ERP permeten interacció mitjançant SOAP.
+</p>
+
+<p>
+També hi ha algunes pàgines que contenen enllaços a serveis web públics accessibles per Internet. S’ha de tenir en compte que aquests enllaços no sempre estan totalment actualitzats i que per tant no sempre funcionen. 
+</p>
+<ul>
+<li class="level1"><div class="li"> <strong>Seekda</strong> (<a href="http://webservices.seekda.com/browse" class="urlextern" title="http://webservices.seekda.com/browse"  rel="nofollow">http://webservices.seekda.com/browse</a>)</div>
+</li>
+<li class="level1"><div class="li"> <strong>xMethods</strong> (<a href="http://xmethods.net" class="urlextern" title="http://xmethods.net"  rel="nofollow">http://xmethods.net</a>)</div>
+</li>
+<li class="level1"><div class="li"> <strong>WSIndex</strong> (<a href="http://www.wsindex.org/Web_Services/" class="urlextern" title="http://www.wsindex.org/Web_Services/"  rel="nofollow">http://www.wsindex.org/Web_Services/</a>)</div>
+</li>
+</ul>
+
+<p>
+En aquestes pàgines web s’hi poden trobar serveis web molt diversos, com obtenir la temperatura de diferents ciutats del món, sistemes de conversió de monedes, informació sobre països, valors de la borsa, traduccions de textos o comprovacions de correu electrònic. 
+</p>
+
+<p>
+Com que per poder fer servir un servei web el primordial és obtenir el seu WSDL per saber com interactuar-hi, les pàgines solen mostrar un enllaç al WSDL de cadascun dels serveis que tenen registrat (<span class="figref"><a href="#fig196"><span>figura</span></a></span>).
+</p>
+<div class="iocfigure"><a name="fig196"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Seekda fa un resum de cada servei
+
+</figcaption><img src="../media/seekdaresum.png" alt="" /></figure>
+</div>
+</div>
+
+<h4><a id="eines_de_prova" >Eines de prova</a></h4>
+<div class="level4">
+
+<p>
+Per provar els <em>big Web services</em> sense haver de programar ni una línia tenim diverses alternatives, atès que SOAP i WSDL no deixen de ser llenguatges XML, i molts dels editors XML ofereixen alguna manera de depurar el funcionament dels serveis web (<span class="figref"><a href="#fig197"><span>figura</span></a></span>).
+</p>
+<div class="iocfigure"><a name="fig197"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+ Provar un servei web des d’oXygen XML Editor
+
+</figcaption><img src="../media/oxygensoap.png" alt="" /></figure>
+</div>
+<p>
+Els editors XML normalment es limiten a permetre enviar peticions editables i recuperar les respostes que arriben des del servei web en SOAP. A part dels editors XML també hi ha una sèrie de programes que permeten fer tasques molt més elaborades, com ara fer proves de rendiment o de seguretat, comprovar si el servei compleix les regles d’interoperativitat de WS-I, o fer proves automàtiques de rendiment. Alguns d’aquests programes són:
+</p>
+<ul>
+<li class="level1"><div class="li"> <strong>SoapUI</strong> (<a href="http://www.soapui.org/" class="urlextern" title="http://www.soapui.org/"  rel="nofollow">http://www.soapui.org/</a>) </div>
+</li>
+<li class="level1"><div class="li"> <strong>SOAPSonar</strong> (<a href="http://www.crosschecknet.com/" class="urlextern" title="http://www.crosschecknet.com/"  rel="nofollow">http://www.crosschecknet.com/</a>)</div>
+</li>
+<li class="level1"><div class="li"> <strong>Parasoft SOAtest</strong> (<a href="http://www.parasoft.com/" class="urlextern" title="http://www.parasoft.com/"  rel="nofollow">http://www.parasoft.com/</a>)</div>
+</li>
+</ul>
+
+<p>
+Els avantatges que aporten aquests programes són prou importants per tenir-los en compte a l’hora de dissenyar serveis web SOAP professionals.
+</p>
+
+</div>
+
+<h4><a id="exemple_d_us" >Exemple d&#039;ús</a></h4>
+<div class="level4">
+
+<p>
+Normalment els serveis web es fan servir des de programes desenvolupats expressament per fer una determinada tasca. Però també es poden fer servir des de programes dissenyats específicament per provar serveis web.
+</p>
+
+</div>
+
+<h5><a id="programes" >Programes</a></h5>
+<div class="level5">
+
+<p>
+El funcionament de la majoria dels programes de prova és molt similar, i tots permeten fer més o menys les mateixes coses. En aquest exemple farem servir el SoapUI, una aplicació desenvolupada en Java que permet provar, analitzar, simular i generar codi de serveis web de manera senzilla i àgil a partir del fitxer WSDL, i que conté la possibilitat d’automatitzar les proves funcionals.
+</p>
+
+<p>
+El SoapUI es distribueix en dues versions: SoapUI Freeware (GNU <acronym title="GNU Lesser General Public License">LGPL</acronym>) i SoapUI Pro (comercial), que es poden executar en versió d’escriptori, en línia i mitjançant connectors que permeten treballar-hi des de diferents entorns de desenvolupament com Eclipse, IntelliJ IDEA i NetBeans (<span class="figref"><a href="#fig198"><span>figura</span></a></span>).
+</p>
+<div class="iocfigure"><a name="fig198"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+ Entorn del SoapUI
+
+</figcaption><img src="../media/soapui.png" alt="" /></figure>
+</div>
+</div>
+
+<h5><a id="objectiu" >Objectiu</a></h5>
+<div class="level5">
+
+<p>
+Volem fer un programa que pugui mostrar als usuaris quina és la temperatura de Barcelona.
+</p>
+
+<p>
+Per fer-ho ens valem d’un servei públic i gratuït que proporciona aquesta informació. Anem a Seekda (<a href="http://webservices.seekda.com/browse" class="urlextern" title="http://webservices.seekda.com/browse"  rel="nofollow">http://webservices.seekda.com/browse</a>) i busquem algun dels serveis de temperatura; ens quedem amb GlobalWeather (<span class="figref"><a href="#fig199"><span>figura</span></a></span>).
+</p>
+<div class="iocfigure"><a name="fig199"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+ GlobalWeather permet mostrar dades meteorològiques de ciutats amb aeroports
+
+</figcaption><img src="../media/wsexemple1.png" alt="" /></figure>
+</div>
+</div>
+
+<h5><a id="aconseguir_el_wsdl" >Aconseguir el WSDL</a></h5>
+<div class="level5">
+
+<p>
+Per poder fer servir el servei web ens cal aconseguir quins són els serveis que ofereix. Per fer-ho hi ha dues maneres:
+</p>
+<ul>
+<li class="level1"><div class="li"> Que el creador del servei web proporcioni la informació.</div>
+</li>
+<li class="level1"><div class="li"> Aconseguir el seu fitxer WSDL.</div>
+</li>
+</ul>
+
+<p>
+En aquest cas, en el quadre de resum del servei ja tenim el WSDL i per tant podem fer servir aquest sistema (<span class="figref"><a href="#fig200"><span>figura</span></a></span>).
+</p>
+<div class="iocfigure"><a name="fig200"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+ El quadre de resum del cercador Seekda ens ofereix un enllaç al WSDL
+
+</figcaption><img src="../media/wsexemple2.png" alt="" /></figure>
+</div>
+</div>
+
+<h5><a id="provar_el_servei" >Provar el servei</a></h5>
+<div class="level5">
+
+<p>
+Inspeccionant el WSDL es veuen els serveis que s’ofereixen, però el SoapUI ho fa automàticament i a més permet provar el servei.
+</p>
+
+<p>
+El primer que cal fer és crear un projecte nou, en el qual s’han d’especificar diferents opcions, entre les quals destaca el WSDL (<span class="figref"><a href="#fig201"><span>figura</span></a></span>).
+</p>
+<div class="iocfigure"><a name="fig201"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Crear un projecte amb el SoapUI
+
+</figcaption><img src="../media/wsexemple4.png" alt="" /></figure>
+</div>
+<p>
+Com que volem descobrir els serveis que ofereix GlobalWeather només cal que marquem la primera de les opcions.
+</p>
+
+<p>
+Quan el projecte s’hagi creat, en el costat dret hi apareixeran tots els serveis que ofereix el servidor web i les maneres amb què s’hi pot connectar.
+</p>
+
+<p>
+Com en aquest cas, és bastant habitual que els serveis web permetin que s’hi treballi fent servir diferents versions de SOAP. En aquest servei es pot fer servir SOAP 1.1 (GlobalWeatherSoap) i SOAP 1.2 (GlobalWeatherSoap12) (<span class="figref"><a href="#fig202"><span>figura</span></a></span>).
+</p>
+<div class="iocfigure"><a name="fig202"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Les marques verdes indiquen diferents maneres de connectar amb el servei
+
+</figcaption><img src="../media/wsexemple5.png" alt="" /></figure>
+</div>
+<p>
+El servei GlobalWeather només ofereix dues funcions:
+</p>
+<ul>
+<li class="level1"><div class="li"> <strong>GetCitiesByCountry</strong>: com indica el nom, retorna una llista de les ciutats d’un país determinat que funcioni amb el servei. </div>
+</li>
+<li class="level1"><div class="li"> <strong>GetWeather</strong>: proporciona la informació meteorològica d’una ciutat concreta.</div>
+</li>
+</ul>
+
+<p>
+El primer que cal fer és descobrir si Barcelona és entre les ciutats disponibles. Desplegueu la funció <code>GetCitiesByCountry</code> i, si feu doble clic a “Request1”, es crearà la plantilla d’una petició SOAP. Els valors dels paràmetres que s’han d’emplenar estan marcats amb un interrogant (<span class="figref"><a href="#fig203"><span>figura</span></a></span>).
+</p>
+<div class="iocfigure"><a name="fig203"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+ Els interrogants mostren on s’han de posar els paràmetres
+
+</figcaption><img src="../media/wsexemple6.png" alt="" /></figure>
+</div>
+<p>
+En executar la comanda apareixerà una llista amb el resultat de l’execució del servei en la part dreta de la finestra. Entre els resultats es veu que Barcelona és una de les ciutats amb què funciona el servei, i per tant aquest servei web és útil per als nostres propòsits (<span class="figref"><a href="#fig204"><span>figura</span></a></span>).
+</p>
+<div class="iocfigure"><a name="fig204"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+ Barcelona és entre els resultats
+
+</figcaption><img src="../media/wsexemple8.png" alt="" /></figure>
+</div>
+<p>
+Un cop descobert que es pot fer servir el servei per consultar les dades meteorològiques de Barcelona, podem provar d’obtenir la temperatura fent servir el procediment anterior però clicant a la funció <code>GetWeather</code>. Aquesta funció necessita dos paràmetres: la ciutat i el país (<span class="figref"><a href="#fig205"><span>figura</span></a></span>).
+</p>
+<div class="iocfigure"><a name="fig205"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+GetWeather pot tenir dos paràmetres per treballar
+
+</figcaption><img src="../media/wsexemple9.png" alt="" /></figure>
+</div>
+<p>
+Si empleneu la funció amb <em>Barcelona</em> i <em>Spain</em> obtindreu els valors de temperatura, vent, estat del cel, etc., en un format XML senzill que no costaria gaire que un programa pogués interpretar (<span class="figref"><a href="#fig206"><span>figura</span></a></span>).
+</p>
+<div class="iocfigure"><a name="fig206"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Temperatura a Barcelona
+
+</figcaption><img src="../media/wsexemple10.png" alt="" /></figure>
+</div>
+</div>
+
+<h2><a id="arquitectures_basades_en_rest" >Arquitectures basades en REST</a></h2>
+<div class="level2">
+
+<p>
+Una de les crítiques que es fan als serveis web basats en SOAP és que s’ha de tractar amb massa protocols per aconseguir qualsevol cosa i això fa que siguin massa complicats.
+</p>
+
+<p>
+Els serveis basats en REST (<em>representational state transfer</em>) intenten capturar les característiques que han fet que la web tingués èxit, i en especial la seva senzillesa: resulta fàcil d’entendre i de fer servir. Es parteix de la idea que la web ha revolucionat la manera d’accedir a les dades perquè és simple i fa servir un conjunt petit de tecnologies. Però a més ha passat a ser un sistema distribuït, obert i multiplataforma, i en moltes pàgines web es fan coses tan complexes com en els serveis web sense fer-ho tan complicat com en els sistemes SOAP.
+</p>
+
+<p>
+Mentre els <em>big Web services</em> exposen funcions semblants a les dels llenguatges de programació mitjançant interfícies més o menys complexes que són diferents per a cada servei, els serveis web basats en REST exposen les dades mitjançant una interfície que sempre és la mateixa. Aquests serveis intenten aconseguir el mateix èxit que ha tingut la web fent servir les mateixes armes: no es defineixen nous protocols sinó que s’aprofiten els que ja existeixen i tenen èxit. Per què ens hem de complicar la vida? Per què hem de crear nous protocols complexos? 
+</p>
+
+<p>
+REST no és un protocol sinó un conjunt de regles i principis que permeten desenvolupar serveis web fent servir HTTP, i basant-se en el fet que la web és plena de recursos que es poden manipular mitjançant les seves representacions. 
+</p>
+
+<p>
+REST obliga a fer que els missatges continguin tot el necessari per poder funcionar, ja que es parteix del fet que no tenen estat, de manera que no poden recordar les peticions anteriors. Això implica que el sistema <strong>ha de tractar cadascuna de les peticions com si fos l’única, i per tant ha de tenir tot el necessari perquè el servidor pugui fer la tasca</strong>. El servidor mai no tindrà en compte les peticions anteriors per tractar l’actual.
+</p>
+
+<p>
+Segurament el fet que REST faci servir tecnologies que ja existien -la qual cosa permet accedir als recursos d’una manera homogènia i simplifica l’ús, ja que no cal interpretar què fan determinades funcions ni què s’ha de posar en els paràmetres-, ha estat clau en el fet que els serveis basats en REST s’hagin convertit en els preferits per desenvolupar serveis web. Molts dels antics serveis basats en SOAP, com per exemple les recerques de Google, s’han abandonat en favor d’altres sistemes que sovint estan basats en REST.
+</p>
+
+</div>
+
+<h3><a id="els_recursos" >Els recursos</a></h3>
+<div class="level3">
+
+<p>
+L’accés als recursos és el component bàsic en la web, i per tant també ho és de REST. 
+</p>
+<div class="iocnote"><div class="ioccontent">
+<p>
+Actualment les idees d’<acronym title="Uniform Resource Identifier">URI</acronym> (identificador uniforme de recursos o <em>uniform resource identifier</em>) i <acronym title="Uniform Resource Locator">URL</acronym> (localitzador uniforme de recursos o <em>uniform resource locator</em>) són pràcticament idèntiques i per tant es poden usar indistintament.
+</p>
+</div></div>
+<p>
+Per a REST, qualsevol cosa que es pugui identificar amb un <acronym title="Uniform Resource Identifier">URI</acronym> o un <acronym title="Uniform Resource Locator">URL</acronym> dins d’Internet es considera un recurs, i com que pràcticament tot el que hi ha dins d’Internet es pot identificar mitjançant un <acronym title="Uniform Resource Locator">URL</acronym> tenim molts recursos disponibles.
+</p>
+
+<p>
+Per a REST tot és un recurs que es pot identificar i que es pot manipular. Per exemple es pot definir un servei web que identifiqués els alumnes d’una classe a partir d’adreces <acronym title="Uniform Resource Identifier">URI</acronym> formades d’una manera especial.
+</p>
+<pre class="code">http://ioc.xtec.cat/classe/programacio/alumne/*</pre>
+
+<p>
+Fent servir aquesta nomenclatura podem accedir al primer alumne de la classe de programació de l’IOC amb http://ioc.xtec.cat/classe/programacio/alumne/1, al segon amb http://ioc.xtec.cat/classe/programacio/alumne/2 i així successivament. Alhora podem definir la classe de programació d’una manera similar: http://ioc.xtec.cat/classe/programacio.
+</p>
+<div class="iocimportant"><div class="ioccontent">
+<p>
+Un recurs és un concepte o una idea que es pot associar a un <acronym title="Uniform Resource Locator">URL</acronym> o un <acronym title="Uniform Resource Identifier">URI</acronym>, però a més per a REST els recursos poden tenir diferents representacions segons l’estat en què es trobin.
+</p>
+</div></div>
+<p>
+Vegem els conceptes gràficament en la <span class="figref"><a href="#fig207"><span>figura</span></a></span>.
+</p>
+<div class="iocfigure"><a name="fig207"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+ Conceptes de REST
+
+</figcaption><img src="../media/asxm04u4_17.png" alt="" /></figure>
+</div>
+<p>
+A pesar del que pot semblar, en molts dels exemples de serveis web en REST les jerarquies d’adreces per a REST d’entrada no impliquen cap tipus de relació entre els recursos. Això vol dir que les adreces següents no tenen per què tenir cap tipus de relació:
+</p>
+<pre class="code">http://ioc.xtec.cat/classe/programacio/
+http://ioc.xtec.cat/classe</pre>
+
+<p>
+La primera podria mostrar la llista d’alumnes i la segona, informació sobre on es fan classes en el centre i quan.
+</p>
+
+<p>
+En sistemes REST les relacions reals s’estableixen mitjançant els enllaços que tinguin les pàgines.
+</p>
+
+</div>
+
+<h3><a id="representacions" >Representacions</a></h3>
+<div class="level3">
+<div class="iocnote"><div class="ioccontent">
+<p>
+XML no és l’únic llenguatge de marques que es fa servir en serveis web. Un llenguatge que està tenint molt d’èxit és JSON (<em>JavaScript object notation</em>).
+</p>
+</div></div>
+<p>
+Per a REST no hi ha cap problema a fer servir la web per comunicar programes, ja que en realitat la comunicació d’una pàgina web ja és una comunicació entre programes (el servidor i el navegador). L’única cosa que no està pensada per ser usada per programes és el contingut. 
+</p>
+
+<p>
+El més habitual és que els recursos de la web estiguin pensats per ser consumits per humans mitjançant navegadors, i per aquest motiu la informació s’hi sol representar en <acronym title="HyperText Markup Language">HTML</acronym>. Si l’objectiu és permetre a les màquines fer servir la web només cal que el contingut de les pàgines estigui en un format més amigable per als programes, com per exemple XML.
+</p>
+
+<p>
+Malgrat fer servir la web, REST no està limitat a fer servir missatges en <acronym title="HyperText Markup Language">HTML</acronym> o XML sinó que pot emprar recursos en qualsevol format. Per tant, en un servei web basat en REST es poden generar des de documents en <acronym title="HyperText Markup Language">HTML</acronym> o PDF fins a imatges en JPG o GIF.
+</p>
+
+<p>
+La idea és que no es visualitza el recurs en si sinó només una representació d’aquest recurs. Quan algú accedeix a l’adreça http://ioc.xtec.cat/classe/programació/alumne/23 el que està definint és que vol obtenir l’alumne número 23 de la classe de programació, però el que obtindrà no serà l’alumne sinó una representació d’aquest alumne que, segons el context, pot ser una imatge, una pàgina web amb les notes de l’alumne o un fitxer XML amb les seves dades personals. 
+</p>
+
+<p>
+Hi ha recursos que només tindran una sola representació i d’altres que en tindran diverses i per aquest motiu en REST els programes poden demanar quina és la representació que volen obtenir o els servidors poden enviar la que considerin més adient segons un determinat criteri (per exemple, segons el programa que ha demanat el recurs). 
+</p>
+<div class="iocimportant"><div class="ioccontent">
+<p>
+Gràcies a les representacions es pot aconseguir que s’uneixi de manera transparent la web dels humans amb la dels programes.
+</p>
+</div></div>
+<p>
+Per exemple, és habitual que si el servidor detecta que s’hi està accedint amb un navegador retorni una representació en <acronym title="HyperText Markup Language">HTML</acronym>, mentre que si és mitjançant un altre programa retorni la representació en XML.
+</p>
+
+</div>
+
+<h3><a id="http" >HTTP</a></h3>
+<div class="level3">
+
+<p>
+REST fa servir HTTP com a sistema de transport (tot i que també podria funcionar amb altres protocols), però també el fa servir com a sistema de missatges. Per aquest motiu s’ha de definir quin és el paper que han de tenir els diferents mètodes HTTP a l’hora de gestionar un recurs. 
+</p>
+
+<p>
+S’han definit una sèrie d’equivalències entre els mètodes HTTP i la manera de tractar el recurs especificat, que es veuen en la <span class="tabref"><a href="#table68"><span>taula</span></a></span>.
+</p>
+<div class="ioctable ">
+<div class="titletable"><a name="table68"><span>Taula: </span></a>Equivalències dels mètodes HTTP en REST</div>
+<div class="table"><table class="inline">
+	<tr class="row0">
+		<th class="col0 leftalign"> Mètode   </th><th class="col1 leftalign"> Significat            </th>
+	</tr>
+	<tr class="row1">
+		<td class="col0 centeralign">   <code>POST</code>   </td><td class="col1 leftalign"> Crear un recurs.       </td>
+	</tr>
+	<tr class="row2">
+		<td class="col0 centeralign">   <code>GET</code>    </td><td class="col1 leftalign"> Obtenir el recurs.     </td>
+	</tr>
+	<tr class="row3">
+		<td class="col0 centeralign">   <code>PUT</code>    </td><td class="col1"> Actualitzar el recurs. </td>
+	</tr>
+	<tr class="row4">
+		<td class="col0 centeralign">  <code>DELETE</code>  </td><td class="col1 leftalign"> Eliminar el recurs.    </td>
+	</tr>
+</table></div>
+</div>
+<p>
+D’aquesta manera es poden fer les operacions bàsiques simplement enviant una petició HTTP a un <acronym title="Uniform Resource Identifier">URI</acronym>, triant el mètode HTTP adequat. Enviant una petició HTTP <code>GET</code> obtindrem la representació de l’alumne 1:
+</p>
+<pre class="code">GET classe/programació/alumne/1</pre>
+
+<p>
+En canvi, enviant un <code>DELETE</code> definim que s’ha d’eliminar de la llista l’alumne 1:
+</p>
+<pre class="code">DELETE classe/programació/alumne/1</pre>
+
+<p>
+En HTTP els mètodes <code>POST</code> i <code>PUT</code> s’han definit per poder enviar informació al servidor i per tant, a més de l’ordre, normalment s’hi envia quina informació conté. Això els fa candidats ideals per inserir o modificar recursos.
+</p>
+
+</div>
+
+<h2><a id="desenvolupament_de_serveis_web" >Desenvolupament de serveis web</a></h2>
+<div class="level2">
+
+<p>
+Els avantatges que poden aportar els serveis web (<em>web services</em>) no han passat desapercebuts i ràpidament els llenguatges de programació han anat incorporant components per desenvolupar-ne. Per exemple, el JDK (<em>Java development kit</em>) de Java incorpora una <acronym title="Application Programming Interface">API</acronym> per crear serveis web que s’anomena <em>Java Api for XML Web Services</em> (JAX-WS), però ja anteriorment se’n podien crear fent servir <em>Java <acronym title="Application Programming Interface">API</acronym> for XML-based RPC</em>(JAX-RPC).
+</p>
+
+<p>
+La majoria de les biblioteques o entorns de desenvolupament s’especialitzen en un dels dos grans grups de serveis web, però l’increment de la popularitat dels serveis REST ha fet que molts dels entorns basats en el protocol SOAP també incorporin la possibilitat de funcionar de forma compatible amb REST.
+</p>
+
+</div>
+
+<h3><a id="desenvolupament_de_serveis_basats_en_soap" >Desenvolupament de serveis basats en SOAP</a></h3>
+<div class="level3">
+
+<p>
+Les biblioteques SOAP estan pensades per ser transparents amb vista als programadors, i per tant aquests programadors no solen tenir gaires problemes per fer-les servir. És així perquè les llibreries SOAP s’encarreguen de crear i eliminar els missatges SOAP, i al programa només hi arriben les dades que s’han enviat. 
+</p>
+
+<p>
+Un client demana un servei i internament la biblioteca crea el paquet SOAP per a les dades que ha d’enviar i l’hi envia. Quan la biblioteca rep les dades elimina el paquet SOAP i envia les dades netes al programa (<span class="figref"><a href="#fig208"><span>figura</span></a></span>).
+</p>
+<div class="iocfigure"><a name="fig208"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+ Les biblioteques SOAP amaguen la implementació als programadors
+
+</figcaption><img src="../media/asxm04u4_18.png" alt="" /></figure>
+</div>
+<p>
+Per tant, excepte en petits detalls, els programadors es poden despreocupar de l’existència de SOAP i només s’han de preocupar de quins serveis volen oferir. 
+</p>
+
+<p>
+Tot i que no és absolutament necessari crear un client SOAP, és molt més senzill si es té el WSDL del servei ja que es disposa d’auxiliars que s’encarreguen de preparar els esquelets del programa.
+</p>
+<div class="iocimportant"><div class="ioccontent">
+<p>
+Gairebé sempre es pot obtenir el fitxer WSDL d’un servei web afegint al darrere de l’adreça del servei les lletres <strong><code>?wsdl</code></strong>. En alguns entorns aquest fitxer es genera automàticament en el moment en què és demanat i en d’altres és simplement un arxiu.
+</p>
+</div></div>
+<p>
+Un exemple d’això el tenim en la <span class="figref"><a href="#fig209"><span>figura</span></a></span>.
+</p>
+<div class="iocfigure"><a name="fig209"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Obtenir el WSDL d’un servei
+
+</figcaption><img src="../media/wsdlcrear.png" alt="" /></figure>
+</div>
+<p>
+Els entorns de programació solen oferir auxiliars i eines que simplifiquen al màxim la creació de serveis basats en SOAP, generant automàticament el codi necessari per implementar o fer servir el web i fent que el programador només s’hagi de preocupar de definir què ha de fer el servei web.
+</p>
+
+<p>
+Malgrat que els llenguatges més usats per desenvolupar serveis web són sobretot <strong>Java</strong> i els basats en la plataforma de <strong>Microsoft .NET</strong>, gairebé tots els llenguatges de programació tenen alguna biblioteca que els permet desenvolupar servidors i clients basats en SOAP. I a més s’ha de tenir en compte que el llenguatge usat és bastant irrellevant, ja que una de les característiques dels serveis web és que no importa en quin llenguatge o en quin sistema s’executin els servidors i els clients que podran operar entre si.
+</p>
+
+<p>
+Un dels ajuts més habituals consisteix a fer servir el WSDL del servei per crear automàticament tot el codi que cal per comunicar o generar el servei web. Per exemple, mitjançant el mòdul <strong>ZSI de Python</strong> es pot fer servir l’eina <em>wsdl2py</em> per crear les plantilles que continguin tot el necessari per implementar un client i un servidor que puguin treballar amb les funcions del servei que defineix el WSDL.
+</p>
+<pre class="code bash"><ol><li class="li1"><div class="de1">$ wsdl2py http:<span class="sy0">//</span>localhost:<span class="nu0">8080</span><span class="sy0">/</span>axis2<span class="sy0">/</span>services<span class="sy0">/</span>Bencalculat?wsdl</div></li><li class="li1"><div class="de1">import multifile, mimetools, urllib</div></li><li class="li1"><div class="de1">$ <span class="kw2">ls</span></div></li><li class="li1"><div class="de1">Bencalculat_client.py  Bencalculat_server.py  Bencalculat_types.py</div></li></ol></pre>
+
+<p>
+Moltes biblioteques en diferents llenguatges de programació ofereixen eines similars, que podeu veure en la <span class="tabref"><a href="#table69"><span>taula</span></a></span>.
+</p>
+<div class="ioctable ">
+<div class="titletable"><a name="table69"><span>Taula: </span></a>Crear codi a partir del WSDL</div>
+<div class="table"><table class="inline">
+	<tr class="row0">
+		<th class="col0"> Llenguatge </th><th class="col1"> Biblioteca/entorn </th><th class="col2 leftalign"> Eina                </th>
+	</tr>
+	<tr class="row1">
+		<td class="col0 leftalign"> Java       </td><td class="col1 leftalign"> Apache Axis2     </td><td class="col2"> java2wsdl wsdl2java </td>
+	</tr>
+	<tr class="row2">
+		<td class="col0 leftalign"> Java       </td><td class="col1 leftalign"> Apache CXF       </td><td class="col2"> java2wsdl wsdl2java </td>
+	</tr>
+	<tr class="row3">
+		<td class="col0 leftalign"> C#         </td><td class="col1 leftalign"> .NET             </td><td class="col2 leftalign"> wsdl                </td>
+	</tr>
+	<tr class="row4">
+		<td class="col0 leftalign"> C          </td><td class="col1 leftalign"> gSoap            </td><td class="col2 leftalign"> wsdl2h              </td>
+	</tr>
+	<tr class="row5">
+		<td class="col0 leftalign"> Perl       </td><td class="col1 leftalign"> SOAP::WSDL       </td><td class="col2 leftalign"> wsdl2perl           </td>
+	</tr>
+	<tr class="row6">
+		<td class="col0 leftalign"> Python     </td><td class="col1 leftalign"> ZSI              </td><td class="col2 leftalign"> wsdl2py             </td>
+	</tr>
+</table></div>
+</div>
+</div>
+
+<h3><a id="desenvolupament_de_serveis_basats_en_rest" >Desenvolupament de serveis basats en REST</a></h3>
+<div class="level3">
+
+<p>
+REST està tan integrat en la web que no hi ha gaire diferència entre desenvolupar programes client que funcionin amb REST i desenvolupar programes per connectar i treballar amb servidors web. 
+</p>
+
+<p>
+Els resultats de fer consultes a serveis REST no es diferencien gens ni mica de les pàgines web excepte en el fet que el resultat obtingut normalment, en comptes de rebre només resultats <acronym title="HyperText Markup Language">HTML</acronym>, està en un llenguatge de marques diferent com XML o JSON (<span class="figref"><a href="#fig210"><span>figura</span></a></span>).
+</p>
+
+<p>
+Per tant, qualsevol biblioteca que permeti crear clients HTTP serveix per desenvolupar un client de serveis web basats en REST. Es pot fer servir qualsevol de les biblioteques estàndard per desenvolupar clients HTTP, com per exemple HTTPClient de Java, la classe WebClient de .NET o httplib de Python.
+</p>
+
+<p>
+Els servidors són una mica més complexos però no gaire més, ja que només cal veure quina adreça es vol visitar per localitzar el recurs i quina instrucció ha fet servir el client per saber què hi vol fer. Aquesta tasca és molt més simple que el treball amb SOAP/WSDL i la majoria dels llenguatges de programació ja disposen d’alguna biblioteca per facilitar el desenvolupament d’aplicacions REST: JAX-RS, Restlet, Apache CXF, RESTeasy, RESTSharp, openRASTA…
+</p>
+<div class="iocfigure"><a name="fig210"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Desenvolupament REST
+
+</figcaption><img src="../media/asxm04u4_19.png" alt="" /></figure>
+</div>
+</div>
+
+<h3><a id="entorns_de_desenvolupament" >Entorns de desenvolupament</a></h3>
+<div class="level3">
+
+<p>
+Han aparegut tota una sèrie d’entorns de treball que faciliten encara més la creació i desplegament dels serveis web. Amb uns quants clics es pot crear i desplegar un servei web senzill en pocs segons.
+</p>
+
+<p>
+Com passa amb moltes de les tecnologies XML, la majoria d’aquests entorns estan basats sobretot en dues tecnologies de programació: Java i .NET. Vegem una llista d’aquests entorns en la <span class="tabref"><a href="#table70"><span>taula</span></a></span>.
+</p>
+<div class="ioctable ">
+<div class="titletable"><a name="table70"><span>Taula: </span></a>Entorns de desenvolupament per crear serveis web</div>
+<div class="table"><table class="inline">
+	<tr class="row0">
+		<th class="col0 leftalign"> Nom                                    </th><th class="col1"> Llenguatge </th><th class="col2 leftalign"> Serveis    </th>
+	</tr>
+	<tr class="row1">
+		<td class="col0 leftalign"> Apache Axis2                           </td><td class="col1 leftalign"> Java / C   </td><td class="col2"> SOAP, REST </td>
+	</tr>
+	<tr class="row2">
+		<td class="col0 leftalign"> Apache CXF                             </td><td class="col1 leftalign"> Java       </td><td class="col2"> SOAP, REST </td>
+	</tr>
+	<tr class="row3">
+		<td class="col0 leftalign"> Spring Web Services                    </td><td class="col1 leftalign"> Java       </td><td class="col2 leftalign"> SOAP       </td>
+	</tr>
+	<tr class="row4">
+		<td class="col0 leftalign"> Metro                                  </td><td class="col1 leftalign"> Java       </td><td class="col2 leftalign"> SOAP       </td>
+	</tr>
+	<tr class="row5">
+		<td class="col0 leftalign"> JAX-WS                                 </td><td class="col1 leftalign"> Java       </td><td class="col2 leftalign"> SOAP       </td>
+	</tr>
+	<tr class="row6">
+		<td class="col0 leftalign"> JAX-RS                                 </td><td class="col1 leftalign"> Java       </td><td class="col2 leftalign"> REST       </td>
+	</tr>
+	<tr class="row7">
+		<td class="col0 leftalign"> .NET Framework                         </td><td class="col1 leftalign"> .NET       </td><td class="col2"> SOAP, REST </td>
+	</tr>
+	<tr class="row8">
+		<td class="col0"> Windows Communication Foundation (WCF) </td><td class="col1 leftalign"> .NET       </td><td class="col2"> SOAP, REST </td>
+	</tr>
+</table></div>
+</div>
+</div>
+
+<h4><a id="apache_axis2" >Apache Axis2</a></h4>
+<div class="level4">
+
+<p>
+L’Apache Axis és una implementació de codi obert de serveis web que proporciona un entorn d’execució en Java i C. La implementació Axis2 funciona amb SOAP 1.1 i SOAP 1.2, però també ofereix compatibilitat integrada per a REST. 
+</p>
+
+<p>
+L’Axis2 ha estat durant molt de temps un dels entorns més usats a l’hora de crear serveis web SOAP.
+</p>
+
+<p>
+L’Axis2 proporciona:
+</p>
+<ul>
+<li class="level1"><div class="li"> Un entorn d’execució per a serveis web Java.</div>
+</li>
+<li class="level1"><div class="li"> Eines per crear WSDL a partir de codi Java.</div>
+</li>
+<li class="level1"><div class="li"> Eines per crear clients Java a partir del WSDL.</div>
+</li>
+<li class="level1"><div class="li"> Eines per desplegar, provar i monitorar serveis web.</div>
+</li>
+<li class="level1"><div class="li"> Integració amb servidors d’aplicacions i contenidors de miniaplicacions de servidor (<em>servlets</em>).</div>
+</li>
+</ul>
+
+<p>
+L’Axis2 inclou un servidor d’aplicacions que es pot usar directament o bé es pot fer servir com un component integrable en diferents servidors o contenidors d’aplicacions com el Tomcat o el Glassfish. 
+</p>
+
+<p>
+Proporciona un entorn web des del qual es poden gestionar, consultar i comprovar els serveis web que s’ofereixen (<span class="figref"><a href="#fig211"><span>figura</span></a></span>).
+</p>
+<div class="iocfigure"><a name="fig211"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+ Web principal de l’Axis2
+
+</figcaption><img src="../media/axis2.png" alt="" /></figure>
+</div>
+<p>
+L’entorn d’administració permet gestionar els serveis web de manera que se’n poden afegir de nous, desactivar-los parcialment o totalment, afegir mòduls de funcionament, etc. (<span class="figref"><a href="#fig212"><span>figura</span></a></span>).
+</p>
+<div class="iocfigure"><a name="fig212"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+L’eina d’administració de l’Axis2 permet fer qualsevol cosa amb els serveis web que s’hi instal·lin
+
+</figcaption><img src="../media/axis2admin.png" alt="" /></figure>
+</div>
+<p>
+De cadascun dels serveis oferts es mostra quines són les funcions que exporta el servei i el seu fitxer WSDL (<span class="figref"><a href="#fig213"><span>figura</span></a></span>).
+</p>
+<div class="iocfigure"><a name="fig213"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Informació dels serveis de l’Axis2
+
+</figcaption><img src="../media/axis2ws.png" alt="" /></figure>
+</div>
+<p>
+L’Axis2 permet que els mateixos serveis siguin consultats tant des de SOAP com des de REST (<span class="figref"><a href="#fig214"><span>figura</span></a></span>).
+</p>
+<div class="iocfigure"><a name="fig214"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Consulta d’un servei SOAP de l’Axis2 des del SoapUI 
+
+</figcaption><img src="../media/axis2soap.png" alt="" /></figure>
+</div>
+<p>
+Per fer servir una funció en REST es defineix la funció en l’adreça com si fos un recurs (<span class="figref"><a href="#fig215"><span>figura</span></a></span>).
+</p>
+<div class="iocfigure"><a name="fig215"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Consulta d’un servei REST de l’Axis2 amb Firefox
+
+</figcaption><img src="../media/axis2rest.png" alt="" /></figure>
+</div>
+<p>
+Per exemple, si en el servidor http://www.prova.cat:8080/ on hi ha instal·lat l’Axis2 hi tenim el servei <code>Calculadora</code> que exposa una funció anomenada <code>Suma()</code>, que rep els paràmetres <code>in1</code> i <code>in2</code> -els valors que s’han de sumar-, hem de fer una petició com la següent per sumar els nombres 1 i 2:
+</p>
+<pre class="code">http://www.prova.cat:8080/axis2/services/Calculadora/Sumar?in1=1&amp;in2=2</pre>
+
+</div>
+
+	 </article>
+     <div class="pnpage">
+      <div class="left-corner"></div>
+      <div id="prevpage">Anar a la p&agrave;gina anterior:<br /><a href="../../../WebContent/u4/a1/exercicis.html">Exercicis d'autoavaluació</a></div>
+      <div id="nextpage">Anar a la p&agrave;gina seg&uuml;ent:<br /><a href="../../../WebContent/u4/a2/activitats.html">Activitats</a></div>
+      <div class="right-corner"></div>
+     </div>
+    </div>
+    <footer class="footer">
+      <div><small>Aquest document està subjecte a una llicència oberta de Creative Commons, es reserva el dret de reconeixement de l'autoria, d'exigir que no se'n faci cap mena d'ús comercial. Si altereu o transformeu aquesta obra, o en genereu obres derivades, només podeu distribuir l'obra generada amb una llicència idèntica a aquesta.</small></div>
+    </footer>
+ </div>
+ <div id="back_preview" class="hidden"></div>
+ <div id="preview" class="hidden">
+  <div class="prevcontent"></div>
+ </div>
+ <div id="help-tooltips">
+  <div id="help-toc" class="hidden tooltip"><span>Taula de continguts:</span> Ofereix una vista general de l&#39;estructura del m&ograve;dul, que us facilitar&agrave; la navegaci&oacute; a trav&eacute;s dels seus continguts.<span class="arrow-left"></span></div> 
+  <div id="help-settings" class="hidden tooltip"><span>Opcions de format:</span> Permet configurar el format de lectura a partir de les vostres prefer&egrave;ncies, modificant la mida de la lletra, el color del fons, l&#39;amplada de la p&agrave;gina o l&#39;ocultaci&oacute; dels continguts complementaris, entre d&#39;altres.<span class="arrow-left"></span></div>
+  <div id="help-printer" class="hidden tooltip"><span>Imprimir:</span>  Envia el contingut seleccionat a la impressora.<span class="arrow-left"></span></div>
+  <div id="help-favorites" class="hidden tooltip"><span>Prefereits:</span> Permet desar aquelles parts del contingut a les que us interessi accedir en un moment posterior; us permetr&agrave; anar creant un repositori personalitzat de les seccions que considereu m&eacute;s rellevants. Un cop l&#39;hageu començat a fer servir se us mostrar&agrave; a sota un comptador que us informar&agrave; del nombre de preferits que s&#39;hagin emmagatzemat fins al moment.<span class="arrow-left"></span></div>
+  <div id="help-favcounter" class="hidden tooltip"><span>Comptador i llistat de preferits:</span> Indica el nombre de preferits que s&#39;han desat fins el moment; clicant damunt seu accedireu al llistat de preferits, i a trav&eacute;s d&#39;aquest podreu accedir directament als continguts que hageu emmagatzemat.<span class="arrow-left"></span></div>
+  <div id="help-help_icon" class="hidden tooltip"><span>Ajuda:</span> Aquesta opci&oacute; activa la informaci&oacute; de les funcionalitats del web tot situant el punter del ratol&iacute; al damunt dels diferents &iacute;tems.<span class="arrow-left"></span></div>
+  <div id="help-sidebar-hide" class="hidden tooltip"><span>Mostrar/Ocultar barra lateral:</span>  Deshabilita la barra d&#39;opcions, permetent la seva recuperaci&oacute; quan es desitgi.<span class="arrow-left"></span></div>
+  <div id="help-search" class="hidden tooltip"><span>Cerca:</span>  Introdu&iuml;u les paraules clau sobre aquells conceptes que desitgeu localitzar en els continguts del m&ograve;dul. Tamb&eacute; podeu excloure un terme de la cerca tot afegint-hi el signe &#8220;-&#8221; al davant.<span class="arrow-top"></span></div>
+  <div id="help-header" class="hidden tooltip"><span>Cap&ccedil;alera:</span>  Indica l&#39;apartat o secci&oacute; que es mostra en pantalla. Tingueu present que les capçaleres de segon, tercer i quart nivell tamb&eacute; es poden desar com a marcadors.<span class="arrow-left"></span></div>
+</div> 
+</body>
+</html>

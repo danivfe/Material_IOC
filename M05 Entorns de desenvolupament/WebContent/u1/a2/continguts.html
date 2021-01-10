@@ -1,0 +1,1469 @@
+<!doctype html>
+
+<!--[if lt IE 7 ]> <html class="ie ie6 no-js" lang="ca"> <![endif]-->
+<!--[if IE 7 ]>    <html class="ie ie7 no-js" lang="ca"> <![endif]-->
+<!--[if IE 8 ]>    <html class="ie ie8 no-js" lang="ca"> <![endif]-->
+<!--[if IE 9 ]>    <html class="ie ie9 no-js" lang="ca"> <![endif]-->
+<!--[if gt IE 9]><!--><html class="no-js" lang="ca"><!--<![endif]-->
+<!-- the "no-js" class is for Modernizr. -->
+
+<head id="www-sitename-com" data-template-set="html5-reset">
+
+	<meta charset="utf-8">
+	
+	<!-- Always force latest IE rendering engine (even in intranet) & Chrome Frame -->
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	
+	<title>Entorns de desenvolupament</title>
+	
+<!-- <meta name="title" content=""> --> 
+	<meta name="description" content="">
+	<!-- Google will often use this as its description of your page/site. Make it good. -->
+	
+	<meta name="google-site-verification" content="">
+	<!-- Speaking of Google, don't forget to set your site up: http://google.com/webmasters -->
+	
+	<meta name="author" content="Institut Obert de Catalunya">
+	<meta name="Copyright" content="Copyright Institut Obert de Catalunya 2011. All Rights Reserved.">
+
+	<!-- Dublin Core Metadata : http://dublincore.org/ -->
+	<meta name="DC.title" content="Entorns de desenvolupament">
+	<meta name="DC.subject" content="Informàtica i comunicacions">
+	<meta name="DC.creator" content="Institut Obert de Catalunya">
+	
+	<!--  Mobile Viewport Fix
+	j.mp/mobileviewport & davidbcalhoun.com/2010/viewport-metatag 
+	device-width : Occupy full width of the screen in its current orientation
+	initial-scale = 1.0 retains dimensions instead of zooming out if page height > device height
+	maximum-scale = 1.0 retains dimensions instead of zooming in if page width < device width
+	-->
+	<!-- Uncomment to use � use thoughtfully!
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+	-->
+
+	<link rel="shortcut icon" href="../../../img/favicon.ico">
+	<!-- This is the traditional favicon.
+		 - size: 16x16 or 32x32
+		 - transparency is OK
+		 - see wikipedia for info on browser support: http://mky.be/favicon/ -->
+		 
+	<link rel="apple-touch-icon" href="../../../img/apple-touch-icon.png">
+	<!-- The is the icon for iOS's Web Clip.
+		 - size: 57x57 for older iPhones, 72x72 for iPads, 114x114 for iPhone4's retina display (IMHO, just go ahead and use the biggest one)
+		 - To prevent iOS from applying its styles to the icon name it thusly: apple-touch-icon-precomposed.png
+		 - Transparency is not recommended (iOS will put a black BG behind the icon) -->
+	
+	<!-- CSS: screen, mobile & print are all in the same file -->
+	<link rel="stylesheet" href="../../../_/css/style.css">
+
+	<!-- CSS: jQuery UI -->
+	<link rel="stylesheet" href="../../../_/css/jquery-ui.css">
+	
+	<!-- all our JS is at the bottom of the page, except for Modernizr. -->
+	<script src="../../../_/js/modernizr-1.7.min.js"></script>
+	<script src="../../../_/js/Hyphenator.js" type="text/javascript"></script>
+	<script type="text/javascript">
+	   Hyphenator.config({
+		minwordlength : 4
+	   });
+	   Hyphenator.run();
+	</script>
+    <script src="../../../_/js/build.js" type="text/javascript"></script>
+</head>
+
+<body class="style-newspaper">
+
+<div class="wrapper"><!-- not needed? up to you: http://camendesign.com/code/developpeurs_sans_frontieres -->
+
+	<header id="header">
+		<div class="head"><a href="http://ioc.gencat.cat"><img src="../../../img/logo.png" alt="Institut Obert de Catalunya"/></a><a href="http://creativecommons.org/licenses/by-nc-sa/3.0/es/deed.ca"><img src="../../../img/license.png" alt="Llic&egrave;ncia" class="license"/></a></div>
+		<div class="headdocument"><a href="../../../index.html">Entorns de desenvolupament</a></div>
+        <div id="search" class="search" name="search">
+         <form id="frmsearch" action="../../../search.html" method="get">
+          <input type="text" name="q"/>
+        </form>
+        </div>
+	</header>
+   <div id="upbutton" class="upbutton" style="display:none;"><img src="../../../img/uparrow.png" alt="Pujar a l'inici de p&agrave;gina"/></div>
+   <aside id="aside">
+    <div id="menu">
+      <ul>
+       <li name="toc"><div><img src="../../../img/toc.png" alt="&Iacute;ndex"/></div></li>
+       <li name="settings"><div><img src="../../../img/settings.png" alt="Configuraci&oacute;"/></div></li>
+       <li name="printer"><div><img src="../../../img/printer.png" alt="Imprimir"/></div></li>
+       <li name="favorites"><div><img src="../../../img/favorites.png" alt="Favorits"/></div></li>
+       <li name="help_icon" class="help_icon"><div><img src="../../../img/help_icon.png" alt="Ajuda"/></div></li>
+      </ul>
+     </div>
+   </aside>
+   <div id="sidebar-hide" name="sidebar-hide"><img src="../../../img/arrows.png"/></div>
+   <section>
+     <div id="toc" class="hidden">
+      <div class="menucontent">
+        <ul>
+        <li id="u1" class="parentnode"><p><a href="../../../WebContent/u1/introduccio.html">1. Desenvolupament de programari</a></p><ul class="expander"><li id="u1introduccio"><a href="../../../WebContent/u1/introduccio.html">Introducció</a></li><li id="u1resum"><a href="../../../WebContent/u1/resum.html">Resum</a></li><li id="u1resultats"><a href="../../../WebContent/u1/resultats.html">Resultats d'aprenentatge</a></li><li id="u1referencies"><a href="../../../WebContent/u1/referencies.html">Referències</a></li><li id="u1a1" class="tocsection"><p id="u1a1continguts"><a href="../../../WebContent/u1/a1/continguts.html">Desenvolupament de programari</a><span class="buttonexp"></span></p><ul><li id="u1a1activitats"><a href="../../../WebContent/u1/a1/activitats.html">Activitats</a></li><li id="u1a1exercicis"><a href="../../../WebContent/u1/a1/exercicis.html">Exercicis</a></li><li id="u1a1annexos"><a href="../../../WebContent/u1/a1/annexos.html">Annexos</a></li></ul></li><li id="u1a2" class="tocsection"><p id="u1a2continguts"><a href="../../../WebContent/u1/a2/continguts.html">Instal·lació i ús d'entorns de desenvolupament</a><span class="buttonexp"></span></p><ul><li id="u1a2activitats"><a href="../../../WebContent/u1/a2/activitats.html">Activitats</a></li><li id="u1a2exercicis"><a href="../../../WebContent/u1/a2/exercicis.html">Exercicis</a></li><li id="u1a2annexos"><a href="../../../WebContent/u1/a2/annexos.html">Annexos</a></li></ul></li></ul></li><li id="" class="indexnode"><p><a href="../../../index.html">Anar a l&#39;&iacute;ndex general</a></p></li>
+        </ul>
+      </div>
+    </div>
+   </section>
+   <section>
+   <div id="settings" class="hidden">
+    <div class="menucontent">
+     <div class="allsettings">
+     <div class="settings">
+      <label>Font i Color</label>
+		<div class="setting-option">
+	        <ul class="fontBackground">
+				<li id="style-newspaper" title="Newspaper" class="appearance-style-newspaper"><span>Newspaper</span></li>
+                <li id="style-novel" title="Novel" class="appearance-style-novel"><span>Novel</span></li>
+                <li id="style-ebook" title="eBook" class="appearance-style-ebook"><span>eBook</span></li>
+				<li id="style-inverse" title="Inverse" class="appearance-style-inverse active"><span>Inverse</span></li>
+				<li id="style-athelas" title="Athelas" class="appearance-style-athelas"><span>Athelas</span></li>
+			</ul>
+		</div>
+     </div>
+	<div class="settings">
+      <label>Amplada</label>
+		<div class="setting-option">
+	        <div id="slider-width"></div>
+		</div>
+     </div>
+     <div class="settings">
+      <label>Mida de la font</label>
+		<div class="setting-option">
+	        <div id="slider-font"></div>
+		</div>
+     </div>
+     <div class="settings">
+      <label>Mida de la font</label>
+	  <div class="setting-option">
+       <form action="" class="sett-options">
+		<ul>
+		    <li><input type="checkbox" id="secondary-content" /><label for="secondary-content">Mostra recursos complementaris</label></li>
+		    <li><input type="checkbox" id="main-images" /><label for="main-images">Mostra imatges</label></li>
+		    <li><input type="checkbox" id="text-alignment" /><label for="text-alignment">Text justificat</label></li>
+			<li><input type="checkbox" id="text-hyphen" /><label for="text-hyphen">Partici&oacute; sil·l&agrave;bica</label></li>
+		</ul>
+       </form>
+	  </div>
+     </div>
+     </div>
+    </div>
+   </div>
+   </section>
+ <section>
+ <div id="favorites" class="hidden"></div>
+ </section>   
+ <div id="bridge" class="hidden"></div>
+ <div id="help" class="hidden">
+  <div class="helptitle">Dreceres del teclat<hr></div>
+  <div class="helpsection"><span>General</span>
+   <ul>
+    <li><span class="shortcut">g</span>: Anar al men&uacute; de navegaci&oacute;</li>
+    <li><span class="shortcut">o</span>: Anar a opcions</li>
+    <li><span class="shortcut">s</span>: Guardar la p&agrave;gina actual a favorits</li>
+    <li><span class="shortcut">p</span>: Imprimir la p&agrave;gina actual</li>
+    <li><span class="shortcut">?</span>: Mostrar/Ocultar l&#39;ajuda</li>
+   </ul>
+  </div>
+  <div class="helpsection"><span>Navegaci&oacute;</span>
+   <ul>
+    <li><span class="shortcut">i</span>: Anar a l&#39;&iacute;ndex general</li>
+    <li><span class="shortcut">t</span>: Anar a l&#39;inici de p&agrave;gina</li>
+    <li><span class="shortcut">b</span>: Anar al final de p&agrave;gina</li>
+    <li><span class="shortcut">j</span>: Anar cap endavant dintre la p&agrave;gina</li>
+    <li><span class="shortcut">k</span>: Anar cap enrere dintre la p&agrave;gina</li>
+    <li><span class="shortcut">h</span>: Anar a la p&agrave;gina anterior:</li>
+    <li><span class="shortcut">l</span>: Anar a la p&agrave;gina seg&uuml;ent:</li>
+   </ul>
+   </div>
+ </div>
+ <div id="favcounter" name="favcounter" class="hidden"><span></span></div>
+ <div id="navmenu" class="navmenu"><ul class="webnav"><li><a href="../../../index.html" title="Anar a l&#39;&iacute;ndex general">Inici</a></li><li><a href="../introduccio.html">Desenvolupament de programari </a></li><li>Instal·lació i ús d'entorns de desenvolupament</li></ul></div>
+	<div id="content" lang="ca" class="hyphenate text">
+     <article lang="ca" class="sheet">
+        <h1><a id="instal_lacio_i_us_d_entorns_de_desenvolupament"> Instal·lació i ús d'entorns de desenvolupament  </a></h1>
+    	
+<p>
+Per poder elaborar una aplicació és necessari utilitzar una sèrie d’eines que ens permetin escriure-la, depurar-la, traduir-la i executar-la. Aquest conjunt d’eines es coneix com a entorn de desenvolupament integrat i la seva funció és proporcionar un marc de treball per al llenguatge de programació.
+</p>
+
+<p>
+La selecció i una utilització òptima dels entorns de desenvolupament serà una decisió molt important en el procediment de creació de programari. L’entorn de desenvolupament és l’eina amb la qual el programador haurà de treballar durant la major part de temps que dediqui a la creació de noves aplicacions. 
+</p>
+
+<p>
+Si l’entorn de desenvolupament és el més adient per a un determinat llenguatge de programació i per al desenvolupament d’una aplicació determinada, i si el programador que la faci servir és coneixedor de la majoria de les funcionalitats i sap aprofitar totes les facilitats que ofereixi l’entorn, es podrà optimitzar el temps de desenvolupament de programari i facilitar l’obtenció d’un producte de qualitat. 
+</p>
+
+<h2><a id="funcions_d_un_entorn_de_desenvolupament" >Funcions d&#039;un entorn de desenvolupament</a></h2>
+<div class="level2">
+<div class="iocnote"><div class="ioccontent">
+<p>
+IDE vol dir, en anglès, Integrated Development Environment.
+</p>
+</div></div><div class="iocimportant"><div class="ioccontent">
+<p>
+Un <strong>entorn de desenvolupament integrat</strong>, o IDE, és un programa compost per una sèrie d’eines que utilitzen els programadors per desenvolupar codi. Aquest programa pot estar pensat per a la seva utilització amb un únic llenguatge de programació o bé pot donar cabuda a diversos. 
+</p>
+</div></div><div class="iocnote"><div class="ioccontent">
+<p>
+<acronym title="Graphical User Interface">GUI</acronym>, en anglès, vol dir Graphical User Interface.
+</p>
+</div></div>
+<p>
+Les eines que normalment componen un entorn de desenvolupament integrat són un sistema d’ajuda per a la construcció d’interfícies gràfiques d’usuari (<acronym title="Graphical User Interface">GUI</acronym>), un editor de text, un compilador/intèrpret i un depurador. 
+</p>
+
+</div>
+
+<h3><a id="interficies_grafiques_d_usuari" >Interfícies gràfiques d’usuari</a></h3>
+<div class="level3">
+
+<p>
+Les interfícies gràfiques d’usuari són un conjunt de funcionalitats que permeten incorporar, editar i eliminar components gràfics de forma senzilla en l’aplicació que s’està desenvolupant. Aquests components facilitaran la interacció de l’usuari amb l’ordinador.
+</p>
+
+</div>
+
+<h3><a id="editor_de_text" >Editor de text</a></h3>
+<div class="level3">
+
+<p>
+Un editor de text és un programa que permet crear i modificar arxius digitals compostos únicament per text sense format, coneguts comunament com arxius de text o text pla.
+</p>
+
+<p>
+L’editor de text és l’eina més utilitzada perquè ofereix la possibilitat de crear i modificar els continguts desenvolupats, el codi de programació que farà funcionar adequadament l’aplicació. 
+</p>
+
+<p>
+Sempre que l’IDE reconegui el llenguatge de programació (o disposi del component adequat) l’editor oferirà:
+</p>
+<ul>
+<li class="level1"><div class="li"> Ressaltat de sintaxi (<em>syntax highlighting</em>): les paraules clau seran reconegudes amb colors, cosa que facilitarà molt la feina del programador.</div>
+</li>
+<li class="level2"><div class="li"> Compleció de codi (<em>code completion</em>): es reconeixerà el codi que s’està escrivint i, per exemple en un objecte o classe, oferirà els seus atributs, propietats o mètodes per tal que el programador seleccioni quin vol referenciar.</div>
+</li>
+<li class="level2"><div class="li"> Corrector d’errors, normalment des d’un punt de vista de sintaxi.</div>
+</li>
+<li class="level2"><div class="li"> Regions plegables: ocultació de certes parts del codi, per tal de facilitar la visualització d’aquells fragments més rellevants.</div>
+</li>
+</ul>
+
+</div>
+
+<h3><a id="compilador" >Compilador</a></h3>
+<div class="level3">
+
+<p>
+En funció del llenguatge de programació utilitzat, l’IDE podrà oferir la funcionalitat de compilar-lo. Un compilador tradueix un codi de programació en un llenguatge màquina capaç de ser interpretat pels processadors i de ser executat. A l’hora de compilar un codi de programació, els entorns integrats de desenvolupament disposaran de diferents fases d’anàlisi del codi, com són la fase semàntica i la fase lexicogràfica. La compilació mostrarà els errors trobats o generarà codi executable, en el cas de trobar-ne cap.
+</p>
+
+</div>
+
+<h3><a id="interpret" >Intèrpret</a></h3>
+<div class="level3">
+
+<p>
+L’intèrpret tradueix el codi d’alt nivell a codi de bytes, però, a diferència del compilador, ho fa en temps d’execució.
+</p>
+
+</div>
+
+<h3><a id="depurador" >Depurador</a></h3>
+<div class="level3">
+
+<p>
+El depurador és un programa que permet provar i depurar el codi font d’un programa, facilitant la detecció d’errors. 
+</p>
+
+<p>
+Algunes de les funcionalitats típiques dels depuradors són:
+</p>
+<ul>
+<li class="level1"><div class="li"> Permetre l’execució línia a línia del codi validant els valors que van adquirint les variables.</div>
+</li>
+<li class="level2"><div class="li"> Pausar el programa en una determinada línia de codi, fent ús d’un o diversos punts de ruptura (<em>breakpoints</em>).</div>
+</li>
+<li class="level2"><div class="li"> Alguns depuradors ofereixen la possibilitat de poder modificar el contingut d’alguna variable mentre s’està executant.</div>
+</li>
+</ul>
+
+<p>
+Opcionalment, poden presentar un sistema d’accés a bases de dades i gestió d’arxius, un sistema de control de versions, un sistema de proves, un sistema de refactorització i un generador automàtic de documentació. 
+</p>
+
+</div>
+
+<h3><a id="acces_a_bases_de_dades_i_gestio_d_arxius" >Accés a bases de dades i gestió d’arxius</a></h3>
+<div class="level3">
+
+<p>
+Els llenguatges de quarta generació ofereixen la possibilitat d’integrar codi d’accés a bases de dades (o codi de sentències estructurades). Per facilitar aquesta funcionalitat és molt recomanable disposar de la possibilitat d’accedir directament a la base de dades des del mateix entorn de desenvolupament i no haver-ne d’utilitzar un altre. El mateix succeirà amb la gestió d’arxius.
+</p>
+
+</div>
+
+<h3><a id="control_de_versions" >Control de versions</a></h3>
+<div class="level3">
+
+<p>
+A mesura que un programador va desenvolupant noves línies de codi, és important tenir un històric de la feina feta o de les versions que s’han donat per bones o s’han modificat. El control de versions permet tornar a una versió anterior que sigui estable o que compleixi unes determinades característiques que els canvis fets no compleixen.
+</p>
+
+</div>
+
+<h3><a id="refactoritzacio" >Refactorització</a></h3>
+<div class="level3">
+
+<p>
+La refactorització (<em>refactoring</em>) és una tècnica de l’enginyeria de programari dirigida a reestructurar un codi font, alterant la seva estructura interna sense canviar el seu comportament extern.
+</p>
+
+</div>
+
+<h3><a id="documentacio_i_ajuda" >Documentació i ajuda</a></h3>
+<div class="level3">
+
+<p>
+La documentació i ajuda proveeix accés a documentació, manuals i ajuda contextual sobre les instruccions i la sintaxi dels llenguatges suportats.
+</p>
+
+</div>
+
+<h3><a id="exemples_d_entorn_integrat_de_desenvolupament" >Exemples d&#039;entorn integrat de desenvolupament</a></h3>
+<div class="level3">
+
+<p>
+A la <span class="figref"><a href="#Figure15"><span>figura</span></a></span> es mostra un exemple d’un entorn integrat de desenvolupament. Concretament, es tracta de l’eina Eclipse. 
+</p>
+<div class="iocfigure"><a name="Figure15"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Exemple d’entorn integrat de desenvolupament: Eclipse
+
+</figcaption><img src="../media/ic10m05u1_15.png" alt="" /></figure>
+</div>
+<p>
+Avui dia els entorns de desenvolupament proporcionen un marc de treball per a la majoria dels llenguatges de programació existents en el mercat (per exemple C, C++, C#, Java o Visual Basic, entre d’altres). A més, és possible que un mateix entorn de desenvolupament permeti utilitzar diversos llenguatges de programació, com és el cas d’Eclipse (al que es pot afegir suport de llenguatges addicionals mitjançant connectors -<em>plugins</em>-) o Visual Studio (que està pensat per treballar amb els llenguatges VB.Net, C#, C++…).  
+</p>
+
+<p>
+Com a exemples d’IDE multiplataforma es poden trobar, entre molts d’altres:
+</p>
+<ul>
+<li class="level1"><div class="li"> Eclipse, projecte multiplataforma (Windows, Linux, Mac) de codi obert, fundat per IBM el novembre de 2001, desenvolupat en Java.</div>
+</li>
+<li class="level1"><div class="li"> Netbeans, projecte multiplataforma (Windows, Linux, Mac, Solaris) de codi obert, fundat per Sun Microsystems el juny de 2000, desenvolupat en Java.</div>
+</li>
+<li class="level1"><div class="li"> Anjuta DevStudio, per al GNU/Linux, creat per Naba Kumar el 1999.</div>
+</li>
+<li class="level1"><div class="li"> JBuilder, eina multiplataforma (Windows, Linux, Mac), propietat de l’empresa Borland, apareguda el 1995. La versió 2008 incorpora tres edicions (Enterprise –de pagament–, Professional –de pagament– i Turbo –gratuïta-).</div>
+</li>
+<li class="level1"><div class="li"> JDeveloper, eina multiplataforma (Windows, Linux, Mac) gratuïta, propietat de l’empresa Oracle, apareguda el 1998, inicialment basada en JBuilder però desenvolupada des de 2001 en Java.</div>
+</li>
+</ul>
+
+<p>
+A part dels que hem esmentat, existeixen molts altres IDE, molt coneguts, per a determinades plataformes, com per exemple:
+</p>
+<ul>
+<li class="level1"><div class="li"> Visual Studio</div>
+</li>
+<li class="level1"><div class="li"> Dev-Pascal</div>
+</li>
+<li class="level1"><div class="li"> Dev-C++</div>
+</li>
+<li class="level1"><div class="li"> MonoDevelop</div>
+</li>
+</ul>
+
+</div>
+
+<h2><a id="instal_lacio_d_un_entorn_de_desenvolupament_eclipse" >Instal·lació d&#039;un entorn de desenvolupament. Eclipse</a></h2>
+<div class="level2">
+
+<p>
+Cada programari i cada entorn de desenvolupament té unes característiques i unes funcionalitats específiques. Això quedarà reflectit també en la instal·lació i en la configuració del programari. En funció de la plataforma, entorn o sistema operatiu en què es vulgui instal·lar el programari, es farà servir un paquet d’instal·lació o un altre, i s’hauran de tenir en compte unes opcions o unes altres en la seva configuració. 
+</p>
+<div class="iocreference"><div class="ioccontent">
+<p>
+Podeu trobar més documentació referent a l’entorn Eclipse als “Annexos” i “Activitats” dels materials Web d’aquest apartat.
+</p>
+</div></div><div class="iocreference"><div class="ioccontent">
+<p>
+Per ampliar el concepte de Màquina Virtual de Java podeu consultar l’apartat “Codi font, codi objecte i codi executable: màquines virtuals” de la unitat “Desenvolupament de programari”.
+</p>
+</div></div>
+<p>
+Tot seguit es mostra com es du a terme la instal·lació d’una eina integrada de desenvolupament de programari, com és l’Eclipse. Però també podreu observar els procediments per instal·lar altres eines necessàries o recomanades per treballar amb el llenguatge de programació JAVA, com l’Apache Tomcat o la Màquina Virtual de Java.
+</p>
+
+<p>
+Cal que tingueu presents els següents conceptes:
+</p>
+<ul>
+<li class="level1"><div class="li"> <strong>JVM</strong> (<em>Java Virtual Machine</em>, màquina virtual de Java) s’encarrega d’interpretar el codi de bytes i generar el codi màquina de l’ordinador (o dispositiu) en el qual s’executa l’aplicació. Això significa que ens cal una JVM diferent per a cada entorn.</div>
+</li>
+<li class="level1"><div class="li"> <strong>JRE</strong> (<em>Java Runtime Environment</em>) és un conjunt d’utilitats de Java que inclou la JVM, llibreries i el conjunt de programari necessari per executar les aplicacions client de Java, així com el connector per tal que els navegadors d’internet puguin executar les <em>applets</em>.</div>
+</li>
+<li class="level1"><div class="li"> <strong>JDK</strong> (<em>Java Development Kit</em>, <em>kit</em> de desenvolupament de Java) és el conjunt d’eines per a desenvolupadors; conté, entre altres coses, el JRE i el conjunt d’eines necessàries per compilar el codi, empaquetar-lo, generar documentació…</div>
+</li>
+</ul>
+
+<p>
+A la <span class="figref"><a href="#Figure16"><span>figura</span></a></span> es pot observar de forma esquemàtica el procés de conversió del codi Java, des de la creació del seu codi font fins a l’obtenció del codi màquina.
+</p>
+<div class="iocfigure"><a name="Figure16"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Procés de conversió del codi
+
+</figcaption><img src="../media/ic10m05u1_16.png" alt="" /></figure>
+</div>
+<p>
+El procés d’instal·lació consisteix en els següents passos:
+</p>
+<ol>
+<li class="level1"><div class="li"> Descarregar, instal·lar i configurar el JDK.</div>
+</li>
+<li class="level1"><div class="li"> Descarregar i instal·lar un servidor web o d’aplicacions. </div>
+</li>
+<li class="level1"><div class="li"> Descarregar, instal·lar i configurar Eclipse.</div>
+</li>
+<li class="level1"><div class="li"> Configurar JDK amb l’IDE d’Eclipse.</div>
+</li>
+<li class="level1"><div class="li"> Configurar el servidor Apache Tomcat en Eclipse.</div>
+</li>
+<li class="level1"><div class="li"> En cas de ser necessari, instal·lació de connectors.</div>
+</li>
+<li class="level1"><div class="li"> En cas de ser necessari, instal·lació de nou programari, com per exemple WindowBuilder. </div>
+</li>
+</ol>
+
+</div>
+
+<h3><a id="instal_lacio_del_java_development_kit" >Instal·lació del &#039;Java Development Kit&#039;</a></h3>
+<div class="level3">
+
+<p>
+Per poder executar Eclipse, cal tenir instal·lat el JDK prèviament a l’ordinador. El podeu descarregar a la pàgina <a href="http://www.oracle.com/technetwork/java/javase/downloads/index.html" class="urlextern" title="http://www.oracle.com/technetwork/java/javase/downloads/index.html"  rel="nofollow">bit.ly/1iOZIrD</a>.
+</p>
+
+</div>
+
+<h4><a id="descarregar_i_instal_lar_el_jdk" >Descarregar i instal·lar el JDK</a></h4>
+<div class="level4">
+
+<p>
+Podem diferenciar entre:
+</p>
+<ul>
+<li class="level1"><div class="li"> Java SE (Java Standard Edition): és la versió estàndard de la plataforma, essent aquesta plataforma la base per a tot entorn de desenvolupament en Java pel que fa a aplicacions client, d’escriptori o web.</div>
+</li>
+<li class="level1"><div class="li"> Java EE (Java Enterprise Edition): és la versió més gran de Java i s’utilitza en general per crear aplicacions grans de client/servidor i per a desenvolupament de WebServices.</div>
+</li>
+</ul>
+
+<p>
+En aquest curs s’utilitzaran les funcionalitats de Java SE.
+</p>
+
+<p>
+El fitxer és diferent en funció del sistema operatiu on s’hàgi d’instal·lar. Així:
+</p>
+<ul>
+<li class="level1"><div class="li"> Per als sistemes operatius Windows i Mac <acronym title="Operating System">OS</acronym> hi ha un fitxer instal·lable.</div>
+</li>
+<li class="level1"><div class="li"> Per als sistemes operatius GNU Linux que admeten paquets <em>.rpm</em> o <em>.deb</em> també hi ha disponibles paquets d’aquests tipus.</div>
+</li>
+<li class="level1"><div class="li"> Per a la resta de sistemes operatius GNU Linux hi ha un fitxer comprimit (acabat en <em>.tar.gz</em>).</div>
+</li>
+</ul>
+
+<p>
+En els dos primers casos, només cal seguir el procediment d’instal·lació habitual al sistema operatiu amb el qual es treballa.
+</p>
+
+<p>
+Al darrer cas, però, cal descomprimir el fitxer i copiar-lo a la carpeta on el volem instal·lar. Normalment, tots els usuaris tindran permís de lectura i execució sobre aquesta carpeta.
+</p>
+<div class="iocimportant"><div class="ioccontent">
+<p>
+A partir de la versió 11 del JDK Oracle distribueix el programari amb una <strong>llicència</strong> significativament més restrictiva que la de les versions anteriors. En concret, només pot utilitzar-se per a “desenvolupar, provar, fer prototipus i demostrar les vostres aplicacions”. S’exclou explícitament tot ús “per a finalitats comercials, de producció o de negoci interns” diferent de l’esmentat abans.
+</p>
+
+<p>
+En cas de necessitar-lo per algun d’aquests usos no permesos a la nova llicència, a més de les versions anteriors del JDK, existeixen versions de referència d’aquestes versions amb llicència  “GNU General Public License version 2, with the Classpath Exception”, que permet la majoria dels usos habituals. Aquestes versions estan enllaçades a la mateixa pàgina de descàrregues i, també, en l’adreça <a href="https://jdk.java.net/" class="urlextern" title="https://jdk.java.net/"  rel="nofollow">jdk.java.net</a>. 
+</p>
+</div></div>
+</div>
+
+<h3><a id="configurar_les_variable_d_entorn_java_home_i_path" >Configurar les variable d’entorn &#039;&#039;JAVA_HOME&#039;&#039; i &#039;&#039;PATH&#039;&#039;</a></h3>
+<div class="level3">
+<div class="iocnote"><div class="ioccontent">
+<p>
+Consulteu a l’annex “Configuració de Java i exemple inicial” per veure pas a pas la configuració de la variable d’entorn <code>PATH</code>.
+</p>
+</div></div>
+<p>
+Una vegada descarregat i instal·lat el JDK, cal configurar algunes variables d’entorn:
+</p>
+<ul>
+<li class="level1"><div class="li"> La variable <code>JAVA_HOME</code>: indica la carpeta on s’ha instal·lat el JDK. No és obligatori definir-la, però és molt convenient fer-ho, ja que molts programes cerquen en ella la ubicació del JDK. A més, facilita definir les dues varibles següents.</div>
+</li>
+<li class="level1"><div class="li"> La variable <code>PATH</code>. Ha d’apuntar al directori que conté l’executable de la màquina virtual. Sol ser la subcarpeta <em>bin</em> del directori on hem instal·lat el JDK.</div>
+</li>
+</ul>
+<div class="ioctextl"><div class="ioccontent"><p class="ioctitle">Variable CLASSPATH</p>
+<p>
+Una altra variable que té en compte el JDK és la variable <code>CLASSPATH</code>. Apunta a les carpetes on són les biblioteques pròpies de l’aplicació que es vol executar amb l’ordre <em>java</em>. És preferible, però, indicar la ubicació d’aquestes carpetes amb l’opció <em>-cp</em> de la mateixa ordre <em>java</em>, ja que cada aplicació pot tenir biblioteques diferents i les variables d’entorn afecten a tot el sistema.
+</p>
+</div></div>
+<p>
+Configurar la variable <code>PATH</code> és imprescindible perquè el sistema operatiu trobi les ordres del JDK i pugui executar-les.
+</p>
+
+</div>
+
+<h3><a id="instal_lacio_del_servidor_web" >Instal·lació del servidor web</a></h3>
+<div class="level3">
+
+<p>
+Un servidor web és un programa que serveix per atendre i respondre a les diferents peticions dels navegadors, proporcionant els recursos que sol·licitin per mitjà del protocol HTTP o el protocol HTTPS (la versió xifrada i autenticada). 
+</p>
+<div class="iocreference"><div class="ioccontent">
+<p>
+Podeu consultar l’annex “Descàrrega i instal·lació de l’Apache Tomcat” en la secció “Annexos”.
+</p>
+</div></div>
+<p>
+Bàsicament, un servidor web consta d’un intèrpret HTTP que es manté a l’espera de peticions de clients i respon amb el contingut sol·licitat. El client, un cop rebut el codi, l’interpreta i el mostra en el navegador.
+</p>
+
+<p>
+De fet, un servidor web sol executar de forma infinita el següent bucle:
+</p>
+<ul>
+<li class="level1"><div class="li"> Espera peticions al port TCP (Protocol de Control de Transmissió)  indicat (l’estàndard per defecte per a HTTP és el 80).</div>
+</li>
+<li class="level1"><div class="li"> Rep una petició.</div>
+</li>
+<li class="level1"><div class="li"> Cerca el recurs.</div>
+</li>
+<li class="level1"><div class="li"> Envia el recurs utilitzant la mateixa connexió mitjançant la qual va rebre petició.</div>
+</li>
+</ul>
+
+<p>
+El servidor web en què es basen els exemples d’aquesta unitat és Apache Tomcat.
+</p>
+
+</div>
+
+<h3><a id="instal_lacio_d_eclipse" >Instal·lació d&#039;Eclipse</a></h3>
+<div class="level3">
+
+<p>
+Eclipse és una aplicació de codi obert desenvolupada actualment per la Fundació Eclipse, una organització independent, sense ànim de lucre, que fomenta una comunitat de codi obert i la utilització d’un conjunt de productes, serveis, capacitats i complements per a la divulgació de l’ús de codi obert en el desenvolupament d’aplicacions informàtiques. Eclipse va ser desenvolupat originalment per IBM com el successor de VisualAge.
+</p>
+
+<p>
+Aquesta plataforma de programari és independent d’altres plataformes, entorns o sistemes operatius. Aquesta plataforma és utilitzada per desenvolupar entorns integrats de desenvolupament, com l’IDE de Java (Java Development Toolkit JDT).
+</p>
+
+<p>
+Com que Eclipse està desenvolupat en Java, és necessari, per a la seva execució, que hi hagi un JRE (Java Runtime Environment) instal·lat prèviament en el sistema. Per saber si es disposa d’aquest JRE instal·lat, es pot fer la prova a la web oficial de Java, a l’apartat ¿Tengo Java?: <a href="http://java.com/es/download/installed.jsp?detect=jre&amp;try=1" class="urlextern" title="http://java.com/es/download/installed.jsp?detect=jre&amp;try=1"  rel="nofollow">bit.ly/2P2YOv1</a>. A la <span class="figref"><a href="#Figure17"><span>figura</span></a></span> es pot veure un exemple d’aquesta prova. En el cas que no es tingui instal·lat, allà mateix se’n podrà descarregar la darrera versió i instal·lar-la sense cap dificultat. 
+</p>
+<div class="iocfigure"><a name="Figure17"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Validació de la correcta instal·lació del JRE a l’ordinador
+
+</figcaption><img src="../media/ic10m05u1_17.png" alt="" /></figure>
+</div>
+<p>
+Si desenvoluparem amb Java, com és el nostre cas, cal tenir instal·lat el JDK (recordeu que és un superconjunt del JRE).
+</p>
+
+<p>
+Les versions actuals de l’entorn Eclipse s’instal·len amb un instal·lador. Aquest, bàsicament s’encarrega de descomprimir, resoldre algunes dependències i crear els accessos directes.
+</p>
+
+<p>
+Aquest instal·lador es pot obtenir baixant-lo directament del lloc web oficial del Projecte Eclipse  <a href="http://www.eclipse.org/" class="urlextern" title="http://www.eclipse.org/"  rel="nofollow">www.eclipse.org</a>. Podeu trobar les versions per als diferents sistemes operatius en aquest enllaç: <a href="https://www.eclipse.org/downloads/packages/installer" class="urlextern" title="https://www.eclipse.org/downloads/packages/installer"  rel="nofollow">bit.ly/2Ppj1OP</a>. En aquesta pàgina, a més, trobareu les instruccions per utilitzar-lo. No són gens complexes.
+</p>
+
+<p>
+Al cas de GNU Linux i MAC <acronym title="Operating System">OS</acronym>, l’arxiu és un fitxer comprimit. Caldrà, doncs, descomprimir-lo i, a continuació executar l’instal·lador. Aquest és al fitxer <em>eclipse-inst</em>, dins la carpeta <em>eclipse</em>, que és una subcarpeta del resultat de descomprimir el fitxer anterior.
+</p>
+
+<p>
+Si només l’usuari actual utilitzarà l’IDE, pot realitzar-se la instal·lació sense utilitzar privilegis d’administrador o <em>root</em> i seleccionar, per la instal·lació, una carpeta pròpia d’aquest usuari. Si es dessitgés compartir la instal·lació entre diferents usuaris, caldria indicar a l’instal·lador una carpeta sobre la qual tots aquests usuaris tinguessin permís de lectura i execució.
+</p>
+
+<p>
+Un cop executem l’instal·lador, ens apareixerà una pantalla semblant a la de la <span class="figref"><a href="#fig70"><span>figura</span></a></span>.
+</p>
+<div class="iocfigure"><a name="fig70"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Pantalla inicial de l’instal·lador d’Eclipse
+
+</figcaption><img src="../media/ic10m05u1_70.png" alt="" /></figure>
+</div>
+<p>
+Com es veu a la <span class="figref"><a href="#fig72"><span>figura</span></a></span>, l’instal·lador demanarà quina versió volem instal·lar. La versió que utilitzarem és “Eclipse IDE for Java EE Developers”.
+</p>
+<div class="iocfigure"><a name="fig72"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Selecció de la versió d’Eclipse
+
+</figcaption><img src="../media/ic10m05u1_72.png" alt="" /></figure>
+</div>
+<p>
+A continuació, com es veu a la figura <span class="figref"><a href="#fig73"><span>figura</span></a></span>, demanarà la carpeta on farem la instal·lació.
+</p>
+<div class="iocfigure"><a name="fig73"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Selecció de la carpeta on fer la instal·lació
+
+</figcaption><img src="../media/ic10m05u1_73.png" alt="" /></figure>
+</div>
+<p>
+Per seleccionar la carpeta correcta, cal tenir en compte quins usuaris utilitzaran l’entorn. Tots ells han de tenir permís de lectura i execució sobre la carpeta en qüestió. Un cop introduïda la carpeta, podem seleccionar les opcions dels menús i accessos directes o llençadores que desitgem i clicar el botó <em>INSTALL</em> perquè comenci la instal·lació.
+</p>
+
+<p>
+Durant la instal·lació ens apareixerà una pantalla de progrés com la que es veu a la <span class="figref"><a href="#fig78"><span>figura</span></a></span>. 
+</p>
+<div class="iocfigure"><a name="fig78"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Pantalla de progrés de la instal·lació
+
+</figcaption><img src="../media/ic10m05u1_78.png" alt="" /></figure>
+</div>
+<p>
+També se’ns demanarà que acceptem les llicències del programari que s’instal·larà, com mostra la <span class="figref"><a href="#fig74"><span>figura</span></a></span>.
+</p>
+<div class="iocfigure"><a name="fig74"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Pantalla amb les llicències que cal acceptar
+
+</figcaption><img src="../media/ic10m05u1_74.png" alt="" /></figure>
+</div>
+<p>
+Un cop acabada la instal·lació se’ns mostra una pantalla com la de la <span class="figref"><a href="#fig79"><span>figura</span></a></span> que ens convida a executar directament l’entorn.
+</p>
+<div class="iocfigure"><a name="fig79"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Instal·lació finalitzada
+
+</figcaption><img src="../media/ic10m05u1_79.png" alt="" /></figure>
+</div>
+<p>
+Aquest primer cop podrem executar l’entorn Eclipse fent clic al botó <em>LAUNCH</em>. La resta de vegades, caldrà invocar-lo des dels accessos directes o llençadores, si s’han creat o, en cas contrari, invocant directament l’executable. Aquest s’anomena <em>eclipse</em> i el trobareu a en una subcarpeta de la carpeta d’instal·lació que s’anomena també <em>eclipse</em>. La ruta exacta pot variar d’una versió a una altra.
+</p>
+
+<p>
+Si en un futur calgués desinstal·lar-lo, només s’hauria d’esborrar la carpeta on s’ha instal·lat ja que la instal·lació d’Eclipse no apareix al respositori de Linux ni al panell de control a Windows.
+</p>
+
+<p>
+Quan executem l’entorn, ens apareixerà una pantalla com la que mostra la figura <span class="figref"><a href="#fig76"><span>figura</span></a></span>.
+</p>
+<div class="iocfigure"><a name="fig76"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Pantalla d’inici d’Eclipse
+
+</figcaption><img src="../media/ic10m05u1_76.png" alt="" /></figure>
+</div>
+<p>
+De seguida se’ns demanarà demanarà a quina carpeta caldrà ubicar l’espai de treball, com es veu a la <span class="figref"><a href="#Figure24"><span>figura</span></a></span>. Podem demanar-li que el recordi per a la resta d’execucions activant l’opció “Use this as the default and do not ask again”.
+</p>
+<div class="iocfigure"><a name="Figure24"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Escollir la ubicació de l’espai de treball
+
+</figcaption><img src="../media/ic10m05u1_24.png" alt="" /></figure>
+</div>
+<p>
+A partir d’aquest moment, ja es podrà utilitzar l’IDE Eclipse, havent d’acceptar en la primera execució els termes d’ús establerts (<span class="figref"><a href="#Figure26"><span>figura</span></a></span>).
+</p>
+<div class="iocfigure"><a name="Figure26"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Acceptació dels termes d’ús de l’aplicació Eclipse
+
+</figcaption><img src="../media/ic10m05u1_26.png" alt="" /></figure>
+</div>
+<p>
+La primera vegada que l’executem, es mostrarà la pestanya de benvinguda, com es veu a la <span class="figref"><a href="#fig80"><span>figura</span></a></span>. Podem demanar que no ens la mostri més desactivant l’opció “Always show Welcome at start up”.
+</p>
+<div class="iocfigure"><a name="fig80"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Entorn de treball d’Eclipse
+
+</figcaption><img src="../media/ic10m05u1_80.png" alt="" /></figure>
+</div>
+<p>
+
+Un cop tancada aquesta pestanya, l’entorn de treball serà similar al mostrat per la <span class="figref"><a href="#Figure28"><span>figura</span></a></span>.
+</p>
+<div class="iocfigure"><a name="Figure28"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Entorn de treball d’Eclipse
+
+</figcaption><img src="../media/ic10m05u1_28.png" alt="" /></figure>
+</div>
+</div>
+
+<h3><a id="configuracio_de_jdk_amb_l_ide_eclipse" >Configuració de JDK amb l&#039;IDE Eclipse</a></h3>
+<div class="level3">
+
+<p>
+Arribats a aquest punt, es parametritzarà l’entorn d’Eclipse amb el JDK instal·lat. Es pot observar aquest procediment a les figures següents.
+</p>
+
+<p>
+A la <span class="figref"><a href="#Figure29"><span>figura</span></a></span> es mostra l’opció de menú que cal seleccionar.
+</p>
+<div class="iocfigure"><a name="Figure29"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Parametrització de l’entorn d’Eclipse
+
+</figcaption><img src="../media/ic10m05u1_29.png" alt="" /></figure>
+</div>
+<p>
+A la <span class="figref"><a href="#Figure30"><span>figura</span></a></span> s’arriba a l’apartat “Preferències”, on es mostren els JRE instal·lats. Per defecte, no hi ha cap JRE instal·lat, amb la qual cosa s’haurà d’afegir el que s’hagi instal·lat.
+</p>
+<div class="iocfigure"><a name="Figure30"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Especificació del JRE o JDK instal·lat
+
+</figcaption><img src="../media/ic10m05u1_30.png" alt="" /></figure>
+</div>
+<p>
+A la <span class="figref"><a href="#Figure31"><span>figura</span></a></span> es mostra el diàleg per afegir el JRE seleccionat.
+</p>
+<div class="iocfigure"><a name="Figure31"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Especificació del JRE o JDK instal·lat
+
+</figcaption><img src="../media/ic10m05u1_31.png" alt="" /></figure>
+</div>
+<p>
+Tot seguit caldrà especificar la ruta on s’ha instal·lat el JDK, abans de finalitzar la parametrització (<span class="figref"><a href="#Figure32"><span>figura</span></a></span>).
+</p>
+<div class="iocfigure"><a name="Figure32"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Especificació del JRE o JDK instal·lat
+
+</figcaption><img src="../media/ic10m05u1_32.png" alt="" /></figure>
+</div>
+</div>
+
+<h3><a id="configuracio_del_servidor_web_amb_l_ide_eclipse" >Configuració del servidor web amb l&#039;IDE Eclipse</a></h3>
+<div class="level3">
+
+<p>
+A la <span class="figref"><a href="#Figure33"><span>figura</span></a></span> i <span class="figref"><a href="#Figure34"><span>figura</span></a></span>  es mostra com seleccionar la pestanya Servers de l’IDE per fer-la visible, si no ho estava prèviament. 
+</p>
+<div class="iocfigure"><a name="Figure33"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Mostrar la vista de servidors
+
+</figcaption><img src="../media/ic10m05u1_33.png" alt="" /></figure>
+</div><div class="iocfigure"><a name="Figure34"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Selecció de la vista a visualitzar: servidors
+
+</figcaption><img src="../media/ic10m05u1_34.png" alt="" /></figure>
+</div>
+<p>
+En la part inferior de la <span class="figref"><a href="#Figure35"><span>figura</span></a></span> es visualitza la vista de servidors buida; s’hi haurà d’indicar el servidor d’aplicacions. 
+</p>
+<div class="iocfigure"><a name="Figure35"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Afegir un nou servidor
+
+</figcaption><img src="../media/ic10m05u1_35.png" alt="" /></figure>
+</div>
+<p>
+A la <span class="figref"><a href="#Figure36"><span>figura</span></a></span> i <span class="figref"><a href="#Figure37"><span>figura</span></a></span> queda explicat com indicar quin és el servidor d’aplicacions.
+</p>
+
+<p>
+Cal tenir cura de triar la versió que s’ha instal·lat (les captures s’han realitzat amb la versió 7, però la vostra pot ser una altra).
+</p>
+<div class="iocfigure"><a name="Figure36"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Selecció del servidor
+
+</figcaption><img src="../media/ic10m05u1_36.png" alt="" /></figure>
+</div><div class="iocfigure"><a name="Figure37"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Especificació de la ruta del servidor
+
+</figcaption><img src="../media/ic10m05u1_37.png" alt="" /></figure>
+</div>
+</div>
+
+<h3><a id="instal_lacio_de_connectors" >Instal·lació de connectors</a></h3>
+<div class="level3">
+<div class="iocreference"><div class="ioccontent">
+<p>
+Podeu consultar l’annex “Instal·lació de connectors” en els materials Web.
+</p>
+</div></div>
+<p>
+Una vegada instal·lat l’Eclipse, caldrà afegir aquells complements que siguin necessaris per a una correcta execució. La descàrrega bàsica de l’entorn Eclipse inclou algunes de les funcionalitats més bàsiques, però sempre és desitjable obtenir alguna funcionalitat extra. Aquestes funcionalitats es troben en els connectors, que caldrà localitzar, descarregar i instal·lar.
+</p>
+<div class="iocimportant"><div class="ioccontent">
+<p>
+<strong>Connectors</strong> són un conjunt de components de programari que afegiran funcionalitats noves a les aplicacions instal·lades.
+</p>
+</div></div>
+<p>
+En l’apartat “Community” del lloc web oficial d’Eclipse es poden trobar enllaços a centenars de connectors. Aquests poden haver estat desenvolupats per programadors de la mateixa Fundació o haver-ho estat per usuaris de l’aplicació que volen compartir amb altres usuaris de forma altruista complements que ells mateixos han desenvolupat per solucionar alguna mancança que han trobat.
+</p>
+<div class="iocimportant"><div class="ioccontent">
+<p>
+És molt important una <strong>selecció acurada dels connectors</strong>. Existeixen molts connectors que es poden instal·lar, però a mesura que es vagin afegint, això influirà en el rendiment de l’IDE Eclipse, especialment, en el temps d’arrencada inicial de l’aplicació.
+</p>
+</div></div>
+</div>
+
+<h3><a id="instal_lacio_de_components_per_al_desenvolupament_d_aplicacions_gui" >Instal·lació de components per al desenvolupament d&#039;aplicacions GUI</a></h3>
+<div class="level3">
+
+<p>
+El component que emprarem en aquesta unitat per desenvolupar aplicacions <acronym title="Graphical User Interface">GUI</acronym> és <strong>WindowsBuilder Pro</strong>.
+</p>
+
+</div>
+
+<h4><a id="instal_lacio_del_component" >Instal·lació del component</a></h4>
+<div class="level4">
+
+<p>
+Per tal d’instal·lar-lo s’haurà d’accedir a l’opció del menú <em>Help</em> i seleccionar l’opció <em>Install new software</em>. Ens apareixerà la finestra de la <span class="figref"><a href="#fig75"><span>figura</span></a></span>.
+</p>
+<div class="iocfigure"><a name="fig75"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Instal·lació de components
+
+</figcaption><img src="../media/ic10m05u1_75.png" alt="" /></figure>
+</div>
+<p>
+En ella caldrà fer clic al botó <em>Add…</em>. Se’ns obre una finestra com la de la <span class="figref"><a href="#fig77"><span>figura</span></a></span>. En ella posarem <em>WindowBuilder</em> a l’apartat <em>Name</em> i, a l’apartat <em>Location</em>, l’adreça <a href="http://download.eclipse.org/windowbuilder/lastgoodbuild" class="urlextern" title="http://download.eclipse.org/windowbuilder/lastgoodbuild"  rel="nofollow">bit.ly/2X4c31e</a>, que és l’adreça des d’on s’instal·la el connector.
+</p>
+<div class="iocfigure"><a name="fig77"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Afegir un repositori
+
+</figcaption><img src="../media/ic10m05u1_77.png" alt="" /></figure>
+</div>
+<p>
+Ens apareix una finestra com la de la <span class="figref"><a href="#fig81"><span>figura</span></a></span>. En ella cal fer clic al botó <em>Select All</em> i, a continuació, novament clic al botó <em>Next&gt;</em>. Després, només caldrà seguir les indicacions de l’assistent i, quan aquest ens ho demani, reiniciar l’entorn Eclipse.
+</p>
+<div class="iocfigure"><a name="fig81"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Instal·lació de WindowsBuilder
+
+</figcaption><img src="../media/ic10m05u1_81.png" alt="" /></figure>
+</div>
+</div>
+
+<h4><a id="obtencio_del_run-time_de_swt" >Obtenció del Run-time de SWT</a></h4>
+<div class="level4">
+
+<p>
+Una vegada descarregat el Run-time de SWT (Standard Widget Toolkit), es descomprimeix i s’ubica en un determinat directori.
+</p>
+
+<p>
+Podeu descarregar el Run-time de SWT a la pàgina <a href="http://www.eclipse.org/swt/" class="urlextern" title="http://www.eclipse.org/swt/"  rel="nofollow">www.eclipse.org/swt</a>.
+</p>
+
+<p>
+S’especifica la seva <acronym title="Uniform Resource Locator">URL</acronym> com a variable d’entorn.
+</p>
+<pre class="code">CLASSPATH = URL/swt.jar</pre>
+
+</div>
+
+<h2><a id="us_basic_d_un_entorn_de_desenvolupament_eclipse" >Ús bàsic d&#039;un entorn de desenvolupament. Eclipse</a></h2>
+<div class="level2">
+
+<p>
+Una vegada instal·lat el programari, cal fer una revisió del seu entorn de treball i revisar els espais que ofereix i les funcions de cadascun d’ells. Dintre dels apartats es poden identificar, entre d’altres, els següents:
+</p>
+<ul>
+<li class="level1"><div class="li"> Editor.</div>
+</li>
+<li class="level1"><div class="li"> Vistes.</div>
+</li>
+<li class="level1"><div class="li"> Barra d’eines principal.</div>
+</li>
+<li class="level1"><div class="li"> Barres de perspectives.</div>
+</li>
+</ul>
+
+</div>
+
+<h3><a id="editors" >Editors</a></h3>
+<div class="level3">
+
+<p>
+La finestra principal (la més gran a la <span class="figref"><a href="#Figure39"><span>figura</span></a></span>) es diu Editor. Els editors són el lloc on es podrà desenvolupar el codi de programació, podent-lo afegir, modificar o esborrar. És possible tenir diversos editors oberts al mateix temps, apilats un sobre l’altre. A la part superior de la finestra d’editors, es mostraran solapes que permeten accedir a cada un dels editors oberts (o bé tancar-los).
+</p>
+<div class="iocfigure"><a name="Figure39"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Identificació de l’espai Editor
+
+</figcaption><img src="../media/ic10m05u1_39.png" alt="" /></figure>
+</div>
+</div>
+
+<h3><a id="vistes" >Vistes</a></h3>
+<div class="level3">
+
+<p>
+Les Vistes són un altre tipus de finestres, anomenades finestres secundàries. Serveixen per a qualsevol cosa, des de navegar per un arbre de directoris fins a mostrar el contingut d’una consulta SQL. Són finestres auxiliars destinades a mostrar informació i resultats de compilacions o logs, requerir dades…
+</p>
+<div class="iocfigure"><a name="Figure40"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Identificació dels espais Vistes
+
+</figcaption><img src="../media/ic10m05u1_40.png" alt="" /></figure>
+</div>
+<p>
+A la <span class="figref"><a href="#Figure40"><span>figura</span></a></span> es mostren dos tipus de vistes:
+</p>
+<ul>
+<li class="level1"><div class="li"> La vista vertical de l’esquerra mostra la jerarquia dels projectes (quan n’hi hagi).</div>
+</li>
+<li class="level1"><div class="li"> La vista horitzontal inferior mostra un petit històric de tasques pendents que pot introduir l’usuari, de forma directa, o Eclipse, en funció de determinats esdeveniments.</div>
+</li>
+</ul>
+
+<p>
+Per seleccionar quines són les Vistes que s’han de mostrar, s’utilitza l’opció <em>Show View</em> al menú <em>Window</em> (vegeu la <span class="figref"><a href="#Figure41"><span>figura</span></a></span>).
+</p>
+<div class="iocfigure"><a name="Figure41"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+‘Show View’
+
+</figcaption><img src="../media/ic10m05u1_41.png" alt="" /></figure>
+</div>
+</div>
+
+<h3><a id="barres_d_eines" >Barres d&#039;eines</a></h3>
+<div class="level3">
+
+<p>
+Un altre dels components de l’entorn són les Barres d’eines. N’hi ha dues: la Barra d’eines principal i la Barra de perspectives.
+</p>
+
+</div>
+
+<h4><a id="barra_d_eines_principal" >Barra d’eines principal</a></h4>
+<div class="level4">
+
+<p>
+La Barra d’eines principal conté accessos directes a les operacions més usuals. És una barra de menú que tindrà l’accés a totes les opcions del programari (vegeu la <span class="figref"><a href="#Figure42"><span>figura</span></a></span>).
+</p>
+<div class="iocfigure"><a name="Figure42"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Barra d’eines principal
+
+</figcaption><img src="../media/ic10m05u1_42.png" alt="" /></figure>
+</div>
+</div>
+
+<h4><a id="barra_de_perspectives" >Barra de perspectives</a></h4>
+<div class="level4">
+<div class="iocimportant"><div class="ioccontent">
+<p>
+Una <strong>perspectiva</strong> és un conjunt de finestres (editors i vistes) relacionades entre si.
+</p>
+</div></div>
+<p>
+La Barra de perspectives conté accessos directes a les perspectives que s’estan utilitzant en el projecte. Per exemple, hi ha una perspectiva Java que facilita el desenvolupament d’aplicacions Java i que inclou, a més de l’Editor, Vistes per navegar per les classes, els paquets…
+</p>
+
+<p>
+Es pot seleccionar les perspectives actives -les que es mostren a la Barra de perspectives- utilitzant l’opció <em>Open Perspective</em> del menú <em>Window</em>. Des d’aquest mateix menú també és possible definir perspectives personalitzades. Es pot observar a la <span class="figref"><a href="#Figure43"><span>figura</span></a></span>.
+</p>
+
+<p>
+A més de la Barra d’eines principal, cada vista pot tenir la seva pròpia barra d’eines.
+</p>
+<div class="iocfigure"><a name="Figure43"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Barres de perspectives
+
+</figcaption><img src="../media/ic10m05u1_43.png" alt="" /></figure>
+</div>
+</div>
+
+<h2><a id="edicio_de_programes" >Edició de programes</a></h2>
+<div class="level2">
+
+<p>
+L’edició de programes és la part més important de les que es duran a terme amb Eclipse. Tant la creació com la modificació i el manteniment d’aplicacions necessitaran d’un domini de l’eina en les seves funcionalitats. Una vegada vist com instal·lar l’Eclipse i el seu entorn de treball, el millor per mostrar com editar, crear i mantenir programes és mostrar-ho amb un exemple.
+</p>
+
+<p>
+
+</p>
+
+<p>
+Amb la versió estàndard de l’entorn integrat de desenvolupament Eclipse es distribueix el connector necessari per programar en llenguatge Java, el nom del qual és JDT.  És important tenir això en compte, ja que Eclipse és un IDE que no està orientat específicament a cap llenguatge de programació en concret. Si es volgués aprofitar l’eina per desenvolupar en un altre llenguatge de programació, caldria descarregar el connector corresponent per tal que li donés suport. 
+</p>
+
+</div>
+
+<h3><a id="exemple_d_utilitzacio_d_eclipseprojecte_calculadora" >Exemple d’utilització d’Eclipse: &quot;projecte Calculadora&quot;</a></h3>
+<div class="level3">
+
+<p>
+Es tracta d’un exemple senzill d’implementar i, per això precisament, és el més adient per poder entendre com utilitzar de forma bàsica aquesta eina integrada de desenvolupament. A la <span class="figref"><a href="#Figure44"><span>figura</span></a></span> es pot observar un exemple de quina seria la interfície gràfica que es vol implementar.
+</p>
+<div class="iocfigure"><a name="Figure44"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Calculadora
+
+</figcaption><img src="../media/ic10m05u1_44.png" alt="" /></figure>
+</div><div class="iocnote"><div class="ioccontent">
+<p>
+Un projecte agrupa un conjunt de recursos relacionats entre si (codi font, diagrames de classes, documentació…).
+</p>
+</div></div>
+<p>
+Per poder dur a terme un programa nou en Eclipse serà necessari crear un projecte. Per crear un projecte, com es pot veure a la <span class="figref"><a href="#Figure45"><span>figura</span></a></span>, caldrà escollir l’opció del menú <em>Arxiu</em> / <em>Nou</em> / <em>Projecte</em>, des de la Barra d’eines principal o des de la vista Navigator (obrint el menú contextual amb el botó dret del ratolí i la opció <em>Nou</em> / <em>Project</em>).
+</p>
+<div class="iocfigure"><a name="Figure45"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Nou projecte
+
+</figcaption><img src="../media/ic10m05u1_45.png" alt="" /></figure>
+</div>
+<p>
+A la <span class="figref"><a href="#Figure46"><span>figura</span></a></span> es pot observar la finestra que es mostra al crear un nou projecte.
+</p>
+<div class="iocfigure"><a name="Figure46"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Projecte de tipus WindowBuilder
+
+</figcaption><img src="../media/ic10m05u1_46.png" alt="" /></figure>
+</div>
+<p>
+Qualsevol de les opcions mostrarà l’assistent de creació de projectes que es pot veure a la <span class="figref"><a href="#Figure47"><span>figura</span></a></span> i a la <span class="figref"><a href="#Figure48"><span>figura</span></a></span>.
+</p>
+<div class="iocfigure"><a name="Figure47"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Assistent de creació del projecte
+
+</figcaption><img src="../media/ic10m05u1_47.png" alt="" /></figure>
+</div>
+<p>
+Per iniciar un nou projecte de tipus Window s’ha de seleccionar l’opció <em>WindowBuilder</em> / <em>SWT Designer</em> / <em>SWT</em> / <em>JFace Java Project</em>. 
+</p>
+
+<p>
+Aquesta opció demanarà que s’indiqui un nom i una ubicació per al nou projecte. Com es pot observar a la <span class="figref"><a href="#Figure48"><span>figura</span></a></span>, es podran parametritzar algunes característiques del nou projecte, com poden ser, entre altres: 
+</p>
+<ul>
+<li class="level1"><div class="li"> Seleccionar la carpeta on s’emmagatzemaran les llibreries (JAR) que necessita el projecte.</div>
+</li>
+<li class="level1"><div class="li"> Definir variables d’entorn.</div>
+</li>
+<li class="level1"><div class="li"> Indicar si hi haurà dependències del projecte que s’està creant en relació amb projectes ja duts a terme (existents en el mateix espai de treball). </div>
+</li>
+<li class="level1"><div class="li"> Crear una carpeta per emmagatzemar el codi de programació i una de diferent per emmagatzemar les classes una vegada ja compilades. </div>
+</li>
+</ul>
+<div class="iocfigure"><a name="Figure48"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Assistent de creació del projecte
+
+</figcaption><img src="../media/ic10m05u1_48.png" alt="" /></figure>
+</div>
+<p>
+Dins d’aquestes opcions cal fer alguns comentaris. Cal recomanar sempre definir una carpeta per contenir el codi font, amb un nom clar i indicatiu del fet que hi haurà l’origen del projecte, i una altra amb un nom per indicar que contindrà els arxius binaris, on es deixaran els .class generats. També cal indicar que a l’opció de Llibreries es poden afegir tots els JAR que siguin necessaris.
+</p>
+
+<p>
+Totes aquestes configuracions poden modificar-se en qualsevol moment a través del menú contextual de la vista Navegador, en l’opció <em>Propietats</em>. 
+</p>
+
+<p>
+A la <span class="figref"><a href="#Figure49"><span>figura</span></a></span> es pot observar, en crear el projecte, com s’obrirà de forma automàtica la perspectiva Java, que és la col·lecció de Vistes que defineix el connector JDT. Si la perspectiva Java està activa, s’afegeixen a la Barra d’eines principal alguns botons extra que permeten accedir amb rapidesa a les funcions més usuals (execució del codi, depuració del codi, creació de noves classes…)
+</p>
+<div class="iocfigure"><a name="Figure49"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+IDE una vegada creat el projecte
+
+</figcaption><img src="../media/ic10m05u1_49.png" alt="" /></figure>
+</div>
+<p>
+Una vegada creat el projecte, s’haurà de crear una nova classe on es dissenyarà la calculadora. La creació de la classe es du a terme executant, en la Barra d’eines, la ruta <em>Arxiu</em> / <em>Nou</em> / <em>Altres</em>, on s’inicia un assistent que permetrà especificar el tipus d’element a crear. En el cas de la Calculadora s’haurà de seleccionar <em>WindowBuilder</em> / <em>SWT Designer</em> / <em>SWT</em> / <em>Application Window</em> (vegeu la <span class="figref"><a href="#Figure50"><span>figura</span></a></span>).
+</p>
+<div class="iocfigure"><a name="Figure50"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Nou element de tipus Application Window
+
+</figcaption><img src="../media/ic10m05u1_50.png" alt="" /></figure>
+</div>
+<p>
+Tal com es pot observar en la <span class="figref"><a href="#Figure51"><span>figura</span></a></span>, l’assistent permet especificar la ruta on s’emmagatzemarà la classe, el paquet, el nom de la classe i el tipus de mètode que es crearà. En el cas de l’exemple se seleccionarà l’opció <em>public static main()method</em>.
+</p>
+<div class="iocfigure"><a name="Figure51"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Assistent del nou element
+
+</figcaption><img src="../media/ic10m05u1_51.png" alt="" /></figure>
+</div>
+<p>
+Automàticament, l’assistent ha creat el següent codi:
+</p>
+<pre class="code">import org.eclipse.swt.widgets.Display;
+import org.eclipse.swt.widgets.Shell;
+
+public class Calculadora {
+    /**
+    * Launch the application.
+    * @param args
+    */
+    public static void main(String[] args) {
+        Display display = Display.getDefault();
+        Shell shell = new Shell();
+        shell.setSize(450, 300);
+        shell.setText(&quot;SWT Application&quot;);
+
+        shell.open();
+        shell.layout();
+        while (!shell.isDisposed()) {
+            if (!display.readAndDispatch()) {
+                display.sleep();
+            }
+        }
+    }
+}</pre>
+
+<p>
+Arribats a aquest punt és quan es podrà començar a dissenyar gràficament el formulari de la calculadora fent ús de la vista Design (vegeu la <span class="figref"><a href="#Figure52"><span>figura</span></a></span>).
+</p>
+<div class="iocfigure"><a name="Figure52"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Vista de disseny
+
+</figcaption><img src="../media/ic10m05u1_52.png" alt="" /></figure>
+</div>
+<p>
+Es visualitza un conjunt de vistes que permet seleccionar un control, per exemple un botó, i desplaçar-lo cap al formulari (<span class="figref"><a href="#Figure53"><span>figura</span></a></span>).
+</p>
+<div class="iocfigure"><a name="Figure53"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Afegir un botó
+
+</figcaption><img src="../media/ic10m05u1_53.png" alt="" /></figure>
+</div>
+<p>
+En la vista de Propietats es podrà modificar les propietats del control seleccionat (<span class="figref"><a href="#Figure54"><span>figura</span></a></span>).
+</p>
+<div class="iocfigure"><a name="Figure54"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Especificar les propietats del botó
+
+</figcaption><img src="../media/ic10m05u1_54.png" alt="" /></figure>
+</div>
+<p>
+El codi que es genera automàticament en afegir el botó corresponent al número 1 de la calculadora és:
+</p>
+<pre class="code">Button btnNewButton = new Button(shell, SWT.NONE);
+       btnNewButton.setBounds(30, 38, 47, 25);
+       btnNewButton.setText(&quot;1&quot;);</pre>
+
+<p>
+Es repeteix el procés per als 10 números (0,1,2,3,4,5,6,7,8,9), els operands (+, -, /, *) i l’igual ( = ).
+</p>
+
+<p>
+El control utilitzat per mostrar el resultat de l’operació és un text.
+</p>
+
+<p>
+El següent pas és activar l’esdeveniment per a cada un dels botons creats per tal de poder especificar l’acció a dur a terme.
+</p>
+
+<p>
+En la vista de Components se selecciona el control i amb el botó dret se selecciona <em>Afegeix controlar d’esdeveniments</em> / <em>Seleccionar</em> / widget <em>seleccionat</em>. Es pot observar a la <span class="figref"><a href="#Figure55"><span>figura</span></a></span>.
+</p>
+<div class="iocfigure"><a name="Figure55"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Esdeveniment en clicar el botó.
+
+</figcaption><img src="../media/ic10m05u1_55.png" alt="" /></figure>
+</div>
+<p>
+Automàticament, el codi corresponent al botó queda actualitzat.
+</p>
+<pre class="code">Button btnNewButton = new Button(shell, SWT.NONE);
+     btnNewButton.addSelectionListener(new SelectionAdapter() {
+          @Override
+          public void widgetSelected(SelectionEvent e) {
+          }
+     });
+     btnNewButton.setBounds(30, 38, 47, 25);
+     btnNewButton.setText(&quot;1&quot;);</pre>
+
+<p>
+Es repeteix l’acció per a cadascun dels botons.
+</p>
+<div class="iocnote"><div class="ioccontent">
+<p>
+<em>Syntax highlighting</em> és el reconeixement sintàctic de expressions reservades del llenguatge.
+</p>
+</div></div>
+<p>
+Una vegada s’ha generat automàticament el codi dels controls, caldrà començar a programar el codi Java que es vol desenvolupar. Tal com es pot veure en el codi generat de la classe <code>Calculadora</code>, algunes paraules mostren un color diferent a la resta. Aquesta forma de marcar amb colors les paraules és a causa que els Editors Java inclouen la capacitat per efectuar el ressaltat de la sintaxi (<em>syntax highlighting</em>).
+</p>
+
+<p>
+La codificació en colors (<span class="figref"><a href="#Figure56"><span>figura</span></a></span>) dels termes és:
+</p>
+<ul>
+<li class="level1"><div class="li"> Les paraules reservades del llenguatge apareixeran escrites en color bordeus i en negreta.</div>
+</li>
+<li class="level1"><div class="li"> Els comentaris apareixeran en verd. </div>
+</li>
+<li class="level1"><div class="li"> Els comentaris de documentació (Javadoc) apareixeran en blau.</div>
+</li>
+</ul>
+<div class="iocfigure"><a name="Figure56"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Codificació de colors
+
+</figcaption><img src="../media/ic10m05u1_56.png" alt="" /></figure>
+</div>
+<p>
+Es crearan els mètodes necessaris per tal de codificar la funcionalitat de la calculadora.
+Per exemple, es crea un mètode que executa l’operació de suma, resta, multiplicació o divisió entre dos nombres.
+</p>
+<pre class="code">int executarOperacio() {
+     int resultat = 0;
+     int numeroVisualitzar = getResultatInt();
+
+     //Operació: divisió
+     if (última_operació.equals(&quot;/&quot;))
+          resultat = ultim_valor / numeroVisualitzar;
+
+     //Operació: multiplicació
+     if (ultima_operacio.equals(&quot;*&quot;))
+          resultat = ultim_valor * numeroVisualitzar;
+
+     //Operació: resta
+     if (ultima_operacio.equals(&quot;-&quot;))
+          resultat = ultim_valor - numeroVisualitzar;
+
+     //Operació: suma
+     if (ultima_operacio.equals(&quot;+&quot;))
+          resultat = ultim_valor + numeroVisualitzar;
+
+     return resultat;
+}</pre>
+<div class="iocnote"><div class="ioccontent">
+<p>
+<em>Code Completion</em> vol dir compleció automàtica de les sentències inacabades.
+</p>
+</div></div>
+<p>
+El mecanisme de <em>code completion</em> en Eclipse és molt similar al que implementen altres entorns integrats de desenvolupament: quan es deixa d’escriure durant un determinat interval de temps es mostren, si n’hi ha, tots els termes (paraules reservades, noms de funcions, de variables, de camps…) que comencen amb el o els caràcters escrits.
+</p>
+
+<p>
+Una altra característica és que escrivint un punt es provoca, sense esperar el temps establert, que s’ofereixin les alternatives o termes proposats. A la <span class="figref"><a href="#Figure57"><span>figura</span></a></span> es pot observar un exemple. També és interessant l’assistència a l’escriptura en trucades a funcions. Automàticament, quan s’estan a punt d’escriure els paràmetres que es passen a un mètode, es mostra una caixa de text indicant els tipus que aquests poden tenir. 
+</p>
+<div class="iocfigure"><a name="Figure57"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Compleció de codi
+
+</figcaption><img src="../media/ic10m05u1_57.png" alt="" /></figure>
+</div>
+<p>
+D’altra banda, és bastant fàcil que a l’hora de codificar es cometi algun error.
+</p>
+<div class="iocfigure"><a name="Figure58"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Compleció de codi
+
+</figcaption><img src="../media/ic10m05u1_58.png" alt="" /></figure>
+</div><div class="iocnote"><div class="ioccontent">
+<p>
+El corrector d’errors serveix per a la detecció i el marcatge sobre el codi d’errors o avisos.
+</p>
+</div></div>
+<p>
+Com es pot observar a la <span class="figref"><a href="#Figure58"><span>figura</span></a></span>, el connector JDT pot detectar, i marcar sobre el codi d’un programa, els llocs on es poden produir errors de compilació. Aquesta característica funciona de manera molt semblant als correctors ortogràfics que tenen els processadors de textos. Quan Eclipse detecta un error de compilació, s’ha de marcar la sentència errònia, subratllant amb una línia ondulada vermella (o groga, si en lloc d’un error es tracta d’un avís).
+</p>
+
+<p>
+Si el programador posiciona el punter del ratolí sobre la instrucció que va produir la decisió, es mostrarà una breu explicació de per què aquesta instrucció s’ha marcat com a errònia.
+</p>
+
+<p>
+Cada línia de codi que contingui un missatge d’error o un avís, també serà marcada amb una icona que apareixerà a la barra de desplaçament esquerra de l’Editor. Si el programador prem un cop sobre aquesta marca, es desplegarà un menú finestra emergent (<em>pop-up</em>) mitjançant el qual Eclipse mostrarà possibles solucions per als errors detectats. 
+</p>
+
+<p>
+
+L’error detectat en l’exemple  de la <span class="figref"><a href="#Figure58"><span>figura</span></a></span> es troba en el nom de la variable. S’ha escrit erròniament <em>resultatt</em> en lloc de <em>resultat</em>.
+</p>
+<div class="iocreference"><div class="ioccontent">
+<p>
+Vegeu una possible codificació de la calculadora en l’annex “Calculadora: codi font” de la secció “Annexos”.
+</p>
+</div></div>
+<p>
+Una vegada desenvolupat el codi, caldrà <strong>compilar-lo</strong> per comprovar que el lèxic, la sintaxi i la semàntica siguin correctes, i generar, així, els fitxers binaris que es puguin executar. 
+</p>
+
+<p>
+Cal explicar com es compilen els projectes amb Eclipse, perquè ofereix un sistema una mica curiós. A Eclipse no existeix cap botó que permeti compilar individualment un fitxer concret. La compilació és una tasca que es llança automàticament en desar els canvis duts a terme en el codi. Per aquesta raó és pràcticament innecessari controlar manualment la compilació dels projectes.
+</p>
+
+<p>
+Existeix una opció a l’entrada Project del menú principal, anomenada <em>Rebuild Project</em>, que permet llançar tot el procés de compilació complet, en cas que sigui necessari. Per compilar tots els projectes oberts, també es podrà utilitzar l’opció <em>Rebuild All</em>.
+</p>
+
+<p>
+Tal com es mostra en la <span class="figref"><a href="#Figure59"><span>figura</span></a></span>, en compilar, es genera una carpeta que sol denominar-se <em>bin</em> amb els fitxers .class, necessaris per poder executar el projecte.
+</p>
+<div class="iocfigure"><a name="Figure59"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Compilació
+
+</figcaption><img src="../media/ic10m05u1_59.png" alt="" /></figure>
+</div>
+<p>
+Una vegada el codi s’ha compilat, caldrà executar-lo per confirmar que fa el que s’havia planificat que hauria de fer. A la <span class="figref"><a href="#Figure60"><span>figura</span></a></span> es pot observar com accedir a la funcionalitat Run, que permetrà tant l’execució com la utilització d’altres opcions, entre les quals hi ha la d’accedir a la depuració per un altre camí. 
+</p>
+<div class="iocfigure"><a name="Figure60"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Execució
+
+</figcaption><img src="../media/ic10m05u1_60.png" alt="" /></figure>
+</div>
+</div>
+
+<h2><a id="executables" >Executables</a></h2>
+<div class="level2">
+
+<p>
+En les aplicacions desenvolupades en el llenguatge C, C++, Visual Basic, Pascal… els fitxers binaris que genera el compilador únicament poden ser executats en la plataforma sobre la qual es va desenvolupar.
+</p>
+
+<p>
+En les aplicacions desenvolupades en Java, els fitxers binaris que genera el compilador no és específic d’una màquina física en particular, sinó d’una màquina virtual, la qual cosa permet generar aplicacions compatibles amb diverses plataformes.
+</p>
+
+<p>
+Per aquest motiu, l’IDE Eclipse no genera executables sinó codi intermig (codi de bytes) que s’emmagatzema en el directori .bin en forma de fitxers .class. La distribució de les aplicacions i posterior desplegament es pot dur a terme creant algun dels següents tipus d’encapsulaments:
+</p>
+<ul>
+<li class="level1"><div class="li"> <strong>JAR</strong> (Java Archive): és un format d’arxiu independent de la plataforma que permet que diversos arxius puguin ser encapsulats dins d’un de sol, de manera que aquest pugui ser una aplicació completa de fàcil mobilitat i execució.</div>
+</li>
+<li class="level1"><div class="li"> <strong>WAR</strong> (Web Application archive): és un arxiu JAR (amb l’extensió WAR) usat per distribuir una col·lecció d’arxius JSP, servlets, classes Java, arxius XML i contingut web estàtic (<acronym title="HyperText Markup Language">HTML</acronym>). En conjunt constitueixen una aplicació Web.</div>
+</li>
+<li class="level1"><div class="li"> <strong>EAR</strong> (Enterprise Archive File): és un format per empaquetar diversos mòduls en un sol arxiu. Permet desplegar diversos mòduls d’aquests en un servidor d’aplicacions. Conté arxius XML, anomenats descriptors de desplegament, que descriuen com efectuar aquesta operació (EAR = JAR + WAR).</div>
+</li>
+</ul>
+
+<p>
+En la <span class="figref"><a href="#Figure61"><span>figura</span></a></span>, es mostra una representació gràfica dels diferents tipus d’encapsulaments.
+</p>
+<div class="iocfigure"><a name="Figure61"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Tipus de fitxers d’encapsulament
+
+</figcaption><img src="../media/ic10m05u1_61.png" alt="" /></figure>
+</div>
+</div>
+
+	 </article>
+     <div class="pnpage">
+      <div class="left-corner"></div>
+      <div id="prevpage">Anar a la p&agrave;gina anterior:<br /><a href="../../../WebContent/u1/a1/annexos.html">Annexos</a></div>
+      <div id="nextpage">Anar a la p&agrave;gina seg&uuml;ent:<br /><a href="../../../WebContent/u1/a2/activitats.html">Activitats</a></div>
+      <div class="right-corner"></div>
+     </div>
+    </div>
+    <footer class="footer">
+      <div><small>Aquest document està subjecte a una llicència oberta de Creative Commons, es reserva el dret de reconeixement de l'autoria, d'exigir que no se'n faci cap mena d'ús comercial. Si altereu o transformeu aquesta obra, o en genereu obres derivades, només podeu distribuir l'obra generada amb una llicència idèntica a aquesta.</small></div>
+    </footer>
+ </div>
+ <div id="back_preview" class="hidden"></div>
+ <div id="preview" class="hidden">
+  <div class="prevcontent"></div>
+ </div>
+ <div id="help-tooltips">
+  <div id="help-toc" class="hidden tooltip"><span>Taula de continguts:</span> Ofereix una vista general de l&#39;estructura del m&ograve;dul, que us facilitar&agrave; la navegaci&oacute; a trav&eacute;s dels seus continguts.<span class="arrow-left"></span></div> 
+  <div id="help-settings" class="hidden tooltip"><span>Opcions de format:</span> Permet configurar el format de lectura a partir de les vostres prefer&egrave;ncies, modificant la mida de la lletra, el color del fons, l&#39;amplada de la p&agrave;gina o l&#39;ocultaci&oacute; dels continguts complementaris, entre d&#39;altres.<span class="arrow-left"></span></div>
+  <div id="help-printer" class="hidden tooltip"><span>Imprimir:</span>  Envia el contingut seleccionat a la impressora.<span class="arrow-left"></span></div>
+  <div id="help-favorites" class="hidden tooltip"><span>Prefereits:</span> Permet desar aquelles parts del contingut a les que us interessi accedir en un moment posterior; us permetr&agrave; anar creant un repositori personalitzat de les seccions que considereu m&eacute;s rellevants. Un cop l&#39;hageu començat a fer servir se us mostrar&agrave; a sota un comptador que us informar&agrave; del nombre de preferits que s&#39;hagin emmagatzemat fins al moment.<span class="arrow-left"></span></div>
+  <div id="help-favcounter" class="hidden tooltip"><span>Comptador i llistat de preferits:</span> Indica el nombre de preferits que s&#39;han desat fins el moment; clicant damunt seu accedireu al llistat de preferits, i a trav&eacute;s d&#39;aquest podreu accedir directament als continguts que hageu emmagatzemat.<span class="arrow-left"></span></div>
+  <div id="help-help_icon" class="hidden tooltip"><span>Ajuda:</span> Aquesta opci&oacute; activa la informaci&oacute; de les funcionalitats del web tot situant el punter del ratol&iacute; al damunt dels diferents &iacute;tems.<span class="arrow-left"></span></div>
+  <div id="help-sidebar-hide" class="hidden tooltip"><span>Mostrar/Ocultar barra lateral:</span>  Deshabilita la barra d&#39;opcions, permetent la seva recuperaci&oacute; quan es desitgi.<span class="arrow-left"></span></div>
+  <div id="help-search" class="hidden tooltip"><span>Cerca:</span>  Introdu&iuml;u les paraules clau sobre aquells conceptes que desitgeu localitzar en els continguts del m&ograve;dul. Tamb&eacute; podeu excloure un terme de la cerca tot afegint-hi el signe &#8220;-&#8221; al davant.<span class="arrow-top"></span></div>
+  <div id="help-header" class="hidden tooltip"><span>Cap&ccedil;alera:</span>  Indica l&#39;apartat o secci&oacute; que es mostra en pantalla. Tingueu present que les capçaleres de segon, tercer i quart nivell tamb&eacute; es poden desar com a marcadors.<span class="arrow-left"></span></div>
+</div> 
+</body>
+</html>

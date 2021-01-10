@@ -1,0 +1,1762 @@
+<!doctype html>
+
+<!--[if lt IE 7 ]> <html class="ie ie6 no-js" lang="ca"> <![endif]-->
+<!--[if IE 7 ]>    <html class="ie ie7 no-js" lang="ca"> <![endif]-->
+<!--[if IE 8 ]>    <html class="ie ie8 no-js" lang="ca"> <![endif]-->
+<!--[if IE 9 ]>    <html class="ie ie9 no-js" lang="ca"> <![endif]-->
+<!--[if gt IE 9]><!--><html class="no-js" lang="ca"><!--<![endif]-->
+<!-- the "no-js" class is for Modernizr. -->
+
+<head id="www-sitename-com" data-template-set="html5-reset">
+
+	<meta charset="utf-8">
+	
+	<!-- Always force latest IE rendering engine (even in intranet) & Chrome Frame -->
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	
+	<title>Llenguatges de marques i sistemes de gestió d'informació</title>
+	
+<!-- <meta name="title" content=""> --> 
+	<meta name="description" content="">
+	<!-- Google will often use this as its description of your page/site. Make it good. -->
+	
+	<meta name="google-site-verification" content="">
+	<!-- Speaking of Google, don't forget to set your site up: http://google.com/webmasters -->
+	
+	<meta name="author" content="Institut Obert de Catalunya">
+	<meta name="Copyright" content="Copyright Institut Obert de Catalunya 2011. All Rights Reserved.">
+
+	<!-- Dublin Core Metadata : http://dublincore.org/ -->
+	<meta name="DC.title" content="Llenguatges de marques i sistemes de gestió d'informació">
+	<meta name="DC.subject" content="Informàtica i comunicacions">
+	<meta name="DC.creator" content="Institut Obert de Catalunya">
+	
+	<!--  Mobile Viewport Fix
+	j.mp/mobileviewport & davidbcalhoun.com/2010/viewport-metatag 
+	device-width : Occupy full width of the screen in its current orientation
+	initial-scale = 1.0 retains dimensions instead of zooming out if page height > device height
+	maximum-scale = 1.0 retains dimensions instead of zooming in if page width < device width
+	-->
+	<!-- Uncomment to use � use thoughtfully!
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+	-->
+
+	<link rel="shortcut icon" href="../../../img/favicon.ico">
+	<!-- This is the traditional favicon.
+		 - size: 16x16 or 32x32
+		 - transparency is OK
+		 - see wikipedia for info on browser support: http://mky.be/favicon/ -->
+		 
+	<link rel="apple-touch-icon" href="../../../img/apple-touch-icon.png">
+	<!-- The is the icon for iOS's Web Clip.
+		 - size: 57x57 for older iPhones, 72x72 for iPads, 114x114 for iPhone4's retina display (IMHO, just go ahead and use the biggest one)
+		 - To prevent iOS from applying its styles to the icon name it thusly: apple-touch-icon-precomposed.png
+		 - Transparency is not recommended (iOS will put a black BG behind the icon) -->
+	
+	<!-- CSS: screen, mobile & print are all in the same file -->
+	<link rel="stylesheet" href="../../../_/css/style.css">
+
+	<!-- CSS: jQuery UI -->
+	<link rel="stylesheet" href="../../../_/css/jquery-ui.css">
+	
+	<!-- all our JS is at the bottom of the page, except for Modernizr. -->
+	<script src="../../../_/js/modernizr-1.7.min.js"></script>
+	<script src="../../../_/js/Hyphenator.js" type="text/javascript"></script>
+	<script type="text/javascript">
+	   Hyphenator.config({
+		minwordlength : 4
+	   });
+	   Hyphenator.run();
+	</script>
+    <script src="../../../_/js/build.js" type="text/javascript"></script>
+</head>
+
+<body class="style-newspaper">
+
+<div class="wrapper"><!-- not needed? up to you: http://camendesign.com/code/developpeurs_sans_frontieres -->
+
+	<header id="header">
+		<div class="head"><a href="http://ioc.gencat.cat"><img src="../../../img/logo.png" alt="Institut Obert de Catalunya"/></a><a href="http://creativecommons.org/licenses/by-nc-sa/3.0/es/deed.ca"><img src="../../../img/license.png" alt="Llic&egrave;ncia" class="license"/></a></div>
+		<div class="headdocument"><a href="../../../index.html">Llenguatges de marques i sistemes de gestió d'informació</a></div>
+        <div id="search" class="search" name="search">
+         <form id="frmsearch" action="../../../search.html" method="get">
+          <input type="text" name="q"/>
+        </form>
+        </div>
+	</header>
+   <div id="upbutton" class="upbutton" style="display:none;"><img src="../../../img/uparrow.png" alt="Pujar a l'inici de p&agrave;gina"/></div>
+   <aside id="aside">
+    <div id="menu">
+      <ul>
+       <li name="toc"><div><img src="../../../img/toc.png" alt="&Iacute;ndex"/></div></li>
+       <li name="settings"><div><img src="../../../img/settings.png" alt="Configuraci&oacute;"/></div></li>
+       <li name="printer"><div><img src="../../../img/printer.png" alt="Imprimir"/></div></li>
+       <li name="favorites"><div><img src="../../../img/favorites.png" alt="Favorits"/></div></li>
+       <li name="help_icon" class="help_icon"><div><img src="../../../img/help_icon.png" alt="Ajuda"/></div></li>
+      </ul>
+     </div>
+   </aside>
+   <div id="sidebar-hide" name="sidebar-hide"><img src="../../../img/arrows.png"/></div>
+   <section>
+     <div id="toc" class="hidden">
+      <div class="menucontent">
+        <ul>
+        <li id="u1" class="parentnode"><p><a class="unit" href="../../../WebContent/u1/introduccio.html">1. Llenguatge de marques</a></p><ul class="expander"><li id="u1introduccio"><a href="../../../WebContent/u1/introduccio.html">Introducció</a></li><li id="u1resum"><a href="../../../WebContent/u1/resum.html">Resum</a></li><li id="u1objectius"><a href="../../../WebContent/u1/objectius.html">Resultats d'aprenentatge</a></li><li id="u1referencies"><a href="../../../WebContent/u1/referencies.html">Referències</a></li><li id="u1a1" class="tocsection"><p id='u1a1continguts'><a class="section" href="../../../WebContent/u1/a1/continguts.html">Introducció als llenguatges de marques. Classificació</a><span class="buttonexp"></span></p><ul><li id="u1a1activitats"><a href="../../../WebContent/u1/a1/activitats.html">Activitats</a></li><li id="u1a1exercicis"><a href="../../../WebContent/u1/a1/exercicis.html">Exercicis d'autoavaluació</a></li></ul></li><li id="u1a2" class="tocsection"><p id='u1a2continguts'><a class="section" href="../../../WebContent/u1/a2/continguts.html">Documents XML</a><span class="buttonexp"></span></p><ul><li id="u1a2activitats"><a href="../../../WebContent/u1/a2/activitats.html">Activitats</a></li><li id="u1a2exercicis"><a href="../../../WebContent/u1/a2/exercicis.html">Exercicis d'autoavaluació</a></li></ul></li></ul></li><li id="" class="indexnode"><p><a href="../../../index.html">Anar a l&#39;&iacute;ndex general</a></p></li>
+        </ul>
+      </div>
+    </div>
+   </section>
+   <section>
+   <div id="settings" class="hidden">
+    <div class="menucontent">
+     <div class="allsettings">
+     <div class="settings">
+      <label>Font i Color</label>
+		<div class="setting-option">
+	        <ul class="fontBackground">
+				<li id="style-newspaper" title="Newspaper" class="appearance-style-newspaper"><span>Newspaper</span></li>
+                <li id="style-novel" title="Novel" class="appearance-style-novel"><span>Novel</span></li>
+                <li id="style-ebook" title="eBook" class="appearance-style-ebook"><span>eBook</span></li>
+				<li id="style-inverse" title="Inverse" class="appearance-style-inverse active"><span>Inverse</span></li>
+				<li id="style-athelas" title="Athelas" class="appearance-style-athelas"><span>Athelas</span></li>
+			</ul>
+		</div>
+     </div>
+	<div class="settings">
+      <label>Amplada</label>
+		<div class="setting-option">
+	        <div id="slider-width"></div>
+		</div>
+     </div>
+     <div class="settings">
+      <label>Mida de la font</label>
+		<div class="setting-option">
+	        <div id="slider-font"></div>
+		</div>
+     </div>
+     <div class="settings">
+      <label>Mida de la font</label>
+	  <div class="setting-option">
+       <form action="" class="sett-options">
+		<ul>
+		    <li><input type="checkbox" id="secondary-content" /><label for="secondary-content">Mostra recursos complementaris</label></li>
+		    <li><input type="checkbox" id="main-images" /><label for="main-images">Mostra imatges</label></li>
+		    <li><input type="checkbox" id="text-alignment" /><label for="text-alignment">Text justificat</label></li>
+			<li><input type="checkbox" id="text-hyphen" /><label for="text-hyphen">Partici&oacute; sil·l&agrave;bica</label></li>
+		</ul>
+       </form>
+	  </div>
+     </div>
+     </div>
+    </div>
+   </div>
+   </section>
+ <section>
+ <div id="favorites" class="hidden"></div>
+ </section>   
+ <div id="bridge" class="hidden"></div>
+ <div id="help" class="hidden">
+  <div class="helptitle">Dreceres del teclat<hr></div>
+  <div class="helpsection"><span>General</span>
+   <ul>
+    <li><span class="shortcut">g</span>: Anar al men&uacute; de navegaci&oacute;</li>
+    <li><span class="shortcut">o</span>: Anar a opcions</li>
+    <li><span class="shortcut">s</span>: Guardar la p&agrave;gina actual a favorits</li>
+    <li><span class="shortcut">p</span>: Imprimir la p&agrave;gina actual</li>
+    <li><span class="shortcut">?</span>: Mostrar/Ocultar l&#39;ajuda</li>
+   </ul>
+  </div>
+  <div class="helpsection"><span>Navegaci&oacute;</span>
+   <ul>
+    <li><span class="shortcut">i</span>: Anar a l&#39;&iacute;ndex general</li>
+    <li><span class="shortcut">t</span>: Anar a l&#39;inici de p&agrave;gina</li>
+    <li><span class="shortcut">b</span>: Anar al final de p&agrave;gina</li>
+    <li><span class="shortcut">j</span>: Anar cap endavant dintre la p&agrave;gina</li>
+    <li><span class="shortcut">k</span>: Anar cap enrere dintre la p&agrave;gina</li>
+    <li><span class="shortcut">h</span>: Anar a la p&agrave;gina anterior:</li>
+    <li><span class="shortcut">l</span>: Anar a la p&agrave;gina seg&uuml;ent:</li>
+   </ul>
+   </div>
+ </div>
+ <div id="favcounter" name="favcounter" class="hidden"><span></span></div>
+ <div id="navmenu" class="navmenu"><ul class="webnav"><li><a href="../../../index.html" title="Anar a l&#39;&iacute;ndex general">Inici</a></li><li><a href="../introduccio.html">Llenguatge de marques</a></li><li>Introducció als llenguatges de marques. Classificació</li></ul></div>
+	<div id="content" lang="ca" class="hyphenate text">
+     <article lang="ca" class="sheet">
+        <h1><a id="introduccio_als_llenguatges_de_marques_classificacio"> Introducció als llenguatges de marques. Classificació </a></h1>
+    	
+<p>
+Una definició poc estricta del que és un ordinador podria ser que “és una màquina electrònica que rep i processa dades per convertir-les en informació útil”.
+</p>
+<div class="iocimportant"><div class="ioccontent">
+<p>
+Un dels components bàsics en un sistema informàtic són les dades que s’hi puguin introduir i com ho fa aquest sistema per emmagatzemar-les per usar-les posteriorment o mostrar-les de nou.
+</p>
+</div></div>
+<p>
+Per tant, una de les tasques bàsiques que fan els ordinadors és emmagatzemar la informació que els proporcionem per poder ser processada posteriorment. Aquesta informació pot ser de molts tipus diferents (text, imatges, vídeos, música…) però el realment important serà de quina manera l’emmagatzema l’ordinador per poder-la tractar posteriorment de manera eficient per generar més informació.
+</p>
+
+<h2><a id="les_dades" >Les dades</a></h2>
+<div class="level2">
+
+<p>
+Les dades són representacions d’aspectes del món real i se solen recollir per fer càlculs, mostrar-les, organitzar-les, etc., amb l’objectiu que posteriorment algú en pugui fer alguna cosa: prendre decisions, generar noves dades…
+</p>
+
+<p>
+Si no s’és gaire estricte es podria dir que en un sistema informàtic qualsevol les úniques tasques que es desenvolupen consisteixen a emmagatzemar dades per processar-les per mitjà d’un programa que o bé aportarà algun tipus d’informació o bé es faran servir de nou per generar noves dades.
+</p>
+
+</div>
+
+<h3><a id="caracteristiques_de_les_dades" >Característiques de les dades</a></h3>
+<div class="level3">
+
+<p>
+Entre les característiques interessants sobre les dades en destaquen sobretot tres aspectes:
+</p>
+<ul>
+<li class="level1"><div class="li"> A qui van dirigides</div>
+</li>
+<li class="level1"><div class="li"> La possibilitat de reutilitzar-les</div>
+</li>
+<li class="level1"><div class="li"> Que es puguin compartir</div>
+</li>
+</ul>
+
+</div>
+
+<h4><a id="destinatari_de_dades" >Destinatari de dades</a></h4>
+<div class="level4">
+
+<p>
+Si s’intenta ser una mica més pràctic es veurà que realment les dades tindran una forma o una altra en funció del destinatari a qui vagin dirigides:
+</p>
+<ol>
+<li class="level1"><div class="li"> <strong>Dades destinades als humans</strong>: generalment les dades destinades al humans requeriran que tinguin alguna estructura concreta, amb uns formats determinats, amb textos decorats d’alguna manera. Hi apareixeran títols, caràcters en negreta, etc. Generalment no cal conèixer quin significat tenen les dades, ja que la interpretació es deixa al lector.</div>
+</li>
+<li class="level2"><div class="li"> <strong>Dades destinades als programes</strong>: els programes generalment no necessiten que les dades tinguin informació sobre com s’han de representar, sinó que n’hi ha prou que siguin fàcilment identificables, que quedi clar de quin tipus són i que hi hagi alguna manera de determinar què signifiquen per poder-les tractar automàticament.</div>
+</li>
+</ol>
+
+</div>
+
+<h4><a id="reutilitzacio_de_les_dades" >Reutilització de les dades</a></h4>
+<div class="level4">
+
+<p>
+Molt sovint les dades es voldran reutilitzar per poder fer tasques diferents. Un error corrent sol ser emmagatzemar-les específicament per fer una tasca concreta, ja que això pot provocar que posteriorment sigui molt més complicat fer-les servir per fer altres tasques.
+</p>
+
+<p>
+Per tant, és bàsic disposar d’un sistema d’emmagatzematge que permeti aconseguir que les dades puguin ser reutilitzades fàcilment i si pot ser que puguin ser reutilitzades tant per les persones com pels programes.
+</p>
+
+</div>
+
+<h4><a id="comparticio_de_les_dades" >Compartició de les dades</a></h4>
+<div class="level4">
+
+<p>
+En el passat, amb els ordinadors centrals la informació es generava i es processava en el mateix lloc. Però l’aparició dels ordinadors personals, l’eclosió de les xarxes i, sobretot, l’èxit d’Internet, ha creat tota una sèrie de problemàtiques que fins al moment no existien: les dades generades en un lloc ara poden ser consumides en un lloc totalment diferent, com ara:
+</p>
+<ul>
+<li class="level1"><div class="li"> en sistemes operatius totalment diferents.</div>
+</li>
+<li class="level1"><div class="li"> en màquines que poden funcionar de maneres molt diverses.</div>
+</li>
+</ul>
+
+<p>
+Per tant, en un sistema informàtic modern s’ha de tenir en compte aquesta possibilitat a l’hora d’emmagatzemar dades. Hi ha la possibilitat que aquestes dades siguin compartides i, per tant, cal emmagatzemar-les d’alguna manera que no tingui problemes per usar-les en sistemes diferents.
+</p>
+
+</div>
+
+<h2><a id="emmagatzematge_de_dades_en_ordinadors" >Emmagatzematge de dades en ordinadors</a></h2>
+<div class="level2">
+
+<p>
+Atesa la seva arquitectura, els ordinadors emmagatzemen la informació en binari i, per tant, tota la informació que s’hi pot emmagatzemar sempre es representarà en uns i zeros (1, 0). Això fa que per representar qualsevol tipus de dades (imatges, vídeos, text…) calgui fer algun tipus de procés que converteixi les dades a una representació en format binari.
+</p>
+
+<p>
+Tradicionalment en els ordinadors les dades s’organitzen de dues maneres:
+</p>
+<ul>
+<li class="level1"><div class="li"> Dades de text</div>
+</li>
+<li class="level1"><div class="li"> Dades binàries</div>
+</li>
+</ul>
+
+</div>
+
+<h3><a id="dades_binaries" >Dades binàries</a></h3>
+<div class="level3">
+
+<p>
+Emmagatzemar les dades de manera binària és la manera natural d’emmagatzemar dades en ordinadors. Estrictament parlant, les dades binàries estan en el format que fa servir l’ordinador, ja que només són una tira de bits un rere l’altre. Per tant, normalment, un ordinador no haurà fer cap procés especial per emmagatzemar i llegir dades binàries.
+</p>
+
+<p>
+Les dades en format binari tenen una sèrie de característiques que les fan ideals per als ordinadors:
+</p>
+<ul>
+<li class="level1"><div class="li"> Generalment estan optimitzades per ocupar l’espai necessari. </div>
+</li>
+<li class="level1"><div class="li"> Els ordinadors les llegeixen fàcilment.</div>
+</li>
+<li class="level1"><div class="li"> Poden tenir estructura.</div>
+</li>
+<li class="level1"><div class="li"> És relativament fàcil afegir-hi metadades.</div>
+</li>
+</ul>
+
+<p>
+Si un programa vol usar les dades binàries normalment només necessitarà conèixer la mida en bits i, sobretot, conèixer <strong>de quina manera s’hi ha emmagatzemat</strong> la informació.
+</p>
+
+<p>
+Per emmagatzemar el nombre 150 només cal convertir aquest valor decimal a la seva representació en binari i emmagatzemar-lo. És trivial comprovar que pot ser emmagatzemat en un sol byte (8 bits) com es pot veure a la <span class="tabref"><a href="#table1"><span>taula</span></a></span>.
+</p>
+<div class="ioctable ">
+<div class="titletable"><a name="table1"><span>Taula: </span></a>Representació del nombre 150 en binari</div>
+<div class="table"><table class="inline">
+	<tr class="row0">
+		<th class="col0"> valor decimal </th><th class="col1"> valor binari </th>
+	</tr>
+	<tr class="row1">
+		<td class="col0"> 150 </td><td class="col1"> 10010110 </td>
+	</tr>
+</table></div>
+</div>
+<p>
+Un avantatge afegit de la representació de nombres en binari és que ja estan disponibles immediatament per fer càlculs numèrics, ja que realment es tracta de nombres. No caldrà fer cap transformació per poder usar aquest nombre en qualsevol càlcul.
+</p>
+
+</div>
+
+<h4><a id="metadades" >Metadades</a></h4>
+<div class="level4">
+
+<p>
+Molt sovint no s’emmagatzemen directament les dades tal com estan sinó que es processen per optimitzar-les, com ara emmagatzemant informació sobre el seu contingut o aplicant-hi procediments d’optimització. Aquestes optimitzacions són transparents per l’usuari final, que visualitzarà les dades normalment.
+</p>
+
+<p>
+Una de les maneres més senzilles de representar una imatge en un ordinador consisteix a representar cada un dels punts de color que la formen. O sigui, que només cal dir de quin color serà cada un dels punts per poder emmagatzemar la imatge en un fitxer (<span class="figref"><a href="#fig1"><span>figura</span></a></span>).
+</p>
+<div class="iocfigure"><a name="fig1"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Representació d’un gràfic en un ordinador
+
+</figcaption><img src="../media/caracter.png" alt="" /></figure>
+</div>
+<p>
+Podem fer servir un mètode senzill per representar la imatge anterior, com podria ser definir si cada un dels punts és de color blanc (0) o negre (1). La imatge podrà ser representada d’aquesta manera:
+</p>
+<pre class="code">001100
+010010
+010010
+011110
+010010
+010010</pre>
+
+<p>
+En realitat un ordinador no emmagatzemarà la informació d’aquesta manera sinó de manera lineal, ignorant els salts de línia. Una representació més propera a com ho faria realment un ordinador seria aquesta:
+</p>
+<pre class="code">001100010010010010011110010010010010</pre>
+
+<p>
+Representar la informació d’aquesta manera fa que les  imatges ocupin molt d’espai i per aquest motiu normalment es fan servir mètodes per optimitzar-ne l’emmagatzematge.
+</p>
+
+<p>
+Una de les maneres d’optimitzar l’espai ocupat per la imatge podria ser adonar-se’n que hi han diverses repeticions dels colors. De manera que es podria intentar aprofitar aquesta característica per aconseguir un fitxer binari més petit.
+</p>
+
+<p>
+Es podria fer que en comptes d’especificar els punts un per un si hi ha una repetició es pogués especificar el nombre de vegades que es repeteix el color. D’aquesta manera un punt blanc aïllat es representarà normalment, però si es troben quatre punts blancs, en comptes d’emmagatzemar <code>0000</code> es pot representar amb <code>40</code> (4 blancs) 
+</p>
+
+<p>
+El resultat d’aplicar aquest procediment a la mateixa imatge ens donarà:
+</p>
+<pre class="code">202130120120120120412012012012010</pre>
+
+<p>
+Aquest procediment té l’avantatge afegit que amb el nou sistema les dades ocupen un 10% menys d’espai (33 caràcters) que abans (36 caràcters).
+</p>
+
+<p>
+A pesar que amb el nou sistema no s’emmagatzemen tots els punts un programa pot aconseguir fàcilment representar-los en pantalla seguint les especificacions. 
+</p>
+
+<p>
+Es pot veure que en la representació binària hi ha tota una sèrie de valors que estrictament no són dades de la imatge (els nombres 2, 3 i 4) sinó que són dades que fan referència a la manera com s’han emmagatzemat les dades. Aquestes dades s’anomenen “<strong>metadades</strong>”.
+</p>
+<div class="iocimportant"><div class="ioccontent">
+<p>
+Les metadades són dades sobre les dades.
+</p>
+</div></div>
+<p>
+L’ús de metadades optimitza l’emmagatzematge d’informació però alhora fa que la compartició de la informació continguda en el fitxer sigui molt més complexa. Però això sí, cal que el programa que vulgui recuperar la informació <em>conegui el procediment que s’ha fet servir</em> o no obtindrà les dades correctes. 
+</p>
+
+</div>
+
+<h4><a id="dades_estructurades" >Dades estructurades</a></h4>
+<div class="level4">
+
+<p>
+Les dades en la manera com les generem els humans no estan en un format que en faciliti el tractament automàtic per part d’un ordinador. Per aquest motiu sovint les dades que han de ser processades pels ordinadors es converteixen a algun format que sigui més idoni per al tractament. El més corrent és tractar les dades per tal que tinguin algun tipus d’estructura.
+</p>
+<div class="iocimportant"><div class="ioccontent">
+<p>
+Els tipus de dades estructurats són agrupacions d’altres tipus de dades (normalment tipus més senzills).
+</p>
+</div></div>
+<p>
+La manera més corrent d’estructurar dades binàries sol ser tenir-les agrupades en registres que contenen la informació repetitiva d’una dada en concret. És habitual que els llenguatges de programació tinguin alguna manera de definir dades estructurades. Per exemple, per a aquestes tasques el llenguatge C fa servir els <code>struct</code>.
+</p>
+<pre class="code c"><ol><li class="li1"><div class="de1"><span class="kw4">struct</span> alumne <span class="br0">&#123;</span></div></li><li class="li1"><div class="de1">    <span class="kw4">char</span> nom<span class="br0">&#91;</span><span class="nu0">10</span><span class="br0">&#93;</span><span class="sy0">;</span></div></li><li class="li1"><div class="de1">    <span class="kw4">char</span> cognom<span class="br0">&#91;</span><span class="nu0">10</span><span class="br0">&#93;</span><span class="sy0">;</span></div></li><li class="li1"><div class="de1">    <span class="kw4">int</span> nota<span class="sy0">;</span></div></li><li class="li1"><div class="de1"><span class="br0">&#125;</span></div></li></ol></pre>
+
+<p>
+Si es pot accedir a cada un dels registres del fitxer es pot accedir de cop a les dades d’un alumne, es pot identificar ràpidament la part de les dades que és el nom, cognom o nota, i a més sabem si les dades han de ser interpretades com a nombres o com a text. 
+</p>
+
+<p>
+En l’exemple de la <span class="figref"><a href="#fig0"><span>figura</span></a></span> podeu veure que es pot identificar a quina dada correspòn cada un dels caràcters. Els deu primers són el nom, els 10 següents són el cognom i els quatre següents són el número enter (32 bits).
+</p>
+<div class="iocfigure"><a name="fig0"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Representació de dades en una estructura fent servir caràcters
+
+</figcaption><img src="../media/asxm04u1_00.png" alt="" /></figure>
+</div>
+<p>
+Generalment aquestes dades estructurades s’emmagatzemen en forma de llistes o  conjunts de registres, de manera que el desenvolupador del programa podrà accedir a les dades de tots els <code>alumnes</code> simplement recorrent els diferents registres un per un. 
+</p>
+
+<p>
+Les dades estructurades facilitaran que les aplicacions les puguin tractar de manera automàtica.
+</p>
+
+</div>
+
+<h4><a id="problemes" >Problemes</a></h4>
+<div class="level4">
+
+<p>
+Les dades binàries també tenen problemes associats a l’hora de ser compartides, ja que en el món modern les dades s’han de compartir en màquines en què no han estat generades, que poden tenir sistemes operatius diferents, poden ser màquines totalment diferents, etc. Les dades binàries optimitzades per al sistema en què es generen no sempre seran ben enteses pels altres sistemes.
+</p>
+
+</div>
+
+<h5><a id="estructura_de_les_dades" >Estructura de les dades</a></h5>
+<div class="level5">
+
+<p>
+Un dels problemes de donar estructura a les dades és que aquesta estructura només l’entendran els programes que tinguin informació sobre l’estructura. En definir quines són les dades que farà servir el programa es defineix quina mida tindrà cada camp i de quina manera es desaran les dades dins del fitxer binari.
+</p>
+
+<p>
+Si agafem l’exemple que hem vist en la <span class="figref"><a href="#fig1"><span>figura</span></a></span>, perquè un programa pugui representar la imatge de manera correcta cal que tingui prou informació per fer-ho:
+</p>
+<ul>
+<li class="level1"><div class="li"> Primer cal que conegui que el que hi ha representat és una imatge.</div>
+</li>
+<li class="level1"><div class="li"> També ha de saber que es desa cada punt de color amb un sol caràcter.</div>
+</li>
+<li class="level1"><div class="li"> És bàsic que conegui l’equivalència de colors que hem fet: 0 és blanc, 1 és negre.</div>
+</li>
+<li class="level1"><div class="li"> I necessita saber que la imatge és de 6 caràcters de llargada per 6 caràcters d’amplada o el resultat serà molt diferent del que era inicialment (<span class="figref"><a href="#fig2"><span>figura</span></a></span>)</div>
+</li>
+<li class="level1"><div class="li"> Si s’ha representat la imatge fent servir el sistema optimitzat cal que  conegui que els valors numèrics superiors a 1 indiquen que aquest valor no és un color sinó que són el nombre de repeticions del color següent.</div>
+</li>
+</ul>
+<div class="iocfigure"><a name="fig2"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+ Intents de representar el gràfic sense conèixer-ne les dimensions
+
+</figcaption><img src="../media/caractererror.png" alt="" /></figure>
+</div>
+<p>
+Totes aquestes coses són les que cal conèixer per poder usar les dades d’un exemple senzill; per tant, podeu imaginar-vos què passaria amb un exemple més complex. 
+</p>
+
+</div>
+
+<h5><a id="forma_de_lectura_del_processador" >Forma de lectura del processador</a></h5>
+<div class="level5">
+
+<p>
+De la mateixa manera que en els llenguatges humans hi ha idiomes que s’escriuen d’esquerra a dreta i d’altres de dreta a esquerra, tots els processadors no emmagatzemen la informació de la mateixa manera (tècnicament es fa referència a l’ordre de lectura en les adreces de memòria).
+</p>
+
+<p>
+Hi ha dos grans sistemes per emmagatzemar la informació en ordinadors:
+</p>
+<ul>
+<li class="level1"><div class="li"> <strong>Big endian</strong>: les dades s’escriuen en l’ordre en què es creen. Així, per escriure <code>hola</code> en l’ordinador s’emmagatzemaria <code>h</code>, <code>o</code>, <code>l</code>, <code>a</code>. Aquest sistema és el que fan servir els processadors de Motorola.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Little endian</strong>: les dades es desen de menys rellevant a més rellevant: <code>a</code>, <code>l</code>, <code>o</code>, <code>h</code>. Aquest sistema és el que fan servir els processadors d’Intel.</div>
+</li>
+</ul>
+
+<p>
+El més habitual és que els ordinadors només facin servir un dels dos sistemes, tot i que n’hi ha que poden funcionar amb tots dos indistintament (ARM, PowerPC, PA-RISC…).
+</p>
+
+<p>
+Això no és important quan les dades es passen entre ordinadors que funcionen amb el mateix tipus, però és un aspecte vital que cal tenir en compte si els ordinadors que es passen la informació són de tipus diferents, ja que les dades binàries passades d’un sistema a l’altre poden ser totalment malinterpretades per culpa que s’emmagatzemen internament de manera diferent.
+</p>
+
+</div>
+
+<h5><a id="lectura_per_humans" >Lectura per humans</a></h5>
+<div class="level5">
+
+<p>
+Un problema diferent és que les dades en format binari estan pensades per ser llegides per màquines (<span class="figref"><a href="#fig3"><span>figura</span></a></span>) però no per humans, de manera que són ideals per ser emmagatzemades en màquines, van bé per a la comunicació d’informació entre màquines, però en canvi perquè un humà les pugui fer servir <strong>caldrà tenir un programa específic</strong> per llegir-les. 
+</p>
+<div class="iocfigure"><a name="fig3"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+ El format binari no està pensat per ser llegit per humans
+
+</figcaption><img src="../media/binarifitxer.png" alt="" /></figure>
+</div><div class="ioctext"><div class="ioccontent"><p class="ioctitle"> Formats binaris estàndards</p>
+<p>
+S’han definit alguns estàndards de fitxers binaris, cosa que permet que qualsevol pugui fer programes que puguin interpretar aquests fitxers.
+</p>
+
+<p>
+Això és el que passa per exemple, amb els fitxers d’imatges JPG, PNG, GIF…, que poden ser llegits per diferents programes perquè la seva especificació és pública.
+</p>
+<ul>
+<li class="level1"><div class="li"> JPG - Estàndard ISO/IEC 10918</div>
+</li>
+<li class="level1"><div class="li"> GIF - Especificació del <acronym title="World Wide Web Consortium">W3C</acronym> gif89a</div>
+</li>
+<li class="level1"><div class="li"> PNG - Estàndard ISO/IEC 15948</div>
+</li>
+</ul>
+</div></div>
+<p>
+I a més, no serveix qualsevol programa, sinó que cal que el programa entengui l’estructura de les dades que conté el fitxer. Per exemple, les dades generades pel Microsoft Word no poden ser obertes amb el programa de dibuix Gimp perquè no està preparat per entendre-les.
+</p>
+
+<p>
+Si qui ha desenvolupat el programa no ha fet pública de quina manera es desen les dades binàries que es generen serà molt difícil compartir dades amb altres usuaris si no disposen del mateix programa.
+</p>
+
+</div>
+
+<h3><a id="dades_de_text" >Dades de text</a></h3>
+<div class="level3">
+
+<p>
+Per solucionar el problema  que calgui recórrer a programes específics per recuperar les dades que hi ha en un fitxer una possibilitat és fer el més obvi, fer el mateix que han fet els humans durant segles. Els humans en escriure ja estan fent servir una codificació i, per tant, si es fa servir la mateixa codificació tindrem les dades en un format fàcil de fer servir i entendre que no tindrà problemes per ser llegit pels programes. 
+</p>
+<div class="iocnote"><div class="ioccontent">
+<p>
+En fitxers binaris el component d’informació més petit era el bit, en fitxers de text el component més petit eś el caràcter.
+</p>
+</div></div>
+<p>
+Els fitxers de text emmagatzemen la informació lletra per lletra d’una manera similar a com ho faria un humà en escriure. Això fa que s’estigui generant una informació que es podrà llegir de la mateixa manera que es llegeix un document de paper.
+</p>
+
+<p>
+Per a un ordinador no hi ha gaire diferència a l’hora d’emmagatzemar els fitxers de text o els fitxers binaris, ja que els fitxers de text també són tires de bits. La diferència és que aquest cop els bits estan agrupats d’una manera estàndard i coneguda: un <strong>codi de caràcters</strong>.
+</p>
+
+</div>
+
+<h4><a id="codis_de_caracters" >Codis de caràcters</a></h4>
+<div class="level4">
+
+<p>
+Representar les dades en un ordinador en forma de text implica que per poder representar una paraula qualsevol a l’ordinador prèviament haurà de ser <em>codificada</em> per fer que pugui ser representada en binari (recordem que els ordinadors només poden representar dades en binari). Aquesta codificació sol consistir a determinar una quantitat de bits predefinida per marcar un caràcter i posteriorment s’associa un valor numèric a cada un dels caràcters.
+</p>
+<div class="iocnote"><div class="ioccontent">
+<p>
+Observeu que per a un ordinador l’espai en blanc és un caràcter més.
+</p>
+</div></div>
+<p>
+L’equivalència entre els caràcters i els seus valors numèrics no es pot fer de manera aleatòria, ja que s’estaria creant el mateix problema que hi ha amb les dades binàries. Si es vol aconseguir que les dades es puguin llegir en diferents sistemes cal seguir algun tipus de norma coneguda per tothom. Per aquest motiu van aparèixer els <strong>estàndards de codificació de caràcters</strong>.  
+</p>
+<div class="iocexample"><div class="ioccontent"><p class="ioctitle"> Problema de la codificació de caràcters</p>
+<p>
+Per exemple, si tinguéssim un idioma que només tingués 5 caràcters (les vocals <em>AEIOU</em>) es podrien codificar tots els caràcters d’aquest idioma fent servir només 3 bits. Per tant, una possible codificació de les lletres de l’idioma podria ser la de la <span class="tabref"><a href="#table0"><span>taula</span></a></span>.
+</p>
+<div class="ioctable ">
+<div class="titletable"><a name="table0"><span>Taula: </span></a>Possible codificació de lletres</div>
+<div class="table"><table class="inline">
+	<tr class="row0">
+		<th class="col0"> Caràcter </th><th class="col1"> Valor decimal </th><th class="col2"> Valor binari </th>
+	</tr>
+	<tr class="row1">
+		<td class="col0"> A </td><td class="col1"> 0 </td><td class="col2"> 000 </td>
+	</tr>
+	<tr class="row2">
+		<td class="col0"> E </td><td class="col1"> 1 </td><td class="col2"> 001 </td>
+	</tr>
+	<tr class="row3">
+		<td class="col0"> I </td><td class="col1"> 2 </td><td class="col2"> 010 </td>
+	</tr>
+	<tr class="row4">
+		<td class="col0"> O </td><td class="col1"> 3 </td><td class="col2"> 011 </td>
+	</tr>
+	<tr class="row5">
+		<td class="col0"> U </td><td class="col1"> 4 </td><td class="col2"> 100 </td>
+	</tr>
+	<tr class="row6">
+		<td class="col0"> Espai </td><td class="col1"> 5 </td><td class="col2"> 101 </td>
+	</tr>
+</table></div>
+</div>
+<p>
+
+<p>
+Això ens permetria codificar la frase “AI AI AI” d’aquesta manera: 
+</p>
+<pre class="code">000010101000010101000010</pre>
+
+<p>
+
+</p>
+
+<p>
+Però davant del mateix problema una altra persona podria triar una combinació diferent, com la de la <span class="tabref"><a href="#table0b"><span>taula</span></a></span>.
+</p>
+
+</p>
+<div class="ioctable ">
+<div class="titletable"><a name="table0b"><span>Taula: </span></a>Alternativa diferent de codificació</div>
+<div class="table"><table class="inline">
+	<tr class="row0">
+		<th class="col0"> Caràcter </th><th class="col1"> Valor decimal </th><th class="col2"> Valor binari </th>
+	</tr>
+	<tr class="row1">
+		<td class="col0"> Espai </td><td class="col1"> 0 </td><td class="col2"> 000 </td>
+	</tr>
+	<tr class="row2">
+		<td class="col0"> A </td><td class="col1"> 1 </td><td class="col2"> 001 </td>
+	</tr>
+	<tr class="row3">
+		<td class="col0"> E </td><td class="col1"> 2 </td><td class="col2"> 010 </td>
+	</tr>
+	<tr class="row4">
+		<td class="col0"> I </td><td class="col1"> 3 </td><td class="col2"> 011 </td>
+	</tr>
+	<tr class="row5">
+		<td class="col0"> O </td><td class="col1"> 4 </td><td class="col2"> 100 </td>
+	</tr>
+	<tr class="row6">
+		<td class="col0"> U </td><td class="col1"> 5 </td><td class="col2"> 101 </td>
+	</tr>
+</table></div>
+</div>
+<p>
+
+<p>
+Això provocaria que en comunicar la frase “AI AI AI” generada amb el primer sistema, en el segon es descodificaria: 
+</p>
+<pre class="code">000  --&gt; Espai
+010  --&gt; E
+101  --&gt; U</pre>
+
+<p>
+I interpretaria que el missatge és ” EU EU EU”.
+</p>
+
+</p>
+</div></div>
+<p>
+El procediment de tenir una taula amb els valors numèrics associats i simplement fer la conversió és el procediment més habitual però també es donen casos en què la codificació hagi de complir algun tipus de regles o restriccions a l’hora de fer la conversió.
+</p>
+
+</div>
+
+<h5><a id="ascii" >ASCII</a></h5>
+<div class="level5">
+
+<p>
+Un dels primers estàndards que va ser adoptat majoritàriament va ser <acronym title="American Standard Code for Information Interchange">ASCII</acronym> (<em>American standard code for information interchange</em>), que es pot veure a la <span class="tabref"><a href="#table2"><span>taula</span></a></span>. <acronym title="American Standard Code for Information Interchange">ASCII</acronym> codifica cada un dels caràcters amb set bits i defineix a quin valor numèric es correspon cada un dels caràcters de la llengua anglesa. 
+</p>
+<div class="ioctable ">
+<div class="titletable"><a name="table2"><span>Taula: </span></a>Caràcters imprimibles de l’<acronym title="American Standard Code for Information Interchange">ASCII</acronym></div>
+<div class="table"><table class="inline">
+	<tr class="row0">
+		<th class="col0"> Caràcter </th><th class="col1"> Valor decimal </th><th class="col2"> Caràcter </th><th class="col3"> Valor decimal </th><th class="col4"> Caràcter </th><th class="col5"> Valor decimal </th><th class="col6"> Caràcter </th><th class="col7"> Valor decimal </th><th class="col8"> Caràcter </th><th class="col9"> Valor decimal </th>
+	</tr>
+	<tr class="row1">
+		<td class="col0 leftalign">   </td><td class="col1"> 32 </td><td class="col2"> 3 </td><td class="col3"> 51 </td><td class="col4"> F </td><td class="col5"> 70 </td><td class="col6"> Y </td><td class="col7"> 89 </td><td class="col8"> l </td><td class="col9"> 108 </td>
+	</tr>
+	<tr class="row2">
+		<td class="col0"> ! </td><td class="col1"> 33 </td><td class="col2"> 4 </td><td class="col3"> 52 </td><td class="col4"> G </td><td class="col5"> 71 </td><td class="col6"> Z </td><td class="col7"> 90 </td><td class="col8"> m </td><td class="col9"> 109 </td>
+	</tr>
+	<tr class="row3">
+		<td class="col0"> ” </td><td class="col1"> 34 </td><td class="col2"> 5 </td><td class="col3"> 53 </td><td class="col4"> H </td><td class="col5"> 72 </td><td class="col6"> [ </td><td class="col7"> 91 </td><td class="col8"> n </td><td class="col9"> 110 </td>
+	</tr>
+	<tr class="row4">
+		<td class="col0"> # </td><td class="col1"> 35 </td><td class="col2"> 6 </td><td class="col3"> 54 </td><td class="col4"> I </td><td class="col5"> 73 </td><td class="col6"> \ </td><td class="col7"> 92 </td><td class="col8"> o </td><td class="col9"> 111 </td>
+	</tr>
+	<tr class="row5">
+		<td class="col0"> $ </td><td class="col1"> 36 </td><td class="col2"> 7 </td><td class="col3"> 55 </td><td class="col4"> J </td><td class="col5"> 74 </td><td class="col6"> ] </td><td class="col7"> 93 </td><td class="col8"> p </td><td class="col9"> 112 </td>
+	</tr>
+	<tr class="row6">
+		<td class="col0"> % </td><td class="col1"> 37 </td><td class="col2"> 8 </td><td class="col3"> 56 </td><td class="col4"> K </td><td class="col5"> 75 </td><td class="col6"> ^ </td><td class="col7"> 94 </td><td class="col8"> q </td><td class="col9"> 113 </td>
+	</tr>
+	<tr class="row7">
+		<td class="col0"> &amp; </td><td class="col1"> 38 </td><td class="col2"> 9 </td><td class="col3"> 57 </td><td class="col4"> L </td><td class="col5"> 76 </td><td class="col6"> _ </td><td class="col7"> 95 </td><td class="col8"> r </td><td class="col9"> 114 </td>
+	</tr>
+	<tr class="row8">
+		<td class="col0"> ’ </td><td class="col1"> 39 </td><td class="col2"> : </td><td class="col3"> 58 </td><td class="col4"> M </td><td class="col5"> 77 </td><td class="col6"> ` </td><td class="col7"> 96 </td><td class="col8"> s </td><td class="col9"> 115 </td>
+	</tr>
+	<tr class="row9">
+		<td class="col0"> ( </td><td class="col1"> 40 </td><td class="col2"> ; </td><td class="col3"> 59 </td><td class="col4"> N </td><td class="col5"> 78 </td><td class="col6"> a </td><td class="col7"> 97 </td><td class="col8"> t </td><td class="col9"> 116 </td>
+	</tr>
+	<tr class="row10">
+		<td class="col0"> ) </td><td class="col1"> 41 </td><td class="col2"> &lt; </td><td class="col3"> 60 </td><td class="col4"> O </td><td class="col5"> 79 </td><td class="col6"> b </td><td class="col7"> 98 </td><td class="col8"> u </td><td class="col9"> 117 </td>
+	</tr>
+	<tr class="row11">
+		<td class="col0"> * </td><td class="col1"> 42 </td><td class="col2"> = </td><td class="col3"> 61 </td><td class="col4"> P </td><td class="col5"> 80 </td><td class="col6"> c </td><td class="col7"> 99 </td><td class="col8"> v </td><td class="col9"> 118 </td>
+	</tr>
+	<tr class="row12">
+		<td class="col0"> + </td><td class="col1"> 43 </td><td class="col2"> &gt; </td><td class="col3"> 62 </td><td class="col4"> Q </td><td class="col5"> 81 </td><td class="col6"> d </td><td class="col7"> 100 </td><td class="col8"> w </td><td class="col9"> 119 </td>
+	</tr>
+	<tr class="row13">
+		<td class="col0"> , </td><td class="col1"> 44 </td><td class="col2"> ? </td><td class="col3"> 63 </td><td class="col4"> R </td><td class="col5"> 82 </td><td class="col6"> e </td><td class="col7"> 101 </td><td class="col8"> x </td><td class="col9"> 120 </td>
+	</tr>
+	<tr class="row14">
+		<td class="col0"> - </td><td class="col1"> 45 </td><td class="col2"> @ </td><td class="col3"> 64 </td><td class="col4"> S </td><td class="col5"> 83 </td><td class="col6"> f </td><td class="col7"> 102 </td><td class="col8"> y </td><td class="col9"> 121 </td>
+	</tr>
+	<tr class="row15">
+		<td class="col0"> . </td><td class="col1"> 46 </td><td class="col2"> A </td><td class="col3"> 65 </td><td class="col4"> T </td><td class="col5"> 84 </td><td class="col6"> g </td><td class="col7"> 103 </td><td class="col8"> z </td><td class="col9"> 122 </td>
+	</tr>
+	<tr class="row16">
+		<td class="col0"> / </td><td class="col1"> 47 </td><td class="col2"> B </td><td class="col3"> 66 </td><td class="col4"> U </td><td class="col5"> 85 </td><td class="col6"> h </td><td class="col7"> 104 </td><td class="col8"> { </td><td class="col9"> 123 </td>
+	</tr>
+	<tr class="row17">
+		<td class="col0"> 0 </td><td class="col1"> 48 </td><td class="col2"> C </td><td class="col3"> 67 </td><td class="col4"> V </td><td class="col5"> 86 </td><td class="col6"> i </td><td class="col7"> 105 </td><td class="col8"> | </td><td class="col9"> 124 </td>
+	</tr>
+	<tr class="row18">
+		<td class="col0"> 1 </td><td class="col1"> 49 </td><td class="col2"> D </td><td class="col3"> 68 </td><td class="col4"> W </td><td class="col5"> 87 </td><td class="col6"> j </td><td class="col7"> 106 </td><td class="col8"> } </td><td class="col9"> 125 </td>
+	</tr>
+	<tr class="row19">
+		<td class="col0"> 2 </td><td class="col1"> 50 </td><td class="col2"> E </td><td class="col3"> 69 </td><td class="col4"> X </td><td class="col5"> 88 </td><td class="col6"> k </td><td class="col7"> 107 </td><td class="col8"> ~ </td><td class="col9"> 126 </td>
+	</tr>
+</table></div>
+</div>
+<p>
+
+</p>
+
+<p>
+La codificació que es fa en <acronym title="American Standard Code for Information Interchange">ASCII</acronym> és relativament senzilla: simplement es compara cada un dels caràcters del text per codificar en la taula i se n’obté el valor numèric en binari. Per exemple, per codificar la paraula <em>Hola</em> en un ordinador que estigui funcionant amb el codi <acronym title="American Standard Code for Information Interchange">ASCII</acronym> haurem de convertir cada un dels caràcters en el seu equivalent numèric (<span class="tabref"><a href="#table3"><span>taula</span></a></span>).
+</p>
+<div class="ioctable ">
+<div class="titletable"><a name="table3"><span>Taula: </span></a>Conversió de caràcters a binari fent servir <acronym title="American Standard Code for Information Interchange">ASCII</acronym></div>
+<div class="table"><table class="inline">
+	<tr class="row0">
+		<th class="col0"> Caràcter </th><th class="col1"> decimal </th><th class="col2"> binari </th>
+	</tr>
+	<tr class="row1">
+		<td class="col0 leftalign"> H        </td><td class="col1 leftalign"> 72        </td><td class="col2"> 1001000 </td>
+	</tr>
+	<tr class="row2">
+		<td class="col0 leftalign"> o        </td><td class="col1 leftalign"> 111       </td><td class="col2"> 1101111 </td>
+	</tr>
+	<tr class="row3">
+		<td class="col0 leftalign"> l        </td><td class="col1 leftalign"> 108       </td><td class="col2"> 1101100 </td>
+	</tr>
+	<tr class="row4">
+		<td class="col0 leftalign"> a        </td><td class="col1 leftalign"> 97        </td><td class="col2"> 1100001 </td>
+	</tr>
+</table></div>
+</div>
+<p>
+El primer problema que es va trobar per a l’<acronym title="American Standard Code for Information Interchange">ASCII</acronym> era que només estava pensat per l’anglès i, per tant, no es disposava de caràcters d’ús corrent en altres llengües: ç, à, á, ñ, etc. Per tant, per poder expandir-se a altres zones es va crear un <em><acronym title="American Standard Code for Information Interchange">ASCII</acronym> expandit</em>, que va incrementar el nombre de de bits a 8, i gràcies a aquest bit extra s’hi podien especificar els caràcters específics de cada idioma que l’anglès no tenia. D’aquesta manera es permetia crear textos en altres idiomes que fessin servir l’alfabet llatí.
+</p>
+
+<p>
+Això va fer que apareguessin moltes varietats d’<acronym title="American Standard Code for Information Interchange">ASCII</acronym>, especialitzades en un grup d’idiomes (ISO 8859-1, ISO 8859-2, etc.).
+</p>
+
+<p>
+Però com que cada idioma feia servir els valors nous per afegir els seus caràcters propis la informació representada fent servir un d’aquests “<acronym title="American Standard Code for Information Interchange">ASCII</acronym>” no sempre es veia bé en un altre dels “<acronym title="American Standard Code for Information Interchange">ASCII</acronym>”.
+</p>
+
+<p>
+A més, <acronym title="American Standard Code for Information Interchange">ASCII</acronym> i <acronym title="American Standard Code for Information Interchange">ASCII</acronym> expandit només estaven pensats per a idiomes que fessin servir l’alfabet llatí i, per tant, els idiomes no basats en l’alfabet llatí havien de recórrer a altres codificacions. 
+</p>
+
+</div>
+
+<h5><a id="unicode" >Unicode</a></h5>
+<div class="level5">
+
+<p>
+Unicode és un intent de substituir els codis de caràcters existents per un de genèric que serveixi per a totes les llengües, i per tant superi tots els problemes d’incompatibilitat que es produïen en entorns multilingües i permeti afegir els caràcters no llatins. 
+</p>
+
+<p>
+La idea bàsica de Unicode és donar a cada un dels símbols un identificador únic universal de manera que es puguin fer servir en el mateix document idiomes diferents sense que això comporti problemes de representació.
+</p>
+
+<p>
+L’adopció de Unicode resol d’una vegada tots els problemes de representació de caràcters en fitxers de text. 
+</p>
+<div class="iocnote"><div class="ioccontent">
+<p>
+Malgrat els seus avantatges, Unicode també va rebre crítiques de la comunitat anglòfona, perquè feia que els textos acabessin ocupant més del doble que en <acronym title="American Standard Code for Information Interchange">ASCII</acronym>.
+</p>
+</div></div>
+<p>
+Unicode defineix tres formes de codificació bàsiques UTF (<em>Unicode transformation format</em>), que podeu veure a la <span class="tabref"><a href="#table4"><span>taula</span></a></span>. 
+</p>
+<div class="ioctable ">
+<div class="titletable"><a name="table4"><span>Taula: </span></a>Formes de codificació de Unicode</div>
+<div class="table"><table class="inline">
+	<tr class="row0">
+		<th class="col0"> Nom </th><th class="col1 leftalign">  </th>
+	</tr>
+	<tr class="row1">
+		<td class="col0 leftalign"><strong>UTF-8</strong>  </td><td class="col1"> Sistema basat en un byte amb alguns símbols de longitud variable </td>
+	</tr>
+	<tr class="row2">
+		<td class="col0"><strong>UTF-16</strong> </td><td class="col1"> Sistema de longitud variable basada en dos bytes </td>
+	</tr>
+	<tr class="row3">
+		<td class="col0"><strong>UTF-32</strong> </td><td class="col1"> Sistema de longitud fixa que fa servir 32 bits per cada caràcter </td>
+	</tr>
+</table></div>
+</div>
+<p>
+Unicode ha estat adoptat de manera general per la majoria de sistemes operatius moderns. Actualment gairebé tots els sistemes operatius fan servir alguna varietat de Unicode (el Linux sol fer servir UTF-8 i el Windows adapta UTF-16).
+</p>
+
+</div>
+
+<h4><a id="comparticio_d_informacio" >Compartició d&#039;informació</a></h4>
+<div class="level4">
+
+<p>
+Gràcies a l’ús d’estàndards de codis de caràcters la informació en forma de text és més fàcilment compartida que no pas la informació binària, ja que els codis de caràcters que fan servir els sistemes per representar el text són coneguts i poden ser implementats lliurement.
+</p>
+
+<p>
+Per tant, emmagatzemar les dades en format de text aporta dos grans avantatges:
+</p>
+<ul>
+<li class="level1"><div class="li"> Les poden usar una gran quantitat de programes que ja existeixen (editors de text, navegadors, etc.). </div>
+</li>
+<li class="level1"><div class="li"> Poden llegides per humans. </div>
+</li>
+</ul>
+
+<p>
+Amb un dels programes més simples que hi ha, un editor de text, es pot crear un document que es podrà compartir amb qualsevol persona que entengui l’idioma en què ha estat escrit. I com que tots els sistemes operatius porten de sèrie programes capaços de carregar fitxers, si s’envia el fitxer a algú aquest no tindrà cap problema per interpretar les dades quan les rebi.
+</p>
+
+</div>
+
+<h4><a id="problemes1" >Problemes</a></h4>
+<div class="level4">
+
+<p>
+Generar informació en fitxers de text també té alguns problemes:
+</p>
+<ul>
+<li class="level1"><div class="li"> Ocupen més espai al disc que els binaris.</div>
+</li>
+<li class="level1"><div class="li"> Hi ha múltiples codis de caràcters diferents.</div>
+</li>
+<li class="level1"><div class="li"> La manera com els tracten els diferents sistemes operatius. </div>
+</li>
+<li class="level1"><div class="li"> Falta d’estructuració de les dades.</div>
+</li>
+</ul>
+
+<p>
+Però a pesar dels problemes, aquests són molt menys importants que els que tenim per compartir fitxers binaris. Per tant <strong>els fitxers de text són la manera més senzilla d’assegurar-nos que podem compartir la informació que hi ha amb altres persones</strong>. 
+</p>
+
+</div>
+
+<h5><a id="espai_al_disc" >Espai al disc</a></h5>
+<div class="level5">
+
+<p>
+Un dels problemes que tenen els fitxers de text és que la informació ocupa molt més espai del que ocuparia si s’emmagatzemés en format binari. Com podem veure en la taula (<span class="tabref"><a href="#table5"><span>taula</span></a></span>), si volem emmagatzemar el nombre 150 en un ordinador el resultat serà diferent en funció del format triat.
+</p>
+<div class="ioctable ">
+<div class="titletable"><a name="table5"><span>Taula: </span></a>Diferència entre emmagatzemar en format de text i binari</div>
+<div class="table"><table class="inline">
+	<tr class="row0">
+		<th class="col0 leftalign"> Format         </th><th class="col1"> Representació interna </th>
+	</tr>
+	<tr class="row1">
+		<td class="col0"> Format binari </td><td class="col1 leftalign"> 10010110                     </td>
+	</tr>
+	<tr class="row2">
+		<td class="col0"> Format textual </td><td class="col1 leftalign"> 00110001 00110101 00110000  </td>
+	</tr>
+</table></div>
+</div>
+<p>
+Per emmagatzemar el nombre en format binari simplement es converteix a binari i es podrà emmagatzemar en un byte (8 bits) mentre que si es vol emmagatzemar en format de text fent servir ISO-8869-1 s’hauran de desar per separat cada un del tres caràcters (<code>1</code>, <code>5</code> i <code>0</code>). Amb el segon sistema caldran 3 bytes (24 bits): el triple d’espai! 
+</p>
+
+<p>
+Però a més, si la informació desada en format binari cal per fer algun càlcul, ja es pot fer servir immediatament, ja que s’emmagatzema realment el nombre; mentre que si tenim el nombre en format de text l’haurem de convertir al seu equivalent numèric abans de poder fer qualsevol operació matemàtica.
+</p>
+
+</div>
+
+<h5><a id="multiples_codis_de_caracters" >Múltiples codis de caràcters</a></h5>
+<div class="level5">
+
+<p>
+Tot i que Unicode intenta que aquest problema desaparegui, alguns sistemes operatius encara fan servir múltiples codis de caràcters i els usuaris tenen informació antiga desada en codis de caràcters antics. Per tant, la compartició de dades encara provoca problemes que poden ser des de la simple representació incorrecta d’algun caràcter fins a corrompre el text o fer que la lectura de la informació sigui impossible.
+</p>
+<div class="iocfigure"><a name="fig4"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+ Problema de codificació incorrecta de caràcters
+
+</figcaption><img src="../media/caractersmalarepresentacio.png" alt="" /></figure>
+</div>
+<p>
+Si l’objectiu és fer que les dades es puguin reutilitzar tant per programes com per persones, els caràcters erronis s’han d’evitar. Com es veu en la <span class="figref"><a href="#fig4"><span>figura</span></a></span> els problemes en alguns casos poden ser poc importants si es vol que una persona entengui el que hi posa, però poden ser un problema molt gran per a un programa, ja que la seva capacitat d’interpretació és molt inferior.
+</p>
+
+<p>
+L’adopció de Unicode en la majoria de sistemes operatius està fent que aquest problema s’estigui reduint i el fet que la quantitat de codificacions de caràcters sigui molt inferior a la quantitat de codis binaris fa que <strong>les dades en format de text es considerin fàcilment compartibles</strong>.
+</p>
+
+<p>
+Si algú hagués emmagatzemat informació durant els anys setanta, i encara es tingués la capacitat de llegir el suport en el qual es van desar, difícilment es podria recuperar alguna cosa de les dades binàries que s’hi trobessin, ja que els programes que les van generar ja no existeixen o no funcionen amb els sistemes operatius moderns, i en canvi és possible que les dades emmagatzemades en format de text sí que es poguessin recuperar.
+</p>
+
+</div>
+
+<h5><a id="representacio_de_caracters_no_textuals" >Representació de caràcters no textuals</a></h5>
+<div class="level5">
+
+<p>
+Un altre problema que hi sol haver en la lectura de dades de text quan es fa en diferents sistemes operatius sol estar relacionada amb com es fa el tractament dels caràcters no textuals. 
+</p>
+
+<p>
+L’exemple més conegut és el diferent tractament que fan dels salts de línia els sistemes Windows i les diferents varietats de Unix i Linux. Per representar els salts de línia en el text els sistemes operatius fan servir algun dels caràcters no imprimibles del codi de caràcters, i per tant, d’aquesta manera tenen una manera “transparent a l’usuari” de poder representar el text tal com l’ha escrit.
+</p>
+
+<p>
+El problema és que dos dels sistemes operatius més populars, Windows i Unix, ho fan de manera diferent. Mentre que Unix fa servir un sol caràcter per indicar el salt de línia, LF (<em>line feed</em>), Windows en fa servir dos: CR (<em>carriage Return</em>) i LF (<em>line feed</em>). El resultat és que en obrir un fitxer generat en un sistema Unix en un sistema en Windows els salts de línia han desaparegut i en el seu lloc hi apareix un rectangle que representa el caràcter LF (<span class="figref"><a href="#fig5"><span>figura</span></a></span>). 
+</p>
+<div class="iocfigure"><a name="fig5"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+ Diferència del tractament en els salts de línia entre Windows i Linux
+
+</figcaption><img src="../media/asxm04u1_08.png" alt="" /></figure>
+</div>
+<p>
+Actualment molt programes ja detecten aquest problema i el compensen automàticament de manera transparent a l’usuari.
+</p>
+
+</div>
+
+<h5><a id="lectura_de_dades_automatitzada" >Lectura de dades automatitzada</a></h5>
+<div class="level5">
+
+<p>
+Els programes d’ordinador encara no són gaire bons interpretant les dades si són en text narratiu i, per tant, generalment convé que les dades que hauran de ser tractades per programes d’ordinador estiguin definides amb algun tipus d’<strong>estructura</strong> per tal que els siguin més fàcils de tractar.
+</p>
+
+<p>
+S’han inventat sistemes per fer que les dades dels fitxers de text puguin ser estructurades. Un dels formats que s’ha fet servir durant molt de temps per exportar dades estructurades contingudes en bases de dades o fulls de càlcul a text ha estat el CSV (<em>comma separated values</em>). 
+</p>
+
+<p>
+El CSV simplement es limita a separar cada un dels registres de l’estructura en línies i els camps se separen amb comes. A més, per poder definir els tipus de  dades, envolta de cometes les dades de text, mentre que no es posen cometes en les numèriques.
+</p>
+<pre class="code">&quot;Manel&quot;, &quot;Puig&quot;, &quot;Garcia&quot;, 8
+&quot;Pere&quot;, &quot;González&quot;, &quot;Puigdevall&quot;, 5
+&quot;Maria&quot;, &quot;Pous&quot;, &quot;Canadell&quot;, 7</pre>
+<div class="iocimportant"><div class="ioccontent">
+<p>
+CSV és una manera senzilla de desar dades estructurades en format de text que permet a un programa identificar les diferents dades que conté cada registre i a més interpretar de quin tipus són. 
+</p>
+</div></div>
+<p>
+A més, un avantatge afegit de CSV és que és relativament fàcil afegir més dades a un fitxer que estigui en format CSV, ja que només cal un editor de text i respectar les regles de separar les dades amb comes i fer un salt de línia per cada registre.
+</p>
+
+<p>
+Per tant un programa pot deduir fàcilment a partir de l’exemple anterior que les dades són com es veu en la <span class="tabref"><a href="#table6"><span>taula</span></a></span>.
+</p>
+<div class="ioctable ">
+<div class="titletable"><a name="table6"><span>Taula: </span></a>Interpretació del significat del fitxer CSV</div>
+<div class="table"><table class="inline">
+	<tr class="row0">
+		<th class="col0 leftalign"> Dada   </th><th class="col1 leftalign"> Resultat                               </th>
+	</tr>
+	<tr class="row1">
+		<td class="col0 leftalign"> Manel  </td><td class="col1"> Dada de text perquè està entre cometes </td>
+	</tr>
+	<tr class="row2">
+		<td class="col0 leftalign"> Puig   </td><td class="col1"> Dada de text perquè està entre cometes </td>
+	</tr>
+	<tr class="row3">
+		<td class="col0"> Garcia </td><td class="col1"> Dada de text perquè està entre cometes </td>
+	</tr>
+	<tr class="row4">
+		<td class="col0 leftalign"> 8      </td><td class="col1 leftalign"> Dada numèrica                          </td>
+	</tr>
+</table></div>
+</div>
+<p>
+Però els sistemes d’estructurar dades en fitxers de text també tenen problemes. Si necessitem afegir més dades a cada registre és gairebé segur que obligarà a fer canvis en el programa que les tractarà. El programa necessita saber quines dades hi ha en cada una de les columnes per poder treballar i, per tant, si modifiquem les columnes pot malinterpretar les dades.
+</p>
+<div class="iocexample"><div class="ioccontent"><p class="ioctitle"> Problema d&#039;afegir dades en un CSV</p>
+<p>
+Per exemple, si afegim una dada nova amb tractament de la persona al davant del fitxer anterior: 
+</p>
+<pre class="code">&quot;Sr&quot;, &quot;Manel&quot;, &quot;Puig&quot;, &quot;Garcia&quot;, 8
+&quot;Sr&quot;, &quot;Pere&quot;, &quot;González&quot;, &quot;Puigdevall&quot;, 5
+&quot;Sra&quot;, &quot;Maria&quot;, &quot;Pous&quot;, &quot;Canadell&quot;, 7</pre>
+
+<p>
+Si es fa servir el mateix programa que abans, aquest pot pensar que els noms de les persones són “Sr” i “Sra” i que les notes són “Garcia”, “Puigdevall”, etc.
+</p>
+
+<p>
+Però afegir dades no és l’únic problema que tenim, ja que representar les dades d’aquesta manera n’arruïna la lectura de la gent que no faci servir els programes específics. Qui pot saber que el nombre és una nota i no una altra cosa?
+</p>
+
+<p>
+A qualsevol de vosaltres se us pot acudir una manera senzilla d’evitar aquest problema, que consisteix a fer que la primera columna indiqui què és cada una de les dades que s’hi representen a continuació.
+</p>
+<pre class="code">&quot;nom&quot;, &quot;cognom&quot;, &quot;cognom2&quot;, &quot;nota&quot;
+&quot;Manel&quot;, &quot;Puig&quot;, &quot;Garcia&quot;, 8
+&quot;Pere&quot;, &quot;González&quot;, &quot;Puigdevall&quot;, 5
+&quot;Maria&quot;, &quot;Pous&quot;, &quot;Canadell&quot;, 7</pre>
+</div></div>
+<p>
+Desenvolupar un programa que interpreti aquestes dades i que s’asseguri que no es produeixen errors és bastant complex.
+</p>
+
+</div>
+
+<h2><a id="fitxers_de_marques" >Fitxers de marques</a></h2>
+<div class="level2">
+
+<p>
+Es pot dir que els fitxers de marques són una manera diferent d’emmagatzemar informació en ordinadors que s’afegeix a les maneres d’emmagatzemar la informació per mitjà de fitxers binaris o fitxers de text. L’objectiu principal dels fitxers de marques és intentar <strong>recollir les millors característiques dels fitxers de text i binaris</strong> i esquivar-ne els problemes.
+</p>
+<div class="iocimportant"><div class="ioccontent">
+<p>
+Els fitxers de marques prenen com a base els fitxers de text per aprofitar-se de les característiques més interessants d’aquest tipus de fitxers:
+</p>
+<ul>
+<li class="level1"><div class="li"> La facilitat de creació i lectura.</div>
+</li>
+<li class="level1"><div class="li"> El compliment d’estàndards d’emmagatzematge definits i públics.</div>
+</li>
+</ul>
+</div></div>
+<p>
+Com que els fitxers de text sempre estan emmagatzemats en algun codi de caràcters conegut (<acronym title="American Standard Code for Information Interchange">ASCII</acronym>, UTF-8, etc.) s’aconsegueix que puguin ser transportats i llegits en qualsevol plataforma, sistema operatiu o programa que pugui interpretar aquests codis de caràcters. Per tant, els llenguatges de marques s’aprofitaran d’aquesta característica, en estar basats en el format de text. 
+</p>
+
+<p>
+A més, de retruc, també tindran l’avantatge que podran ser oberts i creats amb els programes d’edició de text estàndard. Des d’editors tan simples com el Bloc de notes dels sistemes Windows o el Gedit de sistemes Unix fins a editors més complexos com el Microsoft Word, passant per editors especialitzats en XML com l’Oxygen XML Editor. 
+</p>
+
+<p>
+
+</p>
+
+<p>
+Els fitxers de marques, per tant, s’aprofiten d’un dels grans avantatges dels arxius de text sobre els arxius binaris, ja que aquests darrers requereixen ser oberts amb un programa específic que en pugui interpretar el format. 
+</p>
+<div class="iocimportant"><div class="ioccontent">
+<p>
+Però els fitxers de marques no solament s’intenten aprofitar de les característiques dels fitxers de text sinó que també intenten <strong>aconseguir les característiques més interessants dels fitxers binaris</strong>, com:
+</p>
+<ul>
+<li class="level1"><div class="li"> La incorporació de metadades.</div>
+</li>
+<li class="level1"><div class="li"> La definició de l’estructura de les dades.</div>
+</li>
+</ul>
+</div></div>
+<p>
+Això fa que els llenguatges de marques adquireixin una de les característiques més interessants dels fitxers binaris, que és la possibilitat d’incorporar informació sobre les dades –metadades– però intentant que afecti el mínim possible la llegibilitat del document.
+</p>
+
+<p>
+També permeten definir les dades i la seva estructura de manera que sigui senzill per un programa poder-les interpretar. 
+</p>
+
+<p>
+Gràcies als avantatges que ofereixen els llenguatges de marques, aquests s’han convertit ràpidament en una de les maneres habituals de representar dades i es poden trobar contínuament en les tasques habituals amb ordinadors:
+</p>
+<ul>
+<li class="level1"><div class="li"> L’exponent més popular és Internet –el Web–, que està basat totalment en els llenguatges de marques.</div>
+</li>
+<li class="level1"><div class="li"> Molts dels programes d’ordinador que feu servir habitualment fan servir en algun moment alguna o altra forma d’algun llenguatge de marques per a emmagatzemar les seves dades de configuració o de resultats:</div>
+<ul>
+<li class="level2"><div class="li"> Internament els formats de documents de Microsoft Office o d’OpenOffice.org o LibreOffice estan basats en llenguatges de marques.</div>
+</li>
+<li class="level2"><div class="li"> Microsoft Visual Studio desa la seva configuració fent servir llenguatges de marques.</div>
+</li>
+<li class="level2"><div class="li"> etc.</div>
+</li>
+</ul>
+</li>
+</ul>
+
+</div>
+
+<h3><a id="les_marques" >Les marques</a></h3>
+<div class="level3">
+
+<p>
+Les marques són una sèrie de codis que s’incorporen als documents electrònics per determinar-ne el format, la manera com s’han d’imprimir, l’estructura de les dades, etc. Per tant, són <strong>anotacions que s’incorporen a les dades però que no en formen part</strong>.
+</p>
+
+<p>
+Les marques, per tant, han de ser fàcilment distingibles del text normal (per la seva posició, perquè segueixen algun tipus de sintaxi, etc.). Les marques més usades són les que estan formades per textos descriptius i estan envoltades dels símbols de “més petit” (&lt;) i “més gran” (&gt;) i normalment n’hi sol haver una al principi i una al final:
+</p>
+<pre class="code xml"><ol><li class="li1"><div class="de1"><span class="sc3"><span class="re1">&lt;nom<span class="re2">&gt;</span></span></span>Manel Puig Garcia<span class="sc3"><span class="re1">&lt;/nom<span class="re2">&gt;</span></span></span></div></li></ol></pre>
+
+<p>
+Aquestes marques poden ser imbricades per <strong>indicar estructures de dades</strong>: 
+</p>
+<pre class="code xml"><ol><li class="li1"><div class="de1"><span class="sc3"><span class="re1">&lt;persona<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1">   <span class="sc3"><span class="re1">&lt;nom<span class="re2">&gt;</span></span></span>Manel Puig Garcia<span class="sc3"><span class="re1">&lt;/nom<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1">   <span class="sc3"><span class="re1">&lt;nom<span class="re2">&gt;</span></span></span>Pere González Puigdevall<span class="sc3"><span class="re1">&lt;/nom<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1">   <span class="sc3"><span class="re1">&lt;nom<span class="re2">&gt;</span></span></span>Maria Pous Canadell<span class="sc3"><span class="re1">&lt;/nom<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1"><span class="sc3"><span class="re1">&lt;/persona<span class="re2">&gt;</span></span></span></div></li></ol></pre>
+
+<p>
+Però hi ha moltes altres formes de marques. Una altra idea consisteix a trobar alguna combinació de caràcters que surti rarament en el llenguatge habitual. El TeX fa servir les barres invertides per a indicar l’inici de les marques
+</p>
+<pre class="code">\section{Persones}
+\begin{itemize}
+\item Manel Puig Garcia
+\item Pere González Puigdevall
+\item Maria Pous Canadell
+\end{itemize}</pre>
+
+<p>
+Altres llenguatges de marques fan servir caràcters no habituals en determinades posicions per indicar que són marques. Per exemple amb Wiki Markup els caràcters ”=” a la primera posició d’una línia es fan servir per indicar que el text és un títol d’apartat i el <code>*</code> per les llistes de punts:
+</p>
+<pre class="code">= Persones = 
+* Manel Puig Garcia
+* Pere González Puigdevall
+* Maria Pous Canadell</pre>
+
+<p>
+La idea general és que cal que les marques siguin fàcilment identificables per poder-nos aprofitar dels avantatges que ofereixen els llenguatges de marques.
+</p>
+
+</div>
+
+<h3><a id="caracteristiques_dels_llenguatges_de_marques" >Característiques dels llenguatges de marques</a></h3>
+<div class="level3">
+<div class="iocimportant"><div class="ioccontent">
+<p>
+Els llenguatges de marques són una manera de codificar un document de text de manera que per mitjà de les marques (l’equivalent de les metadades dels fitxers binaris) s’hi incorpora informació relativa a com s’ha de representar el text, sobre quina estructura tenen les dades que conté, etc.
+</p>
+</div></div>
+<p>
+Els llenguatges de marques han destacat per una sèrie de característiques que els han convertit en els tipus de llenguatges més usats en la informàtica actual per emmagatzemar i representar les dades. Entre les característiques més interessants que ofereixen els llenguatges de marques hi ha:
+</p>
+<ul>
+<li class="level1"><div class="li"> Que es basen en el text pla. </div>
+</li>
+<li class="level1"><div class="li"> Que permeten fer servir metadades.</div>
+</li>
+<li class="level1"><div class="li"> Que són fàcils d’interpretar i processar.</div>
+</li>
+<li class="level1"><div class="li"> Que són fàcils de crear i prou flexibles per representar dades molt diverses.</div>
+</li>
+</ul>
+
+<p>
+Les aplicacions d’Internet i molts dels programes d’ordinador que es fan servir habitualment fan servir d’alguna manera o altra algun llenguatge de marques.
+</p>
+
+</div>
+
+<h4><a id="basats_en_text_pla" >Basats en text pla</a></h4>
+<div class="level4">
+
+<p>
+Els llenguatges de marques es basen en text pla sense format. Aquests caràcters poden estar codificats en diferents codis de caràcters: <acronym title="American Standard Code for Information Interchange">ASCII</acronym>, ISO-8859-1, UTF-8, etc.
+</p>
+
+<p>
+Un dels avantatges que intenten aportar els llenguatges de marques és que es poden interpretar directament i això només és possible si fem servir el format de text, ja que els binaris requereixen un programa per interpretar-los. Però a més tenen l’avantatge que són independents de la plataforma, del sistema operatiu o del programa.
+</p>
+
+<p>
+El fet que estiguin basats en format de text fa que siguin fàcils de crear i de modificar perquè només requereixen un simple editor de textos.
+</p>
+
+</div>
+
+<h4><a id="us_de_metadades" >Ús de metadades</a></h4>
+<div class="level4">
+
+<p>
+Les marques s’intercalen entre el contingut del document, de manera que generalment aquestes etiquetes solen ser descriptives de què és el que indica el contingut de les dades que contenen.
+</p>
+
+<p>
+Aquestes marques són la manera com s’afegeixen les metadades als documents de text i com s’aconsegueixen superar les limitacions del format de text i aconseguir alguns dels avantatges dels fitxers binaris.
+</p>
+
+</div>
+
+<h4><a id="facilitat_de_proces" >Facilitat de procés</a></h4>
+<div class="level4">
+
+<p>
+Els llenguatges de marques permeten que el processament de les dades que continguin pugui ser automatitzat d’alguna manera, ja que el fitxer conté l’estructura de les dades que conté.
+</p>
+
+<p>
+El fet d’incloure l’estructura permetrà que un programa pugui interpretar cada una de les dades d’un fitxer de marques per representar-lo o tractar-lo convenientment, ja que mostren l’estructura de les dades que contenen.
+</p>
+
+<p>
+Posteriorment un programa podrà interpretar gràcies a les marques què és el que significa cada una de les dades del document.
+</p>
+
+</div>
+
+<h4><a id="facilitat_de_creacio_i_representacio_de_dades_diverses" >Facilitat de creació i representació de dades diverses</a></h4>
+<div class="level4">
+
+<p>
+A pesar que van ser pensats per contenir dades de text, els llenguatges de marques han demostrat que són capaços de contenir dades de molts tipus diferents.
+</p>
+
+<p>
+
+</p>
+
+<p>
+Actualment s’estan fent servir fitxers de marques per representar imatges vectorials, fórmules matemàtiques, crear pàgines web, executar funcions remotes per mitjà de serveis web, representar música o sons, etc.
+</p>
+
+<p>
+I sense importar quin tipus de dades s’hi representin sempre hi haurà la possibilitat de crear aquests fitxers des d’un editor de text bàsic.
+</p>
+
+</div>
+
+<h3><a id="classificacio_dels_llenguatges_de_marques" >Classificació dels llenguatges de marques</a></h3>
+<div class="level3">
+
+<p>
+És complicat fer una classificació dels llenguatges de marques que hi ha però generalment s’accepta que en tenim dos grans grups basant-nos en quin és l’<strong>objectiu bàsic</strong> del llenguatge de marques:
+</p>
+<ul>
+<li class="level1"><div class="li"> <strong>Llenguatges procedimentals i de presentació</strong>, orientats a especificar com s’ha de representar la informació.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Llenguatges descriptius o semàntics</strong>: orientats a descriure l’estructura de les dades que conté.</div>
+</li>
+</ul>
+
+<p>
+Aquesta és la classificació més acceptada però, com molt sovint passa en l’àmbit de la Informàtica, ens podem trobar llenguatges que tinguin aspectes dels dos grups i permetin tant definir la manera de presentar la informació com definir-ne l’estructura.
+</p>
+
+</div>
+
+<h4><a id="procedimentals_i_de_presentacio" >Procedimentals i de presentació</a></h4>
+<div class="level4">
+
+<p>
+En aquests llenguatges el que es fa és indicar de quina manera s’ha de fer la presentació de les dades. Ja sigui per mitjà d’informació per al disseny (marcar negretes, títols, etc.) o de procediments que ha de fer el programari de representació. L’exemple més popular d’aquests llenguatges és l’<acronym title="HyperText Markup Language">HTML</acronym> però n’hi ha molts més: TeX, Wikitext…
+</p>
+
+<p>
+En aquests casos els documents ens poden servir per determinar de quina manera es mostrarà el document a qui el llegeixi. 
+</p>
+
+<p>
+Si agafem un exemple senzill fent servir el llenguatge de marques lleuger <em>Wiki markup</em>, que fa servir Mediawiki (programa amb el qual s’ha desenvolupat la Wikipedia):
+</p>
+<pre class="code xml"><ol><li class="li1"><div class="de1">= Classe =</div></li><li class="li1"><div class="de1">&nbsp;</div></li><li class="li1"><div class="de1">== Assignatura: XML == </div></li><li class="li1"><div class="de1">[[Fitxer:xml.png]]</div></li><li class="li1"><div class="de1">&nbsp;</div></li><li class="li1"><div class="de1">'''Professor''': </div></li><li class="li1"><div class="de1">:* ''Manel Puig''</div></li><li class="li1"><div class="de1">&nbsp;</div></li><li class="li1"><div class="de1">'''Alumnes'''</div></li><li class="li1"><div class="de1">&nbsp;</div></li><li class="li1"><div class="de1">:* Frederic Puig</div></li><li class="li1"><div class="de1">:* Filomeno Garcia</div></li><li class="li1"><div class="de1">:* Manel Puigdevall</div></li></ol></pre>
+
+<p>
+Que ens mostrarà el que es veu a la <span class="figref"><a href="#fig6"><span>figura</span></a></span>: 
+</p>
+<div class="iocfigure"><a name="fig6"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+ Representació del text en format wikicode
+
+</figcaption><img src="../media/wikicode.png" alt="" /></figure>
+</div>
+<p>
+Es pot veure com el programa ha interpretat les marques ”=” o ”==” per mostrar els diferents nivells dels títols, que els símbols ”:*” indiquen llistes de punts i que amb la diferent quantitat de cometes s’indiquen negretes o cursiva. Per tant, és un exemple que indica clarament <strong>com ha de ser representada la informació</strong>.
+</p>
+
+</div>
+
+<h4><a id="descriptius_o_semantics" >Descriptius o semàntics</a></h4>
+<div class="level4">
+
+<p>
+En aquests llenguatges es descriu quina estructura lògica té el document ignorant de quina manera serà representada en els programes. Només es posen les marques amb l’objectiu de definir les parts que donen estructura al document. L’exemple més important és l’XML però n’hi algun altre que està tenint molt de suport, com per exemple JSON.
+</p>
+
+<p>
+En el document següent tenim un exemple d’un fitxer de marques que dóna informació sobre persones:
+</p>
+<pre class="code xml"><ol><li class="li1"><div class="de1"><span class="sc3"><span class="re1">&lt;alumnes<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1">    <span class="sc3"><span class="re1">&lt;persona<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1">        <span class="sc3"><span class="re1">&lt;nom<span class="re2">&gt;</span></span></span>Pere<span class="sc3"><span class="re1">&lt;/nom<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1">        <span class="sc3"><span class="re1">&lt;cognom<span class="re2">&gt;</span></span></span>Puig<span class="sc3"><span class="re1">&lt;/cognom<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1">    <span class="sc3"><span class="re1">&lt;/persona<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1">    <span class="sc3"><span class="re1">&lt;persona<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1">        <span class="sc3"><span class="re1">&lt;nom<span class="re2">&gt;</span></span></span>Manel<span class="sc3"><span class="re1">&lt;/nom<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1">        <span class="sc3"><span class="re1">&lt;cognom<span class="re2">&gt;</span></span></span>Garcia<span class="sc3"><span class="re1">&lt;/cognom<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1">    <span class="sc3"><span class="re1">&lt;/persona<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1"><span class="sc3"><span class="re1">&lt;/alumnes<span class="re2">&gt;</span></span></span></div></li></ol></pre>
+
+<p>
+
+</p>
+
+<p>
+Es pot veure clarament que la informació de les marques en el document estableix quin és el contingut de les dades: una llista d’alumnes. Amb un simple cop d’ull resulta fàcil determinar que <code>Pere</code> i <code>Manel</code> són noms i que <code>Puig</code> i <code>Garcia</code> són cognoms. Però per mitjà de la jerarquia de les dades es pot inferir que <code>Pere Puig</code> i <code>Manel Garcia</code> són <code>alumnes</code> ja que tant <code>nom</code> com <code>cognom</code> estan englobats dins de la marca <code>alumnes</code>.
+</p>
+
+<p>
+Aquest document mostra <strong>quina és l’estructura de les dades</strong> que conté i a més aquesta també es pot descobrir tot interpretant les etiquetes el seu contingut semàntic. A partir dels coneixements que es tinguin es dedueix que <code>Pere</code> és el nom d’una persona que és un alumne.
+</p>
+
+</div>
+
+<h4><a id="sistema_d_etiquetatge" >Sistema d&#039;etiquetatge</a></h4>
+<div class="level4">
+
+<p>
+Tant si el sistema és descriptiu com de presentació <strong>les marques no han estat col·locades de qualsevol manera</strong> sinó que s’ha anat seguint un sistema determinat. Sovint les marques envolten el contingut que volem que tingui un significat o que sigui representat d’una manera determinada. No es poden col·locar les marques de qualsevol manera, ja que una de les coses que cal evitar són possibles malinterpretacions.
+</p>
+
+<p>
+Per això, a més de definir les marques que s’hi posaran, els llenguatges de marques defineixen unes regles d’ús que especifiquen com han de ser les marques, en quines condicions es permet fer-les sevir i a vegades fins i tot què signifiquen.
+</p>
+
+</div>
+
+<h3><a id="historia" >Història</a></h3>
+<div class="level3">
+
+<p>
+Es considera que l’origen dels llenguatges de marques està en les modificacions que els impressors feien amb llapis en manuscrits. Quan algú volia imprimir un llibre que havia escrit, els impressors, amb un llapis generalment de color blau, escrivien en el text quines característiques havia de tenir cada part del text, si s’havia de fer en negreta, si era el títol del llibre, etc. Es creu que aquests són els antecedents de les marques.
+</p>
+
+</div>
+
+<h4><a id="sgml" >SGML</a></h4>
+<div class="level4">
+
+<p>
+Al principi dels anys vuitanta a IBM necessitaven alguna manera d’emmagatzemar i compartir una gran quantitat d’informació entre diferents plataformes i que permetés integrar les dades en sistemes de dades, editors, etc., i van desenvolupar GML, que posteriorment va acabar amb el nom SGML en el moment en què va ser estandarditzat l’any 1986 per l’organització d’estàndards internacional ISO (International Organitzation for Standardisation). L’especificació es troba sota el nom ISO-8879.
+</p>
+
+<p>
+A pesar que no es considera el primer llenguatge de marques, va ser el primer llenguatge reconegut com a estàndard ISO. 
+</p>
+
+<p>
+
+</p>
+
+<p>
+SGML (<em>standard generalized markup language</em>) és un llenguatge basat en les dades de text que es pot fer servir per posar metadades a les dades. És un sistema per organitzar i etiquetar elements d’un document posant èmfasi en els aspectes de l’estructura d’un document i deixant que sigui l’intèrpret el que s’encarrega de fer la representació visual d’aquestes dades. Ho fa definint unes regles estrictes que especifiquen de quina manera es poden fer les etiquetes.
+</p>
+
+<p>
+SGML es va dissenyar per ser una manera estàndard d’etiquetar dades genèriques de manera que no importés si les dades per etiquetar provenien del món de les matemàtiques o bé eren els resultats financers d’una empresa. Totes les dades es podien etiquetar amb sentit fent servir SGML.
+</p>
+<div class="iocnote"><div class="ioccontent">
+<p>
+El fet que SGML fos tan complex no el feia ideal per intercanviar dades per mitjà d’Internet. Si només un grup de persones podia generar informació el creixement de l’entorn Web hauria estat molt inferior.
+</p>
+</div></div>
+<p>
+SGML es feia servir sobretot en documents que havien de tenir molts canvis i que posteriorment s’havien de representar en formats diferents. 
+</p>
+
+<p>
+Per tant, amb SGML tenim els avantatges següents:
+</p>
+<ul>
+<li class="level1"><div class="li"> Tenim una manera de reutilitzar les dades. </div>
+</li>
+<li class="level1"><div class="li"> Permet un control més gran sobre les dades i en garanteix la integritat.</div>
+</li>
+<li class="level1"><div class="li"> És portable.</div>
+</li>
+<li class="level1"><div class="li"> És flexible.</div>
+</li>
+<li class="level1"><div class="li"> Ens garanteix la perdurabilitat de la informació.</div>
+</li>
+</ul>
+
+<p>
+Però no tot són avantatges en l’SGML:
+</p>
+<ul>
+<li class="level1"><div class="li"> La majoria dels documents que s’hi creaven només estaven destinats a la impressió.</div>
+</li>
+<li class="level1"><div class="li"> És terriblement complex, de manera que no es fa servir en ordinadors personals.</div>
+</li>
+</ul>
+
+</div>
+
+<h4><a id="html" >HTML</a></h4>
+<div class="level4">
+
+<p>
+El 1989, Tim Berners-Lee i Anders Berglund, dos investigadors del CERN (acrònim de Conseil Européen pour la Recherche Nucléaire, Organització Europea per a la Recerca Nuclear), van crear un llenguatge basat en etiquetes basat en SGML destinat a compartir informació per Internet: <acronym title="HyperText Markup Language">HTML</acronym> (<em>hypertext markup language</em>). <acronym title="HyperText Markup Language">HTML</acronym> es basa en la manera de definir i interpretar etiquetes de SGML però no és totalment compatible amb SGML (algunes de les regles que s’hi han definit incompleixen les regles SGML).
+</p>
+
+<p>
+<acronym title="HyperText Markup Language">HTML</acronym> es concentra a definir un format per descriure la visualització de la informació en una pàgina web i és molt senzill. La seva senzillesa ha estat un dels factors que ha portat a la ràpida popularitat del World Wide Web i alhora d’Internet. És un dels motius pels quals cada dia es generen milions de pàgines web noves.
+</p>
+
+<p>
+
+</p>
+
+<p>
+El gran èxit de les tecnologies basades en <acronym title="HyperText Markup Language">HTML</acronym> ha fet que no parin d’evolucionar i, per tant, que <acronym title="HyperText Markup Language">HTML</acronym> hagués d’evolucionar molt ràpidament per adaptar-se cada vegada a més canvis i a les noves necessitats dels usuaris. Això, sumat al propòsit de no incrementar la dificultat del llenguatge, ha provocat que no sempre s’hagin fet les coses de la mateixa manera i que, per tant, la creació d’intèrprets de <acronym title="HyperText Markup Language">HTML</acronym> (en especial els navegadors) cada vegada sigui més complexa.
+</p>
+
+<p>
+A tot això s’hi ha de sumar que, malgrat no estar pensat per representar la informació, <acronym title="HyperText Markup Language">HTML</acronym> no defineix gaire estrictament algunes de les regles de com s’ha de visualitzar la informació, i per tant sovint els navegadors han fer interpretacions que no sempre coincideixen amb les que fan els altres navegadors. És conegut per tots els dissenyadors de pàgines web que les pàgines no sempre es veuen igual en tots els navegadors (<span class="figref"><a href="#fig7"><span>figura</span></a></span>).
+</p>
+<div class="iocfigure"><a name="fig7"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+ Visualització de pàgines en navegadors
+
+</figcaption><img src="../media/visualitzacio-navegadors.png" alt="" /></figure>
+<div class="footfigure"> A vegades les diferències són mínimes però en altres casos les diferències poden ser molt importants.</div></div>
+<p>
+D’altra banda, <acronym title="HyperText Markup Language">HTML</acronym> funciona bé a l’hora de presentar informació als humans però té uns quants problemes que el fan poc eficient per a les noves aplicacions actuals: és molt difícil reutilitzar la informació que conté per generar resultats en formats diferents dels que ha definit el dissenyador i és molt complex per als programes automàtics interpretar de quin tipus són les dades contingudes en un document <acronym title="HyperText Markup Language">HTML</acronym>.
+</p>
+
+<p>
+Per tant, calia alguna manera de poder fer cerques intel·ligents en els documents <acronym title="HyperText Markup Language">HTML</acronym> i seleccionar-ne el resultats segons criteris personalitzables.
+</p>
+<div class="iocimportant"><div class="ioccontent">
+<p>
+Calia una manera de buscar, 
+moure, visualitzar i manipular la informació continguda en els documents <acronym title="HyperText Markup Language">HTML</acronym>.
+</p>
+</div></div>
+<p>
+I per aquest motiu va aparèixer l’XML.
+</p>
+
+</div>
+
+<h4><a id="xml" >XML</a></h4>
+<div class="level4">
+
+<p>
+El consorci <acronym title="World Wide Web Consortium">W3C</acronym> va desenvolupar una alternativa a l’HTML que pogués satisfer les necessitats futures del web.
+El 1996 el consorci <acronym title="World Wide Web Consortium">W3C</acronym> es va proposar introduir el poder i la flexibilitat de l’SGML al web.
+</p>
+
+<p>
+SGML oferia tres avantatges que l’HTML no tenia:
+</p>
+<ul>
+<li class="level1"><div class="li"> Extensibilitat</div>
+</li>
+<li class="level1"><div class="li"> Estructura</div>
+</li>
+<li class="level1"><div class="li"> Validació</div>
+</li>
+</ul>
+<div class="iocnote"><div class="ioccontent">
+<p>
+La versió més usada és la 1.0, ja que la versió 1.1 no aporta gaires novetats interessants per a la majoria d’usos (bàsicament sobre les versions d’Unicode posteriors a XML 1.0)
+</p>
+</div></div>
+<p>
+El febrer de 1998 es llença l’especificació 1.0 d’XML (<a href="http://www.w3.org/TR/2004/REC-xml-20040204/" class="urlextern" title="http://www.w3.org/TR/2004/REC-xml-20040204/"  rel="nofollow">www.w3.org/TR/2004/REC-xml-20040204</a>) i posteriorment el 2004 va sortir la versió 1.1 (<a href="http://www.w3.org/TR/xml11/" class="urlextern" title="http://www.w3.org/TR/xml11/"  rel="nofollow">www.w3.org/TR/xml11</a>). Aquestes especificacions s’han anat revisant periòdicament.
+</p>
+
+<p>
+L’XML és un llenguatge simple de descripció d’informació:
+</p>
+<ul>
+<li class="level1"><div class="li"> És un estàndard que permet dissenyar i desenvolupar llenguatges de marques.</div>
+</li>
+<li class="level1"><div class="li"> És un format de text estandarditzat que serveix per representar i transportar informació estructurada.</div>
+</li>
+</ul>
+
+</div>
+
+<h5><a id="nombre_d_etiquetes" >Nombre d&#039;etiquetes</a></h5>
+<div class="level5">
+
+<p>
+A l’<acronym title="HyperText Markup Language">HTML</acronym> li ha anat bé amb un nombre finit d’etiquetes i, per tant, a l’hora de dissenyar l’XML es van fer diversos intents de crear un nombre finit d’etiquetes. Però tots els intents de crear un conjunt finit d’etiquetes van fallar perquè restringir les etiquetes restava flexibilitat al llenguatge.
+</p>
+
+<p>
+Es va veure que cada conjunt d’usuaris necessita un subconjunt d’etiquetes diferent i que sovint eren divergents (els matemàtics en feien servir un, els químics en necessitaven un altre, etc.), o sigui, que la solució final adoptada va ser la més lògica: si restringir les etiquetes resta flexibilitat el més fàcil és no restringir-les.
+</p>
+<div class="iocimportant"><div class="ioccontent">
+<p>
+L’XML defineix un nombre infinit d’etiquetes.
+</p>
+</div></div>
+<p>
+Per tant, l’XML permetrà que cada persona pugui definir les etiquetes que li facin falta per poder representar les dades més adequadament.
+</p>
+
+</div>
+
+<h5><a id="estructura_de_les_dades1" >Estructura de les dades</a></h5>
+<div class="level5">
+
+<p>
+Una altra idea que es va tenir en compte a l’hora de desenvolupar l’XML era que les dades que contingués es poguessin reutilitzar per generar altres resultats i, per tant, calia que pogués ser interpretat fàcilment per mitjà de programes d’ordinador. Per tant, les dades contingudes en documents havien de tenir una estructura.
+</p>
+
+<p>
+Per tant, l’XML es va dissenyar amb la idea <strong>de donar estructura a les dades i no preocupar-se de com es presentaran les dades als usuaris</strong>. Per fer-ho ja es desenvoluparien altres alternatives: <acronym title="Cascading Style Sheets">CSS</acronym>, XML-FO, etc.
+</p>
+<div class="iocimportant"><div class="ioccontent">
+<p>
+Una de les idees més importants d’XML és <strong>separar les dades de la presentació</strong>.
+</p>
+</div></div>
+<p>
+Això fa que a l’hora de crear un document XML s’ha de pensar com s’han d’estructurar les dades i mai especificar res de com s’hauran de representar.
+</p>
+
+</div>
+
+<h5><a id="transport_de_les_dades" >Transport de les dades</a></h5>
+<div class="level5">
+
+<p>
+El fet que l’XML es concentri en l’estructura de les dades i que, per tant, sigui relativament fàcil determinar quines dades conté, el fa un sistema ideal per al transport de dades entre diferents plataformes.
+</p>
+
+<p>
+Per tant, si tenim un document XML com aquest:
+</p>
+<pre class="code xml"><ol><li class="li1"><div class="de1"><span class="sc3"><span class="re1">&lt;alumnes<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1">    <span class="sc3"><span class="re1">&lt;persona<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1">        <span class="sc3"><span class="re1">&lt;nom<span class="re2">&gt;</span></span></span>Manel<span class="sc3"><span class="re1">&lt;/nom<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1">        <span class="sc3"><span class="re1">&lt;cognom<span class="re2">&gt;</span></span></span>Garcia<span class="sc3"><span class="re1">&lt;/cognom<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1">    <span class="sc3"><span class="re1">&lt;/persona<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1">    <span class="sc3"><span class="re1">&lt;persona<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1">        <span class="sc3"><span class="re1">&lt;nom<span class="re2">&gt;</span></span></span>Pere<span class="sc3"><span class="re1">&lt;/nom<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1">        <span class="sc3"><span class="re1">&lt;cognom<span class="re2">&gt;</span></span></span>González<span class="sc3"><span class="re1">&lt;/nom<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1">    <span class="sc3"><span class="re1">&lt;/persona<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1"><span class="sc3"><span class="re1">&lt;/alumnes<span class="re2">&gt;</span></span></span></div></li></ol></pre>
+
+<p>
+Podem veure que observant aquest document és relativament senzill respondre les preguntes:
+</p>
+<ul>
+<li class="level1"><div class="li"> Quina informació conté el fitxer?</div>
+</li>
+<li class="level1"><div class="li"> Quina és l’estructura de la informació?</div>
+</li>
+<li class="level1"><div class="li"> Quines etiquetes s’han creat per descriure’n la informació?</div>
+</li>
+</ul>
+
+</div>
+
+<h5><a id="creacio_de_llenguatges" >Creació de llenguatges</a></h5>
+<div class="level5">
+
+<p>
+És evident que la llibertat que dóna tenir un nombre infinit d’etiquetes no és necessària en la majoria dels àmbits d’actuació. Per aquest motiu, normalment quan algú vulgui emmagatzemar informació definirà un nombre finit d’etiquetes i en quin ordre han d’aparèixer. 
+</p>
+
+<p>
+Per poder solucionar aquests problemes en XML es poden definir fitxers que defineixin quina serà l’estructura del document, i que, per tant, es pugui comprovar si el document segueix l’estructura correcta o no. Això alhora permet que si definim el vocabulari de manera pública qualsevol ens pugui enviar documents i detectar si estan ben formats o no.
+</p>
+
+<p>
+De fet, ja hi ha tota una sèrie de documents basats en XML que s’han convertit en estàndards públics en diferents àmbits, alguns dels quals els podeu veure en la <span class="tabref"><a href="#table7"><span>taula</span></a></span>.
+</p>
+<div class="ioctable ">
+<div class="titletable"><a name="table7"><span>Taula: </span></a>Alguns llenguatges estàndard basats en XML</div>
+<div class="table"><table class="inline">
+	<tr class="row0">
+		<th class="col0 leftalign"> Nom      </th><th class="col1 leftalign"> Ús                                               </th>
+	</tr>
+	<tr class="row1">
+		<td class="col0 leftalign"> SVG      </td><td class="col1"> Pensat per a gràfics vectorials en 2D amb animacions o sense </td>
+	</tr>
+	<tr class="row2">
+		<td class="col0 leftalign"> <acronym title="Mathematical Markup Language">MathML</acronym>   </td><td class="col1 leftalign"> Llenguatge per representar fórmules matemàtiques           </td>
+	</tr>
+	<tr class="row3">
+		<td class="col0 leftalign"> CML      </td><td class="col1 leftalign"> Llenguatge per a l’intercanvi d’informació química           </td>
+	</tr>
+	<tr class="row4">
+		<td class="col0 leftalign"> SMIL     </td><td class="col1 leftalign"> Tractament d’informació multimèdia               </td>
+	</tr>
+	<tr class="row5">
+		<td class="col0 leftalign"> SSML     </td><td class="col1 leftalign"> Síntesi de veu                                   </td>
+	</tr>
+	<tr class="row6">
+		<td class="col0"> ChessGML </td><td class="col1 leftalign"> Per representar partides d’escacs                </td>
+	</tr>
+	<tr class="row7">
+		<td class="col0 leftalign"> XFRML    </td><td class="col1 leftalign"> Per fer informes financers                       </td>
+	</tr>
+	<tr class="row8">
+		<td class="col0 leftalign"> SML      </td><td class="col1"> Usat en la indústria de l’acer </td>
+	</tr>
+</table></div>
+</div>
+<p>
+Però no s’acaba aquí, ja que la llista és immensa: SMBXML, CIML, NAML, TML, SCORM, LMML, OpenMath, PetroXML, ProductionML, GeophysicsML, X3D, MML, SMDL, BGML, etc. 
+</p>
+
+</div>
+
+<h5><a id="extensible" >Extensible</a></h5>
+<div class="level5">
+
+<p>
+Un altre dels avantatges d’XML és que és fàcilment extensible i adaptable a les necessitats que tinguem. L’XML permet que es barregin diferents vocabularis en el mateix document.
+</p>
+
+<p>
+Això fa que puguem definir un document XML amb un vocabulari creat per nosaltres que defineixi una llista d’alumnes i que alhora hi puguem afegir una imatge amb el logotip de l’escola en format SVG (un estàndard XML de gràfics vectorials) i alhora definir-hi la presentació en XHTML.
+</p>
+
+<p>
+Per tant, tenim prou flexibilitat per representar les dades que ens calguin en cada moment
+</p>
+
+</div>
+
+<h5><a id="us_d_xml" >Ús d&#039;XML</a></h5>
+<div class="level5">
+
+<p>
+Actualment els usos d’XML són molt diversos:
+</p>
+<ul>
+<li class="level1"><div class="li"> Mostrar el contingut de pàgines web. Un dels llenguatges XML és l’XHTML, que intenta modificar l’<acronym title="HyperText Markup Language">HTML</acronym> per fer-lo més senzill d’interpretar.</div>
+</li>
+<li class="level1"><div class="li"> Comunicar sistemes distribuïts que fins i tot executin sistemes operatius diferents o estiguin en plataformes totalment diferents.</div>
+</li>
+<li class="level1"><div class="li"> En comerç electrònic, en un sistema conegut com a Bussines2Bussines que permet a les empreses compartir dades de manera automàtica.</div>
+</li>
+<li class="level1"><div class="li"> Reduir la càrrega de servidors distribuint-la entre servidors.</div>
+</li>
+</ul>
+
+<p>
+Molts programes que feien servir formats binaris per emmagatzemar les seves dades han passat a algun tipus d’XML:
+</p>
+<ul>
+<li class="level1"><div class="li"> Microsoft Office: va passar de desar els documents en binari .DOC a XML .DOCX (OOXML) en estandaritzar-lo.</div>
+</li>
+<li class="level1"><div class="li"> OpenOffice.org: desa els seus documents en un format XML.</div>
+</li>
+</ul>
+
+<p>
+Podem veure que molts programes fan servir XML per desar la seva configuració o les seves dades amb una simple cerca en el sistema operatiu. 
+</p>
+
+<p>
+Amb una simple cerca podem veure quants fitxers XML tenim en el nostre sistema operatiu. Per exemple, en Linux podem executar el següent per veure el nombre de fitxers XML que hi tenim:
+</p>
+<pre class="code">  $ locate .xml | wc -l</pre>
+
+<p>
+En Windows podem fer el mateix amb:
+</p>
+<pre class="code">  c:\&gt; dir /a-d /s *.xml | find /c /v “”</pre>
+
+</div>
+
+<h5><a id="problemes2" >Problemes</a></h5>
+<div class="level5">
+
+<p>
+A pesar dels múltiples avantatges que ofereix l’XML, també se li han fet crítiques, com el fet que els fitxers XML tenen la tendència a ser molt grans. Gairebé sempre ocupen una quantitat molt més gran d’espai en disc que els seus equivalents en format binari.
+</p>
+
+<p>
+El fet de fer servir fitxers molt grans pot tenir un impacte important en el rendiment dels programes, ja que abans de poder-hi treballar han de carregar el fitxer o descarregar-lo de la xarxa.
+</p>
+
+<p>
+Hi ha gent que considera que el problema de la grandària dels fitxers a vegades és compensat per:
+</p>
+<ul>
+<li class="level1"><div class="li"> La facilitat d’interoperativitat entre programes.</div>
+</li>
+<li class="level1"><div class="li"> El preu de l’emmagatzematge és cada vegada més baix i per ara sembla que la tendència és que encara baixi més.</div>
+</li>
+</ul>
+
+<p>
+Però no tothom hi està d’acord, i per aquest motiu han aparegut tota una sèrie d’alternatives a l’XML que es coneixen com a <em>llenguatges de marques lleugers</em>, que normalment tenen com a objectiu aconseguir que els fitxers de marques ocupin molt menys espai:
+</p>
+<ul>
+<li class="level1"><div class="li"> En ocupar menys espai estalvien amplada de banda i espai de disc.</div>
+</li>
+<li class="level1"><div class="li"> Normalment es poden convertir a XML sense problemes.</div>
+</li>
+<li class="level1"><div class="li"> Ocupen menys memòria RAM quan són processats.</div>
+</li>
+</ul>
+
+<p>
+Els llenguatges de marques lleugers més usats actualment són JSON (<em>JavaScript object notation</em>) i els llenguatges de marques dels wikis.
+</p>
+
+</div>
+
+	 </article>
+     <div class="pnpage">
+      <div class="left-corner"></div>
+      <div id="prevpage">Anar a la p&agrave;gina anterior:<br /><a href="../../../WebContent/u1/referencies.html">Referències</a></div>
+      <div id="nextpage">Anar a la p&agrave;gina seg&uuml;ent:<br /><a href="../../../WebContent/u1/a1/activitats.html">Activitats</a></div>
+      <div class="right-corner"></div>
+     </div>
+    </div>
+    <footer class="footer">
+      <div><small>Aquest document està subjecte a una llicència oberta de Creative Commons, es reserva el dret de reconeixement de l'autoria, d'exigir que no se'n faci cap mena d'ús comercial. Si altereu o transformeu aquesta obra, o en genereu obres derivades, només podeu distribuir l'obra generada amb una llicència idèntica a aquesta.</small></div>
+    </footer>
+ </div>
+ <div id="back_preview" class="hidden"></div>
+ <div id="preview" class="hidden">
+  <div class="prevcontent"></div>
+ </div>
+ <div id="help-tooltips">
+  <div id="help-toc" class="hidden tooltip"><span>Taula de continguts:</span> Ofereix una vista general de l&#39;estructura del m&ograve;dul, que us facilitar&agrave; la navegaci&oacute; a trav&eacute;s dels seus continguts.<span class="arrow-left"></span></div> 
+  <div id="help-settings" class="hidden tooltip"><span>Opcions de format:</span> Permet configurar el format de lectura a partir de les vostres prefer&egrave;ncies, modificant la mida de la lletra, el color del fons, l&#39;amplada de la p&agrave;gina o l&#39;ocultaci&oacute; dels continguts complementaris, entre d&#39;altres.<span class="arrow-left"></span></div>
+  <div id="help-printer" class="hidden tooltip"><span>Imprimir:</span>  Envia el contingut seleccionat a la impressora.<span class="arrow-left"></span></div>
+  <div id="help-favorites" class="hidden tooltip"><span>Prefereits:</span> Permet desar aquelles parts del contingut a les que us interessi accedir en un moment posterior; us permetr&agrave; anar creant un repositori personalitzat de les seccions que considereu m&eacute;s rellevants. Un cop l&#39;hageu començat a fer servir se us mostrar&agrave; a sota un comptador que us informar&agrave; del nombre de preferits que s&#39;hagin emmagatzemat fins al moment.<span class="arrow-left"></span></div>
+  <div id="help-favcounter" class="hidden tooltip"><span>Comptador i llistat de preferits:</span> Indica el nombre de preferits que s&#39;han desat fins el moment; clicant damunt seu accedireu al llistat de preferits, i a trav&eacute;s d&#39;aquest podreu accedir directament als continguts que hageu emmagatzemat.<span class="arrow-left"></span></div>
+  <div id="help-help_icon" class="hidden tooltip"><span>Ajuda:</span> Aquesta opci&oacute; activa la informaci&oacute; de les funcionalitats del web tot situant el punter del ratol&iacute; al damunt dels diferents &iacute;tems.<span class="arrow-left"></span></div>
+  <div id="help-sidebar-hide" class="hidden tooltip"><span>Mostrar/Ocultar barra lateral:</span>  Deshabilita la barra d&#39;opcions, permetent la seva recuperaci&oacute; quan es desitgi.<span class="arrow-left"></span></div>
+  <div id="help-search" class="hidden tooltip"><span>Cerca:</span>  Introdu&iuml;u les paraules clau sobre aquells conceptes que desitgeu localitzar en els continguts del m&ograve;dul. Tamb&eacute; podeu excloure un terme de la cerca tot afegint-hi el signe &#8220;-&#8221; al davant.<span class="arrow-top"></span></div>
+  <div id="help-header" class="hidden tooltip"><span>Cap&ccedil;alera:</span>  Indica l&#39;apartat o secci&oacute; que es mostra en pantalla. Tingueu present que les capçaleres de segon, tercer i quart nivell tamb&eacute; es poden desar com a marcadors.<span class="arrow-left"></span></div>
+</div> 
+</body>
+</html>

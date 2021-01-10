@@ -1,0 +1,1404 @@
+<!doctype html>
+
+<!--[if lt IE 7 ]> <html class="ie ie6 no-js" lang="ca"> <![endif]-->
+<!--[if IE 7 ]>    <html class="ie ie7 no-js" lang="ca"> <![endif]-->
+<!--[if IE 8 ]>    <html class="ie ie8 no-js" lang="ca"> <![endif]-->
+<!--[if IE 9 ]>    <html class="ie ie9 no-js" lang="ca"> <![endif]-->
+<!--[if gt IE 9]><!--><html class="no-js" lang="ca"><!--<![endif]-->
+<!-- the "no-js" class is for Modernizr. -->
+
+<head id="www-sitename-com" data-template-set="html5-reset">
+
+	<meta charset="utf-8">
+	
+	<!-- Always force latest IE rendering engine (even in intranet) & Chrome Frame -->
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	
+	<title>Entorns de desenvolupament</title>
+	
+<!-- <meta name="title" content=""> --> 
+	<meta name="description" content="">
+	<!-- Google will often use this as its description of your page/site. Make it good. -->
+	
+	<meta name="google-site-verification" content="">
+	<!-- Speaking of Google, don't forget to set your site up: http://google.com/webmasters -->
+	
+	<meta name="author" content="Institut Obert de Catalunya">
+	<meta name="Copyright" content="Copyright Institut Obert de Catalunya 2011. All Rights Reserved.">
+
+	<!-- Dublin Core Metadata : http://dublincore.org/ -->
+	<meta name="DC.title" content="Entorns de desenvolupament">
+	<meta name="DC.subject" content="Informàtica i comunicacions">
+	<meta name="DC.creator" content="Institut Obert de Catalunya">
+	
+	<!--  Mobile Viewport Fix
+	j.mp/mobileviewport & davidbcalhoun.com/2010/viewport-metatag 
+	device-width : Occupy full width of the screen in its current orientation
+	initial-scale = 1.0 retains dimensions instead of zooming out if page height > device height
+	maximum-scale = 1.0 retains dimensions instead of zooming in if page width < device width
+	-->
+	<!-- Uncomment to use � use thoughtfully!
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+	-->
+
+	<link rel="shortcut icon" href="../../../img/favicon.ico">
+	<!-- This is the traditional favicon.
+		 - size: 16x16 or 32x32
+		 - transparency is OK
+		 - see wikipedia for info on browser support: http://mky.be/favicon/ -->
+		 
+	<link rel="apple-touch-icon" href="../../../img/apple-touch-icon.png">
+	<!-- The is the icon for iOS's Web Clip.
+		 - size: 57x57 for older iPhones, 72x72 for iPads, 114x114 for iPhone4's retina display (IMHO, just go ahead and use the biggest one)
+		 - To prevent iOS from applying its styles to the icon name it thusly: apple-touch-icon-precomposed.png
+		 - Transparency is not recommended (iOS will put a black BG behind the icon) -->
+	
+	<!-- CSS: screen, mobile & print are all in the same file -->
+	<link rel="stylesheet" href="../../../_/css/style.css">
+
+	<!-- CSS: jQuery UI -->
+	<link rel="stylesheet" href="../../../_/css/jquery-ui.css">
+	
+	<!-- all our JS is at the bottom of the page, except for Modernizr. -->
+	<script src="../../../_/js/modernizr-1.7.min.js"></script>
+	<script src="../../../_/js/Hyphenator.js" type="text/javascript"></script>
+	<script type="text/javascript">
+	   Hyphenator.config({
+		minwordlength : 4
+	   });
+	   Hyphenator.run();
+	</script>
+    <script src="../../../_/js/build.js" type="text/javascript"></script>
+</head>
+
+<body class="style-newspaper">
+
+<div class="wrapper"><!-- not needed? up to you: http://camendesign.com/code/developpeurs_sans_frontieres -->
+
+	<header id="header">
+		<div class="head"><a href="http://ioc.gencat.cat"><img src="../../../img/logo.png" alt="Institut Obert de Catalunya"/></a><a href="http://creativecommons.org/licenses/by-nc-sa/3.0/es/deed.ca"><img src="../../../img/license.png" alt="Llic&egrave;ncia" class="license"/></a></div>
+		<div class="headdocument"><a href="../../../index.html">Entorns de desenvolupament</a></div>
+        <div id="search" class="search" name="search">
+         <form id="frmsearch" action="../../../search.html" method="get">
+          <input type="text" name="q"/>
+        </form>
+        </div>
+	</header>
+   <div id="upbutton" class="upbutton" style="display:none;"><img src="../../../img/uparrow.png" alt="Pujar a l'inici de p&agrave;gina"/></div>
+   <aside id="aside">
+    <div id="menu">
+      <ul>
+       <li name="toc"><div><img src="../../../img/toc.png" alt="&Iacute;ndex"/></div></li>
+       <li name="settings"><div><img src="../../../img/settings.png" alt="Configuraci&oacute;"/></div></li>
+       <li name="printer"><div><img src="../../../img/printer.png" alt="Imprimir"/></div></li>
+       <li name="favorites"><div><img src="../../../img/favorites.png" alt="Favorits"/></div></li>
+       <li name="help_icon" class="help_icon"><div><img src="../../../img/help_icon.png" alt="Ajuda"/></div></li>
+      </ul>
+     </div>
+   </aside>
+   <div id="sidebar-hide" name="sidebar-hide"><img src="../../../img/arrows.png"/></div>
+   <section>
+     <div id="toc" class="hidden">
+      <div class="menucontent">
+        <ul>
+        <li id="u1" class="parentnode"><p><a href="../../../WebContent/u1/introduccio.html">1. Desenvolupament de programari</a></p><ul class="expander"><li id="u1introduccio"><a href="../../../WebContent/u1/introduccio.html">Introducció</a></li><li id="u1resum"><a href="../../../WebContent/u1/resum.html">Resum</a></li><li id="u1resultats"><a href="../../../WebContent/u1/resultats.html">Resultats d'aprenentatge</a></li><li id="u1referencies"><a href="../../../WebContent/u1/referencies.html">Referències</a></li><li id="u1a1" class="tocsection"><p id="u1a1continguts"><a href="../../../WebContent/u1/a1/continguts.html">Desenvolupament de programari</a><span class="buttonexp"></span></p><ul><li id="u1a1activitats"><a href="../../../WebContent/u1/a1/activitats.html">Activitats</a></li><li id="u1a1exercicis"><a href="../../../WebContent/u1/a1/exercicis.html">Exercicis</a></li><li id="u1a1annexos"><a href="../../../WebContent/u1/a1/annexos.html">Annexos</a></li></ul></li><li id="u1a2" class="tocsection"><p id="u1a2continguts"><a href="../../../WebContent/u1/a2/continguts.html">Instal·lació i ús d'entorns de desenvolupament</a><span class="buttonexp"></span></p><ul><li id="u1a2activitats"><a href="../../../WebContent/u1/a2/activitats.html">Activitats</a></li><li id="u1a2exercicis"><a href="../../../WebContent/u1/a2/exercicis.html">Exercicis</a></li><li id="u1a2annexos"><a href="../../../WebContent/u1/a2/annexos.html">Annexos</a></li></ul></li></ul></li><li id="" class="indexnode"><p><a href="../../../index.html">Anar a l&#39;&iacute;ndex general</a></p></li>
+        </ul>
+      </div>
+    </div>
+   </section>
+   <section>
+   <div id="settings" class="hidden">
+    <div class="menucontent">
+     <div class="allsettings">
+     <div class="settings">
+      <label>Font i Color</label>
+		<div class="setting-option">
+	        <ul class="fontBackground">
+				<li id="style-newspaper" title="Newspaper" class="appearance-style-newspaper"><span>Newspaper</span></li>
+                <li id="style-novel" title="Novel" class="appearance-style-novel"><span>Novel</span></li>
+                <li id="style-ebook" title="eBook" class="appearance-style-ebook"><span>eBook</span></li>
+				<li id="style-inverse" title="Inverse" class="appearance-style-inverse active"><span>Inverse</span></li>
+				<li id="style-athelas" title="Athelas" class="appearance-style-athelas"><span>Athelas</span></li>
+			</ul>
+		</div>
+     </div>
+	<div class="settings">
+      <label>Amplada</label>
+		<div class="setting-option">
+	        <div id="slider-width"></div>
+		</div>
+     </div>
+     <div class="settings">
+      <label>Mida de la font</label>
+		<div class="setting-option">
+	        <div id="slider-font"></div>
+		</div>
+     </div>
+     <div class="settings">
+      <label>Mida de la font</label>
+	  <div class="setting-option">
+       <form action="" class="sett-options">
+		<ul>
+		    <li><input type="checkbox" id="secondary-content" /><label for="secondary-content">Mostra recursos complementaris</label></li>
+		    <li><input type="checkbox" id="main-images" /><label for="main-images">Mostra imatges</label></li>
+		    <li><input type="checkbox" id="text-alignment" /><label for="text-alignment">Text justificat</label></li>
+			<li><input type="checkbox" id="text-hyphen" /><label for="text-hyphen">Partici&oacute; sil·l&agrave;bica</label></li>
+		</ul>
+       </form>
+	  </div>
+     </div>
+     </div>
+    </div>
+   </div>
+   </section>
+ <section>
+ <div id="favorites" class="hidden"></div>
+ </section>   
+ <div id="bridge" class="hidden"></div>
+ <div id="help" class="hidden">
+  <div class="helptitle">Dreceres del teclat<hr></div>
+  <div class="helpsection"><span>General</span>
+   <ul>
+    <li><span class="shortcut">g</span>: Anar al men&uacute; de navegaci&oacute;</li>
+    <li><span class="shortcut">o</span>: Anar a opcions</li>
+    <li><span class="shortcut">s</span>: Guardar la p&agrave;gina actual a favorits</li>
+    <li><span class="shortcut">p</span>: Imprimir la p&agrave;gina actual</li>
+    <li><span class="shortcut">?</span>: Mostrar/Ocultar l&#39;ajuda</li>
+   </ul>
+  </div>
+  <div class="helpsection"><span>Navegaci&oacute;</span>
+   <ul>
+    <li><span class="shortcut">i</span>: Anar a l&#39;&iacute;ndex general</li>
+    <li><span class="shortcut">t</span>: Anar a l&#39;inici de p&agrave;gina</li>
+    <li><span class="shortcut">b</span>: Anar al final de p&agrave;gina</li>
+    <li><span class="shortcut">j</span>: Anar cap endavant dintre la p&agrave;gina</li>
+    <li><span class="shortcut">k</span>: Anar cap enrere dintre la p&agrave;gina</li>
+    <li><span class="shortcut">h</span>: Anar a la p&agrave;gina anterior:</li>
+    <li><span class="shortcut">l</span>: Anar a la p&agrave;gina seg&uuml;ent:</li>
+   </ul>
+   </div>
+ </div>
+ <div id="favcounter" name="favcounter" class="hidden"><span></span></div>
+ <div id="navmenu" class="navmenu"><ul class="webnav"><li><a href="../../../index.html" title="Anar a l&#39;&iacute;ndex general">Inici</a></li><li><a href="../introduccio.html">Desenvolupament de programari </a></li><li>Desenvolupament de programari</li></ul></div>
+	<div id="content" lang="ca" class="hyphenate text">
+     <article lang="ca" class="sheet">
+        <h1><a id="desenvolupament_de_programari"> Desenvolupament de programari </a></h1>
+    	
+<p>
+Tota aplicació informàtica, ja sigui utilitzada en un suport convencional (com un ordinador de sobretaula o un ordinador portàtil) o sigui utilitzada en un suport de nova generació (per exemple, dispositius mòbils com ara un telèfon mòbil de darrera generació o una tauleta tàctil PC), ha seguit un procediment planificat i desenvolupat detall per detall per a la seva creació. Aquest anirà des de la concepció de la idea o de la funcionalitat que haurà de satisfer aquesta aplicació fins a la generació d’un o diversos fitxers que permetin la seva execució exitosa.
+</p>
+
+<p>
+Per convertir aquesta concepció d’una idea abstracta en un producte acabat que sigui eficaç i eficient hi haurà molts més passos, moltes tasques a fer. Aquestes tasques caldrà que estiguin ben planificades i que segueixin un guió que pot tenir en compte aspectes com:
+</p>
+<ul>
+<li class="level1"><div class="li"> Analitzar les necessitats que tenen les persones que faran servir aquest programari, escoltar com el voldran, atendre a les seves indicacions…</div>
+</li>
+<li class="level1"><div class="li"> Dissenyar una solució que tingui en compte totes les necessitats abans analitzades: què haurà de fer el programari, quines interfícies gràfiques tindrà i com seran aquestes, quines dades s’hauran d’emmagatzemar i com es farà…</div>
+</li>
+<li class="level1"><div class="li"> Desenvolupar el programari que implementi tot allò analitzat i dissenyat anteriorment, fent-lo d’una forma al més modular possible per facilitar el posterior manteniment o manipulació per part d’altres programadors.</div>
+</li>
+<li class="level1"><div class="li"> Dur a terme les proves pertinents, tant de forma individualitzada per a cada mòdul com de forma complerta, per tal de validar que el codi desenvolupat és correcte i que fa el que ha de fer segons l’establert en els requeriments.</div>
+</li>
+<li class="level1"><div class="li"> Implantar el programari en l’entorn on els usuaris finals el faran servir.</div>
+</li>
+</ul>
+
+<p>
+Aquest apartat se centrarà en el tercer punt, el desenvolupament de programari.
+</p>
+
+<h2><a id="concepte_de_programa_informatic" >Concepte de programa informàtic</a></h2>
+<div class="level2">
+
+<p>
+Un primer pas per poder començar a analitzar com cal fer un programa informàtic és tenir clar què és un programa i què significa aquest concepte. En contrast amb altres termes usats en informàtica, és possible referir-se a un “programa” en el llenguatge col·loquial sense haver d’estar parlant necessàriament d’ordinadors. Es podria estar referint al programa d’un cicle de conferències o de cinema. Però, tot i que no es tracta d’un context informàtic, aquest ús ja aporta una idea general del seu significat. 
+</p>
+<div class="iocimportant"><div class="ioccontent">
+<p>
+Un <strong>programa infomàtic</strong> és un conjunt d’esdeveniments ordenats de manera que se succeeixen de forma seqüencial en el temps, un darrere l’altre.
+</p>
+</div></div>
+<p>
+Un altre ús habitual, ara sí vinculat al context de les màquines i els autòmats, podria ser referir-se al programa d’una rentadora o d’un robot de cuina. En aquest cas, però, el que se succeeix són un conjunt, no tant d’esdeveniments, sinó d’ordres que l’electrodomèstic segueix ordenadament. Un cop seleccionat el programa que volem, l’electrodomèstic fa totes les tasques corresponents de manera autònoma.
+</p>
+
+<p>
+Per exemple, el programa d’un robot de cuina per fer una crema de pastanaga seria:
+</p>
+<ol>
+<li class="level1"><div class="li"> Espera que introduïu les pastanagues ben netejades, una patata i espècies al gust.</div>
+</li>
+<li class="level1"><div class="li"> Gira durant 1 minut, avançant progressivament fins a la velocitat 5.</div>
+</li>
+<li class="level1"><div class="li"> Espera que introduïu llet i sal.</div>
+</li>
+<li class="level1"><div class="li"> Gira durant 30 segons a velocitat 7.</div>
+</li>
+<li class="level1"><div class="li"> Gira durant 10 minuts a velocitat 3 mentre cou a una temperatura de 90 graus.</div>
+</li>
+<li class="level1"><div class="li"> S’atura. La crema de pastanaga està llesta!</div>
+</li>
+</ol>
+
+<p>
+Aquest conjunt d’ordres no és arbitrari, sinó que serveix per dur a terme una tasca de certa complexitat que no es pot fer d’un sol cop. S’ha de fer pas per pas. Totes les ordres estan vinculades entre si per arribar a assolir aquest objectiu i, sobretot, és molt important la disposició en què es duen a terme.
+</p>
+
+<p>
+Entrant ja, ara sí, en el món dels ordinadors, la manera com s’estructuren les tasques que han de ser executades és similar als programes d’electrodomèstics anteriorment citats. En aquest cas, però, en lloc de transformar ingredients (o rentar roba bruta, si es tractés d’una rentadora), el que l’ordinador transforma és informació o dades. 
+</p>
+<div class="iocimportant"><div class="ioccontent">
+<p>
+Un <strong>programa informàtic</strong> no és més que un seguit d’ordres que es porten a terme seqüencialment, aplicades sobre un conjunt de dades.
+</p>
+</div></div>
+<p>
+Quines dades processa un programa informàtic? Bé, això dependrà del tipus de programa:
+</p>
+<ul>
+<li class="level1"><div class="li"> Un editor processa les dades d’un document de text.</div>
+</li>
+<li class="level1"><div class="li"> Un full de càlcul processa dades numèriques ubicades en un fitxer.</div>
+</li>
+<li class="level1"><div class="li"> Un videojoc processa les dades que fan referència a la forma i ubicació d’enemics i jugadors, les interfícies gràfiques on es trobarà el jugador, els punts aconseguits…</div>
+</li>
+<li class="level1"><div class="li"> Un navegador web processa les ordres de l’usuari i les dades que rep des d’un servidor ubicat a internet.</div>
+</li>
+<li class="level1"><div class="li"> Un reproductor de vídeo processa els fotogrames emmagatzemats en un arxiu i l’àudio relacionat. </div>
+</li>
+</ul>
+
+<p>
+Per tant, la tasca d’un programador informàtic és escollir quines ordres constituiran un programa d’ordinador, en quin ordre s’han de dur a terme i sobre quines dades cal aplicar-les perquè el programa porti a terme la tasca que ha de resoldre.
+</p>
+<div class="ioctext"><div class="ioccontent"><p class="ioctitle">Executar un programa</p>
+<p>
+Per “executar un programa” s’entén fer que l’ordinador segueixi totes les seves ordres, des de la primera fins a la darrera.
+</p>
+</div></div>
+<p>
+La dificultat de tot plegat serà més o menys gran depenent de la complexitat mateixa d’allò que cal que el programa faci. No és el mateix establir què ha de fer l’ordinador per resoldre una multiplicació de tres nombres que per processar textos o visualitzar pàgines a Internet.
+</p>
+
+<p>
+D’altra banda, un cop fet el programa, cada cop que s’executi, l’ordinador complirà totes les ordres del programa.
+</p>
+
+<p>
+De fet, un ordinador és incapaç de fer absolutament res per si mateix, sempre cal dir-li què ha de fer. I això se li diu mitjançant l’execució de programes. Tot i que des del punt de vista de l’usuari pot semblar que quan es posa en marxa un ordinador aquest funciona sense executar cap programa concret, cal tenir en compte que el seu sistema operatiu és un programa que està sempre en execució.
+</p>
+
+</div>
+
+<h2><a id="codi_font_codi_objecte_i_codi_excutablemaquines_virtuals" >Codi font, codi objecte i codi excutable: màquines virtuals</a></h2>
+<div class="level2">
+<div class="ioctext"><div class="ioccontent"><p class="ioctitle">Editors de text simples</p>
+<p>
+Un editor de text simple és aquell que permet escriure-hi només text sense format. En són exemples el Bloc de Notes (Windows), el Gedit o l’Emacs (Unix).
+</p>
+</div></div>
+<p>
+Per crear un programa el que es farà serà crear un arxiu i escriure a un fitxer el seguit d’instruccions que es vol que l’ordinador executi. Aquestes instruccions hauran de seguir unes pautes determinades en funció del llenguatge de programació escollit. A més, haurien de seguir un ordre determinat que donarà sentit al programa escrit. Per començar n’hi haurà prou amb un editor de text simple.
+</p>
+<div class="iocimportant"><div class="ioccontent">
+<p>
+Un cop s’ha acabat d’escriure el programa, el conjunt de fitxers de text resultants, on es troben les instruccions, es diu que contenen el <strong>codi font</strong>. Aquest codi font pot ser des d’un nivell molt alt, molt a prop del llenguatge humà, fins a un de nivell més baix, més proper al codi de les màquines, com ara el codi assemblador.
+</p>
+</div></div><div class="iocreference"><div class="ioccontent">
+<p>
+En l’apartat “Tipus de llenguatges de programació” es descriuen les característiques dels llenguatges màquina, assemblador, d’alt nivell i de propòsit específic.
+</p>
+</div></div>
+<p>
+La tendència actual és fer ús de llenguatges d’alt nivell, és a dir, propers al llenguatge humà. Però això fa aparèixer un problema, i és que els fitxers de codi font no contenen el llenguatge màquina que entendrà l’ordinador. Per tant, resulten incomprensibles per al processador. Per poder generar codi màquina cal fer un procés de traducció des dels mnemotècnics que conté cada fitxer a les seqüències binàries que entén el processador.
+</p>
+<div class="iocnote"><div class="ioccontent">
+<p>
+El codi objecte de les instruccions té aquest aspecte:
+10101001000001101100110
+10100101011100001110111
+</p>
+</div></div>
+<p>
+El procés anomenat <strong>compilació</strong> és la traducció del codi font dels fitxers del programa en fitxers en format binari que contenen les instruccions en un format que el processador pot entendre. El contingut d’aquests fitxers s’anomena <strong>codi objecte</strong>. El programa que fa aquest procés s’anomena <strong>compilador</strong>.
+</p>
+<div class="iocimportant"><div class="ioccontent">
+<p>
+El <strong>codi objecte</strong> és el codi font traduït (pel compilador) a codi màquina, però aquest codi encara no pot ser executat per l’ordinador.
+</p>
+</div></div><div class="iocimportant"><div class="ioccontent">
+<p>
+El <strong>codi executable</strong> és la traducció completa a codi màquina, duta a terme per l’enllaçador (en anglès, <em>linker</em>). El codi executable és interpretat directament per l’ordinador.
+</p>
+</div></div>
+<p>
+L’ <strong>enllaçador</strong> és l’encarregat d’inserir al codi objecte les funcions de les llibreries que són necessàries per al programa i de dur a terme el procés de muntatge generant un arxiu executable. 
+</p>
+
+<p>
+Una  <strong>llibreria</strong> és un col·lecció de codi predefinit que facilita la tasca del programador a l’hora de codificar un programa.
+</p>
+
+<p>
+A la <span class="figref"><a href="#Figure1"><span>figura</span></a></span> es mostra un resum ordenat de tots els conceptes definits. El codi font desenvolupat pels programadors es convertirà en codi objecte amb l’ajuda del compilador. Aquest ajudarà a localitzar els errors de sintaxi o de compilació que es trobin al codi font. Amb l’enllaçador, que recollirà el codi objecte i les llibreries, es generarà el codi executable.
+</p>
+<div class="iocfigure"><a name="Figure1"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Procés de transformació d’un codi font a un codi executable
+
+</figcaption><img src="../media/ic10m05u1_01.png" alt="" /></figure>
+</div>
+</div>
+
+<h3><a id="maquina_virtual" >Màquina virtual</a></h3>
+<div class="level3">
+
+<p>
+El concepte de màquina virtual sorgeix amb l’objectiu de facilitar el desenvolupament de compiladors que generen codi per a diferents processadors.
+</p>
+
+<p>
+La <strong>compilació</strong> consta de dues fases:
+</p>
+<ul>
+<li class="level1"><div class="li"> La primera parteix del codi font a un llenguatge intermedi obtenint un programa equivalent amb un menor nivell d’abstracció que l’original i que no pot ser directament executat. </div>
+</li>
+<li class="level1"><div class="li"> La segona fase tradueix el llenguatge intermedi a un llenguatge comprensible per la màquina.</div>
+</li>
+</ul>
+
+<p>
+Arribat aquest punt es podria plantejar la pregunta: per què dividir la compilació en dues fases? L’objectiu és que el codi de la primera fase, el codi intermedi, sigui comú per a qualsevol processador, i que el codi generat en la segona fase sigui l’específic per a cada processador. De fet, la traducció del llenguatge intermedi al llenguatge màquina no se sol fer mitjançant compilació sinó mitjançant un intèrpret, tal com es mostra en la <span class="figref"><a href="#Figure2"><span>figura</span></a></span>.
+</p>
+<div class="iocfigure"><a name="Figure2"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Màquina virtual
+
+</figcaption><img src="../media/ic10m05u1_02.png" alt="" /></figure>
+</div>
+</div>
+
+<h4><a id="la_maquina_virtual_java" >La màquina virtual Java</a></h4>
+<div class="level4">
+
+<p>
+La màquina virtual Java (JVM) és l’entorn en què s’executen els programes Java. És un programa natiu, és a dir, executable en una plataforma específica, que és capaç d’interpretar i executar instruccions expressades en un codi de bytes o (el <em>bytecode</em> de Java) que és generat pel compilador del llenguatge Java.
+</p>
+<div class="ioctext"><div class="ioccontent"><p class="ioctitle">Codi de bytes</p>
+<p>
+El codi de bytes no és un llenguatge d’alt nivell, sinó un veritable codi màquina de baix nivell, viable fins i tot com a llenguatge d’entrada per a un microprocessador físic.
+</p>
+</div></div>
+<p>
+La màquina virtual Java és una peça fonamental de la tecnologia Java. Se situa en un nivell superior al maquinari sobre el qual es vol executar l’aplicació i actua com un pont entre el codi de bytes a executar i el sistema. Així, quan un programador escriu una aplicació Java, ho fa pensant en la JVM encarregada d’executar l’aplicació i no hi ha cap motiu per pensar en les característiques de la plataforma física sobre la qual s’ha d’executar l’aplicació. La JVM serà l’encarregada, en executar l’aplicació, de convertir el codi de bytes a codi natiu de la plataforma física. 
+</p>
+
+<p>
+El gran avantatge de la JVM és que possibilita la portabilitat de l’aplicació a diferents plataformes i, així, un programa Java escrit en un sistema operatiu Windows es pot executar en altres sistemes operatius (Linux, Solaris i Apple <acronym title="Operating System">OS</acronym> X) amb l’únic requeriment de disposar de la JVM per al sistema corresponent.
+</p>
+
+<p>
+El concepte de màquina virtual Java s’usa en dos àmbits: d’una banda, per fer referència al conjunt d’especificacions que ha de complir qualsevol implementació de la JVM; d’altra banda, per fer referència a les diverses implementacions de la màquina virtual Java existents i de les quals cal utilitzar-ne alguna per executar les aplicacions Java.
+</p>
+<div class="iocreference"><div class="ioccontent">
+<p>
+Als materials web es pot trobar una explicació, pas a pas, de com descarregar i instal·lar la màquina virtual Java.
+</p>
+</div></div>
+<p>
+L’empresa Sun Microsystems és la propietària de la marca registrada Java, i aquesta s’utilitza per certificar les implementacions de la JVM que s’ajusten i són totalment compatibles amb les especificacions de la JVM, en el prefaci de les quals es diu: “Esperem que aquesta especificació documenti suficientment la màquina virtual de Java per fer possibles implementacions des de zero. Sun proporciona tests que verifiquen que les implementacions de la màquina virtual Java operen correctament.”
+</p>
+
+</div>
+
+<h2><a id="tipus_de_llenguatges_de_programacio" >Tipus de llenguatges de programació</a></h2>
+<div class="level2">
+
+<p>
+Establert el concepte de programa informàtic i els conceptes de codi font, codi objecte i codi executable (així com el de màquina virtual), cal ara establir les diferències entre els diversos tipus de codi font existents, a través dels quals s’arriba a obtenir un programa informàtic.
+</p>
+<div class="iocimportant"><div class="ioccontent">
+<p>
+Un <strong>llenguatge de programació</strong> és un llenguatge que permet establir una comunicació entre l’home i la màquina. El llenguatge de programació identificarà el codi font, que el programador desenvoluparà per indicar a la màquina, una vegada aquest codi s’hagi convertit en codi executable, quins passos ha de donar. 
+</p>
+</div></div>
+<p>
+Al llarg dels darrers anys ha existit una evolució constant en els llenguatges de programació. S’ha establert una creixent evolució en la qual es van incorporant elements que permeten crear programes cada vegada més sòlids i eficients. Això facilita molt la tasca del programador per al desenvolupament del programari, el seu manteniment i l’adaptació. Avui en dia, existeixen, fins i tot, llenguatges de programació que permeten la creació d’aplicacions informàtiques a persones sense coneixements tècnics d’informàtica, pel fet d’existir una creació pràcticament automàtica del codi a partir d’unes preguntes.
+</p>
+
+<p>
+Els diferents tipus de llenguatges són:
+</p>
+<ul>
+<li class="level1"><div class="li"> Llenguatge de primera generació o llenguatge màquina.</div>
+</li>
+<li class="level1"><div class="li"> Llenguatges de segona generació o llenguatges d’assemblador.</div>
+</li>
+<li class="level1"><div class="li"> Llenguatges de tercera generació o llenguatges d’alt nivell.</div>
+</li>
+<li class="level1"><div class="li"> Llenguatges de quarta generació o llenguatges de propòsit específic.</div>
+</li>
+<li class="level1"><div class="li"> Llenguatges de cinquena generació.</div>
+</li>
+</ul>
+<div class="iocimportant"><div class="ioccontent">
+<p>
+El primer tipus de llenguatge que es va desenvolupar és l’anomenat <strong>llenguatge de primera generació o llenguatge màquina</strong>. És l’únic llenguatge que entén l’ordinador directament.
+</p>
+</div></div>
+<p>
+La seva estructura està totalment adaptada als circuits impresos dels ordinadors o processadors electrònics i molt allunyada de la forma d’expressió i anàlisi dels problemes propis dels humans (les instruccions s’expressen en codi binari). Això fa que la programació en aquest llenguatge resulti tediosa i complicada, ja que es requereix un coneixement profund de l’arquitectura física de l’ordinador. A més, s’ha de valorar que el codi màquina fa possible que el programador utilitzi la totalitat de recursos del maquinari, amb la qual cosa es poden obtenir programes molt eficients.
+</p>
+<pre class="code">10110000 01100001 
+Aquesta línia conté una instrucció que mou un valor al registre del processador.</pre>
+
+<p>
+Actualment, a causa de la complexitat del desenvolupament d’aquest tipus de llenguatge, està pràcticament en desús. Només es farà servir en processadors molts concrets o per a funcionalitats molt específiques.
+</p>
+<div class="iocimportant"><div class="ioccontent">
+<p>
+El segon tipus de llenguatge de programació són els <strong>llenguatges de segona generació o llenguatges d’assemblador</strong>. Es tracta del primer llenguatge de programació que utilitza codis mnemotècnics per indicar a la màquina les operacions que ha de dur a terme. Aquestes operacions, molt bàsiques, han estat dissenyades a partir de la coneixença de l’estructura interna de la pròpia màquina.
+</p>
+</div></div>
+<p>
+Cada instrucció en llenguatge d’assemblador correspon a una instrucció en llenguatge màquina. Aquests tipus de llenguatges depenen totalment del processador que utilitzi la màquina, per això es diu que estan orientats a les màquines. 
+</p>
+
+<p>
+A la <span class="figref"><a href="#Figure3"><span>figura</span></a></span> es mostra un esquema del funcionament dels llenguatges de segona generació. A partir del codi escrit en llenguatge d’assemblador, el programa traductor (assemblador) ho converteix en codi de primera generació, que serà interpretat per la màquina.
+</p>
+<div class="iocfigure"><a name="Figure3"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Llenguatge de segona generació
+
+</figcaption><img src="../media/ic10m05u1_03.png" alt="" /></figure>
+</div>
+<p>
+
+</p>
+
+<p>
+En general s’utilitza aquest tipus de llenguatges per programar controladors (<em>drivers</em>) o aplicacions de temps real, ja que requereix un ús molt eficient de la velocitat i de la memòria.
+</p>
+
+</div>
+
+<h3><a id="caracteristiques_dels_llenguatges_de_primera_i_segona_generacio" >Característiques dels llenguatges de primera i segona generació</a></h3>
+<div class="level3">
+
+<p>
+Com a avantatges dels llenguatges de primera i segona generació es poden establir:
+</p>
+<ul>
+<li class="level1"><div class="li"> Permeten escriure programes molt optimitzats que aprofiten al màxim el maquinari (<em>hardware</em>) disponible.</div>
+</li>
+<li class="level2"><div class="li"> Permeten al programador especificar exactament quines instruccions vol que s’executin.</div>
+</li>
+</ul>
+
+<p>
+Els inconvenients són els següents:
+</p>
+<ul>
+<li class="level1"><div class="li"> Els programes escrits en llenguatges de baix nivell estan completament lligats al maquinari on s’executaran i no es poden traslladar fàcilment a altres sistemes amb un maquinari diferent.</div>
+</li>
+<li class="level2"><div class="li"> Cal conèixer a fons l’arquitectura del sistema i del processador per escriure bons programes.</div>
+</li>
+<li class="level2"><div class="li"> No permeten expressar de forma directa conceptes habituals a nivell d’algorisme.</div>
+</li>
+<li class="level2"><div class="li"> Son difícils de codificar, documentar i mantenir.</div>
+</li>
+</ul>
+<div class="iocimportant"><div class="ioccontent">
+<p>
+El següent grup de llenguatges es coneix com a <strong>llenguatges de tercera generació o llenguatges d’alt nivell</strong>. Aquests llenguatges, més evolucionats, utilitzen paraules i frases relativament fàcils d’entendre i proporcionen també facilitats per expressar alteracions del flux de control d’una forma bastant senzilla i intuïtiva.
+</p>
+</div></div>
+<p>
+Els llenguatges de tercera generació o d’alt nivell s’utilitzen quan es vol desenvolupar aplicacions grans i complexes, on es prioritza el fet de facilitar i comprendre com fer les coses (llenguatge humà) per sobre del rendiment del programari o del seu ús de la memòria.
+</p>
+
+<p>
+Els esforços encaminats a fer la tasca de programació independent de la màquina on s’executaran van donar com a resultat l’aparició dels llenguatges de programació d’alt nivell. 
+</p>
+
+<p>
+Els llenguatges d’alt nivell són normalment fàcils d’aprendre perquè estan formats per elements de llenguatges naturals, com ara l’anglès. A continuació es mostra un exemple d’algorisme implementat en un llenguatge d’alt nivell, concretament en Basic. Aquest algorisme calcula el factorial d’un nombre donat a la funció com a paràmetre. Es pot observar com és fàcilment comprensible amb un mínim coneixement de l’anglès.
+</p>
+<div class="iocnote"><div class="ioccontent">
+<p>
+En Basic, el llenguatge d’alt nivell més conegut, les ordres com <code>IF comptador = 10 THEN STOP</code> poden utilitzar-se per demanar a l’ordinador que pari si la variable comptador és igual a deu.
+</p>
+</div></div><pre class="code">&#039; ------------------------------------------
+&#039; Funció Factorial
+&#039; -----------------------------------------
+Public Function Factorial(num As Integer)As String
+Dim i As Integer
+    For i = 1 To num - 1
+      num = num * i
+      Factorial = num
+    Next
+End Function</pre>
+
+<p>
+Com a conseqüència d’aquest allunyament de la màquina i acostament a les persones, els programes escrits en llenguatges de programació de tercera generació no poden ser interpretats directament per l’ordinador, sinó que és necessari dur a terme prèviament la seva traducció a llenguatge màquina. Hi ha dos tipus de traductors: els compiladors i els intèrprets.
+</p>
+
+</div>
+
+<h4><a id="compiladors" >Compiladors</a></h4>
+<div class="level4">
+
+<p>
+Són programes que tradueixen el programa escrit amb un llenguatge d’alt nivell al llenguatge màquina. El compilador detectarà els possibles errors del programa font per aconseguir un programa executable depurat. 
+</p>
+
+<p>
+Alguns exemples de codis de programació que hauran de passar per un compilador són: Pascal, C, C++, .NET, …
+</p>
+
+<p>
+A la <span class="figref"><a href="#Figure4"><span>figura</span></a></span> es pot veure, en un esquema, la funció del compilador entre els dos llenguatges.
+</p>
+<div class="iocfigure"><a name="Figure4"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Codi compilat
+
+</figcaption><img src="../media/ic10m05u1_04.png" alt="" /></figure>
+</div>
+<p>
+El procediment que haurà de seguir un programador és el següent:
+</p>
+<ul>
+<li class="level1"><div class="li"> Crear el codi font.</div>
+</li>
+<li class="level1"><div class="li"> Crear el codi executable fent ús de compiladors i enllaçadors.</div>
+</li>
+<li class="level1"><div class="li"> El codi executable depèn de cada sistema operatiu. Per a cada sistema hi ha un compilador, és a dir, si es vol executar el codi amb un altre sistema operatiu s’ha de recompilar el codi font.</div>
+</li>
+<li class="level1"><div class="li"> El programa resultant s’executa directament des del sistema operatiu.</div>
+</li>
+</ul>
+
+<p>
+A la <span class="figref"><a href="#Figure5"><span>figura</span></a></span> es pot observar un esquema que representa la dependència del sistema operatiu a l’hora d’escollir i utilitzar compilador.
+</p>
+<div class="iocfigure"><a name="Figure5"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Codi compilat per SO
+
+</figcaption><img src="../media/ic10m05u1_05.png" alt="" /></figure>
+</div>
+</div>
+
+<h4><a id="els_interprets" >Els intèrprets</a></h4>
+<div class="level4">
+
+<p>
+L’intèrpret també és un programa que tradueix el codi d’alt nivell al llenguatge màquina, però, a diferència del compilador, ho fa en temps d’execució. És a dir, no es fa un procés previ de traducció de tot el programa font a codi de bytes, sinó que es va traduint i executant instrucció per instrucció. 
+</p>
+
+<p>
+Alguns exemples de codis de programació que hauran de passar per un intèrpret són: JavaScript, PHP, ASP…
+</p>
+
+<p>
+Algunes característiques dels llenguatges interpretats són:
+</p>
+<ul>
+<li class="level1"><div class="li"> El codi interpretat no és executat directament pel sistema operatiu, sinó que fa ús d’un intèrpret.</div>
+</li>
+<li class="level1"><div class="li"> Cada sistema té el seu propi intèrpret.</div>
+</li>
+</ul>
+
+</div>
+
+<h4><a id="compiladors_davant_interprets" >Compiladors davant intèrprets</a></h4>
+<div class="level4">
+
+<p>
+L’intèrpret és notablement més lent que el compilador, ja que du a terme la traducció alhora que l’execució. A més, aquesta traducció es fa sempre que s’executa el programa, mentre que el compilador només la du a terme una vegada. L’avantatge dels intèrprets és que fan que els programes siguin més portables. Així, un programa compilat en un ordinador amb sistema operatiu Windows no funcionarà en un Macintosh, o en un ordinador amb sistema operatiu Linux, a menys que es torni a compilar el programa font en el nou sistema. 
+</p>
+
+</div>
+
+<h3><a id="caracteristiques_dels_llenguatges_de_tercera_quarta_i_cinquena_generacio" >Característiques dels llenguatges de tercera, quarta i cinquena generació</a></h3>
+<div class="level3">
+
+<p>
+Els llenguatges de tercera generació són aquells que són capaços de contenir i executar, en una sola instrucció, l’equivalent a diverses instruccions d’un llenguatge de segona generació. 
+</p>
+
+<p>
+Els avantatges dels llenguatges de tercera generació són:
+</p>
+<ul>
+<li class="level1"><div class="li"> El codi dels programes és molt més senzill i comprensible.</div>
+</li>
+<li class="level1"><div class="li"> Són independents del maquinari (no hi fan cap referència). Per aquest motiu és possible “portar” el programa entre diferents ordinadors / arquitectures / sistemes operatius (sempre que en el sistema de destinació existeixi un compilador per a aquest llenguatge d’alt nivell).</div>
+</li>
+<li class="level1"><div class="li"> És més fàcil i ràpid escriure els programes i més fàcil mantenir-los.</div>
+</li>
+</ul>
+
+<p>
+Els inconvenients dels llenguatges de tercera generació són:
+</p>
+<ul>
+<li class="level1"><div class="li"> La seva execució en un ordinador pot resultar més lenta que el mateix programa escrit en llenguatge de baix nivell, tot i que això depèn molt de la qualitat del compilador que faci la traducció.</div>
+</li>
+</ul>
+
+<p>
+Exemples de llenguatges de programació de tercera generació: C, C++, Java, Pascal…
+</p>
+<div class="iocimportant"><div class="ioccontent">
+<p>
+Els <strong>llenguatges de quarta generació o llenguatges de propòsit específic</strong>. Aporten un nivell molt alt d’abstracció en la programació, permetent desenvolupar aplicacions sofisticades en un espai curt de temps, molt inferior al necessari per als llenguatges de 3a generació.
+</p>
+</div></div><div class="iocnote"><div class="ioccontent">
+<p>
+IDE són les sigles en anglès d’Integrated Development Environment, és a dir, Entorn Integrat de Desenvolupament.
+</p>
+</div></div>
+<p>
+S’automatitzen certs aspectes que abans calia fer a mà. Inclouen eines orientades al desenvolupament d’aplicacions (IDE) que permeten definir i gestionar bases de dades, dur a terme informes (p.ex.: Oracle reports), consultes (p.ex.: informix 4GL), mòduls… , escrivint molt poques línies de codi o cap. 
+</p>
+
+<p>
+Permeten la creació de prototipus d’una aplicació ràpidament. Els prototipus permeten tenir una idea de l’aspecte i del funcionament de l’aplicació abans que el codi estigui acabat. Això facilita l’obtenció d’un programa que reuneixi les necessitats i expectatives del client.
+</p>
+
+<p>
+Alguns dels aspectes positius que mostren aquest tipus de llenguatges de programació són:
+</p>
+<ul>
+<li class="level1"><div class="li"> Major abstracció.</div>
+</li>
+<li class="level1"><div class="li"> Menor esforç de programació.</div>
+</li>
+<li class="level1"><div class="li"> Menor cost de desenvolupament del programari.</div>
+</li>
+<li class="level1"><div class="li"> Basats en generació de codi a partir d’especificacions de nivell molt alt.</div>
+</li>
+<li class="level1"><div class="li"> ­Es poden dur a terme aplicacions sense ser un expert en el llenguatge.</div>
+</li>
+<li class="level1"><div class="li"> ­Solen tenir un conjunt d’instruccions limitat.</div>
+</li>
+<li class="level1"><div class="li"> Són específics del producte que els ofereix.</div>
+</li>
+</ul>
+
+<p>
+Aquests llenguatges de programació de quarta generació estan orientats, bàsicament, a les aplicacions de negoci i al maneig de bases de dades.
+</p>
+
+<p>
+Alguns exemples de llenguatges de quarta generació són Visual Basic, Visual Basic .NET, ABAP de SAP, FileMaker, PHP, ASP, 4D…
+</p>
+
+<p>
+A la <span class="figref"><a href="#Figure7"><span>figura</span></a></span> es pot veure l’entorn de treball i un exemple de codi font de FileMaker.
+</p>
+<div class="iocfigure"><a name="Figure7"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+FileMaker: Llenguatge de quarta generació
+
+</figcaption><img src="../media/ic10m05u1_07.png" alt="" /></figure>
+</div><div class="iocimportant"><div class="ioccontent">
+<p>
+Els <strong>llenguatges de cinquena generació</strong> són llenguatges específics per al tractament de problemes relacionats amb la intel·ligència artificial i els sistemes experts. 
+</p>
+</div></div>
+<p>
+En lloc d’executar només un conjunt d’ordres, l’objectiu d’aquests sistemes és “pensar” i anticipar les necessitats dels usuaris. Aquests sistemes es troben encara en desenvolupament. Es tractaria del paradigma lògic.
+</p>
+
+<p>
+Alguns exemples de llenguatges de cinquena generació són Lisp o Prolog.
+</p>
+
+</div>
+
+<h2><a id="paradigmes_de_programacio" >Paradigmes de programació</a></h2>
+<div class="level2">
+
+<p>
+És difícil establir una classificació general dels llenguatges de programació, ja que existeix un gran nombre de llenguatges i, de vegades, diferents versions d’un mateix llenguatge. Això provocarà que en qualsevol classificació que es faci un mateix llenguatge pertanyi a més d’un dels grups establerts. Una classificació molt estesa, atenent a la forma de treballar dels programes i a la filosofia amb què van ser concebuts, és la següent:
+</p>
+<ul>
+<li class="level1"><div class="li"> Paradigma imperatiu/estructurat.</div>
+</li>
+<li class="level1"><div class="li"> Paradigma d’objectes.</div>
+</li>
+<li class="level1"><div class="li"> Paradigma funcional.  </div>
+</li>
+<li class="level1"><div class="li"> Paradigma lògic.</div>
+</li>
+</ul>
+<div class="iocimportant"><div class="ioccontent">
+<p>
+El <strong>paradigma imperatiu/estructurat</strong> deu el seu nom al paper dominant que exerceixen les sentències imperatives, és a dir aquelles que indiquen dur a terme una determinada operació que modifica les dades guardades en memòria.
+</p>
+</div></div>
+<p>
+Alguns dels llenguatges imperatius són C, Basic, Pascal, Cobol…
+</p>
+
+<p>
+La tècnica seguida en la programació imperativa és la <strong>programació estructurada</strong>. La idea és que qualsevol programa, per complex i gran que sigui, pot ser representat mitjançant tres tipus d’estructures de control:
+</p>
+<ul>
+<li class="level1"><div class="li"> Seqüència.</div>
+</li>
+<li class="level1"><div class="li"> Selecció.</div>
+</li>
+<li class="level1"><div class="li"> Iteració.</div>
+</li>
+</ul>
+
+<p>
+D’altra banda, també es proposa desenvolupar el programa amb la tècnica de disseny descendent (<em>top-down</em>). És a dir, modular el programa creant porcions més petites de programes amb tasques específiques, que se subdivideixen en altres subprogrames, cada vegada més petits. La idea és que aquests subprogrames típicament anomenats funcions o procediments han de resoldre un únic objectiu o tasca.
+</p>
+
+<p>
+Imaginem que hem de fer una aplicació que registri les dades bàsiques del personal d’una escola, dades com poden ser el nom, el DNI, i que calculi el salari dels professors així com el dels administratius, on el salari dels administratius és el sou base (<code>SOU_BASE</code>) * 10 mentre que el salari dels professors és el sou base (<code>SOU_BASE</code>) + nombre d’hores impartides (<code>numHores</code>) * 12.
+</p>
+<pre class="code">const float SOU_BASE = 1.000;
+
+Struct Administratiu
+{
+    string nom;
+    string DNI;
+    float Salari;
+}
+
+Struct Professor
+{
+    string nom;
+    string DNI;
+    int numHores;
+    float salari;
+}
+
+void AssignarSalariAdministratiu (Administratiu administratiu1)
+{
+    administratiu1. salari = SOU_BASE * 10;
+}
+
+void AssignarSalariProfessor (Professor professor1)
+{
+    professor1. salari = SOU_BASE + (numHores * 12);
+}</pre>
+<div class="iocimportant"><div class="ioccontent">
+<p>
+El <strong>paradigma d’objectes</strong>, típicament conegut com a Programació Orientada a Objectes (POO, o OOP en anglès), és un paradigma de construcció de programes basat en una abstracció del món real. En un programa orientat a objectes, l’abstracció no són procediments ni funcions sinó els objectes. Aquests objectes són una representació directa d’alguna cosa del món real, com ara un llibre, una persona, una comanda, un empleat…
+</p>
+</div></div>
+<p>
+Alguns dels llenguatges de programació orientada a objectes són C++, Java, C#…
+</p>
+
+<p>
+Un objecte és una combinació de dades (anomenades atributs) i mètodes (funcions i procediments) que ens permeten interactuar amb ell. En aquest tipus de programació, per tant, els programes són conjunts d’objectes que interactuen entre ells a través de missatges (crides a mètodes). 
+</p>
+
+<p>
+La programació orientada a objectes es basa en la integració de 5 conceptes: abstracció, encapsulació, modularitat, jerarquia i polimorfisme, que és necessari comprendre i seguir de manera absolutament rigorosa. No seguir-los sistemàticament, ometre’ls puntualment per pressa o altres raons fa perdre tot el valor i els beneficis que ens aporta l’orientació a objectes.
+</p>
+<pre class="code">class Treballador {
+   private:
+      string nom;
+      string DNI;
+   protected:
+      static const float SOU_BASE = 1.000; 
+   public:
+      string GetNom() {return this.nom;}
+      void SetNom (string n) {this.nom = n;}
+      string GetDNI() {return this.DNI;}
+      void SetDNI (string dni) {this.DNI = dni;}
+      virtual float salari() = 0;
+}
+
+class Administratiu: public Treballador {
+   public:
+      float Salari() {return SOU_BASE * 10};
+}
+
+class Professor: public Treballador {
+   private:
+      int numHores;
+   public:
+      float Salari() {return SOU_BASE + (numHores * 15);}
+}</pre>
+<div class="iocimportant"><div class="ioccontent">
+<p>
+El <strong>paradigma funcional</strong> està basat en un model matemàtic. La idea és que el resultat d’un càlcul és l’entrada del següent, i així successivament fins que una composició produeixi el resultat desitjat.
+</p>
+</div></div>
+<p>
+Els creadors dels primers llenguatges funcionals pretenien convertir-los en llenguatges d’ús universal per al processament de dades en tot tipus d’aplicacions, però, amb el pas del temps, s’ha utilitzat principalment en àmbits d’investigació científica i aplicacions matemàtiques.
+</p>
+
+<p>
+Un dels llenguatges més típics del paradigma funcional és el Lisp. Vegeu un exemple de programació del factorial amb aquest llenguatge:
+</p>
+<pre class="code">&gt; (defun factorial (n)
+(if (= n 0)
+1
+(* n (factorial (- n 1)))))
+FACTORIAL
+&gt; (factorial 3)
+6</pre>
+<div class="iocimportant"><div class="ioccontent">
+<p>
+El <strong>paradigma lògic</strong> té com a característica principal l’aplicació de les regles de la lògica per inferir conclusions a partir de dades. 
+</p>
+</div></div>
+<p>
+Un programa lògic conté una base de coneixement sobre la que es duen a terme consultes. La base de coneixement està formada per fets, que representen la informació del sistema expressada com a relacions entre les dades i regles lògiques que permeten deduir conseqüències a partir de combinacions entre els fets i, en general, altres regles.
+</p>
+
+<p>
+Un dels llenguatges més típics del paradigma lògic és el Prolog.
+</p>
+<div class="iocexample"><div class="ioccontent"><p class="ioctitle">Exemple de desplegament pràctic del paradigma lògic</p>
+<p>
+Determinarem si hem de prescriure al pacient estar a casa reposant al saber que es compleixen els següents fets: malestar i 39º de temperatura corporal.
+</p>
+
+<p>
+Regles de la base de coneixement:
+</p>
+<ul>
+<li class="level1"><div class="li"> R1: Si febre, llavors estar a casa en repòs.</div>
+</li>
+<li class="level1"><div class="li"> R2: Si malestar, llavors posar-se termòmetre.</div>
+</li>
+<li class="level1"><div class="li"> R3: Si termòmetre marca una temperatura &gt; 37º, llavors febre.</div>
+</li>
+<li class="level1"><div class="li"> R4: Si diarrea, llavors dieta.</div>
+</li>
+</ul>
+
+<p>
+Si seguim un raonament d’encadenament cap endavant, el procediment seria:
+</p>
+<pre class="code">Indicar el motor d’inferència, els fets: malestar i termòmetre marca 39.
+
+&lt;code&gt;Base de fets = { malestar, termòmetre marca 39º }</pre>
+
+<p>
+El sistema identifica les regles aplicables: R2 i R3. L’algorisme s’inicia aplicant la regla R2, incorporant en la base de fets “posar-se el termòmetre”.
+</p>
+<pre class="code">Base de fets = { malestar, termòmetre marca 39º, posar-se termòmetre }</pre>
+
+<p>
+Com que no s’ha solucionat el problema, continua amb la següent regla R3, afegint a la base de fets “febre”.
+</p>
+<pre class="code">Base de fets = { malestar, termòmetre marca 39º, posar-se termòmetre, febre }</pre>
+
+<p>
+Com que no s’ha solucionat el problema, torna a identificar un subconjunt de regles aplicables, excepte les ja utilitzades. El sistema identifica les regles aplicables: R1, tot incorporant a la base de fets “estar a casa en repòs”.
+</p>
+<pre class="code">Base de fets = { malestar, termòmetre marca 39º, posar-se termòmetre, febre, estar a casa en repòs}</pre>
+
+<p>
+Com que repòs està a la base de fets, s’ha arribat a una resposta positiva a la pregunta formulada.
+</p>
+</div></div>
+<p>
+El paradigma és àmpliament utilitzat en les aplicacions que tenen a veure amb la Intel·ligència Artificial, particularment en el camp de sistemes experts i processament del llenguatge humà. Un sistema expert és un programa que imita el comportament d’un expert humà. Per tant conté informació (és a dir una base de coneixements) i una eina per comprendre les preguntes i trobar la resposta correcta examinant la base de dades (un motor d’inferència).
+</p>
+
+<p>
+També és útil en problemes combinatoris o que requereixin una gran quantitat o amplitud de solucions alternatives, d’acord amb la naturalesa del mecanisme de tornada enrere (<em>backtracking</em>).
+</p>
+
+</div>
+
+<h2><a id="caracteristiques_dels_llenguatges_mes_difosos" >Característiques dels llenguatges més difosos</a></h2>
+<div class="level2">
+
+<p>
+Existeixen molts llenguatges de programació diferents, fins al punt que moltes tecnologies tenen el seu llenguatge propi. Cada un d’aquests llenguatges té un seguit de particularitats que el fan diferent de la resta.
+</p>
+
+<p>
+Els llenguatges de programació més difosos són aquells que més es fan servir en cadascun dels diferents àmbits de la informàtica. En l’àmbit educatiu, per exemple, es considera un llenguatge de programació molt difós aquell que es fa servir a moltes universitats o centres educatius per a la docència de la iniciació a la programació.
+</p>
+
+<p>
+Els llenguatges de programació més difosos corresponents a diferents àmbits, a diferents tecnologies o a diferents tipus de programació tenen una sèrie de característiques en comú que són les que marquen les similituds entre tots ells.
+</p>
+
+</div>
+
+<h3><a id="caracteristiques_de_la_programacio_estructurada" >Característiques de la programació estructurada</a></h3>
+<div class="level3">
+
+<p>
+La programació estructurada va ser desenvolupada pel neerlandès Edsger W. Dijkstra i es basa en el denominat teorema de l’estructura. Per això utilitza únicament tres estructures: seqüència, selecció i iteració, essent innecessari l’ús de la instrucció o instruccions de transferència incondicional (<code>GOTO</code>, <code>EXIT FUNCTION</code>, <code>EXIT SUB</code> o múltiples <code>RETURN</code>).
+</p>
+
+<p>
+D’aquesta forma les característiques de la programació estructurada són la claredat, el teorema de l’estructura i el disseny descendent.
+</p>
+
+</div>
+
+<h4><a id="claredat" >Claredat</a></h4>
+<div class="level4">
+
+<p>
+Hi haurà d’haver prou informació al codi per tal que el programa pugui ser entès i verificat: comentaris, noms de variables comprensibles i procediments entenedors… Tot programa estructurat pot ser llegit des del principi a la fi sense interrupcions en la seqüència normal de lectura.
+</p>
+
+</div>
+
+<h4><a id="teorema_de_l_estructura" >Teorema de l’estructura</a></h4>
+<div class="level4">
+
+<p>
+Demostra que tot programa es pot escriure utilitzant únicament les tres estructures bàsiques de control:
+</p>
+<ul>
+<li class="level1"><div class="li"> Seqüència: instruccions executades successivament, una darrere l’altra. A la <span class="figref"><a href="#Figure8"><span>figura</span></a></span> es pot observar un exemple de l’estructura bàsica de seqüència, on primer s’executarà la sentència A i, posteriorment, la B.</div>
+</li>
+</ul>
+<div class="iocfigure"><a name="Figure8"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Exemple de seqüència
+
+</figcaption><img src="../media/ic10m05u1_08.png" alt="" /></figure>
+</div><ul>
+<li class="level1"><div class="li"> Selecció: la instrucció condicional amb doble alternativa, de la forma “si condició, llavors SentènciaA, sinó SentènciaB”. A la <span class="figref"><a href="#Figure9"><span>figura</span></a></span> es pot observar un esquema que exemplifica l’estructura bàsica de selecció.</div>
+</li>
+</ul>
+<div class="iocfigure"><a name="Figure9"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Exemple de selecció
+
+</figcaption><img src="../media/ic10m05u1_09.png" alt="" /></figure>
+</div><ul>
+<li class="level1"><div class="li"> Iteració: el bucle condicional “mentre condició, fes SentènciaA”, que executa les instruccions repetidament mentre la condició es compleixi. A la <span class="figref"><a href="#Figure10"><span>figura</span></a></span> es pot observar un esquema que exemplifica l’estructura bàsica d’iteració.</div>
+</li>
+</ul>
+<div class="iocfigure"><a name="Figure10"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Exemple d’iteració
+
+</figcaption><img src="../media/ic10m05u1_10.png" alt="" /></figure>
+</div>
+</div>
+
+<h4><a id="disseny_descendent" >Disseny descendent</a></h4>
+<div class="level4">
+
+<p>
+El disseny descendent és una tècnica que es basa en el concepte de “divideix i venceràs” per tal de resoldre un problema en l’àmbit de la programació. Es tracta de la resolució del problema al llarg de diferents nivells d’abstracció partint d’un nivell més abstracte i finalitzant en un nivell de detall.
+</p>
+
+<p>
+A la <span class="figref"><a href="#Figure11"><span>figura</span></a></span> es pot observar un exemple del disseny descendent. A partir del problema1 s’obtenen diversos subproblemes (subproblema 1.1, subproblema 1.2 i subproblema 1.3). La resolució d’aquests subproblemes serà molt més senzilla que la del problema original per tal com se n’ha reduït considerablement l’abast i la mida. De forma iterativa es pot observar com aquests subproblemes es tornen a dividir, a la vegada, en altres subproblemes.
+</p>
+<div class="iocfigure"><a name="Figure11"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Disseny descendent
+
+</figcaption><img src="../media/ic10m05u1_11.png" alt="" /></figure>
+</div>
+<p>
+La visió moderna de la programació estructurada introdueix les característiques de programació modular i tipus abstractes de dades (TAD).
+</p>
+
+</div>
+
+<h4><a id="programacio_modular" >Programació modular</a></h4>
+<div class="level4">
+
+<p>
+La realització d’un programa sense seguir una tècnica de programació modular produeix sovint un conjunt enorme de sentències l’execució de les quals és complexa de seguir, i d’entendre, amb la qual cosa es fa gairebé impossible la depuració d’errors i la introducció de millores. Fins i tot, es pot donar el cas d’haver d’abandonar el codi preexistent perquè resulta més fàcil començar de nou. 
+</p>
+
+<p>
+Quan es parla de programació modular, ens referim a la divisió d’un programa en parts més manejables i independents. Una regla pràctica per aconseguir aquest propòsit és establir que cada segment del programa no excedeixi, en longitud, d’un pam de codificació. 
+</p>
+
+<p>
+En la majoria de llenguatges, els mòduls es tradueixen a:
+</p>
+<ul>
+<li class="level1"><div class="li"> Procediments: són subprogrames que duen a terme una tasca determinada i retornen 0 o més d’un valor. S’utilitzen per estructurar un programa i millorar la seva claredat.</div>
+</li>
+<li class="level1"><div class="li"> Funcions: són subprogrames que duen a terme una determinada tasca i retornen un únic resultat o valor. S’utilitzen per crear operacions noves que no ofereix el llenguatge.</div>
+</li>
+</ul>
+
+</div>
+
+<h4><a id="tipus_abstractes_de_dades_tad" >Tipus abstractes de dades (TAD)</a></h4>
+<div class="level4">
+
+<p>
+En programació, el <em>tipus de dades</em> d’una variable és el conjunt de valors que la variable pot assumir. Per exemple, una variable de tipus booleà pot adoptar només dos valors possibles: <code>vertader</code> o <code>fals</code>. A més, hi ha un conjunt limitat però ben definit d’operacions que tenen sentit sobre els valors d’un tipus de dades; així, operacions típiques sobre el tipus booleà són <code>AND</code> o <code>OR</code>.
+</p>
+
+<p>
+Els llenguatges de programació assumeixen un nombre determinat de tipus de dades, que pot variar d’un llenguatge a un altre; així, en Pascal tenim els <em>enters</em>, els <em>reals</em>, els <em>booleans</em>, els <em>caràcters</em>… Aquests tipus de dades són anomenats <em>tipus de dades bàsics</em> en el context dels llenguatges de programació.
+</p>
+
+<p>
+Fins fa uns anys, tota la programació es basava en aquest concepte de tipus i no eren pocs els problemes que apareixien, lligats molt especialment a la complexitat de les dades que s’havien de definir. Va aparèixer la possibilitat de poder definir <em>tipus abstractes de dades</em>, on el programador pot definir un nou tipus de dades i les seves possibles operacions. 
+</p>
+<div class="iocexample"><div class="ioccontent"><p class="ioctitle">Exemple d’implementació d’un tipus abstracte de dades implementat en el llenguatge C</p><pre class="code">struct TADpila
+{
+        int top;
+        int elements[MAX_PILA];
+}
+
+void crear(struct TADpila *pila)
+{
+        Pila.top = -1;
+}
+
+void apilar(struct TADpila *pila, int elem)
+{
+        Pila.elements[pila.top++] = elem;
+}
+
+void desapilar(struct TADpila *pila)
+{
+        Pila.top--;
+}</pre>
+</div></div>
+</div>
+
+<h3><a id="caracteristiques_de_la_programacio_orientada_a_objectes" >Característiques de la programació orientada a objectes</a></h3>
+<div class="level3">
+
+<p>
+Un dels conceptes importants introduïts per la programació estructurada és l’abstracció de funcionalitats a través de funcions i procediments. Aquesta abstracció permet a un programador utilitzar una funció o procediment coneixent només què fa, però desconeixent el detall de com ho fa. 
+</p>
+
+<p>
+Aquest fet, però, té diversos inconvenients:
+</p>
+<ul>
+<li class="level1"><div class="li"> Les funcions i procediments comparteixen dades del programa, cosa que provoca que canvis en un d’ells afectin a la resta.</div>
+</li>
+<li class="level1"><div class="li"> Al moment de dissenyar una aplicació és molt difícil preveure detalladament quines funcions i procediments necessitarem.</div>
+</li>
+<li class="level1"><div class="li"> La reutilització del codi és difícil i acaba consistint a copiar i enganxar determinats trossos de codi, i retocar-los. Això és especialment habitual quan el codi no és modular.</div>
+</li>
+</ul>
+
+<p>
+L’orientació a objectes, concebut als anys setanta i vuitanta però estesa a partir dels noranta, va permetre superar aquestes limitacions.
+</p>
+<div class="iocimportant"><div class="ioccontent">
+<p>
+L’<strong>orientació a objectes</strong> (en endavant, OO) és un paradigma de construcció de programes basat en una abstracció del món real.
+</p>
+</div></div>
+<p>
+En un programa orientat a objectes, l’abstracció no són els procediments ni les funcions, són els objectes. Aquests objectes són una representació directa d’alguna cosa del món real, com ara un llibre, una persona, una organització, una comanda, un empleat…
+</p>
+<div class="iocimportant"><div class="ioccontent">
+<p>
+Un <strong>objecte</strong> és una combinació de dades (anomenades atributs) i mètodes (funcions i procediments) que ens permeten interactuar amb ell. En OO, doncs, els programes són conjunts d’objectes que interactuen entre ells a través de missatges (crides a mètodes).
+</p>
+</div></div>
+<p>
+Els llenguatges de POO (programació orientada a objectes) són aquells que implementen més o menys fidelment el paradigma OO.
+La programació orientada a objectes es basa en la integració de 5 conceptes: abstracció, encapsulació, modularitat, jerarquia i polimorfisme, que és necessari comprendre i seguir de manera absolutament rigorosa. No seguir-los sistemàticament o ometre’ls puntualment, per pressa o altres raons, fa perdre tot el valor i els beneficis que aporta l’orientació a objectes.
+</p>
+
+</div>
+
+<h4><a id="abstraccio" >Abstracció</a></h4>
+<div class="level4">
+
+<p>
+És el procés en el qual se separen les propietats més importants d’un objecte de les que no ho són. És a dir, per mitjà de l’abstracció es defineixen les característiques essencials d’un objecte del món real, els atributs i comportaments que el defineixen com a tal, per després modelar-lo en un objecte de programari. En el procés d’abstracció no ha de ser preocupant la implementació de cada mètode o atribut, només cal definir-los. 
+</p>
+
+<p>
+En la tecnologia orientada a objectes l’eina principal per suportar l’abstracció és la <strong>classe</strong>. Es pot definir una classe com una descripció genèrica d’un grup d’objectes que comparteixen característiques comunes, les quals són especificades en els seus atributs i comportaments.
+</p>
+
+</div>
+
+<h4><a id="encapsulacio" >Encapsulació</a></h4>
+<div class="level4">
+
+<p>
+Permet als objectes triar quina informació és publicada i quina informació és amagada a la resta dels objectes. Per això els objectes solen presentar els seus mètodes com a interfícies públiques i els seus atributs com a dades privades o protegides, essent inaccessibles des d’altres objectes. Les característiques que es poden atorgar són:
+</p>
+<ul>
+<li class="level1"><div class="li"> Públic: qualsevol classe pot accedir a qualsevol atribut o mètode declarat com a públic i utilitzar-lo.</div>
+</li>
+<li class="level1"><div class="li"> Protegit: qualsevol classe heretada pot accedir a qualsevol atribut o mètode declarat com a protegit a la classe mare i utilitzar-lo.</div>
+</li>
+<li class="level1"><div class="li"> Privat: cap classe no pot accedir a un atribut o mètode declarat com a privat i utilitzar-lo.</div>
+</li>
+</ul>
+
+</div>
+
+<h4><a id="modularitat" >Modularitat</a></h4>
+<div class="level4">
+
+<p>
+Permet poder modificar les característiques de cada una de les classes que defineixen un objecte, de forma independent de la resta de classes en l’aplicació. En altres paraules, si una aplicació es pot dividir en mòduls separats, normalment classes, i aquests mòduls es poden compilar i modificar sense afectar els altres, aleshores aquesta aplicació ha estat implementada en un llenguatge de programació que suporta la modularitat.
+</p>
+
+</div>
+
+<h4><a id="jerarquia" >Jerarquia</a></h4>
+<div class="level4">
+
+<p>
+Permet l’ordenació de les abstraccions. Les dues jerarquies més importants d’un sistema complex són l’herència i l’agregació.
+</p>
+
+<p>
+L’herència també es pot veure com una forma de compartir codi, de manera que quan s’utilitza l’herència per definir una nova classe només s’ha d’afegir allò que sigui diferent, és a dir, reaprofita els mètodes i variables, i especialitza el comportament.
+</p>
+
+<p>
+Per exemple, es pot identificar una classe <em>pare</em> anomenada <code>treballador</code> i dues classes <em>filles</em>, és a dir dos subtipus de treballadors, <code>administratiu</code> i <code>professor</code>.
+</p>
+<div class="iocfigure"><a name="Figure12"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Exemple d’herència
+
+</figcaption><img src="../media/ic10m05u1_12.png" alt="" /></figure>
+</div>
+<p>
+A la <span class="figref"><a href="#Figure12"><span>figura</span></a></span> es pot observar la representació en forma de diagrama de l’exemple explicat anteriorment: les classes <code>administratiu</code> i <code>professor</code> que hereten de la classe <code>treballador</code>.
+</p>
+
+<p>
+L’agregació és un objecte que està format de la combinació d’altres objectes o components. Així, un ordinador es compon d’una CPU, una pantalla, un teclat i un ratolí, i aquests components no tenen sentit sense l’ordinador. A la <span class="figref"><a href="#Figure13"><span>figura</span></a></span> es pot observar un exemple d’agregació en què la classe <code>ordinador</code> està composta per les altres quatre classes.
+</p>
+<div class="iocfigure"><a name="Figure13"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Exemple d’agregació
+
+</figcaption><img src="../media/ic10m05u1_13.png" alt="" /></figure>
+</div>
+</div>
+
+<h4><a id="el_polimorfisme" >El polimorfisme</a></h4>
+<div class="level4">
+
+<p>
+És una característica que permet donar diferents formes a un mètode, ja sigui en la definició com en la implementació. 
+</p>
+
+<p>
+La sobrecàrrega (<em>overload</em>) de mètodes consisteix a implementar diverses vegades un mateix mètode però amb paràmetres diferents, de manera que, en invocar-lo, el compilador decideix quin dels mètodes s’ha d’executar, en funció dels paràmetres de la crida.
+</p>
+
+<p>
+Un exemple de mètode sobrecarregat és aquell que calcula el salari d’un treballador en una empresa. En funció de la posició que ocupa el treballador tindrà més o menys conceptes a la seva nòmina (més o menys incentius, per exemple). 
+</p>
+
+<p>
+El mateix mètode, que podríem anomenar <em>CàlculSalari</em> quedarà implementat de forma diferent en funció de si es calcula el salari d’un operari (amb menys conceptes en la seva nòmina, la qual cosa provoca que el mètode rebi menys variables) o si es calcula el salari d’un directiu.
+</p>
+
+<p>
+La sobreescriptura (<em>override</em>) de mètodes consisteix a reimplementar un mètode heretat d’una superclasse exactament amb la mateixa definició (incloent nom de mètode, paràmetres i valor de retorn).
+</p>
+
+<p>
+Un exemple de sobrecàrrega de mètodes podria ser el del mètode <code>Area()</code>. A partir d’una classe <code>Figura</code> que conté el mètode <code>Area()</code>, existeix una classe derivada per a alguns tipus de figures (per exemple, <code>Rectangle</code> o <code>Quadrat</code>). 
+</p>
+
+<p>
+La implementació del mètode <code>Area()</code> serà diferent a cada una de les classes derivades; aquestes poden implementar-se de forma diferent (en funció de com es calculi en cada cas l’àrea de la figura) o definir-se de forma diferent. 
+</p>
+
+</div>
+
+<h2><a id="fases_del_desenvolupament_dels_sistemes_d_informacio" >Fases del desenvolupament dels sistemes d&#039;informació</a></h2>
+<div class="level2">
+
+<p>
+Una aplicació informàtica necessitarà moltes petites accions (i no tan petites) per ser creada. S’han desenvolupat moltes metodologies que ofereixen un acompanyament al llarg d’aquest desenvolupament, proporcionant pautes, indicacions, mètodes i documents per ajudar, sobretot, els caps de projecte més inexperts.
+</p>
+
+<p>
+Dintre d’aquestes metodologies hi ha Mètrica v3.0. Ha estat desenvolupada pel Ministeri d’Administracions Públiques. Es tracta d’una metodologia per a la planificació, desenvolupament i manteniment dels sistemes d’informació d’una organització. Per al desenvolupament de programari cal fixar-se en la part que fa referència al desenvolupament dels sistemes d’informació (SI), dins la metodologia Mètrica. Divideix el desenvolupament en 5 fases, que se segueixen de forma seqüencial. 
+</p>
+
+<p>
+També és important tenir clarament identificats els rols dels components de l’equip de projecte que participaran en el desenvolupament de l’aplicació informàtica. A Mètrica aquests perfils són:
+</p>
+<ul>
+<li class="level1"><div class="li"> Parts interessades (<em>stakeholders</em>)</div>
+</li>
+<li class="level1"><div class="li"> Cap de Projecte</div>
+</li>
+<li class="level1"><div class="li"> Consultors</div>
+</li>
+<li class="level1"><div class="li"> Analistes</div>
+</li>
+<li class="level1"><div class="li"> Programadors</div>
+</li>
+</ul>
+
+<p>
+A la <span class="figref"><a href="#Figure14"><span>figura</span></a></span> hi podeu observar les cinc fases principals de la metodologia Mètrica v3.0.
+</p>
+<div class="iocfigure"><a name="Figure14"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Fases de desenvolupament d’una aplicació
+
+</figcaption><img src="../media/ic10m05u1_14.png" alt="" /></figure>
+</div>
+</div>
+
+<h3><a id="estudi_de_viabilitat_del_sistema" >Estudi de viabilitat del sistema</a></h3>
+<div class="level3">
+
+<p>
+El propòsit d’aquest procés és analitzar un conjunt concret de necessitats, amb la idea de proposar una solució a curt termini. Els criteris amb què es fa aquesta proposta no seran estratègics sinó tàctics i relacionats amb aspectes econòmics, tècnics, legals i operatius.
+</p>
+<div class="iocimportant"><div class="ioccontent">
+<p>
+Els <strong>resultats</strong> de l’estudi de viabilitat del sistema constituiran la base per prendre la decisió de seguir endavant o abandonar el projecte.
+</p>
+</div></div>
+</div>
+
+<h3><a id="analisi_del_sistema_d_informacio" >Anàlisi del sistema d&#039;informació</a></h3>
+<div class="level3">
+<div class="iocimportant"><div class="ioccontent">
+<p>
+El propòsit d’aquest procés és aconseguir l’<strong>especificació detallada</strong> del sistema d’informació, per mitjà d’un catàleg de requisits i d’una sèrie de models que cobreixin les necessitats d’informació dels usuaris per als quals es desenvoluparà el sistema d’informació i que seran l’entrada per al procés de Disseny del sistema d’informació.
+</p>
+</div></div>
+<p>
+En primer lloc, es descriu el sistema d’informació, a partir de la informació obtinguda en l’estudi de viabilitat. Es delimita el seu abast, es genera un catàleg de requisits generals i es descriu el sistema mitjançant uns models inicials d’alt nivell.
+</p>
+
+<p>
+Es recullen de forma detallada els requisits funcionals que el sistema d’informació ha de cobrir. A més, s’identifiquen els requisits no funcionals del sistema, és a dir, les facilitats que ha de proporcionar el sistema, i les restriccions a què estarà sotmès, quant a rendiment, freqüència de tractament, seguretat…
+</p>
+
+<p>
+Normalment, per tal d’efectuar l’anàlisi se sol elaborar els models <em>de casos d’ús</em> i <em>de classes</em>, en desenvolupaments orientats a objectes, i <em>de dades i processos</em> en desenvolupaments estructurats. D’altra banda, s’aconsella dur a terme una definició d’interfícies d’usuari, ja que facilitarà la comunicació amb els usuaris clau.
+</p>
+
+</div>
+
+<h3><a id="disseny_del_sistema_d_informacio" >Disseny del sistema d&#039;informació</a></h3>
+<div class="level3">
+<div class="iocimportant"><div class="ioccontent">
+<p>
+El propòsit del <strong>disseny</strong> és obtenir la definició de l’arquitectura del sistema i de l’entorn tecnològic que li donarà suport, juntament amb l’especificació detallada dels components del sistema d’informació. A partir d’aquesta informació, es generen totes les especificacions de construcció relatives al propi sistema, així com l’especificació tècnica del pla de proves, la definició dels requisits d’implantació i el disseny dels procediments de migració i càrrega inicial.
+</p>
+</div></div>
+<p>
+En el disseny es generen les especificacions necessàries per a la construcció del sistema d’informació, com per exemple:
+</p>
+<ul>
+<li class="level1"><div class="li"> Els components del sistema (mòduls o classes, segons el cas) i de les estructures de dades.</div>
+</li>
+<li class="level1"><div class="li"> Els procediments de migració i els seus components associats.</div>
+</li>
+<li class="level1"><div class="li"> La definició i revisió del pla de proves, i el disseny de les verificacions dels nivells de prova establerts.</div>
+</li>
+<li class="level1"><div class="li"> El catàleg d’excepcions, que permet establir un conjunt de verificacions relacionades amb el propi disseny o amb l’arquitectura del sistema.</div>
+</li>
+<li class="level1"><div class="li"> L’especificació dels requisits d’implantació.</div>
+</li>
+</ul>
+
+</div>
+
+<h3><a id="construccio_del_sistema_d_informacio" >Construcció del sistema d&#039;informació</a></h3>
+<div class="level3">
+<div class="iocimportant"><div class="ioccontent">
+<p>
+La <strong>construcció del sistema d’informació</strong> té com a objectiu final la construcció i la prova dels diferents components del sistema d’informació, a partir del seu conjunt d’especificacions lògiques i físiques, obtingut en la fase de disseny. Es desenvolupen els procediments d’operació i de seguretat, i s’elaboren els manuals d’usuari final i d’explotació, aquests últims quan sigui procedent. 
+</p>
+</div></div>
+<p>
+Per aconseguir aquest objectiu, es recull la informació elaborada durant la fase de disseny, es prepara l’entorn de construcció, es genera el codi de cada un dels components del sistema d’informació i es van duent a terme, a mesura que es vagi finalitzant la construcció, les proves unitàries de cada un d’ells i les d’integració entre subsistemes. Si fos necessari efectuar una migració de dades, és en aquest procés on es porta a terme la construcció dels components de migració i dels procediments de migració i càrrega inicial de dades.
+</p>
+
+</div>
+
+<h3><a id="implantacio_i_acceptacio_del_sistema" >Implantació i acceptació del sistema</a></h3>
+<div class="level3">
+<div class="iocimportant"><div class="ioccontent">
+<p>
+Aquest procés té com a objectiu principal el <strong>lliurament</strong> i l’<strong>acceptació</strong> del sistema en la seva totalitat, que pot comprendre diversos sistemes d’informació desenvolupats de manera independent, i un segon objectiu, que és dur a terme les activitats oportunes per al pas a producció del sistema.
+</p>
+</div></div>
+<p>
+Un cop revisada l’estratègia d’implantació, s’estableix el pla d’implantació i es detalla l’equip que el portarà a terme.
+</p>
+
+<p>
+Per a l’inici d’aquest procés es prenen com a punt de partida els components del sistema provats de forma unitària i integrats en el procés de construcció, així com la documentació associada. El sistema s’ha de sotmetre a les proves d’implantació amb la participació de l’usuari d’operació. La responsabilitat, entre altres aspectes, és comprovar el comportament del sistema sota les condicions més extremes. El sistema també serà sotmès a les proves d’acceptació, que seran dutes a terme per l’usuari final.
+</p>
+
+<p>
+En aquest procés s’elabora el pla de manteniment del sistema, de manera que el responsable del manteniment conegui el sistema abans que aquest passi a producció. 
+</p>
+
+<p>
+També s’estableix l’acord de nivell de servei requerit una vegada que s’iniciï la producció. L’acord de nivell de servei fa referència a serveis de gestió d’operacions, de suport a usuaris i al nivell amb què es prestaran aquests serveis.
+</p>
+
+</div>
+
+	 </article>
+     <div class="pnpage">
+      <div class="left-corner"></div>
+      <div id="prevpage">Anar a la p&agrave;gina anterior:<br /><a href="../../../WebContent/u1/referencies.html">Referències</a></div>
+      <div id="nextpage">Anar a la p&agrave;gina seg&uuml;ent:<br /><a href="../../../WebContent/u1/a1/activitats.html">Activitats</a></div>
+      <div class="right-corner"></div>
+     </div>
+    </div>
+    <footer class="footer">
+      <div><small>Aquest document està subjecte a una llicència oberta de Creative Commons, es reserva el dret de reconeixement de l'autoria, d'exigir que no se'n faci cap mena d'ús comercial. Si altereu o transformeu aquesta obra, o en genereu obres derivades, només podeu distribuir l'obra generada amb una llicència idèntica a aquesta.</small></div>
+    </footer>
+ </div>
+ <div id="back_preview" class="hidden"></div>
+ <div id="preview" class="hidden">
+  <div class="prevcontent"></div>
+ </div>
+ <div id="help-tooltips">
+  <div id="help-toc" class="hidden tooltip"><span>Taula de continguts:</span> Ofereix una vista general de l&#39;estructura del m&ograve;dul, que us facilitar&agrave; la navegaci&oacute; a trav&eacute;s dels seus continguts.<span class="arrow-left"></span></div> 
+  <div id="help-settings" class="hidden tooltip"><span>Opcions de format:</span> Permet configurar el format de lectura a partir de les vostres prefer&egrave;ncies, modificant la mida de la lletra, el color del fons, l&#39;amplada de la p&agrave;gina o l&#39;ocultaci&oacute; dels continguts complementaris, entre d&#39;altres.<span class="arrow-left"></span></div>
+  <div id="help-printer" class="hidden tooltip"><span>Imprimir:</span>  Envia el contingut seleccionat a la impressora.<span class="arrow-left"></span></div>
+  <div id="help-favorites" class="hidden tooltip"><span>Prefereits:</span> Permet desar aquelles parts del contingut a les que us interessi accedir en un moment posterior; us permetr&agrave; anar creant un repositori personalitzat de les seccions que considereu m&eacute;s rellevants. Un cop l&#39;hageu començat a fer servir se us mostrar&agrave; a sota un comptador que us informar&agrave; del nombre de preferits que s&#39;hagin emmagatzemat fins al moment.<span class="arrow-left"></span></div>
+  <div id="help-favcounter" class="hidden tooltip"><span>Comptador i llistat de preferits:</span> Indica el nombre de preferits que s&#39;han desat fins el moment; clicant damunt seu accedireu al llistat de preferits, i a trav&eacute;s d&#39;aquest podreu accedir directament als continguts que hageu emmagatzemat.<span class="arrow-left"></span></div>
+  <div id="help-help_icon" class="hidden tooltip"><span>Ajuda:</span> Aquesta opci&oacute; activa la informaci&oacute; de les funcionalitats del web tot situant el punter del ratol&iacute; al damunt dels diferents &iacute;tems.<span class="arrow-left"></span></div>
+  <div id="help-sidebar-hide" class="hidden tooltip"><span>Mostrar/Ocultar barra lateral:</span>  Deshabilita la barra d&#39;opcions, permetent la seva recuperaci&oacute; quan es desitgi.<span class="arrow-left"></span></div>
+  <div id="help-search" class="hidden tooltip"><span>Cerca:</span>  Introdu&iuml;u les paraules clau sobre aquells conceptes que desitgeu localitzar en els continguts del m&ograve;dul. Tamb&eacute; podeu excloure un terme de la cerca tot afegint-hi el signe &#8220;-&#8221; al davant.<span class="arrow-top"></span></div>
+  <div id="help-header" class="hidden tooltip"><span>Cap&ccedil;alera:</span>  Indica l&#39;apartat o secci&oacute; que es mostra en pantalla. Tingueu present que les capçaleres de segon, tercer i quart nivell tamb&eacute; es poden desar com a marcadors.<span class="arrow-left"></span></div>
+</div> 
+</body>
+</html>

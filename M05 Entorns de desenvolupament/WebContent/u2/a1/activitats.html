@@ -1,0 +1,451 @@
+<!doctype html>
+
+<!--[if lt IE 7 ]> <html class="ie ie6 no-js" lang="ca"> <![endif]-->
+<!--[if IE 7 ]>    <html class="ie ie7 no-js" lang="ca"> <![endif]-->
+<!--[if IE 8 ]>    <html class="ie ie8 no-js" lang="ca"> <![endif]-->
+<!--[if IE 9 ]>    <html class="ie ie9 no-js" lang="ca"> <![endif]-->
+<!--[if gt IE 9]><!--><html class="no-js" lang="ca"><!--<![endif]-->
+<!-- the "no-js" class is for Modernizr. -->
+
+<head id="www-sitename-com" data-template-set="html5-reset">
+
+	<meta charset="utf-8">
+	
+	<!-- Always force latest IE rendering engine (even in intranet) & Chrome Frame -->
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	
+	<title>Entorns de desenvolupament</title>
+	
+<!-- <meta name="title" content=""> --> 
+	<meta name="description" content="">
+	<!-- Google will often use this as its description of your page/site. Make it good. -->
+	
+	<meta name="google-site-verification" content="">
+	<!-- Speaking of Google, don't forget to set your site up: http://google.com/webmasters -->
+	
+	<meta name="author" content="Institut Obert de Catalunya">
+	<meta name="Copyright" content="Copyright Institut Obert de Catalunya 2011. All Rights Reserved.">
+
+	<!-- Dublin Core Metadata : http://dublincore.org/ -->
+	<meta name="DC.title" content="Entorns de desenvolupament">
+	<meta name="DC.subject" content="Informàtica i comunicacions">
+	<meta name="DC.creator" content="Institut Obert de Catalunya">
+	
+	<!--  Mobile Viewport Fix
+	j.mp/mobileviewport & davidbcalhoun.com/2010/viewport-metatag 
+	device-width : Occupy full width of the screen in its current orientation
+	initial-scale = 1.0 retains dimensions instead of zooming out if page height > device height
+	maximum-scale = 1.0 retains dimensions instead of zooming in if page width < device width
+	-->
+	<!-- Uncomment to use � use thoughtfully!
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+	-->
+
+	<link rel="shortcut icon" href="../../../img/favicon.ico">
+	<!-- This is the traditional favicon.
+		 - size: 16x16 or 32x32
+		 - transparency is OK
+		 - see wikipedia for info on browser support: http://mky.be/favicon/ -->
+		 
+	<link rel="apple-touch-icon" href="../../../img/apple-touch-icon.png">
+	<!-- The is the icon for iOS's Web Clip.
+		 - size: 57x57 for older iPhones, 72x72 for iPads, 114x114 for iPhone4's retina display (IMHO, just go ahead and use the biggest one)
+		 - To prevent iOS from applying its styles to the icon name it thusly: apple-touch-icon-precomposed.png
+		 - Transparency is not recommended (iOS will put a black BG behind the icon) -->
+	
+	<!-- CSS: screen, mobile & print are all in the same file -->
+	<link rel="stylesheet" href="../../../_/css/style.css">
+
+	<!-- CSS: jQuery UI -->
+	<link rel="stylesheet" href="../../../_/css/jquery-ui.css">
+	
+	<!-- all our JS is at the bottom of the page, except for Modernizr. -->
+	<script src="../../../_/js/modernizr-1.7.min.js"></script>
+	<script src="../../../_/js/Hyphenator.js" type="text/javascript"></script>
+	<script type="text/javascript">
+	   Hyphenator.config({
+		minwordlength : 4
+	   });
+	   Hyphenator.run();
+	</script>
+    <script src="../../../_/js/build.js" type="text/javascript"></script>
+</head>
+
+<body class="style-newspaper">
+
+<div class="wrapper"><!-- not needed? up to you: http://camendesign.com/code/developpeurs_sans_frontieres -->
+
+	<header id="header">
+		<div class="head"><a href="http://ioc.gencat.cat"><img src="../../../img/logo.png" alt="Institut Obert de Catalunya"/></a><a href="http://creativecommons.org/licenses/by-nc-sa/3.0/es/deed.ca"><img src="../../../img/license.png" alt="Llic&egrave;ncia" class="license"/></a></div>
+		<div class="headdocument"><a href="../../../index.html">Entorns de desenvolupament</a></div>
+        <div id="search" class="search" name="search">
+         <form id="frmsearch" action="../../../search.html" method="get">
+          <input type="text" name="q"/>
+        </form>
+        </div>
+	</header>
+   <div id="upbutton" class="upbutton" style="display:none;"><img src="../../../img/uparrow.png" alt="Pujar a l'inici de p&agrave;gina"/></div>
+   <aside id="aside">
+    <div id="menu">
+      <ul>
+       <li name="toc"><div><img src="../../../img/toc.png" alt="&Iacute;ndex"/></div></li>
+       <li name="settings"><div><img src="../../../img/settings.png" alt="Configuraci&oacute;"/></div></li>
+       <li name="printer"><div><img src="../../../img/printer.png" alt="Imprimir"/></div></li>
+       <li name="favorites"><div><img src="../../../img/favorites.png" alt="Favorits"/></div></li>
+       <li name="help_icon" class="help_icon"><div><img src="../../../img/help_icon.png" alt="Ajuda"/></div></li>
+      </ul>
+     </div>
+   </aside>
+   <div id="sidebar-hide" name="sidebar-hide"><img src="../../../img/arrows.png"/></div>
+   <section>
+     <div id="toc" class="hidden">
+      <div class="menucontent">
+        <ul>
+        <li id="u2" class="parentnode"><p><a href="../../../WebContent/u2/introduccio.html">2. Optimització de programari</a></p><ul class="expander"><li id="u2introduccio"><a href="../../../WebContent/u2/introduccio.html">Introducció</a></li><li id="u2resum"><a href="../../../WebContent/u2/resum.html">Resum</a></li><li id="u2resultats"><a href="../../../WebContent/u2/resultats.html">Resultats d’aprenentatge</a></li><li id="u2referencies"><a href="../../../WebContent/u2/referencies.html">Referències</a></li><li id="u2a1" class="tocsection"><p id="u2a1continguts"><a href="../../../WebContent/u2/a1/continguts.html">Disseny i realització de proves de programari</a><span class="buttonexp"></span></p><ul><li id="u2a1activitats"><a href="../../../WebContent/u2/a1/activitats.html">Activitats</a></li><li id="u2a1exercicis"><a href="../../../WebContent/u2/a1/exercicis.html">Exercicis</a></li><li id="u2a1annexos"><a href="../../../WebContent/u2/a1/annexos.html">Annexos</a></li></ul></li><li id="u2a2" class="tocsection"><p id="u2a2continguts"><a href="../../../WebContent/u2/a2/continguts.html">Eines per al control i documentació de programari</a><span class="buttonexp"></span></p><ul><li id="u2a2activitats"><a href="../../../WebContent/u2/a2/activitats.html">Activitats</a></li><li id="u2a2exercicis"><a href="../../../WebContent/u2/a2/exercicis.html">Exercicis</a></li></ul></li></ul></li><li id="" class="indexnode"><p><a href="../../../index.html">Anar a l&#39;&iacute;ndex general</a></p></li>
+        </ul>
+      </div>
+    </div>
+   </section>
+   <section>
+   <div id="settings" class="hidden">
+    <div class="menucontent">
+     <div class="allsettings">
+     <div class="settings">
+      <label>Font i Color</label>
+		<div class="setting-option">
+	        <ul class="fontBackground">
+				<li id="style-newspaper" title="Newspaper" class="appearance-style-newspaper"><span>Newspaper</span></li>
+                <li id="style-novel" title="Novel" class="appearance-style-novel"><span>Novel</span></li>
+                <li id="style-ebook" title="eBook" class="appearance-style-ebook"><span>eBook</span></li>
+				<li id="style-inverse" title="Inverse" class="appearance-style-inverse active"><span>Inverse</span></li>
+				<li id="style-athelas" title="Athelas" class="appearance-style-athelas"><span>Athelas</span></li>
+			</ul>
+		</div>
+     </div>
+	<div class="settings">
+      <label>Amplada</label>
+		<div class="setting-option">
+	        <div id="slider-width"></div>
+		</div>
+     </div>
+     <div class="settings">
+      <label>Mida de la font</label>
+		<div class="setting-option">
+	        <div id="slider-font"></div>
+		</div>
+     </div>
+     <div class="settings">
+      <label>Mida de la font</label>
+	  <div class="setting-option">
+       <form action="" class="sett-options">
+		<ul>
+		    <li><input type="checkbox" id="secondary-content" /><label for="secondary-content">Mostra recursos complementaris</label></li>
+		    <li><input type="checkbox" id="main-images" /><label for="main-images">Mostra imatges</label></li>
+		    <li><input type="checkbox" id="text-alignment" /><label for="text-alignment">Text justificat</label></li>
+			<li><input type="checkbox" id="text-hyphen" /><label for="text-hyphen">Partici&oacute; sil·l&agrave;bica</label></li>
+		</ul>
+       </form>
+	  </div>
+     </div>
+     </div>
+    </div>
+   </div>
+   </section>
+ <section>
+ <div id="favorites" class="hidden"></div>
+ </section>   
+ <div id="bridge" class="hidden"></div>
+ <div id="help" class="hidden">
+  <div class="helptitle">Dreceres del teclat<hr></div>
+  <div class="helpsection"><span>General</span>
+   <ul>
+    <li><span class="shortcut">g</span>: Anar al men&uacute; de navegaci&oacute;</li>
+    <li><span class="shortcut">o</span>: Anar a opcions</li>
+    <li><span class="shortcut">s</span>: Guardar la p&agrave;gina actual a favorits</li>
+    <li><span class="shortcut">p</span>: Imprimir la p&agrave;gina actual</li>
+    <li><span class="shortcut">?</span>: Mostrar/Ocultar l&#39;ajuda</li>
+   </ul>
+  </div>
+  <div class="helpsection"><span>Navegaci&oacute;</span>
+   <ul>
+    <li><span class="shortcut">i</span>: Anar a l&#39;&iacute;ndex general</li>
+    <li><span class="shortcut">t</span>: Anar a l&#39;inici de p&agrave;gina</li>
+    <li><span class="shortcut">b</span>: Anar al final de p&agrave;gina</li>
+    <li><span class="shortcut">j</span>: Anar cap endavant dintre la p&agrave;gina</li>
+    <li><span class="shortcut">k</span>: Anar cap enrere dintre la p&agrave;gina</li>
+    <li><span class="shortcut">h</span>: Anar a la p&agrave;gina anterior:</li>
+    <li><span class="shortcut">l</span>: Anar a la p&agrave;gina seg&uuml;ent:</li>
+   </ul>
+   </div>
+ </div>
+ <div id="favcounter" name="favcounter" class="hidden"><span></span></div>
+ <div id="navmenu" class="navmenu"><ul class="webnav"><li><a href="../../../index.html" title="Anar a l&#39;&iacute;ndex general">Inici</a></li><li><a href="../introduccio.html">Optimització de programari </a></li><li><a href="continguts.html">Disseny i realització de proves de programari</a></li><li>Activitats</li></ul></div>
+	<div id="content" lang="ca" class="hyphenate text">
+     <article lang="ca" class="sheet">
+        <h1><a id="activitats"> Activitats </a></h1>
+    	
+<h2><a id="depuracio_del_codi" >Depuració del codi</a></h2>
+<div class="level2">
+
+<p>
+L’objectiu d’aquesta activitat és dominar el concepte de punt d’interrupció (o <em>breakpoint</em>) i la seva aplicació.
+Es demana la col·locació de punts d’interrupció per poder anar executant, pas a pas, el codi, validant els valors que van adquirint les variables.
+</p>
+
+<p>
+S’ha de crear un nou projecte de Java que permeti calcular el factorial. S’ofereix, a continuació, el codi de programació que soluciona el factorial.
+</p>
+<pre class="code java"><ol><li class="li1"><div class="de1"><span class="kw1">public</span> <span class="kw1">class</span> Factorial <span class="br0">&#123;</span></div></li><li class="li1"><div class="de1">&nbsp;</div></li><li class="li1"><div class="de1">	<span class="kw1">public</span> <span class="kw1">static</span> <span class="kw4">double</span> factorial <span class="br0">&#40;</span><span class="kw4">double</span> numero<span class="br0">&#41;</span> <span class="br0">&#123;</span></div></li><li class="li1"><div class="de1">&nbsp;</div></li><li class="li1"><div class="de1">		<span class="kw1">if</span> <span class="br0">&#40;</span>numero<span class="sy0">==</span><span class="nu0">0</span><span class="br0">&#41;</span></div></li><li class="li1"><div class="de1">			<span class="kw1">return</span> <span class="nu0">1</span><span class="sy0">;</span></div></li><li class="li1"><div class="de1">		<span class="kw1">else</span></div></li><li class="li1"><div class="de1">		<span class="br0">&#123;</span></div></li><li class="li1"><div class="de1">			<span class="kw4">double</span> resultat <span class="sy0">=</span> numero <span class="sy0">*</span> factorial<span class="br0">&#40;</span>numero<span class="sy0">-</span><span class="nu0">1</span><span class="br0">&#41;</span><span class="sy0">;</span></div></li><li class="li1"><div class="de1">			<span class="kw1">return</span> resultat<span class="sy0">;</span></div></li><li class="li1"><div class="de1">		<span class="br0">&#125;</span></div></li><li class="li1"><div class="de1">	<span class="br0">&#125;</span>	</div></li><li class="li1"><div class="de1">&nbsp;</div></li><li class="li1"><div class="de1">	<span class="kw1">public</span> <span class="kw1">static</span> <span class="kw4">void</span> main<span class="br0">&#40;</span><a href="http://www.google.com/search?hl=en&amp;q=allinurl%3Adocs.oracle.com+javase+docs+api+string"><span class="kw3">String</span></a><span class="br0">&#91;</span><span class="br0">&#93;</span> args<span class="br0">&#41;</span> <span class="br0">&#123;</span></div></li><li class="li1"><div class="de1">&nbsp;</div></li><li class="li1"><div class="de1">		<a href="http://www.google.com/search?hl=en&amp;q=allinurl%3Adocs.oracle.com+javase+docs+api+system"><span class="kw3">System</span></a>.<span class="me1">out</span>.<span class="me1">println</span><span class="br0">&#40;</span>factorial<span class="br0">&#40;</span><span class="nu0">5</span><span class="br0">&#41;</span><span class="br0">&#41;</span><span class="sy0">;</span></div></li><li class="li1"><div class="de1">&nbsp;</div></li><li class="li1"><div class="de1">	<span class="br0">&#125;</span></div></li><li class="li1"><div class="de1">&nbsp;</div></li><li class="li1"><div class="de1"><span class="br0">&#125;</span></div></li></ol></pre>
+
+<p>
+Es demana depurar el codi pas a pas, introduint els punts d’interrupció necessaris i mostrant el valor que van tenint les variables.
+</p>
+
+<p>
+<form action=""><div class="solution ioccontent">
+<p>
+A continuació, a les següents figures, es mostrarà, pas a pas, com solucionar l’exercici plantejat.
+</p>
+
+<p>
+A partir del projecte creat amb el codi indicat a l’enunciat, s’indica com començar la seva depuració.
+</p>
+
+<p>
+<div class="imgelem">
+<img src="../media/activitat_u2a1_08.png" alt="" /></div>
+
+</p>
+
+<p>
+A continuació es mostren les interfícies que veu l’usuari en seleccionar la funcionalitat de depuració del menú. Es podrà seleccionar el codi que es vol depurar i especificar les condicions que es vulguin. Concretament, es determina un punt d’interrupció a l’hora de retornar el valor calculat a la funció factorial.
+</p>
+
+<p>
+<div class="imgelem">
+<img src="../media/activitat_u2a1_03.png" alt="" /></div>
+
+</p>
+
+<p>
+A continuació es mostra un detall dels valors de les variables numero i resultat en un moment determinat de l’execució del codi de programació. En concret, a la figura 3 es mostra l’instant en què es passa per segona vegada per la línia de codi de programació amb el punt d’interrupció.
+</p>
+
+<p>
+<div class="imgelem">
+<img src="../media/activitat_u2a1_04.png" alt="" /></div>
+
+</p>
+
+<p>
+A continuació es mostra el valor de les variables numero i resultat la tercera vegada que es passa pel punt d’interrupció.  
+</p>
+
+<p>
+<div class="imgelem">
+<img src="../media/activitat_u2a1_05.png" alt="" /></div>
+
+</p>
+
+<p>
+A continuació es mostra el valor de les variables numero i resultat la quarta vegada que es passa pel punt d’interrupció. En aquest cas, el valor de numero és 4 (en ser la quarta vegada que s’ha finalitzat la recursivitat de la crida a la funció factorial) i el valor temporal de resultat és 24.
+</p>
+
+<p>
+<div class="imgelem">
+<img src="../media/activitat_u2a1_06.png" alt="" /></div>
+
+</p>
+
+<p>
+A continuació es mostra el valor de les variables numero i resultat la cinquena, i darrera vegada, que es passa pel punt d’interrupció. En aquesta figura es poden observar els valors de les variables just abans de mostrar el resultat per pantalla i finalitzar l’execució del programari.
+</p>
+
+<p>
+<div class="imgelem">
+<img src="../media/activitat_u2a1_07.png" alt="" /></div>
+
+</p>
+</div><input class="btn_solution3" type="button" value="Mostra"></input></form>
+</p>
+
+</div>
+
+<h2><a id="junit_prova_unitaria" >JUnit. Prova unitària</a></h2>
+<div class="level2">
+
+<p>
+L’objectiu d’aquesta activitat és aprendre a crear proves unitàries amb JUnit.
+</p>
+
+<p>
+Es demana:
+</p>
+<ol>
+<li class="level1"><div class="li"> Crear un projecte que implementi una pila.</div>
+</li>
+<li class="level1"><div class="li"> Codificar les proves unitàries amb JUnit, que permetin validar el correcte funcionament de la pila.</div>
+</li>
+</ol>
+
+<p>
+Una pila és una llista o estructura de dades en què la forma d’accés als seus elements és de tipus LIFO (de l’anglès <em>Last In First Out</em>, el darrer a entrar és el primer a sortir), que permet emmagatzemar i recuperar dades.
+</p>
+
+<p>
+Recordar que JUnit és un <em>framework</em> per automatitzar les proves unitàries d’aplicacions Java; permet l’execució de classes Java de manera controlada, amb l’objectiu de poder avaluar si el funcionament de cada un dels mètodes de la classe es comporta com s’espera.
+</p>
+
+<p>
+<form action=""><div class="solution ioccontent">
+<p>
+1. Crear un projecte que implementi una pila:
+</p>
+<pre class="code java"><ol><li class="li1"><div class="de1"><span class="kw1">import</span> <span class="co2">java.util.Vector</span><span class="sy0">;</span></div></li><li class="li1"><div class="de1">&nbsp;</div></li><li class="li1"><div class="de1"><span class="kw1">public</span> <span class="kw1">class</span> Pila <span class="br0">&#123;</span></div></li><li class="li1"><div class="de1">&nbsp;</div></li><li class="li1"><div class="de1">	<span class="kw1">private</span> <span class="kw4">int</span> mida<span class="sy0">;</span>    </div></li><li class="li1"><div class="de1">	<span class="kw1">private</span> Vector<span class="sy0">&lt;</span>Integer<span class="sy0">&gt;</span> pila<span class="sy0">;</span></div></li><li class="li1"><div class="de1">&nbsp;</div></li><li class="li1"><div class="de1">    <span class="kw1">public</span> Pila<span class="br0">&#40;</span><span class="br0">&#41;</span> <span class="br0">&#123;</span></div></li><li class="li1"><div class="de1">         <span class="kw1">super</span><span class="br0">&#40;</span><span class="br0">&#41;</span><span class="sy0">;</span></div></li><li class="li1"><div class="de1">         pila <span class="sy0">=</span> <span class="kw1">new</span> Vector<span class="sy0">&lt;</span>Integer<span class="sy0">&gt;</span><span class="br0">&#40;</span><span class="br0">&#41;</span><span class="sy0">;</span></div></li><li class="li1"><div class="de1">         mida <span class="sy0">=</span> <span class="nu0">0</span><span class="sy0">;</span></div></li><li class="li1"><div class="de1">     <span class="br0">&#125;</span></div></li><li class="li1"><div class="de1">&nbsp;</div></li><li class="li1"><div class="de1">    <span class="kw1">public</span> <span class="kw4">boolean</span> pilaBuida <span class="br0">&#40;</span><span class="br0">&#41;</span> <span class="br0">&#123;</span></div></li><li class="li1"><div class="de1">         <span class="kw1">if</span> <span class="br0">&#40;</span>mida<span class="sy0">==</span><span class="nu0">0</span><span class="br0">&#41;</span> <span class="br0">&#123;</span></div></li><li class="li1"><div class="de1">             <span class="kw1">return</span> <span class="kw2">true</span><span class="sy0">;</span></div></li><li class="li1"><div class="de1">         <span class="br0">&#125;</span></div></li><li class="li1"><div class="de1">         <span class="kw1">return</span> <span class="kw2">false</span><span class="sy0">;</span></div></li><li class="li1"><div class="de1">     <span class="br0">&#125;</span></div></li><li class="li1"><div class="de1">&nbsp;</div></li><li class="li1"><div class="de1">    <span class="kw1">public</span> <span class="kw4">void</span> apilar <span class="br0">&#40;</span> <a href="http://www.google.com/search?hl=en&amp;q=allinurl%3Adocs.oracle.com+javase+docs+api+integer"><span class="kw3">Integer</span></a> o <span class="br0">&#41;</span> <span class="br0">&#123;</span></div></li><li class="li1"><div class="de1">         pila.<span class="me1">add</span><span class="br0">&#40;</span>mida, o<span class="br0">&#41;</span><span class="sy0">;</span></div></li><li class="li1"><div class="de1">         mida<span class="sy0">++;</span></div></li><li class="li1"><div class="de1">     <span class="br0">&#125;</span></div></li><li class="li1"><div class="de1">&nbsp;</div></li><li class="li1"><div class="de1">    <span class="kw1">public</span> <a href="http://www.google.com/search?hl=en&amp;q=allinurl%3Adocs.oracle.com+javase+docs+api+integer"><span class="kw3">Integer</span></a> desapilar <span class="br0">&#40;</span><span class="br0">&#41;</span> <span class="br0">&#123;</span></div></li><li class="li1"><div class="de1">&nbsp;</div></li><li class="li1"><div class="de1">        <span class="kw1">try</span> <span class="br0">&#123;</span></div></li><li class="li1"><div class="de1">             <span class="kw1">if</span><span class="br0">&#40;</span>pilaBuida<span class="br0">&#40;</span><span class="br0">&#41;</span><span class="br0">&#41;</span></div></li><li class="li1"><div class="de1">                 <span class="kw1">throw</span> <span class="kw1">new</span> ErrorPilaVacia<span class="br0">&#40;</span><span class="br0">&#41;</span><span class="sy0">;</span></div></li><li class="li1"><div class="de1">             <span class="kw1">else</span> <span class="br0">&#123;</span></div></li><li class="li1"><div class="de1">                 <span class="kw1">return</span> pila.<span class="me1">get</span><span class="br0">&#40;</span><span class="sy0">--</span>mida<span class="br0">&#41;</span><span class="sy0">;</span></div></li><li class="li1"><div class="de1">             <span class="br0">&#125;</span></div></li><li class="li1"><div class="de1">         <span class="br0">&#125;</span> <span class="kw1">catch</span><span class="br0">&#40;</span>ErrorPilaVacia error<span class="br0">&#41;</span> <span class="br0">&#123;</span></div></li><li class="li1"><div class="de1">             <a href="http://www.google.com/search?hl=en&amp;q=allinurl%3Adocs.oracle.com+javase+docs+api+system"><span class="kw3">System</span></a>.<span class="me1">out</span>.<span class="me1">println</span><span class="br0">&#40;</span><span class="st0">&quot;ERROR: la pila està buida&quot;</span><span class="br0">&#41;</span><span class="sy0">;</span></div></li><li class="li1"><div class="de1">             <span class="kw1">return</span> <span class="kw2">null</span><span class="sy0">;</span></div></li><li class="li1"><div class="de1">         <span class="br0">&#125;</span></div></li><li class="li1"><div class="de1">     <span class="br0">&#125;</span></div></li><li class="li1"><div class="de1">&nbsp;</div></li><li class="li1"><div class="de1">    <span class="kw1">public</span> <span class="kw4">int</span> getNumElements<span class="br0">&#40;</span><span class="br0">&#41;</span> <span class="br0">&#123;</span></div></li><li class="li1"><div class="de1">         <span class="kw1">return</span> mida<span class="sy0">;</span></div></li><li class="li1"><div class="de1">     <span class="br0">&#125;</span></div></li><li class="li1"><div class="de1">&nbsp;</div></li><li class="li1"><div class="de1">    @SuppressWarnings<span class="br0">&#40;</span><span class="st0">&quot;serial&quot;</span><span class="br0">&#41;</span></div></li><li class="li1"><div class="de1">    <span class="kw1">class</span> ErrorPilaVacia <span class="kw1">extends</span> <a href="http://www.google.com/search?hl=en&amp;q=allinurl%3Adocs.oracle.com+javase+docs+api+exception"><span class="kw3">Exception</span></a> <span class="br0">&#123;</span></div></li><li class="li1"><div class="de1">        <span class="kw1">public</span> ErrorPilaVacia<span class="br0">&#40;</span><span class="br0">&#41;</span> <span class="br0">&#123;</span></div></li><li class="li1"><div class="de1">            <span class="kw1">super</span><span class="br0">&#40;</span><span class="br0">&#41;</span><span class="sy0">;</span></div></li><li class="li1"><div class="de1">        <span class="br0">&#125;</span></div></li><li class="li1"><div class="de1">    <span class="br0">&#125;</span></div></li><li class="li1"><div class="de1"><span class="br0">&#125;</span></div></li></ol></pre>
+
+<p>
+2. Codificar les proves unitàries amb JUnit, que permetin validar el correcte funcionament de la pila:
+</p>
+
+<p>
+En primer lloc, cal descarregar una <a href="http://sourceforge.net/projects/junit/files/junit/" class="urlextern" title="http://sourceforge.net/projects/junit/files/junit/"  rel="nofollow">versió de JUnit</a>.
+</p>
+
+<p>
+A partir del projecte Pila es podrà incloure una nova classe de test que anomenarem PilaTest.
+</p>
+
+<p>
+La classe de proves s’ha de crear en el mateix paquet on es troba la nostra classe. Això ens permetrà tenir accés a les variables declarades sense identificador d’accés, sense necessitat d’un mètode altern com un setter. 
+</p>
+
+<p>
+A continuació es mostra com començar la utilització de JUnit creant un JUnit Test Case.
+<div class="imgelem">
+<img src="../media/junit_example_05.png" alt="" /></div>
+
+</p>
+
+<p>
+A continuació es pot observar el diàleg que s’haurà de configurar per crear les proves, indicant la carpeta amb què es treballarà, el nom de les proves i la classe que se sotmetrà a les proves.
+</p>
+
+<p>
+<div class="imgelem">
+<img src="../media/junit_example_06.png" alt="" /></div>
+
+</p>
+
+<p>
+A continuació es podrà seleccionar quins mètodes de la Classe Pila es voldran verificar. 
+<div class="imgelem">
+<img src="../media/junit_example_06_1.png" alt="" /></div>
+
+</p>
+
+<p>
+Automàticament s’haurà inclòs en el projecte la referència a la llibreria. 
+</p>
+
+<p>
+En el cas que s’hagi d’especificar manualment la referència, caldrà que s’afegeixi la llibreria de JUnit al Build Path. Caldrà clicar amb el botó dret a sobre del projecte i seleccionar sobre el menú contextual l’opció <em>Properties</em>. Es pot observar a continuació:
+</p>
+
+<p>
+<div class="imgelem">
+<img src="../media/junit_example_01.png" alt="" /></div>
+
+</p>
+
+<p>
+Sobre el <em>Java Build Path</em>, a la pestanya <em>Libraries</em>, caldrà afegir fitxer JAR externs (figura 5).
+</p>
+
+<p>
+<div class="imgelem">
+<img src="../media/junit_example_02.png" alt="" /></div>
+
+</p>
+
+<p>
+Cal descarregar de la llibreria <a href="http://sourceforge.net/projects/junit/files/junit/" class="urlextern" title="http://sourceforge.net/projects/junit/files/junit/"  rel="nofollow">http://sourceforge.net/projects/junit/files/junit/</a> el fitxer de JUnit, que, per defecte, es guarda a la carpeta de descàrregues. A continuació es pot veure com afegir la llibreria JUnit-4.10.jar al nostre projecte.
+</p>
+
+<p>
+<div class="imgelem">
+<img src="../media/junit_example_03.png" alt="" /></div>
+
+</p>
+
+<p>
+A continuació s’observa el fitxer una vegada afegit a les llibreries.
+</p>
+
+<p>
+<div class="imgelem">
+<img src="../media/junit_example_04.png" alt="" /></div>
+
+</p>
+
+<p>
+En funció de la informació proporcionada en l’assistent de creació de la classe <code>CalculadoraTest</code>, automàticament es generarà l’estructura de les proves que s’hauran d’implementar.
+</p>
+
+<p>
+Algunes de les proves que podria contenir la calculadora podrien ser les que es mostren a continuació:
+</p>
+<pre class="code java"><ol><li class="li1"><div class="de1"><span class="kw1">import</span> <span class="co2">static</span> org.<span class="me1">junit</span>.<span class="kw1">Assert</span>.<span class="sy0">*;</span></div></li><li class="li1"><div class="de1">&nbsp;</div></li><li class="li1"><div class="de1"><span class="kw1">import</span> <span class="co2">org.junit.Before</span><span class="sy0">;</span></div></li><li class="li1"><div class="de1"><span class="kw1">import</span> <span class="co2">org.junit.Test</span><span class="sy0">;</span></div></li><li class="li1"><div class="de1">&nbsp;</div></li><li class="li1"><div class="de1"><span class="kw1">public</span> <span class="kw1">class</span> PilaTest <span class="br0">&#123;</span></div></li><li class="li1"><div class="de1">&nbsp;</div></li><li class="li1"><div class="de1">	Pila pila_plena<span class="sy0">;</span></div></li><li class="li1"><div class="de1">	Pila pila_buida<span class="sy0">;</span></div></li><li class="li1"><div class="de1">&nbsp;</div></li><li class="li1"><div class="de1">	@Before</div></li><li class="li1"><div class="de1">	<span class="kw1">public</span> <span class="kw4">void</span> setUp<span class="br0">&#40;</span><span class="br0">&#41;</span> <span class="br0">&#123;</span></div></li><li class="li1"><div class="de1">		pila_buida <span class="sy0">=</span> <span class="kw1">new</span> Pila<span class="br0">&#40;</span><span class="br0">&#41;</span><span class="sy0">;</span></div></li><li class="li1"><div class="de1">&nbsp;</div></li><li class="li1"><div class="de1">		pila_plena <span class="sy0">=</span> <span class="kw1">new</span> Pila <span class="br0">&#40;</span><span class="br0">&#41;</span><span class="sy0">;</span></div></li><li class="li1"><div class="de1">		pila_plena.<span class="me1">apilar</span><span class="br0">&#40;</span><span class="nu0">1</span><span class="br0">&#41;</span><span class="sy0">;</span></div></li><li class="li1"><div class="de1">		pila_plena.<span class="me1">apilar</span><span class="br0">&#40;</span><span class="nu0">2</span><span class="br0">&#41;</span><span class="sy0">;</span></div></li><li class="li1"><div class="de1">		pila_plena.<span class="me1">apilar</span><span class="br0">&#40;</span><span class="nu0">3</span><span class="br0">&#41;</span><span class="sy0">;</span></div></li><li class="li1"><div class="de1">		pila_plena.<span class="me1">apilar</span><span class="br0">&#40;</span><span class="nu0">4</span><span class="br0">&#41;</span><span class="sy0">;</span></div></li><li class="li1"><div class="de1">	<span class="br0">&#125;</span></div></li><li class="li1"><div class="de1">&nbsp;</div></li><li class="li1"><div class="de1">	@Test</div></li><li class="li1"><div class="de1">	<span class="kw1">public</span> <span class="kw4">void</span> testGetNumElements<span class="br0">&#40;</span><span class="br0">&#41;</span> <span class="br0">&#123;</span></div></li><li class="li1"><div class="de1">		<span class="kw4">int</span> valor <span class="sy0">=</span> <span class="nu0">0</span><span class="sy0">;</span></div></li><li class="li1"><div class="de1">		valor<span class="sy0">=</span>pila_plena.<span class="me1">getNumElements</span><span class="br0">&#40;</span><span class="br0">&#41;</span><span class="sy0">;</span></div></li><li class="li1"><div class="de1">		assertEquals<span class="br0">&#40;</span>pila_plena.<span class="me1">getNumElements</span><span class="br0">&#40;</span><span class="br0">&#41;</span>,<span class="nu0">4</span><span class="br0">&#41;</span><span class="sy0">;</span>		</div></li><li class="li1"><div class="de1">	<span class="br0">&#125;</span></div></li><li class="li1"><div class="de1">&nbsp;</div></li><li class="li1"><div class="de1">	@Test</div></li><li class="li1"><div class="de1">	<span class="kw1">public</span> <span class="kw4">void</span> testPilaBuida<span class="br0">&#40;</span><span class="br0">&#41;</span> <span class="br0">&#123;</span></div></li><li class="li1"><div class="de1">		assertEquals<span class="br0">&#40;</span>pila_buida.<span class="me1">getNumElements</span><span class="br0">&#40;</span><span class="br0">&#41;</span>,<span class="nu0">0</span><span class="br0">&#41;</span><span class="sy0">;</span>		</div></li><li class="li1"><div class="de1">	<span class="br0">&#125;</span></div></li><li class="li1"><div class="de1">&nbsp;</div></li><li class="li1"><div class="de1">	@Test</div></li><li class="li1"><div class="de1">	<span class="kw1">public</span> <span class="kw4">void</span> testApilar<span class="br0">&#40;</span><span class="br0">&#41;</span> <span class="br0">&#123;</span></div></li><li class="li1"><div class="de1">		<a href="http://www.google.com/search?hl=en&amp;q=allinurl%3Adocs.oracle.com+javase+docs+api+integer"><span class="kw3">Integer</span></a> i <span class="sy0">=</span> <span class="kw1">new</span> <a href="http://www.google.com/search?hl=en&amp;q=allinurl%3Adocs.oracle.com+javase+docs+api+integer"><span class="kw3">Integer</span></a> <span class="br0">&#40;</span><span class="nu0">5</span><span class="br0">&#41;</span><span class="sy0">;</span></div></li><li class="li1"><div class="de1">		<span class="kw4">int</span> mida <span class="sy0">=</span> pila_plena.<span class="me1">getNumElements</span><span class="br0">&#40;</span><span class="br0">&#41;</span><span class="sy0">;</span></div></li><li class="li1"><div class="de1">		pila_plena.<span class="me1">apilar</span><span class="br0">&#40;</span>i<span class="br0">&#41;</span><span class="sy0">;</span></div></li><li class="li1"><div class="de1">		assertEquals<span class="br0">&#40;</span>pila_plena.<span class="me1">getNumElements</span><span class="br0">&#40;</span><span class="br0">&#41;</span>,mida<span class="sy0">+</span><span class="nu0">1</span><span class="br0">&#41;</span><span class="sy0">;</span>		</div></li><li class="li1"><div class="de1">	<span class="br0">&#125;</span></div></li><li class="li1"><div class="de1">&nbsp;</div></li><li class="li1"><div class="de1">	@Test</div></li><li class="li1"><div class="de1">	<span class="kw1">public</span> <span class="kw4">void</span> testDesapilar_pilaPlena<span class="br0">&#40;</span><span class="br0">&#41;</span> <span class="br0">&#123;</span></div></li><li class="li1"><div class="de1">		<span class="kw4">int</span> mida <span class="sy0">=</span> pila_plena.<span class="me1">getNumElements</span><span class="br0">&#40;</span><span class="br0">&#41;</span><span class="sy0">;</span></div></li><li class="li1"><div class="de1">		<a href="http://www.google.com/search?hl=en&amp;q=allinurl%3Adocs.oracle.com+javase+docs+api+integer"><span class="kw3">Integer</span></a> i <span class="sy0">=</span> <span class="br0">&#40;</span><a href="http://www.google.com/search?hl=en&amp;q=allinurl%3Adocs.oracle.com+javase+docs+api+integer"><span class="kw3">Integer</span></a><span class="br0">&#41;</span> pila_plena.<span class="me1">desapilar</span><span class="br0">&#40;</span><span class="br0">&#41;</span><span class="sy0">;</span></div></li><li class="li1"><div class="de1">		assertEquals <span class="br0">&#40;</span>i, <span class="kw1">new</span> <a href="http://www.google.com/search?hl=en&amp;q=allinurl%3Adocs.oracle.com+javase+docs+api+integer"><span class="kw3">Integer</span></a> <span class="br0">&#40;</span><span class="nu0">4</span><span class="br0">&#41;</span><span class="br0">&#41;</span><span class="sy0">;</span></div></li><li class="li1"><div class="de1">		assertEquals<span class="br0">&#40;</span>pila_plena.<span class="me1">getNumElements</span><span class="br0">&#40;</span><span class="br0">&#41;</span>,mida<span class="sy0">-</span><span class="nu0">1</span><span class="br0">&#41;</span><span class="sy0">;</span>		</div></li><li class="li1"><div class="de1">	<span class="br0">&#125;</span>	</div></li><li class="li1"><div class="de1">&nbsp;</div></li><li class="li1"><div class="de1">	@Test</div></li><li class="li1"><div class="de1">	<span class="kw1">public</span> <span class="kw4">void</span> testDesapilar_pilaBuida<span class="br0">&#40;</span><span class="br0">&#41;</span> <span class="br0">&#123;</span></div></li><li class="li1"><div class="de1">		<span class="kw4">int</span> mida <span class="sy0">=</span> pila_buida.<span class="me1">getNumElements</span><span class="br0">&#40;</span><span class="br0">&#41;</span><span class="sy0">;</span></div></li><li class="li1"><div class="de1">		<a href="http://www.google.com/search?hl=en&amp;q=allinurl%3Adocs.oracle.com+javase+docs+api+integer"><span class="kw3">Integer</span></a> i <span class="sy0">=</span> <span class="br0">&#40;</span><a href="http://www.google.com/search?hl=en&amp;q=allinurl%3Adocs.oracle.com+javase+docs+api+integer"><span class="kw3">Integer</span></a><span class="br0">&#41;</span> pila_buida.<span class="me1">desapilar</span><span class="br0">&#40;</span><span class="br0">&#41;</span><span class="sy0">;</span></div></li><li class="li1"><div class="de1">		assertEquals <span class="br0">&#40;</span>i, <span class="kw2">null</span><span class="br0">&#41;</span><span class="sy0">;</span></div></li><li class="li1"><div class="de1">		assertEquals<span class="br0">&#40;</span>pila_buida.<span class="me1">getNumElements</span><span class="br0">&#40;</span><span class="br0">&#41;</span>,mida<span class="br0">&#41;</span><span class="sy0">;</span>		</div></li><li class="li1"><div class="de1">	<span class="br0">&#125;</span>	</div></li><li class="li1"><div class="de1"><span class="br0">&#125;</span></div></li></ol></pre>
+
+<p>
+Arribats a aquest punt, queda pendent l’execució del test. A continuació s’indica com fer-ho:
+</p>
+
+<p>
+<div class="imgelem">
+<img src="../media/junit_example_07.png" alt="" /></div>
+
+</p>
+
+<p>
+A continuació es mostra el resultat de l’execució automatitzada de les proves unitàries indicant si la prova ha estat superada correctament o si s’ha produït algun error.
+</p>
+
+<p>
+<div class="imgelem">
+<img src="../media/junit_example_08.png" alt="" /></div>
+
+</p>
+</div><input class="btn_solution3" type="button" value="Mostra"></input></form>
+</p>
+
+</div>
+
+	 </article>
+     <div class="pnpage">
+      <div class="left-corner"></div>
+      <div id="prevpage">Anar a la p&agrave;gina anterior:<br /><a href="../../../WebContent/u2/a1/continguts.html">Disseny i realització de proves de programari</a></div>
+      <div id="nextpage">Anar a la p&agrave;gina seg&uuml;ent:<br /><a href="../../../WebContent/u2/a1/exercicis.html">Exercicis</a></div>
+      <div class="right-corner"></div>
+     </div>
+    </div>
+    <footer class="footer">
+      <div><small>Aquest document està subjecte a una llicència oberta de Creative Commons, es reserva el dret de reconeixement de l'autoria, d'exigir que no se'n faci cap mena d'ús comercial. Si altereu o transformeu aquesta obra, o en genereu obres derivades, només podeu distribuir l'obra generada amb una llicència idèntica a aquesta.</small></div>
+    </footer>
+ </div>
+ <div id="back_preview" class="hidden"></div>
+ <div id="preview" class="hidden">
+  <div class="prevcontent"></div>
+ </div>
+ <div id="help-tooltips">
+  <div id="help-toc" class="hidden tooltip"><span>Taula de continguts:</span> Ofereix una vista general de l&#39;estructura del m&ograve;dul, que us facilitar&agrave; la navegaci&oacute; a trav&eacute;s dels seus continguts.<span class="arrow-left"></span></div> 
+  <div id="help-settings" class="hidden tooltip"><span>Opcions de format:</span> Permet configurar el format de lectura a partir de les vostres prefer&egrave;ncies, modificant la mida de la lletra, el color del fons, l&#39;amplada de la p&agrave;gina o l&#39;ocultaci&oacute; dels continguts complementaris, entre d&#39;altres.<span class="arrow-left"></span></div>
+  <div id="help-printer" class="hidden tooltip"><span>Imprimir:</span>  Envia el contingut seleccionat a la impressora.<span class="arrow-left"></span></div>
+  <div id="help-favorites" class="hidden tooltip"><span>Prefereits:</span> Permet desar aquelles parts del contingut a les que us interessi accedir en un moment posterior; us permetr&agrave; anar creant un repositori personalitzat de les seccions que considereu m&eacute;s rellevants. Un cop l&#39;hageu començat a fer servir se us mostrar&agrave; a sota un comptador que us informar&agrave; del nombre de preferits que s&#39;hagin emmagatzemat fins al moment.<span class="arrow-left"></span></div>
+  <div id="help-favcounter" class="hidden tooltip"><span>Comptador i llistat de preferits:</span> Indica el nombre de preferits que s&#39;han desat fins el moment; clicant damunt seu accedireu al llistat de preferits, i a trav&eacute;s d&#39;aquest podreu accedir directament als continguts que hageu emmagatzemat.<span class="arrow-left"></span></div>
+  <div id="help-help_icon" class="hidden tooltip"><span>Ajuda:</span> Aquesta opci&oacute; activa la informaci&oacute; de les funcionalitats del web tot situant el punter del ratol&iacute; al damunt dels diferents &iacute;tems.<span class="arrow-left"></span></div>
+  <div id="help-sidebar-hide" class="hidden tooltip"><span>Mostrar/Ocultar barra lateral:</span>  Deshabilita la barra d&#39;opcions, permetent la seva recuperaci&oacute; quan es desitgi.<span class="arrow-left"></span></div>
+  <div id="help-search" class="hidden tooltip"><span>Cerca:</span>  Introdu&iuml;u les paraules clau sobre aquells conceptes que desitgeu localitzar en els continguts del m&ograve;dul. Tamb&eacute; podeu excloure un terme de la cerca tot afegint-hi el signe &#8220;-&#8221; al davant.<span class="arrow-top"></span></div>
+  <div id="help-header" class="hidden tooltip"><span>Cap&ccedil;alera:</span>  Indica l&#39;apartat o secci&oacute; que es mostra en pantalla. Tingueu present que les capçaleres de segon, tercer i quart nivell tamb&eacute; es poden desar com a marcadors.<span class="arrow-left"></span></div>
+</div> 
+</body>
+</html>

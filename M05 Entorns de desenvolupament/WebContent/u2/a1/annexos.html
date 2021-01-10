@@ -1,0 +1,627 @@
+<!doctype html>
+
+<!--[if lt IE 7 ]> <html class="ie ie6 no-js" lang="ca"> <![endif]-->
+<!--[if IE 7 ]>    <html class="ie ie7 no-js" lang="ca"> <![endif]-->
+<!--[if IE 8 ]>    <html class="ie ie8 no-js" lang="ca"> <![endif]-->
+<!--[if IE 9 ]>    <html class="ie ie9 no-js" lang="ca"> <![endif]-->
+<!--[if gt IE 9]><!--><html class="no-js" lang="ca"><!--<![endif]-->
+<!-- the "no-js" class is for Modernizr. -->
+
+<head id="www-sitename-com" data-template-set="html5-reset">
+
+	<meta charset="utf-8">
+	
+	<!-- Always force latest IE rendering engine (even in intranet) & Chrome Frame -->
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	
+	<title>Entorns de desenvolupament</title>
+	
+<!-- <meta name="title" content=""> --> 
+	<meta name="description" content="">
+	<!-- Google will often use this as its description of your page/site. Make it good. -->
+	
+	<meta name="google-site-verification" content="">
+	<!-- Speaking of Google, don't forget to set your site up: http://google.com/webmasters -->
+	
+	<meta name="author" content="Institut Obert de Catalunya">
+	<meta name="Copyright" content="Copyright Institut Obert de Catalunya 2011. All Rights Reserved.">
+
+	<!-- Dublin Core Metadata : http://dublincore.org/ -->
+	<meta name="DC.title" content="Entorns de desenvolupament">
+	<meta name="DC.subject" content="Informàtica i comunicacions">
+	<meta name="DC.creator" content="Institut Obert de Catalunya">
+	
+	<!--  Mobile Viewport Fix
+	j.mp/mobileviewport & davidbcalhoun.com/2010/viewport-metatag 
+	device-width : Occupy full width of the screen in its current orientation
+	initial-scale = 1.0 retains dimensions instead of zooming out if page height > device height
+	maximum-scale = 1.0 retains dimensions instead of zooming in if page width < device width
+	-->
+	<!-- Uncomment to use � use thoughtfully!
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+	-->
+
+	<link rel="shortcut icon" href="../../../img/favicon.ico">
+	<!-- This is the traditional favicon.
+		 - size: 16x16 or 32x32
+		 - transparency is OK
+		 - see wikipedia for info on browser support: http://mky.be/favicon/ -->
+		 
+	<link rel="apple-touch-icon" href="../../../img/apple-touch-icon.png">
+	<!-- The is the icon for iOS's Web Clip.
+		 - size: 57x57 for older iPhones, 72x72 for iPads, 114x114 for iPhone4's retina display (IMHO, just go ahead and use the biggest one)
+		 - To prevent iOS from applying its styles to the icon name it thusly: apple-touch-icon-precomposed.png
+		 - Transparency is not recommended (iOS will put a black BG behind the icon) -->
+	
+	<!-- CSS: screen, mobile & print are all in the same file -->
+	<link rel="stylesheet" href="../../../_/css/style.css">
+
+	<!-- CSS: jQuery UI -->
+	<link rel="stylesheet" href="../../../_/css/jquery-ui.css">
+	
+	<!-- all our JS is at the bottom of the page, except for Modernizr. -->
+	<script src="../../../_/js/modernizr-1.7.min.js"></script>
+	<script src="../../../_/js/Hyphenator.js" type="text/javascript"></script>
+	<script type="text/javascript">
+	   Hyphenator.config({
+		minwordlength : 4
+	   });
+	   Hyphenator.run();
+	</script>
+    <script src="../../../_/js/build.js" type="text/javascript"></script>
+</head>
+
+<body class="style-newspaper">
+
+<div class="wrapper"><!-- not needed? up to you: http://camendesign.com/code/developpeurs_sans_frontieres -->
+
+	<header id="header">
+		<div class="head"><a href="http://ioc.gencat.cat"><img src="../../../img/logo.png" alt="Institut Obert de Catalunya"/></a><a href="http://creativecommons.org/licenses/by-nc-sa/3.0/es/deed.ca"><img src="../../../img/license.png" alt="Llic&egrave;ncia" class="license"/></a></div>
+		<div class="headdocument"><a href="../../../index.html">Entorns de desenvolupament</a></div>
+        <div id="search" class="search" name="search">
+         <form id="frmsearch" action="../../../search.html" method="get">
+          <input type="text" name="q"/>
+        </form>
+        </div>
+	</header>
+   <div id="upbutton" class="upbutton" style="display:none;"><img src="../../../img/uparrow.png" alt="Pujar a l'inici de p&agrave;gina"/></div>
+   <aside id="aside">
+    <div id="menu">
+      <ul>
+       <li name="toc"><div><img src="../../../img/toc.png" alt="&Iacute;ndex"/></div></li>
+       <li name="settings"><div><img src="../../../img/settings.png" alt="Configuraci&oacute;"/></div></li>
+       <li name="printer"><div><img src="../../../img/printer.png" alt="Imprimir"/></div></li>
+       <li name="favorites"><div><img src="../../../img/favorites.png" alt="Favorits"/></div></li>
+       <li name="help_icon" class="help_icon"><div><img src="../../../img/help_icon.png" alt="Ajuda"/></div></li>
+      </ul>
+     </div>
+   </aside>
+   <div id="sidebar-hide" name="sidebar-hide"><img src="../../../img/arrows.png"/></div>
+   <section>
+     <div id="toc" class="hidden">
+      <div class="menucontent">
+        <ul>
+        <li id="u2" class="parentnode"><p><a href="../../../WebContent/u2/introduccio.html">2. Optimització de programari</a></p><ul class="expander"><li id="u2introduccio"><a href="../../../WebContent/u2/introduccio.html">Introducció</a></li><li id="u2resum"><a href="../../../WebContent/u2/resum.html">Resum</a></li><li id="u2resultats"><a href="../../../WebContent/u2/resultats.html">Resultats d’aprenentatge</a></li><li id="u2referencies"><a href="../../../WebContent/u2/referencies.html">Referències</a></li><li id="u2a1" class="tocsection"><p id="u2a1continguts"><a href="../../../WebContent/u2/a1/continguts.html">Disseny i realització de proves de programari</a><span class="buttonexp"></span></p><ul><li id="u2a1activitats"><a href="../../../WebContent/u2/a1/activitats.html">Activitats</a></li><li id="u2a1exercicis"><a href="../../../WebContent/u2/a1/exercicis.html">Exercicis</a></li><li id="u2a1annexos"><a href="../../../WebContent/u2/a1/annexos.html">Annexos</a></li></ul></li><li id="u2a2" class="tocsection"><p id="u2a2continguts"><a href="../../../WebContent/u2/a2/continguts.html">Eines per al control i documentació de programari</a><span class="buttonexp"></span></p><ul><li id="u2a2activitats"><a href="../../../WebContent/u2/a2/activitats.html">Activitats</a></li><li id="u2a2exercicis"><a href="../../../WebContent/u2/a2/exercicis.html">Exercicis</a></li></ul></li></ul></li><li id="" class="indexnode"><p><a href="../../../index.html">Anar a l&#39;&iacute;ndex general</a></p></li>
+        </ul>
+      </div>
+    </div>
+   </section>
+   <section>
+   <div id="settings" class="hidden">
+    <div class="menucontent">
+     <div class="allsettings">
+     <div class="settings">
+      <label>Font i Color</label>
+		<div class="setting-option">
+	        <ul class="fontBackground">
+				<li id="style-newspaper" title="Newspaper" class="appearance-style-newspaper"><span>Newspaper</span></li>
+                <li id="style-novel" title="Novel" class="appearance-style-novel"><span>Novel</span></li>
+                <li id="style-ebook" title="eBook" class="appearance-style-ebook"><span>eBook</span></li>
+				<li id="style-inverse" title="Inverse" class="appearance-style-inverse active"><span>Inverse</span></li>
+				<li id="style-athelas" title="Athelas" class="appearance-style-athelas"><span>Athelas</span></li>
+			</ul>
+		</div>
+     </div>
+	<div class="settings">
+      <label>Amplada</label>
+		<div class="setting-option">
+	        <div id="slider-width"></div>
+		</div>
+     </div>
+     <div class="settings">
+      <label>Mida de la font</label>
+		<div class="setting-option">
+	        <div id="slider-font"></div>
+		</div>
+     </div>
+     <div class="settings">
+      <label>Mida de la font</label>
+	  <div class="setting-option">
+       <form action="" class="sett-options">
+		<ul>
+		    <li><input type="checkbox" id="secondary-content" /><label for="secondary-content">Mostra recursos complementaris</label></li>
+		    <li><input type="checkbox" id="main-images" /><label for="main-images">Mostra imatges</label></li>
+		    <li><input type="checkbox" id="text-alignment" /><label for="text-alignment">Text justificat</label></li>
+			<li><input type="checkbox" id="text-hyphen" /><label for="text-hyphen">Partici&oacute; sil·l&agrave;bica</label></li>
+		</ul>
+       </form>
+	  </div>
+     </div>
+     </div>
+    </div>
+   </div>
+   </section>
+ <section>
+ <div id="favorites" class="hidden"></div>
+ </section>   
+ <div id="bridge" class="hidden"></div>
+ <div id="help" class="hidden">
+  <div class="helptitle">Dreceres del teclat<hr></div>
+  <div class="helpsection"><span>General</span>
+   <ul>
+    <li><span class="shortcut">g</span>: Anar al men&uacute; de navegaci&oacute;</li>
+    <li><span class="shortcut">o</span>: Anar a opcions</li>
+    <li><span class="shortcut">s</span>: Guardar la p&agrave;gina actual a favorits</li>
+    <li><span class="shortcut">p</span>: Imprimir la p&agrave;gina actual</li>
+    <li><span class="shortcut">?</span>: Mostrar/Ocultar l&#39;ajuda</li>
+   </ul>
+  </div>
+  <div class="helpsection"><span>Navegaci&oacute;</span>
+   <ul>
+    <li><span class="shortcut">i</span>: Anar a l&#39;&iacute;ndex general</li>
+    <li><span class="shortcut">t</span>: Anar a l&#39;inici de p&agrave;gina</li>
+    <li><span class="shortcut">b</span>: Anar al final de p&agrave;gina</li>
+    <li><span class="shortcut">j</span>: Anar cap endavant dintre la p&agrave;gina</li>
+    <li><span class="shortcut">k</span>: Anar cap enrere dintre la p&agrave;gina</li>
+    <li><span class="shortcut">h</span>: Anar a la p&agrave;gina anterior:</li>
+    <li><span class="shortcut">l</span>: Anar a la p&agrave;gina seg&uuml;ent:</li>
+   </ul>
+   </div>
+ </div>
+ <div id="favcounter" name="favcounter" class="hidden"><span></span></div>
+ <div id="navmenu" class="navmenu"><ul class="webnav"><li><a href="../../../index.html" title="Anar a l&#39;&iacute;ndex general">Inici</a></li><li><a href="../introduccio.html">Optimització de programari </a></li><li><a href="continguts.html">Disseny i realització de proves de programari</a></li><li>Annexos</li></ul></div>
+	<div id="content" lang="ca" class="hyphenate text">
+     <article lang="ca" class="sheet">
+        <h1><a id="annexos"> Annexos </a></h1>
+    	
+<h2><a id="proves_unitaries_junit" >Proves unitàries JUnit</a></h2>
+<div class="level2">
+
+<p>
+JUnit és un <em>framework</em> de Java per automatitzar les proves unitàries d’aplicacions desenvolupades amb aquest llenguatge de programació. Amb JUnit es poden executar classes Java de manera controlada. D’aquesta manera, es podrà avaluar si el funcionament de cada un dels mètodes de la classe es comporta com s’espera.
+</p>
+
+<p>
+La forma de treballar de JUnit consisteix a validar el resultat que s’obté d’executar una classe Java amb el o els valors que s’hagin definit com a retorns esperats per a l’execució d’aquesta classe. Si coincideixen, JUnit indicarà que el mètode ha superat el test; en cas contrari, retornarà una fallada.
+</p>
+
+<p>
+JUnit és utilitzat pels programadors per tal de validar les principals funcionalitats del codi, i és molt útil per efectuar <strong>proves de regressió</strong> quan una part del codi ha estat modificat i es vol comprovar que la resta de codi segueix funcionant correctament.
+</p>
+
+</div>
+
+<h3><a id="manual_de_referencia" >Manual de referència</a></h3>
+<div class="level3">
+
+<p>
+A continuació, es mostren algunes indicacions i referències per a l’ús de JUnit, com ara les anotacions i les declaracions.
+</p>
+
+</div>
+
+<h3><a id="anotacions" >Anotacions</a></h3>
+<div class="level3">
+
+<p>
+Al setembre del 2017 ha aparescut la versió 5 de JUnit, que incorpora canvis en alguns elements importants de la biblioteca. En alguns casos, el canvi només és de nom. En altres, el canvi és més important. A la <span class="tabref"><a href="#taulaAnotacionsJUnit"><span>taula</span></a></span> es recullen les principals anotacions de totes dues versions. Les variants de l’anotació <code>@Test</code> amb paràmetres han estat substituides per declaracions.
+</p>
+
+<p>
+JUnit5 requereix per ser compilada una versió de Java igual o superior a 8. No obstant, pot utilitzar-se per comprovar font escrit per a versions anteriors de Java.
+</p>
+
+<p>
+Quan el canvi ha estat un canvi de nom de l’anotació, els exemples s’han escrit amb JUnit5 i s’ha posat al costat, amb un comentari, l’anotació corresponent a JUnit4. Als casos als quals no hi ha una anotació equivalent a JUnit5, l’exemple s’ha escrit amb JUnit4. Al títol de cada anotació s’indiquen les versions.
+</p>
+<div class="ioctable ">
+<div class="titletable"><a name="taulaAnotacionsJUnit"><span>Taula: </span></a>Anotacions JUnit</div>
+<div class="table"><table class="inline">
+	<tr class="row0">
+		<th class="col0"> JUnit4 </th><th class="col1"> JUnit5 </th>
+	</tr>
+	<tr class="row1">
+		<td class="col0"> <code>@Test public void mètode</code> </td><td class="col1"> Es manté igual. </td>
+	</tr>
+	<tr class="row2">
+		<td class="col0"> <code>@Before public void mètode</code> </td><td class="col1"> <code>@BeforeEach public void mètode</code> </td>
+	</tr>
+	<tr class="row3">
+		<td class="col0"> <code>@After public void mètode</code> </td><td class="col1"> <code>@AfterEach public void mètode</code> </td>
+	</tr>
+	<tr class="row4">
+		<td class="col0"> <code>@BeforeClass public void mètode</code> </td><td class="col1"> <code>@BeforeAll public void mètode</code> </td>
+	</tr>
+	<tr class="row5">
+		<td class="col0"> <code>@AfterClass public void mètode</code> </td><td class="col1"> <code>@AfterAll public void mètode</code> </td>
+	</tr>
+	<tr class="row6">
+		<td class="col0"> <code>@Ignore</code> </td><td class="col1"> <code>@Disabled</code> </td>
+	</tr>
+	<tr class="row7">
+		<td class="col0"> <code>@Test (expected = Exception.class)</code> </td><td class="col1"> Ha desaparegut. Cal utilitzar una declaració. </td>
+	</tr>
+	<tr class="row8">
+		<td class="col0"> <code>@Test (timeout=100)</code> </td><td class="col1"> Ha desaparegut. Cal utilitzar una declaració. </td>
+	</tr>
+</table></div>
+</div>
+<p>
+<strong>1.</strong> <code>@Test public void metode</code> (JUnit4 i JUnit5)
+</p>
+
+<p>
+Aquest mètode serà executat com a test, per exemple:
+</p>
+<pre class="code java"><ol><li class="li1"><div class="de1">@Test</div></li><li class="li1"><div class="de1"><span class="kw1">public</span> <span class="kw4">void</span> nomMetode<span class="br0">&#40;</span><span class="br0">&#41;</span> <span class="br0">&#123;</span></div></li><li class="li1"><div class="de1">	<span class="co1">//Codificació del test</span></div></li><li class="li1"><div class="de1">        <a href="http://www.google.com/search?hl=en&amp;q=allinurl%3Adocs.oracle.com+javase+docs+api+system"><span class="kw3">System</span></a>.<span class="me1">out</span>.<span class="me1">println</span><span class="br0">&#40;</span><span class="st0">&quot;Execució del test&quot;</span><span class="br0">&#41;</span><span class="sy0">;</span></div></li><li class="li1"><div class="de1"><span class="br0">&#125;</span></div></li></ol></pre>
+
+<p>
+<strong>2.</strong> <code>@Before public void mètode</code> (JUnit4) <strong>/</strong> <code>@BeforeEach public void mètode</code> (JUnit5)
+</p>
+
+<p>
+Aquesta anotació s’executa prèviament a iniciar cada mètode <code>@Test</code>. Es pot observar el codi a continuació:
+</p>
+<pre class="code java"><ol><li class="li1"><div class="de1">@BeforeEach <span class="co1">//@Before amb JUnit4</span></div></li><li class="li1"><div class="de1"><span class="kw1">public</span> <span class="kw4">void</span> setUp<span class="br0">&#40;</span><span class="br0">&#41;</span> <span class="br0">&#123;</span></div></li><li class="li1"><div class="de1">	<span class="co1">//Codificació.</span></div></li><li class="li1"><div class="de1">	<span class="co1">//Exemple: inicialització de variables, crida al constructor, lectura d’un paràmetre d’usuari,...</span></div></li><li class="li1"><div class="de1">	<a href="http://www.google.com/search?hl=en&amp;q=allinurl%3Adocs.oracle.com+javase+docs+api+system"><span class="kw3">System</span></a>.<span class="me1">out</span>.<span class="me1">println</span><span class="br0">&#40;</span><span class="st0">&quot;Execució a l'inici de cada test&quot;</span><span class="br0">&#41;</span><span class="sy0">;</span></div></li><li class="li1"><div class="de1"><span class="br0">&#125;</span></div></li></ol></pre>
+
+<p>
+<strong>3.</strong> <code>@After public void mètode</code>(JUnit4) <strong>/</strong> <code>@AfterEach public void mètode</code> (JUnit5)
+</p>
+
+<p>
+<code>@After</code> és executat en finalitzar cada <code>@Test</code>.
+</p>
+<pre class="code java"><ol><li class="li1"><div class="de1">@AfterEach <span class="co1">//@After amb JUnit4</span></div></li><li class="li1"><div class="de1"><span class="kw1">public</span> <span class="kw4">void</span> after <span class="br0">&#40;</span><span class="br0">&#41;</span> <span class="br0">&#123;</span></div></li><li class="li1"><div class="de1">	<span class="co1">//Codificació.</span></div></li><li class="li1"><div class="de1">	<span class="co1">//Exemple: alliberació de memòria, reiniciar paràmetres per defecte,...</span></div></li><li class="li1"><div class="de1">	<a href="http://www.google.com/search?hl=en&amp;q=allinurl%3Adocs.oracle.com+javase+docs+api+system"><span class="kw3">System</span></a>.<span class="me1">out</span>.<span class="me1">println</span><span class="br0">&#40;</span><span class="st0">&quot;Execució al finalitzar cada test&quot;</span><span class="br0">&#41;</span><span class="sy0">;</span></div></li><li class="li1"><div class="de1"><span class="br0">&#125;</span></div></li></ol></pre>
+
+<p>
+<strong>4.</strong> <code>@BeforeClass public void mètode</code> (JUnit4) <strong>/</strong> <code>@BeforeAll public void mètode</code> (JUnit5)
+</p>
+
+<p>
+S’executa una única vegada, abans que es comencin a executar els tests. Aquesta funció pot ser útil quan es vol efectuar la connexió a una base de dades.
+</p>
+
+<p>
+<strong>5.</strong> <code>@AfterClass public void mètode</code>(JUnit4) <strong>/</strong> <code>@AfterAll public void mètode</code> (JUnit5)
+</p>
+
+<p>
+S’executa una única vegada, un cop s’han finalitzat els tests. Aquesta funció pot ser útil quan es vol alliberar la connexió a la base de dades.
+</p>
+
+<p>
+<strong>6.</strong> <code>@Ignore</code>(JUnit4) <strong>/</strong> <code>@Disabled</code> (JUnit5)
+</p>
+
+<p>
+Ignora el test.
+</p>
+
+<p>
+Se sol utilitzar quan s’està modificant el codi i no es vol que s’executin determinades proves, ja que aquestes no han estat adaptades a les noves modificacions.
+</p>
+<pre class="code">@Disabled //@Ignore amb JUnit4
+@Test
+public void nomMetode() {
+	//Codificació del test
+        System.out.println(&quot;Aquest missatge no s’hauria de visualitzar&quot;);
+}</pre>
+
+<p>
+<strong>7.</strong> <code>@Test (expected = Exception.class)</code> (només JUnit4)
+</p>
+
+<p>
+Provoca un error si el test no retorna l’excepció que s’especificarà.
+</p>
+<pre class="code">@Test(expected = ArithmeticException.class)
+public void dividirPorCero() {
+	//Codificació del test
+        System.out.println(&quot;Divisió del test&quot;);
+}</pre>
+
+<p>
+<strong>8.</strong> <code>@Test (timeout=duració)</code> (només JUnit4)
+</p>
+
+<p>
+El test falla si l’execució del mètode dura més de <code>duració</code> ms.
+</p>
+
+</div>
+
+<h3><a id="declaracions" >Declaracions</a></h3>
+<div class="level3">
+
+<p>
+A continuació, s’indiquen les principals declaracions de JUnit. El missatge s’utilitza per construir l’ <code>AssertionError</code> que es llença quan <em>falla</em> l’asserció.
+</p>
+
+<p>
+<strong>1. Amb JUnit4:</strong>
+</p>
+<ul>
+<li class="level1"><div class="li"> <code>fail (String missatge)</code> Deixa que el mètode falli. Podria ser utilitzat per verificar que una certa part del codi no s’assoleix.</div>
+</li>
+<li class="level1"><div class="li"> <code>assertTrue (true)</code> / <code>assertTrue(false)</code>. Sempre serà vertader o fals. Es pot utilitzar per predefinir un resultat de la prova, si la prova no s’ha implementat encara.</div>
+</li>
+<li class="level1"><div class="li"> <code>assertTrue([String missatge], boolean condició)</code>. Comprova que la condició booleana és verdadera.</div>
+</li>
+<li class="level1"><div class="li"> <code>assertEquals([String missatge], valor_esperat, valor_actual)</code>. Valida que dos valors són iguals. Els valors poden ser de qualsevol tipus, però al cas de valors flotants o dobles aquesta declaració està desaconsellada (<em>deprecated</em>).</div>
+</li>
+<li class="level1"><div class="li"> <code>assertsEquals([String message], valor_esperat, valor_actual, tolerància)</code>.  Verifica que els valors flotant o doble coincideixen. La tolerància és la màxima diferència en valor absolut que pot haver-hi entre el valor_esperat i el valor_actual sense que aquests dos valors es considerin diferents. És convenient utilitzar-la perquè, com la CPU treballa amb una precisió finita, és possible que dues operacions matemàticament equivalents donin resultats lleugerament diferents.</div>
+</li>
+<li class="level1"><div class="li"> <code>assertNull([String missatge], Object objecte)</code>.  Verifica que l’objecte és nul.</div>
+</li>
+<li class="level1"><div class="li"> <code>assertNotNull([String missatge], Object objecte)</code>. Verifica que l’objecte no és nul.</div>
+</li>
+<li class="level1"><div class="li"> <code>assertSame([String missatge], Object valor_esperat, Object valor_actual)</code>. Verifica que les dues variables referencien el mateix objecte.</div>
+</li>
+<li class="level1"><div class="li"> <code>assertNotSame([String missatge], Object valor_esperat,Object valor_actual)</code>. Verifica que les dues variables no referencien el mateix objecte.</div>
+</li>
+</ul>
+
+<p>
+<strong>2. Amb JUnit5:</strong> Són semblants, però s’ha canviat el lloc del paràmetre <code>missatge</code> de l’inici al final i s’han afegit les assercions que permeten verificar si s’ha llençat una excepció o s’ha excedit un temps determinat d’execució. JUnit4 suportava aquestes comprovacions a través de paràmetres de l’anotació <code>@Test</code>. Aquests paràmetres han estat suprimits a JUnit5.
+</p>
+<ul>
+<li class="level1"><div class="li"> <code>fail (String missatge)</code> Deixa que el mètode falli. Podria ser utilitzat per verificar que una certa part del codi no s’assoleix.</div>
+</li>
+<li class="level1"><div class="li"> <code>assertTrue (true)</code> / <code>assertTrue(false)</code>. Sempre serà vertader o fals. Es pot utilitzar per predefinir un resultat de la prova, si la prova no s’ha implementat encara.</div>
+</li>
+<li class="level1"><div class="li"> <code>assertTrue(boolean condició, [String missatge])</code>. Comprova que la condició booleana és verdadera.</div>
+</li>
+<li class="level1"><div class="li"> <code>assertEquals(valor_esperat, valor_actual, [String missatge])</code>. Valida que dos valors són iguals. Els valors poden ser de qualsevol tipus.</div>
+</li>
+<li class="level1"><div class="li"> <code>assertsEquals(valor_esperat, valor_actual, tolerància, [String missatge])</code>.  Verifica que els valors flotant o doble coincideixen. La tolerància és la màxima diferència en valor absolut que pot haver-hi entre el valor_esperat i el valor_actual sense que aquests dos valors es considerin diferents. És convenient utilitzar-la perquè, com la CPU treballa amb una precisió finita, és possible que dues operacions matemàticament equivalents donin resultats lleugerament diferents.</div>
+</li>
+<li class="level1"><div class="li"> <code>assertNull(Object objecte, [String missatge])</code>.  Verifica que l’objecte és nul.</div>
+</li>
+<li class="level1"><div class="li"> <code>assertNotNull(Object objecte, [String missatge])</code>. Verifica que l’objecte no és nul.</div>
+</li>
+<li class="level1"><div class="li"> <code>assertSame(Object valor_esperat, Object valor_actual, [String missatge])</code>. Verifica que les dues variables referencien el mateix objecte.</div>
+</li>
+<li class="level1"><div class="li"> <code>assertNotSame(Object valor_esperat,Object valor_actual, [String missatge])</code>. Verifica que les dues variables no referencien el mateix objecte.</div>
+</li>
+<li class="level1"><div class="li"> <code>assertThrows(Class&lt;T&gt; excepció_esperada, Executable bloc_de_codi, [String missatge])</code>. Verifica que <code>bloc_de_codi</code> llença una excepció del tipus <code>excepció_esperada</code>.</div>
+</li>
+<li class="level1"><div class="li"> <code>assertTimeOut(Duration temps_màxim, Executable bloc_de_codi, [String missatge])</code>. Un cop acaba d’executar-se <code>bloc_de_codi</code>, verifica que no ha trigat més de <code>temps_màxim</code>. Si <code>bloc_de_codi</code> cau en un bucle infinit, queda bloquejada esperant i no llença cap excepció. L’anotació <code>@Test (timeout=duració)</code> de JUnit4 funciona diferent en aquest darrer punt, ja que, en cas que <code>bloc_codi</code> trigui més de <em>duració</em> finalitza la prova amb un error.</div>
+</li>
+</ul>
+
+</div>
+
+<h2><a id="junit_exemplela_calculadora" >JUnit. Exemple: la calculadora</a></h2>
+<div class="level2">
+
+<p>
+Per entendre com funciona JUnit es proposa un exemple a partir del qual es duran a terme les proves unitàries. És l’exemple de la calculadora.
+</p>
+
+<p>
+En aquest exemple es mostra com es poden codificar les proves unitàries amb JUnit que permetin validar el correcte funcionament d’una calculadora.
+</p>
+
+<p>
+Les operacions que conté la calculadora d’aquest exemple són: suma, resta, divisió i multiplicació de nombres sencers.
+</p>
+
+<p>
+<strong>1. Amb JUnit4:</strong>
+</p>
+<pre class="code java"><ol><li class="li1"><div class="de1"><span class="kw1">import</span> <span class="co2">static</span> org.<span class="me1">junit</span>.<span class="kw1">Assert</span>.<span class="sy0">*;</span></div></li><li class="li1"><div class="de1"><span class="kw1">import</span> <span class="co2">org.junit.Test</span><span class="sy0">;</span></div></li><li class="li1"><div class="de1">&nbsp;</div></li><li class="li1"><div class="de1"><span class="kw1">public</span> <span class="kw1">class</span> CalculadoraTest <span class="br0">&#123;</span></div></li><li class="li1"><div class="de1">&nbsp;</div></li><li class="li1"><div class="de1">    @Test</div></li><li class="li1"><div class="de1">    <span class="kw1">public</span> <span class="kw4">void</span> testExecutarOperacioSuma<span class="br0">&#40;</span><span class="br0">&#41;</span> <span class="br0">&#123;</span></div></li><li class="li1"><div class="de1">&nbsp;</div></li><li class="li1"><div class="de1">        Calculadora calculadora<span class="sy0">;</span></div></li><li class="li1"><div class="de1">        calculadora <span class="sy0">=</span> <span class="kw1">new</span> Calculadora<span class="br0">&#40;</span><span class="kw2">false</span><span class="br0">&#41;</span><span class="sy0">;</span></div></li><li class="li1"><div class="de1">&nbsp;</div></li><li class="li1"><div class="de1">        <span class="kw4">int</span> resultat_actual, resultat_esperat<span class="sy0">;</span></div></li><li class="li1"><div class="de1">&nbsp;</div></li><li class="li1"><div class="de1">        calculadora.<span class="me1">operacio</span> <span class="sy0">=</span> <span class="st0">&quot;+&quot;</span><span class="sy0">;</span></div></li><li class="li1"><div class="de1">        calculadora.<span class="me1">valor1</span> <span class="sy0">=</span> <span class="nu0">5</span><span class="sy0">;</span></div></li><li class="li1"><div class="de1">        calculadora.<span class="me1">valor2</span> <span class="sy0">=</span> <span class="nu0">10</span><span class="sy0">;</span></div></li><li class="li1"><div class="de1">&nbsp;</div></li><li class="li1"><div class="de1">        resultat_actual <span class="sy0">=</span> calculadora.<span class="me1">executarOperacio</span><span class="br0">&#40;</span><span class="br0">&#41;</span><span class="sy0">;</span></div></li><li class="li1"><div class="de1">        resultat_esperat <span class="sy0">=</span> <span class="nu0">5</span> <span class="sy0">+</span> <span class="nu0">10</span><span class="sy0">;</span></div></li><li class="li1"><div class="de1">&nbsp;</div></li><li class="li1"><div class="de1">        assertEquals<span class="br0">&#40;</span><span class="st0">&quot;Error en la suma!&quot;</span>, resultat_esperat, resultat_actual<span class="br0">&#41;</span><span class="sy0">;</span></div></li><li class="li1"><div class="de1">    <span class="br0">&#125;</span></div></li><li class="li1"><div class="de1">&nbsp;</div></li><li class="li1"><div class="de1">    @Test</div></li><li class="li1"><div class="de1">    <span class="kw1">public</span> <span class="kw4">void</span> testExecutarOperacioResta<span class="br0">&#40;</span><span class="br0">&#41;</span> <span class="br0">&#123;</span></div></li><li class="li1"><div class="de1">&nbsp;</div></li><li class="li1"><div class="de1">        Calculadora calculadora<span class="sy0">;</span></div></li><li class="li1"><div class="de1">        calculadora <span class="sy0">=</span> <span class="kw1">new</span> Calculadora<span class="br0">&#40;</span><span class="kw2">false</span><span class="br0">&#41;</span><span class="sy0">;</span></div></li><li class="li1"><div class="de1">&nbsp;</div></li><li class="li1"><div class="de1">        <span class="kw4">int</span> resultat_actual, resultat_esperat<span class="sy0">;</span></div></li><li class="li1"><div class="de1">&nbsp;</div></li><li class="li1"><div class="de1">        calculadora.<span class="me1">operacio</span> <span class="sy0">=</span> <span class="st0">&quot;-&quot;</span><span class="sy0">;</span></div></li><li class="li1"><div class="de1">        calculadora.<span class="me1">valor1</span> <span class="sy0">=</span> <span class="nu0">5</span><span class="sy0">;</span></div></li><li class="li1"><div class="de1">        calculadora.<span class="me1">valor2</span> <span class="sy0">=</span> <span class="nu0">10</span><span class="sy0">;</span></div></li><li class="li1"><div class="de1">&nbsp;</div></li><li class="li1"><div class="de1">        resultat_actual <span class="sy0">=</span> calculadora.<span class="me1">executarOperacio</span><span class="br0">&#40;</span><span class="br0">&#41;</span><span class="sy0">;</span></div></li><li class="li1"><div class="de1">        resultat_esperat <span class="sy0">=</span> <span class="nu0">5</span> <span class="sy0">-</span> <span class="nu0">10</span><span class="sy0">;</span></div></li><li class="li1"><div class="de1">&nbsp;</div></li><li class="li1"><div class="de1">        assertEquals<span class="br0">&#40;</span><span class="st0">&quot;Error en la resta!&quot;</span>, resultat_esperat, resultat_actual<span class="br0">&#41;</span><span class="sy0">;</span></div></li><li class="li1"><div class="de1">    <span class="br0">&#125;</span></div></li><li class="li1"><div class="de1">&nbsp;</div></li><li class="li1"><div class="de1">    @Test</div></li><li class="li1"><div class="de1">    <span class="kw1">public</span> <span class="kw4">void</span> testExecutarOperacioMultiplicacio<span class="br0">&#40;</span><span class="br0">&#41;</span> <span class="br0">&#123;</span></div></li><li class="li1"><div class="de1">&nbsp;</div></li><li class="li1"><div class="de1">        Calculadora calculadora<span class="sy0">;</span></div></li><li class="li1"><div class="de1">        calculadora <span class="sy0">=</span> <span class="kw1">new</span> Calculadora<span class="br0">&#40;</span><span class="kw2">false</span><span class="br0">&#41;</span><span class="sy0">;</span></div></li><li class="li1"><div class="de1">&nbsp;</div></li><li class="li1"><div class="de1">        <span class="kw4">int</span> resultat_actual, resultat_esperat<span class="sy0">;</span></div></li><li class="li1"><div class="de1">&nbsp;</div></li><li class="li1"><div class="de1">        calculadora.<span class="me1">operacio</span> <span class="sy0">=</span> <span class="st0">&quot;*&quot;</span><span class="sy0">;</span></div></li><li class="li1"><div class="de1">        calculadora.<span class="me1">valor1</span> <span class="sy0">=</span> <span class="nu0">5</span><span class="sy0">;</span></div></li><li class="li1"><div class="de1">        calculadora.<span class="me1">valor2</span> <span class="sy0">=</span> <span class="nu0">10</span><span class="sy0">;</span></div></li><li class="li1"><div class="de1">&nbsp;</div></li><li class="li1"><div class="de1">        resultat_actual <span class="sy0">=</span> calculadora.<span class="me1">executarOperacio</span><span class="br0">&#40;</span><span class="br0">&#41;</span><span class="sy0">;</span></div></li><li class="li1"><div class="de1">        resultat_esperat <span class="sy0">=</span> <span class="nu0">5</span> <span class="sy0">*</span> <span class="nu0">10</span><span class="sy0">;</span></div></li><li class="li1"><div class="de1">&nbsp;</div></li><li class="li1"><div class="de1">        assertEquals<span class="br0">&#40;</span><span class="st0">&quot;Error en la multiplicació!&quot;</span>, resultat_esperat, resultat_actual<span class="br0">&#41;</span><span class="sy0">;</span></div></li><li class="li1"><div class="de1">    <span class="br0">&#125;</span></div></li><li class="li1"><div class="de1">&nbsp;</div></li><li class="li1"><div class="de1">    @Test</div></li><li class="li1"><div class="de1">    <span class="kw1">public</span> <span class="kw4">void</span> testExecutarOperacioDivisio<span class="br0">&#40;</span><span class="br0">&#41;</span> <span class="br0">&#123;</span></div></li><li class="li1"><div class="de1">&nbsp;</div></li><li class="li1"><div class="de1">        Calculadora calculadora<span class="sy0">;</span></div></li><li class="li1"><div class="de1">        calculadora <span class="sy0">=</span> <span class="kw1">new</span> Calculadora<span class="br0">&#40;</span><span class="kw2">false</span><span class="br0">&#41;</span><span class="sy0">;</span></div></li><li class="li1"><div class="de1">&nbsp;</div></li><li class="li1"><div class="de1">        <span class="kw4">int</span> resultat_actual, resultat_esperat<span class="sy0">;</span></div></li><li class="li1"><div class="de1">&nbsp;</div></li><li class="li1"><div class="de1">        calculadora.<span class="me1">operacio</span> <span class="sy0">=</span> <span class="st0">&quot;/&quot;</span><span class="sy0">;</span></div></li><li class="li1"><div class="de1">        calculadora.<span class="me1">valor1</span> <span class="sy0">=</span> <span class="nu0">5</span><span class="sy0">;</span></div></li><li class="li1"><div class="de1">        calculadora.<span class="me1">valor2</span> <span class="sy0">=</span> <span class="nu0">10</span><span class="sy0">;</span></div></li><li class="li1"><div class="de1">&nbsp;</div></li><li class="li1"><div class="de1">        resultat_actual <span class="sy0">=</span> calculadora.<span class="me1">executarOperacio</span><span class="br0">&#40;</span><span class="br0">&#41;</span><span class="sy0">;</span></div></li><li class="li1"><div class="de1">        resultat_esperat <span class="sy0">=</span> <span class="nu0">5</span> <span class="sy0">/</span> <span class="nu0">10</span><span class="sy0">;</span></div></li><li class="li1"><div class="de1">&nbsp;</div></li><li class="li1"><div class="de1">        assertEquals<span class="br0">&#40;</span><span class="st0">&quot;Error en la divisió!&quot;</span>, resultat_esperat, resultat_actual<span class="br0">&#41;</span><span class="sy0">;</span></div></li><li class="li1"><div class="de1">    <span class="br0">&#125;</span></div></li><li class="li1"><div class="de1">&nbsp;</div></li><li class="li1"><div class="de1">    @Test<span class="br0">&#40;</span>expected<span class="sy0">=</span><a href="http://www.google.com/search?hl=en&amp;q=allinurl%3Adocs.oracle.com+javase+docs+api+arithmeticexception"><span class="kw3">ArithmeticException</span></a>.<span class="kw1">class</span><span class="br0">&#41;</span></div></li><li class="li1"><div class="de1">    <span class="kw1">public</span> <span class="kw4">void</span> testExecutarOperacioDivisioZero<span class="br0">&#40;</span><span class="br0">&#41;</span> <span class="br0">&#123;</span></div></li><li class="li1"><div class="de1">&nbsp;</div></li><li class="li1"><div class="de1">        Calculadora calculadora<span class="sy0">;</span></div></li><li class="li1"><div class="de1">        calculadora <span class="sy0">=</span> <span class="kw1">new</span> Calculadora<span class="br0">&#40;</span><span class="kw2">false</span><span class="br0">&#41;</span><span class="sy0">;</span></div></li><li class="li1"><div class="de1">&nbsp;</div></li><li class="li1"><div class="de1">        <span class="kw4">int</span> resultat_actual, resultat_esperat<span class="sy0">;</span></div></li><li class="li1"><div class="de1">&nbsp;</div></li><li class="li1"><div class="de1">        calculadora.<span class="me1">operacio</span> <span class="sy0">=</span> <span class="st0">&quot;/&quot;</span><span class="sy0">;</span></div></li><li class="li1"><div class="de1">        calculadora.<span class="me1">valor1</span> <span class="sy0">=</span> <span class="nu0">5</span><span class="sy0">;</span></div></li><li class="li1"><div class="de1">        calculadora.<span class="me1">valor2</span> <span class="sy0">=</span> <span class="nu0">0</span><span class="sy0">;</span></div></li><li class="li1"><div class="de1">&nbsp;</div></li><li class="li1"><div class="de1">        resultat_actual <span class="sy0">=</span> calculadora.<span class="me1">executarOperacio</span><span class="br0">&#40;</span><span class="br0">&#41;</span><span class="sy0">;</span></div></li><li class="li1"><div class="de1">        resultat_esperat <span class="sy0">=</span> <span class="nu0">5</span> <span class="sy0">/</span> <span class="nu0">0</span><span class="sy0">;</span> <span class="co1">//Aquesta operació és la que fa saltar l'excepció</span></div></li><li class="li1"><div class="de1">&nbsp;</div></li><li class="li1"><div class="de1">        assertEquals<span class="br0">&#40;</span><span class="st0">&quot;Error en la divisió!&quot;</span>, resultat_esperat, resultat_actual, <span class="nu0">0</span><span class="br0">&#41;</span><span class="sy0">;</span></div></li><li class="li1"><div class="de1">    <span class="br0">&#125;</span></div></li><li class="li1"><div class="de1"><span class="br0">&#125;</span></div></li></ol></pre>
+
+<p>
+En la figura següent es mostra el resultat de l’execució automatitzada de les proves unitàries, indicant si la prova ha estat superada correctament o si s’ha produït algun error.
+</p>
+<div class="iocfigure"><a name="Figure"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Resultat de les proves unitàries amb JUnit4
+
+</figcaption><img src="../media/activitat_u2a1_02.png" alt="" /></figure>
+</div>
+<p>
+<strong>2. Amb JUnit5:</strong>
+</p>
+<pre class="code java"><ol><li class="li1"><div class="de1"><span class="kw1">import</span> <span class="co2">static</span> org.<span class="me1">junit</span>.<span class="me1">jupiter</span>.<span class="me1">api</span>.<span class="me1">Assertions</span>.<span class="sy0">*;</span></div></li><li class="li1"><div class="de1"><span class="kw1">import</span> <span class="co2">org.junit.jupiter.api.Test</span><span class="sy0">;</span></div></li><li class="li1"><div class="de1">&nbsp;</div></li><li class="li1"><div class="de1"><span class="kw1">public</span> <span class="kw1">class</span> CalculadoraTest <span class="br0">&#123;</span></div></li><li class="li1"><div class="de1">&nbsp;</div></li><li class="li1"><div class="de1">    @Test</div></li><li class="li1"><div class="de1">    <span class="kw1">public</span> <span class="kw4">void</span> testExecutarOperacioSuma<span class="br0">&#40;</span><span class="br0">&#41;</span> <span class="br0">&#123;</span></div></li><li class="li1"><div class="de1">&nbsp;</div></li><li class="li1"><div class="de1">        Calculadora calculadora<span class="sy0">;</span></div></li><li class="li1"><div class="de1">        calculadora <span class="sy0">=</span> <span class="kw1">new</span> Calculadora<span class="br0">&#40;</span><span class="kw2">false</span><span class="br0">&#41;</span><span class="sy0">;</span></div></li><li class="li1"><div class="de1">&nbsp;</div></li><li class="li1"><div class="de1">        <span class="kw4">int</span> resultat_actual, resultat_esperat<span class="sy0">;</span></div></li><li class="li1"><div class="de1">&nbsp;</div></li><li class="li1"><div class="de1">        calculadora.<span class="me1">operacio</span> <span class="sy0">=</span> <span class="st0">&quot;+&quot;</span><span class="sy0">;</span></div></li><li class="li1"><div class="de1">        calculadora.<span class="me1">valor1</span> <span class="sy0">=</span> <span class="nu0">5</span><span class="sy0">;</span></div></li><li class="li1"><div class="de1">        calculadora.<span class="me1">valor2</span> <span class="sy0">=</span> <span class="nu0">10</span><span class="sy0">;</span></div></li><li class="li1"><div class="de1">&nbsp;</div></li><li class="li1"><div class="de1">        resultat_actual <span class="sy0">=</span> calculadora.<span class="me1">executarOperacio</span><span class="br0">&#40;</span><span class="br0">&#41;</span><span class="sy0">;</span></div></li><li class="li1"><div class="de1">        resultat_esperat <span class="sy0">=</span> <span class="nu0">5</span> <span class="sy0">+</span> <span class="nu0">10</span><span class="sy0">;</span></div></li><li class="li1"><div class="de1">&nbsp;</div></li><li class="li1"><div class="de1">        assertEquals<span class="br0">&#40;</span>resultat_esperat, resultat_actual, <span class="st0">&quot;Error en la suma!&quot;</span><span class="br0">&#41;</span><span class="sy0">;</span></div></li><li class="li1"><div class="de1">    <span class="br0">&#125;</span></div></li><li class="li1"><div class="de1">&nbsp;</div></li><li class="li1"><div class="de1">    @Test</div></li><li class="li1"><div class="de1">    <span class="kw1">public</span> <span class="kw4">void</span> testExecutarOperacioResta<span class="br0">&#40;</span><span class="br0">&#41;</span> <span class="br0">&#123;</span></div></li><li class="li1"><div class="de1">&nbsp;</div></li><li class="li1"><div class="de1">        Calculadora calculadora<span class="sy0">;</span></div></li><li class="li1"><div class="de1">        calculadora <span class="sy0">=</span> <span class="kw1">new</span> Calculadora<span class="br0">&#40;</span><span class="kw2">false</span><span class="br0">&#41;</span><span class="sy0">;</span></div></li><li class="li1"><div class="de1">&nbsp;</div></li><li class="li1"><div class="de1">        <span class="kw4">int</span> resultat_actual, resultat_esperat<span class="sy0">;</span></div></li><li class="li1"><div class="de1">&nbsp;</div></li><li class="li1"><div class="de1">        calculadora.<span class="me1">operacio</span> <span class="sy0">=</span> <span class="st0">&quot;-&quot;</span><span class="sy0">;</span></div></li><li class="li1"><div class="de1">        calculadora.<span class="me1">valor1</span> <span class="sy0">=</span> <span class="nu0">5</span><span class="sy0">;</span></div></li><li class="li1"><div class="de1">        calculadora.<span class="me1">valor2</span> <span class="sy0">=</span> <span class="nu0">10</span><span class="sy0">;</span></div></li><li class="li1"><div class="de1">&nbsp;</div></li><li class="li1"><div class="de1">        resultat_actual <span class="sy0">=</span> calculadora.<span class="me1">executarOperacio</span><span class="br0">&#40;</span><span class="br0">&#41;</span><span class="sy0">;</span></div></li><li class="li1"><div class="de1">        resultat_esperat <span class="sy0">=</span> <span class="nu0">5</span> <span class="sy0">-</span> <span class="nu0">10</span><span class="sy0">;</span></div></li><li class="li1"><div class="de1">&nbsp;</div></li><li class="li1"><div class="de1">        assertEquals<span class="br0">&#40;</span>resultat_esperat, resultat_actual, <span class="st0">&quot;Error en la resta!&quot;</span><span class="br0">&#41;</span><span class="sy0">;</span></div></li><li class="li1"><div class="de1">    <span class="br0">&#125;</span></div></li><li class="li1"><div class="de1">&nbsp;</div></li><li class="li1"><div class="de1">    @Test</div></li><li class="li1"><div class="de1">    <span class="kw1">public</span> <span class="kw4">void</span> testExecutarOperacioMultiplicacio<span class="br0">&#40;</span><span class="br0">&#41;</span> <span class="br0">&#123;</span></div></li><li class="li1"><div class="de1">&nbsp;</div></li><li class="li1"><div class="de1">        Calculadora calculadora<span class="sy0">;</span></div></li><li class="li1"><div class="de1">        calculadora <span class="sy0">=</span> <span class="kw1">new</span> Calculadora<span class="br0">&#40;</span><span class="kw2">false</span><span class="br0">&#41;</span><span class="sy0">;</span></div></li><li class="li1"><div class="de1">&nbsp;</div></li><li class="li1"><div class="de1">        <span class="kw4">int</span> resultat_actual, resultat_esperat<span class="sy0">;</span></div></li><li class="li1"><div class="de1">&nbsp;</div></li><li class="li1"><div class="de1">        calculadora.<span class="me1">operacio</span> <span class="sy0">=</span> <span class="st0">&quot;*&quot;</span><span class="sy0">;</span></div></li><li class="li1"><div class="de1">        calculadora.<span class="me1">valor1</span> <span class="sy0">=</span> <span class="nu0">5</span><span class="sy0">;</span></div></li><li class="li1"><div class="de1">        calculadora.<span class="me1">valor2</span> <span class="sy0">=</span> <span class="nu0">10</span><span class="sy0">;</span></div></li><li class="li1"><div class="de1">&nbsp;</div></li><li class="li1"><div class="de1">        resultat_actual <span class="sy0">=</span> calculadora.<span class="me1">executarOperacio</span><span class="br0">&#40;</span><span class="br0">&#41;</span><span class="sy0">;</span></div></li><li class="li1"><div class="de1">        resultat_esperat <span class="sy0">=</span> <span class="nu0">5</span> <span class="sy0">*</span> <span class="nu0">10</span><span class="sy0">;</span></div></li><li class="li1"><div class="de1">&nbsp;</div></li><li class="li1"><div class="de1">        assertEquals<span class="br0">&#40;</span>resultat_esperat, resultat_actual, <span class="st0">&quot;Error en la multiplicació!&quot;</span><span class="br0">&#41;</span><span class="sy0">;</span></div></li><li class="li1"><div class="de1">    <span class="br0">&#125;</span></div></li><li class="li1"><div class="de1">&nbsp;</div></li><li class="li1"><div class="de1">    @Test</div></li><li class="li1"><div class="de1">    <span class="kw1">public</span> <span class="kw4">void</span> testExecutarOperacioDivisio<span class="br0">&#40;</span><span class="br0">&#41;</span> <span class="br0">&#123;</span></div></li><li class="li1"><div class="de1">&nbsp;</div></li><li class="li1"><div class="de1">        Calculadora calculadora<span class="sy0">;</span></div></li><li class="li1"><div class="de1">        calculadora <span class="sy0">=</span> <span class="kw1">new</span> Calculadora<span class="br0">&#40;</span><span class="kw2">false</span><span class="br0">&#41;</span><span class="sy0">;</span></div></li><li class="li1"><div class="de1">&nbsp;</div></li><li class="li1"><div class="de1">        <span class="kw4">int</span> resultat_actual, resultat_esperat<span class="sy0">;</span></div></li><li class="li1"><div class="de1">&nbsp;</div></li><li class="li1"><div class="de1">        calculadora.<span class="me1">operacio</span> <span class="sy0">=</span> <span class="st0">&quot;/&quot;</span><span class="sy0">;</span></div></li><li class="li1"><div class="de1">        calculadora.<span class="me1">valor1</span> <span class="sy0">=</span> <span class="nu0">5</span><span class="sy0">;</span></div></li><li class="li1"><div class="de1">        calculadora.<span class="me1">valor2</span> <span class="sy0">=</span> <span class="nu0">10</span><span class="sy0">;</span></div></li><li class="li1"><div class="de1">&nbsp;</div></li><li class="li1"><div class="de1">        resultat_actual <span class="sy0">=</span> calculadora.<span class="me1">executarOperacio</span><span class="br0">&#40;</span><span class="br0">&#41;</span><span class="sy0">;</span></div></li><li class="li1"><div class="de1">        resultat_esperat <span class="sy0">=</span> <span class="nu0">5</span> <span class="sy0">/</span> <span class="nu0">10</span><span class="sy0">;</span></div></li><li class="li1"><div class="de1">&nbsp;</div></li><li class="li1"><div class="de1">        assertEquals<span class="br0">&#40;</span>resultat_esperat, resultat_actual,<span class="st0">&quot;Error en la divisió!&quot;</span><span class="br0">&#41;</span><span class="sy0">;</span></div></li><li class="li1"><div class="de1">    <span class="br0">&#125;</span></div></li><li class="li1"><div class="de1">&nbsp;</div></li><li class="li1"><div class="de1">    @Test</div></li><li class="li1"><div class="de1">    <span class="kw1">public</span> <span class="kw4">void</span> testExecutarOperacioDivisioZero<span class="br0">&#40;</span><span class="br0">&#41;</span> <span class="br0">&#123;</span></div></li><li class="li1"><div class="de1">&nbsp;</div></li><li class="li1"><div class="de1">    	assertThrows<span class="br0">&#40;</span><a href="http://www.google.com/search?hl=en&amp;q=allinurl%3Adocs.oracle.com+javase+docs+api+arithmeticexception"><span class="kw3">ArithmeticException</span></a>.<span class="kw1">class</span>, <span class="br0">&#40;</span><span class="br0">&#41;</span><span class="sy0">-&gt;</span><span class="br0">&#123;</span></div></li><li class="li1"><div class="de1">	        Calculadora calculadora<span class="sy0">;</span></div></li><li class="li1"><div class="de1">	        calculadora <span class="sy0">=</span> <span class="kw1">new</span> Calculadora<span class="br0">&#40;</span><span class="kw2">false</span><span class="br0">&#41;</span><span class="sy0">;</span></div></li><li class="li1"><div class="de1">&nbsp;</div></li><li class="li1"><div class="de1">	        <span class="kw4">int</span> resultat_actual, resultat_esperat<span class="sy0">;</span></div></li><li class="li1"><div class="de1">&nbsp;</div></li><li class="li1"><div class="de1">	        calculadora.<span class="me1">operacio</span> <span class="sy0">=</span> <span class="st0">&quot;/&quot;</span><span class="sy0">;</span></div></li><li class="li1"><div class="de1">	        calculadora.<span class="me1">valor1</span> <span class="sy0">=</span> <span class="nu0">5</span><span class="sy0">;</span></div></li><li class="li1"><div class="de1">	        calculadora.<span class="me1">valor2</span> <span class="sy0">=</span> <span class="nu0">0</span><span class="sy0">;</span></div></li><li class="li1"><div class="de1">&nbsp;</div></li><li class="li1"><div class="de1">	        resultat_actual <span class="sy0">=</span> calculadora.<span class="me1">executarOperacio</span><span class="br0">&#40;</span><span class="br0">&#41;</span><span class="sy0">;</span></div></li><li class="li1"><div class="de1">	        resultat_esperat <span class="sy0">=</span> <span class="nu0">5</span> <span class="sy0">/</span> <span class="nu0">0</span><span class="sy0">;</span>   <span class="co1">//Aquesta operació és la que fa saltar l'excepció</span></div></li><li class="li1"><div class="de1">&nbsp;</div></li><li class="li1"><div class="de1">	        assertEquals<span class="br0">&#40;</span>resultat_esperat, resultat_actual, <span class="nu0">0</span>, <span class="st0">&quot;Error en la divisió!&quot;</span><span class="br0">&#41;</span><span class="sy0">;</span></div></li><li class="li1"><div class="de1">    	<span class="br0">&#125;</span><span class="br0">&#41;</span><span class="sy0">;</span></div></li><li class="li1"><div class="de1">    <span class="br0">&#125;</span></div></li><li class="li1"><div class="de1">&nbsp;</div></li><li class="li1"><div class="de1"><span class="br0">&#125;</span></div></li></ol></pre>
+
+<p>
+<strong>Observacions</strong>:
+</p>
+<ul>
+<li class="level1"><div class="li"> El primer paràmetre de la declaració de JUnit5 <code>assertTimeOut(Duration temps_màxim, Executable bloc_de_codi, [String missatge])</code> ha de ser un objecte de la classe La classe final <code>Duration</code>. Cada objecte d’aquesta classe representa una quantitat de temps determinada. Aquesta classe té, entre altres, els mètodes estàtics <code>ofMillis(long millis)</code>, <code>ofSeconds(long seconds)</code>, <code>ofMinutes(long minutes)</code> que retornen d’aquesta classe que representen, respectivament, el nombre de mil·lisegons, segons o minuts indicat pel seu paràmetre. Per exemple, <code>Duration.ofSeconds(1)</code>, retorna un objecte que representa un segon de temps. <code>Duration</code> és una classe estàndard de Java des de la versió 8.</div>
+</li>
+<li class="level1"><div class="li"> El segon paràmetre de les declaracions  de JUnit5 <code>assertThrows(Class&lt;T&gt; excepció_esperada, Executable bloc_de_codi, [String missatge])</code> i <code>assertTimeOut(Duration temps_màxim, Executable bloc_de_codi, [String missatge])</code> són objectes de classes que implementen la interfície <code>Executable</code>. <code>Executable</code> és una interfície funcional. Això vol dir que només té un mètode: <code>void execute() throws Throwable</code>. Un objecte que instanciï <code>Executable</code> sobrecarregarà el seu mètode <code>execute()</code>. Així, la declaració <code>assertThrows</code> podrà invocar <code>bloc_de_codi.execute()</code>, que contindrà el codi que s’hagi definit en crear la classe a què pertany <code>bloc_de_codi</code>. Aquesta classe normalment serà anònima. Al següent punt es comenta amb detall com s’ha fet a l’exemple anterior. JUnit defineix la interfície <code>Executable</code> des de la versió 5.</div>
+</li>
+<li class="level1"><div class="li"> El paràmetre <code>()→{ … /*codi*/ } </code> de la crida a <code>assertThrows()</code> de l’exemple anterior és una <strong>expressió lambda</strong> de Java. Aquesta expressió és una manera abreujada d’escriure el següent:</div>
+</li>
+</ul>
+<pre class="code java"><ol><li class="li1"><div class="de1"><span class="kw1">new</span> Executable<span class="br0">&#40;</span><span class="br0">&#41;</span><span class="br0">&#123;</span> </div></li><li class="li1"><div class="de1">  <span class="kw1">public</span> <span class="kw4">void</span> execute<span class="br0">&#40;</span><span class="br0">&#41;</span> <span class="kw1">throws</span> <a href="http://www.google.com/search?hl=en&amp;q=allinurl%3Adocs.oracle.com+javase+docs+api+throwable"><span class="kw3">Throwable</span></a> <span class="br0">&#123;</span></div></li><li class="li1"><div class="de1">    ... <span class="coMULTI">/*codi*/</span></div></li><li class="li1"><div class="de1">  <span class="br0">&#125;</span></div></li><li class="li1"><div class="de1"><span class="br0">&#125;</span></div></li></ol></pre>
+
+<p>
+Aquest darrer codi crea un objecte d’una classe anònima que implementa la interfície <code>Executable</code> i que sobrescriu el mètode <code>executable()</code>. Amb l’ús de l’expressió lambda s’evita haver d’escriure el nom de la interfície, el nom del mètode i unes quantes paraules reservades. El compilador pot deduir el nom de la interfície pel context i el nom del mètode perquè la interfície només té un mètode (és a dir, és una interfície funcional).
+</p>
+
+<p>
+En la figura següent es mostra el resultat de l’execució automatitzada de les proves unitàries, indicant si la prova ha estat superada correctament o si s’ha produït algun error.
+</p>
+<div class="iocfigure"><a name="Figure"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Resultat de les proves unitàries amb JUnit5
+
+</figcaption><img src="../media/capturajunit5.png" alt="" /></figure>
+</div>
+</div>
+
+<h2><a id="eines_per_a_la_prova_de_programari" >Eines per a la prova de programari</a></h2>
+<div class="level2">
+
+<p>
+Existeixen moltes eines informàtiques que permeten la creació, el desenvolupament i l’execució de proves de programari. Cada eina té una sèrie de característiques pròpies, com el llenguatge de programació amb què permeten treballar o la plataforma sota la qual es pot executar. 
+</p>
+
+<p>
+Es mostra a continuació un llistat d’algunes d’aquestes eines i les seves característiques per què l’alumne pugui tenir un criteri a l’hora de seleccionar-ne una o una altra.
+</p>
+
+</div>
+
+<h3><a id="eines_-_proves_unitaries" >Eines - Proves unitàries</a></h3>
+<div class="level3">
+<ul>
+<li class="level1"><div class="li"> <a href="http://www.junit.org" class="urlextern" title="http://www.junit.org"  rel="nofollow">JUnit</a>: Automatitza les proves unitàries i d’integració. Proveeix classes i mètodes que faciliten la tasca d’efectuar proves en el sistema i així assegurar la consistència i la funcionalitat.</div>
+<ul>
+<li class="level2"><div class="li"> Llicència: <acronym title="GNU General Public License">GPL</acronym> (Common Public License).</div>
+</li>
+<li class="level2"><div class="li"> Integració: Eclipse, NetBeans.</div>
+</li>
+</ul>
+</li>
+</ul>
+
+</div>
+
+<h3><a id="eines_-_proves_estatiques_de_codi" >Eines - Proves estàtiques de codi</a></h3>
+<div class="level3">
+<ul>
+<li class="level1"><div class="li"> <a href="http://pmd.sourceforge.net/" class="urlextern" title="http://pmd.sourceforge.net/"  rel="nofollow">PMD</a>: pot ser integrat a diverses eines: JDeveloper, Eclipsi, jEdit… Permet trobar, en el codi, errors en el maneig d’excepcions, codi mort, codi sense optimitzar, codi duplicat…</div>
+<ul>
+<li class="level2"><div class="li"> Llicència: BSD (Berkeley Software Distribution).</div>
+</li>
+<li class="level2"><div class="li"> Plataforma: Windows i Linux.</div>
+</li>
+<li class="level2"><div class="li"> Llenguatges de programació: Java.</div>
+</li>
+</ul>
+</li>
+<li class="level1"><div class="li"> <a href="http://findbugs.sourceforge.net/" class="urlextern" title="http://findbugs.sourceforge.net/"  rel="nofollow">FindBugs</a>: pot integrar-se a Eclipse. Du a terme un escaneig de codi, a partir del qual troba errors comuns, males pràctiques de programació, codi vulnerable, rendiment, seguretat…</div>
+<ul>
+<li class="level2"><div class="li"> Llicència: <acronym title="GNU General Public License">GPL</acronym> (General Public License).</div>
+</li>
+<li class="level2"><div class="li"> Plataforma: Windows i Linux.</div>
+</li>
+<li class="level2"><div class="li"> Llenguatges de programació: Java.</div>
+</li>
+</ul>
+</li>
+<li class="level1"><div class="li"> <a href="http://www.yasca.org/Unit" class="urlextern" title="http://www.yasca.org/Unit"  rel="nofollow">YASCA</a>: permet trobar vulnerabilitats de seguretat, qualitat en el codi, rendiment… Aprofita la funcionalitat dels connectors FindBugs, PMD i Jlint.</div>
+<ul>
+<li class="level2"><div class="li"> Llicència: <acronym title="GNU General Public License">GPL</acronym> (General Public License).</div>
+</li>
+<li class="level2"><div class="li"> Plataforma: Windows i Linux.</div>
+</li>
+<li class="level2"><div class="li"> Llenguatges de programació: Java, .NET, PHP, <acronym title="HyperText Markup Language">HTML</acronym>, <acronym title="Cascading Style Sheets">CSS</acronym>…</div>
+</li>
+</ul>
+</li>
+</ul>
+
+</div>
+
+<h3><a id="eines_-_proves_de_rendiment" >Eines - Proves de rendiment</a></h3>
+<div class="level3">
+<ul>
+<li class="level1"><div class="li"> <a href="http://jakarta.apache.org/" class="urlextern" title="http://jakarta.apache.org/"  rel="nofollow">JMeter</a>: permet dur a terme proves de rendiment, d’estrès, de càrrega i de volum, sobre recursos estàtics o dinàmics.</div>
+<ul>
+<li class="level2"><div class="li"> Llicència: Llicència d’apache.</div>
+</li>
+<li class="level2"><div class="li"> Plataforma: Windows / Linux.</div>
+</li>
+</ul>
+</li>
+<li class="level1"><div class="li"> <a href="http://www.opensta.org/" class="urlextern" title="http://www.opensta.org/"  rel="nofollow">OpenSTA</a>: permet captar les peticions de l’usuari generades en un navegador web, després guardar-les, i poder editar per al seu posterior ús.</div>
+<ul>
+<li class="level2"><div class="li"> Llicència: <acronym title="GNU General Public License">GPL</acronym> (Common Public License).</div>
+</li>
+<li class="level2"><div class="li"> Plataforma: Windows.</div>
+</li>
+</ul>
+</li>
+<li class="level1"><div class="li"> <a href="http://www.webload.org" class="urlextern" title="http://www.webload.org"  rel="nofollow">WEbLoad</a>: permet dur a terme proves de rendiment, a través d’un entorn gràfic en el qual es poden desenvolupar, enregistrar i editar <em>script</em> de proves.</div>
+<ul>
+<li class="level2"><div class="li"> Llicència: <acronym title="GNU General Public License">GPL</acronym> (Common Public License).</div>
+</li>
+<li class="level2"><div class="li"> Plataforma: Windows.</div>
+</li>
+</ul>
+</li>
+<li class="level1"><div class="li"> <a href="http://grinder.sourceforge.net/" class="urlextern" title="http://grinder.sourceforge.net/"  rel="nofollow">Grinder</a>: és un <em>framework</em> escrit en Java, amb el qual es poden efectuar proves de rendiment, a través d’<em>script</em> escrits en llenguatge Jython. Permet enregistrar les peticions del client sobre un navegador web per ser després reproduït.</div>
+<ul>
+<li class="level2"><div class="li"> Llicència: <acronym title="GNU General Public License">GPL</acronym> (Common Public License).</div>
+</li>
+<li class="level2"><div class="li"> Plataforma: Windows / Linux.</div>
+</li>
+</ul>
+</li>
+</ul>
+
+</div>
+
+<h3><a id="eines_-_proves_d_acceptacio" >Eines - Proves d&#039;acceptació</a></h3>
+<div class="level3">
+<ul>
+<li class="level1"><div class="li"> <a href="http://fitnesse.org/" class="urlextern" title="http://fitnesse.org/"  rel="nofollow">Fitness</a>: permet comparar el que ha de fer el programari amb el que realment fa. Es poden efectuar proves d’acceptació i proves de regles de negoci.</div>
+<ul>
+<li class="level2"><div class="li"> Llicència: <acronym title="GNU General Public License">GPL</acronym> (General Public License)</div>
+</li>
+<li class="level2"><div class="li"> Plataforma: Windows i Linux</div>
+</li>
+<li class="level2"><div class="li"> Llenguatges de programació: Java, C#, PHP, .NET…</div>
+</li>
+</ul>
+</li>
+<li class="level1"><div class="li"> <a href="http://www.nolacom.com/avignon/index.asp" class="urlextern" title="http://www.nolacom.com/avignon/index.asp"  rel="nofollow">Avignon</a>: permet, als usuaris, expressar proves d’acceptació d’una forma no ambigua abans que comenci el desenvolupament. Treballa en conjunt amb JUnit, HTTPUnit…</div>
+<ul>
+<li class="level2"><div class="li"> Llicència: <acronym title="GNU General Public License">GPL</acronym> (General Public License)</div>
+</li>
+<li class="level2"><div class="li"> Plataforma: Windows i Linux</div>
+</li>
+<li class="level2"><div class="li"> Llenguatges de programació: Java,.NET…</div>
+</li>
+</ul>
+</li>
+</ul>
+
+</div>
+
+	 </article>
+     <div class="pnpage">
+      <div class="left-corner"></div>
+      <div id="prevpage">Anar a la p&agrave;gina anterior:<br /><a href="../../../WebContent/u2/a1/exercicis.html">Exercicis</a></div>
+      <div id="nextpage">Anar a la p&agrave;gina seg&uuml;ent:<br /><a href="../../../WebContent/u2/a2/continguts.html">Eines per al control i documentació de programari</a></div>
+      <div class="right-corner"></div>
+     </div>
+    </div>
+    <footer class="footer">
+      <div><small>Aquest document està subjecte a una llicència oberta de Creative Commons, es reserva el dret de reconeixement de l'autoria, d'exigir que no se'n faci cap mena d'ús comercial. Si altereu o transformeu aquesta obra, o en genereu obres derivades, només podeu distribuir l'obra generada amb una llicència idèntica a aquesta.</small></div>
+    </footer>
+ </div>
+ <div id="back_preview" class="hidden"></div>
+ <div id="preview" class="hidden">
+  <div class="prevcontent"></div>
+ </div>
+ <div id="help-tooltips">
+  <div id="help-toc" class="hidden tooltip"><span>Taula de continguts:</span> Ofereix una vista general de l&#39;estructura del m&ograve;dul, que us facilitar&agrave; la navegaci&oacute; a trav&eacute;s dels seus continguts.<span class="arrow-left"></span></div> 
+  <div id="help-settings" class="hidden tooltip"><span>Opcions de format:</span> Permet configurar el format de lectura a partir de les vostres prefer&egrave;ncies, modificant la mida de la lletra, el color del fons, l&#39;amplada de la p&agrave;gina o l&#39;ocultaci&oacute; dels continguts complementaris, entre d&#39;altres.<span class="arrow-left"></span></div>
+  <div id="help-printer" class="hidden tooltip"><span>Imprimir:</span>  Envia el contingut seleccionat a la impressora.<span class="arrow-left"></span></div>
+  <div id="help-favorites" class="hidden tooltip"><span>Prefereits:</span> Permet desar aquelles parts del contingut a les que us interessi accedir en un moment posterior; us permetr&agrave; anar creant un repositori personalitzat de les seccions que considereu m&eacute;s rellevants. Un cop l&#39;hageu començat a fer servir se us mostrar&agrave; a sota un comptador que us informar&agrave; del nombre de preferits que s&#39;hagin emmagatzemat fins al moment.<span class="arrow-left"></span></div>
+  <div id="help-favcounter" class="hidden tooltip"><span>Comptador i llistat de preferits:</span> Indica el nombre de preferits que s&#39;han desat fins el moment; clicant damunt seu accedireu al llistat de preferits, i a trav&eacute;s d&#39;aquest podreu accedir directament als continguts que hageu emmagatzemat.<span class="arrow-left"></span></div>
+  <div id="help-help_icon" class="hidden tooltip"><span>Ajuda:</span> Aquesta opci&oacute; activa la informaci&oacute; de les funcionalitats del web tot situant el punter del ratol&iacute; al damunt dels diferents &iacute;tems.<span class="arrow-left"></span></div>
+  <div id="help-sidebar-hide" class="hidden tooltip"><span>Mostrar/Ocultar barra lateral:</span>  Deshabilita la barra d&#39;opcions, permetent la seva recuperaci&oacute; quan es desitgi.<span class="arrow-left"></span></div>
+  <div id="help-search" class="hidden tooltip"><span>Cerca:</span>  Introdu&iuml;u les paraules clau sobre aquells conceptes que desitgeu localitzar en els continguts del m&ograve;dul. Tamb&eacute; podeu excloure un terme de la cerca tot afegint-hi el signe &#8220;-&#8221; al davant.<span class="arrow-top"></span></div>
+  <div id="help-header" class="hidden tooltip"><span>Cap&ccedil;alera:</span>  Indica l&#39;apartat o secci&oacute; que es mostra en pantalla. Tingueu present que les capçaleres de segon, tercer i quart nivell tamb&eacute; es poden desar com a marcadors.<span class="arrow-left"></span></div>
+</div> 
+</body>
+</html>

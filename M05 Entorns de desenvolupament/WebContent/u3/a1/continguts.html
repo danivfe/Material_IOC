@@ -1,0 +1,2095 @@
+<!doctype html>
+
+<!--[if lt IE 7 ]> <html class="ie ie6 no-js" lang="ca"> <![endif]-->
+<!--[if IE 7 ]>    <html class="ie ie7 no-js" lang="ca"> <![endif]-->
+<!--[if IE 8 ]>    <html class="ie ie8 no-js" lang="ca"> <![endif]-->
+<!--[if IE 9 ]>    <html class="ie ie9 no-js" lang="ca"> <![endif]-->
+<!--[if gt IE 9]><!--><html class="no-js" lang="ca"><!--<![endif]-->
+<!-- the "no-js" class is for Modernizr. -->
+
+<head id="www-sitename-com" data-template-set="html5-reset">
+
+	<meta charset="utf-8">
+	
+	<!-- Always force latest IE rendering engine (even in intranet) & Chrome Frame -->
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	
+	<title>Entorns de desenvolupament</title>
+	
+<!-- <meta name="title" content=""> --> 
+	<meta name="description" content="">
+	<!-- Google will often use this as its description of your page/site. Make it good. -->
+	
+	<meta name="google-site-verification" content="">
+	<!-- Speaking of Google, don't forget to set your site up: http://google.com/webmasters -->
+	
+	<meta name="author" content="Institut Obert de Catalunya">
+	<meta name="Copyright" content="Copyright Institut Obert de Catalunya 2011. All Rights Reserved.">
+
+	<!-- Dublin Core Metadata : http://dublincore.org/ -->
+	<meta name="DC.title" content="Entorns de desenvolupament">
+	<meta name="DC.subject" content="Informàtica i comunicacions">
+	<meta name="DC.creator" content="Institut Obert de Catalunya">
+	
+	<!--  Mobile Viewport Fix
+	j.mp/mobileviewport & davidbcalhoun.com/2010/viewport-metatag 
+	device-width : Occupy full width of the screen in its current orientation
+	initial-scale = 1.0 retains dimensions instead of zooming out if page height > device height
+	maximum-scale = 1.0 retains dimensions instead of zooming in if page width < device width
+	-->
+	<!-- Uncomment to use � use thoughtfully!
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+	-->
+
+	<link rel="shortcut icon" href="../../../img/favicon.ico">
+	<!-- This is the traditional favicon.
+		 - size: 16x16 or 32x32
+		 - transparency is OK
+		 - see wikipedia for info on browser support: http://mky.be/favicon/ -->
+		 
+	<link rel="apple-touch-icon" href="../../../img/apple-touch-icon.png">
+	<!-- The is the icon for iOS's Web Clip.
+		 - size: 57x57 for older iPhones, 72x72 for iPads, 114x114 for iPhone4's retina display (IMHO, just go ahead and use the biggest one)
+		 - To prevent iOS from applying its styles to the icon name it thusly: apple-touch-icon-precomposed.png
+		 - Transparency is not recommended (iOS will put a black BG behind the icon) -->
+	
+	<!-- CSS: screen, mobile & print are all in the same file -->
+	<link rel="stylesheet" href="../../../_/css/style.css">
+
+	<!-- CSS: jQuery UI -->
+	<link rel="stylesheet" href="../../../_/css/jquery-ui.css">
+	
+	<!-- all our JS is at the bottom of the page, except for Modernizr. -->
+	<script src="../../../_/js/modernizr-1.7.min.js"></script>
+	<script src="../../../_/js/Hyphenator.js" type="text/javascript"></script>
+	<script type="text/javascript">
+	   Hyphenator.config({
+		minwordlength : 4
+	   });
+	   Hyphenator.run();
+	</script>
+    <script src="../../../_/js/build.js" type="text/javascript"></script>
+</head>
+
+<body class="style-newspaper">
+
+<div class="wrapper"><!-- not needed? up to you: http://camendesign.com/code/developpeurs_sans_frontieres -->
+
+	<header id="header">
+		<div class="head"><a href="http://ioc.gencat.cat"><img src="../../../img/logo.png" alt="Institut Obert de Catalunya"/></a><a href="http://creativecommons.org/licenses/by-nc-sa/3.0/es/deed.ca"><img src="../../../img/license.png" alt="Llic&egrave;ncia" class="license"/></a></div>
+		<div class="headdocument"><a href="../../../index.html">Entorns de desenvolupament</a></div>
+        <div id="search" class="search" name="search">
+         <form id="frmsearch" action="../../../search.html" method="get">
+          <input type="text" name="q"/>
+        </form>
+        </div>
+	</header>
+   <div id="upbutton" class="upbutton" style="display:none;"><img src="../../../img/uparrow.png" alt="Pujar a l'inici de p&agrave;gina"/></div>
+   <aside id="aside">
+    <div id="menu">
+      <ul>
+       <li name="toc"><div><img src="../../../img/toc.png" alt="&Iacute;ndex"/></div></li>
+       <li name="settings"><div><img src="../../../img/settings.png" alt="Configuraci&oacute;"/></div></li>
+       <li name="printer"><div><img src="../../../img/printer.png" alt="Imprimir"/></div></li>
+       <li name="favorites"><div><img src="../../../img/favorites.png" alt="Favorits"/></div></li>
+       <li name="help_icon" class="help_icon"><div><img src="../../../img/help_icon.png" alt="Ajuda"/></div></li>
+      </ul>
+     </div>
+   </aside>
+   <div id="sidebar-hide" name="sidebar-hide"><img src="../../../img/arrows.png"/></div>
+   <section>
+     <div id="toc" class="hidden">
+      <div class="menucontent">
+        <ul>
+        <li id="u3" class="parentnode"><p><a href="../../../WebContent/u3/introduccio.html">3. Introducció al disseny orientat a objectes</a></p><ul class="expander"><li id="u3introduccio"><a href="../../../WebContent/u3/introduccio.html">Introducció</a></li><li id="u3resum"><a href="../../../WebContent/u3/resum.html">Resum</a></li><li id="u3resultats"><a href="../../../WebContent/u3/resultats.html">Resultats d’aprenentatge</a></li><li id="u3referencies"><a href="../../../WebContent/u3/referencies.html">Referències</a></li><li id="u3a1" class="tocsection"><p id="u3a1continguts"><a href="../../../WebContent/u3/a1/continguts.html">Diagrames estàtics</a><span class="buttonexp"></span></p><ul><li id="u3a1activitats"><a href="../../../WebContent/u3/a1/activitats.html">Activitats</a></li><li id="u3a1exercicis"><a href="../../../WebContent/u3/a1/exercicis.html">Exercicis</a></li><li id="u3a1annexos"><a href="../../../WebContent/u3/a1/annexos.html">Annexos</a></li></ul></li><li id="u3a2" class="tocsection"><p id="u3a2continguts"><a href="../../../WebContent/u3/a2/continguts.html">Diagrames dinàmics</a><span class="buttonexp"></span></p><ul><li id="u3a2activitats"><a href="../../../WebContent/u3/a2/activitats.html">Activitats</a></li><li id="u3a2exercicis"><a href="../../../WebContent/u3/a2/exercicis.html">Exercicis</a></li><li id="u3a2annexos"><a href="../../../WebContent/u3/a2/annexos.html">Annexos</a></li></ul></li></ul></li><li id="" class="indexnode"><p><a href="../../../index.html">Anar a l&#39;&iacute;ndex general</a></p></li>
+        </ul>
+      </div>
+    </div>
+   </section>
+   <section>
+   <div id="settings" class="hidden">
+    <div class="menucontent">
+     <div class="allsettings">
+     <div class="settings">
+      <label>Font i Color</label>
+		<div class="setting-option">
+	        <ul class="fontBackground">
+				<li id="style-newspaper" title="Newspaper" class="appearance-style-newspaper"><span>Newspaper</span></li>
+                <li id="style-novel" title="Novel" class="appearance-style-novel"><span>Novel</span></li>
+                <li id="style-ebook" title="eBook" class="appearance-style-ebook"><span>eBook</span></li>
+				<li id="style-inverse" title="Inverse" class="appearance-style-inverse active"><span>Inverse</span></li>
+				<li id="style-athelas" title="Athelas" class="appearance-style-athelas"><span>Athelas</span></li>
+			</ul>
+		</div>
+     </div>
+	<div class="settings">
+      <label>Amplada</label>
+		<div class="setting-option">
+	        <div id="slider-width"></div>
+		</div>
+     </div>
+     <div class="settings">
+      <label>Mida de la font</label>
+		<div class="setting-option">
+	        <div id="slider-font"></div>
+		</div>
+     </div>
+     <div class="settings">
+      <label>Mida de la font</label>
+	  <div class="setting-option">
+       <form action="" class="sett-options">
+		<ul>
+		    <li><input type="checkbox" id="secondary-content" /><label for="secondary-content">Mostra recursos complementaris</label></li>
+		    <li><input type="checkbox" id="main-images" /><label for="main-images">Mostra imatges</label></li>
+		    <li><input type="checkbox" id="text-alignment" /><label for="text-alignment">Text justificat</label></li>
+			<li><input type="checkbox" id="text-hyphen" /><label for="text-hyphen">Partici&oacute; sil·l&agrave;bica</label></li>
+		</ul>
+       </form>
+	  </div>
+     </div>
+     </div>
+    </div>
+   </div>
+   </section>
+ <section>
+ <div id="favorites" class="hidden"></div>
+ </section>   
+ <div id="bridge" class="hidden"></div>
+ <div id="help" class="hidden">
+  <div class="helptitle">Dreceres del teclat<hr></div>
+  <div class="helpsection"><span>General</span>
+   <ul>
+    <li><span class="shortcut">g</span>: Anar al men&uacute; de navegaci&oacute;</li>
+    <li><span class="shortcut">o</span>: Anar a opcions</li>
+    <li><span class="shortcut">s</span>: Guardar la p&agrave;gina actual a favorits</li>
+    <li><span class="shortcut">p</span>: Imprimir la p&agrave;gina actual</li>
+    <li><span class="shortcut">?</span>: Mostrar/Ocultar l&#39;ajuda</li>
+   </ul>
+  </div>
+  <div class="helpsection"><span>Navegaci&oacute;</span>
+   <ul>
+    <li><span class="shortcut">i</span>: Anar a l&#39;&iacute;ndex general</li>
+    <li><span class="shortcut">t</span>: Anar a l&#39;inici de p&agrave;gina</li>
+    <li><span class="shortcut">b</span>: Anar al final de p&agrave;gina</li>
+    <li><span class="shortcut">j</span>: Anar cap endavant dintre la p&agrave;gina</li>
+    <li><span class="shortcut">k</span>: Anar cap enrere dintre la p&agrave;gina</li>
+    <li><span class="shortcut">h</span>: Anar a la p&agrave;gina anterior:</li>
+    <li><span class="shortcut">l</span>: Anar a la p&agrave;gina seg&uuml;ent:</li>
+   </ul>
+   </div>
+ </div>
+ <div id="favcounter" name="favcounter" class="hidden"><span></span></div>
+ <div id="navmenu" class="navmenu"><ul class="webnav"><li><a href="../../../index.html" title="Anar a l&#39;&iacute;ndex general">Inici</a></li><li><a href="../introduccio.html">Introducció al disseny orientat a objectes</a></li><li>Diagrames estàtics</li></ul></div>
+	<div id="content" lang="ca" class="hyphenate text">
+     <article lang="ca" class="sheet">
+        <h1><a id="diagrames_estatics"> Diagrames estàtics </a></h1>
+    	
+<p>
+El llenguatge unificat de modelització (UML) es basa en diagrames que estableixen les especificacions i documentació de qualsevol sistema. Aquests diagrames es fan servir en el desenvolupament de projectes informàtics per analitzar i dissenyar les necessitats dels usuaris finals de les aplicacions, amb la qual cosa es documenten els seus requeriments. Però també es podran utilitzar en molts més àmbits, com ara la modelització del funcionament d’una empresa, d’un departament o d’un sistema de qualsevol altre entorn.
+</p>
+
+<p>
+Els diagrames que es poden fer servir per modelitzar sistemes es poden agrupar o classificar de moltes formes. Una d’aquestes classificacions diferencia entre els diagrames que corresponen a l’UML estàtic i els que corresponen a l’UML dinàmic. Els diagrames inclosos en els considerats de UML estàtic, també anomenats diagrames d’estructura, fan referència als elements que s’hauran de trobar en el sistema de modelització. Aquests diagrames fan una descripció del sistema sense tenir en compte les interaccions amb altres elements o el comportament que tenen els elements del sistema, només identifiquen aquests models i estableixen les seves característiques.
+</p>
+
+<p>
+Dins aquest tipus de diagrames, el més important és el <strong>diagrama de classes</strong>, que especificarà totes les classes estimades al disseny orientat a objectes i que seran instanciades al codi de programació que es desenvoluparà a continuació.
+</p>
+
+<p>
+En les pàgines corresponents a aquest apartat es treballaran els diagrames corresponents a l’UML estàtic, fent especial referència al diagrama de classes. També es mostra un exemple de com poder treballar amb un IDE (Eclipse) amb els diagrames UML.
+</p>
+
+<h2><a id="analisi_i_disseny_orientat_a_objectes" >Anàlisi i disseny orientat a objectes</a></h2>
+<div class="level2">
+
+<p>
+La creació d’una aplicació informàtica es pot considerar una obra d’enginyeria. De fet, fa molts anys que es coneix amb el nom <strong>enginyeria del programari</strong> (o <strong>enginyeria del <em>software</em></strong>), considerat com una de les àrees més importants de la informàtica. L’enginyeria del programari engloba tota una sèrie de metodologies, tècniques i eines que faciliten la feina que comporten totes i cada una de les fases d’un projecte informàtic. 
+</p>
+
+<p>
+L’enginyeria del programari ha evolucionat de forma contínua (i ho continua fent a data d’avui), adaptant-se a les noves tecnologies i a les noves formes de desenvolupar programari. A la dècada dels 70, amb l’inici de la programació d’aplicacions com a feina generalitzada en les organitzacions, i l’aparició de la figura del programador, només hi havia un objectiu: que les aplicacions fessin el que havien de fer optimitzant la velocitat i l’ús de memòria. En aquells primers programes ningú no es preocupava pel futur manteniment de les aplicacions per part d’altres programadors, ni tampoc que el codi fos fàcil d’entendre.
+</p>
+
+<p>
+Amb els anys, les aplicacions demanen més funcionalitats i el desenvolupament d’aplicacions es fa més complex a mesura que millora el maquinari i el programari que utilitzen els programadors. La programació passa a ser programació estructurada, implementada en mòduls i més senzilla d’entendre i de mantenir. 
+</p>
+
+<p>
+A mitjan-finals dels anys 70 comencen a aparèixer les primeres metodologies. El fet s’elaborar el codi de programació a partir de les improvisacions o de les intuïcions del programador, sotmet el projecte a uns riscos, com ara la poca eficàcia o els errors en les funcionalitats que han de solucionar els requeriments de les especificacions.
+</p>
+
+<p>
+Aquestes metodologies recullen l’experiència de molts projectes, oferint una sèrie de passos a efectuar per al correcte i exitós desenvolupament de les aplicacions informàtiques. Entre aquests passos es troben les fases en què es divideix un projecte, entre les quals hi ha la fase de disseny.
+</p>
+
+<p>
+El disseny estructurat, o també anomenat disseny orientat al flux de dades, permet establir la transició del Diagrama de Flux de Dades (DFD) a una descripció de l’estructura del programa, que es representa mitjançant un diagrama d’estructures. Les eines que faciliten i automatitzen aquest tipus de disseny es coneixen com a eines CASE. A la <span class="figref"><a href="#Figure1"><span>figura</span></a></span> es pot observar un exemple de Diagrama de Flux de Dades.
+</p>
+<div class="iocfigure"><a name="Figure1"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Exemple DFD
+
+</figcaption><img src="../media/ic10m05u3_01.png" alt="" /></figure>
+</div>
+<p>
+L’evolució en l’enginyeria del programari sorgeix a partir dels anys 80, quan comença a aparèixer la programació orientada a objectes. La forma de programar ja no es basarà en les estructures i en la programació modular, sinó que la base seran les classes i els objectes. Igual que hi ha una evolució en la programació, aquesta evolució també es veu reflectida en les metodologies de gestió de projectes. Al cap d’uns anys d’agafar força la programació orientada a objectes i de fer-se un lloc entre els desenvolupadors d’aplicacions, van aparèixer:
+</p>
+<ul>
+<li class="level1"><div class="li"> Modelització de sistemes orientats a objectes.</div>
+</li>
+<li class="level1"><div class="li"> Disseny orientat a objectes.</div>
+</li>
+<li class="level1"><div class="li"> Generació automàtica de Codi.</div>
+</li>
+<li class="level1"><div class="li"> Metodologies àgils.</div>
+</li>
+</ul>
+
+<p>
+En l’actualitat existeixen diferents tipus de tecnologies que s’utilitzen en el desenvolupament de programari, i les més utilitzades són:
+</p>
+<ul>
+<li class="level1"><div class="li"> Metodologies estructurades.</div>
+</li>
+<li class="level1"><div class="li"> Metodologies orientades a objectes.</div>
+</li>
+<li class="level1"><div class="li"> Metodologies àgils.</div>
+</li>
+</ul>
+
+<p>
+Deixant la tercera de banda, en les altres dues (estructurades i orientades a objectes) es pot considerar que el procés de desenvolupament de programari té les mateixes fases. Segons diversos autors, pot haver-hi grans divergències entre les propostes de fases d’un projecte, però, en general, les proposades són aquestes:
+</p>
+<ul>
+<li class="level1"><div class="li"> <strong>Estudi previ</strong>, on es delimita l’àmbit del projecte de desenvolupament d’un programari i se’n determina la viabilitat, els riscos, els costos i el calendari.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Anàlisi de requeriments</strong>, on es descriuen de manera adient els requisits del programari, que són les necessitats d’informació que el programari ha de satisfer. L’anàlisi ha de deixar molt clar el que es vol fer a partir de l’estudi d’un problema determinat. Els requeriments que cal recollir hauran ser funcionals i no funcionals. Caldrà que sigui independent de la tecnologia i del tipus de programació escollits per al desenvolupament del projecte. </div>
+</li>
+<li class="level1"><div class="li"> <strong>Disseny</strong>, on es projecta el programari amb vista a implementar-lo en un entorn tecnològic concret, definit per aspectes com ara el llenguatge de programació, l’entorn de desenvolupament i el gestor de bases de dades, de tots els quals en pot intervenir més d’un dins un sol projecte. A partir del que caldrà fer, definit a la fase anterior al disseny, es determina el com es farà. Caldrà tenir en compte les possibles conseqüències de les decisions presses en aquesta fase. El detall haurà de ser suficientment baix com perquè a partir d’aquestes indicacions es pugui desenvolupar el projecte.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Desenvolupament i proves</strong>, on es porta a terme el desenvolupament del codi font que satisfaci les funcionalitats establertes a les fases anteriors. Aquesta fase no només es limita a la codificació manual, sinó que pot incloure la programació gràfica, la generació automàtica de codi i altres tècniques. En aquesta fase també s’inclouran les proves del programari. Algunes parts de la programació poden començar abans que el disseny estigui enllestit del tot, i també es poden provar parts del programari mentre encara se n’estan implementant d’altres.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Finalització i transferència</strong>, on es prepara el programari per tal que estigui en explotació. Durant aquesta fase, és objecte de manteniment per eliminar errors no corregits durant la prova, introduir-hi millores i adaptar-lo a canvis tecnològics i organitzatius que es produeixin en l’entorn de treball dels usuaris.</div>
+</li>
+</ul>
+
+<p>
+Un model adequat evita trobar-se amb situacions com la que es mostra en la <span class="figref"><a href="#Figure2"><span>figura</span></a></span>, on es poden observar, a mode d’exemple, les diferències d’enteniment entre les diferents parts i fases implicades en la gestió d’un projecte informàtic.
+</p>
+<div class="iocfigure"><a name="Figure2"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Errors a evitar en el desenvolupament d’un programari
+
+</figcaption><img src="../media/ic10m05u3_02.png" alt="" /></figure>
+</div>
+</div>
+
+<h2><a id="llenguatge_unificat_de_modelitzacio" >Llenguatge unificat de modelització</a></h2>
+<div class="level2">
+
+<p>
+UML és l’acrònim, en anglès, de <em>Unified Modeling Language</em>, és a dir, Llenguatge unificat de modelització. UML són un conjunt de notacions gràfiques que serveixen per especificar, dissenyar, elaborar i documentar models de sistemes i, en particular, d’aplicacions informàtiques. A partir d’aquestes notacions gràfiques o diagrames, l’analista i el dissenyador podran recrear les característiques que caldrà que tingui l’aplicació informàtica que els desenvolupadors hauran de crear posteriorment. 
+</p>
+<div class="ioctext"><div class="ioccontent"><p class="ioctitle">OMG</p>
+<p>
+Prové de l’anglès, Object Management Group, que és un consorci fundat l’any 1989 amb l’objectiu de fomentar l’ús de la tecnologia orientada a l’objecte mitjançant l’establiment d’estàndards.
+</p>
+</div></div>
+<p>
+En l’actualitat és el llenguatge de modelització de sistemes més conegut i utilitzat. Gaudeix d’una acceptació gairebé universal i, entre altres beneficis, ha tingut l’efecte d’impulsar el desenvolupament d’eines de modelització gràfica del programari orientat a l’objecte. A més està reconegut i és recomanat per l’OMG. 
+</p>
+
+<p>
+Els avantatges de la notació UML són els següents:
+</p>
+<ul>
+<li class="level1"><div class="li"> Està recolzada per la <acronym title="Oh my God">OMG</acronym> (Object Management Group) com la notació estàndard per al desenvolupament de projectes informàtics.</div>
+</li>
+<li class="level1"><div class="li"> Es basa en una notació gràfica concreta i fàcil d’interpretar, essent completada amb explicacions escrites.</div>
+</li>
+<li class="level1"><div class="li"> A l’analista i/o al dissenyador els permet fer ús dels diagrames que considerin oportuns i amb el grau de detall que considerin en funció de les característiques del sistema.</div>
+</li>
+<li class="level1"><div class="li"> Permet tenir una visió global del sistema a implementar.</div>
+</li>
+<li class="level1"><div class="li"> Promou la reutilització.</div>
+</li>
+</ul>
+<div class="iocreference"><div class="ioccontent">
+<p>
+En la secció <em>Annexos</em> del web del mòdul hi podeu trobar més informació referent a la història i característiques de l’UML.
+</p>
+</div></div>
+<p>
+Entre els desavantatges destaquen:
+</p>
+<ul>
+<li class="level1"><div class="li"> UML no és una metodologia, és una notació.</div>
+</li>
+<li class="level1"><div class="li"> UML no és un llenguatge de programació.</div>
+</li>
+<li class="level1"><div class="li"> Pot resultar complex obtenir un coneixement complet de les possibilitats del llenguatge.</div>
+</li>
+</ul>
+
+</div>
+
+<h3><a id="diagrames" >Diagrames</a></h3>
+<div class="level3">
+
+<p>
+En el llenguatge de modelització UML, en la seva versió 2.4.1, existeixen un total de 14 tipus diferents de diagrames. 
+</p>
+
+<p>
+Com es pot observar a la <span class="figref"><a href="#Figure3"><span>figura</span></a></span>, una possible classificació dels diagrames es fa en funció de la visió del model del sistema que ofereixen. Les dues visions diferents de model de sistema que poden representar els diagrames UML són:
+</p>
+<ul>
+<li class="level1"><div class="li"> <strong>Visió estàtica (o estructural)</strong>: per oferir aquest tipus de visió s’utilitzen objectes, atributs, operacions i relacions. La visió estàtica d’un sistema dóna més valor als elements que es trobaran en el model del sistema des d’un punt de vista de l’estructura del sistema. Descriuen aspectes del sistema que són estructurals i, per tant, permanents (allò que el sistema té).</div>
+</li>
+<li class="level1"><div class="li"> <strong>Visió dinàmica (o de comportament)</strong>: per oferir aquest tipus de visió es dóna més valor al comportament dinàmic del sistema, és a dir, a allò que ha de passar en el sistema. Amb els diagrames de comportament es mostra com es modela la col·laboració entre els elements del sistema i els seus canvis d’estat. Representen allò que pot fer el sistema modelitzat.</div>
+</li>
+</ul>
+<div class="iocfigure"><a name="Figure3"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Diagrames UML
+
+</figcaption><img src="../media/ic10m05u3_03.png" alt="" /></figure>
+</div>
+<p>
+Dins els diagrames estàtics o diagrames d’estructura es poden trobar 7 tipus de diagrames, que són:
+</p>
+<ul>
+<li class="level1"><div class="li"> <strong>Diagrama de paquets</strong>, que representa essencialment les relacions de diferents menes entre els continguts de diferents paquets d’un model.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Diagrama de classes</strong>, que probablement molts consideren el diagrama principal, atès que descriu classificadors de tota mena i diferents tipus de relacions entre ells abans de fer-los servir en altres diagrames.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Diagrama d’objectes</strong>, que representa instàncies de classificadors definits en un diagrama de classes previ i relacions entre elles.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Diagrama d’estructures compostes</strong>, que descriu casos en què, o bé les instàncies d’un classificador tenen com a parts instàncies d’altres, o bé en el comportament executant d’un classificador participen instàncies d’altres.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Diagrama de components</strong>, que és un diagrama de classes i alhora d’estructures compostes simplificat i més adient per a determinades tecnologies de programació.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Diagrama de desplegament</strong>, que descriu la configuració en temps d’execució d’un programari especificat, normalment, per un diagrama de components.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Diagrama de perfil</strong>, permet adaptar o personalitzar el model amb construccions que són específiques d’un domini en particular, d’una determinada plataforma, o d’un mètode de desenvolupament de programari…</div>
+</li>
+</ul>
+
+<p>
+A la <span class="figref"><a href="#Figure4"><span>figura</span></a></span> es pot observar un resum dels diagrames d’estructura.
+</p>
+<div class="iocfigure"><a name="Figure4"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Diagrames d’estructura o estàtics
+
+</figcaption><img src="../media/ic10m05u3_04.png" alt="" /></figure>
+</div>
+<p>
+Dins els diagrames dinàmics o diagrames de comportament es poden trobar 7 tipus de diagrames, que són:
+</p>
+<ul>
+<li class="level1"><div class="li"> <strong>Diagrama de casos d’ús</strong>, que considera els comportaments d’un sistema principalment des del punt de vista de les interaccions que té amb el món exterior.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Diagrama d’estats</strong>, en el qual es descriuen les diferents situacions -estats- des del punt de vista dels seus comportaments, de les instàncies d’un classificador, alhora que les causes, condicions i conseqüències dels canvis d’una situació a una altra.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Diagrama d’activitats</strong>, en què es descriu un comportament complex en forma de seqüències condicionals d’activitats components.</div>
+</li>
+</ul>
+
+<p>
+<strong>Diagrama d’interacció</strong>, que descriu comportaments emergents i té les variants següents:
+</p>
+<ul>
+<li class="level1"><div class="li"> <strong>Diagrama de seqüències</strong>, que fa èmfasi en la seqüència temporal de les participacions de les diferents instàncies.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Diagrama de comunicacions</strong>, que es basa directament en una estructura composta.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Diagrama de visió general de la interacció</strong>, que dóna una visió resumida del comportament emergent.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Diagrama temporal</strong>, que es basa en un diagrama d’estats previ o més d’un i alhora posa èmfasi en els canvis d’estat al llarg del temps.</div>
+</li>
+</ul>
+
+<p>
+A la <span class="figref"><a href="#Figure5"><span>figura</span></a></span> es pot observar un resum dels diagrames dinàmics, també anomenats diagrames de comportament.
+</p>
+<div class="iocfigure"><a name="Figure5"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+UML: Diagrama de comportament o dinàmic
+
+</figcaption><img src="../media/ic10m05u3_05.png" alt="" /></figure>
+</div>
+</div>
+
+<h3><a id="diagrama_de_classes" >Diagrama de classes</a></h3>
+<div class="level3">
+
+<p>
+Un dels diagrames referents de UML, classificat dins els diagrames de tipus estàtic, és el diagrama de classes. És un dels diagrames més utilitzats a les metodologies d’anàlisi i de disseny que es basen en UML. 
+</p>
+<div class="iocimportant"><div class="ioccontent">
+<p>
+<strong>Un diagrama de classes</strong> representa les classes que seran utilitzades dins el sistema i les relacions que existeixen entre elles.
+</p>
+</div></div>
+<p>
+Aquest tipus de diagrames són utilitzats durant les fases d’anàlisi i de disseny dels projectes de desenvolupament de programari. És en aquest moment en què es comença a crear el model conceptual de les dades que farà servir el sistema. Per això s’identifiquen els components (amb els seus atributs i funcionalitats) que prendran part en els processos i es defineixen les relacions que hi haurà entre ells. 
+</p>
+
+<p>
+Un diagrama de classes porta vinculats alguns conceptes que ajudaran a entendre’n la creació i el funcionament en la seva totalitat. Aquests conceptes són:
+</p>
+<ul>
+<li class="level1"><div class="li"> Classe, atribut i mètode (operacions).</div>
+</li>
+<li class="level1"><div class="li"> Visibilitat.</div>
+</li>
+<li class="level1"><div class="li"> Objecte. Instanciació.</div>
+</li>
+<li class="level1"><div class="li"> Relacions. Herència, composició i agregació.</div>
+</li>
+<li class="level1"><div class="li"> Classe associativa.</div>
+</li>
+<li class="level1"><div class="li"> Interfícies.</div>
+</li>
+</ul>
+
+<p>
+A la <span class="figref"><a href="#Figure6"><span>figura</span></a></span> es mostren els elements que poden pertànyer a un diagrama de classes. 
+</p>
+<div class="iocfigure"><a name="Figure6"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Elements del diagrama de classes
+
+</figcaption><img src="../media/ic10m05u3_06.png" alt="" /></figure>
+</div>
+</div>
+
+<h4><a id="classes_atributs_i_operacions" >Classes. Atributs i operacions</a></h4>
+<div class="level4">
+<div class="iocimportant"><div class="ioccontent">
+<p>
+Una <strong>classe</strong> descriu un conjunt d’objectes que comparteixen els mateixos <strong>atributs</strong>, que representen característiques estables de les classes, i les <strong>operacions</strong>, que representen les accions de les classes.
+</p>
+</div></div><div class="iocimportant"><div class="ioccontent">
+<p>
+<strong>Els atributs</strong> (també anomenats <em>propietats</em> o <em>característiques</em>) són les dades detallades que contenen els objectes. Aquests valors corresponen a l’objecte que instancia la classe i fa que tots els objectes siguin diferents entre si.
+</p>
+</div></div>
+<p>
+Tot atribut té assignat un tipus i pot tenir una llista formada per un valor o més d’aquest tipus, d’acord amb la multiplicitat corresponent, que han de pertànyer a aquest tipus i poden variar al llarg del temps.
+</p>
+
+<p>
+Per exemple, un possible atribut de la classe persona podria ser el seu nom, atribut de tipus <em>string</em>.
+</p>
+<div class="iocimportant"><div class="ioccontent">
+<p>
+Les <strong>operacions</strong> (també anomenades mètodes o funcionalitats) implementen les accions que es podran dur a terme sobre els atributs. Ofereixen la possibilitat d’aplicar canvis sobre els atributs, però també moltes altres accions relacionades amb l’objecte, com obrir-lo o tancar-lo, carregar-lo…
+</p>
+</div></div>
+<p>
+Cada <strong>operació</strong> té una signatura que en descriu els eventuals paràmetres i el seu valor de retorn. Els paràmetres tenen nom, tipus, multiplicitat i direcció (que indica si el paràmetre és d’entrada, de sortida, o d’entrada i sortida alhora). El valor de retorn, si n’hi ha, només té tipus i multiplicitat.
+</p>
+
+<p>
+Les operacions poden tornar excepcions durant la seva execució. Una <strong>excepció</strong> és una instància d’un classificador que és el seu tipus. El fet que una operació torni una excepció normalment denota que s’ha produït una anomalia en l’execució.
+</p>
+
+<p>
+Per exemple, un possible mètode de la classe <code>Persona</code> podria ser <code>CalcularEdat</code>, que retorna un enter.
+</p>
+
+<p>
+A la <span class="figref"><a href="#Figure7"><span>figura</span></a></span>, es mostra un breu exemple d’una classe i com es representaria.
+</p>
+<div class="iocfigure"><a name="Figure7"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Exemple de representació d’una classe
+
+</figcaption><img src="../media/ic10m05u3_07.png" alt="" /></figure>
+</div>
+<p>
+Aquesta representació mostra un rectangle que està dividit en tres files:
+</p>
+<ul>
+<li class="level1"><div class="li"> A la primera s’indica el nom de la classe.</div>
+</li>
+<li class="level1"><div class="li"> A la segona s’indiquen els atributs que donen les característiques a la classe. Caldrà també indicar la seva visibilitat.</div>
+</li>
+<li class="level1"><div class="li"> A la tercera s’indiquen els mètodes o les operacions amb la seva declaració i visibilitat.</div>
+</li>
+</ul>
+
+<p>
+El codi que es generaria a partir de la classe <code>Persona</code> de la <span class="figref"><a href="#Figure7"><span>figura</span></a></span> seria:
+</p>
+<pre class="code">Class Persona{
+{
+     // atributs
+     private String nom;
+     private String dni;
+     private String adreca;
+     private String telefon;
+     private date dataNaixement;
+     // constructor
+     public Persona(String nom, String dni, string adreca, string telefon, date dataNaixement{
+  	   this.nom = nom;
+  	   this.dni = dni;
+  	   this.adreca= adreca;
+  	   this.telefon = telefon;
+  	   this.dataNaixement = dataNaixement;
+     }
+     // mètodes o operacions
+     public integer CalcularEdat() {
+          Date dataActual = new Date();
+          SimpleDateFormat format = new SimpleDateFormat(&quot;dd/MM/yyyy&quot;);
+          String _dataActual = formato.format(dataActual);
+          String _dataNaixement = formato.format(dataNaixement);
+
+          String[] dataInici = _dataNaixement.split(&quot;/&quot;);
+          String[] dataFi = _dataActual.split(&quot;/&quot;);
+
+          int anys = Integer.parseInt(dataFi[2]) - Integer.parseInt(dataInici[2]);
+          int mes = Integer.parseInt(dataFi[1]) - Integer.parseInt(dataInici[1]);
+          if (mes &lt; 0) {
+               anys = anys - 1;
+          } else if (mes == 0) {
+               int dia = Integer.parseInt(dataFi[0]) - Integer.parseInt(dataInici[0]);
+               if (dia &gt; 0) anys = anys - 1;
+          }
+          return anys;
+     }
+}</pre>
+
+</div>
+
+<h4><a id="la_visibilitat" >La visibilitat</a></h4>
+<div class="level4">
+<div class="iocimportant"><div class="ioccontent">
+<p>
+La <strong>visibilitat</strong> d’un atribut o d’una operació definirà l’àmbit des del qual podran ser utilitzats aquests elements. Aquesta característica està directament relacionada amb el concepte d’orientació a objectes anomenat <em>encapsulació</em>, mitjançant el qual es permet als objectes decidir quina de la seva informació serà més o menys pública per a la resta d’objectes.
+</p>
+</div></div><div class="ioctext"><div class="ioccontent"><p class="ioctitle">Exemple de visibilitat</p>
+<p>
+Una classe és un espai de noms per a les seves variables i mètodes; per exemple, un mètode de visibilitat <code>#</code> només pot ser invocat des de mètodes que formin part de la mateixa classe o d’alguna de les seves especialitzacions eventuals.
+</p>
+</div></div>
+<p>
+Les possibilitats per a la visibilitat, tant d’atributs com de mètodes, són:
+</p>
+<ul>
+<li class="level1"><div class="li"> <code>+</code> en UML,  o <code>public</code>, que vol dir que l’element és accessible per tots els altres elements del sistema.</div>
+</li>
+<li class="level1"><div class="li"> <code>-</code>  en UML, o <code>private</code>, que significa que l’element només és accessible pels elements continguts dins el mateix objecte.</div>
+</li>
+<li class="level1"><div class="li"> <code>#</code> en UML,  o <code>protected</code>, que vol dir que l’element només és visible per als elements del seu mateix objecte i per als elements que pertanyen a objectes que són especialitzacions. </div>
+</li>
+<li class="level1"><div class="li"> <code>~</code> en UML,  o <code>package</code>, que només es pot aplicar quan l’objecte no és un paquet, i aleshores vol dir que l’element només és visible per als elements continguts directament o indirectament dins el paquet que conté directament l’objecte.</div>
+</li>
+</ul>
+
+<p>
+Per mostrar un exemple de la visibilitat, es mostra a continuació el codi de la classe <code>Habitació</code>, la classe <code>Persona</code> i la classe <code>Test</code>. Cadascuna de les classes té els seus atributs i els seus mètodes. Alguns d’aquests elements seran públics o privats, oferint les característiques que s’indiquen en finalitzar el codi.
+</p>
+<pre class="code">public class Habitacio {
+  	private String dataEntrada;
+  	private String dataSortida;
+  	private Persona client;
+  	
+  	public Habitacio (String dataEntrada, String dataSortida, String nom) {
+  		 this.dataEntrada = dataEntrada;
+  		 this.dataSortida = dataSortida;
+  		 client = new Persona(nom);
+  	}
+  	public String getDataEntrada() {
+  		 return dataEntrada;
+  	}
+  	public String getDataSortida() {
+  		 return dataSortida;
+  	}
+  	public Persona getClient() {
+  		 return client;
+  	}
+ }
+class Persona{
+  	private String nom;
+  	
+  	public Persona(String nom) {
+  		 this.nom = nom;
+  	}
+  	public String getNom() {
+  		 return nom;
+  	}
+  	public void setNom(String nom) {
+  		 this.nom = nom;
+  	}
+}
+public class Test {
+  	public static void main(String[] args) {
+  		 Habitacio reserva = new Habitacio (&quot;24/011/2012&quot;, &quot;28/11/2012&quot;, &quot;Joan Garcia&quot;);
+  		 Persona client = reserva.getClient();
+  		 String nom = reserva.getClient().getNom();
+  	}
+}</pre>
+
+<p>
+Caldria fixar-se en el mètode <code>reserva.getClient()</code>, que únicament té visibilitat als atributs i als mètodes públics de la classe <code>Persona</code>, és a dir, pot consultar el nom de la persona a través del mètode públic <code>getNom</code> però no pot accedir a l’atribut privat <code>nom</code>.
+</p>
+
+<p>
+
+</p>
+
+<p>
+D’altra banda, els mètodes <code>getNom</code> i <code>setNom</code> de la classe <code>Persona</code> tenen visibilitat als atributs i als mètodes privats de la classe, amb la qual cosa, poden accedir a l’atribut privat <code>nom</code>.
+</p>
+
+</div>
+
+<h4><a id="objectes_instanciacio" >Objectes. Instanciació</a></h4>
+<div class="level4">
+
+<p>
+Un objecte és una instanciació d’una classe. El concepte <em>instanciació</em> indica l’acció de crear una instància d’una classe.
+</p>
+
+<p>
+La creació d’una instància d’una classe es refereix a fer una crida al mètode constructor d’una classe en temps d’execució d’un programari.
+</p>
+<div class="iocimportant"><div class="ioccontent">
+<p>
+Un <strong>objecte</strong> es pot definir, llavors, com una unitat de memòria relacionada que, en temps d’execució, du a terme accions dintre un programari. És quelcom que es pot distingir i que té una existència pròpia, ja sigui de forma conceptual o de forma física.
+</p>
+</div></div>
+<p>
+Un objecte pot pertànyer a més d’una classe, però només d’una d’elles es poden crear objectes directament: la resta de classes representen només papers que pot exercir l’objecte. 
+</p>
+
+<p>
+Un possible objecte de la classe <code>Persona</code> podria ser el que es mostra a la <span class="figref"><a href="#Figure8"><span>figura</span></a></span>.
+</p>
+<div class="iocfigure"><a name="Figure8"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Exemple d’un objecte de la classe <code>Persona</code>
+
+</figcaption><img src="../media/ic10m05u3_08.png" alt="" /></figure>
+</div>
+<p>
+El codi per crear un objecte o instància es mostra tot seguit: 
+</p>
+<pre class="code">public static void main(String[] args) {
+      Persona Joan = new Persona(&quot;Joan Garcia&quot;,&quot;40782949&quot;,&quot;C/Casanoves 130&quot;, &quot;93 2983924&quot;, 25/03/1977);
+}</pre>
+
+<p>
+Un aspecte característic dels objectes és que tenen identitat, cosa que significa que dos objectes creats per separat sempre es consideren diferents, encara que tinguin els mateixos valors a les característiques estructurals.
+</p>
+
+<p>
+En canvi, les instàncies de segons quins classificadors no tenen identitat i, aleshores, dues instàncies amb els mateixos valors a les característiques estructurals es consideren com una mateixa instància. Aquest fet es representa a la <span class="figref"><a href="#Figure9"><span>figura</span></a></span>.
+</p>
+<div class="iocfigure"><a name="Figure9"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Instanciació d’objectes de la classe <code>Persona</code>
+
+</figcaption><img src="../media/ic10m05u3_09.png" alt="" /></figure>
+</div>
+</div>
+
+<h4><a id="relacions_herencia_composicio_agregacio" >Relacions. Herència, composició, agregació</a></h4>
+<div class="level4">
+<div class="iocimportant"><div class="ioccontent">
+<p>
+Les <strong>relacions</strong> són elements imprescindibles en un diagrama de classes. Per relació s’entén que un objecte <code>obj1</code> demani a un altre <code>obj2</code>, mitjançant un missatge, que executi una operació de les definides en la classe de l&#039;<code>obj2</code>.
+</p>
+</div></div>
+<p>
+En l’exemple d’un client que reserva una habitació d’hotel es pot observar que intervenen dues classes, <code>Persona</code> i <code>Habitació</code>, que estan relacionades, on la classe <code>Habitació</code> consulta el nom del client corresponent a la classe <code>Persona</code>. Es veu representat a la <span class="figref"><a href="#Figure10"><span>figura</span></a></span>.
+</p>
+<div class="iocfigure"><a name="Figure10"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Relació entre classes
+
+</figcaption><img src="../media/ic10m05u3_10.png" alt="" /></figure>
+</div>
+<p>
+Les relacions que existeixen entre les diferents classes s’anomenen de forma genèrica <strong>associacions</strong>.
+</p>
+<div class="iocimportant"><div class="ioccontent">
+<p>
+Una <strong>associació</strong> és un classificador que defineix una relació entre diversos classificadors, que estableix connexions amb un cert significat entre les instàncies respectives.
+</p>
+</div></div><div class="ioctext"><div class="ioccontent"><p class="ioctitle">Classificador</p>
+<p>
+Un classificador és un tipus els valors del qual tenen en comú característiques estructurals i de comportament, que són elements que es defineixen a nivell del classificador. Cadascun d’aquests valors és una instància del classificador. 
+</p>
+</div></div>
+<p>
+Una associació té diversos <strong>extrems d’associació</strong>, a cadascun dels quals hi ha un classificador que té un cert paper en l’associació; un classificador pot ser en més d’un extrem de la mateixa associació amb papers diferents.
+</p>
+
+<p>
+Una associació amb dos extrems es diu que és binària; seria el cas de l’exemple d’un client que reserva una habitació d’hotel. Una associació amb tres extrems es diu que és ternària. Es pot veure un exemple d’una associació ternària a la <span class="figref"><a href="#Figure11"><span>figura</span></a></span>.
+</p>
+<div class="iocfigure"><a name="Figure11"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Associació ternària
+
+</figcaption><img src="../media/ic10m05u3_11.png" alt="" /></figure>
+</div>
+<p>
+La <strong>multiplicitat</strong>, representada per uns valors <code>&lt;min….max&gt;</code>, indica el nombre màxim d’enllaços possibles que es podran donar en una relació. Aquesta multiplicitat no podrà ser mai negativa, essent, a més a més, el valor màxim sempre més gran o igual al valor mínim. A la <span class="figref"><a href="#Figure12"><span>figura</span></a></span> es pot veure un exemple de la representació d’una associació entre dues classes amb la indicació de la seva multiplicitat.
+</p>
+<div class="iocfigure"><a name="Figure12"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Associació amb multiplicitat
+
+</figcaption><img src="../media/ic10m05u3_12.png" alt="" /></figure>
+</div>
+<p>
+Concretament, indica que, en l’associació <code>Préstec</code>, per a cada objecte de la classe <code>Lector</code> podrà haver-hi, com a mínim 0 objectes de la classe <code>Llibre</code> i, com a màxim, 3 objectes. En canvi per a cada objecte de la classe <code>Llibre</code> podrà haver-hi, com a mínim 0 i com a màxim 1 objecte de la classe <code>Lector</code>.
+</p>
+
+<p>
+Es poden trobar diferents tipus de relacions entre classes. Aquestes es poden classificar de moltes formes. A continuació, es mostra una classificació de les relacions:
+</p>
+<ul>
+<li class="level1"><div class="li"> Relació d’associació</div>
+</li>
+<li class="level1"><div class="li"> Relació d’associació d’agregació</div>
+</li>
+<li class="level1"><div class="li"> Relació d’associació de composició</div>
+</li>
+<li class="level1"><div class="li"> Relacions de dependència</div>
+</li>
+<li class="level1"><div class="li"> Relació de generalització</div>
+</li>
+</ul>
+
+<p>
+<strong>1)</strong> La <strong>relació d’associació</strong> es representa mitjançant una línia contínua sense fletxes ni cap altre símbol als extrems. És el tipus de relació (anomenada de forma genèrica associació) que s’ha estat explicant fins al moment. És un tipus de relació estructural que defineix les connexions entre dos o més objectes, la qual cosa permet associar objectes que instancien classes que col·laboren entre si. 
+</p>
+
+<p>
+<strong>2)</strong> Una <strong>relació d’associació d’agregació</strong> és un cas especial d’associació entre dos o més objectes. Es tracta d’una relació del tipus tot-part. Aquest tipus de relació implica dos tipus d’objectes, l’objecte anomenat base i l’objecte que estarà inclòs a l’objecte base. La relació indica que l’objecte base necessita de l’objecte inclòs per poder existir i fer les seves funcionalitats. Si desapareix l’objecte base, el o els objectes que es troben inclosos en l’objecte base no desapareixeran i podran continuar existint amb les seves funcionalitats pròpies. La relació d’associació d’agregació es representa mitjançant una línia contínua que finalitza en un dels extrems per un rombe buit, sense omplir. El rombe buit s’ubicarà a la part de l’objecte base. A la <span class="figref"><a href="#Figure13"><span>figura</span></a></span> es pot observar un exemple de relació d’associació d’agregació. L’objecte base és l’objecte anomenat <code>Fruiteria</code>. Els objectes inclosos a la fruiteria són: <code>Pomes</code>, <code>Taronges</code>, <code>Peres</code> i <code>Maduixes</code>. S’estableix una relació entre aquestes classes del tipus tot-part, on les fruites són part de la fruiteria. Això sí, si la fruiteria deixa d’existir, les fruites continuen existint.
+</p>
+<div class="iocfigure"><a name="Figure13"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Relació d’associació d’agregació
+
+</figcaption><img src="../media/ic10m05u3_13.png" alt="" /></figure>
+</div>
+<p>
+<strong>3)</strong> Una <strong>relació d’associació de composició</strong> és també un cas especial d’associació entre dos o més objectes. És una relació del tipus tot-part. És una relació molt semblant a la relació d’associació d’agregació, amb la diferència que hi ha una dependència d’existència entre l’objecte base i l’objecte (o els objectes) que hi està inclòs. És a dir, si deixa d’existir l’objecte base, deixarà d’existir també el o els objectes inclosos. El temps de vida de l’objecte inclòs depèn del temps de vida de l’objecte base. La relació d’associació de composició es representa mitjançant una línia contínua finalitzada en un dels extrems per un rombe pintat, omplert. El rombe pintat s’ubicarà a la part de l’objecte base. A la <span class="figref"><a href="#Figure14"><span>figura</span></a></span> es mostra un exemple d’una relació d’agregació. L’objecte base <code>Mà</code> es compon dels objectes inclosos <code>Menovell</code>, <code>Anular</code>, <code>Cor</code>, <code>Índex</code> i <code>Polze</code>. Sense l’objecte <code>Mà</code> la resta d’objectes deixaran d’existir.
+</p>
+<div class="iocfigure"><a name="Figure14"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Relació d’associació de composició
+
+</figcaption><img src="../media/ic10m05u3_14.png" alt="" /></figure>
+</div>
+<p>
+<strong>4)</strong> Un altre tipus de relació entre classes és la <strong>relació de dependència</strong>. Aquest tipus de relació es representa mitjançant una fletxa discontínua entre dos elements. L’objecte del qual surt la fletxa es considera un objecte dependent. L’objecte al qual arriba la fletxa es considera un objecte independent. Es tracta d’una relació semàntica. Si hi ha un canvi en l’objecte independent, l’objecte dependent es veurà afectat.
+</p>
+
+<p>
+<strong>5)</strong> <strong>La relació de generalització</strong> es dóna entre dues classes on hi ha un vincle que es pot considerar d’herència. Una classe és anomenada classe <em>mare</em> (o superclasse). L’altra (o les altres) són les anomenades classes <em>filles</em> o subclasses, que hereten els atributs i els mètodes i comportament de la classe <em>mare</em>. Aquest tipus de relació queda especificat mitjançant una fletxa que surt de la classe <em>filla</em> i que acaba a la classe <em>mare</em>. A la <span class="figref"><a href="#Figure15"><span>figura</span></a></span> es pot veure un exemple on l’element <code>actor</code> és independent. Hi ha una dependència normal de l’element <code>pel·lícula</code> en relació amb l’element <code>actor</code>, ja que <code>actor</code> es fa servir com a paràmetre als mètodes <code>afegir</code> i <code>eliminar</code> de <code>pel·lícula</code>. Si hi ha canvis a <code>actor</code>, l’objecte <code>pel·lícula</code> es veurà afectat.
+</p>
+<div class="iocfigure"><a name="Figure15"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Relació de dependència
+
+</figcaption><img src="../media/ic10m05u3_15.png" alt="" /></figure>
+</div>
+<p>
+L’herència es dóna a partir d’aquestes relacions de dependència. Ofereixen com a punt fort la possibilitat de reutilitzar part del contingut d’un objecte (el considerat superclasse), estenent  els seus atributs i els seus mètodes a l’objecte <em>fill</em>. A la <span class="figref"><a href="#Figure16"><span>figura</span></a></span> es pot veure un exemple d’herència.
+</p>
+<div class="iocfigure"><a name="Figure16"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Relació d’herència
+
+</figcaption><img src="../media/ic10m05u3_16.png" alt="" /></figure>
+</div>
+</div>
+
+<h4><a id="classe_associativa" >Classe associativa</a></h4>
+<div class="level4">
+
+<p>
+Quan una associació té propietats o mètodes propis es representa com una classe unida a la línia de l’associació per mitjà d’una línia discontínua. Tant la línia com el rectangle de classe representen el mateix element conceptual: l’associació.
+</p>
+
+<p>
+En el cas de l’exemple de la <span class="figref"><a href="#Figure17"><span>figura</span></a></span> ens trobem que la nota està directament relacionada amb les classes <code>Estudiant</code> i <code>Assignatura</code>. Cada un dels alumnes de l’assignatura tindrà una determinada nota. La manera de modelitzar l’UML aquesta situació és amb les classes associades. 
+</p>
+<div class="iocfigure"><a name="Figure17"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Exemple de classe associativa
+
+</figcaption><img src="../media/ic10m05u3_17.png" alt="" /></figure>
+</div>
+</div>
+
+<h4><a id="interficie" >Interfície</a></h4>
+<div class="level4">
+
+<p>
+Una <strong>interfície</strong> conté la declaració de les operacions sense la seva implementació, que hauran de ser implementades per una classe o component.
+</p>
+
+<p>
+Arribats a aquest punt, ens podríem preguntar: Quina diferència hi ha entre una interfície i una classe abstracta?
+</p>
+
+<p>
+
+</p>
+
+<p>
+Una interfície és simplement una llista de mètodes no implementats, així com la declaració de possibles constants. Una classe abstracta, a diferència de les interfícies, pot incloure mètodes implementats i no implementats. A la <span class="figref"><a href="#Figure18"><span>figura</span></a></span> es mostra un exemple d’una interfície representada en UML.
+</p>
+<div class="iocfigure"><a name="Figure18"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Interfície en UML
+
+</figcaption><img src="../media/ic10m05u3_18.png" alt="" /></figure>
+</div>
+<p>
+Aquesta interfície s’anomena ICalculadora, i conté els mètodes <code>suma</code>, <code>resta</code>, <code>multiplicacio</code> i <code>divisio</code>.
+</p>
+
+<p>
+En el codi següent es mostra la definició d’aquesta interfície a partir de la <span class="figref"><a href="#Figure18"><span>figura</span></a></span>.
+</p>
+<pre class="code">interface ICalculadora {
+    public abstract int suma (int x, int y);
+    public abstract int resta (int x, int y);
+    public abstract int multiplicacio (int x, int y);
+    public abstract int divisio (int x, int y);
+}</pre>
+
+<p>
+
+</p>
+
+<p>
+Una vegada definida es mosta com serà la utilització de la interfície definida en el codi següent.
+</p>
+<pre class="code">public class Calculadora implements ICalculadora {
+        public int suma (int x, int y){
+            return x + y;
+        }
+        public int resta (int x, int y){
+            return x - y;
+        }
+        public int multiplicacio (int x, int y){
+            return x * y;
+        }
+        public int divisio (int x, int y){
+            return x / y;
+        }
+}</pre>
+
+</div>
+
+<h3><a id="diagrama_d_objectes" >Diagrama d&#039;objectes</a></h3>
+<div class="level3">
+
+<p>
+Un <strong>objecte</strong> és una instància d’una classe, per la qual cosa es pot considerar el diagrama d’objectes com una instància del diagrama de classes.
+</p>
+<div class="iocimportant"><div class="ioccontent">
+<p>
+El <strong>diagrama d’objectes</strong> només pot contenir instàncies i relacions entre objectes: enllaços i dependències que tinguin lloc entre instàncies. Els classificadors i les associacions respectives han d’haver estat definits prèviament en un diagrama de classes.
+</p>
+</div></div>
+<p>
+Sovint té la funció de simple exemple d’un diagrama de classes o d’una part d’ell.
+</p>
+
+<p>
+A la <span class="figref"><a href="#Figure19"><span>figura</span></a></span> es mostra un diagrama de classes consistent en dues classes, la classe <code>Habitació</code> i la classe <code>Persona</code>. A partir d’aquest diagrama es crea i es mostra el diagrama d’objectes a la mateixa <span class="figref"><a href="#Figure19"><span>figura</span></a></span>.
+</p>
+<div class="iocfigure"><a name="Figure19"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Diagrama d’objectes
+
+</figcaption><img src="../media/ic10m05u3_19.png" alt="" /></figure>
+</div>
+</div>
+
+<h3><a id="diagrama_de_paquets" >Diagrama de paquets</a></h3>
+<div class="level3">
+
+<p>
+Els <strong>paquets</strong> permeten organitzar els elements del model en grups relacionats semànticament; un paquet no té un significat per si mateix.
+</p>
+<div class="iocimportant"><div class="ioccontent">
+<p>
+El <strong>diagrama de paquets</strong> serveix per descriure l’estructura d’un model en termes de paquets interrelacionats.
+</p>
+</div></div>
+<p>
+A la <span class="figref"><a href="#Figure20"><span>figura</span></a></span> es mostra un exemple de diagrama de paquets. S’hi ha representat un paquet, <code>Diagrames</code>, que conté dos paquets: <code>estàtic o d’estructura</code> i <code>dinàmic o de comportament</code>.
+</p>
+<div class="iocfigure"><a name="Figure20"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Diagrama de paquets
+
+</figcaption><img src="../media/ic10m05u3_20.png" alt="" /></figure>
+</div>
+</div>
+
+<h3><a id="diagrama_d_estructures_compostes" >Diagrama d&#039;estructures compostes</a></h3>
+<div class="level3">
+<div class="iocimportant"><div class="ioccontent">
+<p>
+Una <strong>estructura composta</strong> és un conjunt d’elements interconnectats que col·laboren en temps d’execució per aconseguir algun propòsit.
+</p>
+</div></div>
+<p>
+La finalitat del diagrama d’estructures compostes és descriure objectes compostos amb la màxima precisió possible. Es tracta d’un diagrama que complementa el diagrama de classes.
+</p>
+
+<p>
+A continuació es descriurà, fent ús d’un exemple, el concepte del diagrama d’estructures compostes.
+</p>
+
+<p>
+Si es vol modelitzar un sistema que té una videoconsola i una minicadena, ambdues estan compostes per una CPU (Unitat Central de Procés), però en la videoconsola la CPU processa el joc que serà visualitzat en algun dispositiu de sortida (com, per exemple, un televisor) i, en el segon cas, la CPU processa la música perquè pugui ser escoltada.
+</p>
+
+<p>
+
+</p>
+
+<p>
+Una possible forma de modelitzar el sistema podria ser la que  mostra la <span class="figref"><a href="#Figure21"><span>figura</span></a></span>.
+</p>
+<div class="iocfigure"><a name="Figure21"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Diagrama de classes-composició
+
+</figcaption><img src="../media/ic10m05u3_21.png" alt="" /></figure>
+</div>
+<p>
+Però si es revisa amb detall el diagrama de la <span class="figref"><a href="#Figure21"><span>figura</span></a></span> es pot observar que té deficiències, ja que fàcilment es pot interpretar que la CPU de la minicadena pot processar música i jocs.
+</p>
+
+<p>
+UML 2.0 ha introduït un nou diagrama, anomenat <em>diagrama d’estructura composta</em>, que permet concretar les parts que componen una classe. Aquest permetrà representar el sistema amb el diagrama que es mostra en la <span class="figref"><a href="#Figure22"><span>figura</span></a></span>, que delimita l’abast de la videoconsola i de la minicadena.
+</p>
+<div class="iocfigure"><a name="Figure22"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Diagrama d’estructura composta
+
+</figcaption><img src="../media/ic10m05u3_22.png" alt="" /></figure>
+</div>
+</div>
+
+<h3><a id="diagrama_de_components" >Diagrama de components</a></h3>
+<div class="level3">
+
+<p>
+Un <strong>component</strong> és una peça del programari que conforma el sistema, peça que pot ser reutilitzable i fàcilment substituïble.
+</p>
+<div class="ioctext"><div class="ioccontent"><p class="ioctitle">Interfície</p>
+<p>
+Una interfície conté la declaració de les operacions sense la seva implementació, les quals hauran de ser implementades per una classe o component.
+</p>
+</div></div>
+<p>
+Un component sol fer ús d’una interfície que defineix les operacions que el component implementarà.
+</p>
+
+<p>
+El <strong>diagrama de components</strong> mostra els components que conformen el sistema i com es relacionen entre si. A la <span class="figref"><a href="#Figure23"><span>figura</span></a></span> es pot veure un exemple d’un diagrama de components.
+</p>
+<div class="iocfigure"><a name="Figure23"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Diagrama de components
+
+</figcaption><img src="../media/ic10m05u3_23.png" alt="" /></figure>
+</div>
+</div>
+
+<h3><a id="diagrama_de_desplegament" >Diagrama de desplegament</a></h3>
+<div class="level3">
+<div class="iocimportant"><div class="ioccontent">
+<p>
+El <strong>diagrama de desplegament</strong> descriu la distribució de les parts d’una aplicació i les seves interrelacions, tot en temps d’execució.
+</p>
+</div></div>
+<p>
+El diagrama de desplegament descriu la configuració d’un sistema de programari en temps d’execució, en termes de recursos de maquinari i dels components de programari, processos i objectes (en memòria o emmagatzemats en bases de dades, per exemple) que s’hi hostatgen.
+</p>
+
+<p>
+Tot seguit es mostren diversos exemples de diagrames de desplegament.
+</p>
+
+<p>
+
+</p>
+
+<p>
+En la <span class="figref"><a href="#Figure24"><span>figura</span></a></span> hi ha els nodes <code>Servidor</code> i <code>Client</code>, considerats a nivell de classificador, i una línia de comunicacions. En aquesta, cada instància de Client pot bescanviar informació només amb una instància de <code>Servidor</code>, mentre que una instància de <code>Servidor</code> en pot bescanviar informació almenys amb una instància de <code>Client</code>, però podrà fer-ho amb més.
+</p>
+<div class="iocfigure"><a name="Figure24"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Nodes i línia de comunicacions
+
+</figcaption><img src="../media/ic10m05u3_24.png" alt="" /></figure>
+</div>
+<p>
+Que un artefacte es desplegui dins d’un node es pot representar, o bé incloent el símbol de l’artefacte dins el del node, o bé amb el desplegament de l’artefacte cap al node. La <span class="figref"><a href="#Figure25"><span>figura</span></a></span> mostra un exemple de cada opció, la primera amb instàncies i la segona amb classificadors.
+</p>
+<div class="iocfigure"><a name="Figure25"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Un desplaçament i els seus elements
+
+</figcaption><img src="../media/ic10m05u3_25.png" alt="" /></figure>
+</div>
+</div>
+
+<h2><a id="modelio_i_umlnotacio_dels_diagrames_de_classes" >Modelio i UML: notació dels diagrames de classes</a></h2>
+<div class="level2">
+
+<p>
+
+</p>
+
+<p>
+
+<p>
+Per poder entendre millor els diagrames de classes i la seva notació, es mostra a continuació un exemple complet. A més a més, s’ha fet servir l’entorn de modelatge Modelio per a la creació d’aquests diagrames UML. Aquest entorn està especialitzat en el modelatge amb UML i altres llenguatges gràfics. També permet tant generar codi a partir dels diagrames com generar diagrames a partir de codi font. L’entorn Modelio ha estat implementat a partir de l’IDE Eclipse.
+</p>
+
+<p>
+La pàgina web de l’entorn Modelio és <a href="https://www.modelio.org/" class="urlextern" title="https://www.modelio.org/"  rel="nofollow">www.modelio.org</a>. Podeu descarregar-vos l’instal·lable des de l’apartat <em>Downloads</em>. Veureu que els requisits (que s’enllacen a la mateixa pàgina) no són gaire exigents. L’entorn Modelio pot utilitzar-se des dels sistemes operatius Windows, Linux i MacOS X. En aquest darrer cas, no existeix programa d’instal·lació i aquesta es limita a descomprimir els fitxers. 
+Es farà servir el format d’exercici per oferir les indicacions, pas a pas, de com crear un diagrama de classes a partir dels requeriments d’un enunciat.
+</p>
+
+</p>
+<div class="iocexample"><div class="ioccontent"><p class="ioctitle">Enunciat de l&#039;exemple</p>
+<p>
+Les factures dels proveïdors d’una empresa poden ser de proveïdors de serveis o de proveïdors de productes o materials. Cadascuna de les factures, de qualsevol dels dos tipus, tenen en comú:
+</p>
+<ul>
+<li class="level1"><div class="li"> El número de la factura.</div>
+</li>
+<li class="level1"><div class="li"> La data de la factura.</div>
+</li>
+<li class="level1"><div class="li"> L’import total –que es calcula de manera diferent en les unes que en les altres-.</div>
+</li>
+<li class="level1"><div class="li"> Les dades del client, que són el NIF i el nom, i que s’hauran de trobar en una classe a part. </div>
+</li>
+<li class="level1"><div class="li"> El detall de la factura (tant si és de materials com si és de serveis).</div>
+</li>
+</ul>
+
+<p>
+Tant per a les factures de serveis com per a les factures de productes o materials cal tenir guardada la darrera factura emesa, per tenir present el número de factura. Hi ha una llista de serveis amb la descripció i el preu per hora de cadascun. 
+</p>
+
+<p>
+En el detall de les factures haurà d’haver-hi:
+</p>
+<ul>
+<li class="level1"><div class="li"> A les factures de serveis, a cada factura hi ha una llista de serveis amb la data de prestació, el nombre d’hores dedicades i el preu/hora per servei. En una factura hi pot haver més d’una prestació del mateix servei.</div>
+</li>
+<li class="level1"><div class="li"> A les factures de productes, per a cada producte (a cada factura n’hi ha almenys un) haurà d’haver-hi la descripció, el preu unitari i la quantitat.</div>
+</li>
+</ul>
+</div></div>
+</div>
+
+<h3><a id="creacio_del_projecte" >Creació del projecte</a></h3>
+<div class="level3">
+
+<p>
+
+<p>
+El primer cop que obriu el programa, us apareixerà una finestra de benvinguda. Podeu tancar-la després de, opcionalment, explorar les opcions que ofereix. 
+</p>
+
+<p>
+Un cop tancada aquesta finestra, cal seguir les següents passes:
+</p>
+<ul>
+<li class="level1"><div class="li"> Seleccioneu l’opció del menú <em>File</em> / <em>Create a Project…</em> tal com es mostra a la <span class="figref"><a href="#fig118"><span>figura</span></a></span>.</div>
+</li>
+</ul>
+
+<p>
+<div class="iocfigurec">
+<ul>
+<li>
+<img src="../media/ic10m05u3_120.png" class="imgB" title="De manera alternativa, també es pot crear un projecte fent clic a la icona de Crear Projecte" alt="De manera alternativa, també es pot crear un projecte fent clic a la icona de Crear Projecte" /></li><li><small>De manera alternativa, també es pot crear un projecte fent clic a la icona de Crear Projecte</small></li>
+</ul></div>
+
+</p>
+<div class="iocfigure"><a name="fig118"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Opció Create a Project…
+
+</figcaption><img src="../media/ic10m05u3_118.png" alt="" /></figure>
+</div><ul>
+<li class="level1"><div class="li"> Ens apareixerà una finestra com la que ens mostra la <span class="figref"><a href="#fig128"><span>figura</span></a></span>. Entreu-hi el nom, si voleu, una descripció i feu clic al botó <em>Create the projecte</em></div>
+</li>
+</ul>
+<div class="iocnote"><div class="ioccontent">
+<p>
+L’opció <em>Java project</em> activa el dissenyador Java. La seva finalitat és tenir sincronitzat el codi Java amb els diagrames UML. En aquest exemple no utilitzarem aquesta opció.
+</p>
+</div></div><div class="iocfigure"><a name="fig128"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Definició del projecte
+
+</figcaption><img src="../media/ic10m05u3_128.png" alt="" /></figure>
+</div>
+<p>
+La pantalla resultant es mostra a la <span class="figref"><a href="#Figure26"><span>figura</span></a></span>
+</p>
+<div class="iocfigure"><a name="Figure26"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Projecte nou
+
+</figcaption><img src="../media/ic10m05u3_125.png" alt="" /></figure>
+</div>
+</p>
+
+</div>
+
+<h3><a id="creacio_del_diagrama_de_classes" >Creació del diagrama de classes</a></h3>
+<div class="level3">
+
+<p>
+
+</p>
+
+<p>
+
+<p>
+Un cop creat el projecte <em>Factura</em>, a la mateixa pantalla que mostra la <span class="figref"><a href="#Figure26"><span>figura</span></a></span>, podem crear un diagrama de classes seguint les següents passes:
+</p>
+<ul>
+<li class="level1"><div class="li"> Fer clic als triangles que hi ha a l’esquerra de les icones, de manera que aparegui la icona amb forma de carpeta que representa el projecte, tal com es mostra a la <span class="figref"><a href="#fig129"><span>figura</span></a></span>. </div>
+</li>
+</ul>
+<div class="iocfigure"><a name="fig129"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Accés a la carpeta que representa el projecte
+
+</figcaption><img src="../media/ic10m05u3_129.png" alt="" /></figure>
+</div><ul>
+<li class="level1"><div class="li"> Fer clic amb el botó secundari a sobre de la icona que representa el projecte (<em>Factura</em>, al nostre cas) i seleccionar <em>Create diagram…</em>, tal com es mostra a la <span class="figref"><a href="#fig123"><span>figura</span></a></span></div>
+</li>
+</ul>
+<div class="iocfigure"><a name="fig123"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Creació d’un diagrama
+
+</figcaption><img src="../media/ic10m05u3_123.png" alt="" /></figure>
+</div><ul>
+<li class="level1"><div class="li"> Triar el tipus de diagrama que vulguem -<em>Class diagram</em>, al nostre cas-  i fer clic a OK, tal com es mostra a la  <span class="figref"><a href="#fig124"><span>figura</span></a></span></div>
+</li>
+</ul>
+<div class="iocfigure"><a name="fig124"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Selecció del tipus de diagrama a crear
+
+</figcaption><img src="../media/ic10m05u3_124.png" alt="" /></figure>
+</div>
+<p>
+Ens apareix a la finestra principal una pestanya amb el nou diagrama. La <span class="figref"><a href="#fig121"><span>figura</span></a></span> mostra les diferents seccions de la pantalla, un cop creat aquest nou diagrama.
+</p>
+<div class="iocfigure"><a name="fig121"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Seccions d’un diagrama
+
+</figcaption><img src="../media/ic10m05u3_121.png" alt="" /></figure>
+</div>
+<p>
+Per últim, és recomanable deshabilitar la característica <em>Smart links handle</em>, ja que no la utilitzarem i, a més, ens pot dificultar les accions. Es fa de la següent manera:
+</p>
+<ul>
+<li class="level1"><div class="li"> Fer clic a una zona del diagrama on no hi hagi cap element.</div>
+</li>
+<li class="level1"><div class="li"> Fer clic a la columna <em>Symbol</em>, que es troba a la part dreta de la finestra, perquè es desplegui. La <span class="figref"><a href="#fig141"><span>figura</span></a></span> ens mostra les propietats d’aquesta columna. </div>
+</li>
+<li class="level1"><div class="li"> Deshabilitar la propietat <em>Smart links handle</em> i, si volem, tornar a fer clic a la barra superior de la columna <em>Symbol</em> perquè es torni a plegar.</div>
+</li>
+</ul>
+<div class="iocfigure"><a name="fig141"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Propietats de la columna Symbol
+
+</figcaption><img src="../media/ic10m05u3_141.png" alt="" /></figure>
+</div>
+</p>
+
+</div>
+
+<h3><a id="creacio_de_classes_relacio_d_herencia" >Creació de classes. Relació d&#039;herència</a></h3>
+<div class="level3">
+
+<p>
+L’enunciat especifica: “cadascuna de les factures d’una empresa és, o bé una factura de serveis o bé una factura de productes”. Podem observar que es tracta d’una generalització o herència, on la classe pare correspon a <code>Factura</code> i les classes <em>filles</em> a <code>Factura de serveis</code> i <code>Factura de productes</code>.
+</p>
+
+<p>
+
+<p>
+En primer lloc, cal crear les classes. Això es fa:
+</p>
+<ul>
+<li class="level1"><div class="li"> Fent clic a sobre de la icona <em>Class</em>. </div>
+</li>
+<li class="level1"><div class="li"> Fent clic, a continuació, al punt del diagrama on volem inserir la classe.</div>
+</li>
+</ul>
+
+<p>
+<div class="iocfigurec">
+<ul>
+<li>
+<img src="../media/ic10m05u3_133.png" class="imgB" title="Icona Class/-40" alt="Icona Class/-40" /></li><li><small>Icona Class</small></li>
+</ul></div>
+
+</p>
+
+<p>
+Això cal fer-ho per a cadascuna de les tres classes. A la <span class="figref"><a href="#fig39"><span>figura</span></a></span> es mostren aquestes classes. 
+</p>
+<div class="iocfigure"><a name="fig39"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Classes Factura, FacturaServeis i FacturaProducte
+
+</figcaption><img src="../media/ic10m05u3_39.png" align="right" alt="" /></figure>
+</div>
+<p>
+Queda pendent crear la relació d’herència entre les classes. Es fa de la següent manera:
+</p>
+<ul>
+<li class="level1"><div class="li"> Fent clic a la icona <em>Generalization</em>.</div>
+</li>
+<li class="level1"><div class="li"> A continuació, fent clic, <strong>en aquest ordre</strong> a una de les subclasses, per exemple a <code>FacturaServeis</code>, i, després, a la superclasse, <code>Factura</code>. Ens apareixerà una fletxa.</div>
+</li>
+<li class="level1"><div class="li"> Després, fent clic novament a la icona <em>Generalization</em>.</div>
+</li>
+<li class="level1"><div class="li"> Per últim, fent clic a l’altra subclasse, <code>FacturaProductes</code> i, a continuació, a la fletxa que ens ha aparegut al segon pas. Quan passem el ratolí per sobre, veureu que es posa de color verd; això significa que s’hi pot fer clic.</div>
+</li>
+<li class="level1"><div class="li"> Si hi hagués més subclasses, caldria repetir els dos passos anteriors per a cada subclasse.</div>
+</li>
+</ul>
+
+<p>
+<div class="iocfigurec">
+<ul>
+<li>
+<img src="../media/ic10m05u3_134.png" class="imgB" title="Icona Generalization/-60" alt="Icona Generalization/-60" /></li><li><small>Icona Generalization</small></li>
+</ul></div>
+
+</p>
+
+<p>
+El diagrama resultant és el que es mostra en la <span class="figref"><a href="#Figure41"><span>figura</span></a></span>.
+</p>
+<div class="iocfigure"><a name="Figure41"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Relació d’herència entre classes
+
+</figcaption><img src="../media/ic10m05u3_41.png" alt="" /></figure>
+</div>
+<p>
+Per facilitar la realització dels diagrames, pot ser útil conèixer algunes operacions bàsiques que podem realitzar sobre els seus elements:
+</p>
+<ul>
+<li class="level1"><div class="li"> <strong>Seleccionar un element:</strong> n’hi ha prou amb fer-hi clic a sobre o, si volem seleccionar-ne més d’un a la vegada, podem bé fer clic a sobre d’ells, un rera l’altre, mentre mantenim la tecla <em>Ctrl</em> polsada, bé assenyalar, tot arrosegant el ratolí, una àrea que inclogui a tots els elements a seleccionar.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Canviar el nom d’un element:</strong> seleccionarem l’element al qual volem canviar el nom i, a continuació, farem clic a sobre del seu nom; una altra forma de fer-ho és seleccionar l’element i fer clic novament al mateix element; s’obrirà una finestra que ens permetrà canviar les propietats de l’element, entre elles, el nom.</div>
+</li>
+</ul>
+
+</p>
+
+</div>
+
+<h3><a id="creacio_dels_atributs_d_una_classe" >Creació dels atributs d&#039;una classe</a></h3>
+<div class="level3">
+
+<p>
+Si continuem interpretant l’enunciat, ens indica: “les unes i les altres tenen en comú el número, la data i l’import”. D’aquesta manera, els atributs de la classe <code>Factura</code> són: <code>número</code>, <code>data</code> i <code>import</code>. 
+</p>
+
+<p>
+
+<p>
+Modelio permet afegir els atributs a les classes seguint els següents passos:
+</p>
+<ul>
+<li class="level1"><div class="li"> Fer clic a sobre de la icona <em>Attribute</em>.</div>
+</li>
+<li class="level2"><div class="li"> A continuació, fer clic a sobre de la <strong>classe</strong> on volem afegir aquesta propietat.</div>
+</li>
+</ul>
+
+<p>
+<div class="iocfigurec">
+<ul>
+<li>
+<img src="../media/ic10m05u3_131.png" class="imgB" title="Icona Attribute/-25" alt="Icona Attribute/-25" /></li><li><small>Icona Attribute</small></li>
+</ul></div>
+
+</p>
+
+<p>
+En la <span class="figref"><a href="#Figure43"><span>figura</span></a></span> es pot observar com ha de quedar el diagrama de classes.
+</p>
+<div class="iocfigure"><a name="Figure43"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Atributs de la classe Factura
+
+</figcaption><img src="../media/ic10m05u3_43.png" alt="" /></figure>
+</div>
+<p>
+Ara cal especificar, per a cada atribut, el seu tipus i la seva visibilitat. Aquesta darrera, en principi, serà <em>private</em> a tots els casos. Per aconseguir-ho, cal fer doble clic a l’atribut que volem editar. Sortirà una finestra com la que mostra la <span class="figref"><a href="#fig126"><span>figura</span></a></span>.
+</p>
+<div class="iocfigure"><a name="fig126"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Edició d’un Attribute
+
+</figcaption><img src="../media/ic10m05u3_126.png" alt="" /></figure>
+</div>
+<p>
+A la pestanya <em>Properties</em> podrem editar el tipus, la visibilitat i altres característiques, que deixarem amb els seus valors per defecte. En fer-ho, cal tenir en compte el següent:
+</p>
+<ul>
+<li class="level1"><div class="li"> <strong>Tipus (Type):</strong> podem escriure qualsevol dels tipus UML predefinits. Els podeu veure a la pestanya Model de la part esquerra de la pantalla.</div>
+</li>
+<li class="level1"><div class="li"> Després d’entrar el nom del tipus, cal picar la tecla d’introducció per a que el sistema validi el tipus i, a més, enregistri el canvi realitzat. També pot entrar-se el nom del tipus deixant el quadre en blanc o amb la o les primeres lletres del tipus i, a continuació, picar la combinació de les tecles <em>Ctrl</em> i <em>barra espaiadora</em>; això farà apareixer un desplegable amb els tipus que comencen amb les mateixes lletres que hem entrat.</div>
+</li>
+</ul>
+
+<p>
+<div class="iocfigurec">
+<ul>
+<li>
+<img src="../media/ic10m05u3_127.png" class="imgB" title="Tipus UML predefinits/-85" alt="Tipus UML predefinits/-85" /></li><li><small>Tipus UML predefinits</small></li>
+</ul></div>
+
+</p>
+
+</p>
+
+</div>
+
+<h3><a id="creacio_dels_metodes_d_una_classe" >Creació dels mètodes d&#039;una classe</a></h3>
+<div class="level3">
+
+<p>
+L’enunciat ens indica que l’import es calcula de manera diferent en les unes que en les altres, és a dir el càlcul de l’import serà diferent per a la classe <code>FacturaServeis</code> i per a la classe <code>FacturaProductes</code>.
+</p>
+
+<p>
+<div class="iocnote"><div class="ioccontent">
+<p>
+Modelio anomena <em>operations</em> al que per a nosaltres són mètodes.
+</p>
+</div></div>
+<p>
+D’aquesta manera, el mètode <code>CalculImport()</code> de la classe <code>Factura</code> es definirà com un mètode abstracte que serà definit en cada una de les classes filles.
+</p>
+
+<p>
+La definició dels mètodos es fa de manera similar a la dels atributs:
+</p>
+<ul>
+<li class="level1"><div class="li"> Es fa clic a sobre de la icona <em>Operation</em>.</div>
+</li>
+<li class="level1"><div class="li"> Es fa clic a sobre de la classe on volem posar aquest mètode.</div>
+</li>
+</ul>
+
+<p>
+<div class="iocfigurec">
+<ul>
+<li>
+<img src="../media/ic10m05u3_132.png" class="imgB" title="Icona Operation/-25" alt="Icona Operation/-25" /></li><li><small>Icona Operation</small></li>
+</ul></div>
+
+</p>
+
+<p>
+Ara cal indicar el nom del mètode, els paràmetres i el valor de retorn. Es fa des de la finestra d’edició. S’accedeix a ella fent doble clic a sobre del seu nom.
+</p>
+
+<p>
+Ens apareixerà una finestra com la que indica la figura <span class="figref"><a href="#fig122"><span>figura</span></a></span>, amb la pestanya <em>Operation</em> oberta.
+</p>
+<div class="iocfigure"><a name="fig122"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Edició d’un mètode
+
+</figcaption><img src="../media/ic10m05u3_122.png" alt="" /></figure>
+</div>
+<p>
+En ella podrem especificar:
+</p>
+<ul>
+<li class="level1"><div class="li"> el nom</div>
+</li>
+<li class="level1"><div class="li"> la visibilitat</div>
+</li>
+<li class="level1"><div class="li"> si és abstracta</div>
+</li>
+<li class="level1"><div class="li"> si és final</div>
+</li>
+<li class="level1"><div class="li"> els paràmetres</div>
+</li>
+<li class="level1"><div class="li"> el valor de retorn</div>
+</li>
+</ul>
+
+<p>
+Les icones que apareixen a l’apartat <em>Operation parameters</em> ens permeten editar els paràmetres i el valor de retorn. Cadascun té la funció que es mostra a la <span class="figref"><a href="#fig135"><span>figura</span></a></span>.
+</p>
+<div class="iocfigure"><a name="fig135"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Edició dels paràmetres i valor de retorn d’un mètode
+
+</figcaption><img src="../media/ic10m05u3_135.png" alt="" /></figure>
+</div><div class="iocimportant"><div class="ioccontent">
+<p>
+Després d’afegir un mètode a una classe, cal assegurar-se que aquesta té prou amplada per a mostrar tots els seus paràmetres; en cas contrari, cal reajustar la seva mida. Això es fa seleccionant la classe i arrossegant amb el ratolí un dels petits quadres negres que hi apareixen.
+</p>
+</div></div>
+<p>
+<div class="iocfigurec">
+<ul>
+<li>
+<img src="../media/ic10m05u3_119.png" class="imgB" title="Forma del cursor del ratolí quan està a sobre d&#039;un d&#039;aquests requadres negres i indica que es pot reajustar la classe./-25" alt="Forma del cursor del ratolí quan està a sobre d&#039;un d&#039;aquests requadres negres i indica que es pot reajustar la classe./-25" /></li><li><small>Forma del cursor del ratolí quan està a sobre d&#039;un d&#039;aquests requadres negres i indica que es pot reajustar la classe.</small></li>
+</ul></div>
+
+</p>
+
+</p>
+
+<p>
+D’aquesta manera, el diagrama resultant analitzat fins al moment és el que es mostra en la <span class="figref"><a href="#Figure53"><span>figura</span></a></span>.
+</p>
+<div class="iocfigure"><a name="Figure53"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Diagrama de classes
+
+</figcaption><img src="../media/ic10m05u3_53.png" alt="" /></figure>
+</div>
+</div>
+
+<h3><a id="agregacio" >Agregació</a></h3>
+<div class="level3">
+
+<p>
+Seguint amb l’enunciat, es diu: “les dades del client, que són el NIF i el nom, i són en una classe a part”. 
+</p>
+
+<p>
+És necessari crear una nova classe anomenada <code>DadesClient</code>, que contindrà els atributs <code>NIF</code> i <code>nom</code>. Es pot observar el diagrama d’aquesta classe en la <span class="figref"><a href="#Figure54"><span>figura</span></a></span>.
+</p>
+<div class="iocfigure"><a name="Figure54"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Classe DadesClient
+
+</figcaption><img src="../media/ic10m05u3_54.png" alt="" /></figure>
+</div>
+<p>
+
+El tipus d’associació entre la classe <code>Factura</code> i <code>DadesClient</code> és d’agregació, ja que la classe <code>DadesClient</code> és un objecte que únicament podrà ser creat si existeix l’objecte agregat <code>Factura</code> del qual ha de formar part. 
+</p>
+
+<p>
+
+<p>
+Amb Modelio es crea seguint els següents passos:
+</p>
+<ul>
+<li class="level1"><div class="li"> Fer clic a la icona <em>Aggregation</em> de la paleta.</div>
+</li>
+<li class="level1"><div class="li"> Fer clic, en primer lloc, a la classe <code>Factura</code> i, després, a la classe <code>DadesClient</code>.</div>
+</li>
+<li class="level1"><div class="li"> Fer doble clic a la línia que representa l’agregació i editar, segons necessitem, les propietats de l’agregació (especialment, les propietats <em>navegable</em> i les cardinalitats).</div>
+</li>
+<li class="level1"><div class="li"> Si s’hagués d’incloure més classes a l’agregació, caldria:</div>
+<ul>
+<li class="level2"><div class="li"> Fer clic a la icona que representa una associació (<em>Association</em>).</div>
+</li>
+<li class="level2"><div class="li"> Fer clic a la classe que volem afegir a l’agregació.</div>
+</li>
+<li class="level2"><div class="li"> Fer clic a la línia que representa l’agregació.</div>
+</li>
+</ul>
+</li>
+</ul>
+
+<p>
+<div class="iocfigurec">
+<ul>
+<li>
+<img src="../media/ic10m05u3_136.png" class="imgB" title="Icona Aggregation/-130" alt="Icona Aggregation/-130" /></li><li><small>Icona Aggregation</small></li>
+</ul></div>
+
+</p>
+
+<p>
+<div class="iocfigurec">
+<ul>
+<li>
+<img src="../media/ic10m05u3_138.png" class="imgB" title="Icona Association/-40" alt="Icona Association/-40" /></li><li><small>Icona Association</small></li>
+</ul></div>
+
+</p>
+
+</p>
+
+<p>
+El diagrama resultant analitzat fins al moment és el que es mostra en la <span class="figref"><a href="#Figure56"><span>figura</span></a></span>.
+</p>
+<div class="iocfigure"><a name="Figure56"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Diagrama de classes
+
+</figcaption><img src="../media/ic10m05u3_56.png" alt="" /></figure>
+</div>
+<p>
+D’altra banda, l’enunciat especifica: “es guarda, d’una banda, l’últim número de factura de serveis i, de l’altra, l’últim número de factura de productes”.
+</p>
+
+<p>
+És necessari crear un nou atribut ultimNumero en la classe <code>FacturaServeis</code> i en la classe <code>FacturaProductes</code>. 
+</p>
+
+<p>
+El diagrama resultant analitzat fins al moment és el que es mostra en la <span class="figref"><a href="#Figure57"><span>figura</span></a></span>.
+</p>
+<div class="iocfigure"><a name="Figure57"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Diagrama de classes
+
+</figcaption><img src="../media/ic10m05u3_57.png" alt="" /></figure>
+</div>
+</div>
+
+<h3><a id="classe_associada" >Classe associada</a></h3>
+<div class="level3">
+
+<p>
+L’enunciat continua explicant: “Hi ha una llista de serveis amb la descripció i el preu per hora de cadascun”.
+</p>
+
+<p>
+Per tant, és necessari crear una nova classe anomenada <code>Servei</code> que contindrà dos atributs: <code>descripcio</code> i <code>preuHora</code> (preu per hora), com es pot observar en la <span class="figref"><a href="#Figure58"><span>figura</span></a></span>.
+</p>
+<div class="iocfigure"><a name="Figure58"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Classe Servei
+
+</figcaption><img src="../media/ic10m05u3_58.png" alt="" /></figure>
+</div>
+<p>
+L’enunciat continua: “cada factura de serveis té una llista de serveis amb la data de prestació i el nombre d’hores, i en una factura hi pot haver més d’una prestació del mateix servei”. 
+</p>
+
+<p>
+Per tant, és necessari crear una classe associada anomenada <code>Hores</code> que contindrà dos atributs: <code>dataPrestació</code> (data de prestació) i <code>nombre</code> (nombre d’hores), com es pot observar a la <span class="figref"><a href="#Figure59"><span>figura</span></a></span>.
+</p>
+<div class="iocfigure"><a name="Figure59"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Classe Hores
+
+</figcaption><img src="../media/ic10m05u3_59.png" alt="" /></figure>
+</div>
+<p>
+
+<p>
+Ara cal crear l’associació entre les classes:
+</p>
+<ul>
+<li class="level1"><div class="li"> Crearem una associació entre les classes <code>Servei</code> i <code>FacturaServeis</code> així:</div>
+<ul>
+<li class="level2"><div class="li"> Farem clic a la icona <em>Association</em>.</div>
+</li>
+<li class="level2"><div class="li"> A continuació, farem clic a les dues classes consecutivament.</div>
+</li>
+</ul>
+</li>
+<li class="level1"><div class="li"> Indicarem que la classe <code>Hores</code> és la classe associada:</div>
+<ul>
+<li class="level2"><div class="li"> Farem clic a la icona <em>classe associativa</em>.</div>
+</li>
+<li class="level2"><div class="li"> Farem clic a la associació que acabem de crear.</div>
+</li>
+<li class="level2"><div class="li"> Farem clic a la classe <code>Hores</code>.</div>
+</li>
+</ul>
+</li>
+</ul>
+
+<p>
+<div class="iocfigurec">
+<ul>
+<li>
+<img src="../media/ic10m05u3_138.png" class="imgB" title="Icona Association/-140" alt="Icona Association/-140" /></li><li><small>Icona Association</small></li>
+</ul></div>
+
+</p>
+
+<p>
+<div class="iocfigurec">
+<ul>
+<li>
+<img src="../media/ic10m05u3_140.png" class="imgB" title="Icona Classe associativa/-60" alt="Icona Classe associativa/-60" /></li><li><small>Icona Classe associativa</small></li>
+</ul></div>
+
+</p>
+
+</p>
+
+<p>
+El diagrama resultant és el que es mostra en la <span class="figref"><a href="#Figure60"><span>figura</span></a></span>.
+</p>
+<div class="iocfigure"><a name="Figure60"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Diagrama de classes
+
+</figcaption><img src="../media/ic10m05u3_60.png" alt="" /></figure>
+</div>
+</div>
+
+<h3><a id="composicio" >Composició</a></h3>
+<div class="level3">
+
+<p>
+Continuant amb l’enunciat, aquest ens especifica: “Les factures de productes, per a cada producte (a cada factura n’hi ha almenys un) tenen la descripció, el preu unitari i la quantitat”.
+</p>
+
+<p>
+Per tant, és necessari crear una nova classe anomenada <code>ProducteFactura</code>, que contindrà els atributs <code>descripcio</code>, <code>preuUnitat</code> (preu unitari) i <code>quantitat</code>,  com es pot observar en la <span class="figref"><a href="#Figure61"><span>figura</span></a></span>. 
+</p>
+<div class="iocfigure"><a name="Figure61"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Classe ProducteFactura
+
+</figcaption><img src="../media/ic10m05u3_61.png" alt="" /></figure>
+</div>
+<p>
+En aquest cas es tracta d’una composició, ja que és una relació més forta que l’agregació. <code>FacturaProductes</code> té sentit per ell mateix, però està compost de <code>ProducteFactura</code> (amb la descripció, preu i quantitat de la factura), aquesta relació és més forta que l’associació d’una agregació.
+</p>
+
+<p>
+
+<p>
+Es crea igual que l’agregació, amb l’única diferència que, en lloc d’utilitzar la icona <em>Aggregation</em>, cal utilitzar la icona <em>Composition</em>.
+</p>
+
+<p>
+<div class="iocfigurec">
+<ul>
+<li>
+<img src="../media/ic10m05u3_136.png" class="imgB" title="Icona Aggregation/-40" alt="Icona Aggregation/-40" /></li><li><small>Icona Aggregation</small></li>
+</ul></div>
+
+</p>
+
+<p>
+<div class="iocfigurec">
+<ul>
+<li>
+<img src="../media/ic10m05u3_137.png" class="imgB" title="Icona Composition/-10" alt="Icona Composition/-10" /></li><li><small>Icona Composition</small></li>
+</ul></div>
+
+</p>
+
+</p>
+
+<p>
+El diagrama resultant de l’enunciat és el que es mostra en la <span class="figref"><a href="#Figure62"><span>figura</span></a></span>.
+</p>
+<div class="iocfigure"><a name="Figure62"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Diagrama de classes
+
+</figcaption><img src="../media/ic10m05u3_62.png" alt="" /></figure>
+</div>
+<p>
+
+<h3><a id="generacio_de_codi_a_partir_d_un_diagrama_de_classes" >Generació de codi a partir d&#039;un diagrama de classes</a></h3>
+<div class="level3">
+
+<p>
+Si volem poder generar codi a partir del diagrama de classes, en primer lloc, quan creem el projecte cal seleccionar l’opció <em>Java Project</em>, com es veu a la <span class="figref"><a href="#figuraProjecteJava"><span>figura</span></a></span>.
+</p>
+<div class="iocfigure"><a name="figuraProjecteJava"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Creació d’un projecte que permet generar codi en Java
+
+</figcaption><img src="../media/projectejava.png" alt="" /></figure>
+</div>
+<p>
+Es farà servir el format d’exemple per oferir les indicacions, pas a pas, de com generar codi a partir d’un diagrama de classes.
+</p>
+
+<p>
+El diagrama de classes de partida serà el mostrat a la <span class="figref"><a href="#figuraDiagramaGeneracióCodi"><span>figura</span></a></span>.
+</p>
+<div class="iocfigure"><a name="figuraDiagramaGeneracióCodi"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Diagrama de classes
+
+</figcaption><img src="../media/diagramageneraciocodi.png" alt="" /></figure>
+</div><div class="ioctext"><div class="ioccontent"><p class="ioctitle">Atenció a les relacions</p>
+<p>
+En fer aquest exemple, cal parar atenció a les cardinalitats. Cal fixar-se també que s’ha assenyalat l’associació com a navegable pels dos costats perquè es generin els membres que permetin aquesta doble navegació.
+</p>
+</div></div>
+<p>
+Un cop creat el diagrama, cal fer que tots els elements que apareixen es considerin com a <em>elements Java</em>. Es fa de la següent manera:
+</p>
+<ul>
+<li class="level1"><div class="li"> <strong>Classes</strong>: cal seleccionar la classe i, a la pestanya <em>Java</em> de la part inferior, activar la casella <em>Java element</em>, com es veu a la <span class="figref"><a href="#figuraClasseJava"><span>figura</span></a></span>.</div>
+</li>
+</ul>
+<div class="iocfigure"><a name="figuraClasseJava"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Configuració d’una classe com a element Java
+
+</figcaption><img src="../media/classejava.png" alt="" /></figure>
+</div><ul>
+<li class="level1"><div class="li"> <strong>Propietats</strong>: també cal seleccionar-les i configurar les caselles <em>Java Property</em>, <em>Getter</em>, <em>Setter</em>, <em>Getter visibility</em> i <em>Setter visibilty</em> de manera que quedi com a la <span class="figref"><a href="#figuraPropietatJava"><span>figura</span></a></span>.</div>
+</li>
+</ul>
+<div class="iocfigure"><a name="figuraPropietatJava"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Configuració d’una propietat com a element Java
+
+</figcaption><img src="../media/propietatjava.png" alt="" /></figure>
+</div><div class="iocnote"><div class="ioccontent">
+<p>
+Després de definir les classes i les propietats com a <em>elements Java</em>, ho reflectiran, respectivament, les icones següents a la dreta del seu nom: <div class="imgelem">
+<img src="../media/iconaclassejava.png" alt="" /></div>
+ <div class="imgelem">
+<img src="../media/iconapropietatjava.png" alt="" /></div>
+
+</p>
+</div></div><ul>
+<li class="level1"><div class="li"> <strong>Associacions</strong>: cal assenyalar-les com a <em>Java Property</em> dins de les seves propietats, de manera similar a com es fa amb els altres elements.</div>
+</li>
+</ul>
+
+<p>
+Per a <strong>generar el codi</strong> cal anar a <strong>cada classe</strong> i seleccionar, des del menú contextual (que apareix amb el botó secundari), l’opció <em>Java Designer</em> / <em>Generate</em>, com es veu a la figura <span class="figref"><a href="#figuraGeneraCodiClasse"><span>figura</span></a></span>.
+</p>
+<div class="iocfigure"><a name="figuraGeneraCodiClasse"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Configuració d’una propietat com a element Java
+
+</figcaption><img src="../media/genera_codiclasse.png" alt="" /></figure>
+</div>
+<p>
+Es pot veure el resultat tot seleccionant, al mateix menú contextual, <em>Java Desginer</em> / <em>Edit</em>. S’obrirà una pestanya amb el codi corresponent a la classe des de la qual hem triat l’opció.
+</p>
+
+<p>
+A l’exemple, el resultat ha estat aquest el que es mostra a la <span class="figref"><a href="#figuraCodiGenerat"><span>figura</span></a></span>.
+</p>
+
+<p>
+Es pot veure que, tot i que el resultat és raonablement bo, cal fer algun retoc a mà a la classe <code>Grup</code>; concretament, l’ <code>ArrayList</code> de la classe <code>Grup</code> no té nom, és públic i li falta el <em>getter</em>. A més, com és lògic, a la classe <code>Alumne</code> cal completar el mètode edat perquè calculi aquesta a partir d’ <code>AnyNaix</code>.
+</p>
+
+<p>
+Cal notar, també, que Modelio utilitza anotacions pròpies per incloure informació que necessita per gestionar internament els diferents elements.
+</p>
+<div class="iocfigure"><a name="figuraCodiGenerat"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Codi generat a partir del diagrama
+
+</figcaption><img src="../media/codigenerat.png" alt="" /></figure>
+</div>
+</div>
+
+<h3><a id="insercio_de_classes_en_un_diagrama_a_partir_del_codi" >Inserció de classes en un diagrama a partir del codi</a></h3>
+<div class="level3">
+
+<p>
+Aquest apartat també seguirà el format d’exemple. En concret, afegirem dues classes a un projecte creat com a <em>Java Project</em>.
+</p>
+<div class="iocreference"><div class="ioccontent">
+<p>
+En l’apartat <em>Generació de codi a partir d’un diagrama de classes</em> podeu trobar com crear un projecte definit com a <em>Java Project</em>.
+</p>
+</div></div>
+<p>
+En concret, les classes que afegirem són les següents:
+</p>
+<pre class="code java"><ol><li class="li1"><div class="de1"><span class="kw1">import</span> <span class="co2">java.util.ArrayList</span><span class="sy0">;</span></div></li><li class="li1"><div class="de1"><span class="kw1">import</span> <span class="co2">java.util.List</span><span class="sy0">;</span></div></li><li class="li1"><div class="de1">&nbsp;</div></li><li class="li1"><div class="de1"><span class="kw1">public</span> <span class="kw1">class</span> Botiga <span class="br0">&#123;</span></div></li><li class="li1"><div class="de1">&nbsp;</div></li><li class="li1"><div class="de1">	<span class="kw1">private</span> <a href="http://www.google.com/search?hl=en&amp;q=allinurl%3Adocs.oracle.com+javase+docs+api+string"><span class="kw3">String</span></a> nom<span class="sy0">;</span></div></li><li class="li1"><div class="de1">&nbsp;</div></li><li class="li1"><div class="de1">	<span class="kw1">private</span> <a href="http://www.google.com/search?hl=en&amp;q=allinurl%3Adocs.oracle.com+javase+docs+api+string"><span class="kw3">String</span></a> adreca<span class="sy0">;</span></div></li><li class="li1"><div class="de1">&nbsp;</div></li><li class="li1"><div class="de1">	<span class="kw1">private</span> List<span class="sy0">&lt;</span>ClientHabitual<span class="sy0">&gt;</span></div></li><li class="li1"><div class="de1"> clients <span class="sy0">=</span> <span class="kw1">new</span> ArrayList<span class="sy0">&lt;</span>ClientHabitual<span class="sy0">&gt;</span><span class="br0">&#40;</span><span class="br0">&#41;</span><span class="sy0">;</span></div></li><li class="li1"><div class="de1">&nbsp;</div></li><li class="li1"><div class="de1">	<span class="kw1">public</span> <a href="http://www.google.com/search?hl=en&amp;q=allinurl%3Adocs.oracle.com+javase+docs+api+string"><span class="kw3">String</span></a> getNom<span class="br0">&#40;</span><span class="br0">&#41;</span><span class="br0">&#123;</span></div></li><li class="li1"><div class="de1">		<span class="kw1">return</span> nom<span class="sy0">;</span></div></li><li class="li1"><div class="de1">	<span class="br0">&#125;</span></div></li><li class="li1"><div class="de1">&nbsp;</div></li><li class="li1"><div class="de1">	<span class="kw1">public</span> <span class="kw4">void</span> setNom<span class="br0">&#40;</span><a href="http://www.google.com/search?hl=en&amp;q=allinurl%3Adocs.oracle.com+javase+docs+api+string"><span class="kw3">String</span></a> nom<span class="br0">&#41;</span><span class="br0">&#123;</span></div></li><li class="li1"><div class="de1">		<span class="kw1">this</span>.<span class="me1">nom</span><span class="sy0">=</span>nom<span class="sy0">;</span></div></li><li class="li1"><div class="de1">	<span class="br0">&#125;</span></div></li><li class="li1"><div class="de1">&nbsp;</div></li><li class="li1"><div class="de1">	<span class="kw1">public</span> <a href="http://www.google.com/search?hl=en&amp;q=allinurl%3Adocs.oracle.com+javase+docs+api+string"><span class="kw3">String</span></a> getAdreca<span class="br0">&#40;</span><span class="br0">&#41;</span><span class="br0">&#123;</span></div></li><li class="li1"><div class="de1">		<span class="kw1">return</span> adreca<span class="sy0">;</span></div></li><li class="li1"><div class="de1">	<span class="br0">&#125;</span></div></li><li class="li1"><div class="de1">&nbsp;</div></li><li class="li1"><div class="de1">	<span class="kw1">public</span> <span class="kw4">void</span> setAdreca<span class="br0">&#40;</span><a href="http://www.google.com/search?hl=en&amp;q=allinurl%3Adocs.oracle.com+javase+docs+api+string"><span class="kw3">String</span></a></div></li><li class="li1"><div class="de1"> adreca<span class="br0">&#41;</span><span class="br0">&#123;</span></div></li><li class="li1"><div class="de1">		<span class="kw1">this</span>.<span class="me1">adreca</span><span class="sy0">=</span>adreca<span class="sy0">;</span></div></li><li class="li1"><div class="de1">	<span class="br0">&#125;</span></div></li><li class="li1"><div class="de1">&nbsp;</div></li><li class="li1"><div class="de1">	<span class="kw1">public</span> List<span class="sy0">&lt;</span>ClientHabitual<span class="sy0">&gt;</span></div></li><li class="li1"><div class="de1"> getClients<span class="br0">&#40;</span><span class="br0">&#41;</span><span class="br0">&#123;</span></div></li><li class="li1"><div class="de1">		<span class="kw1">return</span> <span class="kw1">this</span>.<span class="me1">clients</span><span class="sy0">;</span></div></li><li class="li1"><div class="de1">	<span class="br0">&#125;</span></div></li><li class="li1"><div class="de1"><span class="br0">&#125;</span></div></li></ol></pre>
+<pre class="code java"><ol><li class="li1"><div class="de1"><span class="kw1">public</span> <span class="kw1">class</span> ClientHabitual <span class="br0">&#123;</span></div></li><li class="li1"><div class="de1">&nbsp;</div></li><li class="li1"><div class="de1">	<span class="kw1">private</span> <a href="http://www.google.com/search?hl=en&amp;q=allinurl%3Adocs.oracle.com+javase+docs+api+string"><span class="kw3">String</span></a> nom<span class="sy0">;</span></div></li><li class="li1"><div class="de1">&nbsp;</div></li><li class="li1"><div class="de1">	<span class="kw1">private</span> <a href="http://www.google.com/search?hl=en&amp;q=allinurl%3Adocs.oracle.com+javase+docs+api+string"><span class="kw3">String</span></a> adreca<span class="sy0">;</span></div></li><li class="li1"><div class="de1">&nbsp;</div></li><li class="li1"><div class="de1">	<span class="kw1">private</span> Botiga botiga<span class="sy0">;</span></div></li><li class="li1"><div class="de1">&nbsp;</div></li><li class="li1"><div class="de1">	<span class="kw1">public</span> <a href="http://www.google.com/search?hl=en&amp;q=allinurl%3Adocs.oracle.com+javase+docs+api+string"><span class="kw3">String</span></a> getNom<span class="br0">&#40;</span><span class="br0">&#41;</span><span class="br0">&#123;</span></div></li><li class="li1"><div class="de1">		<span class="kw1">return</span> nom<span class="sy0">;</span></div></li><li class="li1"><div class="de1">	<span class="br0">&#125;</span></div></li><li class="li1"><div class="de1">&nbsp;</div></li><li class="li1"><div class="de1">	<span class="kw1">public</span> <span class="kw4">void</span> setNom<span class="br0">&#40;</span><a href="http://www.google.com/search?hl=en&amp;q=allinurl%3Adocs.oracle.com+javase+docs+api+string"><span class="kw3">String</span></a> nom<span class="br0">&#41;</span><span class="br0">&#123;</span></div></li><li class="li1"><div class="de1">		<span class="kw1">this</span>.<span class="me1">nom</span><span class="sy0">=</span>nom<span class="sy0">;</span></div></li><li class="li1"><div class="de1">	<span class="br0">&#125;</span></div></li><li class="li1"><div class="de1">&nbsp;</div></li><li class="li1"><div class="de1">	<span class="kw1">public</span> <a href="http://www.google.com/search?hl=en&amp;q=allinurl%3Adocs.oracle.com+javase+docs+api+string"><span class="kw3">String</span></a> getAdreca<span class="br0">&#40;</span><span class="br0">&#41;</span><span class="br0">&#123;</span></div></li><li class="li1"><div class="de1">		<span class="kw1">return</span> adreca<span class="sy0">;</span></div></li><li class="li1"><div class="de1">	<span class="br0">&#125;</span></div></li><li class="li1"><div class="de1">&nbsp;</div></li><li class="li1"><div class="de1">	<span class="kw1">public</span> <span class="kw4">void</span> setAdreca<span class="br0">&#40;</span><a href="http://www.google.com/search?hl=en&amp;q=allinurl%3Adocs.oracle.com+javase+docs+api+string"><span class="kw3">String</span></a></div></li><li class="li1"><div class="de1"> adreca<span class="br0">&#41;</span><span class="br0">&#123;</span></div></li><li class="li1"><div class="de1">		<span class="kw1">this</span>.<span class="me1">adreca</span><span class="sy0">=</span>adreca<span class="sy0">;</span></div></li><li class="li1"><div class="de1">	<span class="br0">&#125;</span></div></li><li class="li1"><div class="de1">&nbsp;</div></li><li class="li1"><div class="de1">	<span class="kw1">public</span> Botiga getBotiga<span class="br0">&#40;</span><span class="br0">&#41;</span><span class="br0">&#123;</span></div></li><li class="li1"><div class="de1">		<span class="kw1">return</span> botiga<span class="sy0">;</span></div></li><li class="li1"><div class="de1">	<span class="br0">&#125;</span></div></li><li class="li1"><div class="de1">&nbsp;</div></li><li class="li1"><div class="de1">	<span class="kw1">public</span> <span class="kw4">void</span> setBotiga<span class="br0">&#40;</span>Botiga </div></li><li class="li1"><div class="de1">botiga<span class="br0">&#41;</span><span class="br0">&#123;</span></div></li><li class="li1"><div class="de1">		<span class="kw1">this</span>.<span class="me1">botiga</span><span class="sy0">=</span>botiga<span class="sy0">;</span></div></li><li class="li1"><div class="de1">	<span class="br0">&#125;</span></div></li><li class="li1"><div class="de1">&nbsp;</div></li><li class="li1"><div class="de1"><span class="br0">&#125;</span></div></li></ol></pre>
+
+<p>
+Per fer-ho, en primer lloc cal crear a la subcarpeta <em>src</em> del projecte un fitxer <em>.java</em> per a cadascuna de les classes, amb el contingut corresponent. La carpeta arrel del projecte es troba seleccionant el projecte a l’explorador i clicant la icona <em>Project configuration</em>.
+</p>
+
+<p>
+<div class="iocfigurec">
+<ul>
+<li>
+<img src="../media/iconaprojectconfiguration.png" class="imgB" title="Icona Project configuration" alt="Icona Project configuration" /></li><li><small>Icona Project configuration</small></li>
+</ul></div>
+
+</p>
+
+<p>
+A continuació, cal seleccionar l’opció <em>Java Designer</em> / <em>Reverse</em> / <em>Reverse Java application from sources</em>  com es mostra a la <span class="figref"><a href="#figuraReverse"><span>figura</span></a></span>.
+</p>
+<div class="iocfigure"><a name="figuraReverse"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Opció per generar classes UML a partir de codi font
+
+</figcaption><img src="../media/reverse.png" alt="" /></figure>
+</div><div class="iocnote"><div class="ioccontent">
+<p>
+També poden importar-se fitxers <em>.class</em> o <em>.jar</em>.
+</p>
+</div></div>
+<p>
+A la pantalla que ens apareix, cal seleccionar els fitxers que contenen les classes que volem afegir al nostre projecte, com es mostra a la <span class="figref"><a href="#figuraReverseFitxers"><span>figura</span></a></span>.
+</p>
+<div class="iocfigure"><a name="figuraReverseFitxers"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Selecció dels fitxers de les classes a incorporar al diagrama
+
+</figcaption><img src="../media/reversefitxers.png" alt="" /></figure>
+</div>
+<p>
+Després, cal seguir l’assistent clicant al botó <em>Next</em> un parell de vegades, tot deixant les opcions que surten per defecte.
+</p>
+
+<p>
+Per últim, clicant al botó <em>Reverse</em> ens sortirà una pantalla similar a la de la <span class="figref"><a href="#figuraFiReverse"><span>figura</span></a></span>, que indica que tot ha anat bé:
+</p>
+<div class="iocfigure"><a name="figuraFiReverse"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Selecció dels fitxers de les classes a incorporar al diagrama
+
+</figcaption><img src="../media/reversefitxers.png" alt="" /></figure>
+</div>
+<p>
+Es pot comprovar també que a la pestanya <em>Model</em> (a la part esquerra de la pantalla) es veuen les noves classes afegides al projecte, a més de les que ja tenia anteriorment. Ara només resta incorporar-les al diagrama de classes. Es pot fer desplegant-les, seleccionant-les totes (amb els seus membres inclosos) i arrossegant-les cap al diagrama. A la <span class="figref"><a href="#figuraIncorporarClasses"><span>figura</span></a></span> es veu un resum del procés.
+</p>
+<div class="iocfigure"><a name="figuraIncorporarClasses"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Incorporació de les classes al diagrama
+
+</figcaption><img src="../media/incorporarclasses.png" alt="" /></figure>
+</div>
+<p>
+Per seleccionar totes les classes que volem incorporar, n’hi ha prou amb fer clic a la primera, desplegar-les totes i, mantenint la tecla de majúscules premuda, fer clic al darrer element que volem incorporar. 
+</p>
+
+<p>
+Les noves classes presenten un aspecte similar al que es mostra a la <span class="figref"><a href="#figuraClassesIncorporades"><span>figura</span></a></span>.
+</p>
+<div class="iocfigure"><a name="figuraClassesIncorporades"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Classes incorporades al diagrama
+
+</figcaption><img src="../media/classesincorporades.png" alt="" /></figure>
+</div><div class="iocreference"><div class="ioccontent">
+<p>
+En aquest mateix apartat podeu trobar com fer les operacions bàsiques (moure, redimensionar…) amb els elements dels diagrames.
+</p>
+</div></div>
+<p>
+Com es pot veure, les classes surten amuntegades. Podem moure-les i obtenir un resultat similar al mostrat a la <span class="figref"><a href="#figuraClassesEndrecades"><span>figura</span></a></span>.
+</p>
+<div class="iocfigure"><a name="figuraClassesEndrecades"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Resultat d’endreçar les classes.
+
+</figcaption><img src="../media/classesendrecades.png" alt="" /></figure>
+</div>
+</div>
+
+<h3><a id="operacions_d_edicio_basiques" >Operacions d&#039;edició bàsiques</a></h3>
+<div class="level3">
+
+<p>
+El diagrama de classes és el principal dels diagrames estàtiques. Modelio suporta també altres diagrames tant estàtics com dinàmics. Aquests poden tenir propòsits bastant diferents. No obstant, hi ha tota una sèrie d’operacions d’edició que són comunes a tots ells:
+</p>
+
+<p>
+<div class="iocfigurec">
+<ul>
+<li>
+<img src="../media/ic10m05u3_141.png" class="imgB" title="Propietats de la columna Symbol" alt="Propietats de la columna Symbol" /></li><li><small>Propietats de la columna Symbol</small></li>
+</ul></div>
+
+</p>
+<ul>
+<li class="level1"><div class="li"> En primer lloc, a tots els diagrames és recomanable deshabilitar la característica <em>Smart links handle</em>, ja que no la utilitzarem i, a més, ens pot dificultar la resta de les accions. Es fa de la següent manera:</div>
+<ul>
+<li class="level2"><div class="li"> Fer clic a una zona del diagrama on no hi hagi cap element.</div>
+</li>
+<li class="level2"><div class="li"> Fer clic a la columna <em>Symbol</em>, que es troba a la part dreta de la finestra, perquè es desplegui.</div>
+</li>
+<li class="level2"><div class="li"> Deshabilitar la propietat <em>Smart links handle</em> i, si volem, tornar a fer clic a la barra superior de la columna <em>Symbol</em> perquè es torni a plegar.</div>
+</li>
+</ul>
+</li>
+<li class="level1"><div class="li"> <strong>Seleccionar un element</strong>: n’hi ha prou amb fer-hi clic a sobre o, si volem seleccionar-ne més d’un a la vegada, podem:</div>
+<ul>
+<li class="level2"><div class="li"> Clicar a sobre d’ells, un rera l’altre, i mantenir a la vegada la tecla <em>Ctrl</em> polsada.</div>
+</li>
+<li class="level2"><div class="li"> Assenyalar amb el ratolí una àrea que els inclogui, tot arrossegant el ratolí (de manera similar a com es seleccionen les icones d’una àrea a l’escriptori).</div>
+</li>
+</ul>
+</li>
+<li class="level1"><div class="li"> <strong>Esborrar un element</strong>: cal seleccionar-lo i, a continuació, fer clic a la tecla <em>Supr</em>.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Gravar el diagrama com un gràfic</strong>: cal fer clic a la icona <em>Save diagram in a file</em>, que es troba a la barra d’eines de sobre del diagrama (al costat de la icona que representa una impressora i que permet imprimir el diagrama), i respondre al diàleg del sistema per desar fitxers.</div>
+</li>
+</ul>
+
+<p>
+<div class="iocfigurec">
+<ul>
+<li>
+<img src="../media/iconadiagramaagrafic.png" class="imgB" title="Icona Save diagrama in a file/-35" alt="Icona Save diagrama in a file/-35" /></li><li><small>Icona Save diagrama in a file</small></li>
+</ul></div>
+
+</p>
+
+<p>
+<div class="iocfigurec">
+<ul>
+<li>
+<img src="../media/iconacopiadiagramacomgrafic.png" class="imgB" title="Icona Copy diagrama as grafic" alt="Icona Copy diagrama as grafic" /></li><li><small>Icona Copy diagrama as grafic</small></li>
+</ul></div>
+
+</p>
+<ul>
+<li class="level1"><div class="li"> <strong>Copiar el diagrama al porta-retalls com un gràfic</strong>: cal fer clic a la icona <em>Copy diagrama as graphic</em>, que es troba a la barra d’eines de sobre del diagrama i la imatge gràfica es copia automàticament al porta-retalls; a continuació pot enganxar-se en qualsevol programa d’edició.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Moure un element</strong>: cal posar el ratolí a sobre de l’element i arrossegar-lo fins a portar-lo a la posició desitjada.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Canviar la forma d’un element</strong>: cal seleccionar l’element, posar el ratolí a sobre d’un dels quadres negres que apareixen després d’haver fet la selecció i arrosegar-lo fins aconseguir la forma desitjada.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Connectar dos elements amb un enllaç</strong>: normalment només cal seleccionar la icona corresponent a l’enllaç a la barra d’elements i, després, fer clic als elements que volem unir en l’ordre adient; quan s’està fent aquest segon pas, l’element sobre el que tenim el ratolí apareix de color verd si podem fer-hi clic i de color vermell en cas contrari.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Gestió de la barra d’elements</strong>: podeu veure les operacions bàsiques a la <span class="figref"><a href="#figuraGestioBarraElements"><span>figura</span></a></span>. A tots els diagrames el funcionament és el mateix.</div>
+</li>
+</ul>
+<div class="iocfigure"><a name="figuraGestioBarraElements"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Elements per a gestionar la barra dels elements d’un diagrama
+
+</figcaption><img src="../media/gestiobarraelements.png" alt="" /></figure>
+</div>
+</div>
+
+</p>
+
+</div>
+
+	 </article>
+     <div class="pnpage">
+      <div class="left-corner"></div>
+      <div id="prevpage">Anar a la p&agrave;gina anterior:<br /><a href="../../../WebContent/u3/referencies.html">Referències</a></div>
+      <div id="nextpage">Anar a la p&agrave;gina seg&uuml;ent:<br /><a href="../../../WebContent/u3/a1/activitats.html">Activitats</a></div>
+      <div class="right-corner"></div>
+     </div>
+    </div>
+    <footer class="footer">
+      <div><small>Aquest document està subjecte a una llicència oberta de Creative Commons, es reserva el dret de reconeixement de l'autoria, d'exigir que no se'n faci cap mena d'ús comercial. Si altereu o transformeu aquesta obra, o en genereu obres derivades, només podeu distribuir l'obra generada amb una llicència idèntica a aquesta.</small></div>
+    </footer>
+ </div>
+ <div id="back_preview" class="hidden"></div>
+ <div id="preview" class="hidden">
+  <div class="prevcontent"></div>
+ </div>
+ <div id="help-tooltips">
+  <div id="help-toc" class="hidden tooltip"><span>Taula de continguts:</span> Ofereix una vista general de l&#39;estructura del m&ograve;dul, que us facilitar&agrave; la navegaci&oacute; a trav&eacute;s dels seus continguts.<span class="arrow-left"></span></div> 
+  <div id="help-settings" class="hidden tooltip"><span>Opcions de format:</span> Permet configurar el format de lectura a partir de les vostres prefer&egrave;ncies, modificant la mida de la lletra, el color del fons, l&#39;amplada de la p&agrave;gina o l&#39;ocultaci&oacute; dels continguts complementaris, entre d&#39;altres.<span class="arrow-left"></span></div>
+  <div id="help-printer" class="hidden tooltip"><span>Imprimir:</span>  Envia el contingut seleccionat a la impressora.<span class="arrow-left"></span></div>
+  <div id="help-favorites" class="hidden tooltip"><span>Prefereits:</span> Permet desar aquelles parts del contingut a les que us interessi accedir en un moment posterior; us permetr&agrave; anar creant un repositori personalitzat de les seccions que considereu m&eacute;s rellevants. Un cop l&#39;hageu començat a fer servir se us mostrar&agrave; a sota un comptador que us informar&agrave; del nombre de preferits que s&#39;hagin emmagatzemat fins al moment.<span class="arrow-left"></span></div>
+  <div id="help-favcounter" class="hidden tooltip"><span>Comptador i llistat de preferits:</span> Indica el nombre de preferits que s&#39;han desat fins el moment; clicant damunt seu accedireu al llistat de preferits, i a trav&eacute;s d&#39;aquest podreu accedir directament als continguts que hageu emmagatzemat.<span class="arrow-left"></span></div>
+  <div id="help-help_icon" class="hidden tooltip"><span>Ajuda:</span> Aquesta opci&oacute; activa la informaci&oacute; de les funcionalitats del web tot situant el punter del ratol&iacute; al damunt dels diferents &iacute;tems.<span class="arrow-left"></span></div>
+  <div id="help-sidebar-hide" class="hidden tooltip"><span>Mostrar/Ocultar barra lateral:</span>  Deshabilita la barra d&#39;opcions, permetent la seva recuperaci&oacute; quan es desitgi.<span class="arrow-left"></span></div>
+  <div id="help-search" class="hidden tooltip"><span>Cerca:</span>  Introdu&iuml;u les paraules clau sobre aquells conceptes que desitgeu localitzar en els continguts del m&ograve;dul. Tamb&eacute; podeu excloure un terme de la cerca tot afegint-hi el signe &#8220;-&#8221; al davant.<span class="arrow-top"></span></div>
+  <div id="help-header" class="hidden tooltip"><span>Cap&ccedil;alera:</span>  Indica l&#39;apartat o secci&oacute; que es mostra en pantalla. Tingueu present que les capçaleres de segon, tercer i quart nivell tamb&eacute; es poden desar com a marcadors.<span class="arrow-left"></span></div>
+</div> 
+</body>
+</html>

@@ -1,0 +1,476 @@
+<!doctype html>
+
+<!--[if lt IE 7 ]> <html class="ie ie6 no-js" lang="ca"> <![endif]-->
+<!--[if IE 7 ]>    <html class="ie ie7 no-js" lang="ca"> <![endif]-->
+<!--[if IE 8 ]>    <html class="ie ie8 no-js" lang="ca"> <![endif]-->
+<!--[if IE 9 ]>    <html class="ie ie9 no-js" lang="ca"> <![endif]-->
+<!--[if gt IE 9]><!--><html class="no-js" lang="ca"><!--<![endif]-->
+<!-- the "no-js" class is for Modernizr. -->
+
+<head id="www-sitename-com" data-template-set="html5-reset">
+
+	<meta charset="utf-8">
+	
+	<!-- Always force latest IE rendering engine (even in intranet) & Chrome Frame -->
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	
+	<title>Llenguatges de marques i sistemes de gestió d'informació</title>
+	
+<!-- <meta name="title" content=""> --> 
+	<meta name="description" content="">
+	<!-- Google will often use this as its description of your page/site. Make it good. -->
+	
+	<meta name="google-site-verification" content="">
+	<!-- Speaking of Google, don't forget to set your site up: http://google.com/webmasters -->
+	
+	<meta name="author" content="Institut Obert de Catalunya">
+	<meta name="Copyright" content="Copyright Institut Obert de Catalunya 2011. All Rights Reserved.">
+
+	<!-- Dublin Core Metadata : http://dublincore.org/ -->
+	<meta name="DC.title" content="Llenguatges de marques i sistemes de gestió d'informació">
+	<meta name="DC.subject" content="Informàtica i comunicacions">
+	<meta name="DC.creator" content="Institut Obert de Catalunya">
+	
+	<!--  Mobile Viewport Fix
+	j.mp/mobileviewport & davidbcalhoun.com/2010/viewport-metatag 
+	device-width : Occupy full width of the screen in its current orientation
+	initial-scale = 1.0 retains dimensions instead of zooming out if page height > device height
+	maximum-scale = 1.0 retains dimensions instead of zooming in if page width < device width
+	-->
+	<!-- Uncomment to use � use thoughtfully!
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+	-->
+
+	<link rel="shortcut icon" href="../../../img/favicon.ico">
+	<!-- This is the traditional favicon.
+		 - size: 16x16 or 32x32
+		 - transparency is OK
+		 - see wikipedia for info on browser support: http://mky.be/favicon/ -->
+		 
+	<link rel="apple-touch-icon" href="../../../img/apple-touch-icon.png">
+	<!-- The is the icon for iOS's Web Clip.
+		 - size: 57x57 for older iPhones, 72x72 for iPads, 114x114 for iPhone4's retina display (IMHO, just go ahead and use the biggest one)
+		 - To prevent iOS from applying its styles to the icon name it thusly: apple-touch-icon-precomposed.png
+		 - Transparency is not recommended (iOS will put a black BG behind the icon) -->
+	
+	<!-- CSS: screen, mobile & print are all in the same file -->
+	<link rel="stylesheet" href="../../../_/css/style.css">
+
+	<!-- CSS: jQuery UI -->
+	<link rel="stylesheet" href="../../../_/css/jquery-ui.css">
+	
+	<!-- all our JS is at the bottom of the page, except for Modernizr. -->
+	<script src="../../../_/js/modernizr-1.7.min.js"></script>
+	<script src="../../../_/js/Hyphenator.js" type="text/javascript"></script>
+	<script type="text/javascript">
+	   Hyphenator.config({
+		minwordlength : 4
+	   });
+	   Hyphenator.run();
+	</script>
+    <script src="../../../_/js/build.js" type="text/javascript"></script>
+</head>
+
+<body class="style-newspaper">
+
+<div class="wrapper"><!-- not needed? up to you: http://camendesign.com/code/developpeurs_sans_frontieres -->
+
+	<header id="header">
+		<div class="head"><a href="http://ioc.gencat.cat"><img src="../../../img/logo.png" alt="Institut Obert de Catalunya"/></a><a href="http://creativecommons.org/licenses/by-nc-sa/3.0/es/deed.ca"><img src="../../../img/license.png" alt="Llic&egrave;ncia" class="license"/></a></div>
+		<div class="headdocument"><a href="../../../index.html">Llenguatges de marques i sistemes de gestió d'informació</a></div>
+        <div id="search" class="search" name="search">
+         <form id="frmsearch" action="../../../search.html" method="get">
+          <input type="text" name="q"/>
+        </form>
+        </div>
+	</header>
+   <div id="upbutton" class="upbutton" style="display:none;"><img src="../../../img/uparrow.png" alt="Pujar a l'inici de p&agrave;gina"/></div>
+   <aside id="aside">
+    <div id="menu">
+      <ul>
+       <li name="toc"><div><img src="../../../img/toc.png" alt="&Iacute;ndex"/></div></li>
+       <li name="settings"><div><img src="../../../img/settings.png" alt="Configuraci&oacute;"/></div></li>
+       <li name="printer"><div><img src="../../../img/printer.png" alt="Imprimir"/></div></li>
+       <li name="favorites"><div><img src="../../../img/favorites.png" alt="Favorits"/></div></li>
+       <li name="help_icon" class="help_icon"><div><img src="../../../img/help_icon.png" alt="Ajuda"/></div></li>
+      </ul>
+     </div>
+   </aside>
+   <div id="sidebar-hide" name="sidebar-hide"><img src="../../../img/arrows.png"/></div>
+   <section>
+     <div id="toc" class="hidden">
+      <div class="menucontent">
+        <ul>
+        <li id="u3" class="parentnode"><p><a class="unit" href="../../../WebContent/u3/introduccio.html">3. Àmbits d’aplicació de l’XML</a></p><ul class="expander"><li id="u3introduccio"><a href="../../../WebContent/u3/introduccio.html">Introducció</a></li><li id="u3resum"><a href="../../../WebContent/u3/resum.html">Resum</a></li><li id="u3objectius"><a href="../../../WebContent/u3/objectius.html">Resultats d'aprenentatge</a></li><li id="u3referencies"><a href="../../../WebContent/u3/referencies.html">Referències</a></li><li id="u3a1" class="tocsection"><p id='u3a1continguts'><a class="section" href="../../../WebContent/u3/a1/continguts.html">Sindicació de continguts</a><span class="buttonexp"></span></p><ul><li id="u3a1activitats"><a href="../../../WebContent/u3/a1/activitats.html">Activitats</a></li><li id="u3a1exercicis"><a href="../../../WebContent/u3/a1/exercicis.html">Exercicis d'autoavaluació</a></li></ul></li><li id="u3a2" class="tocsection"><p id='u3a2continguts'><a class="section" href="../../../WebContent/u3/a2/continguts.html">Conversió i adaptació de documents XML</a><span class="buttonexp"></span></p><ul><li id="u3a2activitats"><a href="../../../WebContent/u3/a2/activitats.html">Activitats</a></li><li id="u3a2exercicis"><a href="../../../WebContent/u3/a2/exercicis.html">Exercicis d'autoavaluació</a></li></ul></li><li id="u3a3" class="tocsection"><p id='u3a3continguts'><a class="section" href="../../../WebContent/u3/a3/continguts.html">Bases de dades natives XML. Llenguatge de consultes (XQuery)</a><span class="buttonexp"></span></p><ul><li id="u3a3activitats"><a href="../../../WebContent/u3/a3/activitats.html">Activitats</a></li><li id="u3a3exercicis"><a href="../../../WebContent/u3/a3/exercicis.html">Exercicis d'autoavaluació</a></li></ul></li></ul></li><li id="" class="indexnode"><p><a href="../../../index.html">Anar a l&#39;&iacute;ndex general</a></p></li>
+        </ul>
+      </div>
+    </div>
+   </section>
+   <section>
+   <div id="settings" class="hidden">
+    <div class="menucontent">
+     <div class="allsettings">
+     <div class="settings">
+      <label>Font i Color</label>
+		<div class="setting-option">
+	        <ul class="fontBackground">
+				<li id="style-newspaper" title="Newspaper" class="appearance-style-newspaper"><span>Newspaper</span></li>
+                <li id="style-novel" title="Novel" class="appearance-style-novel"><span>Novel</span></li>
+                <li id="style-ebook" title="eBook" class="appearance-style-ebook"><span>eBook</span></li>
+				<li id="style-inverse" title="Inverse" class="appearance-style-inverse active"><span>Inverse</span></li>
+				<li id="style-athelas" title="Athelas" class="appearance-style-athelas"><span>Athelas</span></li>
+			</ul>
+		</div>
+     </div>
+	<div class="settings">
+      <label>Amplada</label>
+		<div class="setting-option">
+	        <div id="slider-width"></div>
+		</div>
+     </div>
+     <div class="settings">
+      <label>Mida de la font</label>
+		<div class="setting-option">
+	        <div id="slider-font"></div>
+		</div>
+     </div>
+     <div class="settings">
+      <label>Mida de la font</label>
+	  <div class="setting-option">
+       <form action="" class="sett-options">
+		<ul>
+		    <li><input type="checkbox" id="secondary-content" /><label for="secondary-content">Mostra recursos complementaris</label></li>
+		    <li><input type="checkbox" id="main-images" /><label for="main-images">Mostra imatges</label></li>
+		    <li><input type="checkbox" id="text-alignment" /><label for="text-alignment">Text justificat</label></li>
+			<li><input type="checkbox" id="text-hyphen" /><label for="text-hyphen">Partici&oacute; sil·l&agrave;bica</label></li>
+		</ul>
+       </form>
+	  </div>
+     </div>
+     </div>
+    </div>
+   </div>
+   </section>
+ <section>
+ <div id="favorites" class="hidden"></div>
+ </section>   
+ <div id="bridge" class="hidden"></div>
+ <div id="help" class="hidden">
+  <div class="helptitle">Dreceres del teclat<hr></div>
+  <div class="helpsection"><span>General</span>
+   <ul>
+    <li><span class="shortcut">g</span>: Anar al men&uacute; de navegaci&oacute;</li>
+    <li><span class="shortcut">o</span>: Anar a opcions</li>
+    <li><span class="shortcut">s</span>: Guardar la p&agrave;gina actual a favorits</li>
+    <li><span class="shortcut">p</span>: Imprimir la p&agrave;gina actual</li>
+    <li><span class="shortcut">?</span>: Mostrar/Ocultar l&#39;ajuda</li>
+   </ul>
+  </div>
+  <div class="helpsection"><span>Navegaci&oacute;</span>
+   <ul>
+    <li><span class="shortcut">i</span>: Anar a l&#39;&iacute;ndex general</li>
+    <li><span class="shortcut">t</span>: Anar a l&#39;inici de p&agrave;gina</li>
+    <li><span class="shortcut">b</span>: Anar al final de p&agrave;gina</li>
+    <li><span class="shortcut">j</span>: Anar cap endavant dintre la p&agrave;gina</li>
+    <li><span class="shortcut">k</span>: Anar cap enrere dintre la p&agrave;gina</li>
+    <li><span class="shortcut">h</span>: Anar a la p&agrave;gina anterior:</li>
+    <li><span class="shortcut">l</span>: Anar a la p&agrave;gina seg&uuml;ent:</li>
+   </ul>
+   </div>
+ </div>
+ <div id="favcounter" name="favcounter" class="hidden"><span></span></div>
+ <div id="navmenu" class="navmenu"><ul class="webnav"><li><a href="../../../index.html" title="Anar a l&#39;&iacute;ndex general">Inici</a></li><li><a href="../introduccio.html">Àmbits d’aplicació de l’XML</a></li><li><a href="continguts.html">Bases de dades natives XML. Llenguatge de consultes (XQuery)</a></li><li>Activitats</li></ul></div>
+	<div id="content" lang="ca" class="hyphenate text">
+     <article lang="ca" class="sheet">
+        <h1><a id="activitats"> Activitats </a></h1>
+    	
+<h2><a id="convertir_xml_a_dades_relacionals" >Convertir XML a dades relacionals</a></h2>
+<div class="level2">
+
+<p>
+L’objectiu d’aquesta activitat és veure una possible relació entre els documents XML i les bases de dades relacionals.
+</p>
+
+<p>
+Disposeu del següent document:
+</p>
+
+<p>
+<div class="mediaf filezip"><div class="mediacontent"><a href="../media/agenda.xml.zip">Document XML</a><span> ( 609 B )</span></div></div>
+</p>
+
+<p>
+les dades del qual s’han d’afegir a una base de dades relacional que té l’estructura següent:
+</p>
+<div class="iocfigure"><a name=""></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Estructura de la base de dades
+
+</figcaption><img src="../media/agenda.png" align="right" alt="" /></figure>
+</div>
+<p>
+Quines són les instruccions SQL que s’han d’executar per poder entrar les dades del fitxer XML a la base de dades?
+</p>
+
+<p>
+<form action=""><div class="solution ioccontent"><pre class="code sql"><ol><li class="li1"><div class="de1"><span class="kw1">INSERT</span> <span class="kw1">INTO</span> Agenda<span class="br0">&#40;</span><span class="st0">&quot;10-10-2011&quot;</span><span class="sy0">,</span><span class="st0">&quot;10:00&quot;</span><span class="sy0">,</span><span class="st0">&quot;Visita al dentista&quot;</span><span class="sy0">,</span><span class="nu0">60</span><span class="sy0">,</span><span class="st0">&quot;&quot;</span><span class="br0">&#41;</span></div></li><li class="li1"><div class="de1"><span class="kw1">INSERT</span> <span class="kw1">INTO</span> Agenda<span class="br0">&#40;</span><span class="st0">&quot;12-10-2011&quot;</span><span class="sy0">,</span><span class="st0">&quot;8:00&quot;</span><span class="sy0">,</span><span class="st0">&quot;Excursió a la Salut de Terrades&quot;</span><span class="sy0">,</span> <span class="nu0">240</span><span class="sy0">,</span> <span class="st0">&quot;Trucar a en Pere i en Pau per veure si vénen&quot;</span><span class="br0">&#41;</span></div></li><li class="li1"><div class="de1"><span class="kw1">INSERT</span> <span class="kw1">INTO</span> contactes <span class="br0">&#40;</span><span class="st0">&quot;12-10-2011&quot;</span><span class="sy0">,</span><span class="st0">&quot;8:00&quot;</span><span class="sy0">,</span><span class="st0">&quot;Pere&quot;</span><span class="sy0">,</span><span class="st0">&quot;pere@mailz.com&quot;</span><span class="br0">&#41;</span></div></li><li class="li1"><div class="de1"><span class="kw1">INSERT</span> <span class="kw1">INTO</span> contactes <span class="br0">&#40;</span><span class="st0">&quot;12-10-2011&quot;</span><span class="sy0">,</span><span class="st0">&quot;8:00&quot;</span><span class="sy0">,</span><span class="st0">&quot;Pau&quot;</span><span class="sy0">,</span><span class="st0">&quot;pau_papau@aquibegracies.cat&quot;</span><span class="br0">&#41;</span></div></li><li class="li1"><div class="de1"><span class="kw1">INSERT</span> <span class="kw1">INTO</span> Agenda<span class="br0">&#40;</span><span class="st0">&quot;12-10-2011&quot;</span><span class="sy0">,</span><span class="st0">&quot;21:00&quot;</span><span class="sy0">,</span><span class="st0">&quot;Cinema&quot;</span><span class="sy0">,</span> <span class="nu0">240</span><span class="sy0">,</span> <span class="st0">&quot;Trucar un dia abans a la Maria per confirmar si pot venir&quot;</span><span class="br0">&#41;</span></div></li><li class="li1"><div class="de1"><span class="kw1">INSERT</span> <span class="kw1">INTO</span> contactes <span class="br0">&#40;</span><span class="st0">&quot;12-10-2011&quot;</span><span class="sy0">,</span><span class="st0">&quot;21:00&quot;</span><span class="sy0">,</span><span class="st0">&quot;Maria&quot;</span><span class="sy0">,</span><span class="st0">&quot;pere@mailz.com&quot;</span><span class="br0">&#41;</span></div></li><li class="li1"><div class="de1"><span class="kw1">INSERT</span> <span class="kw1">INTO</span> Agenda<span class="br0">&#40;</span><span class="st0">&quot;13-10-2011&quot;</span><span class="sy0">,</span><span class="st0">&quot;8:00&quot;</span><span class="sy0">,</span><span class="st0">&quot;Reunió amb els representants de Porquets, SA&quot;</span><span class="sy0">,</span> <span class="nu0">180</span><span class="sy0">,</span> <span class="st0">&quot;&quot;</span><span class="br0">&#41;</span></div></li><li class="li1"><div class="de1"><span class="kw1">INSERT</span> <span class="kw1">INTO</span> Agenda<span class="br0">&#40;</span><span class="st0">&quot;14-10-2011&quot;</span><span class="sy0">,</span><span class="st0">&quot;8:00&quot;</span><span class="sy0">,</span><span class="st0">&quot;Congrés de telefonia mòbil&quot;</span><span class="sy0">,</span> <span class="nu0">480</span><span class="sy0">,</span> <span class="st0">&quot;&quot;</span><span class="br0">&#41;</span></div></li></ol></pre>
+</div><input class="btn_solution3" type="button" value="Mostra"></input></form>
+</p>
+
+</div>
+
+<h2><a id="consultes_xquery" >Consultes XQuery</a></h2>
+<div class="level2">
+
+<p>
+L’objectiu d’aquesta activitat és realitzar consultes XQuery en un document XML.
+</p>
+
+<p>
+A partir de l’arxiu:
+</p>
+
+<p>
+<div class="mediaf filezip"><div class="mediacontent"><a href="../media/facturacio.xml.zip">Fitxer de facturació</a><span> ( 921 B )</span></div></div>
+</p>
+
+<p>
+de l’empresa Porquets, SA feu una expressió XQuery que doni resposta a les peticions següents:
+</p>
+<ul>
+<li class="level1"><div class="li"> Quins són els noms dels clients que tenen una factura més gran de 500 €?</div>
+</li>
+</ul>
+
+<p>
+<form action=""><div class="solution ioccontent"><pre class="code">for $factura in doc(&quot;facturacio.xml&quot;)//factura
+where $factura/total &gt; 500
+return $factura/client/raosocial/nom</pre>
+</div><input class="btn_solution3" type="button" value="Mostra"></input></form>
+</p>
+<ul>
+<li class="level1"><div class="li"> En quants rebuts s’ha venut l’article “Porquets de xocolata”?</div>
+</li>
+</ul>
+
+<p>
+<form action=""><div class="solution ioccontent"><pre class="code">count(
+for $rebut in doc(&quot;facturacio.xml&quot;)//rebut
+where $rebut/linies/producte[@codi=&quot;11115&quot;]
+return $rebut
+)</pre>
+</div><input class="btn_solution3" type="button" value="Mostra"></input></form>
+</p>
+<ul>
+<li class="level1"><div class="li"> Quants diners s’han ingressat per la venda de porquets de xocolata blanca?</div>
+</li>
+</ul>
+
+<p>
+<form action=""><div class="solution ioccontent"><pre class="code">sum (for $article in doc(&quot;facturacio.xml&quot;)//producte[@codi=&quot;11112&quot;]
+return $article/quantitat * $article/preuunitari )</pre>
+</div><input class="btn_solution3" type="button" value="Mostra"></input></form>
+</p>
+<ul>
+<li class="level1"><div class="li"> En quins rebuts s’han venut 3 o més articles?</div>
+</li>
+</ul>
+
+<p>
+<form action=""><div class="solution ioccontent"><pre class="code">for $rebut in doc(&quot;facturacio.xml&quot;)//rebut
+let $total := sum($rebut/linies/producte/quantitat)
+where $total&gt;2
+return &lt;albara&gt; { $rebut/@numero } &lt;/albara&gt;</pre>
+</div><input class="btn_solution3" type="button" value="Mostra"></input></form>
+</p>
+<ul>
+<li class="level1"><div class="li"> Feu una llista del total de les factures emeses als clients, ordenades de més a menys import.</div>
+</li>
+</ul>
+
+<p>
+<form action=""><div class="solution ioccontent"><pre class="code">for $client in doc(&quot;facturacio.xml&quot;)//factura
+order by number($client/total) descending
+return &lt;client&gt;{$client/client/raosocial/nom,$client/total}&lt;/client&gt;</pre>
+</div><input class="btn_solution3" type="button" value="Mostra"></input></form>
+</p>
+
+</div>
+
+<h2><a id="consultes_xquery1" >Consultes XQuery</a></h2>
+<div class="level2">
+
+<p>
+L’objectiu d’aquesta activitat és respondre a un seguit de preguntes sobre les dades emmagatzemades en XML utilitzant XQuery.
+</p>
+
+<p>
+A partir d’aquest document:
+</p>
+
+<p>
+<div class="mediaf filezip"><div class="mediacontent"><a href="../media/6nations11.xml.zip">Document</a><span> ( 1.6 KB )</span></div></div>
+</p>
+
+<p>
+en què hi ha els resultats del torneig de les 6 nacions de rugbi de l’any 2011, feu servir XQuery per respondre les preguntes següents:
+</p>
+<ul>
+<li class="level1"><div class="li"> Quants punts en total ha aconseguit anotar França en el torneig?</div>
+</li>
+</ul>
+
+<p>
+<form action=""><div class="solution ioccontent"><pre class="code">let $partits := doc(&quot;6nations11.xml&quot;)//team[@name=&#039;France&#039;]
+return &lt;torneig&gt;{sum($partits/@score)}&lt;/torneig&gt;</pre>
+</div><input class="btn_solution3" type="button" value="Mostra"></input></form>
+</p>
+<ul>
+<li class="level1"><div class="li"> Quins partits ha jugat Escòcia?</div>
+</li>
+</ul>
+
+<p>
+<form action=""><div class="solution ioccontent"><pre class="code">for $equip in doc(&quot;6nations11.xml&quot;)//summary
+where some $a in $equip/team 
+satisfies ($a/@name=&quot;Scotland&quot;)
+return &lt;partit&gt;{concat($equip/team[1]/@name,&quot; - &quot;, $equip/team[2]/@name)}&lt;/partit&gt;</pre>
+</div><input class="btn_solution3" type="button" value="Mostra"></input></form>
+</p>
+<ul>
+<li class="level1"><div class="li"> Feu la llista de tots els partits que s’han jugat especificant quins equips s’enfrontaven.</div>
+</li>
+</ul>
+
+<p>
+<form action=""><div class="solution ioccontent"><pre class="code">for $equip at $pos in doc(&quot;6nations11.xml&quot;)//summary
+return &lt;partit num=&quot;{$pos}&quot;&gt;{concat($equip/team[1]/@name,&quot; - &quot;,$equip/team[2]/@name)}&lt;/partit&gt;</pre>
+</div><input class="btn_solution3" type="button" value="Mostra"></input></form>
+</p>
+<ul>
+<li class="level1"><div class="li"> Quin partit ha guanyat Itàlia? </div>
+</li>
+</ul>
+
+<p>
+<form action=""><div class="solution ioccontent"><pre class="code">for $equip in doc(&quot;6nations11.xml&quot;)//summary
+where some $a in $equip/team 
+satisfies ($a/@name=&quot;Italy&quot; and $a/@score = max($equip//team/@score) )
+return &lt;partit&gt;{concat($equip/team[1]/@name,&quot; - &quot;, $equip/team[2]/@name)}&lt;/partit&gt;</pre>
+</div><input class="btn_solution3" type="button" value="Mostra"></input></form>
+</p>
+<ul>
+<li class="level1"><div class="li"> Genereu una llista ordenada de més a menys amb els punts totals que ha anotat cada equip.</div>
+</li>
+</ul>
+
+<p>
+<form action=""><div class="solution ioccontent"><pre class="code">for $equip in distinct-values( doc(&quot;6nations11.xml&quot;)//team/@name)
+let $punts := doc(&quot;6nations11.xml&quot;)//team[@name=$equip]
+order by sum($punts/@score) descending
+return &lt;team equip=&quot;{$equip}&quot; anotacions=&quot;{sum($punts/@score)}&quot; /&gt;</pre>
+</div><input class="btn_solution3" type="button" value="Mostra"></input></form>
+</p>
+
+</div>
+
+<h2><a id="exist-db" >eXist-db</a></h2>
+<div class="level2">
+
+<p>
+L’objectiu d’aquesta activitat és fer la instal·lació d’un sistema de bases de dades XML.
+</p>
+<ol>
+<li class="level1"><div class="li"> Instal·leu la base de dades eXist-db com un servidor fent servir les instruccions que proporciona la seva pàgina web. </div>
+</li>
+<li class="level1"><div class="li"> Carregueu aquests arxius en aquesta base de dades:</div>
+</li>
+</ol>
+
+<p>
+<div class="mediaf filezip"><div class="mediacontent"><a href="../media/bodega.zip">Base de dades</a><span> ( 1.7 KB )</span></div></div>
+</p>
+
+<p>
+<form action=""><div class="solution ioccontent">
+<p>
+La instal·lació d’eXist-db no té dificultat excessiva, ja que en el web s’ofereixen paquets autoinstal·lables que no ofereixen cap dificultat.
+<div class="imgelem">
+<img src="../media/exist-db1.png" align="right" alt="" /></div>
+
+</p>
+
+<p>
+Cal tenir en compte que l’instal·lador no inicia la base de dades, i per tant abans de poder-hi connectar caldrà iniciar-la.
+</p>
+
+<p>
+<div class="imgelem">
+<img src="../media/exist-db2.png" align="right" alt="" /></div>
+
+</p>
+
+<p>
+Per crear una col·lecció descomprimiu els arxius en un directori, i per mitjà de qualsevol de les seves interfícies connecteu-vos a la base de dades amb un client, i amb el botó de la barra d’eines o amb la instrucció <code>mkcol</code> creeu una nova col·lecció, <em>Bodega</em>.
+</p>
+
+<p>
+<div class="imgelem">
+<img src="../media/exist-db3.png" align="right" alt="" /></div>
+
+</p>
+
+<p>
+Feu dos clics sobre la nova col·lecció per afegir els documents XML que vulgueu dins d’aquesta.
+</p>
+
+<p>
+<div class="imgelem">
+<img src="../media/exist-db4.png" align="right" alt="" /></div>
+
+</p>
+
+<p>
+I tindreu els arxius XML en la col·lecció.
+</p>
+
+<p>
+<div class="imgelem">
+<img src="../media/exist-db5.png" align="right" alt="" /></div>
+
+</p>
+</div><input class="btn_solution3" type="button" value="Mostra"></input></form>
+</p>
+
+</div>
+
+	 </article>
+     <div class="pnpage">
+      <div class="left-corner"></div>
+      <div id="prevpage">Anar a la p&agrave;gina anterior:<br /><a href="../../../WebContent/u3/a3/continguts.html">Bases de dades natives XML. Llenguatge de consultes (XQuery)</a></div>
+      <div id="nextpage">Anar a la p&agrave;gina seg&uuml;ent:<br /><a href="../../../WebContent/u3/a3/exercicis.html">Exercicis d'autoavaluació</a></div>
+      <div class="right-corner"></div>
+     </div>
+    </div>
+    <footer class="footer">
+      <div><small>Aquest document està subjecte a una llicència oberta de Creative Commons, es reserva el dret de reconeixement de l'autoria, d'exigir que no se'n faci cap mena d'ús comercial. Si altereu o transformeu aquesta obra, o en genereu obres derivades, només podeu distribuir l'obra generada amb una llicència idèntica a aquesta.</small></div>
+    </footer>
+ </div>
+ <div id="back_preview" class="hidden"></div>
+ <div id="preview" class="hidden">
+  <div class="prevcontent"></div>
+ </div>
+ <div id="help-tooltips">
+  <div id="help-toc" class="hidden tooltip"><span>Taula de continguts:</span> Ofereix una vista general de l&#39;estructura del m&ograve;dul, que us facilitar&agrave; la navegaci&oacute; a trav&eacute;s dels seus continguts.<span class="arrow-left"></span></div> 
+  <div id="help-settings" class="hidden tooltip"><span>Opcions de format:</span> Permet configurar el format de lectura a partir de les vostres prefer&egrave;ncies, modificant la mida de la lletra, el color del fons, l&#39;amplada de la p&agrave;gina o l&#39;ocultaci&oacute; dels continguts complementaris, entre d&#39;altres.<span class="arrow-left"></span></div>
+  <div id="help-printer" class="hidden tooltip"><span>Imprimir:</span>  Envia el contingut seleccionat a la impressora.<span class="arrow-left"></span></div>
+  <div id="help-favorites" class="hidden tooltip"><span>Prefereits:</span> Permet desar aquelles parts del contingut a les que us interessi accedir en un moment posterior; us permetr&agrave; anar creant un repositori personalitzat de les seccions que considereu m&eacute;s rellevants. Un cop l&#39;hageu començat a fer servir se us mostrar&agrave; a sota un comptador que us informar&agrave; del nombre de preferits que s&#39;hagin emmagatzemat fins al moment.<span class="arrow-left"></span></div>
+  <div id="help-favcounter" class="hidden tooltip"><span>Comptador i llistat de preferits:</span> Indica el nombre de preferits que s&#39;han desat fins el moment; clicant damunt seu accedireu al llistat de preferits, i a trav&eacute;s d&#39;aquest podreu accedir directament als continguts que hageu emmagatzemat.<span class="arrow-left"></span></div>
+  <div id="help-help_icon" class="hidden tooltip"><span>Ajuda:</span> Aquesta opci&oacute; activa la informaci&oacute; de les funcionalitats del web tot situant el punter del ratol&iacute; al damunt dels diferents &iacute;tems.<span class="arrow-left"></span></div>
+  <div id="help-sidebar-hide" class="hidden tooltip"><span>Mostrar/Ocultar barra lateral:</span>  Deshabilita la barra d&#39;opcions, permetent la seva recuperaci&oacute; quan es desitgi.<span class="arrow-left"></span></div>
+  <div id="help-search" class="hidden tooltip"><span>Cerca:</span>  Introdu&iuml;u les paraules clau sobre aquells conceptes que desitgeu localitzar en els continguts del m&ograve;dul. Tamb&eacute; podeu excloure un terme de la cerca tot afegint-hi el signe &#8220;-&#8221; al davant.<span class="arrow-top"></span></div>
+  <div id="help-header" class="hidden tooltip"><span>Cap&ccedil;alera:</span>  Indica l&#39;apartat o secci&oacute; que es mostra en pantalla. Tingueu present que les capçaleres de segon, tercer i quart nivell tamb&eacute; es poden desar com a marcadors.<span class="arrow-left"></span></div>
+</div> 
+</body>
+</html>

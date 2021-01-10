@@ -1,0 +1,568 @@
+<!doctype html>
+
+<!--[if lt IE 7 ]> <html class="ie ie6 no-js" lang="ca"> <![endif]-->
+<!--[if IE 7 ]>    <html class="ie ie7 no-js" lang="ca"> <![endif]-->
+<!--[if IE 8 ]>    <html class="ie ie8 no-js" lang="ca"> <![endif]-->
+<!--[if IE 9 ]>    <html class="ie ie9 no-js" lang="ca"> <![endif]-->
+<!--[if gt IE 9]><!--><html class="no-js" lang="ca"><!--<![endif]-->
+<!-- the "no-js" class is for Modernizr. -->
+
+<head id="www-sitename-com" data-template-set="html5-reset">
+
+	<meta charset="utf-8">
+	
+	<!-- Always force latest IE rendering engine (even in intranet) & Chrome Frame -->
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	
+	<title>Entorns de desenvolupament</title>
+	
+<!-- <meta name="title" content=""> --> 
+	<meta name="description" content="">
+	<!-- Google will often use this as its description of your page/site. Make it good. -->
+	
+	<meta name="google-site-verification" content="">
+	<!-- Speaking of Google, don't forget to set your site up: http://google.com/webmasters -->
+	
+	<meta name="author" content="Institut Obert de Catalunya">
+	<meta name="Copyright" content="Copyright Institut Obert de Catalunya 2011. All Rights Reserved.">
+
+	<!-- Dublin Core Metadata : http://dublincore.org/ -->
+	<meta name="DC.title" content="Entorns de desenvolupament">
+	<meta name="DC.subject" content="Informàtica i comunicacions">
+	<meta name="DC.creator" content="Institut Obert de Catalunya">
+	
+	<!--  Mobile Viewport Fix
+	j.mp/mobileviewport & davidbcalhoun.com/2010/viewport-metatag 
+	device-width : Occupy full width of the screen in its current orientation
+	initial-scale = 1.0 retains dimensions instead of zooming out if page height > device height
+	maximum-scale = 1.0 retains dimensions instead of zooming in if page width < device width
+	-->
+	<!-- Uncomment to use � use thoughtfully!
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+	-->
+
+	<link rel="shortcut icon" href="../../../img/favicon.ico">
+	<!-- This is the traditional favicon.
+		 - size: 16x16 or 32x32
+		 - transparency is OK
+		 - see wikipedia for info on browser support: http://mky.be/favicon/ -->
+		 
+	<link rel="apple-touch-icon" href="../../../img/apple-touch-icon.png">
+	<!-- The is the icon for iOS's Web Clip.
+		 - size: 57x57 for older iPhones, 72x72 for iPads, 114x114 for iPhone4's retina display (IMHO, just go ahead and use the biggest one)
+		 - To prevent iOS from applying its styles to the icon name it thusly: apple-touch-icon-precomposed.png
+		 - Transparency is not recommended (iOS will put a black BG behind the icon) -->
+	
+	<!-- CSS: screen, mobile & print are all in the same file -->
+	<link rel="stylesheet" href="../../../_/css/style.css">
+
+	<!-- CSS: jQuery UI -->
+	<link rel="stylesheet" href="../../../_/css/jquery-ui.css">
+	
+	<!-- all our JS is at the bottom of the page, except for Modernizr. -->
+	<script src="../../../_/js/modernizr-1.7.min.js"></script>
+	<script src="../../../_/js/Hyphenator.js" type="text/javascript"></script>
+	<script type="text/javascript">
+	   Hyphenator.config({
+		minwordlength : 4
+	   });
+	   Hyphenator.run();
+	</script>
+    <script src="../../../_/js/build.js" type="text/javascript"></script>
+</head>
+
+<body class="style-newspaper">
+
+<div class="wrapper"><!-- not needed? up to you: http://camendesign.com/code/developpeurs_sans_frontieres -->
+
+	<header id="header">
+		<div class="head"><a href="http://ioc.gencat.cat"><img src="../../../img/logo.png" alt="Institut Obert de Catalunya"/></a><a href="http://creativecommons.org/licenses/by-nc-sa/3.0/es/deed.ca"><img src="../../../img/license.png" alt="Llic&egrave;ncia" class="license"/></a></div>
+		<div class="headdocument"><a href="../../../index.html">Entorns de desenvolupament</a></div>
+        <div id="search" class="search" name="search">
+         <form id="frmsearch" action="../../../search.html" method="get">
+          <input type="text" name="q"/>
+        </form>
+        </div>
+	</header>
+   <div id="upbutton" class="upbutton" style="display:none;"><img src="../../../img/uparrow.png" alt="Pujar a l'inici de p&agrave;gina"/></div>
+   <aside id="aside">
+    <div id="menu">
+      <ul>
+       <li name="toc"><div><img src="../../../img/toc.png" alt="&Iacute;ndex"/></div></li>
+       <li name="settings"><div><img src="../../../img/settings.png" alt="Configuraci&oacute;"/></div></li>
+       <li name="printer"><div><img src="../../../img/printer.png" alt="Imprimir"/></div></li>
+       <li name="favorites"><div><img src="../../../img/favorites.png" alt="Favorits"/></div></li>
+       <li name="help_icon" class="help_icon"><div><img src="../../../img/help_icon.png" alt="Ajuda"/></div></li>
+      </ul>
+     </div>
+   </aside>
+   <div id="sidebar-hide" name="sidebar-hide"><img src="../../../img/arrows.png"/></div>
+   <section>
+     <div id="toc" class="hidden">
+      <div class="menucontent">
+        <ul>
+        <li id="u1" class="parentnode"><p><a href="../../../WebContent/u1/introduccio.html">1. Desenvolupament de programari</a></p><ul class="expander"><li id="u1introduccio"><a href="../../../WebContent/u1/introduccio.html">Introducció</a></li><li id="u1resum"><a href="../../../WebContent/u1/resum.html">Resum</a></li><li id="u1resultats"><a href="../../../WebContent/u1/resultats.html">Resultats d'aprenentatge</a></li><li id="u1referencies"><a href="../../../WebContent/u1/referencies.html">Referències</a></li><li id="u1a1" class="tocsection"><p id="u1a1continguts"><a href="../../../WebContent/u1/a1/continguts.html">Desenvolupament de programari</a><span class="buttonexp"></span></p><ul><li id="u1a1activitats"><a href="../../../WebContent/u1/a1/activitats.html">Activitats</a></li><li id="u1a1exercicis"><a href="../../../WebContent/u1/a1/exercicis.html">Exercicis</a></li><li id="u1a1annexos"><a href="../../../WebContent/u1/a1/annexos.html">Annexos</a></li></ul></li><li id="u1a2" class="tocsection"><p id="u1a2continguts"><a href="../../../WebContent/u1/a2/continguts.html">Instal·lació i ús d'entorns de desenvolupament</a><span class="buttonexp"></span></p><ul><li id="u1a2activitats"><a href="../../../WebContent/u1/a2/activitats.html">Activitats</a></li><li id="u1a2exercicis"><a href="../../../WebContent/u1/a2/exercicis.html">Exercicis</a></li><li id="u1a2annexos"><a href="../../../WebContent/u1/a2/annexos.html">Annexos</a></li></ul></li></ul></li><li id="" class="indexnode"><p><a href="../../../index.html">Anar a l&#39;&iacute;ndex general</a></p></li>
+        </ul>
+      </div>
+    </div>
+   </section>
+   <section>
+   <div id="settings" class="hidden">
+    <div class="menucontent">
+     <div class="allsettings">
+     <div class="settings">
+      <label>Font i Color</label>
+		<div class="setting-option">
+	        <ul class="fontBackground">
+				<li id="style-newspaper" title="Newspaper" class="appearance-style-newspaper"><span>Newspaper</span></li>
+                <li id="style-novel" title="Novel" class="appearance-style-novel"><span>Novel</span></li>
+                <li id="style-ebook" title="eBook" class="appearance-style-ebook"><span>eBook</span></li>
+				<li id="style-inverse" title="Inverse" class="appearance-style-inverse active"><span>Inverse</span></li>
+				<li id="style-athelas" title="Athelas" class="appearance-style-athelas"><span>Athelas</span></li>
+			</ul>
+		</div>
+     </div>
+	<div class="settings">
+      <label>Amplada</label>
+		<div class="setting-option">
+	        <div id="slider-width"></div>
+		</div>
+     </div>
+     <div class="settings">
+      <label>Mida de la font</label>
+		<div class="setting-option">
+	        <div id="slider-font"></div>
+		</div>
+     </div>
+     <div class="settings">
+      <label>Mida de la font</label>
+	  <div class="setting-option">
+       <form action="" class="sett-options">
+		<ul>
+		    <li><input type="checkbox" id="secondary-content" /><label for="secondary-content">Mostra recursos complementaris</label></li>
+		    <li><input type="checkbox" id="main-images" /><label for="main-images">Mostra imatges</label></li>
+		    <li><input type="checkbox" id="text-alignment" /><label for="text-alignment">Text justificat</label></li>
+			<li><input type="checkbox" id="text-hyphen" /><label for="text-hyphen">Partici&oacute; sil·l&agrave;bica</label></li>
+		</ul>
+       </form>
+	  </div>
+     </div>
+     </div>
+    </div>
+   </div>
+   </section>
+ <section>
+ <div id="favorites" class="hidden"></div>
+ </section>   
+ <div id="bridge" class="hidden"></div>
+ <div id="help" class="hidden">
+  <div class="helptitle">Dreceres del teclat<hr></div>
+  <div class="helpsection"><span>General</span>
+   <ul>
+    <li><span class="shortcut">g</span>: Anar al men&uacute; de navegaci&oacute;</li>
+    <li><span class="shortcut">o</span>: Anar a opcions</li>
+    <li><span class="shortcut">s</span>: Guardar la p&agrave;gina actual a favorits</li>
+    <li><span class="shortcut">p</span>: Imprimir la p&agrave;gina actual</li>
+    <li><span class="shortcut">?</span>: Mostrar/Ocultar l&#39;ajuda</li>
+   </ul>
+  </div>
+  <div class="helpsection"><span>Navegaci&oacute;</span>
+   <ul>
+    <li><span class="shortcut">i</span>: Anar a l&#39;&iacute;ndex general</li>
+    <li><span class="shortcut">t</span>: Anar a l&#39;inici de p&agrave;gina</li>
+    <li><span class="shortcut">b</span>: Anar al final de p&agrave;gina</li>
+    <li><span class="shortcut">j</span>: Anar cap endavant dintre la p&agrave;gina</li>
+    <li><span class="shortcut">k</span>: Anar cap enrere dintre la p&agrave;gina</li>
+    <li><span class="shortcut">h</span>: Anar a la p&agrave;gina anterior:</li>
+    <li><span class="shortcut">l</span>: Anar a la p&agrave;gina seg&uuml;ent:</li>
+   </ul>
+   </div>
+ </div>
+ <div id="favcounter" name="favcounter" class="hidden"><span></span></div>
+ <div id="navmenu" class="navmenu"><ul class="webnav"><li><a href="../../../index.html" title="Anar a l&#39;&iacute;ndex general">Inici</a></li><li><a href="../introduccio.html">Desenvolupament de programari </a></li><li><a href="continguts.html">Instal·lació i ús d'entorns de desenvolupament</a></li><li>Annexos</li></ul></div>
+	<div id="content" lang="ca" class="hyphenate text">
+     <article lang="ca" class="sheet">
+        <h1><a id="annexos"> Annexos </a></h1>
+    	
+<h2><a id="configuracio_de_java_i_exemple_inicial" >Configuració de JAVA i exemple inicial</a></h2>
+<div class="level2">
+
+</div>
+
+<h3><a id="variables_d_entorn" >Variables d&#039;entorn</a></h3>
+<div class="level3">
+
+<p>
+Una vegada descarregat i instal·lat el JDK, cal configurar les variables d’entorn <code>JAVA_HOME</code> i <code>PATH</code>. Cal recordar que:
+</p>
+<ul>
+<li class="level1"><div class="li"> <code>JAVA_HOME</code> ha d’apuntar a la carpeta on s’ha instal·lat el JDK.</div>
+</li>
+<li class="level1"><div class="li"> <code>PATH</code> ha d’apuntar a la subcarpeta <em>bin</em> de la instal·lació del JDK, que és on són els <strong>executables</strong>. A més, ha de conservar la ruta de la resta d’executables que utilitza el sistema.</div>
+</li>
+</ul>
+
+</div>
+
+<h4><a id="definicio_de_les_variables_d_entorn_a_linux_i_mac_os" >Definició de les variables d&#039;entorn a Linux i Mac OS</a></h4>
+<div class="level4">
+
+<p>
+Una manera d’aconseguir que les variables d’entorn s’inicialitzin cada cop que obrim sessió és creant un fitxer de guions i posant-lo a la carpeta<em> /etc/profile.d</em>. Així s’executarà cada cop que s’iniciï una sessió.
+</p>
+<div class="iocimportant"><div class="ioccontent"><ul>
+<li class="level1"><div class="li"> El fitxer que creem ha de tenir un nom acabat en <em>.sh</em> per a que s’executi de manera automàtica en iniciar la sessió. Per exemple, podria anomenar-se <em>varsjava.sh</em>.</div>
+</li>
+<li class="level1"><div class="li"> Per poder gravar aquest fitxer en la carpeta<em> /etc/profile.d</em> és necessari comptar amb permisos de <em>root</em>.</div>
+</li>
+</ul>
+</div></div>
+<p>
+Si suposem que la carpeta d’instal·lació de Java és<em> /usr/java/jdk-11</em>, el contingut d’aquest fitxer podria ser aquest:
+</p>
+<pre class="code bash"><ol><li class="li1"><div class="de1"><span class="kw3">export</span> <span class="re2">JAVA_HOME</span>=<span class="sy0">/</span>usr<span class="sy0">/</span>java<span class="sy0">/</span>jdk-<span class="nu0">11</span></div></li><li class="li1"><div class="de1"><span class="re2">PATH</span>=<span class="re1">$JAVA_HOME</span><span class="sy0">/</span>bin:<span class="re1">$PATH</span></div></li></ol></pre>
+
+</div>
+
+<h4><a id="definicio_de_les_variables_d_entorn_a_windows" >Definició de les variables d&#039;entorn a Windows</a></h4>
+<div class="level4">
+
+<p>
+Cal accedir al menú d’inici i fer clic amb el botó dret del ratolí sobre l’equip tot seleccionant l’opció Propietats. Es mostra a la <span class="figref"><a href="#Figure1"><span>figura</span></a></span>.
+</p>
+<div class="iocfigure"><a name="Figure1"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Accés a les variables d’entorn
+
+</figcaption><img src="../media/annex_figura_uf1a2_01.png" alt="" /></figure>
+</div>
+<p>
+S’ha de seleccionar l’opció <em>Configuració avançada del sistema</em>. Es mostra a la <span class="figref"><a href="#Figure2"><span>figura</span></a></span>.
+</p>
+<div class="iocfigure"><a name="Figure2"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Accés a les variables d’entorn
+
+</figcaption><img src="../media/annex_figura_uf1a2_02.png" alt="" /></figure>
+</div>
+<p>
+S’ha de seleccionar l’opció <em>Variables d’entorn</em> que es troba en la pestanya <em>Opcions avançades</em>. Es mostra a la <span class="figref"><a href="#Figure3"><span>figura</span></a></span>.
+</p>
+<div class="iocfigure"><a name="Figure3"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Selecció de les variables d’entorn
+
+</figcaption><img src="../media/annex_figura_uf1a2_03.png" alt="" /></figure>
+</div>
+<p>
+Es cerca la variable d’entorn <code>JAVA_HOME</code> i s’edita el seu contingut perquè sigui el camí on s’ha instal·lat el JDK. Cal repetir el mateix procés amb la variable <code>PATH</code>. Es mostra a la <span class="figref"><a href="#Figure4"><span>figura</span></a></span>.
+</p>
+<div class="iocfigure"><a name="Figure4"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Especifiquem el valor de les variables d’entorn
+
+</figcaption><img src="../media/annex_figura_uf1a2_04_v2.png" alt="" /></figure>
+</div>
+</div>
+
+<h3><a id="descarrega_i_instal_lacio_de_l_apache_tomcat" >Descàrrega i instal·lació de l&#039;Apache Tomcat</a></h3>
+<div class="level3">
+<div class="iocnote"><div class="ioccontent">
+<p>
+Es preferible triar la versió més actual possible, ja que el procediment és el mateix.
+</p>
+</div></div>
+<p>
+El primer que cal fer és descarregar-se el programari. Podeu trobar-lo al web d’<a href="http://tomcat.apache.org" class="urlextern" title="http://tomcat.apache.org"  rel="nofollow">Apache Tomcat</a>. En la <span class="figref"><a href="#Figure5"><span>figura</span></a></span> i la <span class="figref"><a href="#Figure6"><span>figura</span></a></span> es mostra aquesta descàrrega.
+</p>
+<div class="iocfigure"><a name="Figure5"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Instal·lació Tomcat
+
+</figcaption><img src="../media/annex_tomcat_01.png" alt="" /></figure>
+</div><div class="iocfigure"><a name="Figure6"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Instal·lació Tomcat
+
+</figcaption><img src="../media/annex_tomcat_12.png" alt="" /></figure>
+</div>
+<p>
+En <span class="figref"><a href="#Figure6"><span>figura</span></a></span> s’han assenyalat les versions recomanades per a Windows i per a GNU Linux. Al cas de Windows, s’instal·lara com a un servei. Al cas de Mac <acronym title="Operating System">OS</acronym> no cal fer cap instal·lació ja que aquest sistema ja porta instal·lat el servidor Apache Tomcat.
+</p>
+
+</div>
+
+<h4><a id="instal_lacio_sota_windows" >Instal·lació sota Windows</a></h4>
+<div class="level4">
+
+<p>
+Un cop baixat l’instal·lador de Apache Tomcat, cal executar-lo perquè s’instal·li com a un servei.
+</p>
+
+<p>
+A continuació, des de la <span class="figref"><a href="#Figure57"><span>figura</span></a></span> fins a la <span class="figref"><a href="#Figure15"><span>figura</span></a></span> es mostren, pas a pas, els diàlegs de la instal·lació.
+</p>
+<div class="iocfigure"><a name="Figure7"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Instal·lació Tomcat
+
+</figcaption><img src="../media/annex_tomcat_03.png" alt="" /></figure>
+</div><div class="iocfigure"><a name="Figure8"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Instal·lació Tomcat
+
+</figcaption><img src="../media/annex_tomcat_04.png" alt="" /></figure>
+</div><div class="iocfigure"><a name="Figure9"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Instal·lació Tomcat
+
+</figcaption><img src="../media/annex_tomcat_05.png" alt="" /></figure>
+</div><div class="iocfigure"><a name="Figure10"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Instal·lació Tomcat
+
+</figcaption><img src="../media/annex_tomcat_06.png" alt="" /></figure>
+</div><div class="iocfigure"><a name="Figure11"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Instal·lació Tomcat
+
+</figcaption><img src="../media/annex_tomcat_07.png" alt="" /></figure>
+</div><div class="iocfigure"><a name="Figure12"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Instal·lació Tomcat
+
+</figcaption><img src="../media/annex_tomcat_08.png" alt="" /></figure>
+</div><div class="iocfigure"><a name="Figure13"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Instal·lació Tomcat
+
+</figcaption><img src="../media/annex_tomcat_09.png" alt="" /></figure>
+</div><div class="iocfigure"><a name="Figure14"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Instal·lació Tomcat
+
+</figcaption><img src="../media/annex_tomcat_10.png" alt="" /></figure>
+</div><div class="iocfigure"><a name="Figure15"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Instal·lació Tomcat
+
+</figcaption><img src="../media/annex_tomcat_11.png" alt="" /></figure>
+</div>
+</div>
+
+<h4><a id="instal_lacio_sota_gnu_linux" >Instal·lació sota GNU Linux</a></h4>
+<div class="level4">
+
+<p>
+La instal·lació es farà des de l’usuari que utilitzarà Eclipse, encara que no tingui privilegis de <em>root</em>. D’aquesta manera podrà posar-lo en marxa i aturar-lo des d’Eclipse. Si més d’un usuari hagués d’utilitzar Eclipse i Apache Tomcat conjuntament, tots ells haurien de tenir permís de lectura i execució sobre la carpeta d’instal·lació d’Apache Tomcat.
+</p>
+
+<p>
+La instal·lació de l’Apache Tomcat consisteix en:
+</p>
+<div class="iocreference"><div class="ioccontent">
+<p>
+A l’inici d’aquest apartat trobareu el procediment per configurar variables d’entorn als diferents sistemes operatius.
+</p>
+</div></div><ul>
+<li class="level1"><div class="li"> Copiar o moure el fitxer descarregat del web d’Apache Tomcat a la carpeta on volem instal·lar-lo.</div>
+</li>
+<li class="level1"><div class="li"> Descomprimir el fitxer copiat al pas anterior.</div>
+</li>
+<li class="level1"><div class="li"> Crear la variable d’entorn <code>CATALINA_HOME</code>, que ha d’indicar la carpeta arrel de la instal·lació de l’Apache Tomcat.</div>
+</li>
+<li class="level1"><div class="li"> Modificar la variable d’entorn <code>PATH</code> perquè inclogui també la subcarpeta <em>bin</em> de la carpeta d’instal·lació de l’Apache Tomcat. Aquesta subcarpeta <em>bin</em> conté els executables d’aquest servidor.</div>
+</li>
+</ul>
+
+</div>
+
+<h4><a id="instal_lacio_de_connectors" >Instal·lació de connectors</a></h4>
+<div class="level4">
+
+<p>
+A continuació, es pot observar, pas a pas, com afegir un connector a una instal·lació d’Eclipse ja realitzada. Concretament, afegirem un connector que permeti editar de forma tabular els fitxers <em>csv</em>.
+</p>
+<div class="ioctextl"><div class="ioccontent"><p class="ioctitle">Fitxers csv</p>
+<p>
+Un fitxer <strong>csv</strong> (<em>comma-separated values</em>) és un fitxer que conté dades tabulades de la següent manera: cada línia del fitxer conté les dades d’una fila de la taula i, dins de cada fila, les comes (o punts i comes) separen les dades de les diferents columnes).
+</p>
+</div></div>
+<p>
+Per instal·lar un connector a Eclipse anirem a l’apartat <em>Eclipse Marketplace</em>, de l’opció del menú <em>Help</em>, tal com es veu a la <span class="figref"><a href="#figuraMenuMarketPlace"><span>figura</span></a></span>.
+</p>
+<div class="iocfigure"><a name="figuraMenuMarketPlace"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Selecció de la funcionalitat Eclipse
+
+</figcaption><img src="../media/menumarketplace.png" alt="" /></figure>
+</div>
+<p>
+Ens apareix una pantalla que ens permet cercar el connector que volem instal·lar. Al quadre de text <em>Find</em>, teclejarem <em>csv</em>, com es mostra a la figura <span class="figref"><a href="#figuraMarketPlaceCerca"><span>figura</span></a></span>.
+</p>
+<div class="iocfigure"><a name="figuraMarketPlaceCerca"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Cerca del connector a l’Eclipse Marketplace
+
+</figcaption><img src="../media/marketplacecerca.png" alt="" /></figure>
+</div><div class="iocnote"><div class="ioccontent">
+<p>
+El connector <em>CSV Edit Resurrector</em> té aquest nom perquè és una ramificació (<em>fork</em>) del connector <em>CSV Edit</em>, que va deixar d’actualitzar-se.
+</p>
+</div></div>
+<p>
+A continuació, si cliquem la lupa, ens apareixeran els connectors resultants de la cerca. Seleccionarem el connector <em>CSV Edit Resurrector</em> clicant al botó <em>Install</em>, tal com es veu a la <span class="figref"><a href="#figuraTriaEditor"><span>figura</span></a></span>.
+</p>
+<div class="iocfigure"><a name="figuraTriaEditor"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Selecció del connector
+
+</figcaption><img src="../media/triaeditor.png" alt="" /></figure>
+</div>
+<p>
+Després de clicar el botó <em>Install</em>, començarà la instal·lació i ens demanarà que acceptem la llicència, tal com es veu a la figura <span class="figref"><a href="#figuraAcceptacioLLicencia"><span>figura</span></a></span>.
+</p>
+<div class="iocfigure"><a name="figuraAcceptacioLLicencia"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Acceptació dels termes de la llicència
+
+</figcaption><img src="../media/acceptaciollicencia.png" alt="" /></figure>
+</div>
+<p>
+Després de seleccionar l’opció “I accept the terms of the license agreement”, podem clicar el botó <em>Finish</em>.
+</p>
+
+<p>
+Abans de començar la instal·lació, ens pot aparèixer un avís d’algun problema amb la verificació del contingut, com es veu a la figura <span class="figref"><a href="#figuraAvisContingut"><span>figura</span></a></span>. En el cas d’aquest connector, això no és important i podem clicar el botó <em>Install Anyway</em>.
+</p>
+<div class="iocfigure"><a name="figuraAvisContingut"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Avís de seguretat
+
+</figcaption><img src="../media/aviscontingut.png" alt="" /></figure>
+</div>
+<p>
+Un cop acabada la instal·lació, ens demanarà si volem reiniciar l’entorn perquè el nou connector entri en funcionament. La figura <span class="figref"><a href="#figuraDialegReinici"><span>figura</span></a></span> mostra aquest diàleg. Si cliquem al botó <em>Restart now</em>, es tancarà l’entorn i es tornarà a obrir amb els mateixos elements oberts que té ara, però amb el connector funcionant correctament. En cas que no trobem convenient reiniciar ara l’entorn, podem fer clic al botó <em>No</em>. En aquest cas, el connector no entrarà en funcionament fins que no es torni a iniciar Eclipse.
+</p>
+<div class="iocfigure"><a name="figuraDialegReinici"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Diàleg previ al reinici de l’entorn
+
+</figcaption><img src="../media/dialegreinici.png" alt="" /></figure>
+</div><div class="iocnote"><div class="ioccontent">
+<p>
+A Eclipse es crea un fitxer de text seleccionant les opcions de menú <em>File</em> / <em>New</em> / <em>Other…</em> i, a l’assistent que apareix, l’element <em>Untitled Text File</em>, dins la carpeta <em>General</em>.
+</p>
+</div></div>
+<p>
+Podem comprovar el correcte funcionament del connector creant un fitxer de text i entrant-hi dades amb format <em>csv</em>, per exemple, com el que es mostra a la figura <span class="figref"><a href="#figuraNouFitxerCSV"><span>figura</span></a></span>.
+</p>
+<div class="iocfigure"><a name="figuraNouFitxerCSV"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Exemple de fitxer CSV creat a Eclipse
+
+</figcaption><img src="../media/noufitxercsv.png" alt="" /></figure>
+</div>
+<p>
+A l’explorador de paquets ens apareixerà el fitxer <em>csv</em> que acabem de crear amb una icona pòpia del connector, com es veu a la figura <span class="figref"><a href="#figuraFitxerAlExplorador"><span>figura</span></a></span>. 
+</p>
+<div class="iocfigure"><a name="figuraFitxerAlExplorador"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Fitxer csv a l’explorador de paquets
+
+</figcaption><img src="../media/fitxeralexplorador.png" alt="" /></figure>
+</div>
+<p>
+Si fem doble clic a sobre de la icona del fitxer, aquest s’obre amb l’editor que acabem d’instal·lar, com es veu a la figura <span class="figref"><a href="#figuraEditorCSV"><span>figura</span></a></span>.
+</p>
+<div class="iocfigure"><a name="figuraEditorCSV"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Exemple de fitxer CSV creat a Eclipse
+
+</figcaption><img src="../media/editorcsv.png" alt="" /></figure>
+</div>
+<p>
+Abans d’instal·lar el connector, el mateix fitxer s’hauria vist a l’explorador amb la icona de l’editor per defecte del sistema operatiu per aquest tipus de fitxers. En fer-hi doble clic, ens hauria sortit un diàleg per avisar-nos que podem instal·lar des del <em>Marketplace</em> alguns connectors per editar els fitxers d’aquest tipus. Malgrat l’avís, ens deixaria triar entre les opcions que es veuen a la <span class="figref"><a href="#figuraFitxerSensePlugin"><span>figura</span></a></span>:
+</p>
+<ol>
+<li class="level1"><div class="li"> Seleccionar un d’aquests connectors i instal·lar-lo.</div>
+</li>
+<li class="level1"><div class="li"> Treballar d’ara en endavant amb l’editor del sistema i no tornar a preguntar aquesta qüestió.</div>
+</li>
+</ol>
+<div class="iocfigure"><a name="figuraFitxerSensePlugin"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Exemple de fitxer CSV creat a Eclipse
+
+</figcaption><img src="../media/fitxersenseplugin.png" alt="" /></figure>
+</div>
+<p>
+Una altra forma d’afegir complements a Eclipse és descarregar-los per mitjà de la pàgina web oficial. Per afegir un nou connector, només cal descomprimir l’arxiu descarregat, al subdirectori <em>Plugins</em> (‘connectors’) de la carpeta on està instal·lat Eclipse. La propera vegada que s’executi l’aplicació Eclipse, automàticament, es reconeixeran i s’afegiran.
+</p>
+
+</div>
+
+<h3><a id="calculadoracodi_font" >Calculadora: codi font</a></h3>
+<div class="level3">
+
+<p>
+Una possible codificació de la calculadora podria ser:
+</p>
+<pre class="code java"><ol><li class="li1"><div class="de1"><span class="kw1">import</span> <span class="co2">java.awt.BorderLayout</span><span class="sy0">;</span></div></li><li class="li1"><div class="de1">&nbsp;</div></li><li class="li1"><div class="de1"><span class="kw1">public</span> <span class="kw1">class</span> Calculadora <span class="br0">&#123;</span></div></li><li class="li1"><div class="de1">&nbsp;</div></li><li class="li1"><div class="de1">	<span class="co1">// Constants</span></div></li><li class="li1"><div class="de1">	<span class="kw1">final</span> <span class="kw4">int</span> MAX_DIGITS <span class="sy0">=</span> <span class="nu0">5</span><span class="sy0">;</span></div></li><li class="li1"><div class="de1">	<span class="kw1">final</span> <span class="kw4">int</span> MODE_ENTRADA <span class="sy0">=</span> <span class="nu0">0</span><span class="sy0">;</span></div></li><li class="li1"><div class="de1">	<span class="kw1">final</span> <span class="kw4">int</span> MODE_RESULTAT <span class="sy0">=</span> <span class="nu0">1</span><span class="sy0">;</span></div></li><li class="li1"><div class="de1">&nbsp;</div></li><li class="li1"><div class="de1">	<span class="co1">//Variables</span></div></li><li class="li1"><div class="de1">	<span class="kw4">int</span> mode<span class="sy0">;</span></div></li><li class="li1"><div class="de1">	<span class="kw4">int</span> valor1<span class="sy0">;</span></div></li><li class="li1"><div class="de1">	<span class="kw4">int</span> valor2<span class="sy0">;</span></div></li><li class="li1"><div class="de1">	<a href="http://www.google.com/search?hl=en&amp;q=allinurl%3Adocs.oracle.com+javase+docs+api+string"><span class="kw3">String</span></a> operacio<span class="sy0">;</span></div></li><li class="li1"><div class="de1">	<span class="kw4">boolean</span> inicialitza_resultat<span class="sy0">;</span></div></li><li class="li1"><div class="de1">&nbsp;</div></li><li class="li1"><div class="de1">	<span class="kw1">private</span> <span class="kw1">static</span> Text text_resultat<span class="sy0">;</span></div></li><li class="li1"><div class="de1">&nbsp;</div></li><li class="li1"><div class="de1">	<span class="kw1">public</span> Calculadora<span class="br0">&#40;</span><span class="kw4">boolean</span> gui<span class="br0">&#41;</span> <span class="br0">&#123;</span>		</div></li><li class="li1"><div class="de1">&nbsp;</div></li><li class="li1"><div class="de1">		<span class="co1">//Inicialització de les variables.</span></div></li><li class="li1"><div class="de1">		inicialitza<span class="br0">&#40;</span><span class="br0">&#41;</span><span class="sy0">;</span></div></li><li class="li1"><div class="de1">&nbsp;</div></li><li class="li1"><div class="de1">		<span class="kw1">if</span> <span class="br0">&#40;</span>gui<span class="sy0">==</span><span class="kw2">true</span><span class="br0">&#41;</span> dibuixaCalculadora<span class="br0">&#40;</span><span class="br0">&#41;</span><span class="sy0">;</span></div></li><li class="li1"><div class="de1">&nbsp;</div></li><li class="li1"><div class="de1">	<span class="br0">&#125;</span></div></li><li class="li1"><div class="de1">&nbsp;</div></li><li class="li1"><div class="de1">	<span class="kw1">private</span> <span class="kw4">void</span> dibuixaCalculadora<span class="br0">&#40;</span><span class="br0">&#41;</span> <span class="br0">&#123;</span></div></li><li class="li1"><div class="de1">&nbsp;</div></li><li class="li1"><div class="de1">		Display display <span class="sy0">=</span> Display.<span class="me1">getDefault</span><span class="br0">&#40;</span><span class="br0">&#41;</span><span class="sy0">;</span></div></li><li class="li1"><div class="de1">		Shell shlCalculadora <span class="sy0">=</span> <span class="kw1">new</span> Shell<span class="br0">&#40;</span><span class="br0">&#41;</span><span class="sy0">;</span></div></li><li class="li1"><div class="de1">		shlCalculadora.<span class="me1">setSize</span><span class="br0">&#40;</span><span class="nu0">259</span>, <span class="nu0">250</span><span class="br0">&#41;</span><span class="sy0">;</span></div></li><li class="li1"><div class="de1">		shlCalculadora.<span class="me1">setText</span><span class="br0">&#40;</span><span class="st0">&quot;Calculadora&quot;</span><span class="br0">&#41;</span><span class="sy0">;</span></div></li><li class="li1"><div class="de1">&nbsp;</div></li><li class="li1"><div class="de1">		<span class="co1">//-------------------------------------------------</span></div></li><li class="li1"><div class="de1">		<span class="co1">//Números</span></div></li><li class="li1"><div class="de1">		<span class="co1">//-------------------------------------------------</span></div></li><li class="li1"><div class="de1">&nbsp;</div></li><li class="li1"><div class="de1">		<span class="co1">//botó amb el número 0</span></div></li><li class="li1"><div class="de1">		<a href="http://www.google.com/search?hl=en&amp;q=allinurl%3Adocs.oracle.com+javase+docs+api+button"><span class="kw3">Button</span></a> button_0 <span class="sy0">=</span> <span class="kw1">new</span> <a href="http://www.google.com/search?hl=en&amp;q=allinurl%3Adocs.oracle.com+javase+docs+api+button"><span class="kw3">Button</span></a><span class="br0">&#40;</span>shlCalculadora, SWT.<span class="me1">NONE</span><span class="br0">&#41;</span><span class="sy0">;</span></div></li><li class="li1"><div class="de1">		button_0.<span class="me1">addSelectionListener</span><span class="br0">&#40;</span><span class="kw1">new</span> SelectionAdapter<span class="br0">&#40;</span><span class="br0">&#41;</span> <span class="br0">&#123;</span></div></li><li class="li1"><div class="de1">			@Override</div></li><li class="li1"><div class="de1">			<span class="kw1">public</span> <span class="kw4">void</span> widgetSelected<span class="br0">&#40;</span>SelectionEvent e<span class="br0">&#41;</span> <span class="br0">&#123;</span></div></li><li class="li1"><div class="de1">				afageixNouDigit<span class="br0">&#40;</span><span class="nu0">0</span><span class="br0">&#41;</span><span class="sy0">;</span></div></li><li class="li1"><div class="de1">			<span class="br0">&#125;</span></div></li><li class="li1"><div class="de1">		<span class="br0">&#125;</span><span class="br0">&#41;</span><span class="sy0">;</span></div></li><li class="li1"><div class="de1">		button_0.<span class="me1">setText</span><span class="br0">&#40;</span><span class="st0">&quot;0&quot;</span><span class="br0">&#41;</span><span class="sy0">;</span></div></li><li class="li1"><div class="de1">		button_0.<span class="me1">setBounds</span><span class="br0">&#40;</span><span class="nu0">23</span>, <span class="nu0">163</span>, <span class="nu0">40</span>, <span class="nu0">33</span><span class="br0">&#41;</span><span class="sy0">;</span></div></li><li class="li1"><div class="de1">&nbsp;</div></li><li class="li1"><div class="de1">		<span class="co1">//botó amb el número 1</span></div></li><li class="li1"><div class="de1">		<a href="http://www.google.com/search?hl=en&amp;q=allinurl%3Adocs.oracle.com+javase+docs+api+button"><span class="kw3">Button</span></a> button_1 <span class="sy0">=</span> <span class="kw1">new</span> <a href="http://www.google.com/search?hl=en&amp;q=allinurl%3Adocs.oracle.com+javase+docs+api+button"><span class="kw3">Button</span></a><span class="br0">&#40;</span>shlCalculadora, SWT.<span class="me1">NONE</span><span class="br0">&#41;</span><span class="sy0">;</span></div></li><li class="li1"><div class="de1">		button_1.<span class="me1">addSelectionListener</span><span class="br0">&#40;</span><span class="kw1">new</span> SelectionAdapter<span class="br0">&#40;</span><span class="br0">&#41;</span> <span class="br0">&#123;</span></div></li><li class="li1"><div class="de1">			@Override</div></li><li class="li1"><div class="de1">			<span class="kw1">public</span> <span class="kw4">void</span> widgetSelected<span class="br0">&#40;</span>SelectionEvent e<span class="br0">&#41;</span> <span class="br0">&#123;</span></div></li><li class="li1"><div class="de1">				afageixNouDigit<span class="br0">&#40;</span><span class="nu0">1</span><span class="br0">&#41;</span><span class="sy0">;</span></div></li><li class="li1"><div class="de1">			<span class="br0">&#125;</span></div></li><li class="li1"><div class="de1">		<span class="br0">&#125;</span><span class="br0">&#41;</span><span class="sy0">;</span></div></li><li class="li1"><div class="de1">		button_1.<span class="me1">setText</span><span class="br0">&#40;</span><span class="st0">&quot;1&quot;</span><span class="br0">&#41;</span><span class="sy0">;</span></div></li><li class="li1"><div class="de1">		button_1.<span class="me1">setBounds</span><span class="br0">&#40;</span><span class="nu0">23</span>, <span class="nu0">124</span>, <span class="nu0">40</span>, <span class="nu0">33</span><span class="br0">&#41;</span><span class="sy0">;</span></div></li><li class="li1"><div class="de1">&nbsp;</div></li><li class="li1"><div class="de1">		<span class="co1">//botó amb el número 2</span></div></li><li class="li1"><div class="de1">		<a href="http://www.google.com/search?hl=en&amp;q=allinurl%3Adocs.oracle.com+javase+docs+api+button"><span class="kw3">Button</span></a> button_2 <span class="sy0">=</span> <span class="kw1">new</span> <a href="http://www.google.com/search?hl=en&amp;q=allinurl%3Adocs.oracle.com+javase+docs+api+button"><span class="kw3">Button</span></a><span class="br0">&#40;</span>shlCalculadora, SWT.<span class="me1">NONE</span><span class="br0">&#41;</span><span class="sy0">;</span></div></li><li class="li1"><div class="de1">		button_2.<span class="me1">addSelectionListener</span><span class="br0">&#40;</span><span class="kw1">new</span> SelectionAdapter<span class="br0">&#40;</span><span class="br0">&#41;</span> <span class="br0">&#123;</span></div></li><li class="li1"><div class="de1">			@Override</div></li><li class="li1"><div class="de1">			<span class="kw1">public</span> <span class="kw4">void</span> widgetSelected<span class="br0">&#40;</span>SelectionEvent e<span class="br0">&#41;</span> <span class="br0">&#123;</span></div></li><li class="li1"><div class="de1">				afageixNouDigit<span class="br0">&#40;</span><span class="nu0">2</span><span class="br0">&#41;</span><span class="sy0">;</span></div></li><li class="li1"><div class="de1">			<span class="br0">&#125;</span></div></li><li class="li1"><div class="de1">		<span class="br0">&#125;</span><span class="br0">&#41;</span><span class="sy0">;</span></div></li><li class="li1"><div class="de1">		button_2.<span class="me1">setText</span><span class="br0">&#40;</span><span class="st0">&quot;2&quot;</span><span class="br0">&#41;</span><span class="sy0">;</span></div></li><li class="li1"><div class="de1">		button_2.<span class="me1">setBounds</span><span class="br0">&#40;</span><span class="nu0">69</span>, <span class="nu0">124</span>, <span class="nu0">40</span>, <span class="nu0">33</span><span class="br0">&#41;</span><span class="sy0">;</span></div></li><li class="li1"><div class="de1">&nbsp;</div></li><li class="li1"><div class="de1">		<span class="co1">//botó amb el número 3</span></div></li><li class="li1"><div class="de1">		<a href="http://www.google.com/search?hl=en&amp;q=allinurl%3Adocs.oracle.com+javase+docs+api+button"><span class="kw3">Button</span></a> button_3 <span class="sy0">=</span> <span class="kw1">new</span> <a href="http://www.google.com/search?hl=en&amp;q=allinurl%3Adocs.oracle.com+javase+docs+api+button"><span class="kw3">Button</span></a><span class="br0">&#40;</span>shlCalculadora, SWT.<span class="me1">NONE</span><span class="br0">&#41;</span><span class="sy0">;</span></div></li><li class="li1"><div class="de1">		button_3.<span class="me1">addSelectionListener</span><span class="br0">&#40;</span><span class="kw1">new</span> SelectionAdapter<span class="br0">&#40;</span><span class="br0">&#41;</span> <span class="br0">&#123;</span></div></li><li class="li1"><div class="de1">			@Override</div></li><li class="li1"><div class="de1">			<span class="kw1">public</span> <span class="kw4">void</span> widgetSelected<span class="br0">&#40;</span>SelectionEvent e<span class="br0">&#41;</span> <span class="br0">&#123;</span></div></li><li class="li1"><div class="de1">				afageixNouDigit<span class="br0">&#40;</span><span class="nu0">3</span><span class="br0">&#41;</span><span class="sy0">;</span></div></li><li class="li1"><div class="de1">			<span class="br0">&#125;</span></div></li><li class="li1"><div class="de1">		<span class="br0">&#125;</span><span class="br0">&#41;</span><span class="sy0">;</span></div></li><li class="li1"><div class="de1">		button_3.<span class="me1">setText</span><span class="br0">&#40;</span><span class="st0">&quot;3&quot;</span><span class="br0">&#41;</span><span class="sy0">;</span></div></li><li class="li1"><div class="de1">		button_3.<span class="me1">setBounds</span><span class="br0">&#40;</span><span class="nu0">115</span>, <span class="nu0">124</span>, <span class="nu0">40</span>, <span class="nu0">33</span><span class="br0">&#41;</span><span class="sy0">;</span></div></li><li class="li1"><div class="de1">&nbsp;</div></li><li class="li1"><div class="de1">		<span class="co1">//botó amb el número 4</span></div></li><li class="li1"><div class="de1">		<a href="http://www.google.com/search?hl=en&amp;q=allinurl%3Adocs.oracle.com+javase+docs+api+button"><span class="kw3">Button</span></a> button_4 <span class="sy0">=</span> <span class="kw1">new</span> <a href="http://www.google.com/search?hl=en&amp;q=allinurl%3Adocs.oracle.com+javase+docs+api+button"><span class="kw3">Button</span></a><span class="br0">&#40;</span>shlCalculadora, SWT.<span class="me1">NONE</span><span class="br0">&#41;</span><span class="sy0">;</span></div></li><li class="li1"><div class="de1">		button_4.<span class="me1">addSelectionListener</span><span class="br0">&#40;</span><span class="kw1">new</span> SelectionAdapter<span class="br0">&#40;</span><span class="br0">&#41;</span> <span class="br0">&#123;</span></div></li><li class="li1"><div class="de1">			@Override</div></li><li class="li1"><div class="de1">			<span class="kw1">public</span> <span class="kw4">void</span> widgetSelected<span class="br0">&#40;</span>SelectionEvent e<span class="br0">&#41;</span> <span class="br0">&#123;</span></div></li><li class="li1"><div class="de1">				afageixNouDigit<span class="br0">&#40;</span><span class="nu0">4</span><span class="br0">&#41;</span><span class="sy0">;</span></div></li><li class="li1"><div class="de1">			<span class="br0">&#125;</span></div></li><li class="li1"><div class="de1">		<span class="br0">&#125;</span><span class="br0">&#41;</span><span class="sy0">;</span></div></li><li class="li1"><div class="de1">		button_4.<span class="me1">setText</span><span class="br0">&#40;</span><span class="st0">&quot;4&quot;</span><span class="br0">&#41;</span><span class="sy0">;</span></div></li><li class="li1"><div class="de1">		button_4.<span class="me1">setBounds</span><span class="br0">&#40;</span><span class="nu0">23</span>, <span class="nu0">85</span>, <span class="nu0">40</span>, <span class="nu0">33</span><span class="br0">&#41;</span><span class="sy0">;</span></div></li><li class="li1"><div class="de1">&nbsp;</div></li><li class="li1"><div class="de1">		<span class="co1">//botó amb el número 5</span></div></li><li class="li1"><div class="de1">		<a href="http://www.google.com/search?hl=en&amp;q=allinurl%3Adocs.oracle.com+javase+docs+api+button"><span class="kw3">Button</span></a> button_5 <span class="sy0">=</span> <span class="kw1">new</span> <a href="http://www.google.com/search?hl=en&amp;q=allinurl%3Adocs.oracle.com+javase+docs+api+button"><span class="kw3">Button</span></a><span class="br0">&#40;</span>shlCalculadora, SWT.<span class="me1">NONE</span><span class="br0">&#41;</span><span class="sy0">;</span></div></li><li class="li1"><div class="de1">		button_5.<span class="me1">addSelectionListener</span><span class="br0">&#40;</span><span class="kw1">new</span> SelectionAdapter<span class="br0">&#40;</span><span class="br0">&#41;</span> <span class="br0">&#123;</span></div></li><li class="li1"><div class="de1">			@Override</div></li><li class="li1"><div class="de1">			<span class="kw1">public</span> <span class="kw4">void</span> widgetSelected<span class="br0">&#40;</span>SelectionEvent e<span class="br0">&#41;</span> <span class="br0">&#123;</span></div></li><li class="li1"><div class="de1">				afageixNouDigit<span class="br0">&#40;</span><span class="nu0">5</span><span class="br0">&#41;</span><span class="sy0">;</span></div></li><li class="li1"><div class="de1">			<span class="br0">&#125;</span></div></li><li class="li1"><div class="de1">		<span class="br0">&#125;</span><span class="br0">&#41;</span><span class="sy0">;</span></div></li><li class="li1"><div class="de1">		button_5.<span class="me1">setText</span><span class="br0">&#40;</span><span class="st0">&quot;5&quot;</span><span class="br0">&#41;</span><span class="sy0">;</span></div></li><li class="li1"><div class="de1">		button_5.<span class="me1">setBounds</span><span class="br0">&#40;</span><span class="nu0">69</span>, <span class="nu0">85</span>, <span class="nu0">40</span>, <span class="nu0">33</span><span class="br0">&#41;</span><span class="sy0">;</span></div></li><li class="li1"><div class="de1">&nbsp;</div></li><li class="li1"><div class="de1">		<span class="co1">//botó amb el número 6</span></div></li><li class="li1"><div class="de1">		<a href="http://www.google.com/search?hl=en&amp;q=allinurl%3Adocs.oracle.com+javase+docs+api+button"><span class="kw3">Button</span></a> button_6 <span class="sy0">=</span> <span class="kw1">new</span> <a href="http://www.google.com/search?hl=en&amp;q=allinurl%3Adocs.oracle.com+javase+docs+api+button"><span class="kw3">Button</span></a><span class="br0">&#40;</span>shlCalculadora, SWT.<span class="me1">NONE</span><span class="br0">&#41;</span><span class="sy0">;</span></div></li><li class="li1"><div class="de1">		button_6.<span class="me1">addSelectionListener</span><span class="br0">&#40;</span><span class="kw1">new</span> SelectionAdapter<span class="br0">&#40;</span><span class="br0">&#41;</span> <span class="br0">&#123;</span></div></li><li class="li1"><div class="de1">			@Override</div></li><li class="li1"><div class="de1">			<span class="kw1">public</span> <span class="kw4">void</span> widgetSelected<span class="br0">&#40;</span>SelectionEvent e<span class="br0">&#41;</span> <span class="br0">&#123;</span></div></li><li class="li1"><div class="de1">				afageixNouDigit<span class="br0">&#40;</span><span class="nu0">6</span><span class="br0">&#41;</span><span class="sy0">;</span></div></li><li class="li1"><div class="de1">			<span class="br0">&#125;</span></div></li><li class="li1"><div class="de1">		<span class="br0">&#125;</span><span class="br0">&#41;</span><span class="sy0">;</span></div></li><li class="li1"><div class="de1">		button_6.<span class="me1">setText</span><span class="br0">&#40;</span><span class="st0">&quot;6&quot;</span><span class="br0">&#41;</span><span class="sy0">;</span></div></li><li class="li1"><div class="de1">		button_6.<span class="me1">setBounds</span><span class="br0">&#40;</span><span class="nu0">115</span>, <span class="nu0">85</span>, <span class="nu0">40</span>, <span class="nu0">33</span><span class="br0">&#41;</span><span class="sy0">;</span></div></li><li class="li1"><div class="de1">&nbsp;</div></li><li class="li1"><div class="de1">		<span class="co1">//botó amb el número 7</span></div></li><li class="li1"><div class="de1">		<a href="http://www.google.com/search?hl=en&amp;q=allinurl%3Adocs.oracle.com+javase+docs+api+button"><span class="kw3">Button</span></a> button_7 <span class="sy0">=</span> <span class="kw1">new</span> <a href="http://www.google.com/search?hl=en&amp;q=allinurl%3Adocs.oracle.com+javase+docs+api+button"><span class="kw3">Button</span></a><span class="br0">&#40;</span>shlCalculadora, SWT.<span class="me1">NONE</span><span class="br0">&#41;</span><span class="sy0">;</span></div></li><li class="li1"><div class="de1">		button_7.<span class="me1">addSelectionListener</span><span class="br0">&#40;</span><span class="kw1">new</span> SelectionAdapter<span class="br0">&#40;</span><span class="br0">&#41;</span> <span class="br0">&#123;</span></div></li><li class="li1"><div class="de1">			@Override</div></li><li class="li1"><div class="de1">			<span class="kw1">public</span> <span class="kw4">void</span> widgetSelected<span class="br0">&#40;</span>SelectionEvent e<span class="br0">&#41;</span> <span class="br0">&#123;</span></div></li><li class="li1"><div class="de1">				afageixNouDigit<span class="br0">&#40;</span><span class="nu0">7</span><span class="br0">&#41;</span><span class="sy0">;</span></div></li><li class="li1"><div class="de1">			<span class="br0">&#125;</span></div></li><li class="li1"><div class="de1">		<span class="br0">&#125;</span><span class="br0">&#41;</span><span class="sy0">;</span></div></li><li class="li1"><div class="de1">		button_7.<span class="me1">setText</span><span class="br0">&#40;</span><span class="st0">&quot;7&quot;</span><span class="br0">&#41;</span><span class="sy0">;</span></div></li><li class="li1"><div class="de1">		button_7.<span class="me1">setBounds</span><span class="br0">&#40;</span><span class="nu0">23</span>, <span class="nu0">46</span>, <span class="nu0">40</span>, <span class="nu0">33</span><span class="br0">&#41;</span><span class="sy0">;</span></div></li><li class="li1"><div class="de1">&nbsp;</div></li><li class="li1"><div class="de1">		<span class="co1">//botó amb el número 8</span></div></li><li class="li1"><div class="de1">		<a href="http://www.google.com/search?hl=en&amp;q=allinurl%3Adocs.oracle.com+javase+docs+api+button"><span class="kw3">Button</span></a> button_8 <span class="sy0">=</span> <span class="kw1">new</span> <a href="http://www.google.com/search?hl=en&amp;q=allinurl%3Adocs.oracle.com+javase+docs+api+button"><span class="kw3">Button</span></a><span class="br0">&#40;</span>shlCalculadora, SWT.<span class="me1">NONE</span><span class="br0">&#41;</span><span class="sy0">;</span></div></li><li class="li1"><div class="de1">		button_8.<span class="me1">addSelectionListener</span><span class="br0">&#40;</span><span class="kw1">new</span> SelectionAdapter<span class="br0">&#40;</span><span class="br0">&#41;</span> <span class="br0">&#123;</span></div></li><li class="li1"><div class="de1">			@Override</div></li><li class="li1"><div class="de1">			<span class="kw1">public</span> <span class="kw4">void</span> widgetSelected<span class="br0">&#40;</span>SelectionEvent e<span class="br0">&#41;</span> <span class="br0">&#123;</span></div></li><li class="li1"><div class="de1">				afageixNouDigit<span class="br0">&#40;</span><span class="nu0">8</span><span class="br0">&#41;</span><span class="sy0">;</span></div></li><li class="li1"><div class="de1">			<span class="br0">&#125;</span></div></li><li class="li1"><div class="de1">		<span class="br0">&#125;</span><span class="br0">&#41;</span><span class="sy0">;</span></div></li><li class="li1"><div class="de1">		button_8.<span class="me1">setBounds</span><span class="br0">&#40;</span><span class="nu0">69</span>, <span class="nu0">46</span>, <span class="nu0">40</span>, <span class="nu0">33</span><span class="br0">&#41;</span><span class="sy0">;</span></div></li><li class="li1"><div class="de1">		button_8.<span class="me1">setText</span><span class="br0">&#40;</span><span class="st0">&quot;8&quot;</span><span class="br0">&#41;</span><span class="sy0">;</span></div></li><li class="li1"><div class="de1">&nbsp;</div></li><li class="li1"><div class="de1">		<span class="co1">//botó amb el número 9</span></div></li><li class="li1"><div class="de1">		<a href="http://www.google.com/search?hl=en&amp;q=allinurl%3Adocs.oracle.com+javase+docs+api+button"><span class="kw3">Button</span></a> button_9 <span class="sy0">=</span> <span class="kw1">new</span> <a href="http://www.google.com/search?hl=en&amp;q=allinurl%3Adocs.oracle.com+javase+docs+api+button"><span class="kw3">Button</span></a><span class="br0">&#40;</span>shlCalculadora, SWT.<span class="me1">NONE</span><span class="br0">&#41;</span><span class="sy0">;</span></div></li><li class="li1"><div class="de1">		button_9.<span class="me1">addSelectionListener</span><span class="br0">&#40;</span><span class="kw1">new</span> SelectionAdapter<span class="br0">&#40;</span><span class="br0">&#41;</span> <span class="br0">&#123;</span></div></li><li class="li1"><div class="de1">			@Override</div></li><li class="li1"><div class="de1">			<span class="kw1">public</span> <span class="kw4">void</span> widgetSelected<span class="br0">&#40;</span>SelectionEvent e<span class="br0">&#41;</span> <span class="br0">&#123;</span></div></li><li class="li1"><div class="de1">				afageixNouDigit<span class="br0">&#40;</span><span class="nu0">9</span><span class="br0">&#41;</span><span class="sy0">;</span></div></li><li class="li1"><div class="de1">			<span class="br0">&#125;</span></div></li><li class="li1"><div class="de1">		<span class="br0">&#125;</span><span class="br0">&#41;</span><span class="sy0">;</span></div></li><li class="li1"><div class="de1">		button_9.<span class="me1">setText</span><span class="br0">&#40;</span><span class="st0">&quot;9&quot;</span><span class="br0">&#41;</span><span class="sy0">;</span></div></li><li class="li1"><div class="de1">		button_9.<span class="me1">setBounds</span><span class="br0">&#40;</span><span class="nu0">115</span>, <span class="nu0">46</span>, <span class="nu0">40</span>, <span class="nu0">33</span><span class="br0">&#41;</span><span class="sy0">;</span></div></li><li class="li1"><div class="de1">&nbsp;</div></li><li class="li1"><div class="de1">&nbsp;</div></li><li class="li1"><div class="de1">		<span class="co1">//-------------------------------------------------</span></div></li><li class="li1"><div class="de1">		<span class="co1">//Operacions</span></div></li><li class="li1"><div class="de1">		<span class="co1">//-------------------------------------------------</span></div></li><li class="li1"><div class="de1">&nbsp;</div></li><li class="li1"><div class="de1">		<span class="co1">//botó amb l'operació de divisió</span></div></li><li class="li1"><div class="de1">		<a href="http://www.google.com/search?hl=en&amp;q=allinurl%3Adocs.oracle.com+javase+docs+api+button"><span class="kw3">Button</span></a> button_12 <span class="sy0">=</span> <span class="kw1">new</span> <a href="http://www.google.com/search?hl=en&amp;q=allinurl%3Adocs.oracle.com+javase+docs+api+button"><span class="kw3">Button</span></a><span class="br0">&#40;</span>shlCalculadora, SWT.<span class="me1">NONE</span><span class="br0">&#41;</span><span class="sy0">;</span></div></li><li class="li1"><div class="de1">		button_12.<span class="me1">addSelectionListener</span><span class="br0">&#40;</span><span class="kw1">new</span> SelectionAdapter<span class="br0">&#40;</span><span class="br0">&#41;</span> <span class="br0">&#123;</span></div></li><li class="li1"><div class="de1">			@Override</div></li><li class="li1"><div class="de1">			<span class="kw1">public</span> <span class="kw4">void</span> widgetSelected<span class="br0">&#40;</span>SelectionEvent e<span class="br0">&#41;</span> <span class="br0">&#123;</span></div></li><li class="li1"><div class="de1">				executarOperador<span class="br0">&#40;</span><span class="st0">&quot;/&quot;</span><span class="br0">&#41;</span><span class="sy0">;</span></div></li><li class="li1"><div class="de1">			<span class="br0">&#125;</span></div></li><li class="li1"><div class="de1">		<span class="br0">&#125;</span><span class="br0">&#41;</span><span class="sy0">;</span></div></li><li class="li1"><div class="de1">		button_12.<span class="me1">setText</span><span class="br0">&#40;</span><span class="st0">&quot;/&quot;</span><span class="br0">&#41;</span><span class="sy0">;</span></div></li><li class="li1"><div class="de1">		button_12.<span class="me1">setBounds</span><span class="br0">&#40;</span><span class="nu0">178</span>, <span class="nu0">46</span>, <span class="nu0">40</span>, <span class="nu0">33</span><span class="br0">&#41;</span><span class="sy0">;</span></div></li><li class="li1"><div class="de1">&nbsp;</div></li><li class="li1"><div class="de1">		<span class="co1">//botó amb l'operació de multiplicació</span></div></li><li class="li1"><div class="de1">		<a href="http://www.google.com/search?hl=en&amp;q=allinurl%3Adocs.oracle.com+javase+docs+api+button"><span class="kw3">Button</span></a> button_13 <span class="sy0">=</span> <span class="kw1">new</span> <a href="http://www.google.com/search?hl=en&amp;q=allinurl%3Adocs.oracle.com+javase+docs+api+button"><span class="kw3">Button</span></a><span class="br0">&#40;</span>shlCalculadora, SWT.<span class="me1">NONE</span><span class="br0">&#41;</span><span class="sy0">;</span></div></li><li class="li1"><div class="de1">		button_13.<span class="me1">addSelectionListener</span><span class="br0">&#40;</span><span class="kw1">new</span> SelectionAdapter<span class="br0">&#40;</span><span class="br0">&#41;</span> <span class="br0">&#123;</span></div></li><li class="li1"><div class="de1">			@Override</div></li><li class="li1"><div class="de1">			<span class="kw1">public</span> <span class="kw4">void</span> widgetSelected<span class="br0">&#40;</span>SelectionEvent e<span class="br0">&#41;</span> <span class="br0">&#123;</span></div></li><li class="li1"><div class="de1">				executarOperador<span class="br0">&#40;</span><span class="st0">&quot;*&quot;</span><span class="br0">&#41;</span><span class="sy0">;</span></div></li><li class="li1"><div class="de1">			<span class="br0">&#125;</span></div></li><li class="li1"><div class="de1">		<span class="br0">&#125;</span><span class="br0">&#41;</span><span class="sy0">;</span></div></li><li class="li1"><div class="de1">		button_13.<span class="me1">setText</span><span class="br0">&#40;</span><span class="st0">&quot;*&quot;</span><span class="br0">&#41;</span><span class="sy0">;</span></div></li><li class="li1"><div class="de1">		button_13.<span class="me1">setBounds</span><span class="br0">&#40;</span><span class="nu0">178</span>, <span class="nu0">85</span>, <span class="nu0">40</span>, <span class="nu0">33</span><span class="br0">&#41;</span><span class="sy0">;</span></div></li><li class="li1"><div class="de1">&nbsp;</div></li><li class="li1"><div class="de1">		<span class="co1">//botó amb l'operació de suma</span></div></li><li class="li1"><div class="de1">		<a href="http://www.google.com/search?hl=en&amp;q=allinurl%3Adocs.oracle.com+javase+docs+api+button"><span class="kw3">Button</span></a> button_14 <span class="sy0">=</span> <span class="kw1">new</span> <a href="http://www.google.com/search?hl=en&amp;q=allinurl%3Adocs.oracle.com+javase+docs+api+button"><span class="kw3">Button</span></a><span class="br0">&#40;</span>shlCalculadora, SWT.<span class="me1">NONE</span><span class="br0">&#41;</span><span class="sy0">;</span></div></li><li class="li1"><div class="de1">		button_14.<span class="me1">addSelectionListener</span><span class="br0">&#40;</span><span class="kw1">new</span> SelectionAdapter<span class="br0">&#40;</span><span class="br0">&#41;</span> <span class="br0">&#123;</span></div></li><li class="li1"><div class="de1">			@Override</div></li><li class="li1"><div class="de1">			<span class="kw1">public</span> <span class="kw4">void</span> widgetSelected<span class="br0">&#40;</span>SelectionEvent e<span class="br0">&#41;</span> <span class="br0">&#123;</span></div></li><li class="li1"><div class="de1">				executarOperador<span class="br0">&#40;</span><span class="st0">&quot;+&quot;</span><span class="br0">&#41;</span><span class="sy0">;</span></div></li><li class="li1"><div class="de1">			<span class="br0">&#125;</span></div></li><li class="li1"><div class="de1">		<span class="br0">&#125;</span><span class="br0">&#41;</span><span class="sy0">;</span></div></li><li class="li1"><div class="de1">		button_14.<span class="me1">setText</span><span class="br0">&#40;</span><span class="st0">&quot;+&quot;</span><span class="br0">&#41;</span><span class="sy0">;</span></div></li><li class="li1"><div class="de1">		button_14.<span class="me1">setBounds</span><span class="br0">&#40;</span><span class="nu0">178</span>, <span class="nu0">124</span>, <span class="nu0">40</span>, <span class="nu0">33</span><span class="br0">&#41;</span><span class="sy0">;</span></div></li><li class="li1"><div class="de1">&nbsp;</div></li><li class="li1"><div class="de1">		<span class="co1">//botó amb l'operació de resta</span></div></li><li class="li1"><div class="de1">		<a href="http://www.google.com/search?hl=en&amp;q=allinurl%3Adocs.oracle.com+javase+docs+api+button"><span class="kw3">Button</span></a> button_15 <span class="sy0">=</span> <span class="kw1">new</span> <a href="http://www.google.com/search?hl=en&amp;q=allinurl%3Adocs.oracle.com+javase+docs+api+button"><span class="kw3">Button</span></a><span class="br0">&#40;</span>shlCalculadora, SWT.<span class="me1">NONE</span><span class="br0">&#41;</span><span class="sy0">;</span></div></li><li class="li1"><div class="de1">		button_15.<span class="me1">addSelectionListener</span><span class="br0">&#40;</span><span class="kw1">new</span> SelectionAdapter<span class="br0">&#40;</span><span class="br0">&#41;</span> <span class="br0">&#123;</span></div></li><li class="li1"><div class="de1">			@Override</div></li><li class="li1"><div class="de1">			<span class="kw1">public</span> <span class="kw4">void</span> widgetSelected<span class="br0">&#40;</span>SelectionEvent e<span class="br0">&#41;</span> <span class="br0">&#123;</span></div></li><li class="li1"><div class="de1">				executarOperador<span class="br0">&#40;</span><span class="st0">&quot;-&quot;</span><span class="br0">&#41;</span><span class="sy0">;</span></div></li><li class="li1"><div class="de1">			<span class="br0">&#125;</span></div></li><li class="li1"><div class="de1">		<span class="br0">&#125;</span><span class="br0">&#41;</span><span class="sy0">;</span></div></li><li class="li1"><div class="de1">		button_15.<span class="me1">setText</span><span class="br0">&#40;</span><span class="st0">&quot;-&quot;</span><span class="br0">&#41;</span><span class="sy0">;</span></div></li><li class="li1"><div class="de1">		button_15.<span class="me1">setBounds</span><span class="br0">&#40;</span><span class="nu0">178</span>, <span class="nu0">163</span>, <span class="nu0">40</span>, <span class="nu0">33</span><span class="br0">&#41;</span><span class="sy0">;</span></div></li><li class="li1"><div class="de1">&nbsp;</div></li><li class="li1"><div class="de1">		<span class="co1">//botó amb l'operació de igual</span></div></li><li class="li1"><div class="de1">		<a href="http://www.google.com/search?hl=en&amp;q=allinurl%3Adocs.oracle.com+javase+docs+api+button"><span class="kw3">Button</span></a> button_11 <span class="sy0">=</span> <span class="kw1">new</span> <a href="http://www.google.com/search?hl=en&amp;q=allinurl%3Adocs.oracle.com+javase+docs+api+button"><span class="kw3">Button</span></a><span class="br0">&#40;</span>shlCalculadora, SWT.<span class="me1">NONE</span><span class="br0">&#41;</span><span class="sy0">;</span></div></li><li class="li1"><div class="de1">		button_11.<span class="me1">addSelectionListener</span><span class="br0">&#40;</span><span class="kw1">new</span> SelectionAdapter<span class="br0">&#40;</span><span class="br0">&#41;</span> <span class="br0">&#123;</span></div></li><li class="li1"><div class="de1">			@Override</div></li><li class="li1"><div class="de1">			<span class="kw1">public</span> <span class="kw4">void</span> widgetSelected<span class="br0">&#40;</span>SelectionEvent e<span class="br0">&#41;</span> <span class="br0">&#123;</span></div></li><li class="li1"><div class="de1">				executarIgual<span class="br0">&#40;</span><span class="br0">&#41;</span><span class="sy0">;</span></div></li><li class="li1"><div class="de1">			<span class="br0">&#125;</span></div></li><li class="li1"><div class="de1">		<span class="br0">&#125;</span><span class="br0">&#41;</span><span class="sy0">;</span></div></li><li class="li1"><div class="de1">		button_11.<span class="me1">setText</span><span class="br0">&#40;</span><span class="st0">&quot;=&quot;</span><span class="br0">&#41;</span><span class="sy0">;</span></div></li><li class="li1"><div class="de1">		button_11.<span class="me1">setBounds</span><span class="br0">&#40;</span><span class="nu0">69</span>, <span class="nu0">163</span>, <span class="nu0">86</span>, <span class="nu0">33</span><span class="br0">&#41;</span><span class="sy0">;</span></div></li><li class="li1"><div class="de1">&nbsp;</div></li><li class="li1"><div class="de1">		<span class="co1">//Text on es visualitza el resultat</span></div></li><li class="li1"><div class="de1">		text_resultat <span class="sy0">=</span> <span class="kw1">new</span> Text<span class="br0">&#40;</span>shlCalculadora, SWT.<span class="me1">BORDER</span><span class="br0">&#41;</span><span class="sy0">;</span></div></li><li class="li1"><div class="de1">		text_resultat.<span class="me1">setText</span><span class="br0">&#40;</span><span class="st0">&quot;0&quot;</span><span class="br0">&#41;</span><span class="sy0">;</span></div></li><li class="li1"><div class="de1">		text_resultat.<span class="me1">setBounds</span><span class="br0">&#40;</span><span class="nu0">22</span>, <span class="nu0">19</span>, <span class="nu0">196</span>, <span class="nu0">21</span><span class="br0">&#41;</span><span class="sy0">;</span></div></li><li class="li1"><div class="de1">&nbsp;</div></li><li class="li1"><div class="de1">		shlCalculadora.<span class="me1">open</span><span class="br0">&#40;</span><span class="br0">&#41;</span><span class="sy0">;</span></div></li><li class="li1"><div class="de1">		shlCalculadora.<span class="me1">layout</span><span class="br0">&#40;</span><span class="br0">&#41;</span><span class="sy0">;</span></div></li><li class="li1"><div class="de1">		<span class="kw1">while</span> <span class="br0">&#40;</span><span class="sy0">!</span>shlCalculadora.<span class="me1">isDisposed</span><span class="br0">&#40;</span><span class="br0">&#41;</span><span class="br0">&#41;</span> <span class="br0">&#123;</span></div></li><li class="li1"><div class="de1">			<span class="kw1">if</span> <span class="br0">&#40;</span><span class="sy0">!</span>display.<span class="me1">readAndDispatch</span><span class="br0">&#40;</span><span class="br0">&#41;</span><span class="br0">&#41;</span> <span class="br0">&#123;</span></div></li><li class="li1"><div class="de1">				display.<span class="me1">sleep</span><span class="br0">&#40;</span><span class="br0">&#41;</span><span class="sy0">;</span></div></li><li class="li1"><div class="de1">			<span class="br0">&#125;</span></div></li><li class="li1"><div class="de1">		<span class="br0">&#125;</span>		</div></li><li class="li1"><div class="de1">	<span class="br0">&#125;</span></div></li><li class="li1"><div class="de1">&nbsp;</div></li><li class="li1"><div class="de1">	<span class="kw4">void</span> inicialitza<span class="br0">&#40;</span><span class="br0">&#41;</span>	<span class="br0">&#123;</span></div></li><li class="li1"><div class="de1">		operacio <span class="sy0">=</span> <span class="st0">&quot;null&quot;</span><span class="sy0">;</span></div></li><li class="li1"><div class="de1">		valor1 <span class="sy0">=</span> <span class="nu0">0</span><span class="sy0">;</span></div></li><li class="li1"><div class="de1">		valor2 <span class="sy0">=</span> <span class="nu0">0</span><span class="sy0">;</span></div></li><li class="li1"><div class="de1">		mode <span class="sy0">=</span> MODE_ENTRADA<span class="sy0">;</span></div></li><li class="li1"><div class="de1">		inicialitza_resultat <span class="sy0">=</span> <span class="kw2">true</span><span class="sy0">;</span></div></li><li class="li1"><div class="de1">	<span class="br0">&#125;</span></div></li><li class="li1"><div class="de1">&nbsp;</div></li><li class="li1"><div class="de1">	<a href="http://www.google.com/search?hl=en&amp;q=allinurl%3Adocs.oracle.com+javase+docs+api+string"><span class="kw3">String</span></a> getResultatString <span class="br0">&#40;</span><span class="br0">&#41;</span><span class="br0">&#123;</span></div></li><li class="li1"><div class="de1">		<span class="kw1">return</span> text_resultat.<span class="me1">getText</span><span class="br0">&#40;</span><span class="br0">&#41;</span><span class="sy0">;</span></div></li><li class="li1"><div class="de1">	<span class="br0">&#125;</span></div></li><li class="li1"><div class="de1">&nbsp;</div></li><li class="li1"><div class="de1">	<span class="kw4">void</span> setResultatString<span class="br0">&#40;</span><a href="http://www.google.com/search?hl=en&amp;q=allinurl%3Adocs.oracle.com+javase+docs+api+string"><span class="kw3">String</span></a> s<span class="br0">&#41;</span><span class="br0">&#123;</span></div></li><li class="li1"><div class="de1">		text_resultat.<span class="me1">setText</span><span class="br0">&#40;</span>s<span class="br0">&#41;</span><span class="sy0">;</span></div></li><li class="li1"><div class="de1">	<span class="br0">&#125;</span></div></li><li class="li1"><div class="de1">&nbsp;</div></li><li class="li1"><div class="de1">	<span class="kw4">int</span> getResultatInt<span class="br0">&#40;</span><span class="br0">&#41;</span>	<span class="br0">&#123;</span></div></li><li class="li1"><div class="de1">		<a href="http://www.google.com/search?hl=en&amp;q=allinurl%3Adocs.oracle.com+javase+docs+api+string"><span class="kw3">String</span></a> resultat <span class="sy0">=</span> text_resultat.<span class="me1">getText</span><span class="br0">&#40;</span><span class="br0">&#41;</span><span class="sy0">;</span></div></li><li class="li1"><div class="de1">		<span class="kw1">return</span> <a href="http://www.google.com/search?hl=en&amp;q=allinurl%3Adocs.oracle.com+javase+docs+api+integer"><span class="kw3">Integer</span></a>.<span class="me1">parseInt</span><span class="br0">&#40;</span>resultat<span class="br0">&#41;</span><span class="sy0">;</span></div></li><li class="li1"><div class="de1">	<span class="br0">&#125;</span></div></li><li class="li1"><div class="de1">&nbsp;</div></li><li class="li1"><div class="de1">	<span class="kw4">void</span> afageixNouDigit<span class="br0">&#40;</span><span class="kw4">int</span> digit<span class="br0">&#41;</span><span class="br0">&#123;</span></div></li><li class="li1"><div class="de1">		<span class="kw1">if</span> <span class="br0">&#40;</span>inicialitza_resultat<span class="br0">&#41;</span></div></li><li class="li1"><div class="de1">			setResultatString<span class="br0">&#40;</span><span class="st0">&quot;&quot;</span><span class="br0">&#41;</span><span class="sy0">;</span></div></li><li class="li1"><div class="de1">&nbsp;</div></li><li class="li1"><div class="de1">		<a href="http://www.google.com/search?hl=en&amp;q=allinurl%3Adocs.oracle.com+javase+docs+api+string"><span class="kw3">String</span></a> inputString <span class="sy0">=</span> getResultatString<span class="br0">&#40;</span><span class="br0">&#41;</span><span class="sy0">;</span></div></li><li class="li1"><div class="de1">&nbsp;</div></li><li class="li1"><div class="de1">		<span class="kw1">if</span> <span class="br0">&#40;</span>inputString.<span class="me1">indexOf</span><span class="br0">&#40;</span><span class="st0">&quot;0&quot;</span><span class="br0">&#41;</span> <span class="sy0">==</span> <span class="nu0">0</span><span class="br0">&#41;</span><span class="br0">&#123;</span></div></li><li class="li1"><div class="de1">			inputString <span class="sy0">=</span> inputString.<span class="me1">substring</span><span class="br0">&#40;</span><span class="nu0">1</span><span class="br0">&#41;</span><span class="sy0">;</span></div></li><li class="li1"><div class="de1">		<span class="br0">&#125;</span></div></li><li class="li1"><div class="de1">&nbsp;</div></li><li class="li1"><div class="de1">		<span class="kw1">if</span> <span class="br0">&#40;</span><span class="br0">&#40;</span><span class="sy0">!</span>inputString.<span class="me1">equals</span><span class="br0">&#40;</span><span class="st0">&quot;0&quot;</span><span class="br0">&#41;</span> <span class="sy0">||</span> digit <span class="sy0">&gt;</span> <span class="nu0">0</span><span class="br0">&#41;</span>  <span class="sy0">&amp;&amp;</span> inputString.<span class="me1">length</span><span class="br0">&#40;</span><span class="br0">&#41;</span> <span class="sy0">&lt;</span> MAX_DIGITS<span class="br0">&#41;</span><span class="br0">&#123;</span></div></li><li class="li1"><div class="de1">			setResultatString<span class="br0">&#40;</span>inputString <span class="sy0">+</span> digit<span class="br0">&#41;</span><span class="sy0">;</span></div></li><li class="li1"><div class="de1">		<span class="br0">&#125;</span></div></li><li class="li1"><div class="de1">&nbsp;</div></li><li class="li1"><div class="de1">		mode <span class="sy0">=</span> MODE_ENTRADA<span class="sy0">;</span></div></li><li class="li1"><div class="de1">		inicialitza_resultat <span class="sy0">=</span> <span class="kw2">false</span><span class="sy0">;</span></div></li><li class="li1"><div class="de1">	<span class="br0">&#125;</span></div></li><li class="li1"><div class="de1">&nbsp;</div></li><li class="li1"><div class="de1">	<span class="kw4">void</span> executarOperador<span class="br0">&#40;</span><a href="http://www.google.com/search?hl=en&amp;q=allinurl%3Adocs.oracle.com+javase+docs+api+string"><span class="kw3">String</span></a> new_operacio<span class="br0">&#41;</span> <span class="br0">&#123;</span></div></li><li class="li1"><div class="de1">&nbsp;</div></li><li class="li1"><div class="de1">		<span class="kw4">int</span> resultat<span class="sy0">;</span></div></li><li class="li1"><div class="de1">&nbsp;</div></li><li class="li1"><div class="de1">		<span class="kw1">if</span> <span class="br0">&#40;</span>operacio.<span class="me1">equals</span><span class="br0">&#40;</span><span class="st0">&quot;null&quot;</span><span class="br0">&#41;</span><span class="br0">&#41;</span>	</div></li><li class="li1"><div class="de1">		<span class="br0">&#123;</span></div></li><li class="li1"><div class="de1">			resultat <span class="sy0">=</span> getResultatInt<span class="br0">&#40;</span><span class="br0">&#41;</span><span class="sy0">;</span></div></li><li class="li1"><div class="de1">			valor1 <span class="sy0">=</span> resultat<span class="sy0">;</span></div></li><li class="li1"><div class="de1">		<span class="br0">&#125;</span></div></li><li class="li1"><div class="de1">&nbsp;</div></li><li class="li1"><div class="de1">		<span class="kw1">else</span></div></li><li class="li1"><div class="de1">		<span class="br0">&#123;</span></div></li><li class="li1"><div class="de1">			valor2 <span class="sy0">=</span> getResultatInt<span class="br0">&#40;</span><span class="br0">&#41;</span><span class="sy0">;</span></div></li><li class="li1"><div class="de1">			resultat <span class="sy0">=</span> executarOperacio<span class="br0">&#40;</span><span class="br0">&#41;</span><span class="sy0">;</span></div></li><li class="li1"><div class="de1">			mostraResultat<span class="br0">&#40;</span>resultat<span class="br0">&#41;</span><span class="sy0">;</span></div></li><li class="li1"><div class="de1">			valor1 <span class="sy0">=</span> resultat<span class="sy0">;</span>			</div></li><li class="li1"><div class="de1">		<span class="br0">&#125;</span></div></li><li class="li1"><div class="de1">&nbsp;</div></li><li class="li1"><div class="de1">		inicialitza_resultat <span class="sy0">=</span> <span class="kw2">true</span><span class="sy0">;</span></div></li><li class="li1"><div class="de1">		operacio <span class="sy0">=</span> new_operacio<span class="sy0">;</span></div></li><li class="li1"><div class="de1">	<span class="br0">&#125;</span></div></li><li class="li1"><div class="de1">&nbsp;</div></li><li class="li1"><div class="de1">	<span class="kw4">void</span> executarIgual<span class="br0">&#40;</span><span class="br0">&#41;</span><span class="br0">&#123;</span></div></li><li class="li1"><div class="de1">		<span class="kw4">int</span> resultat <span class="sy0">=</span> <span class="nu0">0</span><span class="sy0">;</span></div></li><li class="li1"><div class="de1">&nbsp;</div></li><li class="li1"><div class="de1">		valor2 <span class="sy0">=</span> getResultatInt<span class="br0">&#40;</span><span class="br0">&#41;</span><span class="sy0">;</span></div></li><li class="li1"><div class="de1">		resultat <span class="sy0">=</span> executarOperacio<span class="br0">&#40;</span><span class="br0">&#41;</span><span class="sy0">;</span></div></li><li class="li1"><div class="de1">		mostraResultat<span class="br0">&#40;</span>resultat<span class="br0">&#41;</span><span class="sy0">;</span></div></li><li class="li1"><div class="de1">&nbsp;</div></li><li class="li1"><div class="de1">		operacio <span class="sy0">=</span> <span class="st0">&quot;null&quot;</span><span class="sy0">;</span></div></li><li class="li1"><div class="de1">	<span class="br0">&#125;</span>	</div></li><li class="li1"><div class="de1">&nbsp;</div></li><li class="li1"><div class="de1">	<span class="kw4">int</span> executarOperacio<span class="br0">&#40;</span><span class="br0">&#41;</span> <span class="br0">&#123;</span></div></li><li class="li1"><div class="de1">		<span class="kw4">int</span> resultat <span class="sy0">=</span> <span class="nu0">0</span><span class="sy0">;</span></div></li><li class="li1"><div class="de1">&nbsp;</div></li><li class="li1"><div class="de1">	        <span class="kw1">if</span> <span class="br0">&#40;</span>operacio.<span class="me1">equals</span><span class="br0">&#40;</span><span class="st0">&quot;/&quot;</span><span class="br0">&#41;</span><span class="br0">&#41;</span></div></li><li class="li1"><div class="de1">	        <span class="br0">&#123;</span></div></li><li class="li1"><div class="de1">		    <span class="kw1">if</span> <span class="br0">&#40;</span>valor2 <span class="sy0">==</span> <span class="nu0">0</span><span class="br0">&#41;</span></div></li><li class="li1"><div class="de1">		    <span class="br0">&#123;</span></div></li><li class="li1"><div class="de1">			<a href="http://www.google.com/search?hl=en&amp;q=allinurl%3Adocs.oracle.com+javase+docs+api+joptionpane"><span class="kw3">JOptionPane</span></a>.<span class="me1">showMessageDialog</span><span class="br0">&#40;</span><span class="kw2">null</span>, <span class="st0">&quot;No es pot dividir per cero&quot;</span>, <span class="st0">&quot;Error&quot;</span>, <a href="http://www.google.com/search?hl=en&amp;q=allinurl%3Adocs.oracle.com+javase+docs+api+joptionpane"><span class="kw3">JOptionPane</span></a>.<span class="me1">ERROR_MESSAGE</span><span class="br0">&#41;</span><span class="sy0">;</span></div></li><li class="li1"><div class="de1">			operacio <span class="sy0">=</span> <span class="st0">&quot;null&quot;</span><span class="sy0">;</span></div></li><li class="li1"><div class="de1">			valor1 <span class="sy0">=</span> <span class="nu0">0</span><span class="sy0">;</span></div></li><li class="li1"><div class="de1">			mode <span class="sy0">=</span> MODE_ENTRADA<span class="sy0">;</span></div></li><li class="li1"><div class="de1">			inicialitza_resultat <span class="sy0">=</span> <span class="kw2">true</span><span class="sy0">;</span></div></li><li class="li1"><div class="de1">		    <span class="br0">&#125;</span></div></li><li class="li1"><div class="de1">	 	    <span class="kw1">else</span></div></li><li class="li1"><div class="de1">			resultat <span class="sy0">=</span> valor1 <span class="sy0">/</span> valor2<span class="sy0">;</span></div></li><li class="li1"><div class="de1">	        <span class="br0">&#125;</span></div></li><li class="li1"><div class="de1">&nbsp;</div></li><li class="li1"><div class="de1">		<span class="kw1">if</span> <span class="br0">&#40;</span>operacio.<span class="me1">equals</span><span class="br0">&#40;</span><span class="st0">&quot;/&quot;</span><span class="br0">&#41;</span><span class="br0">&#41;</span></div></li><li class="li1"><div class="de1">			resultat <span class="sy0">=</span> valor1 <span class="sy0">/</span> valor2<span class="sy0">;</span></div></li><li class="li1"><div class="de1">&nbsp;</div></li><li class="li1"><div class="de1">		<span class="kw1">if</span> <span class="br0">&#40;</span>operacio.<span class="me1">equals</span><span class="br0">&#40;</span><span class="st0">&quot;*&quot;</span><span class="br0">&#41;</span><span class="br0">&#41;</span></div></li><li class="li1"><div class="de1">			resultat <span class="sy0">=</span> valor1 <span class="sy0">*</span> valor2<span class="sy0">;</span></div></li><li class="li1"><div class="de1">&nbsp;</div></li><li class="li1"><div class="de1">		<span class="kw1">if</span> <span class="br0">&#40;</span>operacio.<span class="me1">equals</span><span class="br0">&#40;</span><span class="st0">&quot;-&quot;</span><span class="br0">&#41;</span><span class="br0">&#41;</span></div></li><li class="li1"><div class="de1">			resultat <span class="sy0">=</span> valor1 <span class="sy0">-</span> valor2<span class="sy0">;</span></div></li><li class="li1"><div class="de1">&nbsp;</div></li><li class="li1"><div class="de1">		<span class="kw1">if</span> <span class="br0">&#40;</span>operacio.<span class="me1">equals</span><span class="br0">&#40;</span><span class="st0">&quot;+&quot;</span><span class="br0">&#41;</span><span class="br0">&#41;</span></div></li><li class="li1"><div class="de1">			resultat <span class="sy0">=</span> valor1 <span class="sy0">+</span> valor2<span class="sy0">;</span></div></li><li class="li1"><div class="de1">&nbsp;</div></li><li class="li1"><div class="de1">		<span class="kw1">return</span> resultat<span class="sy0">;</span></div></li><li class="li1"><div class="de1">	<span class="br0">&#125;</span></div></li><li class="li1"><div class="de1">&nbsp;</div></li><li class="li1"><div class="de1">	<span class="kw4">void</span> mostraResultat<span class="br0">&#40;</span><span class="kw4">int</span> resultat<span class="br0">&#41;</span><span class="br0">&#123;</span></div></li><li class="li1"><div class="de1">		setResultatString<span class="br0">&#40;</span><a href="http://www.google.com/search?hl=en&amp;q=allinurl%3Adocs.oracle.com+javase+docs+api+integer"><span class="kw3">Integer</span></a>.<span class="me1">toString</span><span class="br0">&#40;</span>resultat<span class="br0">&#41;</span><span class="br0">&#41;</span><span class="sy0">;</span></div></li><li class="li1"><div class="de1">		valor1 <span class="sy0">=</span> resultat<span class="sy0">;</span></div></li><li class="li1"><div class="de1">		mode <span class="sy0">=</span> MODE_RESULTAT<span class="sy0">;</span></div></li><li class="li1"><div class="de1">		inicialitza_resultat <span class="sy0">=</span> <span class="kw2">true</span><span class="sy0">;</span></div></li><li class="li1"><div class="de1">	<span class="br0">&#125;</span></div></li><li class="li1"><div class="de1">&nbsp;</div></li><li class="li1"><div class="de1">	<span class="kw1">public</span> <span class="kw1">static</span> <span class="kw4">void</span> main<span class="br0">&#40;</span><a href="http://www.google.com/search?hl=en&amp;q=allinurl%3Adocs.oracle.com+javase+docs+api+string"><span class="kw3">String</span></a> args<span class="br0">&#91;</span><span class="br0">&#93;</span><span class="br0">&#41;</span> <span class="br0">&#123;</span></div></li><li class="li1"><div class="de1">		Calculadora calculadora <span class="sy0">=</span> <span class="kw1">new</span> Calculadora<span class="br0">&#40;</span><span class="kw2">true</span><span class="br0">&#41;</span><span class="sy0">;</span></div></li><li class="li1"><div class="de1">	<span class="br0">&#125;</span>	</div></li><li class="li1"><div class="de1">&nbsp;</div></li><li class="li1"><div class="de1"><span class="br0">&#125;</span></div></li></ol></pre>
+
+</div>
+
+	 </article>
+     <div class="pnpage">
+      <div class="left-corner"></div>
+      <div id="prevpage">Anar a la p&agrave;gina anterior:<br /><a href="../../../WebContent/u1/a2/exercicis.html">Exercicis</a></div>
+      <div id="nextpage">Anar a la p&agrave;gina seg&uuml;ent:<br /><a href="../../../index.html">&Iacute;ndex general</a></div>
+      <div class="right-corner"></div>
+     </div>
+    </div>
+    <footer class="footer">
+      <div><small>Aquest document està subjecte a una llicència oberta de Creative Commons, es reserva el dret de reconeixement de l'autoria, d'exigir que no se'n faci cap mena d'ús comercial. Si altereu o transformeu aquesta obra, o en genereu obres derivades, només podeu distribuir l'obra generada amb una llicència idèntica a aquesta.</small></div>
+    </footer>
+ </div>
+ <div id="back_preview" class="hidden"></div>
+ <div id="preview" class="hidden">
+  <div class="prevcontent"></div>
+ </div>
+ <div id="help-tooltips">
+  <div id="help-toc" class="hidden tooltip"><span>Taula de continguts:</span> Ofereix una vista general de l&#39;estructura del m&ograve;dul, que us facilitar&agrave; la navegaci&oacute; a trav&eacute;s dels seus continguts.<span class="arrow-left"></span></div> 
+  <div id="help-settings" class="hidden tooltip"><span>Opcions de format:</span> Permet configurar el format de lectura a partir de les vostres prefer&egrave;ncies, modificant la mida de la lletra, el color del fons, l&#39;amplada de la p&agrave;gina o l&#39;ocultaci&oacute; dels continguts complementaris, entre d&#39;altres.<span class="arrow-left"></span></div>
+  <div id="help-printer" class="hidden tooltip"><span>Imprimir:</span>  Envia el contingut seleccionat a la impressora.<span class="arrow-left"></span></div>
+  <div id="help-favorites" class="hidden tooltip"><span>Prefereits:</span> Permet desar aquelles parts del contingut a les que us interessi accedir en un moment posterior; us permetr&agrave; anar creant un repositori personalitzat de les seccions que considereu m&eacute;s rellevants. Un cop l&#39;hageu començat a fer servir se us mostrar&agrave; a sota un comptador que us informar&agrave; del nombre de preferits que s&#39;hagin emmagatzemat fins al moment.<span class="arrow-left"></span></div>
+  <div id="help-favcounter" class="hidden tooltip"><span>Comptador i llistat de preferits:</span> Indica el nombre de preferits que s&#39;han desat fins el moment; clicant damunt seu accedireu al llistat de preferits, i a trav&eacute;s d&#39;aquest podreu accedir directament als continguts que hageu emmagatzemat.<span class="arrow-left"></span></div>
+  <div id="help-help_icon" class="hidden tooltip"><span>Ajuda:</span> Aquesta opci&oacute; activa la informaci&oacute; de les funcionalitats del web tot situant el punter del ratol&iacute; al damunt dels diferents &iacute;tems.<span class="arrow-left"></span></div>
+  <div id="help-sidebar-hide" class="hidden tooltip"><span>Mostrar/Ocultar barra lateral:</span>  Deshabilita la barra d&#39;opcions, permetent la seva recuperaci&oacute; quan es desitgi.<span class="arrow-left"></span></div>
+  <div id="help-search" class="hidden tooltip"><span>Cerca:</span>  Introdu&iuml;u les paraules clau sobre aquells conceptes que desitgeu localitzar en els continguts del m&ograve;dul. Tamb&eacute; podeu excloure un terme de la cerca tot afegint-hi el signe &#8220;-&#8221; al davant.<span class="arrow-top"></span></div>
+  <div id="help-header" class="hidden tooltip"><span>Cap&ccedil;alera:</span>  Indica l&#39;apartat o secci&oacute; que es mostra en pantalla. Tingueu present que les capçaleres de segon, tercer i quart nivell tamb&eacute; es poden desar com a marcadors.<span class="arrow-left"></span></div>
+</div> 
+</body>
+</html>

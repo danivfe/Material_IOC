@@ -1,0 +1,1667 @@
+<!doctype html>
+
+<!--[if lt IE 7 ]> <html class="ie ie6 no-js" lang="ca"> <![endif]-->
+<!--[if IE 7 ]>    <html class="ie ie7 no-js" lang="ca"> <![endif]-->
+<!--[if IE 8 ]>    <html class="ie ie8 no-js" lang="ca"> <![endif]-->
+<!--[if IE 9 ]>    <html class="ie ie9 no-js" lang="ca"> <![endif]-->
+<!--[if gt IE 9]><!--><html class="no-js" lang="ca"><!--<![endif]-->
+<!-- the "no-js" class is for Modernizr. -->
+
+<head id="www-sitename-com" data-template-set="html5-reset">
+
+	<meta charset="utf-8">
+	
+	<!-- Always force latest IE rendering engine (even in intranet) & Chrome Frame -->
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	
+	<title>Entorns de desenvolupament</title>
+	
+<!-- <meta name="title" content=""> --> 
+	<meta name="description" content="">
+	<!-- Google will often use this as its description of your page/site. Make it good. -->
+	
+	<meta name="google-site-verification" content="">
+	<!-- Speaking of Google, don't forget to set your site up: http://google.com/webmasters -->
+	
+	<meta name="author" content="Institut Obert de Catalunya">
+	<meta name="Copyright" content="Copyright Institut Obert de Catalunya 2011. All Rights Reserved.">
+
+	<!-- Dublin Core Metadata : http://dublincore.org/ -->
+	<meta name="DC.title" content="Entorns de desenvolupament">
+	<meta name="DC.subject" content="Informàtica i comunicacions">
+	<meta name="DC.creator" content="Institut Obert de Catalunya">
+	
+	<!--  Mobile Viewport Fix
+	j.mp/mobileviewport & davidbcalhoun.com/2010/viewport-metatag 
+	device-width : Occupy full width of the screen in its current orientation
+	initial-scale = 1.0 retains dimensions instead of zooming out if page height > device height
+	maximum-scale = 1.0 retains dimensions instead of zooming in if page width < device width
+	-->
+	<!-- Uncomment to use � use thoughtfully!
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+	-->
+
+	<link rel="shortcut icon" href="../../../img/favicon.ico">
+	<!-- This is the traditional favicon.
+		 - size: 16x16 or 32x32
+		 - transparency is OK
+		 - see wikipedia for info on browser support: http://mky.be/favicon/ -->
+		 
+	<link rel="apple-touch-icon" href="../../../img/apple-touch-icon.png">
+	<!-- The is the icon for iOS's Web Clip.
+		 - size: 57x57 for older iPhones, 72x72 for iPads, 114x114 for iPhone4's retina display (IMHO, just go ahead and use the biggest one)
+		 - To prevent iOS from applying its styles to the icon name it thusly: apple-touch-icon-precomposed.png
+		 - Transparency is not recommended (iOS will put a black BG behind the icon) -->
+	
+	<!-- CSS: screen, mobile & print are all in the same file -->
+	<link rel="stylesheet" href="../../../_/css/style.css">
+
+	<!-- CSS: jQuery UI -->
+	<link rel="stylesheet" href="../../../_/css/jquery-ui.css">
+	
+	<!-- all our JS is at the bottom of the page, except for Modernizr. -->
+	<script src="../../../_/js/modernizr-1.7.min.js"></script>
+	<script src="../../../_/js/Hyphenator.js" type="text/javascript"></script>
+	<script type="text/javascript">
+	   Hyphenator.config({
+		minwordlength : 4
+	   });
+	   Hyphenator.run();
+	</script>
+    <script src="../../../_/js/build.js" type="text/javascript"></script>
+</head>
+
+<body class="style-newspaper">
+
+<div class="wrapper"><!-- not needed? up to you: http://camendesign.com/code/developpeurs_sans_frontieres -->
+
+	<header id="header">
+		<div class="head"><a href="http://ioc.gencat.cat"><img src="../../../img/logo.png" alt="Institut Obert de Catalunya"/></a><a href="http://creativecommons.org/licenses/by-nc-sa/3.0/es/deed.ca"><img src="../../../img/license.png" alt="Llic&egrave;ncia" class="license"/></a></div>
+		<div class="headdocument"><a href="../../../index.html">Entorns de desenvolupament</a></div>
+        <div id="search" class="search" name="search">
+         <form id="frmsearch" action="../../../search.html" method="get">
+          <input type="text" name="q"/>
+        </form>
+        </div>
+	</header>
+   <div id="upbutton" class="upbutton" style="display:none;"><img src="../../../img/uparrow.png" alt="Pujar a l'inici de p&agrave;gina"/></div>
+   <aside id="aside">
+    <div id="menu">
+      <ul>
+       <li name="toc"><div><img src="../../../img/toc.png" alt="&Iacute;ndex"/></div></li>
+       <li name="settings"><div><img src="../../../img/settings.png" alt="Configuraci&oacute;"/></div></li>
+       <li name="printer"><div><img src="../../../img/printer.png" alt="Imprimir"/></div></li>
+       <li name="favorites"><div><img src="../../../img/favorites.png" alt="Favorits"/></div></li>
+       <li name="help_icon" class="help_icon"><div><img src="../../../img/help_icon.png" alt="Ajuda"/></div></li>
+      </ul>
+     </div>
+   </aside>
+   <div id="sidebar-hide" name="sidebar-hide"><img src="../../../img/arrows.png"/></div>
+   <section>
+     <div id="toc" class="hidden">
+      <div class="menucontent">
+        <ul>
+        <li id="u3" class="parentnode"><p><a href="../../../WebContent/u3/introduccio.html">3. Introducció al disseny orientat a objectes</a></p><ul class="expander"><li id="u3introduccio"><a href="../../../WebContent/u3/introduccio.html">Introducció</a></li><li id="u3resum"><a href="../../../WebContent/u3/resum.html">Resum</a></li><li id="u3resultats"><a href="../../../WebContent/u3/resultats.html">Resultats d’aprenentatge</a></li><li id="u3referencies"><a href="../../../WebContent/u3/referencies.html">Referències</a></li><li id="u3a1" class="tocsection"><p id="u3a1continguts"><a href="../../../WebContent/u3/a1/continguts.html">Diagrames estàtics</a><span class="buttonexp"></span></p><ul><li id="u3a1activitats"><a href="../../../WebContent/u3/a1/activitats.html">Activitats</a></li><li id="u3a1exercicis"><a href="../../../WebContent/u3/a1/exercicis.html">Exercicis</a></li><li id="u3a1annexos"><a href="../../../WebContent/u3/a1/annexos.html">Annexos</a></li></ul></li><li id="u3a2" class="tocsection"><p id="u3a2continguts"><a href="../../../WebContent/u3/a2/continguts.html">Diagrames dinàmics</a><span class="buttonexp"></span></p><ul><li id="u3a2activitats"><a href="../../../WebContent/u3/a2/activitats.html">Activitats</a></li><li id="u3a2exercicis"><a href="../../../WebContent/u3/a2/exercicis.html">Exercicis</a></li><li id="u3a2annexos"><a href="../../../WebContent/u3/a2/annexos.html">Annexos</a></li></ul></li></ul></li><li id="" class="indexnode"><p><a href="../../../index.html">Anar a l&#39;&iacute;ndex general</a></p></li>
+        </ul>
+      </div>
+    </div>
+   </section>
+   <section>
+   <div id="settings" class="hidden">
+    <div class="menucontent">
+     <div class="allsettings">
+     <div class="settings">
+      <label>Font i Color</label>
+		<div class="setting-option">
+	        <ul class="fontBackground">
+				<li id="style-newspaper" title="Newspaper" class="appearance-style-newspaper"><span>Newspaper</span></li>
+                <li id="style-novel" title="Novel" class="appearance-style-novel"><span>Novel</span></li>
+                <li id="style-ebook" title="eBook" class="appearance-style-ebook"><span>eBook</span></li>
+				<li id="style-inverse" title="Inverse" class="appearance-style-inverse active"><span>Inverse</span></li>
+				<li id="style-athelas" title="Athelas" class="appearance-style-athelas"><span>Athelas</span></li>
+			</ul>
+		</div>
+     </div>
+	<div class="settings">
+      <label>Amplada</label>
+		<div class="setting-option">
+	        <div id="slider-width"></div>
+		</div>
+     </div>
+     <div class="settings">
+      <label>Mida de la font</label>
+		<div class="setting-option">
+	        <div id="slider-font"></div>
+		</div>
+     </div>
+     <div class="settings">
+      <label>Mida de la font</label>
+	  <div class="setting-option">
+       <form action="" class="sett-options">
+		<ul>
+		    <li><input type="checkbox" id="secondary-content" /><label for="secondary-content">Mostra recursos complementaris</label></li>
+		    <li><input type="checkbox" id="main-images" /><label for="main-images">Mostra imatges</label></li>
+		    <li><input type="checkbox" id="text-alignment" /><label for="text-alignment">Text justificat</label></li>
+			<li><input type="checkbox" id="text-hyphen" /><label for="text-hyphen">Partici&oacute; sil·l&agrave;bica</label></li>
+		</ul>
+       </form>
+	  </div>
+     </div>
+     </div>
+    </div>
+   </div>
+   </section>
+ <section>
+ <div id="favorites" class="hidden"></div>
+ </section>   
+ <div id="bridge" class="hidden"></div>
+ <div id="help" class="hidden">
+  <div class="helptitle">Dreceres del teclat<hr></div>
+  <div class="helpsection"><span>General</span>
+   <ul>
+    <li><span class="shortcut">g</span>: Anar al men&uacute; de navegaci&oacute;</li>
+    <li><span class="shortcut">o</span>: Anar a opcions</li>
+    <li><span class="shortcut">s</span>: Guardar la p&agrave;gina actual a favorits</li>
+    <li><span class="shortcut">p</span>: Imprimir la p&agrave;gina actual</li>
+    <li><span class="shortcut">?</span>: Mostrar/Ocultar l&#39;ajuda</li>
+   </ul>
+  </div>
+  <div class="helpsection"><span>Navegaci&oacute;</span>
+   <ul>
+    <li><span class="shortcut">i</span>: Anar a l&#39;&iacute;ndex general</li>
+    <li><span class="shortcut">t</span>: Anar a l&#39;inici de p&agrave;gina</li>
+    <li><span class="shortcut">b</span>: Anar al final de p&agrave;gina</li>
+    <li><span class="shortcut">j</span>: Anar cap endavant dintre la p&agrave;gina</li>
+    <li><span class="shortcut">k</span>: Anar cap enrere dintre la p&agrave;gina</li>
+    <li><span class="shortcut">h</span>: Anar a la p&agrave;gina anterior:</li>
+    <li><span class="shortcut">l</span>: Anar a la p&agrave;gina seg&uuml;ent:</li>
+   </ul>
+   </div>
+ </div>
+ <div id="favcounter" name="favcounter" class="hidden"><span></span></div>
+ <div id="navmenu" class="navmenu"><ul class="webnav"><li><a href="../../../index.html" title="Anar a l&#39;&iacute;ndex general">Inici</a></li><li><a href="../introduccio.html">Introducció al disseny orientat a objectes</a></li><li>Diagrames dinàmics</li></ul></div>
+	<div id="content" lang="ca" class="hyphenate text">
+     <article lang="ca" class="sheet">
+        <h1><a id="diagrames_dinamics"> Diagrames dinàmics </a></h1>
+    	
+<p>
+El llenguatge unificat de modelització serveix per a la creació, especificació, construcció i documentació de models que representen tot tipus de sistemes. Aquesta modelització ha d’aportar una representació completa del sistema i es fa en termes d’orientació a objectes. Alguns dels sistemes que es poden representar mitjançant UML poden ser sistemes d’informació, sistemes de negocis, sistemes transaccionals (de gestió d’informació), sistemes distribuïts, sistemes estratègics, sistemes en temps real…
+</p>
+
+<p>
+Alguns dels aspectes positius de fer servir la modelització de sistemes orientada a objectes són:
+</p>
+<ul>
+<li class="level1"><div class="li"> Permet representar de forma més fidedigna el món real.</div>
+</li>
+<li class="level1"><div class="li"> Aquests són més fàcils d’entendre i de fer-hi ampliacions o modificacions.</div>
+</li>
+<li class="level1"><div class="li"> Tots els implicats parlen el mateix idioma (analistes, dissenyadors, desenvolupadors, verificadors…)</div>
+</li>
+<li class="level1"><div class="li"> Aporta més estabilitat pel fet que es poden fer petites ampliacions o modificacions sense haver de canviar tota la modelització.</div>
+</li>
+<li class="level1"><div class="li"> Permet la possibilitat de reutilitzar codi de forma senzilla.</div>
+</li>
+</ul>
+
+<p>
+El llenguatge UML, en la seva versió 2.0, està compost de 13 diagrames (14 diagrames a partir de la versió 2.2), que es poden classificar seguint diversos criteris. Un d’ells pot ser en funció de les perspectives concretes o vistes des d’on es representen els sistemes. Per exemple, el diagrama de casos d’ús, que es considera un diagrama de la vista de requeriments o la vista de processos, engloba els diagrames de comportament.
+</p>
+
+<p>
+Com es pot observar a la <span class="figref"><a href="#Figure63"><span>figura</span></a></span>, una altra forma de classificació, que es fa servir en aquests materials, és la d’agrupar els diagrames en:
+</p>
+<ul>
+<li class="level1"><div class="li"> Diagrames estàtics o diagrames d’estructura. </div>
+</li>
+<li class="level1"><div class="li"> Diagrames dinàmics o diagrames de comportament. </div>
+</li>
+</ul>
+
+<p>
+En la versió UML 2.2, i posteriors, es poden trobar set diagrames que pertanyen a cada una de les agrupacions de diagrames.
+</p>
+<div class="iocfigure"><a name="Figure63"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Classificació dels diagrames UML
+
+</figcaption><img src="../media/ic10m05u3_63.png" alt="" /></figure>
+</div>
+<h2><a id="diagrames_de_comportament" >Diagrames de comportament</a></h2>
+<div class="level2">
+
+<p>
+Els diagrames considerats dinàmics o de comportament són els que representen el comportament dinàmic del sistema que s’està modelant. És a dir, indiquen les accions i processos que es duran a terme entre els elements del sistema, fixant-se en els seus moviments i en els efectes que tenen aquestes accions i activitats sobre els elements.
+</p>
+
+<p>
+Els diferents diagrames de comportament descriuen el comportament de classificadors o, més sovint, de les seves instàncies, des de diferents punts de vista:
+</p>
+<ul>
+<li class="level1"><div class="li"> Per una banda, representen o bé components executants o bé comportaments emergents.</div>
+</li>
+<li class="level1"><div class="li"> Per una altra, es destaca un d’aquests aspectes o un altre: interaccions amb l’exterior, o les situacions –anomenades estats– per les quals passa una instància durant la seva existència, o la seqüència temporal de les diferents parts d’un comportament…</div>
+</li>
+</ul>
+
+<p>
+Alguns d’aquests diagrames dinàmics es poden tornar a agrupar en funció de les seves funcionalitats. Concretament, dels set diagrames dinàmics n’hi ha tres que no s’agrupen, que tenen una entitat pròpia, i quatre més que es troben agrupats. 
+</p>
+<div class="iocreference"><div class="ioccontent">
+<p>
+En l’apartat <em>Diagrama de casos d’ús</em> d’aquesta unitat es tracta amb detall el diagrama de casos d’ús.
+</p>
+</div></div>
+<p>
+Els tres diagrames que no estaran agrupats són:
+</p>
+<ul>
+<li class="level1"><div class="li"> <strong>Diagrama de casos d’ús</strong>. Aquest diagrama identifica els diferents comportaments d’un sistema des del punt de vista de les seves interaccions amb el món exterior i descriu determinades relacions entre aquests comportaments.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Diagrama d’activitats</strong> és el que descompon un comportament en activitats i representa els fluxos d’execució i d’informació entre aquestes activitats.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Diagrama d’estats</strong> (en anglès State Machine Diagram). Aquest diagrama mostra els possibles canvis d’una situació a una altra de les instàncies del classificador de context i indica les causes i els comportaments que engeguen aquests canvis.</div>
+</li>
+</ul>
+
+<p>
+Els altres quatre diagrames estan agrupats en els anomenats diagrames d’interacció. Aquesta agrupació conté diagrames que representen un comportament emergent per mitjà de missatges entre les instàncies de classificadors d’una estructura interna o col·laboració i pot especificar restriccions temporals relatives a aquests missatges.
+</p>
+<div class="iocreference"><div class="ioccontent">
+<p>
+A l’apartat <em>2.3 Diagrames d’interacció</em> es tractaran amb detall els diagrames de seqüència i de col·laboració.
+</p>
+</div></div>
+<p>
+Els diagrames d’interacció són:
+</p>
+<ul>
+<li class="level1"><div class="li"> <strong>Diagrama de comunicacions</strong>, que representa els missatges damunt els connectors d’una estructura interna o col·laboració</div>
+</li>
+<li class="level1"><div class="li"> <strong>Diagrama de seqüència</strong>, que posa èmfasi en l’ordre temporal dels missatges.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Diagrama de temps</strong>, que representa una possible seqüència temporal de canvis d’estat d’una instància o de diverses instàncies que interactuen d’acord amb els diagrames d’estats respectius.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Diagrama general d’interacció</strong>, que és un diagrama resumit que combina notacions dels diagrames de seqüències i dels d’activitats.</div>
+</li>
+</ul>
+
+<p>
+A la <span class="figref"><a href="#Figure64"><span>figura</span></a></span> es poden observar els diagrames de comportament pertanyents a l’UML Dinàmic.
+</p>
+<div class="iocfigure"><a name="Figure64"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Diagrama de comportament
+
+</figcaption><img src="../media/ic10m05u3_64.png" alt="" /></figure>
+</div>
+</div>
+
+<h3><a id="conceptes" >Conceptes</a></h3>
+<div class="level3">
+
+<p>
+Igual que en els diagrames d’estructura, cadascun dels diagrames de comportament de l’UML fa servir alguns tipus d’elements propis, a més d’altres de compartits per diversos diagrames de comportament. Els tipus d’elements compartits principals són:
+</p>
+<ul>
+<li class="level1"><div class="li"> Senyal, que és una instància que es transmet d’un objecte a un altre.</div>
+</li>
+<li class="level1"><div class="li"> Missatge, que és una comunicació entre instàncies.</div>
+</li>
+<li class="level1"><div class="li"> Esdeveniment, que és un succés que pot tenir efectes damunt algun comportament.</div>
+</li>
+<li class="level1"><div class="li"> Activitat i acció.</div>
+</li>
+</ul>
+<div class="iocimportant"><div class="ioccontent">
+<p>
+Un <strong>senyal</strong> és una instància que un objecte o1 envia a un altre o2 i, com a conseqüència d’aquest enviament, s’executa un comportament asíncron que té o2 com a objecte de context.
+</p>
+</div></div>
+<p>
+Una <strong>recepció de senyal</strong> és una operació d’estereotip <em>signal</em> que indica que les instàncies del classificador dins el qual és definida (generalment, una classe o una interfície) reaccionen al senyal executant un comportament que és asíncron i, per tant, una recepció de senyal no pot tornar cap valor.
+</p>
+<div class="iocimportant"><div class="ioccontent">
+<p>
+Un <strong>missatge</strong> és una comunicació entre instàncies de classificador, per la qual una (l’emissor) envia un senyal a l’altra (el destinatari) o li demana l’execució d’una operació.
+</p>
+</div></div>
+<p>
+Un <strong>missatge síncron</strong> és aquell que, quan s’emet, l’execució del comportament que l’ha emès roman aturada fins que rep un <strong>missatge de resposta</strong> del receptor; en canvi, quan s’emet un <strong>missatge asíncron</strong>, l’operació que l’ha emès es continua executant i no hi ha missatge de resposta. Un missatge asíncron pot consistir en l’enviament d’un senyal o la crida d’una operació; un de síncron només pot consistir en una crida d’una operació.
+</p>
+<div class="iocimportant"><div class="ioccontent">
+<p>
+Un <strong>esdeveniment</strong> és un succés que es pot produir dins el sistema o el seu entorn, i quan té lloc pot provocar l’execució d’un comportament.
+</p>
+</div></div>
+<p>
+El fet que es produeixi un cert esdeveniment en un instant concret es diu <strong>ocurrència d’esdeveniment</strong>, i un conjunt de possibles ocurrències d’esdeveniment que tindrien el mateix significat i els mateixos efectes és un <strong>tipus d’esdeveniment</strong>. Un <strong>disparador</strong> és un element que especifica que una ocurrència d’esdeveniment del tipus indicat pot engegar un cert comportament. I inversament, tant l’engegada com la fi d’un comportament generen esdeveniments que poden engegar altres comportaments per mitjà dels disparadors corresponents.
+</p>
+<div class="iocimportant"><div class="ioccontent">
+<p>
+Una <strong>activitat</strong> és una forma del comportament que es caracteritza per ser jeràrquica, en el sentit que pot ser constituïda per altres activitats; una activitat que no es pot descompondre és una <strong>acció</strong>.
+</p>
+</div></div>
+</div>
+
+<h3><a id="diagrama_d_activitats" >Diagrama d&#039;activitats</a></h3>
+<div class="level3">
+<div class="iocnote"><div class="ioccontent">
+<p>
+Els diagrames d’activitats hereten conceptes dels diagrames de flux, essent un diagrama bastant fàcil d’interpretar.
+</p>
+</div></div>
+<p>
+El <strong>diagrama d’activitats</strong> descriu les activitats que s’han de dur a terme en un cas d’ús, així com la manera de relacionar-se les activitats entre si per tal d’aconseguir un determinat objectiu. En altres paraules, el diagrama d’activitats descriu com un sistema implementa la seva funcionalitat. 
+</p>
+
+<p>
+Aquest diagrama està estretament vinculat a altres diagrames, com són el diagrama de classes (diagrama estàtic), el diagrama d’estats (diagrama dinàmic) i el diagrama de casos d’ús (diagrama dinàmic). Un diagrama d’activitats explica què està succeint entre diversos objectes o quin és el comportament d’un objecte. 
+</p>
+<div class="ioctext"><div class="ioccontent"><p class="ioctitle">Diagrames previs</p>
+<p>
+Els classificadors que s’esmentin en un diagrama d’activitats s’han d’haver descrit prèviament en un diagrama de classes, i si les instàncies d’algun d’ells tenen diferents estats possibles cal haver-ne fet el diagrama d’estats corresponent.
+</p>
+</div></div>
+<p>
+Els diagrames d’activitats fan servir una sèrie d’elements, com ara:
+</p>
+<ul>
+<li class="level1"><div class="li"> <strong>Estats inicials</strong>, representats mitjançant un cercle omplert de color negre. Marquen l’inici de l’execució dels processos o activitats.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Estats finals</strong>, representats mitjançant un cercle omplert de color negre amb una altra circumferència per sobre amb una petita distància sense omplir. Els estats finals indiquen el final de l’execució d’un procés o activitat.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Activitats o accions</strong>, representades mitjançant un rectangle de cantonades arrodonides. Indiquen l’arribada a un node una vegada efectuada una acció o activitat. </div>
+</li>
+<li class="level1"><div class="li"> <strong>Transicions o fluxos de control</strong>, representats mitjançant fletxes. La seva direcció indica el node des del qual s’inicia l’activitat o l’acció fins a l’altre node, al qual s’arribarà una vegada finalitzada.</div>
+</li>
+</ul>
+
+<p>
+A la <span class="figref"><a href="#Figure65"><span>figura</span></a></span> es poden observar totes les representacions gràfiques dels elements que participen en els diagrames d’activitats.
+</p>
+<div class="iocfigure"><a name="Figure65"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Elements del diagrama d’activitats
+
+</figcaption><img src="../media/ic10m05u3_65.png" alt="" /></figure>
+</div>
+<p>
+A la <span class="figref"><a href="#Figure66"><span>figura</span></a></span> es mostra un exemple de diagrames d’activitats. Es vol modelitzar el procediment de pagament per part d’un usuari de l’estada del seu cotxe a un pàrquing. Abans d’enretirar el cotxe del pàrquing, haurà d’abonar l’import que se li calcularà automàticament, en funció del temps que hagi estat estacionat el seu cotxe. Es mostra un diagrama d’activitats molt senzill en la <span class="figref"><a href="#Figure66"><span>figura</span></a></span>, on totes les activitats es mostren a partir de transicions o fluxos de control seqüencials. A partir de l’estat inicial, i fins arribar a l’estat final, es passarà per sis activitats o accions:
+</p>
+<ul>
+<li class="level1"><div class="li"> Inserir targeta pàrquing.</div>
+</li>
+<li class="level1"><div class="li"> Veure import a pagar.</div>
+</li>
+<li class="level1"><div class="li"> Introduir monedes.</div>
+</li>
+<li class="level1"><div class="li"> Recollir targeta pàrquing.</div>
+</li>
+<li class="level1"><div class="li"> Recollir canvi.</div>
+</li>
+<li class="level1"><div class="li"> Recollir rebut.</div>
+</li>
+</ul>
+
+<p>
+Es pot veure com les activitats defineixen, de forma molt clara, quina funcionalitat executaran.
+</p>
+<div class="iocfigure"><a name="Figure66"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Exemple de diagrama d’estats - activitats seqüencials
+
+</figcaption><img src="../media/ic10m05u3_66.png" alt="" /></figure>
+</div>
+<p>
+Altres elements importants en els diagrames d’activitats són els que fan referència a la possibilitat de donar alternatives als fluxos de control i a les activitats o accions. Alguns d’aquests elements són:
+</p>
+<ul>
+<li class="level1"><div class="li"> <strong>Decisió/fusió</strong>, representat mitjançant un rombe regular. A partir d’un flux d’entrada, hi haurà dos o més fluxos de sortida, en funció de la condició marcada. Cada flux de sortida haurà d’estar indicat per una condició. En el cas de la fusió, serveix per agrupar dos o més fluxos que arriben a un mateix punt de diverses decisions donades anteriorment a aquest punt en el diagrama d’activitats. La fusió tindrà dos o més fluxos d’entrada, però un únic flux de sortida.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Condició</strong>, representat per un text que s’escriu entre els símbols <code>[</code> … <code>]</code>. Aquesta condició representa la pregunta o preguntes que es farà el flux de control per, una vegada presa la decisió, saber per quin camí caldrà que continuï. </div>
+</li>
+</ul>
+
+<p>
+A la <span class="figref"><a href="#Figure67"><span>figura</span></a></span> es pot observar un exemple de condicions i bifurcacions a partir d’una ampliació de l’exemple anterior, el mostrat a la <span class="figref"><a href="#Figure66"><span>figura</span></a></span>.
+</p>
+<div class="iocfigure"><a name="Figure67"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Exemple de diagrama d’activitats - alternativa
+
+</figcaption><img src="../media/ic10m05u3_67.png" alt="" /></figure>
+</div>
+<p>
+Què succeeix si l’usuari vol pagar la tarifa del seu pàrquing amb bitllets en comptes de fer-ho amb monedes? La modelització del sistema haurà de tenir en compte aquestes dues opcions. Què succeeix si l’usuari ha introduït l’import exacte a pagar i no ha de recollir canvi? Potser no és necessari passar per l’activitat Recollir canvi.
+</p>
+
+<p>
+En aquests dos exemples es poden veure els elements de condició i de decisió/fusió.
+</p>
+
+<p>
+Uns altres elements també importants en els diagrames d’activitats són els anomenats <em>fork</em> i <em>join</em>. <em>Fork</em> significa ‘bifurcació’ i <em>join</em> ‘agrupació o unió’. Són dos elements estretament vinculats amb les bifurcacions, podent ser complementaris o substitutius d’aquestes. Les seves característiques són les següents:
+</p>
+<ul>
+<li class="level1"><div class="li"> <strong><em>Fork</em></strong>, representat per una línia negra sòlida, perpendicular a les línies de transició. Un <em>fork</em> representa una necessitat de ramificar una transició en més d’una possibilitat. La diferència amb una ramificació és que en el <em>fork</em> és obligatori passar per les diferents transicions, mentre que en la decisió es pot passar per una transició o per una altra. En altres paraules, les transicions de sortida d’un <em>fork</em> representen transicions que podran ser executades de forma concurrent.</div>
+</li>
+<li class="level1"><div class="li"> <strong><em>Join</em></strong>, representat per una línia negra sòlida, perpendicular a les línies de transició. Un <em>join</em> fusiona dues o més transicions provinents d’un <em>fork</em>, és a dir, se sincronitzen en una única línia de flux. Totes les accions de les línies de flux prèvies al <em>join</em> han de completar-se abans que s’executi la primera acció de la línia posterior al <em>join</em>.</div>
+</li>
+</ul>
+
+<p>
+A la <span class="figref"><a href="#Figure68"><span>figura</span></a></span> es pot veure una altra evolució de l’exemple del pagament del pàrquing, afegint-hi aquesta vegada els elements <em>join</em> i <em>fork</em>. Concretament, si es parteix de la <span class="figref"><a href="#Figure67"><span>figura</span></a></span>, es pot observar que a l’activitat <em>Recollir targeta del pàrquing</em> s’ha afegit un element de tipus <em>fork</em> que especifica que a partir d’aquella activitat s’haurà de passar per dues activitats, la de recollir el canvi, en el cas de ser necessari, i la de recollir el rebut. L’ordre en què es desenvoluparan serà indiferent. 
+</p>
+
+<p>
+Una vegada acabades aquestes dues activitats, s’ha afegit un element de tipus <em>join</em>, que recull la finalització de les dues activitats per, una vegada acabades, passar a la següent activitat, en aquest cas l’estat final.
+</p>
+
+<p>
+Cal tenir en compte alguns condicionants que s’hauran d’acomplir a fi de crear un diagrama d’activitats correcte:
+</p>
+<ul>
+<li class="level1"><div class="li"> No és obligatori que hi hagi un estat final. Per exemple, un procés que es desenvolupi de forma contínua mai acabarà.</div>
+</li>
+<li class="level1"><div class="li"> Podrà haver-hi diversos estats finals.</div>
+</li>
+<li class="level1"><div class="li"> Les activitats es podran descompondre en altres activitats.</div>
+</li>
+<li class="level1"><div class="li"> Una acció és una activitat que no es pot descompondre en altres activitats. </div>
+</li>
+<li class="level1"><div class="li"> Un flux de control no podrà finalitzar mai en l’estat inicial.</div>
+</li>
+<li class="level1"><div class="li"> Cada activitat o acció ha de tenir, com a mínim, un flux de control d’entrada i un flux de control de sortida.</div>
+</li>
+<li class="level1"><div class="li"> Les condicions dels fluxos de sortida d’una mateixa decisió hauran de ser complertes i disjuntes.</div>
+</li>
+</ul>
+<div class="iocfigure"><a name="Figure68"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Exemple diagrama de classes - ‘fork’ i ‘join’
+
+</figcaption><img src="../media/ic10m05u3_68.png" alt="" /></figure>
+</div>
+</div>
+
+<h3><a id="diagrama_d_estat" >Diagrama d&#039;estat</a></h3>
+<div class="level3">
+<div class="iocimportant"><div class="ioccontent">
+<p>
+El <strong>diagrama d’estat</strong> representa el conjunt d’estats pels quals passa un objecte durant la seva vida en una aplicació en resposta a esdeveniments, juntament amb les seves respostes i accions. Un esdeveniment podria ser un missatge rebut, un error, un temps d’espera superior al planificat…
+</p>
+</div></div>
+<p>
+En la major part de les tècniques Orientades a Objectes, els diagrames d’estats es dibuixen per a una sola classe, mostrant el comportament d’un sol objecte durant tot el seu cicle de vida.
+</p>
+
+<p>
+Com es pot veure a la <span class="figref"><a href="#Figure69"><span>figura</span></a></span>, els elements d’un diagrama d’estats són molt similars al dels diagrama d’activitats. Resumint, podem trobar:
+</p>
+<ul>
+<li class="level1"><div class="li"> <strong>Estats inicials</strong>, representats mitjançant un cercle omplert de color negre. Marquen l’inici del diagrama d’estats.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Estats finals</strong>, representats mitjançant un cercle omplert de color negre amb una altra circumferència per sobre, amb una petita distància sense omplir. Els estats finals indiquen el final del diagrama d’estats. En un diagrama d’estats és possible que no hi hagi estats finals.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Estats</strong>, representats mitjançant un rectangle amb les cantonades arrodonides. Un estat identifica una condició o una situació en la vida d’un objecte, durant la qual satisfà alguna condició, executa alguna activitat o espera que passi algun esdeveniment.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Transicions o fluxos de control</strong>, representats amb una fletxa amb direcció que tindrà superposat el nom de l’esdeveniment que provocarà aquesta transacció entre estats. Tindrà sempre un inici i un final. Indica el pas d’un objecte d’un estat a un altre estat.</div>
+</li>
+</ul>
+<div class="iocfigure"><a name="Figure69"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Elements del diagrama d’estats
+
+</figcaption><img src="../media/ic10m05u3_69.png" alt="" /></figure>
+</div>
+<p>
+A la <span class="figref"><a href="#Figure70"><span>figura</span></a></span> es mostra un petit exemple d’un diagrama d’estats. Es vol modelitzar, mitjançant un diagrama d’estats, el funcionament de les marxes d’un cotxe automàtic. Aquest tipus de cotxe podrà trobar-se en dos possibles estats: o està funcionant marxa endavant o està funcionat marxa enrere.
+</p>
+<div class="iocfigure"><a name="Figure70"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Diagrama d’estats - canvi de marxes d’un cotxe automàtic
+
+</figcaption><img src="../media/ic10m05u3_70.png" alt="" /></figure>
+</div>
+<p>
+En l’exemple de la <span class="figref"><a href="#Figure70"><span>figura</span></a></span> es parteix d’un estat inicial i s’arriba a un estat anomenat <em>Punt Mort</em>. En aquest estat el cotxe no es mourà. A partir d’aquí es podrà posar la marxa enrere (mitjançant el flux de control anomenat <em>Posar R</em>) i es podrà tornar a l’estat <em>Punt Mort</em> amb el flux de control: <em>Posar N</em>. El mateix succeirà amb l’estat <em>Marxa endavant</em>. 
+</p>
+
+<p>
+Les transaccions es podran crear unint un mateix estat, com es pot veure a la <span class="figref"><a href="#Figure71"><span>figura</span></a></span>. 
+</p>
+
+<p>
+En els cotxes automàtics el conductor pot deixar l’estat <em>Marxa endavant</em> activat. En aquesta situació el cotxe va canviant automàticament de marxes sense l’acció del conductor. Però també s’accepta el poder augmentar o disminuir una marxa de forma seqüencial per part del conductor. En l’exemple es veu com l’estat <em>Marxa endavant</em>, a més de poder tornar a través de la transacció <em>Posar N</em> a l’estat <em>Punt Mort</em>, podrà evolucionar a partir de dues transaccions més (retrocedir marxa o canviar a la propera marxa) al mateix estat, amb la qual cosa modificarà les seves propietats. 
+</p>
+<div class="iocfigure"><a name="Figure71"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Diagrama d’estats - canvi de marxes d’un cotxe automàtic
+
+</figcaption><img src="../media/ic10m05u3_71.png" alt="" /></figure>
+</div>
+<p>
+Arribats a aquest punt, es proposarà un diagrama d’estats una mica més complicat, en el qual es mostra el comportament de l’estat davant un esdeveniment i les accions que efectua l’objecte.
+</p>
+
+<p>
+La <span class="figref"><a href="#Figure72"><span>figura</span></a></span> és un diagrama d’estats que descriu la gestió de les inscripcions dels alumnes d’una acadèmia. 
+</p>
+<div class="iocfigure"><a name="Figure72"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Diagrama d’estats - procés de matriculació
+
+</figcaption><img src="../media/ic10m05u3_72.png" alt="" /></figure>
+</div>
+<p>
+El diagrama comença amb l’estat inicial, representat amb la rodoneta; quan un alumne envia una sol·licitud d’inscripció, es produeix l’esdeveniment de senyal <em>arribada sol·licitud</em>, que provoca una transició cap a l’estat <em>Sol·licitant</em> i, com a conseqüència de l’arribada a aquest estat, s’executa l’activitat d’entrada <em>registrar sol·licitud</em> i, a continuació, l’activitat durant l’estat <em>examinar sol·licitud</em>, l’execució de la qual dura fins que es produeix algun dels esdeveniments que fan sortir d’aquest estat: si es produeix l’esdeveniment de senyal <em>refús</em>, que té com a atribut la seva <em>causa</em>, s’acaba tot el procés pel que fa a aquesta sol·licitud d’inscripció, mentre que si es produeix l’esdeveniment de senyal <em>acceptació</em>, l’estat de destinació és <em>Acceptat</em>; en tots dos casos, s’executa l’activitat de sortida <em>comunicació</em>.
+</p>
+
+<p>
+Un cop a l’estat <em>Acceptat</em>, s’executa l’activitat d’entrada <em>comunicar acceptació</em> i, acte seguit, l’activitat a l’estat <em>comprovar vacants</em>, que s’interromp quan es produeix un dels dos esdeveniments següents:
+</p>
+<ul>
+<li class="level1"><div class="li"> O bé l’esdeveniment de temps -que han passat 30 dies des de l’arribada a aquest estat-, i aleshores s’executa l’activitat <em>comunicació</em> i l’estat de destinació de la transició és l’estat final, que es representa per una rodona buida i una de plena concèntriques.</div>
+</li>
+<li class="level1"><div class="li"> O bé l’esdeveniment de canvi, que consisteix que passi a complir-se la condició <em>vacant trobada</em>.</div>
+</li>
+</ul>
+
+<p>
+En qualsevol cas, si abans de sortir de l’estat <em>Acceptat</em> es produeix l’esdeveniment de senyal <em>canvi tarifa</em>, que té com a atribut la <em>nova tarifa</em>, s’executa l’activitat <em>comunicar canvi</em>, d’acord amb la transició interna especificada.
+</p>
+
+<p>
+Quan se surt de l’estat <em>Acceptat</em>, com a conseqüència d’aquest esdeveniment de canvi s’executa l’activitat <em>comunicar horari</em>. 
+</p>
+
+<p>
+Si un alumne és en l’estat <em>Inscrit</em> quan es produeix l’esdeveniment de temps d’arribada de la <em>data de la fi del curs</em>, es produeix una transició cap a l’estat final, alhora que s’executa l’activitat <em>posar nota</em>.
+</p>
+
+</div>
+
+<h2><a id="diagrama_de_casos_d_us" >Diagrama de casos d’ús</a></h2>
+<div class="level2">
+
+<p>
+Aquest diagrama és un dels més representatius i més utilitzats de l’anàlisi i disseny orientat a objectes. Mitjançant els diagrames de casos d’ús s’aconsegueix mostrar el comportament del sistema i com aquest es relacionarà amb el seu entorn. 
+</p>
+<div class="iocimportant"><div class="ioccontent">
+<p>
+El <strong>diagrama de casos d’ús</strong> identifica els comportaments executants d’un classificador generalment complex (per exemple, un programari) i especifica amb quins usuaris i altres entitats exteriors tenen interacció (en el sentit que en reben informació o els en donen o són engegats per aquestes entitats), i també certes relacions entre aquests comportaments.
+</p>
+</div></div>
+<p>
+El punt de vista que es fa servir per elaborar els diagrames de casos d’ús és el punt de vista de l’usuari final. Això implica que es tracta d’un diagrama molt convenient i utilitzat en els intercanvis inicials d’opinions amb els usuaris finals del sistema a modelitzar i, posteriorment, a automatitzar. Els mateixos usuaris el poden entendre i participar en la seva correcció. Amb aquest tipus de diagrama es podrà crear una documentació adequada per a les necessitats de la presa de requeriments. 
+</p>
+
+<p>
+Els diagrames de casos d’ús representen els diferents requeriments que fan servir els usuaris finals d’un determinat sistema. A partir de la utilització d’actors i de casos d’ús, aquest tipus de diagrames modelen les diferents funcionalitats que podrà oferir un sistema.
+</p>
+<div class="iocimportant"><div class="ioccontent">
+<p>
+Un <strong>cas d’ús</strong> és una funcionalitat o un servei que ofereix el sistema a modelitzar als seus usuaris finals. És un conjunt d’interaccions seqüenciades que es desenvolupen entre els actors i el sistema per donar resposta a un esdeveniment que inicia un actor denominat principal. 
+</p>
+</div></div>
+<p>
+En la modelització d’un sistema podrà haver-hi molts casos d’ús. Això es deu al fet que cada cas d’ús haurà de donar resposta només a una característica concreta del sistema. Així, amb aquesta representació del sistema, l’usuari final podrà validar fàcilment que l’analista ha entès correctament el funcionament del sistema que ha de representar.
+</p>
+
+<p>
+Els elements fonamentals del diagrama de casos d’ús són els següents:
+</p>
+<ul>
+<li class="level1"><div class="li"> Escenari</div>
+</li>
+<li class="level1"><div class="li"> Actor</div>
+</li>
+<li class="level1"><div class="li"> Subjecte</div>
+</li>
+<li class="level1"><div class="li"> Cas d’ús o comportament</div>
+</li>
+<li class="level1"><div class="li"> Associació o relació</div>
+</li>
+</ul>
+
+<p>
+A la <span class="figref"><a href="#Figure73"><span>figura</span></a></span> es mostren les representacions gràfiques dels elements més importants d’un diagrama de casos d’ús.
+</p>
+<div class="iocfigure"><a name="Figure73"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Diagrama de casos d’ús
+
+</figcaption><img src="../media/ic10m05u3_73.png" alt="" /></figure>
+</div>
+</div>
+
+<h3><a id="escenari" >Escenari</a></h3>
+<div class="level3">
+
+<p>
+Un escenari és un camí representat per un o més actors i un o més casos d’ús i les seves associacions. Es tracta d’un camí que podrà prendre un cas d’ús. 
+</p>
+<div class="ioctext"><div class="ioccontent"><p class="ioctitle">Una entitat externa i els actors</p>
+<p>
+A una sola entitat externa li poden correspondre diversos actors, si les interaccions que té amb el sistema de maquinari i programari són prou diverses per considerar que fa diferents grups de papers en relació amb ell.
+</p>
+</div></div>
+<p>
+Un cas d’ús podrà tenir diversos escenaris possibles. Aquests escenaris podran representar casos d’èxit i casos on no s’acompleixen les expectatives. 
+</p>
+
+</div>
+
+<h3><a id="actor" >Actor</a></h3>
+<div class="level3">
+
+<p>
+Un actor és un conjunt de papers que fa una entitat física o virtual externa al subjecte en relació amb els seus casos d’ús; a partir d’aquests papers l’actor interactua amb el subjecte i cada paper té a veure amb un dels casos d’ús del subjecte. Tot allò que inicia un cas d’ús o respon a un cas d’ús també es considera un actor.
+</p>
+
+<p>
+Els actors són classificadors instanciables. Un actor pot ser:
+</p>
+<ul>
+<li class="level1"><div class="li"> Una persona (un usuari) que interactuï directament amb el subjecte (per tant, si un usuari interactua amb el subjecte per compte d’un altre, l’actor serà el primer usuari, no pas el segon).</div>
+</li>
+<li class="level1"><div class="li"> Un sistema informàtic extern en temps d’execució que rebi informació del subjecte o li’n doni.</div>
+</li>
+<li class="level1"><div class="li"> Un dispositiu físic que tingui un cert comportament propi i autònom en relació amb el subjecte i hi interactuï directament.</div>
+</li>
+<li class="level1"><div class="li"> <em>Temps</em>, <em>Rellotge</em>… quan un cas d’ús s’engega automàticament en una hora determinada.</div>
+</li>
+</ul>
+
+<p>
+Un actor també es defineix com un rol que farà un usuari en utilitzar un sistema. Amb el concepte de rol es vol determinar el fet que una mateixa persona física (un usuari final del sistema) podrà interpretar el paper d’actors diferents en diferents casos d’ús o, fins i tot, en un mateix cas d’ús. Un actor no serà una determinada persona, sinó que serà el paper que juga (la persona que sigui) quan utilitza el sistema.
+</p>
+
+</div>
+
+<h3><a id="subjecte" >Subjecte</a></h3>
+<div class="level3">
+
+<p>
+El subjecte d’un diagrama de casos d’ús és el classificador al qual està associat el diagrama, que en representa els comportaments executants.
+</p>
+
+<p>
+Pot ser qualsevol cosa que tingui comportaments: un programari, un sistema informàtic o físic en general, un subsistema, un component, una classe…
+</p>
+
+</div>
+
+<h3><a id="cas_d_us" >Cas d’ús</a></h3>
+<div class="level3">
+
+<p>
+Un cas d’ús és un comportament executant del subjecte; és engegat d’una manera directa o indirecta per un actor i lliura uns resultats concrets a un actor o a diversos, o a un altre cas d’ús.
+</p>
+
+<p>
+Un cas d’ús es representa mitjançant un verb que indica una acció, operació o tasca concreta. Aquesta operació s’activarà a partir d’una ordre donada per un agent extern al cas d’ús. Podrà ser un actor que faci una petició i generi el cas d’ús, o bé un altre cas d’ús que l’invoqui.
+</p>
+
+</div>
+
+<h3><a id="una_associacio_o_una_relacio" >Una associació o una relació</a></h3>
+<div class="level3">
+
+<p>
+Una associació o una relació és un vincle que es dóna entre un cas d’ús i un actor o entre dos casos d’ús.
+</p>
+
+<p>
+Entre dos casos d’ús es podran establir diferents tipus de relacions:
+</p>
+<ul>
+<li class="level1"><div class="li"> <strong>Associació</strong>: una associació és un camí de comunicació entre un actor i un cas d’ús. Aquesta comunicació implica que l’actor participa en el cas d’ús.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Generalització/especialització:</strong> una generalització indica que un cas d’ús és una variant d’un altre, és a dir, podrà trobar-se en una forma especialitzada d’un altre cas d’ús existent. Tant la representació com el sentit poden semblar similars al concepte de subclasses en l’orientació a objecte. Aquest tipus de relació serveix per identificar comportaments semblants per part d’un o diversos casos d’ús. A partir d’una primera descripció més genèrica, l’especialització detalla els comportaments més específics a cada cas d’ús especialitzat. Això es deu al fet que el cas d’ús especialitzat pot variar qualsevol aspecte del cas d’ús base. <br/>
+La generalització és el mateix tipus de relació vist des del punt de vista de les subclasses que tenen elements comuns i que, a partir de les seves semblances, permeten crear una superclasse que contindrà aquests elements comuns. </div>
+</li>
+<li class="level1"><div class="li"> <strong>Dependència d’inclusió</strong>: el tipus de relació d’inclusió és un cas de dependència entre casos d’ús. Concretament, indica que un cas d’ús està inclòs en un altre. Això succeeix quan els casos d’ús comparteixen uns determinats elements. En aquest cas, el cas d’ús que està inclòs és el que tindrà tots els comportaments compartits. Aquest tipus de relació també es coneix com <em>use</em>, perquè hereta moltes de les característiques de l’antiga relació <em>use</em> o utilitza. Es tracta d’una relació útil en casos en què es volen extraure comportaments comuns des de molts casos d’ús a una descripció individual. En aquest tipus de relació no hi ha paràmetres o valors de retorn. Quan un cas d’ús A és inclòs per un altre cas d’ús B, el cas d’ús que ha incorporat el comportament de l’altre, en aquest cas el cas d’ús B, haurà de ser utilitzat per si mateix. En cas contrari, es coneix com a cas d’ús abstracte.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Dependència d’extensió:</strong>  aquesta relació és un altre tipus de dependència. Ofereix un tipus d’extensió diferent a la relació de tipus generalització, d’una forma més controlada. Quan un cas d’ús s’estén a un altre, això significa que el primer pot incloure part del comportament de l’altre cas d’ús, aquell al qual s’està estenent. A més, podrà afegir-hi accions o comportaments. La forma de funcionar de la dependència serà la creació d’una sèrie de punts d’extensió per part del cas d’ús base. Si hi ha més d’un punt d’extensió, caldrà definir molt bé quin és el punt que s’ha estès. A partir d’aquests punts, el cas d’ús especialitzat només podrà modificar el comportament dels punts d’extensió que s’hagin creat. Aquest tipus de relació és una alternativa a l’ús de casos d’ús complexos. Amb les dependències d’extensió es podran controlar millor les diferents bifurcacions i els errors. </div>
+</li>
+</ul>
+
+<p>
+Un cas d’ús es podrà representar de dues formes diferents:
+</p>
+<ul>
+<li class="level1"><div class="li"> Mitjançant un diagrama de casos d’UML, seguint la notació de la resta de diagrames UML.</div>
+</li>
+<li class="level1"><div class="li"> Mitjançant un document detallat.</div>
+</li>
+</ul>
+
+</div>
+
+<h4><a id="diagrama_de_casos_d_us_en_uml" >Diagrama de casos d’ús en UML</a></h4>
+<div class="level4">
+
+<p>
+Cadascun dels elements que componen un diagrama de casos d’ús té una notació gràfica que permet la representació de cada cas d’ús de forma esquemàtica i fàcil d’entendre i d’interpretar per als usuaris finals. 
+</p>
+
+<p>
+A la <span class="figref"><a href="#Figure74"><span>figura</span></a></span> veiem el diagrama de casos d’ús d’una suposada aplicació de comptabilitat, representada pel subjecte anomenat <em>Sistema de comptabilitat</em>.
+</p>
+<div class="iocfigure"><a name="Figure74"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Cas d’ús - sistema de comptabilitat
+
+</figcaption><img src="../media/ic10m05u3_74.png" alt="" /></figure>
+</div>
+<p>
+L’actor <em>CapComptable</em> és una especialització de <em>Comptable</em>; <em>Comptable</em> és l’actor primari del cas  d’ús <em>Assentament</em>, ja que no té cap més actor, i <em>CapComptable</em> és actor primari del cas d’ús <em>Tancament</em> i també, per herència entre actors, d’<em>Assentament</em>. El cas d’ús <em>CreacioCompte</em> estén el cas d’ús <em>Assentament</em> perquè quan s’intenta fer un assentament amb un compte inexistent cal crear aquest compte; s’ha indicat el punt d’extensió, <em>Compte llegit</em>, dins del cas d’ús estès,  assentament, i la condició corresponent, <em>compte no trobat</em>. <em>CreacioCompte</em> no és executable independentment perquè no té cap actor ni, doncs, actor primari.
+</p>
+
+<p>
+El cas d’ús <em>DadesCompte</em> consisteix en l’accés a les dades d’un compte, accés que és una part comuna als casos d’ús <em>Assentament</em> i <em>Tancament</em>, d’aquí la dependència include. <em>Tancament</em> és abstracte i <em>Tancament-Mensual</em> i <em>TancamentAnual</em> en són especialitzacions i, en conseqüència, n’hereten l’actor <em>CapComptable</em> i no cal associar-los-el explícitament. <em>TancamentMensual</em> té, a més de l’actor heretat, l’actor <em>CapAdjunt</em> (que pel diagrama no sé sap si també és primari o no). Les multiplicitats de les associacions són innecessàries per trivials: en cada execució del cas d’ús intervé una sola instància de l’actor i cada instància de l’actor pot participar en qualsevol nombre d’execucions del cas d’ús.
+</p>
+
+</div>
+
+<h4><a id="document_detallat_de_casos_d_us" >Document detallat de casos d’ús</a></h4>
+<div class="level4">
+
+<p>
+La segona forma de representar els casos d’ús és presentar un document detallat. Aquest document podrà ser un substitutiu dels diagrames gràfics de casos d’ús, però també podrà ser un complement a aquells diagrames.
+</p>
+
+<p>
+En el document detallat es mostrarà tot tipus d’informació referent al cas d’ús, aquesta vegada, però explicada amb text. Tant les comunicacions i les interaccions dels elements com els escenaris i actors involucrats queden descrits en aquest document detallat.
+</p>
+
+<p>
+Es presenta en forma de taula completa amb dues columnes i tantes files com informacions es vulguin mostrar. Algunes d’aquestes informacions poden ser:
+</p>
+<ul>
+<li class="level1"><div class="li"> <strong>Cas d’ús</strong>, que indicarà el nom del cas d’ús; serà com el títol del document detallat.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Actors</strong>, que descriurà tots els actors, tant primaris com secundaris, que prendran part en el diagrama de casos d’ús.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Tipus</strong>, que indica el tipus de cas d’ús que s’està detallant. Pot ser un tipus de flux bàsic o bé basat en algun altre cas d’ús (a partir d’una inclusió, una extensió o una generalització).</div>
+</li>
+<li class="level1"><div class="li"> <strong>Propòsit</strong>: caldrà indicar-hi l’objectiu, la raó de ser, del cas d’ús.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Resum del cas d’ús</strong>: es durà a terme una descripció resumida del cas d’ús.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Seqüència normal o flux principal</strong>: s’hi indicarà, seqüencialment, cada pas que es durà a terme juntament amb la seva acció corresponent i la seva descripció detallada. En funció de les accions dels actors, s’escollirà un subflux o un altre per a la continuació del cas d’ús.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Subfluxos</strong>: són els considerats fluxos secundaris en les accions seqüencials d’un cas d’ús.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Precondicions</strong>: igual que en programació, les precondicions estableixen els requisits que haurà de complir el cas d’ús per poder-se executar.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Excepcions</strong>: són les situacions especials que hi pot haver durant l’execució d’un cas d’ús.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Urgència</strong>: indicarà la celeritat amb què el cas d’ús s’haurà de desenvolupar i d’executar. </div>
+</li>
+<li class="level1"><div class="li"> <strong>Freqüència</strong>: indicarà el nombre de vegades que està prevista l’execució d’aquest cas d’ús.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Rendiment</strong>: indicarà en quant de temps s’haurà d’executar el cas d’ús com les accions seqüencials. </div>
+</li>
+<li class="level1"><div class="li"> <strong>Comentaris</strong>: espai on es podran recollir altres consideracions referents al cas d’ús que es considerin oportunes.</div>
+</li>
+</ul>
+
+<p>
+A la <span class="figref"><a href="#Figure75"><span>figura</span></a></span> es pot veure com quedaria un document detallat d’un cas d’ús amb alguns dels camps citats anteriorment.
+</p>
+<div class="iocfigure"><a name="Figure75"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Document detallat d’un cas d’ús
+
+</figcaption><img src="../media/ic10m05u3_75.png" alt="" /></figure>
+</div>
+</div>
+
+<h5><a id="avantatges_inconvenients_dels_diagrames_de_casos_d_us" >Avantatges/inconvenients dels diagrames de casos d’ús</a></h5>
+<div class="level5">
+
+<p>
+Els diagrames de casos d’ús ofereixen alguns punts forts que els converteixen en els més populars dels diagrames d’UML:
+</p>
+<ul>
+<li class="level1"><div class="li"> Són molt adequats per comunicar-se amb els usuaris finals i, en definitiva, amb els clients.</div>
+</li>
+<li class="level1"><div class="li"> Ajuden a documentar les funcionalitats del que es coneix com a capses negres, que és com es consideren alguns dels casos d’ús d’un sistema.</div>
+</li>
+<li class="level1"><div class="li"> Ajuden a dividir i gestionar els projectes d’una mida molt extensa.</div>
+</li>
+<li class="level1"><div class="li"> Complementen la documentació del projecte informàtic, oferint una explicació senzilla del funcionament als usuaris.</div>
+</li>
+<li class="level1"><div class="li"> Permeten fer un seguiment objectiu del projecte.</div>
+</li>
+<li class="level1"><div class="li"> Ajuden en la tasca de verificació i validació que duen a terme els verificadors del programari desenvolupat en el projecte.</div>
+</li>
+</ul>
+
+</div>
+
+<h2><a id="diagrames_d_interaccio" >Diagrames d’interacció</a></h2>
+<div class="level2">
+
+<p>
+
+</p>
+
+<p>
+Els anomenats diagrames d’interacció agrupen un conjunt dels diagrames classificats dintre els diagrames de comportament. De fet, els diagrames d’interacció es consideren un subtipus dels diagrames de comportament.
+</p>
+
+<p>
+Cal recordar que els diagrames de comportament indicaran, dintre de la simulació o modelització del sistema representat, què haurà de succeir entre els elements definits als diagrames estàtics o d’estructura.
+</p>
+
+<p>
+En els diagrames d’interacció es donarà més èmfasi a les relacions entre els elements dels sistema, concretament en el que té a veure amb el flux de dades i amb el flux de control.
+</p>
+<div class="iocimportant"><div class="ioccontent">
+<p>
+Una <strong>interacció</strong> és un comportament emergent descrit en termes d’intercanvis de missatges entre els elements connectables d’una estructura composta.
+</p>
+</div></div>
+<p>
+Els diagrames d’interacció representen un comportament emergent per mitjà de missatges entre les instàncies de classificadors d’una estructura interna o col·laboració. Aquests diagrames poden especificar restriccions temporals relatives a aquests missatges.
+</p>
+
+<p>
+Els diagrames d’interacció són:
+</p>
+<ul>
+<li class="level1"><div class="li"> <strong>Els diagrames de seqüència</strong>. Posen l’èmfasi en l’ordre temporal dels missatges entre els diferents elements de la modelització del sistema. Aquests missatges es coneixen com a missatges d’intercanvi entre objectes, el que realment són crides a mètodes de les classes. Aquests intercanvis es donen en un escenari concret en un temps delimitat. </div>
+</li>
+<li class="level1"><div class="li"> <strong>Els diagrames de comunicació</strong> (diagrames de col·laboració). Representen els missatges damunt els connectors d’una estructura interna o de col·laboració. Es tracta d’un tipus de diagrama molt similar als diagrames de seqüència pel que es refereix als missatges que s’intercanviaran els diferents objectes. La diferència rau en el fet que en els diagrames de seqüència l’important és l’ordre temporal d’aquests missatges, mentre que en els diagrames de comunicació es fa més èmfasi en la relació entre els objectes i el tipus de relació que hi ha.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Els diagrames de temps</strong>. Representen els canvis d’estat que tindrà un objecte al llarg del temps. Aquests canvis d’estat dels objectes es produiran a partir d’esdeveniments que es produeixin al llarg del temps. Aquests diagrames estan estretament lligats als diagrames d’estats i als diagrames de seqüència.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Els diagrames de visió general de la interacció</strong>. Defineixen les interaccions a partir d’una variant dels diagrames d’activitat. Ofereixen una visió general dels fluxos de control utilitzant interaccions en lloc d’activitats.</div>
+</li>
+</ul>
+
+</div>
+
+<h3><a id="diagrama_de_sequeencia" >Diagrama de seqüència</a></h3>
+<div class="level3">
+<div class="iocimportant"><div class="ioccontent">
+<p>
+El <strong>diagrama de seqüència</strong> descriu les interaccions entre un grup d’objectes mostrant de forma seqüencial les trameses de missatges entre objectes.
+</p>
+</div></div>
+<p>
+Els objectes interactuen entre si amb l’enviament de missatges. La recepció d’un missatge sol significar l’execució d’un mètode que s’especifica en el missatge, i es torna actiu l’objecte mentre dura l’execució del mètode.
+</p>
+<div class="iocfigure"><a name="Figure76"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Elements del diagrama d’activitats
+
+</figcaption><img src="../media/ic10m05u3_76.png" alt="" /></figure>
+</div>
+<p>
+Els elements són els següents:
+</p>
+<ul>
+<li class="level1"><div class="li"> Una <strong>línia de vida</strong> representa un element connectable que participa en una interacció enviant i rebent missatges (<span class="figref"><a href="#Figure77"><span>figura</span></a></span>). Una línia de vida representa l’interval de temps en què existeix la instància o instàncies que formen part de l’element connectable, des de la seva creació fins a la seva destrucció, tot i que en general només durant una part o diverses parts d’aquest interval participen en la interacció que conté la línia de vida; aquestes parts s’anomenen <strong>activacions</strong> i representen els intervals de temps durant els quals s’està executant alguna operació que té com a objecte de context alguna de les seves instàncies.</div>
+</li>
+</ul>
+<div class="iocfigure"><a name="Figure77"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Línia de vida
+
+</figcaption><img src="../media/ic10m05u3_77.png" alt="" /></figure>
+</div>
+<p>
+
+</p>
+<ul>
+<li class="level1"><div class="li"> Un <strong>missatge</strong> és l’especificació de la comunicació entre objectes (<span class="figref"><a href="#Figure78"><span>figura</span></a></span>). Un missatge es representa amb una fletxa de l’emissor cap al receptor; diferents tipus de missatge es representen amb diferents tipus de fletxa:</div>
+<ul>
+<li class="level2"><div class="li"> Un <strong>missatge asíncron</strong> s’indica amb una fletxa de línia contínua i punta oberta; és quan l’objecte no espera la resposta a aquest missatge abans de continuar.</div>
+</li>
+<li class="level2"><div class="li"> Un <strong>missatge síncron</strong> es representa amb una fletxa de línia contínua i punta plena; és quan l’objecte espera la resposta a aquest missatge abans de continuar amb el seu treball.</div>
+</li>
+<li class="level2"><div class="li"> Un <strong>missatge de resposta d’un missatge síncron</strong> s’indica amb una fletxa de línia discontínua i punta plena.</div>
+</li>
+<li class="level2"><div class="li"> Un <strong>missatge que provoca la creació d’un objecte</strong> s’indica amb una fletxa de línia discontínua i punta oberta; a més, l’extrem del missatge coincideix amb el començament de la línia de vida del receptor.</div>
+</li>
+</ul>
+</li>
+</ul>
+<div class="iocfigure"><a name="Figure78"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Missatge
+
+</figcaption><img src="../media/ic10m05u3_78.png" alt="" /></figure>
+</div>
+<p>
+Els missatges es poden numerar en format de llista multinivell. Si un missatge s’envia una vegada finalitzat el seu precedent es comptabilitza seqüencialment: 1,2,3… Però si el missatge s’envia abans que hagi finalitzat el precedent, s’incrementarà el nivell: 3.1, 3.2,…
+</p>
+
+<p>
+A la <span class="figref"><a href="#Figure79"><span>figura</span></a></span> se’n pot veure un exemple representatiu.
+</p>
+<div class="iocfigure"><a name="Figure79"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Numeració dels missatges
+
+</figcaption><img src="../media/ic10m05u3_79.png" alt="" /></figure>
+</div>
+<p>
+A continuació, es mostra un exemple complet per al desenvolupament d’un diagrama de seqüència. Concretament, es proposa crear un diagrama de seqüència per a la modelització de l’elaboració d’una <em>vichyssoise</em>, sopa freda de puré de patata i porros. Aquesta recepta es durà a terme amb l’ajuda d’un robot de cuina.
+</p>
+
+<p>
+Inicialment, es mostren els passos que s’han de fer per a l’elaboració de la sopa:
+</p>
+
+<p>
+El cuiner posa el porro en el recipient i programa 4 segons a velocitat 5. En especificar la velocitat dels ganivets, es bloqueja la tapa del recipient i el cronòmetre del robot comença a comptabilitzar el temps.
+</p>
+
+<p>
+Un cop transcorregut el temps, es desbloqueja la tapa, i el cuiner hi pot col·locar l’oli i la mantega. Aquest programa velocitat 1 i 12 minuts a temperatura màxima. En especificar la velocitat dels ganivets, es bloqueja la tapa del recipient, el cronòmetre del robot comença a comptabilitzar el temps i s’activa la resistència per proporcionar calor.
+</p>
+<div class="iocfigure"><a name="Figure80"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Exemple de diagrama de seqüència - robot de cuina
+
+</figcaption><img src="../media/ic10m05u3_80.png" alt="" /></figure>
+</div>
+<p>
+La recepta continuaria, però es demana el diagrama de seqüència fins a aquest punt.
+</p>
+
+<p>
+A la <span class="figref"><a href="#Figure80"><span>figura</span></a></span> es pot veure un exemple de diagrama de seqüència que podria solucionar l’enunciat anterior.
+</p>
+
+</div>
+
+<h3><a id="diagrama_de_comunicacio" >Diagrama de comunicació</a></h3>
+<div class="level3">
+
+<p>
+Aquest diagrama, en versions anteriors a la versió 2.0 de l’UML, es coneixia com a diagrama de col·laboració. Des de les darreres versions es coneix amb aquest nou nom: diagrama de comunicació.
+</p>
+<div class="iocimportant"><div class="ioccontent">
+<p>
+La finalitat del <strong>diagrama de comunicació</strong> és representar la comunicació entre els elements del sistema que es vol modelitzar. Treballant en conjunt els elements podran acomplir els objectius del sistema.
+</p>
+</div></div>
+<p>
+El diagrama de comunicacions té l’aspecte general d’una col·laboració en la qual, al costat de cada connector, s’han afegit les fletxes corresponents als missatges que hi circulen durant la interacció. Aquestes fletxes són les mateixes que hi hauria en un diagrama de seqüències de la mateixa interacció pel que fa al tipus de línia i de punta, però són molt més curtes. La disposició vertical dels elements connectables és lliure i, per tant, no representa cap ordenació temporal; per mitjà de la numeració s’indica l’ordre d’emissió dels missatges i si aquesta emissió és seqüencial o en paral·lel.
+</p>
+
+<p>
+A la <span class="figref"><a href="#Figure81"><span>figura</span></a></span> es mostra un diagrama de comunicació (antigament anomenat diagrama de col·laboració). També es mostra el diagrama de seqüència que hi està vinculat, per poder veure, d’aquesta manera, la seva integració.
+</p>
+<div class="iocfigure"><a name="Figure81"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Diagrama de seqüència vs. diagrama de col·laboració
+
+</figcaption><img src="../media/ic10m05u3_81.png" alt="" /></figure>
+</div>
+<p>
+El diagrama de comunicacions, d’una banda, no permet representar els usos d’interacció i, de l’altra, només té representació per a alguns dels operadors d’interacció; en conseqüència, a la pràctica només és adequat per a la descripció d’interaccions relativament senzilles. 
+</p>
+
+<p>
+Fins a cert punt, un diagrama de comunicacions és semblant a un diagrama de seqüències vist des de dalt: de les línies de vida només se’n veuria la capçalera i, com que si hi hagués diversos missatges entre els mateixos dos elements connectables es veurien sobreposats. També hi ha autors que consideren que és un diagrama molt semblant al diagrama d’objectes, perquè mostra el context necessari per a una col·laboració entre objectes. 
+</p>
+
+<p>
+A la <span class="figref"><a href="#Figure82"><span>figura</span></a></span> es mostra el diagrama de comunicacions corresponent a l’exemple que s’ha exposat anteriorment: l’elaboració d’una sopa freda Vichyssoise. Es recomana comparar el diagrama de seqüències anterior corresponent a aquest exemple, <span class="figref"><a href="#Figure80"><span>figura</span></a></span>, amb el diagrama de comunicacions de la <span class="figref"><a href="#Figure82"><span>figura</span></a></span>.
+</p>
+<div class="iocfigure"><a name="Figure82"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Diagrama de comunicacions - robot de cuina
+
+</figcaption><img src="../media/ic10m05u3_82.png" alt="" /></figure>
+</div>
+</div>
+
+<h3><a id="diagrama_de_temps" >Diagrama de temps</a></h3>
+<div class="level3">
+<div class="iocimportant"><div class="ioccontent">
+<p>
+Els <strong>diagrames de temps</strong> (o diagrames temporals) representen una interacció entre diferents estats i en destaquen els aspectes temporals i, en especial, els canvis d’estat o de valor d’una línia de vida (és a dir, de les instàncies que conté) o de diverses línies al llarg del temps. Els diagrames de temps mostren els canvis de l’estat d’un objecte al llarg del temps com a conseqüència d’esdeveniments.
+</p>
+</div></div>
+<p>
+Generalment, en una màquina d’estats hi ha més d’un camí possible (és a dir, més d’una seqüència de transicions) entre l’estat inicial i l’estat final; un diagrama temporal correspon només a un d’aquests camins i, en conseqüència, en un diagrama temporal no hi pot haver parts opcionals o alternatives.
+</p>
+
+<p>
+El diagrama de temps no té conceptes propis i les seves notacions pròpies són molt senzilles. En la seva forma més usual i detallada és un diagrama bidimensional, en el qual es representa una escala horitzontal de temps i els diferents estats o valors d’una línia de vida corresponent a diferents altures dins de la dimensió vertical; l’ordenació vertical dels estats no té cap significat. Un diagrama pot tenir diverses franges horitzontals que corresponen a diferents línies de vida que comparteixen una sola escala de temps.
+</p>
+
+<p>
+La successió dels diferents estats d’una línia de vida al llarg del temps és una línia contínua feta de segments de recta, dels quals:
+</p>
+<ul>
+<li class="level1"><div class="li"> Els segments horitzontals representen intervals de temps durant els quals la línia de vida roman en un cert estat.</div>
+</li>
+<li class="level1"><div class="li"> La resta de segments representa les transicions entre aquests estats.</div>
+</li>
+</ul>
+<div class="iocimportant"><div class="ioccontent">
+<p>
+Un <strong>segment vertical</strong> representa una transició que dura un temps negligible, mentre que un segment inclinat representa una transició que dura el temps indicat per la diferència de les abscisses dels seus extrems inicial i final.
+</p>
+</div></div><div class="ioctext"><div class="ioccontent"><p class="ioctitle">Diagrames temporal i de seqüències</p>
+<p>
+Atès que tots dos diagrames tenen una escala de temps i línies de vida, podríem dir que el diagrama temporal ve a ser un diagrama de seqüències sense fragments combinats en el qual damunt cada línia de vida es representen els canvis d’estat.
+</p>
+</div></div>
+<p>
+Tot seguit es mostra un exemple de diagrama de temps. En primer lloc, es mostren, a la figures <span class="figref"><a href="#Figure83"><span>figura</span></a></span> i <span class="figref"><a href="#Figure84"><span>figura</span></a></span>, els diagrames d’estats de dues classes, la <code>Classe1</code> i la <code>Classe2</code>. La <code>Classe1</code> ofereix dos estats (<code>Estat A</code> i <code>Estat B</code>), mentre que la <code>Classe2</code> ofereix tres possibles estats (<code>Estat 1</code>, <code>Estat 2</code> i <code>Estat 3</code>).
+</p>
+<div class="iocfigure"><a name="Figure83"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Diagrama d’estats de <code>Classe1</code>
+
+</figcaption><img src="../media/ic10m05u3_83.png" alt="" /></figure>
+</div><div class="iocfigure"><a name="Figure84"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Diagrama d’estats de <code>Classe2</code>
+
+</figcaption><img src="../media/ic10m05u3_84.png" alt="" /></figure>
+</div>
+<p>
+El diagrama de temps mostra una interacció entre l’objecte <code>o1</code> de la <code>Classe1</code> i l’objecte <code>o2</code> de la <code>Classe2</code>. 
+</p>
+
+<p>
+A la <span class="figref"><a href="#Figure85"><span>figura</span></a></span> es mostren les línies de vida de cadascun dels objectes, concretament dues franges temporals dins les quals es representen sengles línies de vida interrelacionades.
+</p>
+
+<p>
+A la primera línia de vida hi ha dos estats i a la segona tres, l’ordre dels quals no té cap significat. Hi ha una escala de temps a la part de sota. Dels tres missatges que provoquen transicions el primer és conseqüència de la transició d<code>‘Estat1</code> a <code>Estat2</code> (que provoca l’execució d’una activitat, l’acció estàndard <code>SendSignal Action(S1, o1)</code> la qual, d’acord amb els seus paràmetres, envia el senyal <code>S1</code> a l’objecte <code>o1</code>), el segon és conseqüència de l’entrada a <code>EstatB</code> i el tercer ve de l’exterior. El temps que passa entre l’arribada del segon missatge i la consegüent sortida d<code>‘Estat2</code> és la durada de l’execució de l’activitat <code>act1</code>, i la durada de la transició d<code>‘Estat1</code> a <code>Estat3</code> és la durada de l’execució de <code>act2</code>.
+</p>
+<div class="iocfigure"><a name="Figure85"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Diagrama temporal
+
+</figcaption><img src="../media/ic10m05u3_85.png" alt="" /></figure>
+</div>
+<p>
+Hi ha tres restriccions temporals:
+</p>
+<ul>
+<li class="level1"><div class="li"> El missatge que transmet el senyal <code>S1</code> ha de durar com a màxim una unitat de temps. </div>
+</li>
+<li class="level1"><div class="li"> L’objecte <code>o1</code> ha de romandre a <code>Estat2</code> entre una i tres unitats de temps. </div>
+</li>
+<li class="level1"><div class="li"> El tercer missatge ha d’arribar no més tard de dues unitats de temps després de l’emissió del segon missatge.</div>
+</li>
+</ul>
+
+<p>
+La <span class="figref"><a href="#Figure86"><span>figura</span></a></span> és una versió més compacta del diagrama dels estats. En comptes de representar-hi els estats a diferents altures, se’n posen els noms damunt la línia de vida, dins dels intervals corresponents; aquest diagrama representa la primera línia de vida del de la <span class="figref"><a href="#Figure85"><span>figura</span></a></span>.
+</p>
+<div class="iocfigure"><a name="Figure86"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Diagrama temporal simplificat
+
+</figcaption><img src="../media/ic10m05u3_86.png" alt="" /></figure>
+</div>
+</div>
+
+<h3><a id="diagrama_de_visio_general_de_la_interaccio" >Diagrama de visió general de la interacció</a></h3>
+<div class="level3">
+<div class="iocimportant"><div class="ioccontent">
+<p>
+El <strong>diagrama de visió general de la interacció</strong> aporta una visió global del flux de control de les interaccions.
+</p>
+</div></div>
+<p>
+Alhora de representar els models d’interacció d’un sistema pot sorgir el problema que siguin molt grans, amb la qual cosa és bastant immanejable el seu tractament.
+Amb els diagrames de visió general de la interacció, se segueix la filosofia “divideix i conqueriràs”, ja que permeten modularitzar les interaccions, descomposant-les en fragments més petits, i representar en un diagrama la relació entre els fragments.
+</p>
+
+<p>
+La representació del diagrama de visió general de la interacció fa ús de la nomenclatura del diagrama d’activitat incorporant dos conceptes nous:
+</p>
+<ul>
+<li class="level1"><div class="li"> <strong>Ocurrència d’interacció</strong>: fa referència als diagrames d’interacció existents.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Element d’interacció</strong>: es du a terme una representació de diagrames d’interacció existents dins un marc rectangular on se n’especifica el contingut. </div>
+</li>
+</ul>
+
+<p>
+A la <span class="figref"><a href="#Figure87"><span>figura</span></a></span> es mostra la representació gràfica de cadascun dels dos conceptes.
+</p>
+<div class="iocreference"><div class="ioccontent">
+<p>
+En la secció <em>Annexos</em> del web del mòdul hi podeu trobar un exemple complert de diagrames de visió general de la interacció.
+</p>
+</div></div><div class="iocfigure"><a name="Figure87"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Ocurrència d’interacció i element d’interacció
+
+</figcaption><img src="../media/ic10m05u3_87.png" alt="" /></figure>
+</div>
+</div>
+
+<h2><a id="modelio_i_umldiagrames_de_comportament" >Modelio i UML: diagrames de comportament</a></h2>
+<div class="level2">
+
+<p>
+UML és un llenguatge de modelatge de sistemes que es compon de molts diagrames. Cal comprendre quin és el significat de cadascun dels diagrames individualment, quins són els seus elements i com aquests es relacionen entre ells. Però per entendre d’una forma més global el que pot arribar a oferir UML cal observar un exemple complet, sobre el qual es desenvolupin tots els diagrames. Per fer aquest exemple global s’ha escollit un exemple clàssic, que es basa en el rentat de roba per part d’una rentadora. 
+</p>
+
+<p>
+
+<p>
+Per a la creació d’aquest exemple de rentat de roba es fa servir l’entorn Modelio. Aquest entorn està especialitzat en el modelatge amb UML i altres llenguatges gràfics. També permet tant generar codi a partir dels diagrames com generar diagrames a partir de codi font. L’entorn Modelio ha estat implementat a partir de l’IDE Eclipse.
+La pàgina web de l’entorn Modelio és <a href="https://www.modelio.org/" class="urlextern" title="https://www.modelio.org/"  rel="nofollow">https://www.modelio.org/</a>. Podeu descarregar-vos l’instal·lable des de l’apartat <em>Downloads</em>.
+</p>
+
+</p>
+
+</div>
+
+<h3><a id="diagrama_de_casos_d_us1" >Diagrama de casos d&#039;ús</a></h3>
+<div class="level3">
+<div class="iocreference"><div class="ioccontent">
+<p>
+
+<p>
+A l’apartat “Diagrames estàtics” podeu trobar detallat el procediment per crear un projecte, un diagrama de classes i, també, com realitzar les operacions bàsiques amb <strong>qualsevol tipus de diagrama</strong>.
+</p>
+
+</p>
+</div></div>
+<p>
+El cas d’ús descriu les accions d’un sistema des del punt de vista de l’usuari.
+En aquest cas, en Joan posa una rentadora amb l’objectiu que es renti la roba.
+</p>
+
+<p>
+
+<p>
+El diagrama de casos d’ús es crea de manera anàloga a com es creen els diagrames de classe, però seleccionant a l’últim pas <em>Use Case diagram</em> en lloc de <em>Class diagram</em>.
+</p>
+
+<p>
+L’actor (en Joan) s’afegeix al diagrama:
+</p>
+<ol>
+<li class="level1"><div class="li"> Fent clic a la icona <em>Actor</em>, a la secció <em>Nodes</em>, com es mostra a <span class="figref"><a href="#fig15o"><span>figura</span></a></span>.</div>
+</li>
+<li class="level1"><div class="li"> Fent clic a continuació al punt del diagrama on volem inserir l’actor.</div>
+</li>
+</ol>
+<div class="iocfigure"><a name="fig150"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Icona <em>Actor</em>
+
+</figcaption><img src="../media/ic10m05u3_150.png" alt="" /></figure>
+</div>
+<p>
+Podem editar les seves propietats fent doble clic a sobre de la icona que representa l’actor. Ens apareixerà una finestra similar a la mostrada a la <span class="figref"><a href="#fig151"><span>figura</span></a></span>.
+</p>
+<div class="iocfigure"><a name="fig151"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Propietats d’un <em>Actor</em>
+
+</figcaption><img src="../media/ic10m05u3_151.png" alt="" /></figure>
+</div>
+<p>
+En aquest cas, només podem canviar el nom (<em>Name</em>). Hi posarem <em>Joan</em>.
+</p>
+
+<p>
+Per especificar el cas d’ús <em>Rentar roba</em> cal:
+</p>
+<ol>
+<li class="level1"><div class="li"> Fer clic a la icona <em>Use Case</em>, a la secció <em>Nodes</em>, com es mostra a <span class="figref"><a href="#fig152"><span>figura</span></a></span>.</div>
+</li>
+<li class="level1"><div class="li"> Fer clic a continuació al punt del diagrama on volem inserir el cas d’ús.</div>
+</li>
+</ol>
+<div class="iocfigure"><a name="fig152"></a> <figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Icona <em>Use Case</em>
+
+</figcaption><img src="../media/ic10m05u3_152.png" alt="" /></figure>
+</div>
+<p>
+Igual que passava amb els actors, fent-hi doble clic ens apareixerà la finestra de les propietats on podem especificar el nom.
+</p>
+
+<p>
+Ara cal enllaçar l’actor (en <em>Joan</em>) amb el cas d’ús (<em>Rentar roba</em>). Ho farem:
+</p>
+<ol>
+<li class="level1"><div class="li"> Fent clic a la <em>Communication Link</em>, a la secció <em>Links</em>, com es mostra a <span class="figref"><a href="#fig153"><span>figura</span></a></span>.</div>
+</li>
+<li class="level1"><div class="li"> Fent clic a continuació a sobre de l’actor i, després, a sobre del cas d’ús.</div>
+</li>
+</ol>
+<div class="iocfigure"><a name="Fig153"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Icona <em>Communication Link</em>
+
+</figcaption><img src="../media/ic10m05u3_153.png" alt="" /></figure>
+</div>
+<p>
+A la <span class="figref"><a href="#Fig154"><span>figura</span></a></span> es mostra el diagrama del cas d’ús resultant
+</p>
+<div class="iocfigure"><a name="Fig154"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Diagrama de cas d’ús: Rentar roba
+
+</figcaption><img src="../media/ic10m05u3_154.png" alt="" /></figure>
+</div>
+</p>
+
+<p>
+Normalment, cada cas d’ús va associat amb una explicació que sol contenir els següents apartats:
+</p>
+<ul>
+<li class="level1"><div class="li"> <strong>Nom</strong>: <code>RentarRoba</code>. </div>
+</li>
+<li class="level1"><div class="li"> <strong>Descripció</strong>: Posar una rentadora amb l’objectiu que la roba bruta quedi neta. </div>
+</li>
+<li class="level1"><div class="li"> <strong>Precondicions</strong>: Roba bruta </div>
+</li>
+<li class="level1"><div class="li"> <strong>Flux normal</strong>: La rentadora neteja la roba.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Flux alternatiu</strong>: No. </div>
+</li>
+<li class="level1"><div class="li"> <strong>Postcondicions</strong>: Roba neta.</div>
+</li>
+</ul>
+
+</div>
+
+<h3><a id="diagrama_de_transicio_d_estat" >Diagrama de transició d’estat</a></h3>
+<div class="level3">
+
+<p>
+En qualsevol moment, un objecte es troba en un estat en particular. 
+Una rentadora pot estar en la fase de remull, rentat o ensabonat, esbandida, centrifugat i apagada, i canviarà d’una a una altra, d’acord amb el diagrama d’estat que es mostra a la <span class="figref"><a href="#Figure93"><span>figura</span></a></span>.
+</p>
+<div class="iocfigure"><a name="Figure93"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Diagrama de transició d’estat
+
+</figcaption><img src="../media/ic10m05u3_93.png" alt="" /></figure>
+</div>
+<p>
+El símbol de la part superior indica l’estat inicial, i el de la part inferior, el final.
+</p>
+
+<p>
+
+<p>
+A Modelio, el diagrama de transició d’estats es crea de manera anàloga a com es crea la resta de diagrames, però seleccionant a l’últim pas <em>State Machine diagram</em> com a tipus de diagrama.
+</p>
+<div class="iocnote"><div class="ioccontent">
+<p>
+Totes les icones que cal utilitzar en el diagrama d’estats són a l’apartat <strong><em>States</em></strong>.
+</p>
+</div></div>
+<p>
+Un cop creat el diagrama, els estats s’hi afegeixen clicant la icona de la barra d’elements que representa el tipus d’estat que volem afegir (inicial, final o -simplement- estat) i, a continuació, clicant al lloc del diagrama on el volem situar.
+</p>
+
+<p>
+Per afegir una transició, també es clica la icona que la representa i, a continuació, als dos estats del diagrama que volen unir-se. El nom de cada transició s’entra en la seva propietat <em>Guard</em>.
+</p>
+
+<p>
+Podeu veure les icones a la <span class="figref"><a href="#figuraIconesDiagramaEstats"><span>figura</span></a></span>.
+</p>
+<div class="iocfigure"><a name="figuraIconesDiagramaEstats"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Icones del diagrama de transició d’estats.
+
+</figcaption><img src="../media/iconesdiagramaestats.png" alt="" /></figure>
+</div>
+</p>
+
+</div>
+
+<h3><a id="diagrama_d_activitats1" >Diagrama d&#039;activitats</a></h3>
+<div class="level3">
+
+<p>
+Un diagrama d’activitats és una variació del diagrama d’estats UML. El diagrama d’activitats representa les activitats que passen dins un cas d’ús o dins el comportament d’un objecte.
+</p>
+
+<p>
+A la <span class="figref"><a href="#Figure94"><span>figura</span></a></span> es mostra un possible diagrama d’activitats.
+</p>
+<div class="iocfigure"><a name="Figure94"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Diagrama d’activitats
+
+</figcaption><img src="../media/ic10m05u3_94.png" alt="" /></figure>
+</div>
+<p>
+Fixem-nos que cada una de les columnes podria correspondre a cada un dels estats del procés de rentat: remull, ensabonat, esbandit i centrifugat.
+</p>
+<ul>
+<li class="level1"><div class="li"> <strong>Estat de remull:</strong></div>
+<ul>
+<li class="level2"><div class="li">   L’aigua omple el tambor mitjançant la mànega. </div>
+</li>
+<li class="level2"><div class="li">   El tambor roman inactiu durant cinc minuts. </div>
+</li>
+<li class="level2"><div class="li">   La mànega deixa de proveir aigua. </div>
+</li>
+</ul>
+</li>
+<li class="level1"><div class="li"> <strong>Estat d’ensabonat o de rentat:</strong></div>
+<ul>
+<li class="level2"><div class="li">   El tambor gira d’un costat a un altre durant quinze minuts. </div>
+</li>
+<li class="level2"><div class="li">   L’aigua ensabonada surt pel desaigüe. </div>
+</li>
+</ul>
+</li>
+<li class="level1"><div class="li"> <strong>Estat d’esbandit:</strong></div>
+<ul>
+<li class="level2"><div class="li">   Comença novament l’abastament d’aigua.   </div>
+</li>
+<li class="level2"><div class="li">   El tambor continua girant. </div>
+</li>
+<li class="level2"><div class="li">   L’abastament d’aigua s’atura. </div>
+</li>
+<li class="level2"><div class="li">   L’aigua utilitzada per esbandir la roba surt pel desaigüe. </div>
+</li>
+</ul>
+</li>
+<li class="level1"><div class="li"> <strong>Estat de centrifugat:</strong></div>
+<ul>
+<li class="level2"><div class="li">   El tambor gira en una sola direcció.</div>
+</li>
+<li class="level2"><div class="li">   El tambor deixarà de girar i el procés de rentat acaba.</div>
+</li>
+</ul>
+</li>
+</ul>
+
+<p>
+
+<p>
+A Modelio, el diagrama d’activitats es crea de manera anàloga a com es crea la resta de diagrames, però seleccionant a l’últim pas <em>Activity diagram</em> com a tipus de diagrama.
+</p>
+
+<p>
+Un cop creat el diagrama, els estats inicial i final i les accions s’afegeixen clicant a la icona de la barra d’elements corresponent al tipus d’element que volem afegir i, a continuació, clicant al lloc del diagrama on el volem situar-lo. Aquestes icones són a l’apartat <em>Control nodes</em>.
+</p>
+
+<p>
+Per afegir un flux de control, també es clica en primer lloc la icona que el representa, que és a l’apartat <em>Flows</em>. A continuació, cal clicar consecutivament els dos elements del diagrama que volen unir-se. Els elements a unir tant poden ser estats com accions com <em>Forks</em>, <em>Joins</em> o nodes de decisió. Un cop afegit un flux de control al diagrama, es pot canviar la seva forma seleccionant-lo i arrossegant els quadres negres que apareixen en seleccionar-lo.
+</p>
+
+<p>
+Per afegir un element <em>Fork</em> o <em>Join</em>, cal fer clic a la icona <em>Fork/Join</em>, que és dins de l’apartat <em>Control nodes</em>. Aquesta icona pot representar tant un <em>Fork</em> com un <em>Join</em> depenent dels fluxos que hi arriben i en surten. Un cop afegit aquest node al diagrama, es pot moure tot arrossegant-lo amb el ratolí. També es pot canviar la seva mida arrossegant novament amb el ratolí de la següent manera:
+</p>
+<ul>
+<li class="level1"><div class="li"> Seleccionant l’element <em>Fork-Join</em>.</div>
+</li>
+<li class="level1"><div class="li"> Situant el ratolí en l’extrem que volem allargar o escurçar, entre els dos quadres negres que indiquen que l’element s’ha seleccionant, i arrossegant. El ratolí és a la posició correcta per arrossegar quan té forma de doble fletxa horitzontal. Si la doble fletxa no és horitzontal o el ratolí té una altra forma, no serà possible realitzar l’arrossegament.</div>
+</li>
+</ul>
+
+<p>
+Per últim, podeu afegir un node de decisió fent clic a la icona que representa aquests nodes i que es troba a l’apartat <em>Control nodes</em> i, a continuació, clicant el punt del diagrama on voleu situar-lo. Podem escriure la condició associada a cadascun dels fluxos de sortida a la seva propietat <em>Guard</em>.
+</p>
+
+<p>
+Podeu veure les icones d’aquest tipus de diagrama a la <span class="figref"><a href="#figuraIconesDiagramaActivitats"><span>figura</span></a></span>.
+</p>
+<div class="iocfigure"><a name="figuraIconesDiagramaActivitats"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Icones del diagrama d’activitats.
+
+</figcaption><img src="../media/iconesdiagramaactivitats.png" alt="" /></figure>
+</div>
+</p>
+
+</div>
+
+<h3><a id="diagrama_de_sequeencies" >Diagrama de seqüències</a></h3>
+<div class="level3">
+
+<p>
+
+En un sistema funcional els objectes interactuen entre si, i aquestes interaccions succeeixen amb el temps. El diagrama de seqüències UML mostra la mecànica de la interacció sobre la base del temps.
+</p>
+
+<p>
+Entre els components de la rentadora es troben: una mànega d’aigua (per obtenir aigua fresca), un tambor (on es posa la roba), un sistema de desaigüe i el dispensador de detergent.
+</p>
+
+<p>
+Què passarà quan invoqui al cas d’ús <em>Rentar roba</em>? Si donem per fet que s’han completat les operacions <em>afegir roba</em>, <em>afegir detergent</em> i <em>activar</em>, la seqüència seria més o menys la que mostra la <span class="figref"><a href="#Figure95"><span>figura</span></a></span>.
+</p>
+<div class="iocfigure"><a name="Figure95"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Diagrama de seqüència
+
+</figcaption><img src="../media/ic10m05u3_95.png" alt="" /></figure>
+</div>
+<p>
+La seqüència de passos que segueix el procés de rentat és:
+</p>
+<ol>
+<li class="level1"><div class="li"> El sistema d’abastament d’aigua omple el tambor.</div>
+</li>
+<li class="level1"><div class="li"> Durant 3 minuts no hi ha activitat al tambor.  </div>
+</li>
+<li class="level1"><div class="li"> El sistema d’abastament deixa de proporcionar aigua.</div>
+</li>
+<li class="level1"><div class="li"> El sistema d’abastament proporciona sabó.</div>
+</li>
+<li class="level1"><div class="li"> Durant 1 minut no hi ha activitat al tambor.</div>
+</li>
+<li class="level1"><div class="li"> El sistema d’abastament deixa de proporcionar sabó.</div>
+</li>
+<li class="level1"><div class="li"> Durant 12 minuts el tambor gira. </div>
+</li>
+<li class="level1"><div class="li"> Comença a sortir aigua pel desaigüe fins que no deixa sabó.</div>
+</li>
+<li class="level1"><div class="li"> El sistema d’abastament d’aigua omple el tambor.</div>
+</li>
+<li class="level1"><div class="li"> Durant 10 minuts el tambor gira.</div>
+</li>
+<li class="level1"><div class="li"> El sistema d’abastament deixa de proporcionar aigua.</div>
+</li>
+<li class="level1"><div class="li"> El desaigüe rep l’aigua que es fa servir per esbandir. </div>
+</li>
+<li class="level1"><div class="li"> Durant 4 minuts el tambor gira. </div>
+</li>
+<li class="level1"><div class="li"> Es finalitza el procés. El tambor deixa de girar.</div>
+</li>
+</ol>
+
+<p>
+
+<p>
+A Modelio, el diagrama de seqüències es crea de manera anàloga a com es crea la resta de diagrames, però seleccionant a l’últim pas <em>Sequence diagram</em> com a tipus de diagrama.
+</p>
+
+<p>
+Les línies de vida s’afegeixen clicant la icona corresponent, que és a l’apartat <em>Nodes</em>, i, a continuació, fent clic al punt del diagrama on volem afegir-la. Podem donar-les nom tot modificant la propietat <em>Name</em>.
+</p>
+
+<p>
+Els missatges s’afegeixen:
+</p>
+<ol>
+<li class="level1"><div class="li"> Fent clic a la icona corresponent al tipus de missatge que volem afegir, que serà a l’apartat <em>Messages</em>.</div>
+</li>
+<li class="level1"><div class="li"> Fent clic a la línia de vida origen del missatge.</div>
+</li>
+<li class="level1"><div class="li"> Fent clic a la línia de vida destinatària del missatge. Veureu que en la línia de vida destinatària s’afegeix automàticament un rectangle, que respresenta una activació. A més, si el missatge és síncron, es crea automàticament el missatge de resposta.</div>
+</li>
+</ol>
+
+<p>
+Les activacions també poden afegir-se directament fent clic primer a la icona que les representa, dins l’apartat <em>Nodes</em>, i, a continuació, fent clic a la línia de vida a la qual desitgem associar-la.
+</p>
+
+<p>
+Pot canviar-se la mida d’una activació seleccionant-la i, a continuació arrosegant el missatge que arriba o surt de l’extrem que volem pujar o baixar. En cas que l’extrem no tingui cap missatge, cal arrossegar el costat superior o inferior de l’activació. El ratolí és a la posició correcta per arrossegar quan té forma de doble fletxa vertical. Si la doble fletxa no és vertical o el ratolí té una altra forma, no serà possible realitzar l’arrossegament.
+</p>
+
+<p>
+Podeu veure les icones d’aquest tipus de diagrama a la <span class="figref"><a href="#figuraIconesDiagramaSequencies"><span>figura</span></a></span>.
+</p>
+<div class="iocfigure"><a name="figuraIconesDiagramaSequencies"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Icones del diagrama de seqüències.
+
+</figcaption><img src="../media/iconesdiagramasequencia.png" alt="" /></figure>
+</div>
+</p>
+
+</div>
+
+<h3><a id="diagrama_de_comunicacio1" >Diagrama de comunicació</a></h3>
+<div class="level3">
+
+<p>
+Els elements d’un sistema treballen en conjunt per complir amb els objectius del sistema, i un llenguatge de modelització haurà de comptar amb una forma de representar això. El diagrama de col·laboracions UML està dissenyat amb aquesta finalitat.
+</p>
+
+<p>
+A la <span class="figref"><a href="#Figure96"><span>figura</span></a></span> es pot observar un possible diagrama de comunicació. 
+</p>
+<div class="iocfigure"><a name="Figure96"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Diagrama de comunicació
+
+</figcaption><img src="../media/ic10m05u3_96.png" alt="" /></figure>
+</div>
+<p>
+
+<p>
+A Modelio, el diagrama de comunicació es crea de manera anàloga a com es crea la resta de diagrames, però seleccionant a l’últim pas <em>Communication diagram</em> com a tipus de diagrama.
+</p>
+
+<p>
+Els objectes s’afegeixen fent clic en primer lloc a sobre de la icona <em>Communication Node</em> i, a continuació, al punt del diagrama on volem inserir-lo. Cada objecte quedarà representat com un rectangle. Podem modificar el seu nom des de la pestanya <em>Properties</em>.
+</p>
+
+<p>
+La inserció d’un missatge entre dos objectes es fa en dos passos:
+</p>
+<ol>
+<li class="level1"><div class="li"> Insertar un <em>canal de comunicació</em> entre tots dos objectes. Això es fa clicant la icona <em>Communication Channel</em> i, a continuació, clicant en els dos objectes que es comunicaran amb aquest missatge. L’ordre és indiferent.</div>
+</li>
+<li class="level1"><div class="li"> Clicar la icona <em>Communication Message</em> i, a continuació, el canal que uneix els dos objectes que es comuniquen amb aquest missatge. El punt on es faci el clic és important, ja que determinarà el <strong>sentit</strong> del missatge: el missatge anirà des de l’objecte més proper al clic cap a l’objecte més llunyà al clic. El missatge resultant tindrà forma de fletxa, que indicarà el sentit del missatge, i apareixerà més propera a l’objecte emissor que no pas a l’objecte receptor.</div>
+</li>
+</ol>
+
+<p>
+Podeu veure les icones d’aquest tipus de diagrama a la <span class="figref"><a href="#figuraIconesDiagramaComunicacio"><span>figura</span></a></span>.
+</p>
+<div class="iocfigure"><a name="figuraIconesDiagramaComunicació"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Icones del diagrama de comunicació
+
+</figcaption><img src="../media/iconesdiagramacomunicacio.png" alt="" /></figure>
+</div>
+<p>
+Un canal admet més d’un missatge. Per representar-ho al diagrama cal repetir el pas <em>2</em> tantes vegades com ens calgui. Els missatges que van en el mateix sentit es representaran al voltant de la fletxa corresponent segons l’ordre d’inserció. Cadascun ve representat per una línia de text. Podem canviar el text que descriu el missatge seleccionant amb el ratolí la línia corresponent i modificant la seva propietat <em>Name</em>. Normalment, en clicar-lo el primer cop es seleccionarà tot el canal i els petits quadres negres que indiquen que l’element s’ha seleccionat apareixeran al voltant de tots els missatges que van en el mateix sentit. Per seleccionar només un missatge cal tornar a fer clic a sobre d’aquest; llavors els quadres negres només envoltaran el missatge triat per indicar que ara l’únic missatge seleccionat és aquest. A la <span class="figref"><a href="#figuraSeleccioMissatge"><span>figura</span></a></span> podeu observar la seqüència de clics que cal fer.
+</p>
+<div class="iocfigure"><a name="figuraSeleccioMissatge"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Selecció d’un missatge
+
+</figcaption><img src="../media/selecciomissatge.png" alt="" /></figure>
+</div>
+<p>
+ A la <span class="figref"><a href="#figuraDiagramaComunicacioModelio"><span>figura</span></a></span> podeu observar un exemple de diagrama de comunicació realitzat amb Modelio:
+</p>
+<div class="iocfigure"><a name="figuraDiagramaComunicacioModelio"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Diagrama de comunicació elaborat amb Modelio
+
+</figcaption><img src="../media/diagramacomunicaciomodelio.png" alt="" /></figure>
+</div>
+</p>
+
+</div>
+
+	 </article>
+     <div class="pnpage">
+      <div class="left-corner"></div>
+      <div id="prevpage">Anar a la p&agrave;gina anterior:<br /><a href="../../../WebContent/u3/a1/annexos.html">Annexos</a></div>
+      <div id="nextpage">Anar a la p&agrave;gina seg&uuml;ent:<br /><a href="../../../WebContent/u3/a2/activitats.html">Activitats</a></div>
+      <div class="right-corner"></div>
+     </div>
+    </div>
+    <footer class="footer">
+      <div><small>Aquest document està subjecte a una llicència oberta de Creative Commons, es reserva el dret de reconeixement de l'autoria, d'exigir que no se'n faci cap mena d'ús comercial. Si altereu o transformeu aquesta obra, o en genereu obres derivades, només podeu distribuir l'obra generada amb una llicència idèntica a aquesta.</small></div>
+    </footer>
+ </div>
+ <div id="back_preview" class="hidden"></div>
+ <div id="preview" class="hidden">
+  <div class="prevcontent"></div>
+ </div>
+ <div id="help-tooltips">
+  <div id="help-toc" class="hidden tooltip"><span>Taula de continguts:</span> Ofereix una vista general de l&#39;estructura del m&ograve;dul, que us facilitar&agrave; la navegaci&oacute; a trav&eacute;s dels seus continguts.<span class="arrow-left"></span></div> 
+  <div id="help-settings" class="hidden tooltip"><span>Opcions de format:</span> Permet configurar el format de lectura a partir de les vostres prefer&egrave;ncies, modificant la mida de la lletra, el color del fons, l&#39;amplada de la p&agrave;gina o l&#39;ocultaci&oacute; dels continguts complementaris, entre d&#39;altres.<span class="arrow-left"></span></div>
+  <div id="help-printer" class="hidden tooltip"><span>Imprimir:</span>  Envia el contingut seleccionat a la impressora.<span class="arrow-left"></span></div>
+  <div id="help-favorites" class="hidden tooltip"><span>Prefereits:</span> Permet desar aquelles parts del contingut a les que us interessi accedir en un moment posterior; us permetr&agrave; anar creant un repositori personalitzat de les seccions que considereu m&eacute;s rellevants. Un cop l&#39;hageu començat a fer servir se us mostrar&agrave; a sota un comptador que us informar&agrave; del nombre de preferits que s&#39;hagin emmagatzemat fins al moment.<span class="arrow-left"></span></div>
+  <div id="help-favcounter" class="hidden tooltip"><span>Comptador i llistat de preferits:</span> Indica el nombre de preferits que s&#39;han desat fins el moment; clicant damunt seu accedireu al llistat de preferits, i a trav&eacute;s d&#39;aquest podreu accedir directament als continguts que hageu emmagatzemat.<span class="arrow-left"></span></div>
+  <div id="help-help_icon" class="hidden tooltip"><span>Ajuda:</span> Aquesta opci&oacute; activa la informaci&oacute; de les funcionalitats del web tot situant el punter del ratol&iacute; al damunt dels diferents &iacute;tems.<span class="arrow-left"></span></div>
+  <div id="help-sidebar-hide" class="hidden tooltip"><span>Mostrar/Ocultar barra lateral:</span>  Deshabilita la barra d&#39;opcions, permetent la seva recuperaci&oacute; quan es desitgi.<span class="arrow-left"></span></div>
+  <div id="help-search" class="hidden tooltip"><span>Cerca:</span>  Introdu&iuml;u les paraules clau sobre aquells conceptes que desitgeu localitzar en els continguts del m&ograve;dul. Tamb&eacute; podeu excloure un terme de la cerca tot afegint-hi el signe &#8220;-&#8221; al davant.<span class="arrow-top"></span></div>
+  <div id="help-header" class="hidden tooltip"><span>Cap&ccedil;alera:</span>  Indica l&#39;apartat o secci&oacute; que es mostra en pantalla. Tingueu present que les capçaleres de segon, tercer i quart nivell tamb&eacute; es poden desar com a marcadors.<span class="arrow-left"></span></div>
+</div> 
+</body>
+</html>

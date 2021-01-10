@@ -1,0 +1,754 @@
+<!doctype html>
+
+<!--[if lt IE 7 ]> <html class="ie ie6 no-js" lang="ca"> <![endif]-->
+<!--[if IE 7 ]>    <html class="ie ie7 no-js" lang="ca"> <![endif]-->
+<!--[if IE 8 ]>    <html class="ie ie8 no-js" lang="ca"> <![endif]-->
+<!--[if IE 9 ]>    <html class="ie ie9 no-js" lang="ca"> <![endif]-->
+<!--[if gt IE 9]><!--><html class="no-js" lang="ca"><!--<![endif]-->
+<!-- the "no-js" class is for Modernizr. -->
+
+<head id="www-sitename-com" data-template-set="html5-reset">
+
+	<meta charset="utf-8">
+	
+	<!-- Always force latest IE rendering engine (even in intranet) & Chrome Frame -->
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	
+	<title>Entorns de desenvolupament</title>
+	
+<!-- <meta name="title" content=""> --> 
+	<meta name="description" content="">
+	<!-- Google will often use this as its description of your page/site. Make it good. -->
+	
+	<meta name="google-site-verification" content="">
+	<!-- Speaking of Google, don't forget to set your site up: http://google.com/webmasters -->
+	
+	<meta name="author" content="Institut Obert de Catalunya">
+	<meta name="Copyright" content="Copyright Institut Obert de Catalunya 2011. All Rights Reserved.">
+
+	<!-- Dublin Core Metadata : http://dublincore.org/ -->
+	<meta name="DC.title" content="Entorns de desenvolupament">
+	<meta name="DC.subject" content="Informàtica i comunicacions">
+	<meta name="DC.creator" content="Institut Obert de Catalunya">
+	
+	<!--  Mobile Viewport Fix
+	j.mp/mobileviewport & davidbcalhoun.com/2010/viewport-metatag 
+	device-width : Occupy full width of the screen in its current orientation
+	initial-scale = 1.0 retains dimensions instead of zooming out if page height > device height
+	maximum-scale = 1.0 retains dimensions instead of zooming in if page width < device width
+	-->
+	<!-- Uncomment to use � use thoughtfully!
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+	-->
+
+	<link rel="shortcut icon" href="../../../img/favicon.ico">
+	<!-- This is the traditional favicon.
+		 - size: 16x16 or 32x32
+		 - transparency is OK
+		 - see wikipedia for info on browser support: http://mky.be/favicon/ -->
+		 
+	<link rel="apple-touch-icon" href="../../../img/apple-touch-icon.png">
+	<!-- The is the icon for iOS's Web Clip.
+		 - size: 57x57 for older iPhones, 72x72 for iPads, 114x114 for iPhone4's retina display (IMHO, just go ahead and use the biggest one)
+		 - To prevent iOS from applying its styles to the icon name it thusly: apple-touch-icon-precomposed.png
+		 - Transparency is not recommended (iOS will put a black BG behind the icon) -->
+	
+	<!-- CSS: screen, mobile & print are all in the same file -->
+	<link rel="stylesheet" href="../../../_/css/style.css">
+
+	<!-- CSS: jQuery UI -->
+	<link rel="stylesheet" href="../../../_/css/jquery-ui.css">
+	
+	<!-- all our JS is at the bottom of the page, except for Modernizr. -->
+	<script src="../../../_/js/modernizr-1.7.min.js"></script>
+	<script src="../../../_/js/Hyphenator.js" type="text/javascript"></script>
+	<script type="text/javascript">
+	   Hyphenator.config({
+		minwordlength : 4
+	   });
+	   Hyphenator.run();
+	</script>
+    <script src="../../../_/js/build.js" type="text/javascript"></script>
+</head>
+
+<body class="style-newspaper">
+
+<div class="wrapper"><!-- not needed? up to you: http://camendesign.com/code/developpeurs_sans_frontieres -->
+
+	<header id="header">
+		<div class="head"><a href="http://ioc.gencat.cat"><img src="../../../img/logo.png" alt="Institut Obert de Catalunya"/></a><a href="http://creativecommons.org/licenses/by-nc-sa/3.0/es/deed.ca"><img src="../../../img/license.png" alt="Llic&egrave;ncia" class="license"/></a></div>
+		<div class="headdocument"><a href="../../../index.html">Entorns de desenvolupament</a></div>
+        <div id="search" class="search" name="search">
+         <form id="frmsearch" action="../../../search.html" method="get">
+          <input type="text" name="q"/>
+        </form>
+        </div>
+	</header>
+   <div id="upbutton" class="upbutton" style="display:none;"><img src="../../../img/uparrow.png" alt="Pujar a l'inici de p&agrave;gina"/></div>
+   <aside id="aside">
+    <div id="menu">
+      <ul>
+       <li name="toc"><div><img src="../../../img/toc.png" alt="&Iacute;ndex"/></div></li>
+       <li name="settings"><div><img src="../../../img/settings.png" alt="Configuraci&oacute;"/></div></li>
+       <li name="printer"><div><img src="../../../img/printer.png" alt="Imprimir"/></div></li>
+       <li name="favorites"><div><img src="../../../img/favorites.png" alt="Favorits"/></div></li>
+       <li name="help_icon" class="help_icon"><div><img src="../../../img/help_icon.png" alt="Ajuda"/></div></li>
+      </ul>
+     </div>
+   </aside>
+   <div id="sidebar-hide" name="sidebar-hide"><img src="../../../img/arrows.png"/></div>
+   <section>
+     <div id="toc" class="hidden">
+      <div class="menucontent">
+        <ul>
+        <li id="u3" class="parentnode"><p><a href="../../../WebContent/u3/introduccio.html">3. Introducció al disseny orientat a objectes</a></p><ul class="expander"><li id="u3introduccio"><a href="../../../WebContent/u3/introduccio.html">Introducció</a></li><li id="u3resum"><a href="../../../WebContent/u3/resum.html">Resum</a></li><li id="u3resultats"><a href="../../../WebContent/u3/resultats.html">Resultats d’aprenentatge</a></li><li id="u3referencies"><a href="../../../WebContent/u3/referencies.html">Referències</a></li><li id="u3a1" class="tocsection"><p id="u3a1continguts"><a href="../../../WebContent/u3/a1/continguts.html">Diagrames estàtics</a><span class="buttonexp"></span></p><ul><li id="u3a1activitats"><a href="../../../WebContent/u3/a1/activitats.html">Activitats</a></li><li id="u3a1exercicis"><a href="../../../WebContent/u3/a1/exercicis.html">Exercicis</a></li><li id="u3a1annexos"><a href="../../../WebContent/u3/a1/annexos.html">Annexos</a></li></ul></li><li id="u3a2" class="tocsection"><p id="u3a2continguts"><a href="../../../WebContent/u3/a2/continguts.html">Diagrames dinàmics</a><span class="buttonexp"></span></p><ul><li id="u3a2activitats"><a href="../../../WebContent/u3/a2/activitats.html">Activitats</a></li><li id="u3a2exercicis"><a href="../../../WebContent/u3/a2/exercicis.html">Exercicis</a></li><li id="u3a2annexos"><a href="../../../WebContent/u3/a2/annexos.html">Annexos</a></li></ul></li></ul></li><li id="" class="indexnode"><p><a href="../../../index.html">Anar a l&#39;&iacute;ndex general</a></p></li>
+        </ul>
+      </div>
+    </div>
+   </section>
+   <section>
+   <div id="settings" class="hidden">
+    <div class="menucontent">
+     <div class="allsettings">
+     <div class="settings">
+      <label>Font i Color</label>
+		<div class="setting-option">
+	        <ul class="fontBackground">
+				<li id="style-newspaper" title="Newspaper" class="appearance-style-newspaper"><span>Newspaper</span></li>
+                <li id="style-novel" title="Novel" class="appearance-style-novel"><span>Novel</span></li>
+                <li id="style-ebook" title="eBook" class="appearance-style-ebook"><span>eBook</span></li>
+				<li id="style-inverse" title="Inverse" class="appearance-style-inverse active"><span>Inverse</span></li>
+				<li id="style-athelas" title="Athelas" class="appearance-style-athelas"><span>Athelas</span></li>
+			</ul>
+		</div>
+     </div>
+	<div class="settings">
+      <label>Amplada</label>
+		<div class="setting-option">
+	        <div id="slider-width"></div>
+		</div>
+     </div>
+     <div class="settings">
+      <label>Mida de la font</label>
+		<div class="setting-option">
+	        <div id="slider-font"></div>
+		</div>
+     </div>
+     <div class="settings">
+      <label>Mida de la font</label>
+	  <div class="setting-option">
+       <form action="" class="sett-options">
+		<ul>
+		    <li><input type="checkbox" id="secondary-content" /><label for="secondary-content">Mostra recursos complementaris</label></li>
+		    <li><input type="checkbox" id="main-images" /><label for="main-images">Mostra imatges</label></li>
+		    <li><input type="checkbox" id="text-alignment" /><label for="text-alignment">Text justificat</label></li>
+			<li><input type="checkbox" id="text-hyphen" /><label for="text-hyphen">Partici&oacute; sil·l&agrave;bica</label></li>
+		</ul>
+       </form>
+	  </div>
+     </div>
+     </div>
+    </div>
+   </div>
+   </section>
+ <section>
+ <div id="favorites" class="hidden"></div>
+ </section>   
+ <div id="bridge" class="hidden"></div>
+ <div id="help" class="hidden">
+  <div class="helptitle">Dreceres del teclat<hr></div>
+  <div class="helpsection"><span>General</span>
+   <ul>
+    <li><span class="shortcut">g</span>: Anar al men&uacute; de navegaci&oacute;</li>
+    <li><span class="shortcut">o</span>: Anar a opcions</li>
+    <li><span class="shortcut">s</span>: Guardar la p&agrave;gina actual a favorits</li>
+    <li><span class="shortcut">p</span>: Imprimir la p&agrave;gina actual</li>
+    <li><span class="shortcut">?</span>: Mostrar/Ocultar l&#39;ajuda</li>
+   </ul>
+  </div>
+  <div class="helpsection"><span>Navegaci&oacute;</span>
+   <ul>
+    <li><span class="shortcut">i</span>: Anar a l&#39;&iacute;ndex general</li>
+    <li><span class="shortcut">t</span>: Anar a l&#39;inici de p&agrave;gina</li>
+    <li><span class="shortcut">b</span>: Anar al final de p&agrave;gina</li>
+    <li><span class="shortcut">j</span>: Anar cap endavant dintre la p&agrave;gina</li>
+    <li><span class="shortcut">k</span>: Anar cap enrere dintre la p&agrave;gina</li>
+    <li><span class="shortcut">h</span>: Anar a la p&agrave;gina anterior:</li>
+    <li><span class="shortcut">l</span>: Anar a la p&agrave;gina seg&uuml;ent:</li>
+   </ul>
+   </div>
+ </div>
+ <div id="favcounter" name="favcounter" class="hidden"><span></span></div>
+ <div id="navmenu" class="navmenu"><ul class="webnav"><li><a href="../../../index.html" title="Anar a l&#39;&iacute;ndex general">Inici</a></li><li><a href="../introduccio.html">Introducció al disseny orientat a objectes</a></li><li><a href="continguts.html">Diagrames estàtics</a></li><li>Annexos</li></ul></div>
+	<div id="content" lang="ca" class="hyphenate text">
+     <article lang="ca" class="sheet">
+        <h1><a id="annexos"> Annexos </a></h1>
+    	
+<h2><a id="analisi_i_disseny_orientat_a_objectes" >Anàlisi i disseny orientat a objectes</a></h2>
+<div class="level2">
+
+<p>
+A la fase d’anàlisi de requeriments es durà a terme un estudi complert, tant del problema existent, com de la forma actual de solucionar-lo, com de la forma automatitzada que es voldrà utilitzar, per part dels usuaris, una vegada finalitzat el desenvolupament del projecte que es comença. És molt important que la persona o el grup de persones que es dediquin a la recollida dels requeriments d’usuari siguin molt estrictes amb els detalls, recollint amb el màxim d’informació possible els <em>workflows</em> actuals i els desitjats. 
+</p>
+
+<p>
+A la fase de disseny es prendran totes les decisions que calgui per tal que el projecte acabi generant una aplicació informàtica que dugui a terme tot l’indicat a la fase d’anàlisi. Es tindran en compte totes les variables que puguin afectar el projecte, així com l’entorn.
+</p>
+
+<p>
+En una metodologia estructurada, les fases d’anàlisi i disseny estan molt definides, quedant molt clara la línia que les separa. Habitualment, aquesta tasca la solen efectuar persones diferents. El perfil de l’analista és el d’una persona amb una bona capacitat de comunicació, ja que haurà de tenir diverses entrevistes amb els usuaris, una bona capacitat analítica i un bon nivell de coneixement del negoci. Un dissenyador ha de tenir un bon coneixement de les tecnologies amb les quals es podrà donar solució al problema i ser capaç d’adaptar l’anàlisi de requeriments amb un disseny clar i detallat per als programadors.
+</p>
+
+<p>
+Si en les <strong>metodologies estructurades</strong> de desenvolupament de programari es té l’origen en la programació estructurada, les metodologies orientades a l’objecte tenen les arrels en la programació orientada a l’objecte.
+</p>
+
+<p>
+Com que la programació orientada a l’objecte se centra en el concepte de classe i objecte, és lògic que també l’anàlisi i el disseny orientat a objectes s’encarreguin de modelitzar un o diversos processos, establint els objectes que hi prendran part i les relacions que hi haurà entre ells. En una metodologia orientada a objectes, la línia que separa l’anàlisi i el disseny és molt més prima que en les metodologies estructurades. És complicat determinar on finalitza l’anàlisi orientat a objectes i on comença el disseny orientat a objectes. Les fases també podran ser responsabilitat de diferents membres de l’equip de treball del projecte, però en aquest cas caldrà que ambdós tinguin coneixements de l’altra àrea (coneixements del negoci, el dissenyador, i coneixements tecnològics, l’analista).
+</p>
+
+<p>
+Alguns aspectes que cal remarcar en les fases d’anàlisi i de disseny orientats a objectes, tant per la seva adaptació als nous mètodes de treball com per la seva evolució en comparació a com es treballava fa uns anys, són:
+</p>
+<ul>
+<li class="level1"><div class="li"> La presa de requeriments.</div>
+</li>
+<li class="level1"><div class="li"> La descripció del context on es trobarà l’aplicació en el model de domini.</div>
+</li>
+<li class="level1"><div class="li"> La descripció del context on es trobarà l’aplicació en el model de negoci.</div>
+</li>
+</ul>
+
+<p>
+<strong>1. Presa de requeriments o requisits</strong>
+</p>
+
+<p>
+Els requisits tenen un doble paper:
+</p>
+<ul>
+<li class="level1"><div class="li"> Servir de base per a un acord entre el client i els desenvolupadors sobre el programari que cal desenvolupar. Això exigeix que la documentació dels requisits presenti una forma intel·ligible per als usuaris, que l’hauran de revisar.</div>
+</li>
+<li class="level1"><div class="li"> Són la informació de partida per desenvolupar el programari. Per tant, són entrades de l’etapa següent, el disseny. </div>
+</li>
+</ul>
+
+<p>
+Els <strong>requisits</strong> són l’especificació d’allò que ha de fer el programari i, en alguns aspectes, de com ho ha de fer; són descripcions del comportament, propietats i restriccions del programari que cal desenvolupar.
+</p>
+
+<p>
+Els nous mètodes de disseny fan desitjable un nou mètode d’anàlisi de requisits que tingui la mateixa orientació que el disseny, per tal d’evitar que el pas de l’anàlisi de requisits al disseny impliqui un canvi de model, que inevitablement comportaria un treball addicional i un risc d’errors més gran.
+</p>
+
+<p>
+Certament que la informació de partida per als requisits, subministrada per les persones que representen el client, no estarà expressada en termes de classes, però es passa a aquesta forma tan aviat com sigui possible, i moltes de les classes identificades aleshores, amb els seus atributs i operacions, es programaran més endavant. Aquesta característica del desenvolupament orientat a l’objecte fa que tant el pas de l’anàlisi de requisits al disseny, com després el pas del disseny a la programació siguin relativament suaus i relativament senzills.
+</p>
+
+<p>
+Com que dins una classe hi ha alhora atributs i operacions –és a dir, dades i processos–, en el desenvolupament orientat a l’objecte, a mesura que es van definint i implementant classes, s’avança de manera aproximadament simultània en aquestes dues dimensions. A més, el desenvolupament orientat a l’objecte no procedeix en general ni de manera descendent (<em>topdown</em>) ni ascendent (<em>bottom-up</em>), sinó que més aviat es van identificant i construint grups de classes interrelacionades. 
+</p>
+
+<p>
+Des d’un cert punt de vista, es distingeix entre requisits funcionals i no funcionals i, des d’un altre, entre requisits de procés i d’interfície amb l’usuari.
+</p>
+<ul>
+<li class="level1"><div class="li"> Els requisits funcionals són els que descriuen el comportament del programari.</div>
+</li>
+<li class="level1"><div class="li"> Els requisits no funcionals recullen propietats del programari exigides pel client i restriccions imposades per l’entorn i la tecnologia.</div>
+</li>
+<li class="level1"><div class="li"> Els requisits de procés són els que especifiquen els processos o funcions que ha de fer el programari o descriuen el flux de treball dels processos afectats. </div>
+</li>
+<li class="level1"><div class="li"> Els requisits d’interfície amb l’usuari especifiquen el contingut i el funcionament que ha de tenir la interfície del programari amb l’usuari, així com les característiques dels usuaris en general o del seu entorn de treball. </div>
+</li>
+</ul>
+
+<p>
+Les fonts d’informació per a la recollida de requisits són les següents:
+</p>
+<ul>
+<li class="level1"><div class="li"> Les entrevistes –i, eventualment, les enquestes– als futurs usuaris i a altres persones interessades en el projecte.</div>
+</li>
+<li class="level1"><div class="li"> La documentació existent sobre la forma actual en què s’està treballant.</div>
+</li>
+<li class="level1"><div class="li"> Els companys dels usuaris: és possible que els usuaris estiguin acostumats a fer la feina de la mateixa manera durant molt temps i, per tant, conèixer altres punts de vista ajudarà a sortir d’esquemes que hagin pogut quedar antiquats.</div>
+</li>
+<li class="level1"><div class="li"> També és molt útil revisar els programaris semblants que hi hagi al mercat amb vista a detectar funcions importants que els usuaris poden no haver esmentat.</div>
+</li>
+</ul>
+
+<p>
+<strong>2. Descripció del context del programari</strong>
+</p>
+
+<p>
+Els desenvolupadors de programari que s’encarregaran de recollir els requisits tindran certament formació i experiència informàtiques, però generalment no coneixeran el negoci, la forma de treballar dels futurs usuaris.
+</p>
+
+<p>
+Una pràctica habitual en l’orientació a objectes és descriure el context del futur programari. Cal tenir present que es tracta de modelitzar –superficialment– l’entorn en què s’utilitzarà el programari, no pas el programari en si; això darrer es farà dins les fases d’anàlisi
+i de disseny. 
+</p>
+
+<p>
+Hi ha dues maneres complementàries de descriure el context del futur programari:
+</p>
+<ul>
+<li class="level1"><div class="li"> El model del domini</div>
+</li>
+<li class="level1"><div class="li"> El model del negoci</div>
+</li>
+</ul>
+
+<p>
+Un cop feta la recollida dels requisits, es pot prescindir dels models del domini i del negoci, atès que la seva funció introductòria ja no té sentit.
+</p>
+
+<p>
+<strong>a.</strong> Descripció del context del programari en el model del domini
+</p>
+
+<p>
+El model del domini consisteix en un diagrama de classes que recull els conceptes més importants, que es poden classificar de la manera següent:
+</p>
+<ul>
+<li class="level1"><div class="li"> Objectes del món real i conceptes relacionats</div>
+</li>
+<li class="level1"><div class="li"> Esdeveniments o accions</div>
+</li>
+</ul>
+
+<p>
+Abans de procedir a la recollida sistemàtica dels requisits, és convenient que les persones que l’hauran de dur a terme adquireixin un cert coneixement de l’activitat dels futurs usuaris i, especialment, dels conceptes que hi fan servir i que el futur programari haurà de tenir en compte. 
+</p>
+
+<p>
+Per tal d’evitar malentesos i dubtes entre els participants en el projecte convé elaborar un glossari que aclareixi els termes més utilitzats en l’entorn on es farà servir el futur programari; és convenient fer-lo fins i tot si no es descriu cap dels dos models.
+</p>
+
+<p>
+El domini d’un sistema de programari és la porció de món real a què es refereix la informació tractada pel programari en qüestió.
+</p>
+
+<p>
+<strong>b.</strong> Descripció del context del programari en el model del negoci
+</p>
+
+<p>
+El model del negoci descriu, a grans trets, la part de l’activitat de l’empresa dins la qual s’utilitzarà el futur programari, partint d’una informació generalment superficial. S’identifiquen i es descriuen breument els principals objectes (més ben dit, les classes corresponents) sobre els quals els usuaris fan servir informació i els principals processos o tasques que s’hi fan.
+</p>
+
+<p>
+Els objectes del negoci, i també les principals relacions entre ells, es representen per mitjà d’un diagrama de classes. Els processos del negoci es descriuen en forma de casos d’ús, sobretot quan són bastant independents entre ells, o amb diagrames d’activitats si hi ha moltes dependències entre ells. L’ús dels objectes del negoci dins els processos es pot descriure, si es vol, o bé amb diagrames de comunicacions molt senzills corresponents als casos d’ús en qüestió, o bé per fluxos d’objectes dins el diagrama d’activitats, respectivament.
+</p>
+
+</div>
+
+<h2><a id="llenguatge_unificat_de_modelitzacio" >Llenguatge unificat de modelització</a></h2>
+<div class="level2">
+
+<p>
+UML és l’acrònim, en anglès, per a Unified Modeling Language, és a dir, Llenguatge unificat de modelització. UML és un conjunt de notacions gràfiques que serveixen per especificar, dissenyar, elaborar i documentar models de sistemes i, en particular, d’aplicacions informàtiques. A partir d’aquestes notacions gràfiques o diagrames, l’analista i el dissenyador podran recrear les característiques que caldrà que tingui l’aplicació informàtica, la qual els desenvolupadors hauran de crear posteriorment. 
+</p>
+
+<p>
+En l’actualitat és el llenguatge de modelització de sistemes més conegut i utilitzat. Gaudeix d’una acceptació gairebé universal i, entre altres beneficis, ha tingut l’efecte d’impulsar el desenvolupament d’eines de modelització gràfica del programari orientat a l’objecte. A més, està reconegut i és recomanat per l’OMG. 
+</p>
+
+<p>
+La història d’aquest llenguatge de modelització es troba estretament lligada a la de la programació orientada a objectes. A partir de l’aparició d’aquest paradigma de programació, durant els anys 80, va començar a establir-se la necessitat d’utilitzar un disseny diferent al que s’havia utilitzat fins llavors. Quedava clar que l’enginyeria del programari havia de donar un pas cap endavant, igual que ho havia fet la programació. A finals d’aquella dècada dels 80 van començar a desenvolupar-se les primeres aplicacions sota el paradigma de la programació orientada a objectes. No va ser, però, fins ben entrada la dècada de 1990 que es va començar a unificar l’anàlisi i el disseny orientat a objectes, establint un mateix model de diagrames. Fins aquell moment, cada interessat havia utilitzat la seva pròpia metodologia i els seus propis models de diagrames per dissenyar les solucions. 
+</p>
+
+<p>
+Per arribar a aquesta unificació es van produir dos fets a mitjan dècada:
+</p>
+<ul>
+<li class="level1"><div class="li"> D’una banda, dins l’empresa nord-americana d’informàtica Rational Software van començar a col·laborar tres autors d’alguns dels mètodes d’anàlisi i de disseny orientats a l’objecte: Robert Booch, James Rumbaugh i Ivar Jacobson.</div>
+</li>
+<li class="level1"><div class="li"> De l’altra, l’OMG va demanar propostes per a un conjunt de notacions gràfiques de suport al desenvolupament de programari orientat a l’objecte. </div>
+</li>
+</ul>
+
+<p>
+Llavors, Rational Software va encapçalar, per mitjà dels mateixos tres autors, un consorci d’una vintena d’empreses que van elaborar la proposta inicial del que es va anomenar Unified Modeling Language, que va ser presentada a l’OMG i acceptada l’any 1997. D’aleshores ençà, l’OMG s’ha encarregat oficialment de l’elaboració de les versions posteriors de les especificacions de l’UML i, també, d’altres estàndards relacionats amb la tecnologia orientada a l’objecte. En particular, la versió 2.0 de l’UML, publicada l’any 2003, va introduir un nombre especialment elevat d’innovacions significatives.
+</p>
+
+<p>
+L’<strong>UML</strong> serveix per elaborar models mitjançant diagrames que consten d’elements; alguns dels tipus més bàsics i característics d’elements de l’UML són el classificador, el comportament i l’estereotip. L’UML disposa de mecanismes d’extensió que permeten definir-hi tipus d’elements addicionals per a la modelització en entorns específics.
+</p>
+
+<p>
+A continuació, es defineixen alguns d’aquests elements i altres conceptes que cal conèixer per comprendre correctament els models creats als diagrames UML:
+</p>
+<ul>
+<li class="level1"><div class="li"> Model</div>
+</li>
+<li class="level1"><div class="li"> Element</div>
+</li>
+<li class="level1"><div class="li"> Propietat</div>
+</li>
+<li class="level1"><div class="li"> Classificador</div>
+</li>
+<li class="level1"><div class="li"> Comportament</div>
+</li>
+<li class="level1"><div class="li"> Estereotip</div>
+</li>
+</ul>
+
+<p>
+<strong>1.</strong> Model
+</p>
+
+<p>
+L’UML no serveix directament per fer aplicacions, sinó per fer documentació descriptiva formalitzada, el que es coneix com a models de les aplicacions que cal desenvolupar.
+</p>
+
+<p>
+Aquests models es traduiran a programes, ja sigui de manera manual o, de vegades, parcialment informatitzada.
+</p>
+
+<p>
+<strong>2.</strong> Element
+</p>
+
+<p>
+Els models consten d’elements de model, que simplement s’anomenen elements; un element és un concepte que té representació en el model mitjançant un símbol geomètric bidimensional, una icona, una línia o una cadena de caràcters.
+</p>
+
+<p>
+<strong>3.</strong> Classificador
+</p>
+
+<p>
+Un element és <strong>tipificat</strong> quan pot tenir diferents valors que han de pertànyer a un cert conjunt; aquest conjunt s’anomena tipus.
+</p>
+
+<p>
+Un <strong>classificador</strong> és un tipus els valors del qual tenen en comú característiques estructurals i de comportament, que són elements que es defineixen a nivell del classificador. Cadascun d’aquests valors és una <strong>instància</strong> del classificador.
+</p>
+
+<p>
+Un classificador és <strong>no instanciable</strong> si no se’n poden distingir instàncies. En aquest cas, les característiques estructurals i de comportament esmentades estan lligades necessàriament al classificador en si.
+</p>
+
+<p>
+La instanciació d’un classificador és la creació d’una instància seva. Una <strong>col·lecció</strong> és un conjunt d’instàncies del mateix classificador o de còpies d’aquestes. Les instàncies poden estar o no ordenades segons algun criteri i s’hi poden permetre o no instàncies repetides.
+</p>
+
+<p>
+Com a exemple de <strong>classificador</strong> trobem les classes. Tota classe dintre la programació orientada a l’objecte és un classificador i els seus objectes en són les instàncies; les variables de la classe en són les característiques estructurals i els seus mètodes en són les característiques de comportament. 
+</p>
+
+<p>
+<strong>4.</strong> Comportament
+</p>
+
+<p>
+Una característica de comportament, o simplement <strong>comportament</strong>, d’un classificador (un sistema, un subsistema, un component… anomenat classificador de context del comportament) és una part de la seva activitat, és a dir, d’allò que fa o almenys pot fer. Si el classificador és instanciable pot tenir comportaments lligats a les seves instàncies; aleshores, s’anomena objecte de context d’una execució concreta del comportament a la instància a la qual va lligada.
+</p>
+
+<p>
+<strong>5.</strong> Propietats
+</p>
+
+<p>
+Els elements poden tenir propietats. Una <strong>propietat</strong> té nom, tipus (per exemple, cadena de caràcters, enter o booleà) i diferents valors possibles del tipus en qüestió. Per atribuir una propietat a un element cal posar-hi al costat una especificació de propietat, que consta del nom de la propietat, el signe ”=” i el valor; en el cas de propietats booleanes, el valor es pot ometre i llavors s’entén que és “vertader”.
+</p>
+
+<p>
+<strong>6.</strong> Generalització, especialització i herència dels classificadors
+</p>
+
+<p>
+Si un classificador A és subconjunt propi d’un altre B (és a dir, totes les instàncies de A ho són també de B, però no pas a l’inrevés), es diu que hi ha una relació de generalització/especialització entre ells; quan es passa de A a B parlem de <strong>generalització</strong> i quan es passa de B a A es parla d’<strong>especialització</strong>. 
+</p>
+
+<p>
+A té totes les característiques estructurals i de comportament de B; aquest fet s’anomena <strong>herència</strong>. A també pot tenir característiques estructurals i de comportament no heretades, és a dir, que B no té. 
+</p>
+
+<p>
+<strong>7.</strong> Estereotip
+</p>
+
+<p>
+L’<strong>estereotip</strong> és una especialització dins un metamodel, per exemple l’UML. Quant als models, representa la introducció d’un tipus d’elements més restrictiu a partir d’un tipus d’elements ja existent, que anomenarem l’<strong>element base</strong>.
+</p>
+
+<p>
+<strong>Estructura d’un model de l’UML</strong>
+</p>
+
+<p>
+Un model de l’UML consta de paquets, dins els quals hi ha els elements i els diagrames del model. Dins un paquet hi pot haver altres paquets i també espais de noms d’altres menes, que també contenen elements.
+</p>
+
+<p>
+UML ofereix diversos tipus de diagrames. L’agrupació de tots ells ofereix un model de la solució que es vol implementar, mostrant a cada diagrama diferents aspectes de les entitats representades.
+</p>
+
+<p>
+És diferent parlar del conjunt de diagrames d’un sistema que parlar del model UML. Un diagrama és una representació gràfica parcial del model d’un sistema. En canvi, el model UML ofereix també la documentació que controlen els elements del model i els diagrames.
+</p>
+
+<p>
+El llenguatge UML defineix un llenguatge per modelitzar totes les fases del desenvolupament d’una aplicació, des de les especificacions dels requisits del programa arrel de les entrevistes amb el client fins al disseny detallat per lliurar al programador.
+</p>
+
+<p>
+Un aspecte que cal destacar en UML, potser el més fonamental de tots, és que tota la modelització que s’hi fa gira entorn d’unes poques <strong>idees bàsiques abstractes</strong>, que s’apliquen a situacions concretes molt diverses; aquestes idees són una generalització dels conceptes més bàsics de la programació orientada a l’objecte, essencialment de la classe, l’objecte, la variable, el mètode o funció i l’herència. 
+</p>
+
+<p>
+Ara bé, que s’hagi arribat a unes notacions gràfiques per al procés d’anàlisi i de disseny d’aplicacions orientades a l’objecte que estiguin acceptades de manera gairebé universal no vol pas dir que s’hagi arribat a una situació en la qual el mètode seguit en aquest procés també estigui unificat a escala mundial, ni de bon tros. D’una banda, el caràcter molt general dels conceptes bàsics de l’UML, i de l’altra, el fet que permeti la incorporació del suport de conceptes addicionals específics d’un mètode d’anàlisi i de disseny, d’una tecnologia de programació o fins i tot d’un projecte, en fan possible l’aplicació, i sovint d’una manera força còmoda, en un àmbit tecnològic considerablement divers com és el desenvolupament de programari avui en dia.
+</p>
+
+<p>
+És fàcil adonar-se dels inconvenients que tenia la pluralitat de notacions orientades a l’objecte que hi havia abans de la difusió de l’UML:
+</p>
+<ul>
+<li class="level1"><div class="li"> Els professionals del desenvolupament d’aplicacions, en la majoria dels casos, sovint havien de repartir el seu esforç d’aprenentatge i la seva experiència entre diverses notacions, cosa que feia difícil que les poguessin conèixer a fons.</div>
+</li>
+<li class="level1"><div class="li"> Les diferents notacions, en ser part dels mètodes concrets d’anàlisi i de disseny, estaven orientades principalment a la representació dels conceptes del mètode respectiu i també en feien servir la terminologia, i ambdues coses solien ser, si més no en part, diferents en cadascun.</div>
+</li>
+<li class="level1"><div class="li"> La diversitat de les notacions i de la terminologia, més que la dels mètodes, dificultava la sortida al mercat d’eines informatitzades per a l’elaboració de diagrames orientats a l’objecte (i funcions complementàries, com ara la generació de codi a partir de diagrames i viceversa), ja que la fragmentació del mercat, alhora per mètode i per llenguatge de programació, feia difícil que una eina fos rendible si no era que s’especialitzava en un segment de mercat molt petit (un sol mètode i un sol llenguatge, a l’extrem), i aleshores difícilment hi podia haver gaire competència entre venedors d’aquestes eines, cosa que hauria beneficiat els usuaris. És un fet que a partir de la difusió de l’UML han sortit al mercat un bon nombre d’eines que s’hi basen i que, en el desenvolupament professional d’aplicacions, la pràctica usual -per raons de productivitat, en definitiva- és fer-ne servir (tot i que sovint es continuen fent diagrames provisionals a mà, per raons òbvies).</div>
+</li>
+</ul>
+
+<p>
+Altres aspectes del llenguatge de modelització UML que han estat considerats com a crítiques són:
+</p>
+<ul>
+<li class="level1"><div class="li"> <strong>Semàntica no precisa</strong>. Aquest fet provoca que la interpretació d’un diagrama UML pugui ser diferent en funció del programador que la llegeixi. </div>
+</li>
+<li class="level1"><div class="li"> <strong>Falta de solucions per als sistemes distribuïts</strong>. Determinats conceptes no es poden representar mitjançant l’UML, com ara la persistència o la serialització. Si un sistema distribueix part dels seus elements, amb UML no es podrà indicar que un determinat element és remot. Sí que es podrà, però, crear components propis per indicar aquest tipus de modelització, però no seran reconeguts de forma homogènia. </div>
+</li>
+<li class="level1"><div class="li"> <strong>Necessitat d’adaptació per part del llenguatge de programació</strong>. En funció del llenguatge de programació que s’esculli, es podrà donar la circumstància que els diagrames desenvolupats amb UML es puguin representar d’una forma més o menys eficient que amb d’altres. El llenguatge de programació escollit caldrà que s’adapti molt bé a l’UML.</div>
+</li>
+</ul>
+
+</div>
+
+<h2><a id="conceptes_basics_en_l_orientacio_a_objectes" >Conceptes bàsics en l’orientació a objectes</a></h2>
+<div class="level2">
+
+<p>
+La programació orientada a objectes sorgeix a partir del concepte que el món real es pot representar mitjançant una abstracció basada en objectes. Un objecte pot representar qualsevol cosa com, per exemple, una empresa, un client, un empleat, una comanda, una casa… Cada element del món real s’ha d’identificar en la seva modelització abstracta mitjançant un objecte, en comptes de reproduir l’abstracció mitjançant estructures, funcions o procediments. Un objecte està format per dos tipus d’informacions:
+</p>
+<ul>
+<li class="level1"><div class="li"> <strong>Els atributs</strong>, que són les dades amb la informació referent a un determinat objecte.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Els mètodes</strong>, que són les funcions que manipularan les dades del seu propi objecte i d’altres.</div>
+</li>
+</ul>
+
+<p>
+A partir d’aquesta idea es desenvolupa l’anàlisi i el disseny de programes informàtics, que són les fases que prepararan aquest model abstracte basat en objectes i en les seves interactuacions a través de missatges. A partir d’aquest disseny es durà a terme el desenvolupament del codi.
+</p>
+
+<p>
+Com es pot observar a la <span class="figref"><a href="#figXXX1"><span>figura</span></a></span>, hi ha una sèrie de característiques que són clau per poder aprofitar al màxim els beneficis de l’orientació a objectes:
+</p>
+<ul>
+<li class="level1"><div class="li"> Abstracció</div>
+</li>
+<li class="level1"><div class="li"> Herència</div>
+</li>
+<li class="level1"><div class="li"> Encapsulació</div>
+</li>
+<li class="level1"><div class="li"> Polimorfisme</div>
+</li>
+<li class="level1"><div class="li"> Modularitat</div>
+</li>
+</ul>
+
+<p>
+Aquests termes caldrà que se segueixin de forma estricta en tot moment, ja que, en cas contrari, es perdrà tot el valor afegit que ofereix l’orientació a objectes. 
+</p>
+<div class="iocfigure"><a name="figXXX1"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Pilars de l’orientació a objectes
+
+</figcaption><img src="../media/wdamm05u3_10.png" alt="" /></figure>
+</div>
+</div>
+
+<h3><a id="abstraccio" >Abstracció</a></h3>
+<div class="level3">
+
+<p>
+Aquesta característica és l’evolució més important que s’ha desenvolupat a partir de la programació imperativa cap a la programació orientada a objectes. En aquest tipus de programació, el nivell d’abstracció és molt més alt. En programació, el concepte d’abstracció fa referència a l’aïllament a què es veu sotmès un objecte amb relació al seu voltant i amb la resta dels objectes amb què es relaciona. A l’hora de representar un element del món real mitjançant un objecte, l’abstracció ajudarà a identificar les característiques i els comportaments que defineixen aquest element per tal de convertir-lo en un objecte de programari per mitjà d’aquestes definicions.
+</p>
+
+<p>
+Hi ha un canvi en la forma de treballar per als programadors. Ja no serà tan important la implementació de cada atribut o de cada mètode d’un objecte, sinó que és més important la definició d’aquests components. Aquesta serà la tasca principal per a ells.
+</p>
+
+<p>
+Una <strong>classe</strong> es defineix com una descripció genèrica d’un grup d’objectes amb característiques i comportaments comuns. Aquest element, la classe, és el component principal de l’abstracció en la programació orientada a objectes.
+</p>
+
+</div>
+
+<h3><a id="herencia" >Herència</a></h3>
+<div class="level3">
+
+<p>
+Es tracta d’un tipus de jerarquia (juntament amb l’agregació) que es podrà donar entre elements de la programació orientada a objectes. Es pot entendre com una forma de reaprofitament de codi de programació. Aquesta característica és un dels pilars més importants de la programació orientada a objectes.
+</p>
+
+<p>
+L’herència permet l’aprofitament d’una característica (atribut o mètode) d’una classe per a una altra classe que comparteix part dels seus elements i/o comportaments. 
+</p>
+
+<p>
+Si hi ha un vincle entre dues classes i es detecta que una nova classe podrà aprofitar algun atribut o mètode ja implementat a una altra classe, a la nova només caldrà indicar-hi aquest vincle i implementar-hi els atributs o mètodes que siguin nous.
+</p>
+
+<p>
+A la <span class="figref"><a href="#figXXX2"><span>figura</span></a></span> podeu observar com hi ha una jerarquia entre les classes implementades, on la classe <em>filla</em> 3 està vinculada amb la classe <em>filla</em> 1. A la vegada, la classe <em>filla</em> 1 i la classe <em>filla</em> 2 tenen un vincle de dependència amb la classe <em>mare</em>. 
+</p>
+<div class="iocfigure"><a name="figXXX2"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Exemple d’herència
+
+</figcaption><img src="../media/wdamm05u3_11.png" alt="" /></figure>
+</div>
+<p>
+Aquest esquema ens portarà a la situació següent:
+</p>
+<ul>
+<li class="level1"><div class="li"> La classe <em>mare</em> té uns atributs i uns mètodes propis que podrà referenciar.</div>
+</li>
+<li class="level1"><div class="li"> La classe <em>filla</em> 1 i la classe <em>filla</em> 2 podran fer servir els atributs i els mètodes que permeti utilitzar la classe mare més els seus propis atributs i mètodes.</div>
+</li>
+<li class="level1"><div class="li"> La classe <em>filla</em> 3 podrà fer servir els atributs i els mètodes de la classe <em>filla</em> 1 i de la classe <em>mare</em>, a més dels que la pròpia classe <em>filla</em> 3 implementi com a propis.</div>
+</li>
+</ul>
+
+<p>
+Com a exemple per a aquestes classes <em>mare</em> i <em>filles</em> es podrien identificar la classe <code>Estudiants</code>, com a classe <em>mare</em>, i <code>Estudiant CFGM</code> i <code>Estudiant CFGS</code> com a classes <em>filles</em>. La classe <em>mare</em> <code>Estudiants</code> contindrà tota la informació referent als estudiants d’un centre d’educació secundària, com poden ser les seves dades personals.
+</p>
+
+<p>
+Les classes <em>filles</em> <code>Estudiant CFGM</code> i <code>Estudiant CFGS</code> hereten de la classe <em>mare</em> <code>Estudiants</code>, podent utilitzar i accedir a tots els atributs i els mètodes de la seva classe <em>mare</em> (ja que són característiques que comparteixen les tres classes). Les tres classes compartiran codi de programació, aquell que és comú a les tres. A més, cada classe <em>filla</em> tindrà atributs i mètodes específics, com poden ser els relacionats amb els mòduls del cicle que estudien o, en el cas dels alumnes de grau mitjà, les dades referents als seus representants legals, en el cas de ser alumnes menors d’edat, informació que a la classe <code>Estudiant CFGS</code> no li caldrà.
+</p>
+
+<p>
+Una evolució de l’herència serà l’herència múltiple, on una classe podrà tenir més d’una classe <em>mare</em>.
+</p>
+
+<p>
+Un altre tipus de jerarquia és l’agregació. A diferència de l’herència, en el cas de l’agregació un objecte està format per la combinació d’altres objectes.
+</p>
+
+<p>
+A la figura <span class="figref"><a href="#figXXX3"><span>figura</span></a></span> podeu observar un exemple d’agregació. Un ordinador es compon d’una CPU, una pantalla i un teclat. Aquests components no tenen sentit sense l’existència de l’altre component, l’ordinador.
+</p>
+<div class="iocfigure"><a name="figXXX3"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Agregació
+
+</figcaption><img src="../media/wdamm05u3_12.png" alt="" /></figure>
+</div>
+</div>
+
+<h3><a id="encapsulacio" >Encapsulació</a></h3>
+<div class="level3">
+
+<p>
+L’encapsulació permet escollir quina de les dades d’un objecte, atributs o mètodes, estaran disponibles i quina o quines estaran protegides de la resta dels objectes. Precisament, el concepte d’encapsulació es refereix a aquesta forma d’unir i preservar els atributs i els mètodes d’un objecte de la resta, de formar una espècie de paquet unit i tancat. També es coneix com a ocultació de la informació.
+</p>
+
+<p>
+Les opcions que tindrà un programador per especificar les característiques que podran tenir els seus membres acostumen a ser tres: públiques, protegides i privades.
+</p>
+<ul>
+<li class="level1"><div class="li"> <strong>Públiques</strong>: tota la resta d’objectes podran accedir als membres de forma directa per mitjà del seu nom sense restriccions. En UML es representa amb el símbol <code>+</code>.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Protegides</strong>: només podran accedir-hi la pròpia classe i totes les subclasses relacionades de forma jeràrquica. En UML es representa amb el símbol <code>#</code>.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Privades</strong>: només els mètodes de la mateixa classe podran accedir als seus membres considerats privats. Cap altra classe hi podrà accedir. En UML es representa amb el símbol <code>-</code>.</div>
+</li>
+</ul>
+
+<p>
+El més habitual és indicar que els atributs dels objectes seran dades privades i que no hi podran accedir altres objectes de forma directa. En canvi, els mètodes són públics, s’ofereixen com a interfícies d’accés a partir de les quals es podrà accedir a fer algunes accions sobre les dades.
+</p>
+
+</div>
+
+<h3><a id="polimorfisme" >Polimorfisme</a></h3>
+<div class="level3">
+
+<p>
+Es tracta d’una característica força útil i representativa de la programació orientada a objectes. En termes lingüístics, el polimorfisme representa la possibilitat que dues formes lèxiques identifiquin el mateix concepte. 
+</p>
+
+<p>
+En termes informàtics, en la <strong>programació orientada a objectes</strong>, un mateix mètode podrà tenir diferents formes i funcionalitats segons com siguin la seva definició i la seva implementació.
+</p>
+
+<p>
+Això possibilitarà als programadors que puguin fer servir aquest mètode amb objectius diferents segons els convingui. Per exemple, dues classes <em>filles</em> poden heretar d’una mateixa classe <em>mare</em>. La classe <em>mare</em> disposarà d’una sèrie de mètodes que seran implementats (amb el mateix nom) de forma diferent a cada <em>fill</em>. Això pot donar-se, per exemple, en el cas d’una classe <em>mare</em> <code>Treballador</code> i dues classes <em>filles</em> <code>Administratiu</code> i <code>Directiu</code>. El mètode <code>càlcul salari</code> que estarà definit a la classe <em>mare</em> serà implementat de manera diferent per a les dues classes <em>filles</em>. 
+</p>
+
+<p>
+Existeixen dues formes de polimorfisme en termes informàtics. Una es coneix com a <strong>sobreescriptura</strong> (o <em>override</em>), l’altra és la <strong>sobrecàrrega d’operadors</strong> (o <em>overload</em>).
+</p>
+
+<p>
+<strong>La sobreescriptura</strong> es basa en l’exemple que s’acaba d’exposar: la reimplementació de mètodes que s’han heretat d’una superclasse sense modificar ni el nom del mètode ni el nombre de paràmetres que rebrà ni els valors que retornarà.
+</p>
+
+<p>
+<strong>La sobrecàrrega</strong> d’operadors permet implementar un mateix mètode amb el mateix nom més d’una vegada. La diferència entre les diferents implementacions recaurà en el nombre de paràmetres de cada una. A l’hora de cridar als mètodes, en funció del nombre de paràmetres utilitzats, el compilador sabrà si ha de fer servir una versió o una altra de la implementació del mètode. Per exemple, a la classe anomenada <code>Paral·lelogram</code> tindrem dues funcions <code>dibuixa</code>. La primera només rebrà un paràmetre, un valor enter que expressarà la mida d’un costat. La segona rebrà dos paràmetres, dos valors enters que expressaran la mida de dos costats. Al primer mètode, en rebre només un valor, el paral·lelogram que es dibuixarà serà un quadrat, i per això amb un valor serà suficient. Al segon mètode es dibuixarà un rectangle a partir dels dos valors rebuts.
+</p>
+
+</div>
+
+<h3><a id="modularitat" >Modularitat</a></h3>
+<div class="level3">
+
+<p>
+Aquesta característica de la programació orientada a objectes es refereix a la capacitat de treballar de forma modular, és a dir, per mòduls. Això permet el treball independent entre classes. Si cal modificar un mètode o qualsevol altra característica d’una classe, es podrà fer de forma independent a la resta de classes del programari, sense afectar al seu funcionament. 
+</p>
+
+<p>
+Tal com s’ha comentat anteriorment, és molt important que una aplicació desenvolupada sota els paradigmes de la programació orientada a objectes segueixi les característiques de la modularitat, l’abstracció, l’herència, el polimorfisme i l’encapsulació. Si no se segueixen aquests conceptes no es podrà considerar que una aplicació hagi estat desenvolupada amb orientació a objectes.
+</p>
+
+</div>
+
+	 </article>
+     <div class="pnpage">
+      <div class="left-corner"></div>
+      <div id="prevpage">Anar a la p&agrave;gina anterior:<br /><a href="../../../WebContent/u3/a1/exercicis.html">Exercicis</a></div>
+      <div id="nextpage">Anar a la p&agrave;gina seg&uuml;ent:<br /><a href="../../../WebContent/u3/a2/continguts.html">Diagrames dinàmics</a></div>
+      <div class="right-corner"></div>
+     </div>
+    </div>
+    <footer class="footer">
+      <div><small>Aquest document està subjecte a una llicència oberta de Creative Commons, es reserva el dret de reconeixement de l'autoria, d'exigir que no se'n faci cap mena d'ús comercial. Si altereu o transformeu aquesta obra, o en genereu obres derivades, només podeu distribuir l'obra generada amb una llicència idèntica a aquesta.</small></div>
+    </footer>
+ </div>
+ <div id="back_preview" class="hidden"></div>
+ <div id="preview" class="hidden">
+  <div class="prevcontent"></div>
+ </div>
+ <div id="help-tooltips">
+  <div id="help-toc" class="hidden tooltip"><span>Taula de continguts:</span> Ofereix una vista general de l&#39;estructura del m&ograve;dul, que us facilitar&agrave; la navegaci&oacute; a trav&eacute;s dels seus continguts.<span class="arrow-left"></span></div> 
+  <div id="help-settings" class="hidden tooltip"><span>Opcions de format:</span> Permet configurar el format de lectura a partir de les vostres prefer&egrave;ncies, modificant la mida de la lletra, el color del fons, l&#39;amplada de la p&agrave;gina o l&#39;ocultaci&oacute; dels continguts complementaris, entre d&#39;altres.<span class="arrow-left"></span></div>
+  <div id="help-printer" class="hidden tooltip"><span>Imprimir:</span>  Envia el contingut seleccionat a la impressora.<span class="arrow-left"></span></div>
+  <div id="help-favorites" class="hidden tooltip"><span>Prefereits:</span> Permet desar aquelles parts del contingut a les que us interessi accedir en un moment posterior; us permetr&agrave; anar creant un repositori personalitzat de les seccions que considereu m&eacute;s rellevants. Un cop l&#39;hageu començat a fer servir se us mostrar&agrave; a sota un comptador que us informar&agrave; del nombre de preferits que s&#39;hagin emmagatzemat fins al moment.<span class="arrow-left"></span></div>
+  <div id="help-favcounter" class="hidden tooltip"><span>Comptador i llistat de preferits:</span> Indica el nombre de preferits que s&#39;han desat fins el moment; clicant damunt seu accedireu al llistat de preferits, i a trav&eacute;s d&#39;aquest podreu accedir directament als continguts que hageu emmagatzemat.<span class="arrow-left"></span></div>
+  <div id="help-help_icon" class="hidden tooltip"><span>Ajuda:</span> Aquesta opci&oacute; activa la informaci&oacute; de les funcionalitats del web tot situant el punter del ratol&iacute; al damunt dels diferents &iacute;tems.<span class="arrow-left"></span></div>
+  <div id="help-sidebar-hide" class="hidden tooltip"><span>Mostrar/Ocultar barra lateral:</span>  Deshabilita la barra d&#39;opcions, permetent la seva recuperaci&oacute; quan es desitgi.<span class="arrow-left"></span></div>
+  <div id="help-search" class="hidden tooltip"><span>Cerca:</span>  Introdu&iuml;u les paraules clau sobre aquells conceptes que desitgeu localitzar en els continguts del m&ograve;dul. Tamb&eacute; podeu excloure un terme de la cerca tot afegint-hi el signe &#8220;-&#8221; al davant.<span class="arrow-top"></span></div>
+  <div id="help-header" class="hidden tooltip"><span>Cap&ccedil;alera:</span>  Indica l&#39;apartat o secci&oacute; que es mostra en pantalla. Tingueu present que les capçaleres de segon, tercer i quart nivell tamb&eacute; es poden desar com a marcadors.<span class="arrow-left"></span></div>
+</div> 
+</body>
+</html>

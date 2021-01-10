@@ -1,0 +1,1371 @@
+<!doctype html>
+
+<!--[if lt IE 7 ]> <html class="ie ie6 no-js" lang="ca"> <![endif]-->
+<!--[if IE 7 ]>    <html class="ie ie7 no-js" lang="ca"> <![endif]-->
+<!--[if IE 8 ]>    <html class="ie ie8 no-js" lang="ca"> <![endif]-->
+<!--[if IE 9 ]>    <html class="ie ie9 no-js" lang="ca"> <![endif]-->
+<!--[if gt IE 9]><!--><html class="no-js" lang="ca"><!--<![endif]-->
+<!-- the "no-js" class is for Modernizr. -->
+
+<head id="www-sitename-com" data-template-set="html5-reset">
+
+	<meta charset="utf-8">
+	
+	<!-- Always force latest IE rendering engine (even in intranet) & Chrome Frame -->
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	
+	<title>Llenguatges de marques i sistemes de gestió d'informació</title>
+	
+<!-- <meta name="title" content=""> --> 
+	<meta name="description" content="">
+	<!-- Google will often use this as its description of your page/site. Make it good. -->
+	
+	<meta name="google-site-verification" content="">
+	<!-- Speaking of Google, don't forget to set your site up: http://google.com/webmasters -->
+	
+	<meta name="author" content="Institut Obert de Catalunya">
+	<meta name="Copyright" content="Copyright Institut Obert de Catalunya 2011. All Rights Reserved.">
+
+	<!-- Dublin Core Metadata : http://dublincore.org/ -->
+	<meta name="DC.title" content="Llenguatges de marques i sistemes de gestió d'informació">
+	<meta name="DC.subject" content="Informàtica i comunicacions">
+	<meta name="DC.creator" content="Institut Obert de Catalunya">
+	
+	<!--  Mobile Viewport Fix
+	j.mp/mobileviewport & davidbcalhoun.com/2010/viewport-metatag 
+	device-width : Occupy full width of the screen in its current orientation
+	initial-scale = 1.0 retains dimensions instead of zooming out if page height > device height
+	maximum-scale = 1.0 retains dimensions instead of zooming in if page width < device width
+	-->
+	<!-- Uncomment to use � use thoughtfully!
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+	-->
+
+	<link rel="shortcut icon" href="../../../img/favicon.ico">
+	<!-- This is the traditional favicon.
+		 - size: 16x16 or 32x32
+		 - transparency is OK
+		 - see wikipedia for info on browser support: http://mky.be/favicon/ -->
+		 
+	<link rel="apple-touch-icon" href="../../../img/apple-touch-icon.png">
+	<!-- The is the icon for iOS's Web Clip.
+		 - size: 57x57 for older iPhones, 72x72 for iPads, 114x114 for iPhone4's retina display (IMHO, just go ahead and use the biggest one)
+		 - To prevent iOS from applying its styles to the icon name it thusly: apple-touch-icon-precomposed.png
+		 - Transparency is not recommended (iOS will put a black BG behind the icon) -->
+	
+	<!-- CSS: screen, mobile & print are all in the same file -->
+	<link rel="stylesheet" href="../../../_/css/style.css">
+
+	<!-- CSS: jQuery UI -->
+	<link rel="stylesheet" href="../../../_/css/jquery-ui.css">
+	
+	<!-- all our JS is at the bottom of the page, except for Modernizr. -->
+	<script src="../../../_/js/modernizr-1.7.min.js"></script>
+	<script src="../../../_/js/Hyphenator.js" type="text/javascript"></script>
+	<script type="text/javascript">
+	   Hyphenator.config({
+		minwordlength : 4
+	   });
+	   Hyphenator.run();
+	</script>
+    <script src="../../../_/js/build.js" type="text/javascript"></script>
+</head>
+
+<body class="style-newspaper">
+
+<div class="wrapper"><!-- not needed? up to you: http://camendesign.com/code/developpeurs_sans_frontieres -->
+
+	<header id="header">
+		<div class="head"><a href="http://ioc.gencat.cat"><img src="../../../img/logo.png" alt="Institut Obert de Catalunya"/></a><a href="http://creativecommons.org/licenses/by-nc-sa/3.0/es/deed.ca"><img src="../../../img/license.png" alt="Llic&egrave;ncia" class="license"/></a></div>
+		<div class="headdocument"><a href="../../../index.html">Llenguatges de marques i sistemes de gestió d'informació</a></div>
+        <div id="search" class="search" name="search">
+         <form id="frmsearch" action="../../../search.html" method="get">
+          <input type="text" name="q"/>
+        </form>
+        </div>
+	</header>
+   <div id="upbutton" class="upbutton" style="display:none;"><img src="../../../img/uparrow.png" alt="Pujar a l'inici de p&agrave;gina"/></div>
+   <aside id="aside">
+    <div id="menu">
+      <ul>
+       <li name="toc"><div><img src="../../../img/toc.png" alt="&Iacute;ndex"/></div></li>
+       <li name="settings"><div><img src="../../../img/settings.png" alt="Configuraci&oacute;"/></div></li>
+       <li name="printer"><div><img src="../../../img/printer.png" alt="Imprimir"/></div></li>
+       <li name="favorites"><div><img src="../../../img/favorites.png" alt="Favorits"/></div></li>
+       <li name="help_icon" class="help_icon"><div><img src="../../../img/help_icon.png" alt="Ajuda"/></div></li>
+      </ul>
+     </div>
+   </aside>
+   <div id="sidebar-hide" name="sidebar-hide"><img src="../../../img/arrows.png"/></div>
+   <section>
+     <div id="toc" class="hidden">
+      <div class="menucontent">
+        <ul>
+        <li id="u4" class="parentnode"><p><a class="unit" href="../../../WebContent/u4/introduccio.html">4. Sistemes de gestió empresarial</a></p><ul class="expander"><li id="u4introduccio"><a href="../../../WebContent/u4/introduccio.html">Introducció</a></li><li id="u4resum"><a href="../../../WebContent/u4/resum.html">Resum</a></li><li id="u4objectius"><a href="../../../WebContent/u4/objectius.html">Resultats d'aprenentatge</a></li><li id="u4referencies"><a href="../../../WebContent/u4/referencies.html">Referències</a></li><li id="u4a1" class="tocsection"><p id='u4a1continguts'><a class="section" href="../../../WebContent/u4/a1/continguts.html">Sistemes empresarials de gestió d'informació</a><span class="buttonexp"></span></p><ul><li id="u4a1activitats"><a href="../../../WebContent/u4/a1/activitats.html">Activitats</a></li><li id="u4a1exercicis"><a href="../../../WebContent/u4/a1/exercicis.html">Exercicis d'autoavaluació</a></li></ul></li><li id="u4a2" class="tocsection"><p id='u4a2continguts'><a class="section" href="../../../WebContent/u4/a2/continguts.html">Serveis web</a><span class="buttonexp"></span></p><ul><li id="u4a2activitats"><a href="../../../WebContent/u4/a2/activitats.html">Activitats</a></li><li id="u4a2exercicis"><a href="../../../WebContent/u4/a2/exercicis.html">Exercicis d'autoavaluació</a></li></ul></li><li id="u4a3" class="tocsection"><p id='u4a3continguts'><a class="section" href="../../../WebContent/u4/a3/continguts.html">Informàtica en núvol</a><span class="buttonexp"></span></p><ul><li id="u4a3activitats"><a href="../../../WebContent/u4/a3/activitats.html">Activitats</a></li><li id="u4a3exercicis"><a href="../../../WebContent/u4/a3/exercicis.html">Exercicis d'autoavaluació</a></li></ul></li></ul></li><li id="" class="indexnode"><p><a href="../../../index.html">Anar a l&#39;&iacute;ndex general</a></p></li>
+        </ul>
+      </div>
+    </div>
+   </section>
+   <section>
+   <div id="settings" class="hidden">
+    <div class="menucontent">
+     <div class="allsettings">
+     <div class="settings">
+      <label>Font i Color</label>
+		<div class="setting-option">
+	        <ul class="fontBackground">
+				<li id="style-newspaper" title="Newspaper" class="appearance-style-newspaper"><span>Newspaper</span></li>
+                <li id="style-novel" title="Novel" class="appearance-style-novel"><span>Novel</span></li>
+                <li id="style-ebook" title="eBook" class="appearance-style-ebook"><span>eBook</span></li>
+				<li id="style-inverse" title="Inverse" class="appearance-style-inverse active"><span>Inverse</span></li>
+				<li id="style-athelas" title="Athelas" class="appearance-style-athelas"><span>Athelas</span></li>
+			</ul>
+		</div>
+     </div>
+	<div class="settings">
+      <label>Amplada</label>
+		<div class="setting-option">
+	        <div id="slider-width"></div>
+		</div>
+     </div>
+     <div class="settings">
+      <label>Mida de la font</label>
+		<div class="setting-option">
+	        <div id="slider-font"></div>
+		</div>
+     </div>
+     <div class="settings">
+      <label>Mida de la font</label>
+	  <div class="setting-option">
+       <form action="" class="sett-options">
+		<ul>
+		    <li><input type="checkbox" id="secondary-content" /><label for="secondary-content">Mostra recursos complementaris</label></li>
+		    <li><input type="checkbox" id="main-images" /><label for="main-images">Mostra imatges</label></li>
+		    <li><input type="checkbox" id="text-alignment" /><label for="text-alignment">Text justificat</label></li>
+			<li><input type="checkbox" id="text-hyphen" /><label for="text-hyphen">Partici&oacute; sil·l&agrave;bica</label></li>
+		</ul>
+       </form>
+	  </div>
+     </div>
+     </div>
+    </div>
+   </div>
+   </section>
+ <section>
+ <div id="favorites" class="hidden"></div>
+ </section>   
+ <div id="bridge" class="hidden"></div>
+ <div id="help" class="hidden">
+  <div class="helptitle">Dreceres del teclat<hr></div>
+  <div class="helpsection"><span>General</span>
+   <ul>
+    <li><span class="shortcut">g</span>: Anar al men&uacute; de navegaci&oacute;</li>
+    <li><span class="shortcut">o</span>: Anar a opcions</li>
+    <li><span class="shortcut">s</span>: Guardar la p&agrave;gina actual a favorits</li>
+    <li><span class="shortcut">p</span>: Imprimir la p&agrave;gina actual</li>
+    <li><span class="shortcut">?</span>: Mostrar/Ocultar l&#39;ajuda</li>
+   </ul>
+  </div>
+  <div class="helpsection"><span>Navegaci&oacute;</span>
+   <ul>
+    <li><span class="shortcut">i</span>: Anar a l&#39;&iacute;ndex general</li>
+    <li><span class="shortcut">t</span>: Anar a l&#39;inici de p&agrave;gina</li>
+    <li><span class="shortcut">b</span>: Anar al final de p&agrave;gina</li>
+    <li><span class="shortcut">j</span>: Anar cap endavant dintre la p&agrave;gina</li>
+    <li><span class="shortcut">k</span>: Anar cap enrere dintre la p&agrave;gina</li>
+    <li><span class="shortcut">h</span>: Anar a la p&agrave;gina anterior:</li>
+    <li><span class="shortcut">l</span>: Anar a la p&agrave;gina seg&uuml;ent:</li>
+   </ul>
+   </div>
+ </div>
+ <div id="favcounter" name="favcounter" class="hidden"><span></span></div>
+ <div id="navmenu" class="navmenu"><ul class="webnav"><li><a href="../../../index.html" title="Anar a l&#39;&iacute;ndex general">Inici</a></li><li><a href="../introduccio.html">Sistemes de gestió empresarial</a></li><li>Sistemes empresarials de gestió d'informació</li></ul></div>
+	<div id="content" lang="ca" class="hyphenate text">
+     <article lang="ca" class="sheet">
+        <h1><a id="sistemes_empresarials_de_gestio_d_informacio"> Sistemes empresarials de gestió d'informació </a></h1>
+    	
+<p>
+Els sistemes informàtics han canviat la manera de treballar de les empreses en molts aspectes però sobretot en el camp de <strong>la informàtica de gestió</strong>. Però la informatització de les empreses no acaba en la informàtica de gestió, ja que actualment es fan servir sistemes informàtics per controlar pràcticament qualsevol dels aspectes del seu funcionament, des de la facturació fins al detall més mínim de la relació amb els clients; i tot amb l’objectiu d’aconseguir que les empreses siguin més competitives i eficients.
+</p>
+<div class="iocnote"><div class="ioccontent">
+<p>
+La informàtica de gestió és una de les branques més importants de la informàtica ja que és l’encarregada de donar suport als sistemes d’informació de les empreses.
+</p>
+</div></div>
+<h2><a id="objectius_basics" >Objectius bàsics</a></h2>
+<div class="level2">
+
+<p>
+Si bé inicialment els programes informàtics només es feien servir per agilitzar les tasques de l’empresa, actualment tenen un paper fonamental en moltes empreses. 
+</p>
+
+<p>
+Essent molt generalistes podem dir que els sistemes informàtics s’han implantat amb dos objectius bàsics:
+</p>
+<ul>
+<li class="level1"><div class="li"> <strong>Facilitar les tasques als treballadors</strong>. </div>
+</li>
+<li class="level1"><div class="li"> <strong>Facilitar les preses de decisions dels dirigents</strong>.</div>
+</li>
+</ul>
+
+<p>
+És des d’aquest prisma que sovint es fan les valoracions sobre l’èxit o el fracàs de la implantació d’un sistema informàtic en una empresa.
+</p>
+
+</div>
+
+<h3><a id="presa_de_decisions" >Presa de decisions</a></h3>
+<div class="level3">
+
+<p>
+Un dels objectius comuns en gairebé totes les organitzacions és obtenir i mantenir un avantatge competitiu, que a la vegada proporciona un avantatge a llarg termini. Això planteja un seguit de qüestions, com ara:
+</p>
+<ul>
+<li class="level1"><div class="li"> S’ha d’invertir? </div>
+</li>
+<li class="level1"><div class="li"> S’ha de produir més?</div>
+</li>
+<li class="level1"><div class="li"> S’ha de contractar més personal? </div>
+</li>
+<li class="level1"><div class="li"> … </div>
+</li>
+</ul>
+
+<p>
+Malgrat que totes les empreses són diferents, tenen en comú que aquest avantatge competitiu sovint es basa en la <strong>presa de decisions en el moment adequat</strong>, i normalment en <strong>un curt espai de temps</strong>, ja que descobrir tard les necessitats del mercat pot fer que algú altre se n’aprofiti i aconsegueixi posicionar-se i sigui molt difícil competir-hi.
+</p>
+
+<p>
+El fet que les decisions que es prenguin puguin afectar directament el futur de l’empresa i que s’hagin de prendre en el moment adequat fan dels sistemes informàtics un recurs valuosíssim per a qualsevol organització. Les decisions ja no s’han de prendre per <em>intuïcions</em> ni de manera aleatòria, sinó basades en les dades que es poden obtenir dels sistemes informàtics.
+</p>
+
+<p>
+Podem dividir les dades en dos grans grups:
+</p>
+<ul>
+<li class="level1"><div class="li"> <strong>Dades internes</strong>: generades per l’empresa mateixa, com ara nombre de vendes, preus dels proveïdors i capacitat de producció de l’empresa.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Dades de l’entorn</strong>: la situació del mercat, els competidors, la legislació…</div>
+</li>
+</ul>
+<div class="iocimportant"><div class="ioccontent">
+<p>
+Una de les funcions determinants de les empreses és extreure informació a partir de les dades que pugui recollir però s’hi ha d’afegir un factor important: aquesta informació ha d’estar disponible en el moment oportú.
+</p>
+</div></div>
+<p>
+El problema més gran rau en el fet que la societat de la informació està fent que tothom rebi una gran quantitat de dades al dia i a pesar que moltes d’aquestes dades són irrellevants per als objectius de l’empresa n’hi ha moltes que són o podrien ser importants en la presa de decisions i per tant s’han de poder detectar.
+</p>
+
+<p>
+Això fa que les empreses es vegin obligades a tractar una gran quantitat d’informació, i la gestió d’aquesta informació és una pràctica costosa tant en l’ús de recursos com en persones. 
+</p>
+
+<p>
+Per aquest motiu els sistemes informàtics són bàsics per proporcionar els mecanismes per <strong>destriar les dades que serveixen de les que no serveixen</strong>, per organitzar i classificar les dades amb vista a obtenir la informació necessària en el moment adequat.
+</p>
+
+</div>
+
+<h3><a id="facilitar_les_tasques" >Facilitar les tasques</a></h3>
+<div class="level3">
+
+<p>
+El fet que la informatització ha facilitat les tasques que havien de dur a terme els treballadors es veu molt clarament en el que ha passat en el procés de transaccions de les empreses. El procés de transaccions comprèn tota una sèrie de tasques rutinàries com control d’estocs, elaboració d’albarans, elaboració de factures, o comptabilitat que s’han de fer en una empresa i que abans requerien molts recursos per desenvolupar-se, com mostra la <span class="figref"><a href="#fig156"><span>figura</span></a></span>. 
+</p>
+<div class="iocnote"><div class="ioccontent">
+<p>
+El fet que les activitats del procés de transaccions siguin rutinàries no vol dir que no siguin importants ja que el mal funcionament d’alguna d’aquestes tasques pot portar greus problemes a les empreses.
+</p>
+</div></div>
+<p>
+Aquest procés es caracteritza pel fet de tenir una gran quantitat de dades d’entrada a les quals s’aplica un procés, que no sol ser gaire complex, i que genera una gran quantitat de sortides. 
+</p>
+<div class="iocfigure"><a name="fig156"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Procés de transaccions d’una empresa
+
+</figcaption><img src="../media/asxm04u4_01.png" alt="" /></figure>
+</div>
+<p>
+Abans de l’aparició de la informàtica, aquests processos, tot i que no solen ser complexos, consumien una gran quantitat de recursos: s’hi havia de destinar molt de personal, calia lloc per emmagatzemar les dades…
+</p>
+
+<p>
+La informatització va agilitzar notablement aquests processos, alliberant molts dels recursos que es dedicaven al procés de transaccions per destinar-los a altres tasques. L’èxit va ser tan gran que actualment el procés de transaccions informatitzat està implementat en qualsevol empresa.
+</p>
+
+<p>
+Els sistemes informàtics han contribuït i estan contribuint a fer les tasques <strong>més ràpides</strong> i <strong>menys propenses a errors</strong> i per tant permeten a les empreses reduir costos i oferir més bon servei.
+</p>
+
+</div>
+
+<h2><a id="programari_empresarial" >Programari empresarial</a></h2>
+<div class="level2">
+
+<p>
+Hi ha una gran i molt variada quantitat d’aplicacions que es poden fer servir en les empreses. Els programes que es fan servir en les empreses van des de programes d’ofimàtica fins a programes totalment especialitzats per a una empresa d’un sector concret. 
+</p>
+<div class="iocimportant"><div class="ioccontent">
+<p>
+Per <em>programari empresarial</em> s’entén qualsevol tipus de programari que ajudi a mesurar o millorar la seva activitat. 
+</p>
+</div></div>
+<p>
+És molt difícil fer una classificació del programari empresarial però una de possible és basar-se en quina és la idea base per crear-lo. Des d’aquest punt de vista podem dividir el programari que es fa servir per gestionar una empresa en:
+</p>
+<ul>
+<li class="level1"><div class="li"> Aplicacions genèriques.</div>
+</li>
+<li class="level1"><div class="li"> Programari a mida.</div>
+</li>
+<li class="level1"><div class="li"> Programari estàndard.</div>
+</li>
+<li class="level1"><div class="li"> ERP (programari de gestió integrada o <em>enterprise resource planning</em>).</div>
+</li>
+</ul>
+
+<p>
+En general les empreses grans solen tenir un control més gran sobre tots els aspectes del negoci, mentre que les més petites tendeixen a tenir un programari amb funcions similars però amb un cost i funcions inferiors.
+</p>
+
+</div>
+
+<h3><a id="aplicacions_generiques" >Aplicacions genèriques</a></h3>
+<div class="level3">
+
+<p>
+En les empreses també es fan servir tota una sèrie d’aplicacions que no estan desenvolupades específicament per a la gestió de l’empresa sinó que són de caràcter més general, com aplicacions ofimàtiques, navegadors web o programes de correu.
+</p>
+
+<p>
+Aquestes aplicacions, tot i que no estan desenvolupades específicament per a la gestió de l’empresa, a vegades hi tenen un paper molt important; els navegadors web, per exemple, són vitals per a l’accés a alguns serveis web; o pel que fa a l’exportació de dades, se solen importar en algun paquet ofimàtic per fer estadístiques o anàlisi de resultats que no estan definits en el programa de gestió principal.
+</p>
+
+<p>
+Fins i tot es donen casos d’empreses molt petites que poden fer servir programes genèrics com per exemple aplicacions ofimàtiques per portar un control simplificat de la seva activitat empresarial.
+</p>
+
+</div>
+
+<h3><a id="programari_a_mida" >Programari a mida</a></h3>
+<div class="level3">
+
+<p>
+En els principis de l’adopció de la informàtica per part de les empreses el més corrent era que aquestes empreses definissin els seus sistemes informàtics fent un programa que s’adaptés perfectament al seu funcionament o a les seves necessitats.
+</p>
+<div class="iocimportant"><div class="ioccontent">
+<p>
+El programari a mida consisteix a desenvolupar un nou programa informàtic que permeti informatitzar l’activitat de l’empresa.
+</p>
+</div></div>
+<p>
+La idea és contractar informàtics per desenvolupar un programa que permeti informatitzar les tasques de la gestió de l’empresa. Com que es tracta de programes específics per a l’organització, aquests programes <strong>s’adapten perfectament a les seves necessitats</strong>.
+</p>
+
+<p>
+Però aquests programes també presenten una sèrie de problemes:
+</p>
+<ul>
+<li class="level1"><div class="li"> S’ha d’analitzar amb detall el funcionament de l’empresa per comprendre perfectament què es vol fer. </div>
+</li>
+<li class="level1"><div class="li"> La implantació és un procés llarg i propens a errors, ja que el programa no s’ha provat abans.</div>
+</li>
+<li class="level1"><div class="li"> S’adapten tan bé a l’empresa que qualsevol canvi en el funcionament normalment provoca que també s’hagin de fer canvis en el programari. Això fa que aquest tipus de programari sigui molt car de mantenir.</div>
+</li>
+</ul>
+
+</div>
+
+<h3><a id="programari_estandard" >Programari estàndard</a></h3>
+<div class="level3">
+<div class="iocimportant"><div class="ioccontent">
+<p>
+El programari estàndard de gestió d’empreses és un programari desenvolupat específicament per poder funcionar en la majoria d’organitzacions.
+</p>
+</div></div>
+<p>
+El programari estàndard està pensat específicament per fer tasques concretes en una empresa genèrica global o d’un sector concret. La idea que hi ha al darrere d’aquestes aplicacions és intentar abaratir els costos i minimitzar els errors que es produeixen en el desenvolupament d’aplicacions a mida oferint un paquet que faci les funcions tan genèricament com sigui possible perquè es pugui usar en diferents empreses. 
+</p>
+<div class="iocnote"><div class="ioccontent">
+<p>
+Tot i la semblança entre les tasques de les empreses, les petites especificitats que les fan diferents són les que les defineixen realment.
+</p>
+</div></div>
+<p>
+Tot i que les empreses són totes diferents, la realitat és que hi ha una part molt important de tasques que és comuna a totes. I gràcies a això es poden crear paquets genèrics que es poden reutilitzar en diferents empreses.
+</p>
+
+<p>
+Aquest sistema permet:
+</p>
+<ul>
+<li class="level1"><div class="li"> Abaratir molt els costos perquè el programari ja està desenvolupat i provat. </div>
+</li>
+<li class="level1"><div class="li"> Reduir el temps d’implantació del programari. Generalment n’hi ha prou amb entrar les dades i ja es pot començar a treballar.</div>
+</li>
+</ul>
+
+<p>
+Existeixen molts programes d’aquest tipus que normalment es concentren en les necessitats de les petites i mitjanes empreses, oferint en un sol paquet control d’estocs, punt de venda, comptabilitat i facturació.
+</p>
+
+<p>
+Els inconvenients d’aquests programes estan en l’adaptació:
+</p>
+<ul>
+<li class="level1"><div class="li"> Totes les funcions estan pensades per funcionar “en qualsevol lloc” i per tant no solen adaptar-se perfectament a les especificitats de cap empresa.</div>
+</li>
+<li class="level1"><div class="li"> Poden provocar que sigui l’empresa la que s’hagi d’adaptar al funcionament del programa i no al revés.</div>
+</li>
+</ul>
+
+<p>
+A més, a vegades els programes que s’adaptarien més bé als diferents departaments d’una empresa no són del mateix desenvolupador. Per exemple, es pot donar el cas que el programa de comptabilitat que va més bé sigui el de la companyia A, mentre que el de gestió de magatzem sigui el de la companyia B. 
+</p>
+
+<p>
+Tenir programari de diferents empreses generalment provoca tota una sèrie de problemes però normalment el més important és “com ho fem perquè els programes es comuniquin les dades entre si sense problemes?”
+</p>
+
+<p>
+Fins i tot quan s’aconsegueix aquesta comunicació hi sol haver tota una sèrie de dades d’un programa que no es passaran mai a l’altre (sia perquè no les fa servir o perquè no li calen). I això genera el que anomenem <em>illes informàtiques</em>. 
+</p>
+<div class="iocimportant"><div class="ioccontent">
+<p>
+Es produeix una illa informàtica quan en una empresa hi ha diferents departaments que tenen les seves pròpies dades i només en comparteixen una part amb la resta de l’empresa.
+</p>
+</div></div>
+<p>
+A més s’ha de tenir en compte que els programes no són perfectes, i regularment s’hi solen detectar problemes, evolucionen, i en surten noves versions. Pot passar que una actualització d’algun dels programes faci que es generin problemes en l’intercanvi de dades amb els altres programes, que a partir d’una determinada funció es facin tasques de manera diferent…
+</p>
+
+<p>
+Malgrat aquests inconvenients, el programari estàndard és una opció molt vàlida que s’està fent servir en la gestió d’una gran quantitat d’empreses petites i mitjanes.
+</p>
+
+</div>
+
+<h3><a id="erp" >ERP</a></h3>
+<div class="level3">
+
+<p>
+En el moment en què va fer falta unir les diferents aplicacions dels diferents departaments d’una empresa es va veure que tenir un sistema d’emmagatzematge únic milloraria l’eficiència de l’organització. 
+</p>
+
+<p>
+Els programaris de gestió integrada o <em>enterprise resource planning</em> (ERP) van sorgir a partir dels sistemes industrials de planificació de recursos de fabricació o <em>material requeriment planning</em> (MRP i MPR II) amb l’objectiu d’integrar tots els sistemes d’informació de les empreses en un de sol (<span class="figref"><a href="#fig157"><span>figura</span></a></span>).
+</p>
+<div class="iocfigure"><a name="fig157"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Evolució dels sistemes informàtics empresarials
+
+</figcaption><img src="../media/asxm04u4_02.png" alt="" /></figure>
+</div>
+<p>
+El que fan els ERP és expandir el concepte d’MRP II a totes les àrees de negoci, des de finances i control de projectes fins a recursos humans.
+</p>
+<div class="iocimportant"><div class="ioccontent">
+<p>
+Els ERP són sistemes integrals per a la gestió de l’empresa. Es tracta d’un programa integrat que permet avaluar i gestionar el negoci.
+</p>
+
+<p>
+Són sistemes de gestió d’informació que automatitzen moltes de les tasques d’operació i producció dels negocis d’una empresa.
+</p>
+</div></div>
+<p>
+Estan <strong>formats per diferents components o mòduls</strong> que ofereixen solucions a determinats processos de negoci i que es poden integrar lliurement per formar l’aplicació final. El funcionament modular permet a qualsevol empresa poder adaptar el programa als canvis i a les necessitats de cada moment, integrant-hi o eliminant-ne mòduls segons les noves necessitats.
+</p>
+
+<p>
+A més, el fet de funcionar de manera modular permet que els ERP <strong>es puguin adaptar a un conjunt diferent d’empreses i sectors</strong> ja que cada empresa només cal que integri els mòduls que realment necessita.
+</p>
+
+<p>
+Molts dels ERP, mitjançant algun tipus d’eines de desenvolupament, <strong>permeten adaptar mòduls concrets a les necessitats</strong> particulars de l’empresa. 
+</p>
+
+<p>
+La gran diferència entre els ERP i les aplicacions tradicionals està en el fet que els ERP intenten abastar tots els processos de l’empresa i no solament una part, com feien les aplicacions tradicionals. Això fa que es puguin <strong>integrar totes les àrees i procediments de l’empresa en una sola aplicació</strong> i permet obtenir-ne una visió global d’una manera més senzilla.
+</p>
+
+<p>
+La integració de tots els aspectes del negoci en una mateixa aplicació fa que se <strong>simplifiquin les comunicacions entre els processos</strong>. Si partim d’un sistema tradicional els diferents departaments han d’establir múltiples comunicacions amb els altres departaments per poder fer la seva feina (<span class="figref"><a href="#fig158"><span>figura</span></a></span>).
+</p>
+<div class="iocfigure"><a name="fig158"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Comunicacions entre processos amb sistemes tradicionals
+
+</figcaption><img src="../media/asxm04u4_03.png" alt="" /></figure>
+</div>
+<p>
+En canvi, amb un ERP, els mòduls no cal que es comuniquin amb els altres mòduls; simplement ho han de fer amb la font de dades comuna (<span class="figref"><a href="#fig159"><span>figura</span></a></span>).
+</p>
+
+<p>
+Els ERP són conscients de l’ús d’aplicacions de propòsit general en les empreses i solen estar pensats per interactuar amb paquets d’ofimàtica o navegadors.
+</p>
+
+<p>
+Tampoc no han quedat aliens a l’explosió d’èxit que ha estat Internet:
+</p>
+<ul>
+<li class="level1"><div class="li"> Pràcticament tots permeten que s’hi pugui treballar des de navegadors web (i eliminen així la necessitat de clients específics). </div>
+</li>
+<li class="level1"><div class="li"> S’integren perfectament amb els programes de correu electrònic i comencen a oferir integració amb xarxes socials o correu electrònic.</div>
+</li>
+</ul>
+<div class="iocfigure"><a name="fig159"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Comunicacions entre processos amb un ERP
+
+</figcaption><img src="../media/asxm04u4_04.png" alt="" /></figure>
+</div>
+</div>
+
+<h4><a id="caracteristiques_dels_erp" >Característiques dels ERP</a></h4>
+<div class="level4">
+
+<p>
+Simplificant molt podem dir que un ERP està format per dos components bàsics (<span class="figref"><a href="#fig160"><span>figura</span></a></span>):
+</p>
+<div class="iocfigure"><a name="fig160"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Esquema bàsic d’un ERP
+
+</figcaption><img src="../media/asxm04u4_05.png" alt="" /></figure>
+</div><ul>
+<li class="level1"><div class="li"> Una base de dades centralitzada.</div>
+</li>
+<li class="level1"><div class="li"> Un grup de mòduls o aplicacions.</div>
+</li>
+</ul>
+
+</div>
+
+<h5><a id="base_de_dades_centralitzada" >Base de dades centralitzada</a></h5>
+<div class="level5">
+
+<p>
+Els ERP funcionen amb una base de dades centralitzada en què interactuen tots els programes de manera que les dades només s’emmagatzemen una sola vegada i mai no hi ha dades disgregades.
+</p>
+
+<p>
+
+</p>
+
+<p>
+Aquest repositori central de dades garanteix que, com que <strong>la informació és en un sol punt</strong>, en qualsevol moment es pugui obtenir una imatge de l’estat en què es troba l’empresa. Això elimina la possibilitat de creació d’“illes informàtiques”.
+</p>
+
+<p>
+També <strong>es minimitza l’intercanvi d’informació</strong> entre departaments i la possibilitat que algú treballi amb dades desactualitzades ja que la informació és la mateixa per a tothom.
+</p>
+
+</div>
+
+<h5><a id="moduls" >Mòduls</a></h5>
+<div class="level5">
+
+<p>
+Els mòduls són un conjunt d’aplicacions que es poden integrar per formar el sistema de programari. És bastant habitual que cadascun d’aquests mòduls coincideixi amb les unitats funcionals de l’empresa (compres, vendes, inventari, finances…).
+</p>
+
+<p>
+Per tant, un dels grans avantatges dels ERP respecte als altres sistemes és que <strong>amb un sol programa s’integra tota la gestió de l’empresa</strong>. Això porta avantatges associats:
+</p>
+<ul>
+<li class="level1"><div class="li"> <strong>El temps d’aprenentatge es redueix</strong> ja que no cal aprendre com funcionen diferents entorns, perquè és el mateix en tots els programes.</div>
+</li>
+<li class="level1"><div class="li"> <strong>El sistema es pot adaptar</strong> a les necessitats de cada moment de l’empresa, afegint nous mòduls per fer noves tasques o canviant la manera en què funcionen els mòduls instal·lats.</div>
+</li>
+</ul>
+
+<p>
+Tots els mòduls comparteixen la informació que van generant amb els altres mòduls de manera que en qualsevol punt es pot obtenir informació fiable i veraç.
+</p>
+
+</div>
+
+<h5><a id="inconvenients" >Inconvenients</a></h5>
+<div class="level5">
+
+<p>
+No tot són avantatges en els ERP; també tenen alguns inconvenients, com ara:
+</p>
+<ul>
+<li class="level1"><div class="li"> <strong>La implantació sol ser complexa</strong> ja que cal que hi intervingui i s’hi impliqui tota la empresa. Hi ha nombrosos exemples d’implantacions d’ERP que han fallat perquè no s’ha implicat tota la empresa en la implantació o per resistències al canvi d’alguns departaments.</div>
+</li>
+<li class="level1"><div class="li"> És bastant habitual que la implantació de l’ERP comporti que s’hagi de <strong>canviar la manera de funcionar d’algun procés</strong> de l’empresa per adaptar-lo a la manera de fer-ho de l’ERP, o bé que s’hagi de <strong>reprogramar algun mòdul per adaptar-se al funcionament l’empresa</strong>. Tot això fa que les fases de desenvolupament i prova dels canvis que s’han dut a terme siguin més importants, i que per tant el <strong>temps d’implantació encara sigui llarg</strong>.</div>
+</li>
+</ul>
+<div class="iocnote"><div class="ioccontent">
+<p>
+Normalment el temps d’implantació d’un ERP en una empresa supera l’any.
+</p>
+</div></div>
+<p>
+Però hi ha altres factors que poden fer que el temps d’implantació sigui més llarg, com ara:
+</p>
+<ul>
+<li class="level1"><div class="li"> Problemes en la integració de les dades existents en el nou sistema.</div>
+</li>
+<li class="level1"><div class="li"> Resistència d’alguns departaments al canvi. </div>
+</li>
+<li class="level1"><div class="li"> Problemes d’aprenentatge de les noves eines per part dels treballadors.</div>
+</li>
+</ul>
+
+<p>
+Un altre problema que s’ha de tenir en compte és que es passa a <strong>dependre d’un sol proveïdor de programari</strong>, i això converteix l’empresa en dependent del proveïdor i del seus <strong>costos de llicències i de manteniment</strong>, que sovint són importants.
+</p>
+
+<p>
+Per tant, els ERP ofereixen molts avantatges però <strong>no són recomanables per a empreses que canviïn sovint o que siguin molt descentralitzades</strong>. 
+</p>
+
+</div>
+
+<h4><a id="tipus_d_erp" >Tipus d&#039;ERP</a></h4>
+<div class="level4">
+
+<p>
+Mentre inicialment els ERP estaven pensats per funcionar en qualsevol empresa, independentment del sector en què treballaven, actualment es concentren més a adaptar-se per cobrir les necessitats de les petites i mitjanes empreses. D’aquesta manera han anat apareixent ERP destinats específicament a determinats sectors empresarials.
+</p>
+
+<p>
+Es podria fer una classificació dels ERP des d’un punt de vista de les empreses a què van dirigits en:
+</p>
+<ul>
+<li class="level1"><div class="li"> <strong>ERP horitzontals</strong>: aplicacions pensades per poder funcionar en qualsevol empresa.</div>
+</li>
+<li class="level1"><div class="li"> <strong>ERP verticals</strong>: aplicacions pensades per treballar en una activitat concreta.</div>
+</li>
+</ul>
+
+</div>
+
+<h5><a id="erp_verticals" >ERP verticals</a></h5>
+<div class="level5">
+
+<p>
+Un ERP vertical és una solució amb totes les funcionalitats estàndard com control de magatzem, compres, vendes o finances, però a més s’hi afegeixen les necessitats concretes d’un sector determinat i s’hi adapten.
+</p>
+
+<p>
+Un dels motius pels quals els ERP horitzontals tenen un temps d’implantació tan gran és perquè resolen molt bé tot el que és generalista però no solen resoldre gaire bé aquelles parts que són més específiques d’un sector industrial en concret. És en aquest punt que els ERP verticals prenen força ja que, com que són adaptats per desenvolupadors amb coneixements sobre l’entorn i el negoci, <strong>el temps d’implantació es redueix considerablement</strong>.
+</p>
+
+<p>
+En el cas dels ERP horitzontals, és corrent que el cost d’adaptació del programa sigui fins i tot superior al cost de les llicències, ja que calen moltes hores d’adaptació per aconseguir la integració amb l’empresa. En canvi, en el cas dels verticals, l’adaptació requereix pocs canvis i per tant el <strong>resultat final també té un cost inferior</strong>.
+</p>
+
+<p>
+Tot i això, els ERP verticals tenen més tendència que els horitzontals a <strong>fer que sigui l’empresa la que s’hagi d’adaptar a l’ERP</strong> i no al revés; això acostuma a ser degut al fet que fa les coses d’una manera diferent de com es fan en l’empresa, i portar a terme un canvi en l’àmbit de desenvolupament eliminaria l’avantatge de tenir un ERP vertical.
+</p>
+
+</div>
+
+<h4><a id="principals_programes_d_erp" >Principals programes d&#039;ERP</a></h4>
+<div class="level4">
+
+<p>
+No hi ha cap ERP perfecte i tots tenen punts forts i punts febles, i per tant un dels aspectes fonamentals perquè la implantació d’un ERP tingui èxit en una empresa és triar-lo adequadament.
+</p>
+
+<p>
+Hi ha diversos productes ERP disponibles en el mercat, entre els quals destaquen els oferts per les tres grans empreses desenvolupadores d’ERP: SAP AG, Oracle i Microsoft. Però hi ha moltes més solucions, com les que integren les empreses Sage (molt populars pels productes Contaplus o Facturaplus), Epicor, IFS o Ross (<span class="figref"><a href="#fig161"><span>figura</span></a></span>).
+</p>
+<div class="iocfigure"><a name="fig161"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Distribució dels ERP en el mercat l’any 2011 segons Panorama Consulting Group
+
+</figcaption><img src="../media/asxm04u4_06.png" alt="" /></figure>
+</div>
+<p>
+Els ERP més populars són:
+</p>
+<ul>
+<li class="level1"><div class="li"> SAP R/3.</div>
+</li>
+<li class="level1"><div class="li"> Oracle e-Bussines Suite.</div>
+</li>
+<li class="level1"><div class="li"> Oracle JD Edwards.</div>
+</li>
+<li class="level1"><div class="li"> Oracle Peoplesoft.</div>
+</li>
+<li class="level1"><div class="li"> Microsoft Dynamics.</div>
+</li>
+<li class="level1"><div class="li"> Epicor ERP.</div>
+</li>
+<li class="level1"><div class="li"> Sage.</div>
+</li>
+<li class="level1"><div class="li"> Infor ERP.</div>
+</li>
+<li class="level1"><div class="li"> Lawson M3 ERP.</div>
+</li>
+</ul>
+
+</div>
+
+<h5><a id="codi_obert" >Codi obert</a></h5>
+<div class="level5">
+
+<p>
+També en el món del programari lliure s’hi pot trobar programari ERP, els fabricants del qual sovint aconsegueixen els ingressos per mitjà de l’oferta de serveis als clients.
+</p>
+
+<p>
+Entre els programes ERP de codi obert destaquen:
+</p>
+<ul>
+<li class="level1"><div class="li"> OpenBravo.</div>
+</li>
+<li class="level1"><div class="li"> OpenERP.</div>
+</li>
+<li class="level1"><div class="li"> Compiere.</div>
+</li>
+<li class="level1"><div class="li"> ADempière.</div>
+</li>
+<li class="level1"><div class="li"> Opentaps.</div>
+</li>
+</ul>
+
+<p>
+El codi obert ofereix unes característiques extres que sempre s’han de tenir en compte a l’hora de valorar si cal implantar aquestes solucions o no: 
+</p>
+<ul>
+<li class="level1"><div class="li"> <strong>L’avantatge més clar és el preu</strong>. Els ERP de codi obert es poden aconseguir sense cap mena de cost i per tant es redueixen els costos d’implementació i les llicències d’usuari. </div>
+</li>
+<li class="level1"><div class="li"> <strong>No crea cap dependència d’un proveïdor informàtic</strong> ja que el programari passa a ser controlat per l’empresa i es pot fer servir per crear un ERP propi amb molts menys recursos dels necessaris en un sistema de pagament.</div>
+</li>
+<li class="level1"><div class="li"> Com que disposa del codi <strong>les possibilitats d’adaptació del programa a les necessitats de l’empresa són màximes</strong>. Les solucions de pagament generalment permeten personalitzar els mòduls però sempre dins d’uns límits. En el cas dels sistemes de codi obert aquests límits no existeixen.</div>
+</li>
+</ul>
+
+<p>
+Però el programari lliure no és exempt de problemes, la qual cosa fa que moltes empreses no s’atreveixin a fer-los servir:
+</p>
+<ul>
+<li class="level1"><div class="li"> <strong>No sempre hi ha prou documentació</strong> del funcionament dels programes. Això pot incrementar el temps d’aprenentatge.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Les actualitzacions del programari solen ser imprevisibles</strong> i no sempre es documenten els canvis que es fan. </div>
+</li>
+<li class="level1"><div class="li"> <strong>Els projectes a vegades desapareixen</strong>. La desaparició d’un projecte normalment acaba obligant a canviar de producte.</div>
+</li>
+<li class="level1"><div class="li"> A pesar que gairebé tots ofereixen <strong>el producte lliure però amb una versió de pagament on s’inclou suport</strong>, en alguns casos el suport no sol ser tan important com el que s’ofereix en el cas del programari propietari. </div>
+</li>
+</ul>
+
+<p>
+Els ERP de codi obert són una alternativa totalment vàlida i que s’ha de valorar a l’hora de triar quin és l’ERP que s’adapta més a les necessitats de l’empresa, però sempre tenint en compte les fortaleses i les debilitats que té.
+</p>
+
+</div>
+
+<h5><a id="informatica_en_nuvol" >Informàtica en núvol</a></h5>
+<div class="level5">
+
+<p>
+La majoria d’aquests ERP s’estan adaptant o ja s’han adaptat per poder funcionar en el que es coneix com a <em>informàtica en núvol</em> o més concretament com a <em>SaaS</em> (<em>software as a service</em>). 
+</p>
+
+<p>
+La idea és no haver de fer cap mena d’instal·lació de programari en els servidors de l’empresa sinó accedir al programa per Internet, normalment amb un navegador web. Això permet que les tasques d’instal·lació i manteniment s’externalitzin, ja que és el proveïdor el que se n’encarregarà (<span class="figref"><a href="#fig162"><span>figura</span></a></span>).
+</p>
+<div class="iocfigure"><a name="fig162"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+ERP en núvol
+
+</figcaption><img src="../media/asxm04u4_07.png" alt="" /></figure>
+</div>
+<p>
+Aquesta característica permet:
+</p>
+<ul>
+<li class="level1"><div class="li"> <strong>Fer servir el programa sense haver d’instal·lar cap programari</strong>, ja que aquest programari està instal·lat en els servidors del venedor. </div>
+</li>
+<li class="level1"><div class="li"> Que no sigui necessari per a l’empresa <strong>fer cap mena de despesa en infraestructura de maquinari</strong> (no cal comprar un servidor, implementar mecanismes de còpia de seguretat…) <strong>ni en personal informàtic qualificat</strong>. N’hi ha prou amb un ordinador i una connexió a Internet per poder treballar amb l’ERP.</div>
+</li>
+</ul>
+
+<p>
+Generalment el cost d’aquest tipus de serveis <strong>es paga via subscripció</strong>, la qual cosa implica un preu molt inferior al que es demana per comprar el paquet de programari i el lloguer dels tècnics responsables de la instal·lació.
+</p>
+
+<p>
+Funcionar d’aquesta manera garanteix que <strong>el programari sempre està actualitzat</strong> ja que l’empresa desenvolupadora s’encarrega de fer-ho en els seus propis servidors. No cal que l’empresa prengui riscos ni tingui despeses extres fent actualitzacions en els seus servidors.
+</p>
+
+<p>
+Però sempre s’ha de tenir en compte que treballar d’aquesta manera implica uns riscos:
+</p>
+<ul>
+<li class="level1"><div class="li"> <strong>Requereix que hi hagi una connexió permanent a Internet </strong> i per tant fa més dependent l’empresa de la companyia de telefonia.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Una fallada en els servidors de l’empresa allotjadora pot provocar que s’aturi completament</strong> el funcionament de l’empresa ja que no es pot accedir al programa que ho gestiona tot.</div>
+</li>
+<li class="level1"><div class="li"> Com que les dades estan emmagatzemades en un lloc remot, en cas de problemes no és possible recuperar-les.</div>
+</li>
+</ul>
+
+<p>
+A més, l’ús de serveis en núvol <strong>pot comportar problemes legals</strong> ja que les dades deixen d’estar emmagatzemades en l’empresa per passar a estar-ho en els servidors del proveïdor, i a vegades aquests proveïdors no són en el mateix país en què treballa l’empresa. 
+</p>
+
+<p>
+Per tant es pot infringir la llei de Protecció de Dades de Caracter Personal (LOPD) a causa de les limitacions imposades en l’ubicació d’emmagatzematge ja que entre les dades amb les que treballa l’empresa n’hi sol haver de caràcter personal.
+</p>
+<div class="iocimportant"><div class="ioccontent">
+<p>
+La LOPD defineix entre altres coses en quins casos es pot permetre a un tercer accedir a les dades d’una organització o quines condicions s’han de complir per moure les dades d’un país a un altre.
+</p>
+</div></div>
+<p>
+Això obliga, abans de contractar un servei en núvol, a assegurar-se que l’empresa proveïdora del servei garanteixi que les dades que seran emmagatzemades en els seus servidors es desaran sense infringir la llei.
+</p>
+
+</div>
+
+<h3><a id="implantacio_d_un_erp" >Implantació d&#039;un ERP</a></h3>
+<div class="level3">
+
+<p>
+Els ERP són programes complexos d’implantar i <strong>no és rar que la implantació en una empresa pugui esdevenir un fracàs</strong>. Des d’un punt de vista empresarial un fracàs pot passar perquè calgui molt més temps o diners del que s’havia previst per implantar una determinada solució, perquè aquesta solució no funcioni com ho hauria de fer, que no es faci servir perquè és massa complicada o perquè no hi hagi confiança en les dades obtingudes.
+</p>
+
+<p>
+En el mercat hi ha centenars d’ERP amb característiques i preus diferents. És bàsic que abans de triar un ERP es tingui clar com és l’empresa i quines són les seves necessitats concretes. <strong>La tria adequada de l’ERP és un dels factors determinants perquè tingui èxit la implantació</strong>. Els ERP són programes molt específics, i que un ERP tingui èxit en una empresa no és garantia que tingui èxit en una altra, encara que les dues siguin semblants.
+</p>
+
+<p>
+Els ERP no són un tipus de programari que es compra i s’instal·la i comença a funcionar sinó que <strong>requereix que sigui adaptat per usar-lo en l’empresa</strong>. Sempre cal un temps de parametrització i modificació dels ERP abans de poder fer-los servir. No n’hi sol haver prou amb instal·lar el programari, sinó que cal una fase per fer totes les adaptacions necessàries per poder engegar el sistema.
+</p>
+
+<p>
+És rar que no s’hagi de modificar res en un ERP. Normalment sempre hi ha algun aspecte del funcionament que va més bé si es canvia, o que s’ha de canviar per força. Per exemple, les llistes de resultats normalment solen ser molt genèriques perquè es confia que es modificaran en la fase d’implantació.
+</p>
+
+<p>
+Amb la implantació d’un ERP generalment el que es busca és optimitzar els processos de l’empresa i en aquest sentit és fàcil que també s’hagi de canviar algun dels processos actuals de l’empresa o bé hagi de desaparèixer. Per aquest motiu un dels factors clau en l’èxit de la implantació és que <strong>s’hi impliquin totes les àrees del negoci</strong>. La resistència dels usuaris acostumats a treballar d’una manera a canviar-la és un altre factor determinant perquè no hi hagi èxit en la implantació.
+</p>
+
+<p>
+<strong>El temps d’adaptació varia segons diferents aspectes</strong> però generalment hi influeix sobretot quin ERP s’ha triat, quins són els mòduls que s’han d’implantar i la mida de l’empresa on s’implanta l’ERP. L’allargament del temps d’implantació sovint és un altre dels factors pels quals fallen les implantacions de l’ERP.
+</p>
+
+<p>
+Un altre factor que sovint provoca molts problemes en la implantació d’un ERP és <strong>el traspàs de dades</strong>. Les empreses ja solen tenir molts programes i molt diversos per portar la gestió i generalment es requereix que es puguin connectar amb l’ERP i això a vegades és una tasca molt complexa.
+</p>
+
+<p>
+Un factor que s’ha de tenir en compte és que no cal que l’ERP sigui implementat tot de cop ja que la naturalesa modular que té fa que es pugui implementar mòdul a mòdul, i generalment seguir aquesta estratègia sol tenir més garanties d’èxit.
+</p>
+
+<p>
+Per fer l’adaptació normalment s’ha de recórrer a una <strong>empresa integradora</strong> que ajuda en la implementació de l’ERP i ajuda a l’empresa en els aspectes del negoci relacionats amb el canvi: maquinari, programari o procés de canvi. <strong>La tria d’una bona empresa integradora també és un factor determinant</strong> en l’èxit o la fallada de la implantació. La seva experiència i capacitat d’entendre l’empresa i d’adaptar adequadament l’eina és un altre factor determinant.
+</p>
+
+</div>
+
+<h2><a id="funcionament_d_un_erp" >Funcionament d&#039;un ERP</a></h2>
+<div class="level2">
+
+<p>
+Per veure amb més detall què ofereixen i com treballen els ERP el que va més bé és provar-ne un. Per provar-los, n’hi ha molts que permeten de manera gratuïta als possibles clients usar el seu ERP en línia o baixar-ne una versió de prova per a un temps limitat (<span class="figref"><a href="#fig163"><span>figura</span></a></span>).
+</p>
+<div class="iocfigure"><a name="fig163"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Microsoft permet baixar Dynamics en una versió de prova
+
+</figcaption><img src="../media/microsoftdynamics.png" alt="" /></figure>
+</div>
+<p>
+Els ERP de codi obert no solen tenir cap restricció i es poden fer servir sense haver de pagar, a menys que es vulgui contractar suport. 
+</p>
+
+<p>
+Per veure com funciona un ERP heu de fer servir l’OpenERP 6.0 (<a href="http://www.openerp.org" class="urlextern" title="http://www.openerp.org"  rel="nofollow">http://www.openerp.org</a>), un ERP de codi obert.
+</p>
+
+</div>
+
+<h3><a id="openerp" >OpenERP</a></h3>
+<div class="level3">
+
+<p>
+Es tracta d’un sistema ERP de codi obert multiplataforma desenvolupat en  llenguatge Python. 
+</p>
+
+<p>
+OpenERP s’ofereix en tres versions:
+</p>
+<ul>
+<li class="level1"><div class="li"> <strong>OpenERP Community</strong>: versió gratuïta sense suport, pensada per a entorns no professionals.</div>
+</li>
+<li class="level1"><div class="li"> <strong>OpenERP Enterprise</strong>: afegeix suport, solució d’errors, migració i la possibilitat de fer servir mòduls privats.</div>
+</li>
+<li class="level1"><div class="li"> <strong>OpenERP Online</strong>: versió del programa accessible per Internet. El programa està allotjat en els servidors d’OpenERP.</div>
+</li>
+</ul>
+
+<p>
+De cadascuna d’aquestes versions sempre se’n manté una versió estable i una de desenvolupament. Generalment les noves funcions s’integren en la versió de desenvolupament però són més propenses a tenir errors.
+</p>
+
+<p>
+En entorns de producció només es recomanen les versions estables. Actualment es mantenen les versions 5 i 6.
+</p>
+
+</div>
+
+<h4><a id="arquitectura" >Arquitectura</a></h4>
+<div class="level4">
+
+<p>
+Les dades en OpenERP s’emmagatzemen en bases de dades en el servidor de <strong>base de dades</strong> de codi obert PostgreSQL, que emmagatzema tant les dades com la configuració del programa.
+</p>
+<div class="iocfigure"><a name="fig164"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Esquema simplificat d’OpenERP
+
+</figcaption><img src="../media/asxm04u4_08.png" alt="" /></figure>
+</div>
+<p>
+El programa servidor està desenvolupat específicament i és el que permet la integració dels mòduls i s’encarrega de controlar el funcionament. Integra un servidor web per permetre connexions mitjançant navegadors.
+</p>
+
+<p>
+El servidor permet connexions de dues maneres bàsiques que es poden fer servir indistintament: per mitjà d’un <strong>navegador web amb Flash</strong> o bé d’un <strong>client basat en les biblioteques GTK</strong>. Tots dos sistemes ofereixen més o menys les mateixes característiques (<span class="figref"><a href="#fig164"><span>figura</span></a></span>).
+</p>
+
+<p>
+Però també ofereixen interfícies de comunicació mitjançant els protocols SOAP i XML-RPC de manera que qualsevol pot desenvolupar una aplicació per comunicar amb el servidor. 
+</p>
+
+</div>
+
+<h5><a id="moduls_openerp" >Mòduls OpenERP</a></h5>
+<div class="level5">
+
+<p>
+OpenERP disposa de diferents mòduls de negoci públics que es poden afegir i treure del sistema i que cobreixen la majoria dels aspectes de gestió d’una empresa:
+</p>
+<ul>
+<li class="level1"><div class="li"> Compres.</div>
+</li>
+<li class="level1"><div class="li"> Fabricació.</div>
+</li>
+<li class="level1"><div class="li"> Gestió de magatzems.</div>
+</li>
+<li class="level1"><div class="li"> Gestió de projectes.</div>
+</li>
+<li class="level1"><div class="li"> Comptabilitat.</div>
+</li>
+<li class="level1"><div class="li"> Recursos humans.</div>
+</li>
+<li class="level1"><div class="li"> Màrqueting.</div>
+</li>
+<li class="level1"><div class="li"> CRM (gestió de la relació amb els clients o <em>customer relationship management</em>).</div>
+</li>
+</ul>
+
+<p>
+També disposa de mòduls per funcionar com a ERP vertical en sectors específics com gestió d’hotels i biblioteques.
+</p>
+
+<p>
+No tots els mòduls són gratuïts, ja que OpenERP permet una manera curiosa de desenvolupar mòduls. Un desenvolupador pot crear un mòdul concret i aquest mòdul inicialment només és disponible per a qui en pagui una determinada quantitat (inferior al cost del mòdul). La contrapartida està en el fet que en el moment en què el desenvolupador ha cobrat la quantitat total estipulada el mòdul passa a ser lliure i de codi obert.
+</p>
+
+</div>
+
+<h4><a id="instal_lacio" >Instal·lació</a></h4>
+<div class="level4">
+
+<p>
+La versió Community es pot descarregar des del lloc web d’OpenERP (<a href="http://www.openerp.com" class="urlextern" title="http://www.openerp.com"  rel="nofollow">www.openerp.com</a>), com es mostra a la <span class="figref"><a href="#fig165"><span>figura</span></a></span>.
+</p>
+<div class="iocfigure"><a name="fig165"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Baixar OpenERP
+
+</figcaption><img src="../media/openerpdownloads.png" alt="" /></figure>
+</div>
+<p>
+La instal·lació es pot dur a terme instal·lant els components separadament o bé -en sistemes Windows- instal·lant el paquet que conté tots els components.
+</p>
+<ul>
+<li class="level1"><div class="li"> <strong>Versió <em>all-in-one</em></strong>: conté tant el programa servidor com la base de dades. A més, instal·la els servidors com a serveis i els inicia.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Components separadament</strong>: normalment es recomana fer servir els components separadament si no interessa algun dels entorns o bé si es vol instal·lar una versió de PostgreSQL més nova que la que hi ha en el paquet <em>all-in-one</em>.</div>
+</li>
+</ul>
+
+<p>
+Per veure com funciona el procediment d’instal·lació fem servir la versió <em>all-in-one</em> de Windows, que no difereix gaire de la instal·lació habitual en aquest sistema operatiu (<span class="figref"><a href="#fig166"><span>figura</span></a></span>).
+</p>
+<div class="iocfigure"><a name="fig166"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+L’instal·lador segueix el sistema habitual en Windows
+
+</figcaption><img src="../media/openerpinstall1.png" alt="" /></figure>
+</div>
+<p>
+Durant el procés d’instal·lació la part que requereix més atenció és la que permet definir l’usuari i la contrasenya de l’administrador de la base de dades PostgreSQL (<span class="figref"><a href="#fig167"><span>figura</span></a></span>).
+</p>
+<div class="iocfigure"><a name="fig167"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Definir l’administrador de la base de dades
+
+</figcaption><img src="../media/openerpinstall2.png" alt="" /></figure>
+</div>
+<p>
+L’instal·lador no crea automàticament cap base de dades, de manera que un cop s’ha instal·lat el progama cal crear una base de dades per emmagatzemar les dades de l’empresa. Per fer-ho cal obrir un dels clients OpenERP per connectar amb el servidor. 
+</p>
+
+<p>
+En l’exemple s’obre el client GTK, que informa que falta la base de dades (<span class="figref"><a href="#fig168"><span>figura</span></a></span>).
+</p>
+<div class="iocfigure"><a name="fig168"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Client GTK d’OpenERP
+
+</figcaption><img src="../media/openerpinstall3.png" alt="" /></figure>
+</div>
+<p>
+De la mateixa manera ho fa el client web (<span class="figref"><a href="#fig169"><span>figura</span></a></span>).
+</p>
+<div class="iocfigure"><a name="fig169"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Client web d’OpenERP
+
+</figcaption><img src="../media/openerpinstall4.png" alt="" /></figure>
+</div>
+<p>
+Tots dos clients, a més de donar l’error, ofereixen alguna manera de crear la base de dades automàticament. La creació de la base de dades es pot dividir en dos grans aspectes:
+</p>
+<ol>
+<li class="level1"><div class="li"> Crear l’estructura de la base de dades. </div>
+</li>
+<li class="level1"><div class="li"> Definir l’usuari administrador de l’ERP.</div>
+</li>
+</ol>
+
+<p>
+Vegeu-ho en la <span class="figref"><a href="#fig170"><span>figura</span></a></span>.
+</p>
+<div class="iocfigure"><a name="fig170"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Crear la base de dades en OpenERP
+
+</figcaption><img src="../media/openerpinstall5.png" alt="" /></figure>
+</div>
+<p>
+Un cop creada la base de dades s’ofereix la possibilitat d’obrir un auxiliar que permet triar i configurar els mòduls que fan falta en l’empresa (<span class="figref"><a href="#fig171"><span>figura</span></a></span>).
+</p>
+<div class="iocfigure"><a name="fig171"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Auxiliar de configuració
+
+</figcaption><img src="../media/openerpinstall6.png" alt="" /></figure>
+</div>
+<p>
+Quan es fa servir l’auxiliar, primer es demanen les dades bàsiques de l’empresa. Posteriorment, un cop s’ha engegat el sistema, es poden modificar o afegir dades noves (<span class="figref"><a href="#fig172"><span>figura</span></a></span>).
+</p>
+<div class="iocfigure"><a name="fig172"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Definir les dades de l’empresa en OpenERP
+
+</figcaption><img src="../media/openerpinstall8.png" alt="" /></figure>
+</div>
+<p>
+L’auxiliar continua demanant els mòduls bàsics que es volen instal·lar (<span class="figref"><a href="#fig173"><span>figura</span></a></span>).
+</p>
+<div class="iocfigure"><a name="fig173"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Triar els mòduls que s’han d’instal·lar
+
+</figcaption><img src="../media/openerpinstall9.png" alt="" /></figure>
+</div>
+<p>
+Segons els mòduls triats, surten diverses pantalles que demanen les dades per configurar-los. Per exemple, els mòduls de facturació i comptabilitat demanen dades sobre quin sistema comptable farà servir l’empresa (<span class="figref"><a href="#fig174"><span>figura</span></a></span>).
+</p>
+<div class="iocfigure"><a name="fig174"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Definir l’IVA
+
+</figcaption><img src="../media/openerpinstallb.png" alt="" /></figure>
+</div>
+<p>
+I finalment es veu la pantalla del client un cop configurat (<span class="figref"><a href="#fig175"><span>figura</span></a></span>).
+</p>
+<div class="iocfigure"><a name="fig175"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Pantalla inicial d’OpenERP configurat en GTK
+
+</figcaption><img src="../media/openerpinstallc.png" alt="" /></figure>
+</div>
+<p>
+Independentment de quin sigui el client que s’ha fet servir per fer la configuració es pot entrar en el sistema indistintament, tant amb el client GTK com amb el client web (<span class="figref"><a href="#fig176"><span>figura</span></a></span>).
+</p>
+<div class="iocfigure"><a name="fig176"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Pantalla inicial d’OpenERP en el client web
+
+</figcaption><img src="../media/openerpinstalld.png" alt="" /></figure>
+</div>
+</div>
+
+<h4><a id="caracteristiques" >Característiques</a></h4>
+<div class="level4">
+
+<p>
+És difícil resumir en poc espai les característiques de cap ERP però se’n poden fer ressaltar algunes, relatives a:
+</p>
+<ul>
+<li class="level1"><div class="li"> Interfície.</div>
+</li>
+<li class="level1"><div class="li"> Automatització de processos.</div>
+</li>
+<li class="level1"><div class="li"> Gestió d’usuaris.</div>
+</li>
+<li class="level1"><div class="li"> Generació d’estadístiques.</div>
+</li>
+<li class="level1"><div class="li"> Dades externes.</div>
+</li>
+</ul>
+
+</div>
+
+<h5><a id="interficie" >Interfície</a></h5>
+<div class="level5">
+
+<p>
+La interfície del programa client, tant el GTK com el web, tenen sempre un aspecte similar per a totes les funcions. La idea és que tenir un aspecte comú minimitza el temps necessari per a l’aprenentatge dels usuaris. Comparant la <span class="figref"><a href="#fig177"><span>figura</span></a></span> i la <span class="figref"><a href="#fig177b"><span>figura</span></a></span> es veu la semblança entre dues pantalles d’OpenERP:
+</p>
+<div class="iocfigure"><a name="fig177"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Llista de clients i de comandes en la interfície web
+
+</figcaption><img src="../media/openerpinterficie1.png" alt="" /></figure>
+</div><div class="iocfigure"><a name="fig177b"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Llista de clients i de comandes en la interfície web
+
+</figcaption><img src="../media/openerpinterficie3.png" alt="" /></figure>
+</div>
+<p>
+La base del programa són els formularis, que són la forma estàndard d’entrada de dades (<span class="figref"><a href="#fig178"><span>figura</span></a></span>).
+</p>
+<div class="iocfigure"><a name="fig178"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Formularis d’entrada de dades en l’entorn GTK
+
+</figcaption><img src="../media/openerpformularis.png" alt="" /></figure>
+</div>
+<p>
+OpenERP incorpora eines per adaptar els formularis a les característiques concretes de l’empresa. Es pot eliminar, reordenar o afegir camps en qualsevol formulari (<span class="figref"><a href="#fig179"><span>figura</span></a></span>).
+</p>
+<div class="iocfigure"><a name="fig179"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Adaptar un formulari
+
+</figcaption><img src="../media/openerpformularis2.png" alt="" /></figure>
+</div>
+<p>
+Davant dels camps de dades que es poden emplenar mitjançant dades de la base de dades normalment hi apareix el símbol de la lupa, que permet fer recerques dins de les dades (<span class="figref"><a href="#fig180"><span>figura</span></a></span>).
+</p>
+<div class="iocfigure"><a name="fig180"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Clicar a la lupa permet triar els valors d’una llista
+
+</figcaption><img src="../media/openerpinterficiecerca.png" alt="" /></figure>
+</div>
+</div>
+
+<h5><a id="automatitzacio_de_processos" >Automatització de processos</a></h5>
+<div class="level5">
+
+<p>
+Un dels objectius bàsics d’un ERP és automatitzar els processos tant com sigui possible. Els processos automatitzats permeten definir quina és la resposta que s’ha de donar davant de determinades situacions.
+</p>
+
+<p>
+Per exemple, es pot automatitzar que, si un article està per sota d’un determinat estoc mínim, es creï automàticament una comanda al proveïdor (<span class="figref"><a href="#fig181"><span>figura</span></a></span>).
+</p>
+<div class="iocfigure"><a name="fig181"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Definir l’estoc mínim d’un article en l’entorn web
+
+</figcaption><img src="../media/openerpstockminim.png" alt="" /></figure>
+</div>
+</div>
+
+<h5><a id="gestio_d_usuaris" >Gestió d&#039;usuaris</a></h5>
+<div class="level5">
+
+<p>
+El sistema conté un complet sistema de gestió d’usuaris que permet controlar totalment els usuaris del sistema (<span class="figref"><a href="#fig182"><span>figura</span></a></span>).
+</p>
+<div class="iocfigure"><a name="fig182"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Llista d’usuaris
+
+</figcaption><img src="../media/openerpusuaris3.png" alt="" /></figure>
+</div>
+<p>
+Es poden definir les característiques específiques sobre cadascun dels usuaris (<span class="figref"><a href="#fig183"><span>figura</span></a></span>).
+</p>
+<div class="iocfigure"><a name="fig183"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Control d’usuaris en OpenERP
+
+</figcaption><img src="../media/openerpusuaris.png" alt="" /></figure>
+</div>
+<p>
+Es poden personalitzar fins al mínim detall quines són les coses que els usuaris poden fer o no poden fer. Per facilitar aquesta gestió es poden crear grups d’usuaris que reben els mateixos privilegis (<span class="figref"><a href="#fig184"><span>figura</span></a></span>).
+</p>
+<div class="iocfigure"><a name="fig184"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Personalitzar els permisos d’usuaris
+
+</figcaption><img src="../media/openerpusuaris2.png" alt="" /></figure>
+</div><div class="iocfigure"><a name="fig185"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Resum de vendes en la interfície web
+
+</figcaption><img src="../media/openerpresumvendes.png" alt="" /></figure>
+</div>
+</div>
+
+<h5><a id="generacio_d_estadistiques" >Generació d&#039;estadístiques</a></h5>
+<div class="level5">
+
+<p>
+La interfície web ofereix una sèrie d’avantatges sobre la interfície GTK ja que incorpora gràfics i estadístiques de resum dels moviments dels mòduls de manera que amb un cop d’ull es pot tenir una idea de quina és la tendència (<span class="figref"><a href="#fig185"><span>figura</span></a></span>). 
+</p>
+
+</div>
+
+<h5><a id="dades_externes" >Dades externes</a></h5>
+<div class="level5">
+
+<p>
+Es poden exportar els resultats a diferents formats com PDF, <acronym title="HyperText Markup Language">HTML</acronym> i els propis de programes d’ofimàtica (<span class="figref"><a href="#fig186"><span>figura</span></a></span>).
+</p>
+<div class="iocfigure"><a name="fig186"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Exportar una factura a PDF
+
+</figcaption><img src="../media/openerpexportapdf.png" alt="" /></figure>
+</div>
+<p>
+Aquest programa ofereix un component d’informes avançats que permet integrar els diferents informes en Openoffice.org. Instal·lant un component tant en OpenERP com en OpenOffice.org s’aconsegueix que els informes que es generin puguin passar al programa ofimàtic (<span class="figref"><a href="#fig187"><span>figura</span></a></span>).
+</p>
+<div class="iocfigure"><a name="fig187"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+L’auxiliar permet generar els informes per modificar-los o usar-los mitjançant plantilles d’Openoffice.org 
+
+</figcaption><img src="../media/openerpopenoffice.png" alt="" /></figure>
+</div>
+<p>
+També permet sincronitzar les dades amb les que s’obtinguin en plataformes de botigues electròniques o portals web com OsCommerce, eZPublish, Magento i Joomla, de manera que aquestes plataformes es puguin aprofitar dels sistemes de control de facturació i entrega d’OpenERP.
+</p>
+
+</div>
+
+<h2><a id="tendencies" >Tendències</a></h2>
+<div class="level2">
+
+<p>
+Els ERP, com qualsevol tipus de programari, estan evolucionant i oferint noves possibilitats que fins ara no oferien.
+</p>
+
+<p>
+És difícil dir com seran els ERP dels propers anys però sembla que les tendències van cap a oferir <strong>interfícies d’usuari altament personalitzables</strong> que es puguin usar en diferents dispositius, i permetin integrar eines d’ofimàtica i missatgeria electrònica i tasques col·laboratives.
+</p>
+
+<p>
+La majoria dels ERP ja estan muntats basant-se en <strong>arquitectures orientades a serveis</strong> (SOA), que permeten que el programari pugui interactuar per fer tasques automàtiques sense que calgui intervenció humana. Una part important de l’arquitectura SOA, els serveis web (<em>web services</em>), facilita les interaccions entre els que ofereixen un servei i els que el consumeixen, de manera que permeten fer servir les funcions globals de negoci des de programes autònoms.
+</p>
+<div class="ioctext"><div class="ioccontent"><p class="ioctitle">Mineria de dades</p>
+<p>
+Es tracta d’una tecnologia pensada per descobrir informació desconeguda a partir de les dades que ja té l’empresa fent servir tècniques diverses relacionades amb la intel·ligència artificial.
+</p>
+</div></div>
+<p>
+La tendència cap als <strong>serveis en núvol</strong> sembla que ja és imparable; en aquest cas, es basa a permetre que les empreses puguin fer servir el seu ERP des de qualsevol lloc amb una simple connexió a Internet. Les tecnologies en núvol permeten que els usuaris es despreocupin de les actualitzacions i que puguin fer servir llicències de mòduls flexibles (pagar segons les necessitats del moment).
+</p>
+
+<p>
+També hi ha una tendència que cada vegada es facin servir nous mòduls que s’aprofitin de l’increment de la interoperativitat que ofereixen les arquitectures orientades a serveis (SOA) per oferir mòduls de simulació d’escenaris (pensats per preveure “què passaria si…” però amb la possibilitat d’obtenir automàticament dades externes a l’empresa) o per fer tasques que no s’estaven duent a terme com poden ser la mineria de dades (<em>data mining</em>). 
+</p>
+
+</div>
+
+	 </article>
+     <div class="pnpage">
+      <div class="left-corner"></div>
+      <div id="prevpage">Anar a la p&agrave;gina anterior:<br /><a href="../../../WebContent/u4/referencies.html">Referències</a></div>
+      <div id="nextpage">Anar a la p&agrave;gina seg&uuml;ent:<br /><a href="../../../WebContent/u4/a1/activitats.html">Activitats</a></div>
+      <div class="right-corner"></div>
+     </div>
+    </div>
+    <footer class="footer">
+      <div><small>Aquest document està subjecte a una llicència oberta de Creative Commons, es reserva el dret de reconeixement de l'autoria, d'exigir que no se'n faci cap mena d'ús comercial. Si altereu o transformeu aquesta obra, o en genereu obres derivades, només podeu distribuir l'obra generada amb una llicència idèntica a aquesta.</small></div>
+    </footer>
+ </div>
+ <div id="back_preview" class="hidden"></div>
+ <div id="preview" class="hidden">
+  <div class="prevcontent"></div>
+ </div>
+ <div id="help-tooltips">
+  <div id="help-toc" class="hidden tooltip"><span>Taula de continguts:</span> Ofereix una vista general de l&#39;estructura del m&ograve;dul, que us facilitar&agrave; la navegaci&oacute; a trav&eacute;s dels seus continguts.<span class="arrow-left"></span></div> 
+  <div id="help-settings" class="hidden tooltip"><span>Opcions de format:</span> Permet configurar el format de lectura a partir de les vostres prefer&egrave;ncies, modificant la mida de la lletra, el color del fons, l&#39;amplada de la p&agrave;gina o l&#39;ocultaci&oacute; dels continguts complementaris, entre d&#39;altres.<span class="arrow-left"></span></div>
+  <div id="help-printer" class="hidden tooltip"><span>Imprimir:</span>  Envia el contingut seleccionat a la impressora.<span class="arrow-left"></span></div>
+  <div id="help-favorites" class="hidden tooltip"><span>Prefereits:</span> Permet desar aquelles parts del contingut a les que us interessi accedir en un moment posterior; us permetr&agrave; anar creant un repositori personalitzat de les seccions que considereu m&eacute;s rellevants. Un cop l&#39;hageu començat a fer servir se us mostrar&agrave; a sota un comptador que us informar&agrave; del nombre de preferits que s&#39;hagin emmagatzemat fins al moment.<span class="arrow-left"></span></div>
+  <div id="help-favcounter" class="hidden tooltip"><span>Comptador i llistat de preferits:</span> Indica el nombre de preferits que s&#39;han desat fins el moment; clicant damunt seu accedireu al llistat de preferits, i a trav&eacute;s d&#39;aquest podreu accedir directament als continguts que hageu emmagatzemat.<span class="arrow-left"></span></div>
+  <div id="help-help_icon" class="hidden tooltip"><span>Ajuda:</span> Aquesta opci&oacute; activa la informaci&oacute; de les funcionalitats del web tot situant el punter del ratol&iacute; al damunt dels diferents &iacute;tems.<span class="arrow-left"></span></div>
+  <div id="help-sidebar-hide" class="hidden tooltip"><span>Mostrar/Ocultar barra lateral:</span>  Deshabilita la barra d&#39;opcions, permetent la seva recuperaci&oacute; quan es desitgi.<span class="arrow-left"></span></div>
+  <div id="help-search" class="hidden tooltip"><span>Cerca:</span>  Introdu&iuml;u les paraules clau sobre aquells conceptes que desitgeu localitzar en els continguts del m&ograve;dul. Tamb&eacute; podeu excloure un terme de la cerca tot afegint-hi el signe &#8220;-&#8221; al davant.<span class="arrow-top"></span></div>
+  <div id="help-header" class="hidden tooltip"><span>Cap&ccedil;alera:</span>  Indica l&#39;apartat o secci&oacute; que es mostra en pantalla. Tingueu present que les capçaleres de segon, tercer i quart nivell tamb&eacute; es poden desar com a marcadors.<span class="arrow-left"></span></div>
+</div> 
+</body>
+</html>

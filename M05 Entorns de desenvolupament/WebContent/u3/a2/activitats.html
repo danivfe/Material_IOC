@@ -1,0 +1,509 @@
+<!doctype html>
+
+<!--[if lt IE 7 ]> <html class="ie ie6 no-js" lang="ca"> <![endif]-->
+<!--[if IE 7 ]>    <html class="ie ie7 no-js" lang="ca"> <![endif]-->
+<!--[if IE 8 ]>    <html class="ie ie8 no-js" lang="ca"> <![endif]-->
+<!--[if IE 9 ]>    <html class="ie ie9 no-js" lang="ca"> <![endif]-->
+<!--[if gt IE 9]><!--><html class="no-js" lang="ca"><!--<![endif]-->
+<!-- the "no-js" class is for Modernizr. -->
+
+<head id="www-sitename-com" data-template-set="html5-reset">
+
+	<meta charset="utf-8">
+	
+	<!-- Always force latest IE rendering engine (even in intranet) & Chrome Frame -->
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	
+	<title>Entorns de desenvolupament</title>
+	
+<!-- <meta name="title" content=""> --> 
+	<meta name="description" content="">
+	<!-- Google will often use this as its description of your page/site. Make it good. -->
+	
+	<meta name="google-site-verification" content="">
+	<!-- Speaking of Google, don't forget to set your site up: http://google.com/webmasters -->
+	
+	<meta name="author" content="Institut Obert de Catalunya">
+	<meta name="Copyright" content="Copyright Institut Obert de Catalunya 2011. All Rights Reserved.">
+
+	<!-- Dublin Core Metadata : http://dublincore.org/ -->
+	<meta name="DC.title" content="Entorns de desenvolupament">
+	<meta name="DC.subject" content="Informàtica i comunicacions">
+	<meta name="DC.creator" content="Institut Obert de Catalunya">
+	
+	<!--  Mobile Viewport Fix
+	j.mp/mobileviewport & davidbcalhoun.com/2010/viewport-metatag 
+	device-width : Occupy full width of the screen in its current orientation
+	initial-scale = 1.0 retains dimensions instead of zooming out if page height > device height
+	maximum-scale = 1.0 retains dimensions instead of zooming in if page width < device width
+	-->
+	<!-- Uncomment to use � use thoughtfully!
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+	-->
+
+	<link rel="shortcut icon" href="../../../img/favicon.ico">
+	<!-- This is the traditional favicon.
+		 - size: 16x16 or 32x32
+		 - transparency is OK
+		 - see wikipedia for info on browser support: http://mky.be/favicon/ -->
+		 
+	<link rel="apple-touch-icon" href="../../../img/apple-touch-icon.png">
+	<!-- The is the icon for iOS's Web Clip.
+		 - size: 57x57 for older iPhones, 72x72 for iPads, 114x114 for iPhone4's retina display (IMHO, just go ahead and use the biggest one)
+		 - To prevent iOS from applying its styles to the icon name it thusly: apple-touch-icon-precomposed.png
+		 - Transparency is not recommended (iOS will put a black BG behind the icon) -->
+	
+	<!-- CSS: screen, mobile & print are all in the same file -->
+	<link rel="stylesheet" href="../../../_/css/style.css">
+
+	<!-- CSS: jQuery UI -->
+	<link rel="stylesheet" href="../../../_/css/jquery-ui.css">
+	
+	<!-- all our JS is at the bottom of the page, except for Modernizr. -->
+	<script src="../../../_/js/modernizr-1.7.min.js"></script>
+	<script src="../../../_/js/Hyphenator.js" type="text/javascript"></script>
+	<script type="text/javascript">
+	   Hyphenator.config({
+		minwordlength : 4
+	   });
+	   Hyphenator.run();
+	</script>
+    <script src="../../../_/js/build.js" type="text/javascript"></script>
+</head>
+
+<body class="style-newspaper">
+
+<div class="wrapper"><!-- not needed? up to you: http://camendesign.com/code/developpeurs_sans_frontieres -->
+
+	<header id="header">
+		<div class="head"><a href="http://ioc.gencat.cat"><img src="../../../img/logo.png" alt="Institut Obert de Catalunya"/></a><a href="http://creativecommons.org/licenses/by-nc-sa/3.0/es/deed.ca"><img src="../../../img/license.png" alt="Llic&egrave;ncia" class="license"/></a></div>
+		<div class="headdocument"><a href="../../../index.html">Entorns de desenvolupament</a></div>
+        <div id="search" class="search" name="search">
+         <form id="frmsearch" action="../../../search.html" method="get">
+          <input type="text" name="q"/>
+        </form>
+        </div>
+	</header>
+   <div id="upbutton" class="upbutton" style="display:none;"><img src="../../../img/uparrow.png" alt="Pujar a l'inici de p&agrave;gina"/></div>
+   <aside id="aside">
+    <div id="menu">
+      <ul>
+       <li name="toc"><div><img src="../../../img/toc.png" alt="&Iacute;ndex"/></div></li>
+       <li name="settings"><div><img src="../../../img/settings.png" alt="Configuraci&oacute;"/></div></li>
+       <li name="printer"><div><img src="../../../img/printer.png" alt="Imprimir"/></div></li>
+       <li name="favorites"><div><img src="../../../img/favorites.png" alt="Favorits"/></div></li>
+       <li name="help_icon" class="help_icon"><div><img src="../../../img/help_icon.png" alt="Ajuda"/></div></li>
+      </ul>
+     </div>
+   </aside>
+   <div id="sidebar-hide" name="sidebar-hide"><img src="../../../img/arrows.png"/></div>
+   <section>
+     <div id="toc" class="hidden">
+      <div class="menucontent">
+        <ul>
+        <li id="u3" class="parentnode"><p><a href="../../../WebContent/u3/introduccio.html">3. Introducció al disseny orientat a objectes</a></p><ul class="expander"><li id="u3introduccio"><a href="../../../WebContent/u3/introduccio.html">Introducció</a></li><li id="u3resum"><a href="../../../WebContent/u3/resum.html">Resum</a></li><li id="u3resultats"><a href="../../../WebContent/u3/resultats.html">Resultats d’aprenentatge</a></li><li id="u3referencies"><a href="../../../WebContent/u3/referencies.html">Referències</a></li><li id="u3a1" class="tocsection"><p id="u3a1continguts"><a href="../../../WebContent/u3/a1/continguts.html">Diagrames estàtics</a><span class="buttonexp"></span></p><ul><li id="u3a1activitats"><a href="../../../WebContent/u3/a1/activitats.html">Activitats</a></li><li id="u3a1exercicis"><a href="../../../WebContent/u3/a1/exercicis.html">Exercicis</a></li><li id="u3a1annexos"><a href="../../../WebContent/u3/a1/annexos.html">Annexos</a></li></ul></li><li id="u3a2" class="tocsection"><p id="u3a2continguts"><a href="../../../WebContent/u3/a2/continguts.html">Diagrames dinàmics</a><span class="buttonexp"></span></p><ul><li id="u3a2activitats"><a href="../../../WebContent/u3/a2/activitats.html">Activitats</a></li><li id="u3a2exercicis"><a href="../../../WebContent/u3/a2/exercicis.html">Exercicis</a></li><li id="u3a2annexos"><a href="../../../WebContent/u3/a2/annexos.html">Annexos</a></li></ul></li></ul></li><li id="" class="indexnode"><p><a href="../../../index.html">Anar a l&#39;&iacute;ndex general</a></p></li>
+        </ul>
+      </div>
+    </div>
+   </section>
+   <section>
+   <div id="settings" class="hidden">
+    <div class="menucontent">
+     <div class="allsettings">
+     <div class="settings">
+      <label>Font i Color</label>
+		<div class="setting-option">
+	        <ul class="fontBackground">
+				<li id="style-newspaper" title="Newspaper" class="appearance-style-newspaper"><span>Newspaper</span></li>
+                <li id="style-novel" title="Novel" class="appearance-style-novel"><span>Novel</span></li>
+                <li id="style-ebook" title="eBook" class="appearance-style-ebook"><span>eBook</span></li>
+				<li id="style-inverse" title="Inverse" class="appearance-style-inverse active"><span>Inverse</span></li>
+				<li id="style-athelas" title="Athelas" class="appearance-style-athelas"><span>Athelas</span></li>
+			</ul>
+		</div>
+     </div>
+	<div class="settings">
+      <label>Amplada</label>
+		<div class="setting-option">
+	        <div id="slider-width"></div>
+		</div>
+     </div>
+     <div class="settings">
+      <label>Mida de la font</label>
+		<div class="setting-option">
+	        <div id="slider-font"></div>
+		</div>
+     </div>
+     <div class="settings">
+      <label>Mida de la font</label>
+	  <div class="setting-option">
+       <form action="" class="sett-options">
+		<ul>
+		    <li><input type="checkbox" id="secondary-content" /><label for="secondary-content">Mostra recursos complementaris</label></li>
+		    <li><input type="checkbox" id="main-images" /><label for="main-images">Mostra imatges</label></li>
+		    <li><input type="checkbox" id="text-alignment" /><label for="text-alignment">Text justificat</label></li>
+			<li><input type="checkbox" id="text-hyphen" /><label for="text-hyphen">Partici&oacute; sil·l&agrave;bica</label></li>
+		</ul>
+       </form>
+	  </div>
+     </div>
+     </div>
+    </div>
+   </div>
+   </section>
+ <section>
+ <div id="favorites" class="hidden"></div>
+ </section>   
+ <div id="bridge" class="hidden"></div>
+ <div id="help" class="hidden">
+  <div class="helptitle">Dreceres del teclat<hr></div>
+  <div class="helpsection"><span>General</span>
+   <ul>
+    <li><span class="shortcut">g</span>: Anar al men&uacute; de navegaci&oacute;</li>
+    <li><span class="shortcut">o</span>: Anar a opcions</li>
+    <li><span class="shortcut">s</span>: Guardar la p&agrave;gina actual a favorits</li>
+    <li><span class="shortcut">p</span>: Imprimir la p&agrave;gina actual</li>
+    <li><span class="shortcut">?</span>: Mostrar/Ocultar l&#39;ajuda</li>
+   </ul>
+  </div>
+  <div class="helpsection"><span>Navegaci&oacute;</span>
+   <ul>
+    <li><span class="shortcut">i</span>: Anar a l&#39;&iacute;ndex general</li>
+    <li><span class="shortcut">t</span>: Anar a l&#39;inici de p&agrave;gina</li>
+    <li><span class="shortcut">b</span>: Anar al final de p&agrave;gina</li>
+    <li><span class="shortcut">j</span>: Anar cap endavant dintre la p&agrave;gina</li>
+    <li><span class="shortcut">k</span>: Anar cap enrere dintre la p&agrave;gina</li>
+    <li><span class="shortcut">h</span>: Anar a la p&agrave;gina anterior:</li>
+    <li><span class="shortcut">l</span>: Anar a la p&agrave;gina seg&uuml;ent:</li>
+   </ul>
+   </div>
+ </div>
+ <div id="favcounter" name="favcounter" class="hidden"><span></span></div>
+ <div id="navmenu" class="navmenu"><ul class="webnav"><li><a href="../../../index.html" title="Anar a l&#39;&iacute;ndex general">Inici</a></li><li><a href="../introduccio.html">Introducció al disseny orientat a objectes</a></li><li><a href="continguts.html">Diagrames dinàmics</a></li><li>Activitats</li></ul></div>
+	<div id="content" lang="ca" class="hyphenate text">
+     <article lang="ca" class="sheet">
+        <h1><a id="activitats"> Activitats </a></h1>
+    	
+<h2><a id="casos_d_usbiblioteca" >Casos d&#039;ús: biblioteca</a></h2>
+<div class="level2">
+
+<p>
+L’objectiu d’aquesta activitat és aprofundir en els conceptes dels diagrames de casos d’ús.
+</p>
+
+<p>
+Es vol modelitzar el funcionament d’una biblioteca, concretament en dos dels seus processos més habituals, com són la sol·licitud d’un llibre per part d’un usuari de la biblioteca i el retorn del llibre.
+</p>
+
+<p>
+Per tal de simplificar l’exemple, no caldrà verificar el límit de llibres que pot agafar un usuari. Tampoc caldrà penalitzar a l’usuari si el llibre es retorna fora el període establert.
+</p>
+
+<p>
+El que es demana és modelitzar el servei de préstec i retorn sense validacions. L’única validació serà la comprovació de l’existència de l’usuari o soci de la biblioteca. 
+</p>
+
+<p>
+Per solucionar aquests casos d’ús, es demana fer servir el <em>plugin</em> <strong>Papyrus</strong> d’Eclipse.
+</p>
+
+<p>
+<form action=""><div class="solution ioccontent">
+<p>
+<strong>1.</strong> Cas d’ús <em>sol·licitud d’un llibre</em>
+</p>
+<div class="iocfigure"><a name="figXX1"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Diagrama de cas d’ús: Sol·licitar llibre
+
+</figcaption><img src="../media/wdamm05u3_13.png" alt="" /></figure>
+</div><ul>
+<li class="level1"><div class="li"> Descripció: un soci de la biblioteca sol·licita el préstec d’un llibre a un bibliotecari. El bibliotecari verifica la disponibilitat del llibre i registra el préstec en el sistema. El bibliotecari lliura el llibre sol·licitat al soci.</div>
+</li>
+<li class="level1"><div class="li"> Actors</div>
+<ul>
+<li class="level2"><div class="li"> Soci: ciutadà que està registrat en el sistema de la biblioteca.</div>
+</li>
+<li class="level2"><div class="li"> Bibliotecari: persona que treballa en la biblioteca i gestiona el préstec i la devolució de llibres.</div>
+</li>
+</ul>
+</li>
+<li class="level1"><div class="li"> Precondicions: el bibliotecari està registrat en el sistema.</div>
+</li>
+<li class="level1"><div class="li"> Flux normal:</div>
+<ol>
+<li class="level2"><div class="li"> Un usuari de la biblioteca sol·licita el préstec d’un llibre.</div>
+</li>
+<li class="level2"><div class="li"> El bibliotecari verifica que l’usuari estigui donat d’alta en el sistema.</div>
+</li>
+<li class="level2"><div class="li"> El bibliotecari comprova que es tingui disponible alguna còpia del llibre sol·licitat.</div>
+</li>
+<li class="level2"><div class="li"> El bibliotecari confirma la reserva, que és registrada en el sistema.</div>
+</li>
+<li class="level2"><div class="li"> Automàticament, el sistema registra el préstec del llibre en la fitxa del soci.</div>
+</li>
+<li class="level2"><div class="li"> Automàticament, el sistema actualitza el catàleg de la biblioteca, amb la qual cosa disminueix en un l’estoc disponible del llibre prestat.</div>
+</li>
+<li class="level2"><div class="li"> El bibliotecari lliura el llibre al soci.</div>
+</li>
+</ol>
+</li>
+<li class="level1"><div class="li"> Flux alternatiu:</div>
+<ol>
+<li class="level2"><div class="li"> L’usuari no està registrat en el sistema, per tant, s’haurà de donar d’alta.</div>
+</li>
+<li class="level2"><div class="li"> No es disposa d’una còpia del llibre, per tant, el bibliotecari informa l’usuari que la reserva no es pot efectuar.</div>
+</li>
+</ol>
+</li>
+<li class="level1"><div class="li"> Postcondicions:</div>
+<ul>
+<li class="level2"><div class="li"> L’usuari que efectua el préstec és soci de la biblioteca.</div>
+</li>
+<li class="level2"><div class="li"> S’actualitza els llibres en préstec del soci (s’incrementen els prestats).</div>
+</li>
+<li class="level2"><div class="li"> S’actualitza l’estoc del llibre en el catàleg de la biblioteca (es descompten els prestats).</div>
+</li>
+</ul>
+</li>
+</ul>
+
+<p>
+<strong>2.</strong> Cas d’ús <em>Retorn del llibre</em>
+</p>
+<div class="iocfigure"><a name="figXX2"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Diagrama de cas d’ús: Retornar llibre
+
+</figcaption><img src="../media/wdamm05u3_14.png" alt="" /></figure>
+</div><ul>
+<li class="level1"><div class="li"> Descripció: un soci de la biblioteca sol·licita fer el retorn d’un llibre en préstec al bibliotecari. El bibliotecari registra el retorn del llibre en el sistema i es queda amb el llibre.</div>
+</li>
+<li class="level1"><div class="li"> Actors</div>
+<ul>
+<li class="level2"><div class="li"> Soci: ciutadà que està registrat en el sistema de la biblioteca.</div>
+</li>
+<li class="level2"><div class="li"> Bibliotecari: persona que treballa en la biblioteca i gestiona el préstec i la devolució de llibres.</div>
+</li>
+</ul>
+</li>
+<li class="level1"><div class="li"> Precondicions: el bibliotecari està registrat en el sistema.</div>
+</li>
+<li class="level1"><div class="li"> Flux normal:</div>
+<ol>
+<li class="level2"><div class="li"> El soci s’identifica al bibliotecari, ja que vol retornar un llibre en préstec.</div>
+</li>
+<li class="level2"><div class="li"> El bibliotecari consulta la informació del soci en el sistema.</div>
+</li>
+<li class="level2"><div class="li"> El sistema mostra els llibres que té en préstec.</div>
+</li>
+<li class="level2"><div class="li"> Es valida que el llibre que s’està retornant és un dels que està en préstec.</div>
+</li>
+<li class="level2"><div class="li"> El bibliotecari confirma el retorn del llibre.</div>
+</li>
+<li class="level2"><div class="li"> Automàticament, el sistema registra la devolució del llibre en la fitxa del soci.</div>
+</li>
+<li class="level2"><div class="li"> Automàticament, el sistema actualitza el catàleg de la biblioteca, amb la qual cosa augmenta l’estoc disponible del llibre retornat.</div>
+</li>
+<li class="level2"><div class="li"> El bibliotecari es queda amb el llibre.</div>
+</li>
+</ol>
+</li>
+<li class="level1"><div class="li"> Postcondicions:</div>
+<ul>
+<li class="level2"><div class="li"> S’actualitzen els llibres en préstec del soci (es descompten els retornats).</div>
+</li>
+<li class="level2"><div class="li"> S’actualitza l’estoc del llibre en el catàleg de la biblioteca (s’incrementen els retornats). </div>
+</li>
+</ul>
+</li>
+</ul>
+</div><input class="btn_solution3" type="button" value="Mostra"></input></form>
+</p>
+
+</div>
+
+<h2><a id="diagrama_de_classesbiblioteca" >Diagrama de classes: biblioteca</a></h2>
+<div class="level2">
+
+<p>
+L’objectiu d’aquesta activitat és aprofundir en els conceptes dels diagrames de classes.
+</p>
+
+<p>
+En una biblioteca es vol portar un control dels llibres existents, dels socis de la biblioteca i dels préstecs que s’han efectuat.
+</p>
+
+<p>
+De cada llibre poden existir un o molts exemplars, així com cada exemplar haurà de trobar-se en un catàleg. Per això, es podrà donar entrada a un exemplar al catàleg o donar-li sortida. Cada exemplar es trobarà en un possible estat:
+</p>
+<ul>
+<li class="level1"><div class="li"> Disponible.</div>
+</li>
+<li class="level1"><div class="li"> Prestat.</div>
+</li>
+<li class="level1"><div class="li"> No disponible.</div>
+</li>
+</ul>
+
+<p>
+A l’hora d’efectuar el préstec, caldrà validar que existeix el soci que el demana i la disponibilitat de l’exemplar. Les accions a fer podran ser la de prestar un llibre i la de retornar-lo.
+</p>
+
+<p>
+Cada element del sistema tindrà els seus atributs propis, que es deixen a l’elecció de l’alumne.
+</p>
+
+<p>
+Es demana realitzar el diagrama de classes per a aquest enunciat.
+</p>
+
+<p>
+Es recomana fer servir el <em>plugin</em> d’Eclipse per efectuar els diagrames.
+</p>
+
+<p>
+<form action=""><div class="solution ioccontent">
+<p>
+Un possible diagrama de classes per solucionar l’enunciat podria ser el que apareix a la figura següent.
+</p>
+<div class="iocfigure"><a name="figXX3"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Diagrama de classes
+
+</figcaption><img src="../media/wdamm05u3_15.png" alt="" /></figure>
+</div></div><input class="btn_solution3" type="button" value="Mostra"></input></form>
+</p>
+
+</div>
+
+<h2><a id="diagrama_de_sequeenciabiblioteca" >Diagrama de seqüència: biblioteca</a></h2>
+<div class="level2">
+
+<p>
+L’objectiu d’aquesta activitat és aprofundir en els conceptes dels diagrames de seqüències.
+</p>
+
+<p>
+En una biblioteca es vol portar un control dels llibres existents, dels socis de la biblioteca i dels préstecs que s’han dut a terme.
+</p>
+
+<p>
+De cada llibre poden existir un o molts exemplars, així com cada exemplar s’haurà de trobar en un catàleg. Per això, es podrà donar entrada a un exemplar al catàleg o donar-li sortida.
+</p>
+
+<p>
+A l’hora d’efectuar el préstec caldrà validar que existeix el soci que el demana i la disponibilitat de l’exemplar. Les accions a fer podran ser la de prestar un llibre i la de retornar-lo.
+</p>
+
+<p>
+Es demana realitzar el diagrama de seqüència per a aquest enunciat.
+</p>
+
+<p>
+Es recomana fer servir el <em>plugin</em> d’Eclipse per efectuar els diagrames.
+</p>
+
+<p>
+<form action=""><div class="solution ioccontent">
+<p>
+Un possible diagrama de seqüència podria ser el que apareix a la figura següent.
+</p>
+<div class="iocfigure"><a name="figXX4"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Diagrama de de seqüència
+
+</figcaption><img src="../media/wdamm05u3_16.png" alt="" /></figure>
+</div></div><input class="btn_solution3" type="button" value="Mostra"></input></form>
+</p>
+
+</div>
+
+<h2><a id="diagrama_d_estatsbiblioteca" >Diagrama d&#039;estats: biblioteca</a></h2>
+<div class="level2">
+
+<p>
+L’objectiu d’aquesta activitat és aprofundir en els conceptes dels diagrames d’estats.
+</p>
+
+<p>
+En una biblioteca es vol portar un control dels llibres existents, dels socis de la biblioteca i dels préstecs que s’han efectuat.
+</p>
+
+<p>
+De cada llibre poden existir un o molts exemplars, així com cada exemplar haurà de trobar-se en un catàleg. Per això, es podrà donar entrada a un exemplar al catàleg o donar-li sortida. Cada exemplar es trobarà en un possible estat:
+</p>
+<ul>
+<li class="level1"><div class="li"> Disponible.</div>
+</li>
+<li class="level1"><div class="li"> Prestat.</div>
+</li>
+<li class="level1"><div class="li"> No disponible.</div>
+</li>
+</ul>
+
+<p>
+A l’hora d’efectuar el préstec, caldrà validar que existeix el soci que el demana i la disponibilitat de l’exemplar. Les accions a fer podran ser la de prestar un llibre i la de retornar-lo.
+</p>
+
+<p>
+Cada element del sistema tindrà els seus atributs propis, que es deixen a l’elecció de l’alumne.
+</p>
+
+<p>
+Es demana realitzar el diagrama d’estats per a aquest enunciat.
+</p>
+
+<p>
+Es recomana fer servir el <em>plugin</em> d’Eclipse per efectuar els diagrames.
+</p>
+
+<p>
+<form action=""><div class="solution ioccontent">
+<p>
+Un possible diagrama d’estats podria ser el que apareix a la figura següent.
+</p>
+<div class="iocfigure"><a name="figXX5"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Diagrama d’estats
+
+</figcaption><img src="../media/wdamm05u3_17.png" alt="" /></figure>
+</div></div><input class="btn_solution3" type="button" value="Mostra"></input></form>
+</p>
+
+</div>
+
+	 </article>
+     <div class="pnpage">
+      <div class="left-corner"></div>
+      <div id="prevpage">Anar a la p&agrave;gina anterior:<br /><a href="../../../WebContent/u3/a2/continguts.html">Diagrames dinàmics</a></div>
+      <div id="nextpage">Anar a la p&agrave;gina seg&uuml;ent:<br /><a href="../../../WebContent/u3/a2/exercicis.html">Exercicis</a></div>
+      <div class="right-corner"></div>
+     </div>
+    </div>
+    <footer class="footer">
+      <div><small>Aquest document està subjecte a una llicència oberta de Creative Commons, es reserva el dret de reconeixement de l'autoria, d'exigir que no se'n faci cap mena d'ús comercial. Si altereu o transformeu aquesta obra, o en genereu obres derivades, només podeu distribuir l'obra generada amb una llicència idèntica a aquesta.</small></div>
+    </footer>
+ </div>
+ <div id="back_preview" class="hidden"></div>
+ <div id="preview" class="hidden">
+  <div class="prevcontent"></div>
+ </div>
+ <div id="help-tooltips">
+  <div id="help-toc" class="hidden tooltip"><span>Taula de continguts:</span> Ofereix una vista general de l&#39;estructura del m&ograve;dul, que us facilitar&agrave; la navegaci&oacute; a trav&eacute;s dels seus continguts.<span class="arrow-left"></span></div> 
+  <div id="help-settings" class="hidden tooltip"><span>Opcions de format:</span> Permet configurar el format de lectura a partir de les vostres prefer&egrave;ncies, modificant la mida de la lletra, el color del fons, l&#39;amplada de la p&agrave;gina o l&#39;ocultaci&oacute; dels continguts complementaris, entre d&#39;altres.<span class="arrow-left"></span></div>
+  <div id="help-printer" class="hidden tooltip"><span>Imprimir:</span>  Envia el contingut seleccionat a la impressora.<span class="arrow-left"></span></div>
+  <div id="help-favorites" class="hidden tooltip"><span>Prefereits:</span> Permet desar aquelles parts del contingut a les que us interessi accedir en un moment posterior; us permetr&agrave; anar creant un repositori personalitzat de les seccions que considereu m&eacute;s rellevants. Un cop l&#39;hageu començat a fer servir se us mostrar&agrave; a sota un comptador que us informar&agrave; del nombre de preferits que s&#39;hagin emmagatzemat fins al moment.<span class="arrow-left"></span></div>
+  <div id="help-favcounter" class="hidden tooltip"><span>Comptador i llistat de preferits:</span> Indica el nombre de preferits que s&#39;han desat fins el moment; clicant damunt seu accedireu al llistat de preferits, i a trav&eacute;s d&#39;aquest podreu accedir directament als continguts que hageu emmagatzemat.<span class="arrow-left"></span></div>
+  <div id="help-help_icon" class="hidden tooltip"><span>Ajuda:</span> Aquesta opci&oacute; activa la informaci&oacute; de les funcionalitats del web tot situant el punter del ratol&iacute; al damunt dels diferents &iacute;tems.<span class="arrow-left"></span></div>
+  <div id="help-sidebar-hide" class="hidden tooltip"><span>Mostrar/Ocultar barra lateral:</span>  Deshabilita la barra d&#39;opcions, permetent la seva recuperaci&oacute; quan es desitgi.<span class="arrow-left"></span></div>
+  <div id="help-search" class="hidden tooltip"><span>Cerca:</span>  Introdu&iuml;u les paraules clau sobre aquells conceptes que desitgeu localitzar en els continguts del m&ograve;dul. Tamb&eacute; podeu excloure un terme de la cerca tot afegint-hi el signe &#8220;-&#8221; al davant.<span class="arrow-top"></span></div>
+  <div id="help-header" class="hidden tooltip"><span>Cap&ccedil;alera:</span>  Indica l&#39;apartat o secci&oacute; que es mostra en pantalla. Tingueu present que les capçaleres de segon, tercer i quart nivell tamb&eacute; es poden desar com a marcadors.<span class="arrow-left"></span></div>
+</div> 
+</body>
+</html>

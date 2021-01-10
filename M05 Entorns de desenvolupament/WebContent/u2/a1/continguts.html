@@ -1,0 +1,1843 @@
+<!doctype html>
+
+<!--[if lt IE 7 ]> <html class="ie ie6 no-js" lang="ca"> <![endif]-->
+<!--[if IE 7 ]>    <html class="ie ie7 no-js" lang="ca"> <![endif]-->
+<!--[if IE 8 ]>    <html class="ie ie8 no-js" lang="ca"> <![endif]-->
+<!--[if IE 9 ]>    <html class="ie ie9 no-js" lang="ca"> <![endif]-->
+<!--[if gt IE 9]><!--><html class="no-js" lang="ca"><!--<![endif]-->
+<!-- the "no-js" class is for Modernizr. -->
+
+<head id="www-sitename-com" data-template-set="html5-reset">
+
+	<meta charset="utf-8">
+	
+	<!-- Always force latest IE rendering engine (even in intranet) & Chrome Frame -->
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	
+	<title>Entorns de desenvolupament</title>
+	
+<!-- <meta name="title" content=""> --> 
+	<meta name="description" content="">
+	<!-- Google will often use this as its description of your page/site. Make it good. -->
+	
+	<meta name="google-site-verification" content="">
+	<!-- Speaking of Google, don't forget to set your site up: http://google.com/webmasters -->
+	
+	<meta name="author" content="Institut Obert de Catalunya">
+	<meta name="Copyright" content="Copyright Institut Obert de Catalunya 2011. All Rights Reserved.">
+
+	<!-- Dublin Core Metadata : http://dublincore.org/ -->
+	<meta name="DC.title" content="Entorns de desenvolupament">
+	<meta name="DC.subject" content="Informàtica i comunicacions">
+	<meta name="DC.creator" content="Institut Obert de Catalunya">
+	
+	<!--  Mobile Viewport Fix
+	j.mp/mobileviewport & davidbcalhoun.com/2010/viewport-metatag 
+	device-width : Occupy full width of the screen in its current orientation
+	initial-scale = 1.0 retains dimensions instead of zooming out if page height > device height
+	maximum-scale = 1.0 retains dimensions instead of zooming in if page width < device width
+	-->
+	<!-- Uncomment to use � use thoughtfully!
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+	-->
+
+	<link rel="shortcut icon" href="../../../img/favicon.ico">
+	<!-- This is the traditional favicon.
+		 - size: 16x16 or 32x32
+		 - transparency is OK
+		 - see wikipedia for info on browser support: http://mky.be/favicon/ -->
+		 
+	<link rel="apple-touch-icon" href="../../../img/apple-touch-icon.png">
+	<!-- The is the icon for iOS's Web Clip.
+		 - size: 57x57 for older iPhones, 72x72 for iPads, 114x114 for iPhone4's retina display (IMHO, just go ahead and use the biggest one)
+		 - To prevent iOS from applying its styles to the icon name it thusly: apple-touch-icon-precomposed.png
+		 - Transparency is not recommended (iOS will put a black BG behind the icon) -->
+	
+	<!-- CSS: screen, mobile & print are all in the same file -->
+	<link rel="stylesheet" href="../../../_/css/style.css">
+
+	<!-- CSS: jQuery UI -->
+	<link rel="stylesheet" href="../../../_/css/jquery-ui.css">
+	
+	<!-- all our JS is at the bottom of the page, except for Modernizr. -->
+	<script src="../../../_/js/modernizr-1.7.min.js"></script>
+	<script src="../../../_/js/Hyphenator.js" type="text/javascript"></script>
+	<script type="text/javascript">
+	   Hyphenator.config({
+		minwordlength : 4
+	   });
+	   Hyphenator.run();
+	</script>
+    <script src="../../../_/js/build.js" type="text/javascript"></script>
+</head>
+
+<body class="style-newspaper">
+
+<div class="wrapper"><!-- not needed? up to you: http://camendesign.com/code/developpeurs_sans_frontieres -->
+
+	<header id="header">
+		<div class="head"><a href="http://ioc.gencat.cat"><img src="../../../img/logo.png" alt="Institut Obert de Catalunya"/></a><a href="http://creativecommons.org/licenses/by-nc-sa/3.0/es/deed.ca"><img src="../../../img/license.png" alt="Llic&egrave;ncia" class="license"/></a></div>
+		<div class="headdocument"><a href="../../../index.html">Entorns de desenvolupament</a></div>
+        <div id="search" class="search" name="search">
+         <form id="frmsearch" action="../../../search.html" method="get">
+          <input type="text" name="q"/>
+        </form>
+        </div>
+	</header>
+   <div id="upbutton" class="upbutton" style="display:none;"><img src="../../../img/uparrow.png" alt="Pujar a l'inici de p&agrave;gina"/></div>
+   <aside id="aside">
+    <div id="menu">
+      <ul>
+       <li name="toc"><div><img src="../../../img/toc.png" alt="&Iacute;ndex"/></div></li>
+       <li name="settings"><div><img src="../../../img/settings.png" alt="Configuraci&oacute;"/></div></li>
+       <li name="printer"><div><img src="../../../img/printer.png" alt="Imprimir"/></div></li>
+       <li name="favorites"><div><img src="../../../img/favorites.png" alt="Favorits"/></div></li>
+       <li name="help_icon" class="help_icon"><div><img src="../../../img/help_icon.png" alt="Ajuda"/></div></li>
+      </ul>
+     </div>
+   </aside>
+   <div id="sidebar-hide" name="sidebar-hide"><img src="../../../img/arrows.png"/></div>
+   <section>
+     <div id="toc" class="hidden">
+      <div class="menucontent">
+        <ul>
+        <li id="u2" class="parentnode"><p><a href="../../../WebContent/u2/introduccio.html">2. Optimització de programari</a></p><ul class="expander"><li id="u2introduccio"><a href="../../../WebContent/u2/introduccio.html">Introducció</a></li><li id="u2resum"><a href="../../../WebContent/u2/resum.html">Resum</a></li><li id="u2resultats"><a href="../../../WebContent/u2/resultats.html">Resultats d’aprenentatge</a></li><li id="u2referencies"><a href="../../../WebContent/u2/referencies.html">Referències</a></li><li id="u2a1" class="tocsection"><p id="u2a1continguts"><a href="../../../WebContent/u2/a1/continguts.html">Disseny i realització de proves de programari</a><span class="buttonexp"></span></p><ul><li id="u2a1activitats"><a href="../../../WebContent/u2/a1/activitats.html">Activitats</a></li><li id="u2a1exercicis"><a href="../../../WebContent/u2/a1/exercicis.html">Exercicis</a></li><li id="u2a1annexos"><a href="../../../WebContent/u2/a1/annexos.html">Annexos</a></li></ul></li><li id="u2a2" class="tocsection"><p id="u2a2continguts"><a href="../../../WebContent/u2/a2/continguts.html">Eines per al control i documentació de programari</a><span class="buttonexp"></span></p><ul><li id="u2a2activitats"><a href="../../../WebContent/u2/a2/activitats.html">Activitats</a></li><li id="u2a2exercicis"><a href="../../../WebContent/u2/a2/exercicis.html">Exercicis</a></li></ul></li></ul></li><li id="" class="indexnode"><p><a href="../../../index.html">Anar a l&#39;&iacute;ndex general</a></p></li>
+        </ul>
+      </div>
+    </div>
+   </section>
+   <section>
+   <div id="settings" class="hidden">
+    <div class="menucontent">
+     <div class="allsettings">
+     <div class="settings">
+      <label>Font i Color</label>
+		<div class="setting-option">
+	        <ul class="fontBackground">
+				<li id="style-newspaper" title="Newspaper" class="appearance-style-newspaper"><span>Newspaper</span></li>
+                <li id="style-novel" title="Novel" class="appearance-style-novel"><span>Novel</span></li>
+                <li id="style-ebook" title="eBook" class="appearance-style-ebook"><span>eBook</span></li>
+				<li id="style-inverse" title="Inverse" class="appearance-style-inverse active"><span>Inverse</span></li>
+				<li id="style-athelas" title="Athelas" class="appearance-style-athelas"><span>Athelas</span></li>
+			</ul>
+		</div>
+     </div>
+	<div class="settings">
+      <label>Amplada</label>
+		<div class="setting-option">
+	        <div id="slider-width"></div>
+		</div>
+     </div>
+     <div class="settings">
+      <label>Mida de la font</label>
+		<div class="setting-option">
+	        <div id="slider-font"></div>
+		</div>
+     </div>
+     <div class="settings">
+      <label>Mida de la font</label>
+	  <div class="setting-option">
+       <form action="" class="sett-options">
+		<ul>
+		    <li><input type="checkbox" id="secondary-content" /><label for="secondary-content">Mostra recursos complementaris</label></li>
+		    <li><input type="checkbox" id="main-images" /><label for="main-images">Mostra imatges</label></li>
+		    <li><input type="checkbox" id="text-alignment" /><label for="text-alignment">Text justificat</label></li>
+			<li><input type="checkbox" id="text-hyphen" /><label for="text-hyphen">Partici&oacute; sil·l&agrave;bica</label></li>
+		</ul>
+       </form>
+	  </div>
+     </div>
+     </div>
+    </div>
+   </div>
+   </section>
+ <section>
+ <div id="favorites" class="hidden"></div>
+ </section>   
+ <div id="bridge" class="hidden"></div>
+ <div id="help" class="hidden">
+  <div class="helptitle">Dreceres del teclat<hr></div>
+  <div class="helpsection"><span>General</span>
+   <ul>
+    <li><span class="shortcut">g</span>: Anar al men&uacute; de navegaci&oacute;</li>
+    <li><span class="shortcut">o</span>: Anar a opcions</li>
+    <li><span class="shortcut">s</span>: Guardar la p&agrave;gina actual a favorits</li>
+    <li><span class="shortcut">p</span>: Imprimir la p&agrave;gina actual</li>
+    <li><span class="shortcut">?</span>: Mostrar/Ocultar l&#39;ajuda</li>
+   </ul>
+  </div>
+  <div class="helpsection"><span>Navegaci&oacute;</span>
+   <ul>
+    <li><span class="shortcut">i</span>: Anar a l&#39;&iacute;ndex general</li>
+    <li><span class="shortcut">t</span>: Anar a l&#39;inici de p&agrave;gina</li>
+    <li><span class="shortcut">b</span>: Anar al final de p&agrave;gina</li>
+    <li><span class="shortcut">j</span>: Anar cap endavant dintre la p&agrave;gina</li>
+    <li><span class="shortcut">k</span>: Anar cap enrere dintre la p&agrave;gina</li>
+    <li><span class="shortcut">h</span>: Anar a la p&agrave;gina anterior:</li>
+    <li><span class="shortcut">l</span>: Anar a la p&agrave;gina seg&uuml;ent:</li>
+   </ul>
+   </div>
+ </div>
+ <div id="favcounter" name="favcounter" class="hidden"><span></span></div>
+ <div id="navmenu" class="navmenu"><ul class="webnav"><li><a href="../../../index.html" title="Anar a l&#39;&iacute;ndex general">Inici</a></li><li><a href="../introduccio.html">Optimització de programari </a></li><li>Disseny i realització de proves de programari</li></ul></div>
+	<div id="content" lang="ca" class="hyphenate text">
+     <article lang="ca" class="sheet">
+        <h1><a id="disseny_i_realitzacio_de_proves_de_programari"> Disseny i realització de proves de programari </a></h1>
+    	
+<p>
+Les proves són necessàries en la fabricació de qualsevol producte industrial i, de forma anàloga, en el desenvolupament de projectes informàtics. Qui posaria a la venta una aspiradora sense estar segur que aspira correctament? O una ràdio digital sense haver comprovat que pugui sintonitzar els canals?
+</p>
+
+<p>
+Una aplicació informàtica no pot arribar a les mans d’un usuari final amb errades, i menys si aquestes són prou visibles i clares com per haver estat detectades pels desenvolupadors. Es donaria una situació de manca de professionalitat i disminuïria la confiança per part dels usuaris, que podria mermar oportunitats futures.
+</p>
+
+<p>
+Quan cal dur a terme les proves? Què cal provar? Totes les fases establertes en el desenvolupament del programari són importants. La manca o mala execució d’alguna d’elles pot provocar que la resta del projecte arrossegui un o diversos errors que seran determinants per al seu l’èxit. Com més aviat es detecti un error, menys costós serà de solucionar. 
+</p>
+
+<p>
+També seran molt importants les proves que es duran a terme una vegada el projecte estigui finalitzat. És per això que la fase de proves del desenvolupament d’un projecte de programari es considera bàsica abans de fer la transferència del projecte a l’usuari final. Qui donaria un cotxe per construït i finalitzat si en intentar arrencar-lo no funcionés?
+</p>
+
+<h2><a id="introduccio" >Introducció</a></h2>
+<div class="level2">
+
+<p>
+Qualsevol membre de l’equip de treball d’un projecte informàtic pot cometre errades. Les errades, a més, es podran donar a qualsevol de les fases del projecte (anàlisi, disseny, codificació …). Algunes d’aquestes errades seran més determinants que d’altres i tindran més o menys implicacions en el desenvolupament futur del projecte.
+</p>
+<div class="iocnote"><div class="ioccontent">
+<p>
+Les fases de desenvolupament d’un projecte són: presa de requeriments, anàlisi, disseny, desenvolupament, proves, finalització i transferència.
+</p>
+</div></div>
+<p>
+Per exemple, un cap de projecte, a l’hora de planificar les tasques de l’equip, estipula el disseny de les interfícies en 4 hores de feina per a un únic dissenyador. Si, una vegada executada aquesta tasca del projecte, la durada ha estat de 8 hores i s’han necessitat dos dissenyadors, la repercussió en el desenvolupament del projecte serà una desviació en temps i en cost, que potser es podrà compensar utilitzant menys recursos o menys temps en alguna tasca posterior.
+</p>
+
+<p>
+En canvi, si l’errada ha estat del dissenyador de la base de dades, que ha obviat un camp clau d’una taula principal i la seva vinculació amb una segona taula, aquesta pot ser molt més determinant en les tasques posteriors. Si es creen les interfícies a partir d’aquesta base de dades errònia i es comença a desenvolupar el programari sense identificar l’errada, pot succeir que al cap d’unes quantes tasques es detecti l’errada i que, per tant, calgui tornar al punt d’inici per solucionar-la.
+</p>
+<div class="iocimportant"><div class="ioccontent">
+<p>
+Un <strong>error</strong> no detectat a l’inici del desenvolupament d’un projecte pot arribar a necessitar cinquanta vegades més esforços per ser solucionat que si és detectat a temps.
+</p>
+</div></div>
+<p>
+En un projecte de desenvolupament de programari està estipulat que es dedica entre un 30% i un 50% del cost de tot el projecte a la fase de proves. Amb aquesta dada ens podem adonar de la importància de les proves dins un projecte. Els resultats de les proves podran influir en la percepció que tindrà el client final en relació amb el producte (programari) lliurat i la seva qualitat. 
+</p>
+
+<p>
+Precisament, és l’objectiu d’aquestes proves: l’avaluació de la qualitat del programari desenvolupat durant tot el seu cicle de vida, validant que fa el que ha de fer i que ho fa tal com es va dissenyar, a partir dels requeriments. 
+</p>
+
+</div>
+
+<h2><a id="les_proves_en_el_cicle_de_vida_d_un_projecte" >Les proves en el cicle de vida d’un projecte</a></h2>
+<div class="level2">
+
+<p>
+A cada una de les fases del cicle de vida d’un projecte, caldrà que el treball dut a terme sigui validat i verificat.
+</p>
+
+<p>
+En l’esquema de la <span class="figref"><a href="#Figure1"><span>figura</span></a></span> podem veure com encaixen les proves en el cicle de vida del programari.
+</p>
+<div class="iocfigure"><a name="Figure1"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Cicle de vida en V: fases de prova
+
+</figcaption><img src="../media/ic10m05u2_01.png" alt="" /></figure>
+</div>
+<p>
+Alhora que s’avança en el desenvolupament del programari es van planificant les proves que es faran a cada fase del projecte. Aquesta planificació es concretarà en un pla de proves que s’aplicarà a cada producte desenvolupat. Quan es detecten errors en un producte s’ha de tornar a la fase anterior per depurar-lo i corregir-lo; això s’indica amb les fletxes de tornada de la part esquerra de la figura.
+</p>
+<div class="ioctext"><div class="ioccontent"><p class="ioctitle">Depuradors</p>
+<p>
+Els depuradors (<em>debuggers</em>) són una aplicacions o eines permeten l’execució controlada d’un programa o un codi, seguint el comandament executat i localitzant els errors (<em>bugs</em>) que puguin contenir.
+</p>
+</div></div>
+<p>
+Hi ha eines CASE que ajuden a dur a terme aquests processos de prova; concretament, es coneixen com a depuradors els encarregats de depurar errors en els programes. 
+</p>
+
+<p>
+Com es pot observar a la <span class="figref"><a href="#Figure1"><span>figura</span></a></span>, el procés de verificació cobrirà les fases de disseny i implementació del producte. Les persones implicades en la seva execució seran els desenvolupadors o programadors i l’enginyer de proves. 
+</p>
+
+<p>
+Els desenvolupadors faran proves sobre el codi i els diferents mòduls que l’integren, i l’enginyer, sobre el disseny del sistema.
+</p>
+
+<p>
+Validació és el terme que es fa servir per avaluar positivament si el producte desenvolupat compleix els requisits establerts en l’anàlisi. Les persones encarregades de fer les proves de validació són els enginyers de proves.
+</p>
+
+<p>
+Finalment, el client ha de donar el vistiplau al producte, raó per la qual es faran les proves d’acceptació en funció de les condicions que es van signar al principi del contracte.
+</p>
+
+</div>
+
+<h2><a id="procediments_tipus_i_casos_de_proves" >Procediments, tipus i casos de proves</a></h2>
+<div class="level2">
+
+<p>
+En cada una de les fases d’un projecte s’haurà de dedicar un temps considerable a desenvolupar les tasques i els procediments referents a les proves. És per això que alguns autors consideren que els procediments relacionats amb les proves són com un petit projecte englobat dins el projecte de desenvolupament. 
+</p>
+
+<p>
+Aquest projecte de proves requerirà d’una planificació, un disseny del pla de proves, una execució de les mateixes i una avaluació dels resultats, per tal d’analitzar els errors i poder aplicar les accions necessàries. A la <span class="figref"><a href="#Figure2"><span>figura</span></a></span> es mostra un esquema amb els procediments que caldrà dur a terme i la documentació que s’haurà d’adjuntar. Aquest esquema servirà com a índex per a aquest apartat.
+</p>
+<div class="iocnote"><div class="ioccontent">
+<p>
+Consulteu l’obra de Presman, R. S. en la secció <em>Bibliografia bàsica</em> del web del mòdul (pàgines 419-469).
+</p>
+</div></div>
+<p>
+L’esquema s’inicia amb una planificació de les proves, que té com a punt de partida l’anàlisi funcional, diagrames de casos d’ús… del producte a desenvolupar. En la planificació s’estimaran els recursos necessaris per a l’elaboració de les proves i la posterior validació del programari, i s’obtindrà un pla de proves com a sortida.
+</p>
+
+<p>
+Partint del pla de proves i del codi font que s’hagi desenvolupat, es durà a terme el disseny de les proves identificant quin tipus de proves s’efectuarà per a cada una de les funcionalitats, i s’obtindran, com a sortida, els casos de prova i procediments. A partir d’aquest moment, es crea un bucle on s’executaran les proves, s’avaluaran els resultats de les proves efectuades detectant els errors, es depurarà el codi aplicant les correccions pertinents i es tornaran a executar les proves. 
+</p>
+
+<p>
+En finalitzar el bucle, es farà l’anàlisi de l’estadística d’errors. Aquesta anàlisi permetrà fer prediccions de la fiabilitat del programari, així com detectar les causes més habituals d’error, amb la qual cosa es podran millorar els processos de desenvolupament.
+</p>
+<div class="iocfigure"><a name="Figure2"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Procés de proves
+
+</figcaption><img src="../media/ic10m05u2_02.png" alt="" /></figure>
+</div>
+</div>
+
+<h3><a id="planificacio_de_les_proves" >Planificació de les proves</a></h3>
+<div class="level3">
+
+<p>
+La planificació de les proves és una tasca que cal anar desenvolupant al llarg de totes les fases del projecte informàtic. No cal esperar la fase de programació per crear aquest pla de proves; a la fase d’anàlisi i a la fase de disseny ja es tenen prou dades per tal de poder començar a establir les primeres línies del pla de proves.
+</p>
+<div class="iocimportant"><div class="ioccontent">
+<p>
+És important tenir present que, com més aviat es detecti una <strong>errada</strong> al projecte informàtic, més fàcil serà contrarestar i solucionar aquest error. El cost de la resolució d’un problema creix exponencialment a mesura que avancen les fases del projecte en les quals es detecti.
+</p>
+</div></div>
+<p>
+Però, com succeeix en molts aspectes de la vida, una cosa és la teoria i una altra de molt diferent la realitat. En moltes consultories especialitzades en desenvolupament del programari, així com en altres empreses més petites o, fins i tot, per part de programadors independents que creen el seu propi programari, es consideren les proves com un procés que es tracta al final del projecte, una vegada la major part del codi ha estat desenvolupat.
+</p>
+<div class="iocimportant"><div class="ioccontent">
+<p>
+La <strong>planificació de les proves</strong> té com a objectiu arribar a la creació d’un pla d’actuació que es refereixi a quan i com es duran a terme les proves. Però per a això cal dur a terme una anàlisi minuciosa del sistema i dels seus elements. El pla de proves ha de contenir totes les funcions, les estratègies, les tècniques i els membres de l’equip de treball implicats.
+</p>
+</div></div><div class="ioctext"><div class="ioccontent"><p class="ioctitle">IEEE</p>
+<p>
+IEEE és l’acrònim per a Institute of Electrical and Electronics Engineers, una associació professional sense ànim de lucre que determina la major part dels estàndards en les Enginyeries.
+</p>
+</div></div>
+<p>
+Una bona guia per determinar què contindrà un bon pla de proves es pot obtenir de la normativa IEEE 829-2008 “Standard for Software and System Test Documentation”. Aquest estàndard estableix com haurà de ser la documentació i els procediments que es faran servir en les diferents etapes de les proves del programari. Alguns dels continguts del pla de proves són:
+</p>
+<ul>
+<li class="level1"><div class="li"> <strong>Identificador del pla de proves</strong>. És l’identificador que s’assignarà al pla de proves. És important per poder identificar fàcilment quin abast té el pla de proves. Per exemple, si es volen verificar les interfícies i procediments relacionats amb la gestió de clients, el seu pla de proves es podria dir PlaClients.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Descripció del pla de proves</strong>. Defineix l’abast del pla de proves, el tipus de prova i les seves propietats, així com els elements del programari que es volen provar.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Elements del programari a provar</strong>. Determina els elements del programari que s’han de tenir en compte en el pla de proves, així com les condicions mínimes que s’han de complir per dur-ho terme.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Elements del programari que no s’han de provar</strong>. També és important definir els elements que no s’hauran de tenir en compte al pla de proves.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Estratègia del pla de proves</strong>. Defineix la tècnica a utilitzar en el disseny dels casos de prova, com per exemple la tècnica de capsa blanca o de capsa negra, així com les eines que s’utilitzaran o, fins i tot, el grau d’automatizació de les proves.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Definició de la configuració del pla de proves</strong>. Defineix les circumstàncies sota les quals el pla de proves podrà ser alterat, finalitzat, suspès o repetit. Quan s’efectuïn les proves, s’haurà de determinar quin és el punt que provoca que se suspenguin, ja que no tindria gaire sentit continuar provant el programari quan aquest es troba en un estat inestable. Una vegada els errors han estat corregits, es podrà continuar efectuant les proves; és possible que s’iniciïn des del principi del pla o des d’una determinada prova. Finalment, es podrà determinar la finalització de les proves si aquestes han superat un determinat llindar.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Documents a lliurar</strong>. Defineix els documents que cal lliurar durant el pla de proves i en finalitzar-lo. Aquesta documentació ha de contenir la informació referent a l’èxit o fracàs de les proves executades amb tot tipus de detall. Alguns d’aquests documents poden ser: resultats dels casos de proves, especificació de les proves, subplans de proves…</div>
+</li>
+<li class="level1"><div class="li"> <strong>Tasques especials</strong>. Defineix les taques necessàries per preparar i executar les proves. Però hi ha algunes tasques que tindran un caràcter especial, per la seva importància o per la seva dependència amb d’altres. Per a aquest tipus de tasques, serà necessari efectuar una planificació més detallada i determinar sota quines condicions es duran a terme.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Recursos</strong>. Per a cada tasca definida dins el pla de proves, s’haurà d’assignar un o diversos recursos, que seran els encarregats de dur-la a terme. </div>
+</li>
+<li class="level1"><div class="li"> <strong>Responsables i Responsabilitats</strong>. Es defineix el responsable de cadascuna de les tasques previstes en el pla.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Calendari del pla de proves</strong>. En el calendari queden descrites les tasques que s’hauran d’executar, indicant les seves dependències, els responsables, les dates d’actuació i la durada, així com les fites del pla de proves. Una eina molt utilitzada per representar aquest calendari del pla de proves és el Diagrama de Gantt. </div>
+</li>
+</ul>
+
+<p>
+Un error típic és tractar la planificació de proves com una activitat puntual, limitada al període de temps en què s’elabora una llista d’accions per ser desenvolupades durant els propers dies, mesos… La planificació és un procés continu i no puntual; per tant, cal treballar-hi al llarg de tot el projecte, i per a això és necessari:
+</p>
+<ul>
+<li class="level1"><div class="li"> <strong>Gestionar els canvis:</strong> no és d’estranyar que, al llarg del cicle de vida del projecte, i amb major probabilitat quan més llarga és la seva durada, es presentin canvis en l’abast del projecte. Serà necessari adaptar el pla de proves a les noves especificacions.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Gestionar els riscos</strong>: un risc es podria definir com un conjunt de situacions que poden provocar un impediment o retard en el pla de proves. Els riscos s’hauran d’identificar al més aviat possible i analitzar la probabilitat que hi ha que succeeixin, tot aplicant mesures preventives, si es considera oportú, o disposar d’un pla de contingència en cas que el risc sorgís.</div>
+</li>
+</ul>
+<div class="iocimportant"><div class="ioccontent">
+<p>
+En la planificació d’un projecte informàtic el temps dedicat a les proves acostuma a ser molt limitat.
+</p>
+</div></div>
+<p>
+D’aquesta manera, es pot afirmar que tota planificació ha de ser viva i s’ha d’anar revisant i controlant de forma periòdica. En cas de desviació, s’han d’analitzar les causes que l’han provocat i com afecta a la resta dels projectes.
+</p>
+
+</div>
+
+<h3><a id="disseny_de_les_proves_tipus_de_proves" >Disseny de les proves. Tipus de proves</a></h3>
+<div class="level3">
+
+<p>
+El disseny de les proves és el pas següent després d’haver dut a terme el pla de proves. Aquest disseny consistirà a establir els casos de prova, identificant, en cada cas, el tipus de prova que s’haurà d’efectuar. 
+</p>
+
+<p>
+Existeixen molts tipus de proves:
+</p>
+<ul>
+<li class="level1"><div class="li"> Estructurals o de capsa blanca</div>
+</li>
+<li class="level1"><div class="li"> Funcionals o de capsa negra</div>
+</li>
+<li class="level1"><div class="li"> D’integració</div>
+</li>
+<li class="level1"><div class="li"> De càrrega i acceptació</div>
+</li>
+<li class="level1"><div class="li"> De sistema i de seguretat</div>
+</li>
+<li class="level1"><div class="li"> De regressió i de fum</div>
+</li>
+</ul>
+
+</div>
+
+<h4><a id="casos_de_prova_i_procediments" >Casos de prova i procediments</a></h4>
+<div class="level4">
+
+<p>
+A partir del pla de proves s’hauran especificat les parts de codi a tractar, en quin ordre caldrà fer les proves, qui les farà i molta informació més. Ara només falta entrar en detall, especificant el cas de prova per a cada una de les proves que cal fer.
+</p>
+<div class="iocimportant"><div class="ioccontent">
+<p>
+Un <strong>cas de prova</strong> defineix com es portaran a terme les proves, especificant, entre d’altres: el tipus de proves, les entrades de les proves, els resultats esperats o les condicions sota les quals s’hauran de desenvolupar.
+</p>
+</div></div>
+<p>
+Els casos de proves tenen un objectiu molt marcat: identificar els errors que hi ha al programari per tal que aquests no arribin a l’usuari final. Aquests errors poden trobar-se com a defectes en la interfície d’usuari, en l’execució d’estructures de dades o un determinat requisit funcional. 
+</p>
+<div class="iocreference"><div class="ioccontent">
+<p>
+Als materials Web, tant en la secció d’<em>Annexos</em> com en la d’<em>Activitats</em>, es poden trobar exemples de casos de proves.
+</p>
+</div></div>
+<p>
+A l’hora de dissenyar els casos de prova, no tan sols s’ha de validar que l’aplicació fa el que s’espera davant entrades correctes, sinó que també s’ha de validar que tingui un comportament estable davant entrades no esperades, tot informant de l’error. 
+</p>
+
+<p>
+Per desenvolupar i executar els casos de prova en un projecte informàtic, podem identificar dos enfocaments:
+</p>
+<ul>
+<li class="level1"><div class="li"> <strong>Proves de capsa negra:</strong>  El seu objectiu és validar que el codi compleix la funcionalitat definida.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Proves de capsa blanca:</strong> Se centren en la implementació dels programes per escollir els casos de prova.. </div>
+</li>
+</ul>
+<div class="iocreference"><div class="ioccontent">
+<p>
+En aquest apartat es veuran en profunditat tant les proves de capsa negra com les de capsa blanca.
+</p>
+</div></div>
+<p>
+En l’exemple que es mostra a continuació, s’ha implementat en Java un cas de prova que valida el cost d’una matricula.
+</p>
+
+<p>
+El mètode <code>CasProva_CostMatricula</code> calcularà el preu que haurà de pagar un alumne per matricular-se en diverses assignatures. La prova valida que el càcul de l’operació coincideixi amb el resultat esperat, fent ús de la instrucció <code>assertTrue</code>.
+</p>
+<pre class="code">CONST PREU_CREDIT = 100€
+public void CasProva_CostMatricula(){
+    try {
+        int credits = 0;
+        float preu = 0;
+        crèdits = CreditsAssignatura (&quot;Sistemes informàtics&quot;); //12 crèdits
+        crèdits += CreditsAssignatura (&quot;Programació&quot;);         //15 crèdits
+        crèdits += CreditsAssigantura (&quot;Accés a dades&quot;);       //12 crèdits
+	preu = crèdits * PREU_CREDIT;
+	assertTrue (preu==00€);
+    }catch (Exception e) {Fail (&quot;S’ha produït un error&quot;);}
+}</pre>
+
+<p>
+D’aquesta manera, podem observar que els casos de prova ens permeten validar l’aplicació que s’està desenvolupant, essent necessari tenir accessible la documentació generada en l’anàlisi funcional i l’anàlisi tècnica, així com en el disseny (casos d’ús, diagrames de seqüència…). 
+</p>
+
+<p>
+Els casos de prova segueixen un cicle de vida clàssic:
+</p>
+<ul>
+<li class="level1"><div class="li"> Definició dels casos de prova.</div>
+</li>
+<li class="level1"><div class="li"> Creació dels casos de prova.</div>
+</li>
+<li class="level1"><div class="li"> Selecció dels valors per als tests.</div>
+</li>
+<li class="level1"><div class="li"> Execució dels casos de prova.</div>
+</li>
+<li class="level1"><div class="li"> Comparació dels resultats obtinguts amb els resultats esperats.</div>
+</li>
+</ul>
+
+<p>
+Cada cas de prova haurà de ser independent dels altres, tindrà un començament i un final molt marcat i haurà d’emmagatzemar tota la informació referent a la seva definició, creació, execució i validació final. 
+</p>
+
+<p>
+Tot seguit s’indiquen algunes informacions que hauria de contemplar qualsevol cas de prova:
+</p>
+<ul>
+<li class="level1"><div class="li"> Identificador del cas de prova.</div>
+</li>
+<li class="level1"><div class="li"> Mòdul o funció a provar.</div>
+</li>
+<li class="level1"><div class="li"> Descripció del cas de prova detallat.</div>
+</li>
+<li class="level1"><div class="li"> Entorn que s’haurà de complir abans de l’execució del cas de prova.</div>
+</li>
+<li class="level1"><div class="li"> Dades necessàries per al cas, especificant els seus valors.</div>
+</li>
+<li class="level1"><div class="li"> Tasques que executarà el pla de proves i la seva seqüència.</div>
+</li>
+<li class="level1"><div class="li"> Resultat esperat. </div>
+</li>
+<li class="level1"><div class="li"> Resultat obtingut.</div>
+</li>
+<li class="level1"><div class="li"> Observacions o comentaris després de l’execució.</div>
+</li>
+<li class="level1"><div class="li"> Responsable del cas de prova.</div>
+</li>
+<li class="level1"><div class="li"> Data d’execució.</div>
+</li>
+<li class="level1"><div class="li"> Estat (finalitzat, pendent, en procés).</div>
+</li>
+</ul>
+
+<p>
+Tot cas de prova està associat, com a mínim, a un procediment de prova.
+</p>
+<div class="iocimportant"><div class="ioccontent">
+<p>
+Els <strong>procediments de prova</strong> especifiquen com es podran dur a terme els casos de prova o part d’aquests de forma independent o de forma conjunta, establint les relacions entre ells i l’ordre en què s’hauran d’atendre.
+</p>
+</div></div>
+<p>
+Per exemple, es pot dissenyar un procediment de prova per inserir una nova assignatura en la matrícula d’un alumne; s’elaboren tots els passos necessaris de forma consecutiva per tal d’actualitzar la matrícula de l’alumne. No obstant això, l’assignatura pot ser obligatòria, optativa, amb unes incompatibilitats…; per tant, pel que fa al procediment de prova d’inserir la matrícula serà necessari associar un grup de casos de prova responsables de les diverses entrades de l’usuari.
+</p>
+<div class="ioctext"><div class="ioccontent"><p class="ioctitle">Atenció deficient a les proves</p>
+<p>
+Els equips de treball han de planificar, dissenyar i fer moltes proves en un curt espai de temps. Aquesta situació comporta una atenció deficient a una part tan important com les proves, deixant camins per atendre, duent a terme proves redundants, no escollint encertadament els casos de prova…
+</p>
+</div></div>
+<p>
+A la <span class="figref"><a href="#Figure3"><span>figura</span></a></span> es pot observar un esquema explicatiu de les proves, des de la creació del pla de proves fins a la seva execució. Per a cada part del projecte caldrà crear un disseny de les proves, a partir del qual s’especificaran els casos de prova i els procediments de prova, que estan estretament lligats. Després dels procediments de prova, el darrer pas serà la seva execució.
+</p>
+<div class="iocfigure"><a name="Figure3"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Casos de proves i procediments
+
+</figcaption><img src="../media/ic10m05u2_03.png" alt="" /></figure>
+</div>
+</div>
+
+<h4><a id="tipus_de_proves" >Tipus de proves</a></h4>
+<div class="level4">
+
+<p>
+Existeixen molts tipus de proves que han de cobrir les especificacions d’un projecte informàtic a través dels procediments i dels casos de prova.
+</p>
+
+<p>
+Tot seguit es presenta un resum d’aquests tipus de proves:
+</p>
+<ul>
+<li class="level1"><div class="li"> <strong>Tipus de proves unitàries</strong>. Tenen les característiques següents:</div>
+<ul>
+<li class="level2"><div class="li"> Són el tipus de proves de més baix nivell.</div>
+</li>
+<li class="level2"><div class="li"> Es duen a terme a mesura que es va desenvolupant el projecte. </div>
+</li>
+<li class="level2"><div class="li"> Les efectuen els mateixos programadors.</div>
+</li>
+<li class="level2"><div class="li"> Tenen com a objectiu la detecció d’errors en les dades, en els algorismes i en la lògica d’aquests.</div>
+</li>
+<li class="level2"><div class="li"> Les proves unitàries es podran dur a terme segons un enfocament estructural o segons un enfocament funcional.</div>
+</li>
+<li class="level2"><div class="li"> El mètode utilitzat en aquest tipus de proves és el de la capsa blanca o el de capsa negra.</div>
+</li>
+</ul>
+</li>
+<li class="level1"><div class="li"> <strong>Tipus de proves funcionals</strong>. D’aquestes proves cal destacar:</div>
+<ul>
+<li class="level2"><div class="li"> Són les encarregades de detectar els errors en la implementació dels requeriments d’usuari.</div>
+</li>
+<li class="level2"><div class="li"> Les duran a terme els verificadors i els analistes, és a dir, persones diferents a aquelles que han programat el codi.</div>
+</li>
+<li class="level2"><div class="li"> S’efectuen durant el desenvolupament del projecte.</div>
+</li>
+<li class="level2"><div class="li"> El tipus de mètode utilitzat és el funcional.</div>
+</li>
+</ul>
+</li>
+<li class="level1"><div class="li"> <strong>Tipus de proves d’integració</strong>. Les seves característiques són les següents:</div>
+<ul>
+<li class="level2"><div class="li"> Es duran a terme posteriorment a les proves unitàries.</div>
+</li>
+<li class="level2"><div class="li"> També les efectuen els mateixos programadors.</div>
+</li>
+<li class="level2"><div class="li"> Es duen a terme durant el desenvolupament del projecte.</div>
+</li>
+<li class="level2"><div class="li"> S’encarreguen de detectar errors de les interfícies i en les relacions entre els components.</div>
+</li>
+<li class="level2"><div class="li"> El mètode utilitzat és el de capsa blanca, el de disseny descendent i el de <em>bottom-up</em>.</div>
+</li>
+</ul>
+</li>
+<li class="level1"><div class="li"> <strong>Tipus de proves de sistemes</strong>. En destaca:</div>
+<ul>
+<li class="level2"><div class="li"> La seva finalitat és detectar errors en l’assoliment dels requeriments.</div>
+</li>
+<li class="level2"><div class="li"> Les duran a terme els verificadors i els analistes, és a dir, persones diferents a aquelles que han programat el codi.</div>
+</li>
+<li class="level2"><div class="li"> S’efectuen en una fase de desenvolupament del programari.</div>
+</li>
+<li class="level2"><div class="li"> El tipus de mètode utilitzat és el funcional.</div>
+</li>
+</ul>
+</li>
+<li class="level1"><div class="li"> <strong>Tipus de proves de càrrega</strong>. Les seves característiques principals són:</div>
+<ul>
+<li class="level2"><div class="li"> S’efectuen un cop acabat el desenvolupament, però abans de les proves d’acceptació.</div>
+</li>
+<li class="level2"><div class="li"> També les realitzen analistes i verificadors.</div>
+</li>
+<li class="level2"><div class="li"> Es comprova el rendiment i la integritat de l’aplicació ja acabada amb dades reals i en un entorn que també simula l’entorn real.</div>
+</li>
+<li class="level2"><div class="li"> Es realitzen amb un enfocament funcional.</div>
+</li>
+</ul>
+</li>
+<li class="level1"><div class="li"> <strong>Tipus de proves d’acceptació</strong>. Els aspectes més importants d’aquestes proves són els següents:</div>
+<ul>
+<li class="level2"><div class="li"> El seu objectiu és la validació o acceptació de l’aplicació per part dels usuaris.</div>
+</li>
+<li class="level2"><div class="li"> És per això que les duran a terme els clients o els usuaris finals de l’aplicació.</div>
+</li>
+<li class="level2"><div class="li"> Aquestes proves es duran a terme una vegada finalitzada la fase de desenvolupament. És possible fer-ho en la fase prèvia a la finalització i a la transferència o en la fase de producció, mentre els usuaris ja fan servir l’aplicació.</div>
+</li>
+<li class="level2"><div class="li"> El tipus de mètode utilitzat també és el funcional.</div>
+</li>
+<li class="level2"><div class="li"> Inclouen diferents tipus de prova. Entre altres, les proves alfa i les proves beta. En aquestes, el client realitza les proves a l’entorn del desenvolupador, al primer cas, i, al segon cas, en el propi entorn del client.</div>
+</li>
+</ul>
+</li>
+<li class="level1"><div class="li"> <strong>Tipus de proves de sistema</strong>. Les característiques principals d’aquestes proves són:</div>
+<ul>
+<li class="level2"><div class="li">  Es realitzen després de les proves d’acceptació i amb el sistema ja integrat a l’entorn de treball.</div>
+</li>
+<li class="level2"><div class="li">  La seva finalitat, precisament, és comprovar que aquesta integració és correcta.</div>
+</li>
+<li class="level2"><div class="li">  L’enfocament utilitzat, lògicament, és el de capsa negra.</div>
+</li>
+<li class="level2"><div class="li">  Les realitzen verificadors i analistes.</div>
+</li>
+<li class="level2"><div class="li">  Inclou diferents tipus de prova. Entre altres, proves de rendiment, de resistència, de robustesa (davant entrades incorrectes), de seguretat, d’usabilitat i d’instal·lació.</div>
+</li>
+</ul>
+</li>
+<li class="level1"><div class="li"> <strong>Tipus de proves de regressió</strong>. Les seves característiques principals són:</div>
+<ul>
+<li class="level2"><div class="li"> La seva finalitat és detectar possibles errors introduits en haver realitzat canvis al sistema, bé per millorar-lo, bé per corregir altres errors.</div>
+</li>
+<li class="level2"><div class="li"> Consisteixen bàsicament en repetir proves ja realitzades amb èxit abans de realitzar el canvi. Per tant, inclourà tant proves de capsa blanca com de capsa negra.</div>
+</li>
+</ul>
+</li>
+<li class="level1"><div class="li"> <strong>Tipus de proves “de fum”</strong>. Són proves ràpides de les funcions bàsiques d’un programari que normalment es realitzen després d’un canvi en el codi abans de registrar aquest codi modificat en la documentació del projecte.</div>
+</li>
+</ul>
+
+</div>
+
+<h4><a id="proves_unitariesenfocament_estructural_o_de_capsa_blanca" >Proves unitàries: enfocament estructural o de capsa blanca</a></h4>
+<div class="level4">
+<div class="iocreference"><div class="ioccontent">
+<p>
+Als materials Web, tant en la secció d’<em>Annexos</em> com en la d’<em>Activitats</em>, hi podeu trobar exemples de casos de proves.
+</p>
+</div></div>
+<p>
+Les proves unitàries, també conegudes com a proves de components, són les proves que es faran a més baix nivell, sobre els mòduls o components més petits del codi font del projecte informàtic. 
+</p>
+
+<p>
+Aquestes proves poden desenvolupar-se sota dos enfocaments:
+</p>
+<ul>
+<li class="level1"><div class="li"> L’enfocament estructural és la part de les proves unitàries encarregades de l’estructura interna del codi font, des de qual s’analitzen tots els possibles camins. </div>
+</li>
+<li class="level1"><div class="li"> L’enfocament funcional (o proves de capsa negra) és la part de les proves unitàries encarregades del funcionament correcte de les funcionalitats del programari.</div>
+</li>
+</ul>
+<div class="iocimportant"><div class="ioccontent">
+<p>
+<strong>Les proves de capsa blanca</strong> se centren en la implementació dels programes per escollir els casos de prova. L’ideal seria cercar casos de prova que recorreguessin tots els camins possibles del flux de control del programa. Aquestes proves se centren en l’estructura interna del programa, tot analitzant els camins d’execució.
+</p>
+</div></div>
+<p>
+A la <span class="figref"><a href="#Figure4"><span>figura</span></a></span> es pot observar un esquema de l’estructura que tenen les proves de capsa blanca. A partir d’unes condicions d’entrada al mòdul o part de codi cal validar que, anant per la bifurcació que es vagi, s’obtindran les condicions desitjades de sortida.
+</p>
+<div class="iocfigure"><a name="Figure4"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Estructura de les proves de capsa blanca
+
+</figcaption><img src="../media/ic10m05u2_04.png" alt="" /></figure>
+</div>
+<p>
+Les proves de capsa blanca permetran recórrer tots els possibles camins del codi i veure què succeeix en cada cas possible. Es provarà què ocorre amb les condicions i els bucles que s’executen. Les proves es duran a terme amb dades que garanteixin que han tingut lloc totes les combinacions possibles. Per decidir quins valors hauran de prendre aquestes dades és necessari saber com s’ha desenvolupat el codi, tot cercant que no quedi cap racó sense revisar.
+</p>
+
+<p>
+Partint del fet que les proves exhaustives són impracticables, ja que el nombre de combinacions és excessiu, es dissenyen estratègies que ofereixin una seguretat acceptable per descobrir errors. Els mètodes que es veuran dintre de les proves de capsa blanca són el de <strong>cobertura de flux de control</strong> i el de <strong>complexitat ciclomàtica</strong>.
+</p>
+
+</div>
+
+<h5><a id="cobertura_de_flux_de_control" >Cobertura de flux de control</a></h5>
+<div class="level5">
+
+<p>
+El mètode de cobertura de flux de control consisteix a utilitzar l’estructura de control del programa per obtenir els casos de prova, que són dissenyats de manera que garanteixin que almenys es passa una vegada per cada camí del programa.
+</p>
+
+<p>
+Una possible tècnica per portar a terme aquest mètode consisteix a obtenir un diagrama de flux de control que representi el codi i provar tots els camins simples, totes les condicions i tots els bucles del programa. Es pot observar un exemple de diagrama de flux a la <span class="figref"><a href="#Figure5"><span>figura</span></a></span>.
+</p>
+<div class="iocfigure"><a name="Figure5"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Diagrama de flux del llistat d’assignatures.
+
+</figcaption><img src="../media/ic10m05u2_08.png" alt="" /></figure>
+</div>
+<p>
+Pot ser impossible cobrir-ne el 100% si el programa és molt complex, però podem tenir un mínim de garanties d’eficàcia si seguim els suggeriments per dissenyar els casos de prova tenint en compte el següent:
+</p>
+<ul>
+<li class="level1"><div class="li"> <strong>Conjunt bàsic de camins independents</strong>: és el conjunt de camins independents que cal cobrir amb el joc de proves.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Camí independent</strong>: camí simple amb alguna branca no inclosa encara a cap camí del conjunt bàsic. </div>
+</li>
+<li class="level1"><div class="li"> <strong>Camí simple</strong>: camí que no té cap branca repetida.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Casos de prova</strong>: un cop determinat el conjunt bàsic, cal dissenyar un cas de prova per a cadascun dels seus  camins de manera que, entre tots s’executi almenys una vegada cada sentència. </div>
+</li>
+<li class="level1"><div class="li"> <strong>Condicions</strong>: cal assegurar-se que els casos de prova elaborats d’aquesta manera cobreixen totes les condicions del programa que s’avaluen a cert/fals.  Cal tenir en compte, però, que, les condicions múltiples, s’han de dividir en expressions simples (una per a cada operand lògic o comparació), de manera que s’ha de provar que es compleixi o no cada part de cada condició. Per tant, en realitzar el gràfic, a una condició múltiple li correspondrà un node per cada condició simple que formi part d’ella i caldrà afegir també al gràfic les branques necessaris per representar correctament el funcionament d’aquestes condicions.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Bucles</strong>: s’han de dissenyar els casos de prova de manera que s’intenti executar un bucle en diferents situacions límit. </div>
+</li>
+</ul>
+
+<p>
+Per tal d’explicar el funcionament de les proves unitàries de capsa blanca es planteja l’exemple següent:
+</p>
+<pre class="code">public float LlistatAssignatures(ArrayList assignatures)
+{
+      int comptador= 0;
+      Iterator iter = assignatures.iterator();
+      while (iter.hasNext())
+      {
+            Assignatura element = (Assignatura) iter.next();
+            if (element.getDisponible() == true)
+            {
+                  System.out.println(element.getNom());
+                  comptador = comptador + 1
+            }
+      }
+      return comptador;
+}</pre>
+
+<p>
+La funció <code>LlistatAssignatures</code> mostra, per pantalla, les assignatures que estan disponibles per tal que els alumnes es puguin matricular, i retorna un valor numèric corresponent al nombre d’assignatures disponibles.
+</p>
+
+<p>
+En la <span class="figref"><a href="#Figure5"><span>figura</span></a></span> es representen gràficament els nodes de la funció, cosa que facilita el càlcul de la complexitat ciclomàtica.
+</p>
+
+</div>
+
+<h5><a id="complexitat_ciclomatica" >Complexitat ciclomàtica</a></h5>
+<div class="level5">
+
+<p>
+L’estratègia de cobertura de flux de control requereix dissenyar casos de prova suficients per recórrer tota la lògica del programa. Es pot saber quants casos de prova cal crear i executar? Com es calcula?
+</p>
+
+<p>
+El matemàtic Thomas J. McCabe va anomenar complexitat ciclomàtica (CC) al nombre de camins independents d’un diagrama de flux, i va proposar la fórmula següent per calcular-la:
+</p>
+<div class="iocimportant"><div class="ioccontent">
+<p>
+Complexitat ciclomàtica = nombre de branques – nombre de nodes + 2
+</p>
+</div></div>
+<p>
+La complexitat ciclomàtica del graf de l’exemple de la <span class="figref"><a href="#Figure5"><span>figura</span></a></span> proporciona el nombre màxim de camins linealment independents.
+</p>
+
+<p>
+Els nodes que intervenen són 1, 2, 3, 4, 5, 6 i 7, i les branques són les línies que uneixen els nodes, que són un total de 8.
+</p>
+<div class="iocimportant"><div class="ioccontent">
+<p>
+Complexitat ciclomàtica CC = 8 – 7 + 2 = 3
+</p>
+</div></div>
+<p>
+
+</p>
+
+<p>
+Això significa que s’hauran de dissenyar tres casos de prova. Així, els tres recorreguts que s’haurien de tenir en compte són:
+</p>
+<ul>
+<li class="level1"><div class="li">     Camí 1:  1 – 2 – 7</div>
+</li>
+<li class="level1"><div class="li">     Camí 2:  1 – 2 – 3 – 4 – 6 – 2 - 7</div>
+</li>
+<li class="level1"><div class="li">     Camí 3:  1 – 2 – 3 – 4 – 5 – 6 – 2 - 7</div>
+</li>
+</ul>
+<div class="iocimportant"><div class="ioccontent">
+<p>
+El conjunt bàsic depén de l’ordre en què hi afegim els camins independents. Una estratègia possible és triar els camins de més curt a més llarg.
+</p>
+</div></div>
+<p>
+Restarà generar les proves per recórrer els camins anteriors.
+</p>
+
+<p>
+A la <span class="figref"><a href="#Figure6"><span>figura</span></a></span> es mostren els valors del vector d’assignatures.
+</p>
+<div class="iocfigure"><a name="Figure6"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Valors del vector d’assignatures
+
+</figcaption><img src="../media/ic10m05u2_09.png" alt="" /></figure>
+</div>
+<p>
+Hi ha tres camins a recórrer. Per a cadascun d’ells serà necessari un vector amb una característiques concretes:
+</p>
+<ul>
+<li class="level1"><div class="li"> Per recórrer el <strong>camí 1</strong> serà necessari un vector d’assignatures buit.</div>
+</li>
+<li class="level1"><div class="li"> Per recórrer el <strong>camí 2</strong> serà necessari un vector d’assignatures que contingui com a mínim una assignatura que no estigui disponible.</div>
+</li>
+<li class="level1"><div class="li"> Per recórrer el <strong>camí 3</strong> serà necessari un vector d’assignatures que contingui com a mínim una assignatura que estigui disponible.</div>
+</li>
+</ul>
+
+<p>
+D’aquesta manera, el resultats de les proves serien:
+</p>
+<ul>
+<li class="level1"><div class="li"> Entrada (Assignatures1) <br/>
+Sortida esperada: 0 <br/>
+Sortida real: 0 <br/>
+Camí seguit: 1.</div>
+</li>
+<li class="level1"><div class="li"> Entrada (Assignatures2) <br/>
+Sortida esperada: 1 <br/>
+Sortida real: 1 <br/>
+Camí seguit: 2.</div>
+</li>
+<li class="level1"><div class="li"> Entrada (Assignatures3) <br/>
+Sortida esperada: 1 <br/>
+Sortida real: 1 <br/>
+Camí seguit: 3.</div>
+</li>
+</ul>
+
+<p>
+Una vegada executat el joc de proves de capsa blanca, es pot afirmar que han estat superades satisfactòriament.
+</p>
+
+</div>
+
+<h4><a id="proves_unitariesenfocament_funcional_o_proves_de_capsa_negra" >Proves unitàries: enfocament funcional o proves de capsa negra</a></h4>
+<div class="level4">
+
+<p>
+L’enfocament estructural o les proves de capsa blanca, dins les proves unitàries, serveix per analitzar el codi en totes les seves estructures, en tots els seus camins del programari. Però existeix un altre tipus de proves que es basa en un enfocament més funcional, anomenades proves de capsa negra.
+</p>
+<div class="iocimportant"><div class="ioccontent">
+<p>
+<strong>Les proves de capsa negra</strong> proven la funcionalitat del programa, per al qual es dissenyen casos de prova que comprovin les especificacions del programa.
+</p>
+</div></div>
+<p>
+Les tècniques de prova de capsa negra pretenen trobar errors en funcions incorrectes o absents, errors d’interfície, errors de rendiment, inicialització i finalització. Es centra en les funcions i en les seves entrades i sortides.
+</p>
+
+<p>
+A la <span class="figref"><a href="#Figure7"><span>figura</span></a></span> es pot observar un esquema de l’estructura que tenen les proves de capsa blanca.
+</p>
+<div class="iocfigure"><a name="Figure7"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Estructura de les proves de capsa negra
+
+</figcaption><img src="../media/ic10m05u2_10.png" alt="" /></figure>
+</div>
+<p>
+Caldrà escollir amb cura els casos de prova, de manera que siguin tan pocs com sigui possible per tal que la prova es pugui executar en un temps raonable i, al mateix temps, que cobreixin la varietat d’entrades i sortides més àmplia possible.
+</p>
+
+<p>
+Per aconseguir-ho, s’han dissenyat diferents tècniques:
+</p>
+<ul>
+<li class="level1"><div class="li"> <strong>Classes d’equivalència</strong>: es tracta de determinar els diferents tipus d’entrada i sortida, agrupar-los i escollir casos de prova per a cada tipus o conjunt de dades d’entrada i sortida.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Anàlisi dels valors límit</strong>: estudien els valors inicials i finals, ja que estadísticament s’ha demostrat que tenen més tendència a detectar errors.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Estudi d’errors típics</strong>: l’experiència diu que hi ha una sèrie d’errors que s’acostumen a repetir en molts programes; per això, es tractaria de dissenyar casos de prova que provoquessin les situacions típiques d’aquest tipus d’errors.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Maneig d’interfície gràfica</strong>: per provar el funcionament de les interfícies gràfiques, s’han de dissenyar casos de prova que permetin descobrir errors en el maneig de finestres, botons, icones…</div>
+</li>
+<li class="level1"><div class="li"> <strong>Dades aleatòries</strong>: es tracta d’utilitzar una eina que automatitzi les proves i que generi d’una manera aleatòria els casos de prova. Aquesta tècnica no optimitza l’elecció dels casos de prova, però si es fa durant prou temps amb moltes dades, podrà arribar a fer una prova bastant completa. Aquesta tècnica es podria utilitzar com a complementària a les anteriors o en casos en què no sigui possible aplicar-ne cap altra.</div>
+</li>
+</ul>
+<div class="iocimportant"><div class="ioccontent">
+<p>
+Un <strong>avantatge de les proves de capsa negra</strong> és que són independents del llenguatge o paradigma de programació utilitzat, de manera que són vàlides tant per a programació estructurada com per a programació orientada a objectes. 
+</p>
+</div></div>
+</div>
+
+<h5><a id="classes_d_equivalencia" >Classes d’equivalència</a></h5>
+<div class="level5">
+
+<p>
+
+S’han de dissenyar els casos de prova de manera que provin la major funcionalitat possible del programa, però que no incloguin massa valors. Per on començar? Quins valors s’han d’escollir?
+</p>
+
+<p>
+Cal seguir els passos següents:
+</p>
+<ol>
+<li class="level1"><div class="li"> <strong>Identificar les condicions</strong>, restriccions o continguts de les entrades i les sortides.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Identificar, a partir de les condicions, les classes d’equivalència de les entrades i les sortides</strong>. Per identificar-ne les classes, el mètode proposa algunes recomanacions:</div>
+<ul>
+<li class="level2"><div class="li"> Cada <strong>element de classe</strong> ha de ser tractat de la mateixa manera pel programa, però cada classe ha de ser tractada de manera diferent en relació amb una altra classe. Això assegura que n’hi ha prou de provar algun element d’una classe per comprovar que el programa funciona correctament per a aquesta classe, i també garanteix que cobrim diferents tipus de dades d’entrada amb cadascuna de les classes.</div>
+</li>
+<li class="level2"><div class="li"> Les classes han de recollir tant <strong>dades vàlides com errònies</strong>, ja que el programa ha d’estar preparat i no bloquejar-se sota cap circumstància.</div>
+</li>
+<li class="level2"><div class="li"> Si s’especifica un <strong>rang de valors</strong> per a les dades d’entrada, per exemple, si s’admet del 10 al 50, es crearà una classe vàlida (10 ≤ X ≤ 50) i dues classes no vàlides, una per als valors superiors (X &gt; 50) i l’altra per als inferiors (X &lt; 10).</div>
+</li>
+<li class="level2"><div class="li"> Si s’especifica un <strong>valor vàlid</strong> d’entrada i d’altres de no vàlids, per exemple, si l’entrada comença amb majúscula, es crea una classe vàlida (amb la primera lletra majúscula) i una altra de no vàlida (amb la primera lletra minúscula).</div>
+</li>
+<li class="level2"><div class="li"> Si s’especifica un <strong>nombre de valors</strong> d’entrada, per exemple, si s’han d’introduir tres nombres seguits, es crearà una classe vàlida (amb tres valors) i dues de no vàlides (una amb menys de dos valors i l’altra amb més de tres valors).</div>
+</li>
+<li class="level2"><div class="li"> Si hi ha un conjunt de <strong>dades d’entrada concretes</strong> vàlides, es generarà una classe per cada valor vàlid (per exemple, si l’entrada ha de ser vermell, taronja, verd, es generaran tres classes) i una altra per un valor no vàlid (per exemple, blau).</div>
+</li>
+<li class="level2"><div class="li"> Si no s’han recollit ja amb les classes anteriors, s’ha de seleccionar una classe per cada possible classe de <strong>resultat</strong>.</div>
+</li>
+</ul>
+</li>
+<li class="level1"><div class="li"> <strong>Crear els casos de prova a partir de les classes d’equivalència detectades</strong>. Per a això s’han de seguir els passos següents:</div>
+<ul>
+<li class="level2"><div class="li"> Escollir un valor que representi cada classe d’equivalència.</div>
+</li>
+<li class="level2"><div class="li"> Dissenyar casos de prova que incloguin els valors de totes les classes d’equivalència identificades.</div>
+</li>
+</ul>
+</li>
+</ol>
+
+<p>
+L’experiència prèvia de l’equip de proves pot ajudar a escollir els casos que més probabilitats tenen de trobar errors.
+</p>
+
+<p>
+Per exemple, es volen definir les proves de capsa negra per a una funció que retorna el nom del mes a partir del seu valor numèric.
+</p>
+<pre class="code">    String nom;
+    nom = NomDelMes(3);
+    El valor del nom serà Març.</pre>
+
+<p>
+Caldrà identificar tres classes d’equivalències, com es pot observar a la <span class="figref"><a href="#Figure8"><span>figura</span></a></span>:
+</p>
+<pre class="code">    ..., -02, -01, 00 valors invàlids
+    01, 02, 03, 04, 05, 06, 07, 08, 09, 10, 11, 12 valors vàlids
+    13, 14, 15, ... valors invàlids.</pre>
+
+<p>
+A la <span class="figref"><a href="#Figure8"><span>figura</span></a></span> es pot observar un esquema de l’exemple exposat.
+</p>
+<div class="iocfigure"><a name="Figure8"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Exemple de capsa negra
+
+</figcaption><img src="../media/ic10m05u2_11.png" alt="" /></figure>
+</div>
+</div>
+
+<h5><a id="analisi_de_valors_limit_i_errors_tipics" >Anàlisi de valors límit i errors típics</a></h5>
+<div class="level5">
+
+<p>
+Hi ha tècniques que serveixen per seleccionar millor les classes d’equivalència. Una és <strong>l’anàlisi dels valors límit</strong>. Per què és una tècnica adequada fixar-se especialment en els valors límit?
+</p>
+
+<p>
+S’ha pogut demostrar que els casos de prova que se centren en els valors límit produeixen un millor resultat per a la detecció de defectes.
+</p>
+
+<p>
+D’aquesta manera, en escollir l’element representatiu de la classe d’equivalència, en lloc d’agafar-ne un qualsevol, s’escullen els valors al límit i, si es considera oportú, un valor intermedi. A més a més, també s’intenta que els valors a l’entrada provoquin valors límit als resultats.
+</p>
+
+<p>
+A l’hora d’escollir els representants de cada classe se seguiran les recomanacions següents:
+</p>
+<ul>
+<li class="level1"><div class="li"> En els rangs de valors, agafar els extrems del rang i el valor intermedi.</div>
+</li>
+<li class="level1"><div class="li"> Si s’especifiquen una sèrie de valors, agafar el superior, l’inferior, l’anterior a l’inferior i el posterior al superior.</div>
+</li>
+<li class="level1"><div class="li"> Si el resultat es mou en un determinat rang, hem d’escollir dades a l’entrada per provocar les sortides mínima, màxima i un valor intermedi.</div>
+</li>
+<li class="level1"><div class="li"> Si el programa tria una llista o taula, agafar l’element primer, l’últim i l’intermedi.</div>
+</li>
+</ul>
+
+<p>
+També es pot aprofitar l’experiència prèvia. Hi ha una sèrie d’errors que es repeteixen molt en els programes, i podria ser una bona estratègia utilitzar casos de prova que se centrin a buscar aquests errors. D’aquesta manera, es millorarà l’elecció dels representants de les classes d’equivalència:
+</p>
+<ul>
+<li class="level1"><div class="li"> El valor zero sol provocar errors, per exemple, una divisió per zero bloqueja el programa. Si es té la possibilitat d’introduir zeros a l’entrada, s’ha d’escollir en els casos de prova.</div>
+</li>
+<li class="level1"><div class="li"> Quan s’ha d’introduir una llista de valors, caldrà centrar-se en la possibilitat de no introduir cap valor, o introduir-ne un.</div>
+</li>
+<li class="level1"><div class="li"> S’ha de pensar que l’usuari pot introduir entrades que no són normals, per això és recomanable posar-se en el pitjor cas.</div>
+</li>
+<li class="level1"><div class="li"> Els desbordaments de memòria són habituals, per això s’ha de provar d’introduir valors tan grans com sigui possible.</div>
+</li>
+</ul>
+<div class="iocexample"><div class="ioccontent"><p class="ioctitle">Exemple de prova de capsa negra</p>
+<p>
+Tot seguit es mostra un exemple de prova de capsa negra. S’ha de dur a terme el procés de prova del següent procediment:
+</p>
+<pre class="code">    Funció Buscar (DNI as string, vectMatricula de Matricules) retorna Matricula</pre>
+
+<p>
+En concret, en aquesta funció se li proporciona un string que representa el DNI de l’alumne, i un vector anomenat <code>vectMatricula</code> que emmagatzema les matrícules dels alumnes. La funció busca en el vector <code>vectMatricula</code> la matrícula de l’alumne. La funció retorna la matrícula de l’alumne si la troba o una matrícula buida si no la troba.
+</p>
+
+<p>
+Per tal de simplificar el joc de proves, el nombre de matrícules que admet la funció Buscar és 10.
+</p>
+
+<p>
+Per a la variable DNI hem de tenir en consideració que està formada de vuit xifres numèriques i una lletra(en aquest exercici no es valida el valor de la lletra):
+</p>
+<ul>
+<li class="level1"><div class="li"> 00000001A Prova vàlida.</div>
+</li>
+<li class="level1"><div class="li"> Null Prova invàlida, el DNI no té valor.</div>
+</li>
+<li class="level1"><div class="li"> 00000001 Prova invàlida, el DNI té un format incorrecte, falta la lletra.</div>
+</li>
+<li class="level1"><div class="li"> 00000001AA Prova invàlida, el DNI té un format incorrecte.</div>
+</li>
+<li class="level1"><div class="li"> AAAAAAAAA Prova invàlida, el DNI té un format incorrecte.</div>
+</li>
+</ul>
+
+<p>
+Pel vector <code>vectMatricula</code> hem de tenir en consideració que pot contenir de 0 a 10 matrícules:
+</p>
+<ul>
+<li class="level1"><div class="li"> <code>[]</code>. Prova vàlida, vector buit.</div>
+</li>
+<li class="level1"><div class="li"> <code>[matrícula1]</code>. Prova vàlida, vector amb una matrícula.</div>
+</li>
+<li class="level1"><div class="li"> <code>[matrícula1, matrícula2, matrícula3, … matrícula10]</code>. Prova vàlida, vector amb un nombre de matrícules entre 0 i 10.</div>
+</li>
+<li class="level1"><div class="li"> <code>[matrícula1, matrícula2, matrícula3, … matrícula10, matrícula11]</code>. Prova invàlida, vector amb un nombre de matrícules superior a 10.</div>
+</li>
+</ul>
+
+<p>
+Per a la sortida:
+</p>
+<ul>
+<li class="level1"><div class="li"> <code>Alumne.DNI = DNI</code>. Prova vàlida. Classe amb les dades d’un alumne.</div>
+</li>
+<li class="level1"><div class="li"> Classe buida. Prova vàlida. S’ha buscat el DNI d’una persona que no és alumne.</div>
+</li>
+<li class="level1"><div class="li"> <code>Alumne.DNI &lt;&gt; DNI</code>. Prova invàlida. Classe amb les dades d’un altre alumne.</div>
+</li>
+<li class="level1"><div class="li"> Classe buida. Prova invàlida. S’ha buscat el DNI d’un alumne i no s’ha trobat.</div>
+</li>
+</ul>
+</div></div>
+</div>
+
+<h5><a id="us_d_interficie_grafica" >Ús d’interfície gràfica</a></h5>
+<div class="level5">
+
+<p>
+No tan sols s’ha de parlar d’entrades de textos, també cal tenir en compte els entorns gràfics on es duen a terme les entrades de valors o on es visualitzen els resultats.
+</p>
+
+<p>
+Actualment, la majoria de programes solen interactuar amb l’usuari fent ús de sistemes gràfics que cada vegada són més complexos, amb la qual cosa es poden generar errors.
+</p>
+
+<p>
+Les proves d’interfície gràfica d’usuari han d’incloure:
+</p>
+<ul>
+<li class="level1"><div class="li"> Proves sobre finestres: icones de tancar, minimitzar…</div>
+</li>
+<li class="level1"><div class="li"> Proves sobre menús i ús de ratolí.</div>
+</li>
+<li class="level1"><div class="li"> Proves d’entrada de dades: quadre de textos, llistes desplegables…</div>
+</li>
+<li class="level1"><div class="li"> Proves de documentació i ajuda del programa.</div>
+</li>
+<li class="level1"><div class="li"> Altres.</div>
+</li>
+</ul>
+
+<p>
+A la <span class="figref"><a href="#Figure9"><span>figura</span></a></span> es mostrauna finestra que controla l’accés al sistema de matriculació dels alumnes mitjançant la introducció d’un nom d’usuari i una clau (<em>password</em>). El sistema comprova si hi ha un compte amb el nom i clau especificat i, si és així, es dóna permís per entrar. Si hi ha un compte amb aquest nom i la clau és incorrecta, permet tornar a introduir la clau fins a un màxim de tres vegades.
+</p>
+<div class="iocfigure"><a name="Figure9"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Pantalla per al control d’entrada de l’identificador de l’alumne i de la clau per poder efectuar la matrícula
+
+</figcaption><img src="../media/ic10m05u2_12.png" alt="" /></figure>
+</div>
+<p>
+Tot seguit es mostren alguns dels casos de prova que es podrien utilitzar amb aquest programa:
+</p>
+<ul>
+<li class="level1"><div class="li"> <strong>Cas de prova 1:</strong></div>
+<ul>
+<li class="level2"><div class="li"> Entrada: usuari correcte i contrasenya correcta. Prémer botó d’accedir al sistema.</div>
+</li>
+<li class="level2"><div class="li"> Condicions d’execució: en la taula existeix aquest usuari amb la contrasenya i amb un intent fallat (nombre inferior a 3).</div>
+</li>
+<li class="level2"><div class="li"> Resultat esperat: donar accés al sistema i reflectir que el nombre d’intents per a l’usuari correcte és zero en la taula USUARI (compte, contrasenya, nre. intents).</div>
+</li>
+</ul>
+</li>
+<li class="level1"><div class="li"> <strong>Cas de prova 2:</strong></div>
+<ul>
+<li class="level2"><div class="li"> Entrada: usuari incorrecte i contrasenya correcta. Prémer botó d’accedir al sistema.</div>
+</li>
+<li class="level2"><div class="li"> Condicions d’execució: en la taula no existeix aquest usuari amb aquesta contrasenya.</div>
+</li>
+<li class="level2"><div class="li"> Resultat esperat: no donar accés al sistema.</div>
+</li>
+</ul>
+</li>
+</ul>
+
+</div>
+
+<h4><a id="proves_d_integracio" >Proves d&#039;integració</a></h4>
+<div class="level4">
+<div class="ioctext"><div class="ioccontent"><p class="ioctitle">Proves d’integració</p>
+<p>
+Són suficients les proves que es fan a cada part d’una aplicació per assegurar-nos que s’ha validat el funcionament del programari? La resposta és no; és necessari validar també els diferents mòduls combinats.
+</p>
+</div></div>
+<p>
+Una vegada s’han provat els components individuals del programa i s’ha garantit que no contenen errors, caldrà integrar-los per tal de crear un sistema complet que també haurà de ser provat. Aquest és el nivell de les proves d’integració.
+</p>
+<div class="iocimportant"><div class="ioccontent">
+<p>
+Un <strong>objectiu</strong> important de les proves d’integració és localitzar errors en les interfícies entre les diferents unitats. A més, les proves d’integració serveixen per validar que les parts de codi que ja han estat provades de forma independent continuïn funcionant correctament en ser integrades.
+</p>
+</div></div>
+<p>
+Els elements no s’integren tots al mateix temps, sinó que s’utilitzen diferents estratègies d’integració incremental, que, bàsicament, consisteixen en el que es mostra en el flux de la <span class="figref"><a href="#Figure10"><span>figura</span></a></span>.
+</p>
+<div class="iocfigure"><a name="Figure10"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Esquema d’integració incremental.
+
+</figcaption><img src="../media/ic10m05u2_13.png" alt="" /></figure>
+</div>
+<p>
+Amb aquest procés es facilita la localització de l’error quan es produeixi, perquè se sap quins són els últims mòduls que s’han integrat i quan s’ha produït l’error.
+</p>
+
+<p>
+L’organització clàssica dels mòduls és una estructura jeràrquica organitzada per nivells: a la part alta hi haurà el mòdul o mòduls principals (a vegades denominats pares), que fan crides a mòduls subordinats de nivell inferior (fills), i així successivament cada nivell utilitzarà mòduls de nivell inferior fins arribar als mòduls terminals. Els mòduls superiors seran els més propers a l’usuari, és a dir, inclouen la interfície d’usuari (entorn gràfic, menús, ajudes…), i els mòduls inferiors són els més propers a l’estructura física de l’aplicació (bases de dades, maquinari…).
+</p>
+
+<p>
+Existeixen diferents estratègies de desenvolupament de proves d’integració, com són les proves d’integració ascendent i les proves d’integració incrementals descendents.
+</p>
+
+</div>
+
+<h5><a id="prova_d_integracio_ascendent" >Prova d’integració ascendent</a></h5>
+<div class="level5">
+
+<p>
+Aquesta estratègia de desenvolupament de les proves d’integració començarà pels mòduls finals, els mòduls de més baix nivell, agrupant-los per les seves funcionalitats. Es crearà un mòdul impulsor que anirà efectuant crides als diferents mòduls a partir de les precondicions indicades i recollint els resultats de cada crida a cada funció.
+</p>
+
+<p>
+A mesura que els resultats d’aquestes proves vagin sortint positius, s’anirà escalant per l’arbre de jerarquies amb el mòdul impulsor cap als altres mòduls, fent les crides pertinents de forma recursiva. La darrera prova serà una crida al programari sencer amb els valors d’entrada reals (analitzant els valors també reals de sortida).
+</p>
+
+<p>
+A continuació, es descriu el procés seguit per un sistema d’informació que té una estructura com la que es mostra en la <span class="figref"><a href="#Figure11"><span>figura</span></a></span>:
+</p>
+<div class="iocfigure"><a name="Figure11"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Esquema de proves d’integració ascendents
+
+</figcaption><img src="../media/ic10m05u2_14.png" alt="" /></figure>
+</div>
+<p>
+A la <span class="figref"><a href="#Figure12"><span>figura</span></a></span> es pot observar la primera fase de les proves d’integració ascendents. Cada mòdul ha de ser provat per separat, per això s’ha de construir un mòdul impulsor independent per provar cada mòdul.
+</p>
+<div class="iocfigure"><a name="Figure12"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Integració incremental ascendent, fase 1
+
+</figcaption><img src="../media/ic10m05u2_15.png" alt="" /></figure>
+</div>
+<p>
+La <span class="figref"><a href="#Figure13"><span>figura</span></a></span> mostra la següent fase, una vegada finalitzades les proves sobre els mòduls de nivell més baix, els mòduls (07, 08, 12, 13, 14 i 11). El següent pas és continuar amb els mòduls del següent nivell. Però això implica crear nous mòduls impulsors (04, 09, 10 i 06), que s’aplicaran a aquests mòduls, els quals s’integraran amb els mòduls de nivell més baix anteriorment provats (07, 08, 12, 13, 14 i 11).
+</p>
+<div class="iocfigure"><a name="Figure13"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Integració incremental ascendent, fase 2
+
+</figcaption><img src="../media/ic10m05u2_16.png" alt="" /></figure>
+</div>
+<p>
+La <span class="figref"><a href="#Figure14"><span>figura</span></a></span> mostra un nivell més d’aquesta estratègia, arribant als mòduls 02, 05 i 03.
+</p>
+<div class="iocfigure"><a name="Figure14"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Integració incremental ascendent, fase 3
+
+</figcaption><img src="../media/ic10m05u2_17.png" alt="" /></figure>
+</div>
+<p>
+A la <span class="figref"><a href="#Figure15"><span>figura</span></a></span> es veu la integració dels mòduls 04 i 05 amb el mòdul 02, per al qual s’haurà de crear l’impulsor 02, que cridarà a aquest mòdul.
+</p>
+<div class="iocfigure"><a name="Figure15"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Integració incremental ascendent, fase 4
+
+</figcaption><img src="../media/ic10m05u2_18.png" alt="" /></figure>
+</div>
+<p>
+A la <span class="figref"><a href="#Figure16"><span>figura</span></a></span> es veu com s’arriba al final d’aquest exemple d’integració incremental ascendent, fins al mòdul 01, que integra els mòduls 02 i 03. També caldrà crear un impulsor 01 per a la crida d’aquest mòdul.
+</p>
+<div class="iocfigure"><a name="Figure16"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Integració incremental ascendent, fase 5
+
+</figcaption><img src="../media/ic10m05u2_19.png" alt="" /></figure>
+</div>
+<p>
+Adaptant l’exemple que es va tractant en els punts anteriors a les proves d’integració, si es volguessin efectuar les proves del procés de matriculació dels alumnes en un centre universitari, es podria començar pels mòduls que fan canvis en la base de dades o en l’XML on s’emmagatzema la informació. Una vegada que cada un d’aquests mòduls funciona correctament, s’inicien les proves dels mòduls de nivell superior, que bàsicament fan crides a aquests mòduls de nivell més baix (mòduls que podrien tenir la lògica de negoci). De forma progressiva, s’aniran incorporant nous mòduls fins a provar tot el sistema.
+</p>
+
+</div>
+
+<h5><a id="avantatges_de_la_integracio_incremental_ascendent" >Avantatges de la integració incremental ascendent</a></h5>
+<div class="level5">
+
+<p>
+Els avantatges són els següents:
+</p>
+<ul>
+<li class="level1"><div class="li"> Ordre adequat: primer s’avaluen els mòduls inferiors, que són els que acostumen a tenir el processament més complex, se’n solucionen els errors, i després es nodreix de dades la resta del sistema.</div>
+</li>
+<li class="level1"><div class="li"> Més senzillesa: les entrades per a les proves són més fàcils de crear, ja que els mòduls inferiors solen tenir funcions més específiques.</div>
+</li>
+<li class="level1"><div class="li"> Millor observació dels resultats de les proves: com que es comença pels mòduls inferiors, és més fàcil l’observació dels resultats de les proves.</div>
+</li>
+</ul>
+
+</div>
+
+<h5><a id="desavantatges_de_la_integracio_incremental_ascendent" >Desavantatges de la integració incremental ascendent</a></h5>
+<div class="level5">
+
+<p>
+Entre els desavantatges, cal destacar:
+</p>
+<ul>
+<li class="level1"><div class="li"> Anàlisi parcial: fins que no es fa la crida al darrer mòdul no es valida el sistema com a tal.</div>
+</li>
+<li class="level1"><div class="li"> Alt temps de dedicació: caldrà dedicar molt de temps a implementar cada mòdul impulsor, que poden arribar a ser molts. </div>
+</li>
+</ul>
+
+</div>
+
+<h5><a id="prova_d_integracio_incremental_descendent" >Prova d’integració incremental descendent</a></h5>
+<div class="level5">
+
+<p>
+Aquesta estratègia de desenvolupament de les proves d’integració començarà pel mòdul de control principal (el més important, el de més nivell). Una vegada validat, s’aniran integrant els altres mòduls que en depenen de forma progressiva, sense seguir una estratègia concreta, només tenint en compte que el nou mòdul incorporat a les proves tindrà ja validats tots els mòduls que el referencien. En funció del tipus de mòduls i del tipus de projecte, s’escollirà una seqüència o una altra a l’hora d’anar integrant mòduls, analitzant el problema concret. Les etapes de la integració descendent són:
+</p>
+<ul>
+<li class="level1"><div class="li"> Se selecciona el mòdul més important, el de major nivell. Aquest mòdul farà d’impulsor. Caldrà escriure altres mòduls ficticis que simulin els mòduls que cridarà el principal. </div>
+</li>
+<li class="level1"><div class="li"> A mesura que es van integrant mòduls, caldrà provar-los independentment i de forma conjunta amb els altres mòduls ja provats. Una vegada s’ha finalitzat la prova, se substitueix el mòdul fictici creat pel real que s’ha integrat. </div>
+</li>
+<li class="level1"><div class="li"> Llavors caldrà escriure els mòduls ficticis subordinats que es necessitin per a la prova del nou mòdul incorporat.</div>
+</li>
+</ul>
+
+<p>
+A la <span class="figref"><a href="#Figure17"><span>figura</span></a></span> es pot observar un esquema a partir del qual es duran a terme les proves d’integració incremental descendent. En primer lloc, es combinaran els mòduls per formar els grups 1, 2 i 3. Sobre cada grup s’hauran de dur a terme les proves mitjançant un controlador. Els mòduls dels grups 1 i 2 són subordinats del mòdul 02. Igualment, s’haurà d’eliminar el controlador 3 del grup 3 abans de la integració amb el mòdul 03. A continuació, s’integrarà el mòdul 01 amb el mòdul 02 i el mòdul 03. Aquestes accions s’aniran repetint de forma recursiva al llarg de tota l’estructura del projecte. 
+</p>
+<div class="iocfigure"><a name="Figure17"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Prova d’integració incremental descendent
+
+</figcaption><img src="../media/ic10m05u2_20.png" alt="" /></figure>
+</div>
+</div>
+
+<h5><a id="avantatges_de_la_integracio_descendent" >Avantatges de la integració descendent</a></h5>
+<div class="level5">
+
+<p>
+Els avantatges són els següents:
+</p>
+<ul>
+<li class="level1"><div class="li"> Identificació de l’estructura: permet veure l’estructura del sistema des d’un principi, facilitant l’elaboració de demostracions del seu funcionament.</div>
+</li>
+<li class="level1"><div class="li"> Disseny descendent: primer es defineixen les interfícies dels diferents subsistemes per després seguir amb les funcions específiques de cada un per separat.</div>
+</li>
+<li class="level1"><div class="li"> Detecció més ràpida dels errors que es trobin als mòduls superiors pel fet de detectar-se en una etapa inicial.</div>
+</li>
+</ul>
+
+</div>
+
+<h5><a id="desavantatges_de_la_integracio_descendent" >Desavantatges de la integració descendent</a></h5>
+<div class="level5">
+
+<p>
+Entre els desavantatges, destaca:
+</p>
+<ul>
+<li class="level1"><div class="li"> Cost molt elevat: caldrà implementar molts mòduls addicionals per oferir els mòduls ficticis a fi d’anar efectuant les proves. </div>
+</li>
+<li class="level1"><div class="li"> Alta dificultat: en voler fer una distribució de les proves del més genèric al més detallat, les dades que s’hauran d’utilitzar són difícils d’aconseguir, ja que són els mòduls de nivell més baix els que tindran els detalls. </div>
+</li>
+</ul>
+
+</div>
+
+<h4><a id="proves_de_carrega_i_acceptacio" >Proves de càrrega i acceptació</a></h4>
+<div class="level4">
+
+<p>
+El pas següent, una vegada fetes les proves unitàries i les proves d’integració, serà dur a terme primer les proves de càrrega i, posteriorment, les proves d’acceptació.
+</p>
+<div class="iocimportant"><div class="ioccontent">
+<p>
+Les <strong>proves de càrrega</strong> són proves que tenen com a objectiu comprovar el rendiment i la integritat de l’aplicació ja acabada amb dades reals. Es tracta de simular l’entorn d’explotació de l’aplicació.
+</p>
+</div></div>
+<p>
+Amb les proves anteriors (unitàries i d’integració) quedaria provada l’aplicació a escala de “laboratori”. Però també es necessita comprovar la resposta de l’aplicació en situacions reals, i fins i tot, en situacions de sobrecàrrega, tant a escala de rendiment com de descontrol de dades.
+</p>
+
+<p>
+Per exemple, una aplicació lenta pot ser poc operativa i no útil per a l’usuari.
+Després de les proves de càrrega, es troben les proves d’acceptació. Aquestes proves les fa el client o usuari final de l’aplicació desenvolupada. Són bàsicament proves funcionals, sobre el sistema complet, i busquen una cobertura de l’especificació de requisits i del manual de l’usuari. Aquestes proves no es fan durant el desenvolupament, ja que seria impresentable de cara al client, sinó una vegada passades totes les proves anteriors per part del desenvolupador o l’equip de tests.
+</p>
+<div class="iocimportant"><div class="ioccontent">
+<p>
+L’objectiu de la <strong>prova d’acceptació</strong> és obtenir l’aprovació del client sobre la qualitat de funcionament del sistema desenvolupat i provat.
+</p>
+</div></div><div class="iocnote"><div class="ioccontent">
+<p>
+Els programadors acostumen a obtenir sorpreses en les proves d’acceptació, ja que és la primera vegada que es troben amb el programa finalitzat.
+</p>
+</div></div>
+<p>
+L’experiència demostra que, encara després del procés més acurat de proves per part del desenvolupador i l’equip de treball, queden una sèrie d’errors que només apareixen quan el client posa en funcionament l’aplicació o el sistema desenvolupat.
+</p>
+
+<p>
+Sigui com sigui, el client sempre té la raó. Per aquest motiu, molts desenvolupadors exerciten unes tècniques denominades <strong>proves alfa i proves beta</strong>.
+</p>
+<div class="iocimportant"><div class="ioccontent">
+<p>
+<strong>Les proves alfa</strong> consisteixen a convidar el client que vingui a l’entorn de desenvolupament a provar el sistema. Es treballa en un entorn controlat i el client sempre té un expert a mà per ajudar-lo a usar el sistema i per analitzar els resultats.
+</p>
+</div></div><div class="iocimportant"><div class="ioccontent">
+<p>
+<strong>Les proves beta</strong> vénen després de les proves alfa, i es desenvolupen en l’entorn del client, un entorn que és fora de control per al desenvolupador i l’equip de treball. Aquí el client es queda tot sol amb el producte i tracta de trobar els errors, dels quals informarà el desenvolupador.
+</p>
+</div></div>
+<p>
+Les proves alfa i beta són habituals en productes que es vendran a molts clients o que faran servir molts usuaris. Alguns dels compradors potencials es presten a aquestes proves, sia per anar entrenant el seu personal amb temps, sia en compensació d’algun avantatge econòmic (millor preu sobre el producte acabat, dret a manteniment gratuït, a noves versions…). 
+</p>
+
+<p>
+L’experiència mostra que aquestes pràctiques són molt eficaces. En un entorn de desenvolupament de programari tenen sentit quan l’aplicació o sistema per desenvolupar el farà servir un gran nombre d’usuaris finals (empreses grans amb diferents departaments que hauran d’utilitzar aquesta nova eina).
+</p>
+
+</div>
+
+<h4><a id="proves_de_sistema_i_de_seguretat" >Proves de sistema i de seguretat</a></h4>
+<div class="level4">
+
+<p>
+Les proves de sistema són aquelles proves que es duran a terme una vegada finalitzades les proves unitàries (cada mòdul per separat), les proves d’integració dels mòduls, les proves de càrrega i les proves d’acceptació per part de l’usuari.
+</p>
+
+<p>
+Temporalment, es troben en una situació en la qual l’usuari ha pogut verificar l’aplicació desenvolupada duent a terme les proves d’acceptació. Posteriorment, l’aplicació s’ha integrat al seu nou entorn de treball. 
+</p>
+<div class="iocimportant"><div class="ioccontent">
+<p>
+Les <strong>proves de sistema</strong> serviran per validar l’aplicació una vegada aquesta hagi estat integrada amb la resta del sistema de l’usuari. Encara que l’aplicació ja hagi estat validada de forma independent, a les proves de sistema es durà a terme una segona validació amb l’aplicació ja integrada en el seu entorn de treball real.
+</p>
+</div></div>
+<p>
+
+</p>
+
+<p>
+Tot seguit s’enumeren alguns tipus de proves per desenvolupar durant les proves del sistema:
+</p>
+<ul>
+<li class="level1"><div class="li"> <strong>Proves de rendiment:</strong> valoraran els temps de resposta de la nova aplicació, l’espai que ocuparà en disc, el flux de dades que generarà a través d’un canal de comunicació.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Proves de resistència:</strong> valoraran la resistència de l’aplicació per a determinades situacions del sistema.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Proves de robustesa:</strong> valoraran la capacitat de l’aplicació per suportar diverses entrades no correctes.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Proves de seguretat:</strong> ajudaran a determinar els nivells de permisos dels usuaris, les operacions que podran dur a terme i les d’accés al sistema i a les dades.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Proves d’usabilitat:</strong> determinaran la qualitat de l’experiència d’un usuari en la manera d’interactuar amb el sistema.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Proves d’instal·lació:</strong> indicaran les operacions d’arrencada i d’actualització dels programaris.</div>
+</li>
+</ul>
+
+<p>
+
+Les proves de sistema aglutinen molts tipus de proves que tindran diversos objectius:
+</p>
+<ul>
+<li class="level1"><div class="li"> Observar si l’aplicació fa les funcions que ha de fer i si el nou sistema es comporta com ho hauria de fer.</div>
+</li>
+<li class="level1"><div class="li"> Observar els temps de resposta per a les diferents proves de rendiment, volum i sobrecàrrega.</div>
+</li>
+<li class="level1"><div class="li"> Observar la disponibilitat de les dades en el moment de recuperació d’una errada (a la vegada que la correctesa).</div>
+</li>
+<li class="level1"><div class="li"> Observar la usabilitat.</div>
+</li>
+<li class="level1"><div class="li"> Observar la instal·lació (assistents, operadors d’arrencada de l’aplicació, actualitzacions del programari…).</div>
+</li>
+<li class="level1"><div class="li"> Observar l’entorn una vegada l’aplicació està funcionant a ple rendiment (comunicacions, interaccions amb altres sistemes…).</div>
+</li>
+<li class="level1"><div class="li"> Observar el funcionament de tot el sistema a partir de les proves globals fetes.</div>
+</li>
+<li class="level1"><div class="li"> Observar la seguretat (el control d’accés i intrusions…).</div>
+</li>
+</ul>
+
+<p>
+Les proves a escala global del sistema s’han anat produint a mesura que es tenien funcionalitats perfectament acabades. És el cas, per exemple, de provar el funcionament correcte del desenvolupament d’una partida en un dels tres jocs, o la navegació correcta per les diferents pantalles dels menús.
+</p>
+<div class="iocimportant"><div class="ioccontent">
+<p>
+Les <strong>proves de validació</strong> permeten comprovar si, efectivament, es compleixen els requisits proposats pel nostre sistema.
+</p>
+</div></div>
+</div>
+
+<h4><a id="proves_de_regressio_i_proves_de_fum" >Proves de regressió i proves de fum</a></h4>
+<div class="level4">
+<div class="iocimportant"><div class="ioccontent">
+<p>
+Les <strong>proves de regressió</strong> cerquen detectar possibles nous errors o problemes que puguin sortir en haver introduït canvis o millores en el programari.
+</p>
+</div></div>
+<p>
+Aquests canvis poden haver estat introduïts per solucionar algun problema detectat en la revisió del programari arran d’una prova unitària, d’integració o de sistema. Aquests canvis poden solucionar un problema però provocar-ne d’altres, sense haver-ho previst, en altres llocs del programari. És per aquesta raó que cal dur a terme les proves de regressió en finalitzar la resta de proves.
+</p>
+
+<p>
+Un control no convenient dels canvis de versions, o una falta de consideració envers altres mòduls o parts del programari, poden ser causes dels problemes per detectar en les proves de regressió.
+</p>
+
+<p>
+Es pot automatitzar la detecció d’aquest tipus d’errors amb l’ajuda d’eines específiques. L’automatització és complementària a la resta de proves, però en facilitarà la repetibilitat. El problema que es pot derivar de l’automatització de les proves de regressió és que demanaran un manteniment complex.
+</p>
+<div class="ioctext"><div class="ioccontent"><p class="ioctitle">Proves &quot;de fum&quot;</p>
+<p>
+El terme proves de fum sorgeix a partir de la fabricació de maquinari. Si després de reparar un component de maquinari, aquest “no treu fum”, és que funcionarà correctament.
+</p>
+</div></div><div class="iocimportant"><div class="ioccontent">
+<p>
+Les <strong>proves “de fum”</strong> es fan servir per descriure la validació dels canvis de codi en el programari, abans que els canvis en el codi es registrin en la documentació del projecte.
+</p>
+
+<p>
+Són proves d’execució ràpida i comproven les funcions bàsiques del programari.
+</p>
+</div></div>
+<p>
+S’acostuma a dur a terme una revisió del codi abans d’executar les proves de fum. Aquesta revisió del codi es farà, sobretot, pel que fa als canvis que s’hagin produït en el codi.
+</p>
+
+</div>
+
+<h3><a id="execucio_de_les_proves" >Execució de les proves</a></h3>
+<div class="level3">
+
+<p>
+Després de la planificació dels procediments de proves i del disseny dels casos de proves, el següent pas serà el procés d’execució. Aquests procés està representat en el diagrama de flux de la <span class="figref"><a href="#Figure18"><span>figura</span></a></span>.
+</p>
+
+<p>
+L’execució de les proves comportarà seguir els passos següents:
+</p>
+<ol>
+<li class="level1"><div class="li"> Execució de les proves.</div>
+</li>
+<li class="level1"><div class="li"> Comprovació de si s’ha produït algun error en l’execució de les proves.</div>
+</li>
+<li class="level1"><div class="li"> Si no hi ha hagut cap error:</div>
+<ul>
+<li class="level3"><div class="li"> Es verifica la finalització de les proves.</div>
+</li>
+<li class="level3"><div class="li"> Es valida si calen proves addicionals.</div>
+<ul>
+<li class="level5"><div class="li"> Si es necessiten proves addicionals, cal validar que no existeixin condicions anormals. Si hi ha condicions anormals, es finalitza el procés de proves fent una avaluació del mateix procés; si no, caldrà depurar les proves.</div>
+</li>
+<li class="level5"><div class="li"> Si no es necessiten proves addicionals, es durà a terme una finalització del procés de proves fent una avaluació del mateix procés.</div>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="level1"><div class="li"> En el cas d’haver trobat errors en l’execució de les proves, s’haurà de veure si aquests errors han estat deguts a:</div>
+<ul>
+<li class="level2"><div class="li"> Un defecte del programari. En aquest cas, l’execució de les proves ha complert el seu objectiu i caldrà depurar el codi de programació, localitzar el o els errors i solucionar-ho per tornar al punt inicial, en què es tornaran a executar les proves i es tornarà a validar si el canvi efectuat ha estat exitós.</div>
+</li>
+<li class="level2"><div class="li"> Un defecte del disseny de les proves. En aquest cas, caldrà revisar les proves que s’han executat, depurant-les, localitzant el o els errors i solucionar-ho, per tenir unes proves correctes, sense errors, llestes per tornar al punt inicial i tornar a executar-les.</div>
+</li>
+</ul>
+</li>
+</ol>
+<div class="iocfigure"><a name="Figure18"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Execució de les proves
+
+</figcaption><img src="../media/ic10m05u2_21.png" alt="" /></figure>
+</div>
+<p>
+Una execució de les proves exitosa no és aquella que troba errors costi el que costi ni aquella que només avalua dues o tres possibilitats, sinó que és aquella que acompleix el que s’ha planificat al pla de proves i que garanteix que allò dissenyat sigui el que es validi.
+</p>
+
+</div>
+
+<h3><a id="finalitzacioavaluacio_i_analisi_d_errors" >Finalització: avaluació i anàlisi d’errors</a></h3>
+<div class="level3">
+
+<p>
+El darrer pas dels procediments de proves serà la finalització del procés. Per poder donar-lo per tancat de forma exitosa, caldrà efectuar una avaluació i una anàlisi dels errors localitzats, tractats, corregits i reavaluats. 
+</p>
+
+<p>
+Si no es pot donar per finalitzat el procés de proves, caldrà dur a terme una replanificació del procés de proves per establir noves depuracions i noves proves, planificant-les i dissenyant-les de nou. 
+</p>
+<div class="iocimportant"><div class="ioccontent">
+<p>
+En el cas d’haver de refer els <strong>procediments de proves</strong>, és molt important la creació de nous casos de proves i no pas la readaptació dels ja existents. Si es creen nous casos de proves, s’estarà redissenyant els procediments de proves sobre el mateix codi font; si s’intenten readaptar els ja existents o modificar el codi, es corre el risc de fer que el codi font sigui el que s’estigui adaptant als casos de proves.
+</p>
+</div></div>
+<p>
+Finalment, és convenient escriure un informe que ajudi a emmagatzemar l’experiència que s’ha recollit al llarg del procediment de proves. Aquesta informació serà molt important per a futurs projectes, ja que ajudarà a no tornar a repetir els mateixos errors detectats. L’informe haurà de donar resposta a ítems com els que s’indiquen a continuació:
+</p>
+<ul>
+<li class="level1"><div class="li"> Nombre de casos de prova generats.</div>
+</li>
+<li class="level1"><div class="li"> Nombre d’errors detectats a cada fase del projecte.</div>
+</li>
+<li class="level1"><div class="li"> Temps i recursos dedicats als procediments de proves.</div>
+</li>
+<li class="level1"><div class="li"> Tipus de proves dutes a terme. </div>
+</li>
+<li class="level1"><div class="li"> Tipus de proves que més errors han detectat.</div>
+</li>
+<li class="level1"><div class="li"> Nivell de qualitat del programari.</div>
+</li>
+<li class="level1"><div class="li"> Mòduls on més errors s’han detectat.</div>
+</li>
+<li class="level1"><div class="li"> Errors que han arribat fins als usuaris finals.</div>
+</li>
+<li class="level1"><div class="li"> Nombre de casos de prova erronis detectats.</div>
+</li>
+</ul>
+
+</div>
+
+<h3><a id="depuracio_del_codi_font" >Depuració del codi font</a></h3>
+<div class="level3">
+
+<p>
+Les proves que s’efectuen sobre tot un projecte informàtic amb tots els processos involucrats (planificació, disseny, execució i avaluació) ajudaran a la detecció i correcció d’errors, intentant trobar-los al més aviat possible en el desenvolupament del projecte. Una tècnica molt important per a l’execució de les proves i, en general, per als programadors, és la depuració del codi font.
+</p>
+<div class="iocimportant"><div class="ioccontent">
+<p>
+La <strong>depuració del codi font</strong> consisteix a anar executant pas a pas el codi font, observant els estats intermedis de les variables i les dades implicades per facilitar la correcció d’errors.
+</p>
+</div></div>
+<p>
+Els procediments que estan vinculats a la depuració del codi font són:
+</p>
+<ul>
+<li class="level1"><div class="li"> Identificar la casuística per poder reproduir l’error.</div>
+</li>
+<li class="level1"><div class="li"> Diagnosticar el problema.</div>
+</li>
+<li class="level1"><div class="li"> Solucionar l’error atacant el problema.</div>
+</li>
+<li class="level1"><div class="li"> Verificar la correcció de l’error i verificar que no s’han introduït nous errors a la resta del programari.</div>
+</li>
+</ul>
+
+<p>
+La depuració del codi és una eina molt útil si se sap localitzar el mòdul o la part del codi font on es troba un determinat error. Si l’error és difícil de reproduir serà molt complicat trobar una solució per solucionar-lo. Per això, acotant-lo dintre del codi, es pot anar localitzant, fent proves per arribar a les circumstàncies que el reprodueixen. 
+</p>
+
+<p>
+Caldrà anar amb compte amb les solucions aplicades quan es fa servir la tècnica de la depuració del codi. Moltes vegades una modificació en el codi per solucionar un problema pot generar un altre error que hi estigui relacionat o que no hi tingui res a veure. Caldrà tornar a confirmar la correcta execució del codi una vegada finalitzada la correcció. 
+</p>
+<div class="iocreference"><div class="ioccontent">
+<p>
+En la secció <em>Activitats</em> del web del mòdul hi podeu trobar exemples de depuració de codi font.
+</p>
+</div></div>
+<p>
+La depuració de codi permet la creació d’un punt en el codi font fins al qual el programari serà executat de forma directa. Quan l’execució hagi arribat a aquest punt de ruptura, es podrà avançar en l’execució del codi pas a pas fins a trobar l’error que es cerca.
+</p>
+
+<p>
+Una altra forma de dur a terme la depuració de codi és anar enrere, des del punt de l’error, fins a trobar el causant. Aquesta tàctica es fa servir en casos més complexos i no és tant habitual, però serà molt útil en el cas de no tenir detectada la ubicació de l’error, que pot trobar-se ocult en alguna part del codi font. En aquests casos, a partir del lloc on es genera l’error, es durà a terme un recorregut cap enrere, anant pas a pas en sentit invers.
+</p>
+
+<p>
+Una eina que ajuda a la depuració del codi font és la utilització de fitxers anomenats registres (<em>logs</em>). Aquests fitxers, habitualment de text, enregistren tota la informació vinculada a l’execució d’un programari amb l’objectiu que el programador pugui fer una revisió pas a pas de com ha evolucionat aquesta execució i localitzar errors o mals funcionaments. 
+</p>
+<div class="iocimportant"><div class="ioccontent">
+<p>
+La <strong>depuració del codi</strong> és força útil també en l’execució de les proves d’integració, de sistema i d’acceptació.
+</p>
+</div></div>
+<p>
+Eclipse proporciona un entorn de depuració que facilita la detecció d’errors, permetent seguir el codi pas a pas i consultar els valors que van prenent les dades.
+</p>
+
+<p>
+A la <span class="figref"><a href="#Figure19"><span>figura</span></a></span> es mostra l’entorn de treball de l’eina Eclipse a l’hora de dur a terme les accions de depuració.
+</p>
+<div class="iocfigure"><a name="Figure19"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Eclipse: perspectiva de depuració
+
+</figcaption><img src="../media/ic10m05u2_22.png" alt="" /></figure>
+</div>
+</div>
+
+<h2><a id="eines_per_a_la_realitzacio_de_proves" >Eines per a la realització de proves</a></h2>
+<div class="level2">
+<div class="iocreference"><div class="ioccontent">
+<p>
+En la secció <em>Activitats</em> del web del mòdul hi podeu trobar exemples d’eines d’ajuda per a la realització de proves de programari.
+</p>
+</div></div>
+<p>
+Les eines informàtiques per a la realització de proves ajudaran molt a poder automatitzar la tasca d’executar les proves i alguns dels altres processos que cal fer per a implementar-les (planificació, disseny…). Tal com succeeix amb les eines específiques per al desenvolupament de programari, també existeixen eines específiques per a l’ajuda als procediments de proves.
+</p>
+
+<p>
+Això sí, com tot, l’ús d’aquestes eines tindrà alguns punts positius, però també comportarà alguns punts dèbils.
+</p>
+
+</div>
+
+<h3><a id="beneficis_i_problemes_de_l_us_d_eines_de_proves" >Beneficis i problemes de l&#039;ús d&#039;eines de proves</a></h3>
+<div class="level3">
+
+<p>
+L’ajuda que aporten les eines per a la realització de proves és la d’automatitzar una tasca que moltes vegades és molt repetitiva i pot arribar a reclamar molt de temps als implicats en cas de fer-ho de forma manual. A més, a mesura que es van desenvolupant les proves de forma manual, amb el pas del temps, hi ha més risc que es produeixin errors humans per part dels desenvolupadors o dels verificadors. 
+</p>
+
+<p>
+La utilització d’una eina que automatitzi les proves ofereix la possibilitat de generar els casos de proves, executar-los i comparar els resultats obtinguts amb els resultats esperats. Moltes vegades, tantes dades tan semblants afavoreixen l’aparició d’errors, que amb les eines informàtiques es poden minimitzar. A més, són especialment útils per confirmar que un error s’ha solucionat.
+</p>
+
+<p>
+Les eines d’ajuda a l’elaboració de proves ofereixen, també com a punts forts, una contraposició a la repetició dels errors a l’hora de desenvolupar les proves. Si un mateix programador ha desenvolupat el codi font i és l’encarregat de generar els casos de prova podrà repetir, inconscientment, els errors que ha comès una vegada. Si es fa servir un programari per desenvolupar un projecte, i es volen generar les proves amb el mateix programari, aquest mateix programari les automatitzarà de tal manera que no es repeteixin els possibles errors de programació. Aquesta consistència i garantia a l’hora de dur a terme les proves és més difícil de ser mostrada per un ésser humà. 
+</p>
+
+<p>
+Un altre punt fort de les eines d’automatització de les proves són les funcionalitats que ofereixen a tall de resum i que permeten tenir més informació tant de les proves com del codi desenvolupat. Serà igual d’important la correcta realització de les proves com la informació que se’n pot extreure i la forma d’accedir-hi. Una eina de gestió de proves pot oferir informes estadístics sobre els resultats de les proves, sobre els diferents mòduls avaluats, sobre els resultats, sobre les parts del codi font més fiables i les que no… Tota aquesta informació, presentada d’una forma adient, facilitarà la presa de decisions i la resolució de problemes. 
+</p>
+
+<p>
+
+</p>
+
+<p>
+Com a punts febles en la utilització d’eines d’automatització de les proves es poden trobar:
+</p>
+<ul>
+<li class="level1"><div class="li"> Temps que cal dedicar a aprendre a fer servir correctament aquest programari. De vegades es necessari dedicar tant de temps a conèixer a consciència una eina informàtica com el que es dedicaria a efectuar les proves de forma manual. Cada aplicació informàtica té les seves característiques i les seves especificacions a l’hora de ser utilitzada. S’hauran de conèixer bé per treure’n el màxim profit.</div>
+</li>
+<li class="level1"><div class="li"> Si no hi ha una bona configuració i una bona selecció de les proves, els resultats obtinguts de les eines en la realització de les proves tampoc no seran fiables i es podrien donar per bons uns resultats que no ho són. Les aplicacions són fiables si es saben utilitzar correctament.</div>
+</li>
+<li class="level1"><div class="li"> Dins el projecte, serà recomanable tenir una persona que es dediqui de forma exclusiva a aquesta tasca.</div>
+</li>
+</ul>
+
+</div>
+
+<h3><a id="algunes_eines_de_proves_de_programari" >Algunes eines de proves de programari</a></h3>
+<div class="level3">
+
+<p>
+Les eines de proves del programari es poden classificar segons molts criteris: en funció del o dels llenguatges de programació a què es dóna suport, en funció de si són privatius o de codi obert, o en funció, per exemple, del tipus de proves que permeten dur a terme.
+</p>
+
+<p>
+S’ha de considerar que la gran majoria dels entorns integrats de desenvolupament porten integrades eines que permeten la depuració del codi font. Algunes d’elles també permeten el desenvolupament de proves o el fet d’afegir algun mòdul que ho permeti.
+</p>
+<div class="iocreference"><div class="ioccontent">
+<p>
+En els materials Web, a l’apartat d’Activitats, es pot trobar una activitat de proves unitàries desenvolupat amb JUnit.
+</p>
+</div></div>
+<p>
+Tot seguit s’enumeren algunes eines que permeten el desenvolupament de proves en funció del tipus de proves:
+</p>
+<ul>
+<li class="level1"><div class="li"> Proves unitàries:</div>
+<ul>
+<li class="level2"><div class="li"> <strong>JUnit</strong>. Automatitza les proves unitàries i d’integració. Proveeix classes i mètodes que faciliten la tasca d’efectuar proves en el sistema per tal d’assegurar la consistència i funcionalitat del programari desenvolupat.</div>
+</li>
+</ul>
+</li>
+<li class="level1"><div class="li"> Proves estàtiques de codi:</div>
+<ul>
+<li class="level2"><div class="li"> <strong>PMD</strong>. Pot ser integrat a diverses eines: JDeveloper, Eclipse, jEdit, etc. Permet trobar en el codi errors en el maneig d’excepcions, codi mort, codi sense optimitzar, codi duplicat…</div>
+</li>
+<li class="level2"><div class="li"> <strong>FindBugs</strong>. Pot integrar-se a Eclipse. Efectua un escaneig de codi per mitjà del qual troba errors comuns, males pràctiques de programació, codi vulnerable, rendiment, seguretat…</div>
+</li>
+<li class="level2"><div class="li"> <strong>YASCA</strong>. Permet trobar vulnerabilitats de seguretat, qualitat en el codi, rendiment… Aprofita la funcionalitat dels connectors FindBugs, PMD i Jlint.</div>
+</li>
+</ul>
+</li>
+<li class="level1"><div class="li"> Proves de rendiment:</div>
+<ul>
+<li class="level2"><div class="li"> <strong>JMeter</strong>. Permet efectuar proves de rendiment, d’estrès, de càrrega i de volum, sobre recursos estàtics o dinàmics.</div>
+</li>
+<li class="level2"><div class="li"> <strong>OpenSTA</strong>. Permet captar les peticions de l’usuari generades en un navegador web, després guardar-les, i poder-les editar per al seu posterior ús.</div>
+</li>
+<li class="level2"><div class="li"> <strong>WEbLoad</strong>. permet dur a terme proves de rendiment, a través d’un entorn gràfic en el qual es poden desenvolupar, gravar i editar <em>script</em> de proves.</div>
+</li>
+<li class="level2"><div class="li"> <strong>Grinder</strong>. és un <em>framework</em> (entorn de treball) escrit en Java, amb el qual es poden efectuar proves de rendiment, per mitjà d’<em>script</em> escrits en llenguatge Jython. Permet gravar les peticions del client sobre un navegador web per ser després reproduït.</div>
+</li>
+</ul>
+</li>
+<li class="level1"><div class="li"> Proves d’acceptació:</div>
+<ul>
+<li class="level2"><div class="li"> <strong>Fitness</strong>. Permet comparar el que ha de fer el programari amb el que realment fa. Es poden efectuar proves d’acceptació i proves de regles de negoci.</div>
+</li>
+<li class="level2"><div class="li"> <strong>Avignon</strong>. Permet als usuaris expressar proves d’acceptació d’una forma no ambigua abans que comenci el desenvolupament. Treballa en conjunt amb JUnit, HTTPUnit…</div>
+</li>
+</ul>
+</li>
+</ul>
+
+</div>
+
+	 </article>
+     <div class="pnpage">
+      <div class="left-corner"></div>
+      <div id="prevpage">Anar a la p&agrave;gina anterior:<br /><a href="../../../WebContent/u2/referencies.html">Referències</a></div>
+      <div id="nextpage">Anar a la p&agrave;gina seg&uuml;ent:<br /><a href="../../../WebContent/u2/a1/activitats.html">Activitats</a></div>
+      <div class="right-corner"></div>
+     </div>
+    </div>
+    <footer class="footer">
+      <div><small>Aquest document està subjecte a una llicència oberta de Creative Commons, es reserva el dret de reconeixement de l'autoria, d'exigir que no se'n faci cap mena d'ús comercial. Si altereu o transformeu aquesta obra, o en genereu obres derivades, només podeu distribuir l'obra generada amb una llicència idèntica a aquesta.</small></div>
+    </footer>
+ </div>
+ <div id="back_preview" class="hidden"></div>
+ <div id="preview" class="hidden">
+  <div class="prevcontent"></div>
+ </div>
+ <div id="help-tooltips">
+  <div id="help-toc" class="hidden tooltip"><span>Taula de continguts:</span> Ofereix una vista general de l&#39;estructura del m&ograve;dul, que us facilitar&agrave; la navegaci&oacute; a trav&eacute;s dels seus continguts.<span class="arrow-left"></span></div> 
+  <div id="help-settings" class="hidden tooltip"><span>Opcions de format:</span> Permet configurar el format de lectura a partir de les vostres prefer&egrave;ncies, modificant la mida de la lletra, el color del fons, l&#39;amplada de la p&agrave;gina o l&#39;ocultaci&oacute; dels continguts complementaris, entre d&#39;altres.<span class="arrow-left"></span></div>
+  <div id="help-printer" class="hidden tooltip"><span>Imprimir:</span>  Envia el contingut seleccionat a la impressora.<span class="arrow-left"></span></div>
+  <div id="help-favorites" class="hidden tooltip"><span>Prefereits:</span> Permet desar aquelles parts del contingut a les que us interessi accedir en un moment posterior; us permetr&agrave; anar creant un repositori personalitzat de les seccions que considereu m&eacute;s rellevants. Un cop l&#39;hageu començat a fer servir se us mostrar&agrave; a sota un comptador que us informar&agrave; del nombre de preferits que s&#39;hagin emmagatzemat fins al moment.<span class="arrow-left"></span></div>
+  <div id="help-favcounter" class="hidden tooltip"><span>Comptador i llistat de preferits:</span> Indica el nombre de preferits que s&#39;han desat fins el moment; clicant damunt seu accedireu al llistat de preferits, i a trav&eacute;s d&#39;aquest podreu accedir directament als continguts que hageu emmagatzemat.<span class="arrow-left"></span></div>
+  <div id="help-help_icon" class="hidden tooltip"><span>Ajuda:</span> Aquesta opci&oacute; activa la informaci&oacute; de les funcionalitats del web tot situant el punter del ratol&iacute; al damunt dels diferents &iacute;tems.<span class="arrow-left"></span></div>
+  <div id="help-sidebar-hide" class="hidden tooltip"><span>Mostrar/Ocultar barra lateral:</span>  Deshabilita la barra d&#39;opcions, permetent la seva recuperaci&oacute; quan es desitgi.<span class="arrow-left"></span></div>
+  <div id="help-search" class="hidden tooltip"><span>Cerca:</span>  Introdu&iuml;u les paraules clau sobre aquells conceptes que desitgeu localitzar en els continguts del m&ograve;dul. Tamb&eacute; podeu excloure un terme de la cerca tot afegint-hi el signe &#8220;-&#8221; al davant.<span class="arrow-top"></span></div>
+  <div id="help-header" class="hidden tooltip"><span>Cap&ccedil;alera:</span>  Indica l&#39;apartat o secci&oacute; que es mostra en pantalla. Tingueu present que les capçaleres de segon, tercer i quart nivell tamb&eacute; es poden desar com a marcadors.<span class="arrow-left"></span></div>
+</div> 
+</body>
+</html>

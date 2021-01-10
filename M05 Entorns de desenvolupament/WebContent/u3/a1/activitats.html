@@ -1,0 +1,509 @@
+<!doctype html>
+
+<!--[if lt IE 7 ]> <html class="ie ie6 no-js" lang="ca"> <![endif]-->
+<!--[if IE 7 ]>    <html class="ie ie7 no-js" lang="ca"> <![endif]-->
+<!--[if IE 8 ]>    <html class="ie ie8 no-js" lang="ca"> <![endif]-->
+<!--[if IE 9 ]>    <html class="ie ie9 no-js" lang="ca"> <![endif]-->
+<!--[if gt IE 9]><!--><html class="no-js" lang="ca"><!--<![endif]-->
+<!-- the "no-js" class is for Modernizr. -->
+
+<head id="www-sitename-com" data-template-set="html5-reset">
+
+	<meta charset="utf-8">
+	
+	<!-- Always force latest IE rendering engine (even in intranet) & Chrome Frame -->
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	
+	<title>Entorns de desenvolupament</title>
+	
+<!-- <meta name="title" content=""> --> 
+	<meta name="description" content="">
+	<!-- Google will often use this as its description of your page/site. Make it good. -->
+	
+	<meta name="google-site-verification" content="">
+	<!-- Speaking of Google, don't forget to set your site up: http://google.com/webmasters -->
+	
+	<meta name="author" content="Institut Obert de Catalunya">
+	<meta name="Copyright" content="Copyright Institut Obert de Catalunya 2011. All Rights Reserved.">
+
+	<!-- Dublin Core Metadata : http://dublincore.org/ -->
+	<meta name="DC.title" content="Entorns de desenvolupament">
+	<meta name="DC.subject" content="Informàtica i comunicacions">
+	<meta name="DC.creator" content="Institut Obert de Catalunya">
+	
+	<!--  Mobile Viewport Fix
+	j.mp/mobileviewport & davidbcalhoun.com/2010/viewport-metatag 
+	device-width : Occupy full width of the screen in its current orientation
+	initial-scale = 1.0 retains dimensions instead of zooming out if page height > device height
+	maximum-scale = 1.0 retains dimensions instead of zooming in if page width < device width
+	-->
+	<!-- Uncomment to use � use thoughtfully!
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+	-->
+
+	<link rel="shortcut icon" href="../../../img/favicon.ico">
+	<!-- This is the traditional favicon.
+		 - size: 16x16 or 32x32
+		 - transparency is OK
+		 - see wikipedia for info on browser support: http://mky.be/favicon/ -->
+		 
+	<link rel="apple-touch-icon" href="../../../img/apple-touch-icon.png">
+	<!-- The is the icon for iOS's Web Clip.
+		 - size: 57x57 for older iPhones, 72x72 for iPads, 114x114 for iPhone4's retina display (IMHO, just go ahead and use the biggest one)
+		 - To prevent iOS from applying its styles to the icon name it thusly: apple-touch-icon-precomposed.png
+		 - Transparency is not recommended (iOS will put a black BG behind the icon) -->
+	
+	<!-- CSS: screen, mobile & print are all in the same file -->
+	<link rel="stylesheet" href="../../../_/css/style.css">
+
+	<!-- CSS: jQuery UI -->
+	<link rel="stylesheet" href="../../../_/css/jquery-ui.css">
+	
+	<!-- all our JS is at the bottom of the page, except for Modernizr. -->
+	<script src="../../../_/js/modernizr-1.7.min.js"></script>
+	<script src="../../../_/js/Hyphenator.js" type="text/javascript"></script>
+	<script type="text/javascript">
+	   Hyphenator.config({
+		minwordlength : 4
+	   });
+	   Hyphenator.run();
+	</script>
+    <script src="../../../_/js/build.js" type="text/javascript"></script>
+</head>
+
+<body class="style-newspaper">
+
+<div class="wrapper"><!-- not needed? up to you: http://camendesign.com/code/developpeurs_sans_frontieres -->
+
+	<header id="header">
+		<div class="head"><a href="http://ioc.gencat.cat"><img src="../../../img/logo.png" alt="Institut Obert de Catalunya"/></a><a href="http://creativecommons.org/licenses/by-nc-sa/3.0/es/deed.ca"><img src="../../../img/license.png" alt="Llic&egrave;ncia" class="license"/></a></div>
+		<div class="headdocument"><a href="../../../index.html">Entorns de desenvolupament</a></div>
+        <div id="search" class="search" name="search">
+         <form id="frmsearch" action="../../../search.html" method="get">
+          <input type="text" name="q"/>
+        </form>
+        </div>
+	</header>
+   <div id="upbutton" class="upbutton" style="display:none;"><img src="../../../img/uparrow.png" alt="Pujar a l'inici de p&agrave;gina"/></div>
+   <aside id="aside">
+    <div id="menu">
+      <ul>
+       <li name="toc"><div><img src="../../../img/toc.png" alt="&Iacute;ndex"/></div></li>
+       <li name="settings"><div><img src="../../../img/settings.png" alt="Configuraci&oacute;"/></div></li>
+       <li name="printer"><div><img src="../../../img/printer.png" alt="Imprimir"/></div></li>
+       <li name="favorites"><div><img src="../../../img/favorites.png" alt="Favorits"/></div></li>
+       <li name="help_icon" class="help_icon"><div><img src="../../../img/help_icon.png" alt="Ajuda"/></div></li>
+      </ul>
+     </div>
+   </aside>
+   <div id="sidebar-hide" name="sidebar-hide"><img src="../../../img/arrows.png"/></div>
+   <section>
+     <div id="toc" class="hidden">
+      <div class="menucontent">
+        <ul>
+        <li id="u3" class="parentnode"><p><a href="../../../WebContent/u3/introduccio.html">3. Introducció al disseny orientat a objectes</a></p><ul class="expander"><li id="u3introduccio"><a href="../../../WebContent/u3/introduccio.html">Introducció</a></li><li id="u3resum"><a href="../../../WebContent/u3/resum.html">Resum</a></li><li id="u3resultats"><a href="../../../WebContent/u3/resultats.html">Resultats d’aprenentatge</a></li><li id="u3referencies"><a href="../../../WebContent/u3/referencies.html">Referències</a></li><li id="u3a1" class="tocsection"><p id="u3a1continguts"><a href="../../../WebContent/u3/a1/continguts.html">Diagrames estàtics</a><span class="buttonexp"></span></p><ul><li id="u3a1activitats"><a href="../../../WebContent/u3/a1/activitats.html">Activitats</a></li><li id="u3a1exercicis"><a href="../../../WebContent/u3/a1/exercicis.html">Exercicis</a></li><li id="u3a1annexos"><a href="../../../WebContent/u3/a1/annexos.html">Annexos</a></li></ul></li><li id="u3a2" class="tocsection"><p id="u3a2continguts"><a href="../../../WebContent/u3/a2/continguts.html">Diagrames dinàmics</a><span class="buttonexp"></span></p><ul><li id="u3a2activitats"><a href="../../../WebContent/u3/a2/activitats.html">Activitats</a></li><li id="u3a2exercicis"><a href="../../../WebContent/u3/a2/exercicis.html">Exercicis</a></li><li id="u3a2annexos"><a href="../../../WebContent/u3/a2/annexos.html">Annexos</a></li></ul></li></ul></li><li id="" class="indexnode"><p><a href="../../../index.html">Anar a l&#39;&iacute;ndex general</a></p></li>
+        </ul>
+      </div>
+    </div>
+   </section>
+   <section>
+   <div id="settings" class="hidden">
+    <div class="menucontent">
+     <div class="allsettings">
+     <div class="settings">
+      <label>Font i Color</label>
+		<div class="setting-option">
+	        <ul class="fontBackground">
+				<li id="style-newspaper" title="Newspaper" class="appearance-style-newspaper"><span>Newspaper</span></li>
+                <li id="style-novel" title="Novel" class="appearance-style-novel"><span>Novel</span></li>
+                <li id="style-ebook" title="eBook" class="appearance-style-ebook"><span>eBook</span></li>
+				<li id="style-inverse" title="Inverse" class="appearance-style-inverse active"><span>Inverse</span></li>
+				<li id="style-athelas" title="Athelas" class="appearance-style-athelas"><span>Athelas</span></li>
+			</ul>
+		</div>
+     </div>
+	<div class="settings">
+      <label>Amplada</label>
+		<div class="setting-option">
+	        <div id="slider-width"></div>
+		</div>
+     </div>
+     <div class="settings">
+      <label>Mida de la font</label>
+		<div class="setting-option">
+	        <div id="slider-font"></div>
+		</div>
+     </div>
+     <div class="settings">
+      <label>Mida de la font</label>
+	  <div class="setting-option">
+       <form action="" class="sett-options">
+		<ul>
+		    <li><input type="checkbox" id="secondary-content" /><label for="secondary-content">Mostra recursos complementaris</label></li>
+		    <li><input type="checkbox" id="main-images" /><label for="main-images">Mostra imatges</label></li>
+		    <li><input type="checkbox" id="text-alignment" /><label for="text-alignment">Text justificat</label></li>
+			<li><input type="checkbox" id="text-hyphen" /><label for="text-hyphen">Partici&oacute; sil·l&agrave;bica</label></li>
+		</ul>
+       </form>
+	  </div>
+     </div>
+     </div>
+    </div>
+   </div>
+   </section>
+ <section>
+ <div id="favorites" class="hidden"></div>
+ </section>   
+ <div id="bridge" class="hidden"></div>
+ <div id="help" class="hidden">
+  <div class="helptitle">Dreceres del teclat<hr></div>
+  <div class="helpsection"><span>General</span>
+   <ul>
+    <li><span class="shortcut">g</span>: Anar al men&uacute; de navegaci&oacute;</li>
+    <li><span class="shortcut">o</span>: Anar a opcions</li>
+    <li><span class="shortcut">s</span>: Guardar la p&agrave;gina actual a favorits</li>
+    <li><span class="shortcut">p</span>: Imprimir la p&agrave;gina actual</li>
+    <li><span class="shortcut">?</span>: Mostrar/Ocultar l&#39;ajuda</li>
+   </ul>
+  </div>
+  <div class="helpsection"><span>Navegaci&oacute;</span>
+   <ul>
+    <li><span class="shortcut">i</span>: Anar a l&#39;&iacute;ndex general</li>
+    <li><span class="shortcut">t</span>: Anar a l&#39;inici de p&agrave;gina</li>
+    <li><span class="shortcut">b</span>: Anar al final de p&agrave;gina</li>
+    <li><span class="shortcut">j</span>: Anar cap endavant dintre la p&agrave;gina</li>
+    <li><span class="shortcut">k</span>: Anar cap enrere dintre la p&agrave;gina</li>
+    <li><span class="shortcut">h</span>: Anar a la p&agrave;gina anterior:</li>
+    <li><span class="shortcut">l</span>: Anar a la p&agrave;gina seg&uuml;ent:</li>
+   </ul>
+   </div>
+ </div>
+ <div id="favcounter" name="favcounter" class="hidden"><span></span></div>
+ <div id="navmenu" class="navmenu"><ul class="webnav"><li><a href="../../../index.html" title="Anar a l&#39;&iacute;ndex general">Inici</a></li><li><a href="../introduccio.html">Introducció al disseny orientat a objectes</a></li><li><a href="continguts.html">Diagrames estàtics</a></li><li>Activitats</li></ul></div>
+	<div id="content" lang="ca" class="hyphenate text">
+     <article lang="ca" class="sheet">
+        <h1><a id="activitats"> Activitats </a></h1>
+    	
+<h2><a id="agregacio_i_composicio" >Agregació i composició</a></h2>
+<div class="level2">
+
+<p>
+L’objectiu d’aquesta activitat és aprofundir en els conceptes dels diagrames de classes, concretament en els que fan referència als tipus de relacions que existeixen entre les classes i, més concretament encara, a les relacions d’associació. 
+</p>
+
+<p>
+Explica detalladament la diferència entre els conceptes: relació d’associació d’agregació i relació d’associació de composició. Fes servir un o diversos exemples per acompanyar les teves explicacions. 
+</p>
+
+<p>
+<form action=""><div class="solution ioccontent">
+<p>
+L’agregació i la composició són dos tipus de relacions d’associació entre classes. 
+</p>
+
+<p>
+<strong>Agregació:</strong> mostra un significat de relació dèbil entre dues classes. Semànticament, una relació d’associació de tipus agregació té el significat del verb tenir. 
+</p>
+
+<p>
+Per exemple, com es pot veure a la <span class="figref"><a href="#figX1"><span>figura</span></a></span>, es pot crear la següent relació entre dues classes:
+</p>
+
+<p>
+Un curs <strong>té</strong> assignatures.
+</p>
+
+<p>
+Quan s’elimina un curs, no és necessari eliminar les assignatures que el componen, ja que aquestes poden ser utilitzades per a un altre curs o per a una altra carrera universitària.
+</p>
+<div class="iocfigure"><a name="figX1"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Exemple d’agregació
+
+</figcaption><img src="../media/wdamm05u3_01.png" alt="" /></figure>
+</div>
+<p>
+<strong>Composició:</strong> mostra un significat de relació forta entre dues classes. Semànticament, una relació d’associació de tipus composició té el significat del verb “estar compost de”.
+</p>
+
+<p>
+Per exemple, com es pot veure a la <span class="figref"><a href="#figX2"><span>figura</span></a></span>, es pot crear la següent relació d’associació de composició entre dues classes:
+</p>
+
+<p>
+Un avió <strong>es compon de</strong> 2 ales.
+</p>
+
+<p>
+Quan s’elimina un avió s’han d’eliminar les seves ales, ja que tota ala formarà part de l’avió.
+</p>
+<div class="iocfigure"><a name="figX2"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Exemple de composició
+
+</figcaption><img src="../media/wdamm05u3_02.png" alt="" /></figure>
+</div>
+<p>
+Un altre exemple que fa ús a la vegada de les relacions d’associació d’agregació i de composició és el que es mostra a la <span class="figref"><a href="#figX3"><span>figura</span></a></span>.
+</p>
+<div class="iocfigure"><a name="figX3"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Exemple d’agregació i de composició
+
+</figcaption><img src="../media/wdamm05u3_03.png" alt="" /></figure>
+</div>
+<p>
+En aquest exemple es podrien establir els següents significats:
+</p>
+
+<p>
+L’aplicació <strong>té</strong> una base de dades.
+</p>
+
+<p>
+L’aplicació <strong>es compon de</strong> codi de programació.
+</p>
+</div><input class="btn_solution3" type="button" value="Mostra"></input></form>
+</p>
+
+</div>
+
+<h2><a id="classe_associativa" >Classe associativa</a></h2>
+<div class="level2">
+
+<p>
+L’objectiu d’aquesta activitat és aprofundir en els conceptes dels diagrames de classes, concretament en els que fan referència al concepte de classe associativa.
+</p>
+
+<p>
+A partir del següent diagrama de classes (<span class="figref"><a href="#figX4"><span>figura</span></a></span>):
+</p>
+<ul>
+<li class="level1"><div class="li"> Interpreta el significat del diagrama de classes que es mostra a la figura següent, indicant el significat de les classes i les seves relacions.</div>
+</li>
+<li class="level1"><div class="li"> Modifica el diagrama de classes per tal de poder ser implementat en un llenguatge de programació orientat a objectes, com per exemple Java.</div>
+</li>
+</ul>
+<div class="iocfigure"><a name="figX4"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Classe associada
+
+</figcaption><img src="../media/wdamm05u3_04.png" alt="" /></figure>
+</div>
+<p>
+<form action=""><div class="solution ioccontent">
+<p>
+Quan una associació té propietats pròpies es representa com una classe unida a la línia de l’associació per mitjà d’una línia discontinua. Tant la línia com el rectangle de classe representen el mateix element conceptual: l’associació. 
+</p>
+
+<p>
+En el cas de l’exemple ens trobem que la nota està directament relacionada amb les classes Estudiant, Assignatura: cada un dels alumnes de l’assignatura tindrà una determinada nota. La manera que té l’UML de modelitzar aquesta situació és amb les classes associades.
+</p>
+
+<p>
+D’altra banda, les classes associatives no existeixen en els llenguatges de programació, per tant, és necessari haver de dur a terme una transformació en el model de classes per tal de poder ser codificat.
+</p>
+
+<p>
+La transformació consisteix a convertir la classe associativa en una classe amb un únic atribut, que estarà relacionada amb les classes Estudiant i Assignatura, tal com es mostra a la figura <span class="figref"><a href="#figX4b"><span>figura</span></a></span>.
+</p>
+<div class="iocfigure"><a name="figX4b"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Diagrama de classes
+
+</figcaption><img src="../media/wdamm05u3_04b.png" alt="" /></figure>
+</div></div><input class="btn_solution3" type="button" value="Mostra"></input></form>
+</p>
+
+</div>
+
+<h2><a id="classe_associativa_vs_classe_ternaria" >Classe associativa vs Classe ternària</a></h2>
+<div class="level2">
+
+<p>
+L’objectiu d’aquesta activitat és aprofundir en els conceptes dels diagrames de classes, concretament en els que fan referència al concepte de classe associativa i de classe ternària.
+</p>
+
+<p>
+Es demana donar solució a les dues qüestions següents:
+</p>
+<ol>
+<li class="level1"><div class="li"> Expliqueu les diferències entre una classe associativa i una classe ternària. Feu servir un exemple clarificador.</div>
+</li>
+<li class="level1"><div class="li"> Representeu, d’una forma equivalent, una classe ternària.</div>
+</li>
+</ol>
+
+<p>
+<form action=""><div class="solution ioccontent">
+<p>
+<strong>1.</strong> A la figura es mostra un exemple de classe associativa.
+</p>
+
+<p>
+<div class="imgelem">
+<img src="../media/wdamm05u3_05.png" alt="" /></div>
+
+</p>
+
+<p>
+A la figura següent es mostra un exemple de classe ternària.
+</p>
+
+<p>
+<div class="imgelem">
+<img src="../media/wdamm05u3_06.png" alt="" /></div>
+
+</p>
+
+<p>
+<strong>Classe associativa</strong>
+</p>
+<ul>
+<li class="level1"><div class="li"> Una matrícula correspon a l’associació entre un estudiant i una assignatura. </div>
+</li>
+<li class="level1"><div class="li"> Un estudiant pot haver-se matriculat a diverses assignatures, fins i tot un estudiant pot haver-se matriculat diverses vegades a una mateixa assignatura.</div>
+</li>
+<li class="level1"><div class="li"> Una assignatura pot haver estat referenciada en la matrícula per diversos estudiants.</div>
+</li>
+</ul>
+
+<p>
+<strong>Relació ternària</strong>
+</p>
+<ul>
+<li class="level1"><div class="li"> Una matrícula pot estar associada diverses vegades amb estudiants i assignatures.</div>
+</li>
+<li class="level1"><div class="li"> Un estudiant pot haver-se matriculat a diverses assignatures, fins i tot un estudiant pot haver-se matriculat diverses vegades a una mateixa assignatura.</div>
+</li>
+<li class="level1"><div class="li"> Una assignatura pot haver estat referenciada en la matrícula per diversos estudiants.</div>
+</li>
+</ul>
+
+<p>
+<strong>2.</strong> Una forma equivalent de representar la classe ternària podria ser la que es mostra a la figura següent:
+</p>
+
+<p>
+<div class="imgelem">
+<img src="../media/wdamm05u3_07.png" alt="" /></div>
+
+</p>
+</div><input class="btn_solution3" type="button" value="Mostra"></input></form>
+</p>
+
+</div>
+
+<h2><a id="herencia_enginyeria_inversa" >Herència. Enginyeria inversa</a></h2>
+<div class="level2">
+
+<p>
+L’objectiu d’aquesta activitat és aprofundir en els conceptes dels diagrames de classes, concretament en els que fan referència al concepte d’herència.
+</p>
+
+<p>
+A partir del següent codi de programació, es demana la representació del diagrama de classes. Es tracta d’aplicar l’enginyeria inversa per obtenir el disseny en UML a partir de la codificació.
+</p>
+<pre class="code java"><ol><li class="li1"><div class="de1"><span class="kw1">class</span> FiguraGeometrica <span class="br0">&#123;</span> </div></li><li class="li1"><div class="de1">	<span class="kw1">protected</span> <span class="kw4">int</span> amplada<span class="sy0">;</span></div></li><li class="li1"><div class="de1">	<span class="kw1">protected</span> <span class="kw4">int</span> llargada<span class="sy0">;</span></div></li><li class="li1"><div class="de1">&nbsp;</div></li><li class="li1"><div class="de1">	<span class="kw1">public</span> FiguraGeometrica <span class="br0">&#40;</span><span class="kw4">int</span> a, <span class="kw4">int</span> b<span class="br0">&#41;</span> <span class="br0">&#123;</span>  </div></li><li class="li1"><div class="de1">		amplada<span class="sy0">=</span>a<span class="sy0">;</span> </div></li><li class="li1"><div class="de1">		llargada<span class="sy0">=</span>b<span class="sy0">;</span></div></li><li class="li1"><div class="de1">	<span class="br0">&#125;</span> </div></li><li class="li1"><div class="de1"><span class="br0">&#125;</span></div></li><li class="li1"><div class="de1">&nbsp;</div></li><li class="li1"><div class="de1"><span class="kw1">class</span> <a href="http://www.google.com/search?hl=en&amp;q=allinurl%3Adocs.oracle.com+javase+docs+api+rectangle"><span class="kw3">Rectangle</span></a> <span class="kw1">extends</span> FiguraGeometrica <span class="br0">&#123;</span> </div></li><li class="li1"><div class="de1">	<span class="kw1">public</span> <span class="kw4">int</span> area<span class="br0">&#40;</span><span class="br0">&#41;</span> <span class="br0">&#123;</span> </div></li><li class="li1"><div class="de1">		<span class="kw1">return</span> <span class="br0">&#40;</span>amplada <span class="sy0">*</span> llargada<span class="br0">&#41;</span><span class="sy0">;</span> </div></li><li class="li1"><div class="de1">	<span class="br0">&#125;</span> </div></li><li class="li1"><div class="de1"><span class="br0">&#125;</span></div></li><li class="li1"><div class="de1">&nbsp;</div></li><li class="li1"><div class="de1"><span class="kw1">class</span> Triangle <span class="kw1">extends</span> FiguraGeometrica <span class="br0">&#123;</span> </div></li><li class="li1"><div class="de1">	<span class="kw1">public</span> <span class="kw4">int</span> area<span class="br0">&#40;</span><span class="br0">&#41;</span> <span class="br0">&#123;</span> </div></li><li class="li1"><div class="de1">		<span class="kw1">return</span> <span class="br0">&#40;</span>amplada <span class="sy0">*</span> llargada <span class="sy0">/</span> <span class="nu0">2</span><span class="br0">&#41;</span><span class="sy0">;</span> </div></li><li class="li1"><div class="de1">	<span class="br0">&#125;</span></div></li><li class="li1"><div class="de1"><span class="br0">&#125;</span></div></li><li class="li1"><div class="de1">&nbsp;</div></li><li class="li1"><div class="de1"><span class="kw1">public</span> <span class="kw1">static</span> <span class="kw4">void</span> main<span class="br0">&#40;</span><a href="http://www.google.com/search?hl=en&amp;q=allinurl%3Adocs.oracle.com+javase+docs+api+string"><span class="kw3">String</span></a><span class="br0">&#91;</span><span class="br0">&#93;</span> args<span class="br0">&#41;</span> <span class="br0">&#123;</span> </div></li><li class="li1"><div class="de1">&nbsp;</div></li><li class="li1"><div class="de1">	<a href="http://www.google.com/search?hl=en&amp;q=allinurl%3Adocs.oracle.com+javase+docs+api+rectangle"><span class="kw3">Rectangle</span></a> rectangleA<span class="sy0">;</span> </div></li><li class="li1"><div class="de1">	rectangleA <span class="sy0">=</span> <span class="kw1">new</span> <a href="http://www.google.com/search?hl=en&amp;q=allinurl%3Adocs.oracle.com+javase+docs+api+rectangle"><span class="kw3">Rectangle</span></a><span class="br0">&#40;</span><span class="nu0">5</span>,<span class="nu0">10</span><span class="br0">&#41;</span><span class="sy0">;</span></div></li><li class="li1"><div class="de1">	<a href="http://www.google.com/search?hl=en&amp;q=allinurl%3Adocs.oracle.com+javase+docs+api+system"><span class="kw3">System</span></a>.<span class="me1">out</span>.<span class="me1">print</span><span class="br0">&#40;</span><span class="st0">&quot;area del rectangle &quot;</span> <span class="sy0">+</span> rectangleA.<span class="me1">area</span><span class="br0">&#40;</span><span class="br0">&#41;</span><span class="br0">&#41;</span><span class="sy0">;</span></div></li><li class="li1"><div class="de1">&nbsp;</div></li><li class="li1"><div class="de1">	Triangle triangleB<span class="sy0">;</span></div></li><li class="li1"><div class="de1">	triangleB <span class="sy0">=</span> <span class="kw1">new</span> Triangle<span class="br0">&#40;</span><span class="nu0">5</span>,<span class="nu0">10</span><span class="br0">&#41;</span><span class="sy0">;</span></div></li><li class="li1"><div class="de1">	<a href="http://www.google.com/search?hl=en&amp;q=allinurl%3Adocs.oracle.com+javase+docs+api+system"><span class="kw3">System</span></a>.<span class="me1">out</span>.<span class="me1">print</span><span class="br0">&#40;</span><span class="st0">&quot;area del triangle &quot;</span> <span class="sy0">+</span> triangleB.<span class="me1">area</span><span class="br0">&#40;</span><span class="br0">&#41;</span><span class="br0">&#41;</span><span class="sy0">;</span> </div></li><li class="li1"><div class="de1"><span class="br0">&#125;</span></div></li></ol></pre>
+
+<p>
+<form action=""><div class="solution ioccontent">
+<p>
+El diagrama de classes corresponent al codi seria el que es mostra a la figura. 
+</p>
+
+<p>
+<div class="imgelem">
+<img src="../media/wdamm05u3_08.png" alt="" /></div>
+
+</p>
+
+<p>
+Cal fixar-se que els atributs de la classe <code>FiguraGeometrica</code>, amplada i llargària, tenen la visibilitat de tipus protegida.
+</p>
+
+<p>
+Això significa que les classes que hereten de <code>FiguraGeometrica</code>, <code>Triangle</code> i <code>Rectangle</code>, tindran visibilitat sobre aquests atributs.
+</p>
+</div><input class="btn_solution3" type="button" value="Mostra"></input></form>
+</p>
+
+</div>
+
+<h2><a id="diagrama_de_classes_de_gestio_de_projectes" >Diagrama de classes de gestió de projectes</a></h2>
+<div class="level2">
+
+<p>
+L’objectiu d’aquesta activitat és crear un diagrama de classes a partir d’una presa de requeriments.
+</p>
+
+<p>
+Elabora el diagrama de classes que doni solució al següent enunciat:
+</p>
+
+<p>
+Es vol desenvolupar una aplicació informàtica que permeti dur a terme la gestió de diversos projectes informàtics. Caldrà tenir emmagatzemada tota la informació referent a cada projecte que es vulgui gestionar. Hi haurà dos tipus de persones que podran estar involucrades en els projectes, ja sigui per a la seva gestió o per a l’execució de les activitats. Aquests dos tipus de persones són el cap de projecte i el programador. De cada persona es voldrà emmagatzemar el seu nom i el seu DNI.
+</p>
+
+<p>
+Un projecte serà liderat per un cap de projecte. Però un cap de projecte només podrà gestionar tres projectes. Un projecte té activitats; cada projecte podrà tenir des d’una a moltes (de forma indefinida) activitats, però una activitat només podrà pertànyer a un projecte. 
+</p>
+
+<p>
+Els programadors desenvoluparan les activitats. Cada programador tindrà vinculada una activitat com a mínim, sense un màxim establert. Igualment, les activitats podran ser desenvolupades per un mínim d’un programador, sense haver-hi un màxim establert.
+</p>
+
+<p>
+<form action=""><div class="solution ioccontent">
+<p>
+Una possible representació podria ser la que es mostra a la figura.
+</p>
+
+<p>
+<div class="imgelem">
+<img src="../media/wdamm05u3_09.png" alt="" /></div>
+
+</p>
+
+<p>
+Cal tenir present, en qualsevol cas, l’herència entre cap de projecte, programador i persona, les multiplicitats en les relacions de les classes i les relacions d’agregació que pugui haver-hi.
+</p>
+</div><input class="btn_solution3" type="button" value="Mostra"></input></form>
+</p>
+
+</div>
+
+	 </article>
+     <div class="pnpage">
+      <div class="left-corner"></div>
+      <div id="prevpage">Anar a la p&agrave;gina anterior:<br /><a href="../../../WebContent/u3/a1/continguts.html">Diagrames estàtics</a></div>
+      <div id="nextpage">Anar a la p&agrave;gina seg&uuml;ent:<br /><a href="../../../WebContent/u3/a1/exercicis.html">Exercicis</a></div>
+      <div class="right-corner"></div>
+     </div>
+    </div>
+    <footer class="footer">
+      <div><small>Aquest document està subjecte a una llicència oberta de Creative Commons, es reserva el dret de reconeixement de l'autoria, d'exigir que no se'n faci cap mena d'ús comercial. Si altereu o transformeu aquesta obra, o en genereu obres derivades, només podeu distribuir l'obra generada amb una llicència idèntica a aquesta.</small></div>
+    </footer>
+ </div>
+ <div id="back_preview" class="hidden"></div>
+ <div id="preview" class="hidden">
+  <div class="prevcontent"></div>
+ </div>
+ <div id="help-tooltips">
+  <div id="help-toc" class="hidden tooltip"><span>Taula de continguts:</span> Ofereix una vista general de l&#39;estructura del m&ograve;dul, que us facilitar&agrave; la navegaci&oacute; a trav&eacute;s dels seus continguts.<span class="arrow-left"></span></div> 
+  <div id="help-settings" class="hidden tooltip"><span>Opcions de format:</span> Permet configurar el format de lectura a partir de les vostres prefer&egrave;ncies, modificant la mida de la lletra, el color del fons, l&#39;amplada de la p&agrave;gina o l&#39;ocultaci&oacute; dels continguts complementaris, entre d&#39;altres.<span class="arrow-left"></span></div>
+  <div id="help-printer" class="hidden tooltip"><span>Imprimir:</span>  Envia el contingut seleccionat a la impressora.<span class="arrow-left"></span></div>
+  <div id="help-favorites" class="hidden tooltip"><span>Prefereits:</span> Permet desar aquelles parts del contingut a les que us interessi accedir en un moment posterior; us permetr&agrave; anar creant un repositori personalitzat de les seccions que considereu m&eacute;s rellevants. Un cop l&#39;hageu començat a fer servir se us mostrar&agrave; a sota un comptador que us informar&agrave; del nombre de preferits que s&#39;hagin emmagatzemat fins al moment.<span class="arrow-left"></span></div>
+  <div id="help-favcounter" class="hidden tooltip"><span>Comptador i llistat de preferits:</span> Indica el nombre de preferits que s&#39;han desat fins el moment; clicant damunt seu accedireu al llistat de preferits, i a trav&eacute;s d&#39;aquest podreu accedir directament als continguts que hageu emmagatzemat.<span class="arrow-left"></span></div>
+  <div id="help-help_icon" class="hidden tooltip"><span>Ajuda:</span> Aquesta opci&oacute; activa la informaci&oacute; de les funcionalitats del web tot situant el punter del ratol&iacute; al damunt dels diferents &iacute;tems.<span class="arrow-left"></span></div>
+  <div id="help-sidebar-hide" class="hidden tooltip"><span>Mostrar/Ocultar barra lateral:</span>  Deshabilita la barra d&#39;opcions, permetent la seva recuperaci&oacute; quan es desitgi.<span class="arrow-left"></span></div>
+  <div id="help-search" class="hidden tooltip"><span>Cerca:</span>  Introdu&iuml;u les paraules clau sobre aquells conceptes que desitgeu localitzar en els continguts del m&ograve;dul. Tamb&eacute; podeu excloure un terme de la cerca tot afegint-hi el signe &#8220;-&#8221; al davant.<span class="arrow-top"></span></div>
+  <div id="help-header" class="hidden tooltip"><span>Cap&ccedil;alera:</span>  Indica l&#39;apartat o secci&oacute; que es mostra en pantalla. Tingueu present que les capçaleres de segon, tercer i quart nivell tamb&eacute; es poden desar com a marcadors.<span class="arrow-left"></span></div>
+</div> 
+</body>
+</html>

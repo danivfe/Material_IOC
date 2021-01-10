@@ -1,0 +1,674 @@
+<!doctype html>
+
+<!--[if lt IE 7 ]> <html class="ie ie6 no-js" lang="ca"> <![endif]-->
+<!--[if IE 7 ]>    <html class="ie ie7 no-js" lang="ca"> <![endif]-->
+<!--[if IE 8 ]>    <html class="ie ie8 no-js" lang="ca"> <![endif]-->
+<!--[if IE 9 ]>    <html class="ie ie9 no-js" lang="ca"> <![endif]-->
+<!--[if gt IE 9]><!--><html class="no-js" lang="ca"><!--<![endif]-->
+<!-- the "no-js" class is for Modernizr. -->
+
+<head id="www-sitename-com" data-template-set="html5-reset">
+
+	<meta charset="utf-8">
+	
+	<!-- Always force latest IE rendering engine (even in intranet) & Chrome Frame -->
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	
+	<title>Llenguatges de marques i sistemes de gestió d'informació</title>
+	
+<!-- <meta name="title" content=""> --> 
+	<meta name="description" content="">
+	<!-- Google will often use this as its description of your page/site. Make it good. -->
+	
+	<meta name="google-site-verification" content="">
+	<!-- Speaking of Google, don't forget to set your site up: http://google.com/webmasters -->
+	
+	<meta name="author" content="Institut Obert de Catalunya">
+	<meta name="Copyright" content="Copyright Institut Obert de Catalunya 2011. All Rights Reserved.">
+
+	<!-- Dublin Core Metadata : http://dublincore.org/ -->
+	<meta name="DC.title" content="Llenguatges de marques i sistemes de gestió d'informació">
+	<meta name="DC.subject" content="Informàtica i comunicacions">
+	<meta name="DC.creator" content="Institut Obert de Catalunya">
+	
+	<!--  Mobile Viewport Fix
+	j.mp/mobileviewport & davidbcalhoun.com/2010/viewport-metatag 
+	device-width : Occupy full width of the screen in its current orientation
+	initial-scale = 1.0 retains dimensions instead of zooming out if page height > device height
+	maximum-scale = 1.0 retains dimensions instead of zooming in if page width < device width
+	-->
+	<!-- Uncomment to use � use thoughtfully!
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+	-->
+
+	<link rel="shortcut icon" href="../../../img/favicon.ico">
+	<!-- This is the traditional favicon.
+		 - size: 16x16 or 32x32
+		 - transparency is OK
+		 - see wikipedia for info on browser support: http://mky.be/favicon/ -->
+		 
+	<link rel="apple-touch-icon" href="../../../img/apple-touch-icon.png">
+	<!-- The is the icon for iOS's Web Clip.
+		 - size: 57x57 for older iPhones, 72x72 for iPads, 114x114 for iPhone4's retina display (IMHO, just go ahead and use the biggest one)
+		 - To prevent iOS from applying its styles to the icon name it thusly: apple-touch-icon-precomposed.png
+		 - Transparency is not recommended (iOS will put a black BG behind the icon) -->
+	
+	<!-- CSS: screen, mobile & print are all in the same file -->
+	<link rel="stylesheet" href="../../../_/css/style.css">
+
+	<!-- CSS: jQuery UI -->
+	<link rel="stylesheet" href="../../../_/css/jquery-ui.css">
+	
+	<!-- all our JS is at the bottom of the page, except for Modernizr. -->
+	<script src="../../../_/js/modernizr-1.7.min.js"></script>
+	<script src="../../../_/js/Hyphenator.js" type="text/javascript"></script>
+	<script type="text/javascript">
+	   Hyphenator.config({
+		minwordlength : 4
+	   });
+	   Hyphenator.run();
+	</script>
+    <script src="../../../_/js/build.js" type="text/javascript"></script>
+</head>
+
+<body class="style-newspaper">
+
+<div class="wrapper"><!-- not needed? up to you: http://camendesign.com/code/developpeurs_sans_frontieres -->
+
+	<header id="header">
+		<div class="head"><a href="http://ioc.gencat.cat"><img src="../../../img/logo.png" alt="Institut Obert de Catalunya"/></a><a href="http://creativecommons.org/licenses/by-nc-sa/3.0/es/deed.ca"><img src="../../../img/license.png" alt="Llic&egrave;ncia" class="license"/></a></div>
+		<div class="headdocument"><a href="../../../index.html">Llenguatges de marques i sistemes de gestió d'informació</a></div>
+        <div id="search" class="search" name="search">
+         <form id="frmsearch" action="../../../search.html" method="get">
+          <input type="text" name="q"/>
+        </form>
+        </div>
+	</header>
+   <div id="upbutton" class="upbutton" style="display:none;"><img src="../../../img/uparrow.png" alt="Pujar a l'inici de p&agrave;gina"/></div>
+   <aside id="aside">
+    <div id="menu">
+      <ul>
+       <li name="toc"><div><img src="../../../img/toc.png" alt="&Iacute;ndex"/></div></li>
+       <li name="settings"><div><img src="../../../img/settings.png" alt="Configuraci&oacute;"/></div></li>
+       <li name="printer"><div><img src="../../../img/printer.png" alt="Imprimir"/></div></li>
+       <li name="favorites"><div><img src="../../../img/favorites.png" alt="Favorits"/></div></li>
+       <li name="help_icon" class="help_icon"><div><img src="../../../img/help_icon.png" alt="Ajuda"/></div></li>
+      </ul>
+     </div>
+   </aside>
+   <div id="sidebar-hide" name="sidebar-hide"><img src="../../../img/arrows.png"/></div>
+   <section>
+     <div id="toc" class="hidden">
+      <div class="menucontent">
+        <ul>
+        <li id="u4" class="parentnode"><p><a class="unit" href="../../../WebContent/u4/introduccio.html">4. Sistemes de gestió empresarial</a></p><ul class="expander"><li id="u4introduccio"><a href="../../../WebContent/u4/introduccio.html">Introducció</a></li><li id="u4resum"><a href="../../../WebContent/u4/resum.html">Resum</a></li><li id="u4objectius"><a href="../../../WebContent/u4/objectius.html">Resultats d'aprenentatge</a></li><li id="u4referencies"><a href="../../../WebContent/u4/referencies.html">Referències</a></li><li id="u4a1" class="tocsection"><p id='u4a1continguts'><a class="section" href="../../../WebContent/u4/a1/continguts.html">Sistemes empresarials de gestió d'informació</a><span class="buttonexp"></span></p><ul><li id="u4a1activitats"><a href="../../../WebContent/u4/a1/activitats.html">Activitats</a></li><li id="u4a1exercicis"><a href="../../../WebContent/u4/a1/exercicis.html">Exercicis d'autoavaluació</a></li></ul></li><li id="u4a2" class="tocsection"><p id='u4a2continguts'><a class="section" href="../../../WebContent/u4/a2/continguts.html">Serveis web</a><span class="buttonexp"></span></p><ul><li id="u4a2activitats"><a href="../../../WebContent/u4/a2/activitats.html">Activitats</a></li><li id="u4a2exercicis"><a href="../../../WebContent/u4/a2/exercicis.html">Exercicis d'autoavaluació</a></li></ul></li><li id="u4a3" class="tocsection"><p id='u4a3continguts'><a class="section" href="../../../WebContent/u4/a3/continguts.html">Informàtica en núvol</a><span class="buttonexp"></span></p><ul><li id="u4a3activitats"><a href="../../../WebContent/u4/a3/activitats.html">Activitats</a></li><li id="u4a3exercicis"><a href="../../../WebContent/u4/a3/exercicis.html">Exercicis d'autoavaluació</a></li></ul></li></ul></li><li id="" class="indexnode"><p><a href="../../../index.html">Anar a l&#39;&iacute;ndex general</a></p></li>
+        </ul>
+      </div>
+    </div>
+   </section>
+   <section>
+   <div id="settings" class="hidden">
+    <div class="menucontent">
+     <div class="allsettings">
+     <div class="settings">
+      <label>Font i Color</label>
+		<div class="setting-option">
+	        <ul class="fontBackground">
+				<li id="style-newspaper" title="Newspaper" class="appearance-style-newspaper"><span>Newspaper</span></li>
+                <li id="style-novel" title="Novel" class="appearance-style-novel"><span>Novel</span></li>
+                <li id="style-ebook" title="eBook" class="appearance-style-ebook"><span>eBook</span></li>
+				<li id="style-inverse" title="Inverse" class="appearance-style-inverse active"><span>Inverse</span></li>
+				<li id="style-athelas" title="Athelas" class="appearance-style-athelas"><span>Athelas</span></li>
+			</ul>
+		</div>
+     </div>
+	<div class="settings">
+      <label>Amplada</label>
+		<div class="setting-option">
+	        <div id="slider-width"></div>
+		</div>
+     </div>
+     <div class="settings">
+      <label>Mida de la font</label>
+		<div class="setting-option">
+	        <div id="slider-font"></div>
+		</div>
+     </div>
+     <div class="settings">
+      <label>Mida de la font</label>
+	  <div class="setting-option">
+       <form action="" class="sett-options">
+		<ul>
+		    <li><input type="checkbox" id="secondary-content" /><label for="secondary-content">Mostra recursos complementaris</label></li>
+		    <li><input type="checkbox" id="main-images" /><label for="main-images">Mostra imatges</label></li>
+		    <li><input type="checkbox" id="text-alignment" /><label for="text-alignment">Text justificat</label></li>
+			<li><input type="checkbox" id="text-hyphen" /><label for="text-hyphen">Partici&oacute; sil·l&agrave;bica</label></li>
+		</ul>
+       </form>
+	  </div>
+     </div>
+     </div>
+    </div>
+   </div>
+   </section>
+ <section>
+ <div id="favorites" class="hidden"></div>
+ </section>   
+ <div id="bridge" class="hidden"></div>
+ <div id="help" class="hidden">
+  <div class="helptitle">Dreceres del teclat<hr></div>
+  <div class="helpsection"><span>General</span>
+   <ul>
+    <li><span class="shortcut">g</span>: Anar al men&uacute; de navegaci&oacute;</li>
+    <li><span class="shortcut">o</span>: Anar a opcions</li>
+    <li><span class="shortcut">s</span>: Guardar la p&agrave;gina actual a favorits</li>
+    <li><span class="shortcut">p</span>: Imprimir la p&agrave;gina actual</li>
+    <li><span class="shortcut">?</span>: Mostrar/Ocultar l&#39;ajuda</li>
+   </ul>
+  </div>
+  <div class="helpsection"><span>Navegaci&oacute;</span>
+   <ul>
+    <li><span class="shortcut">i</span>: Anar a l&#39;&iacute;ndex general</li>
+    <li><span class="shortcut">t</span>: Anar a l&#39;inici de p&agrave;gina</li>
+    <li><span class="shortcut">b</span>: Anar al final de p&agrave;gina</li>
+    <li><span class="shortcut">j</span>: Anar cap endavant dintre la p&agrave;gina</li>
+    <li><span class="shortcut">k</span>: Anar cap enrere dintre la p&agrave;gina</li>
+    <li><span class="shortcut">h</span>: Anar a la p&agrave;gina anterior:</li>
+    <li><span class="shortcut">l</span>: Anar a la p&agrave;gina seg&uuml;ent:</li>
+   </ul>
+   </div>
+ </div>
+ <div id="favcounter" name="favcounter" class="hidden"><span></span></div>
+ <div id="navmenu" class="navmenu"><ul class="webnav"><li><a href="../../../index.html" title="Anar a l&#39;&iacute;ndex general">Inici</a></li><li><a href="../introduccio.html">Sistemes de gestió empresarial</a></li><li><a href="continguts.html">Serveis web</a></li><li>Activitats</li></ul></div>
+	<div id="content" lang="ca" class="hyphenate text">
+     <article lang="ca" class="sheet">
+        <h1><a id="activitats"> Activitats </a></h1>
+    	
+<h2><a id="servei_web_public" >Servei web públic</a></h2>
+<div class="level2">
+
+<p>
+L’objectiu d’aquesta activitat és provar un dels serveis web públics disponibles per Internet.
+</p>
+
+<p>
+Localitzeu un servei web SOAP que sigui disponible per Internet, i:
+</p>
+<ul>
+<li class="level1"><div class="li"> Feu-lo servir per obtenir resultats del servei que ofereix.</div>
+</li>
+<li class="level1"><div class="li"> Poseu-hi valors impossibles i fixeu-vos què passa quan es produeix un error.</div>
+</li>
+</ul>
+
+<p>
+<form action=""><div class="solution ioccontent">
+<p>
+Mitjançant el navegador accediu a un cercador de serveis web com Seekda (<a href="http://webservices.seekda.com/browse" class="urlextern" title="http://webservices.seekda.com/browse"  rel="nofollow">http://webservices.seekda.com/browse</a>). 
+</p>
+
+<p>
+Com que no tenim cap preferència a l’hora de triar un servei en comptes de fer servir el cercador, feu clic a l’enllaç <em>Most Used Web Services</em>. 
+</p>
+
+<p>
+Per fer l’exemple s’ha triat el servei <strong>IP2Geo</strong>, que segons la informació que hi ha a Seekda serveix per situar físicament on és una IP. També es pot veure que no hi ha documentació: aquesta està dins del fitxer WSDL (vegeu la figura <span class="figref"><a href="#ws1"><span>figura</span></a></span>).
+</p>
+<div class="iocfigure"><a name="ws1"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Localitzar un servei
+
+</figcaption><img src="../media/seleccio_435.png" alt="" /></figure>
+<div class="footfigure"></div></div>
+<p>
+L’adreça més important és la que proporciona el fitxer WSDL, i és aquest el que passarem al programa <strong>soapUI</strong>, en el qual s’ha de crear un nou projecte (figura <span class="figref"><a href="#ws2"><span>figura</span></a></span>).
+</p>
+<div class="iocfigure"><a name="ws2"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Crear un projecte
+
+</figcaption><img src="../media/seleccio_436.png" alt="" /></figure>
+<div class="footfigure"></div></div>
+<p>
+Un cop carregat es pot veure que només ofereix una funció (tot i que en diferents versions de SOAP) que es diu <strong>ResolveIP</strong>. Fent doble clic sobre “Request 1” obtindreu la plantilla de la petició (figura <span class="figref"><a href="#ws3"><span>figura</span></a></span>) on es pot veure que calen dues dades:
+</p>
+<ul>
+<li class="level1"><div class="li"> La IP que volem situar (<code>ws:IPAddress</code>)</div>
+</li>
+<li class="level1"><div class="li"> La llicència (<code>ws:licenseKey</code>)</div>
+</li>
+</ul>
+
+<p>
+Com que no disposeu de llicència cal que mireu el WSDL (és on hi ha la documentació) per veure si es pot fer servir sense tenir-ne. En el WSDL s’indica que en el camp de la llicència cal posar: <em>Use a License Key of 0 for Testing</em>. Per tant, cal que ompliu els valors amb la IP (en l’exemple s’ha fet servir 80.58.0.33) i al camp de llicència hi poseu un zero (figura <span class="figref"><a href="#ws3"><span>figura</span></a></span>).
+</p>
+<div class="iocfigure"><a name="ws3"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Preparar la petició
+
+</figcaption><img src="../media/seleccio_437.png" alt="" /></figure>
+<div class="footfigure"></div></div>
+<p>
+En executar la petició podeu veure el resultat (figura <span class="figref"><a href="#ws4"><span>figura</span></a></span>).
+</p>
+<div class="iocfigure"><a name="ws4"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Resultat
+
+</figcaption><img src="../media/seleccio_438.png" alt="" /></figure>
+<div class="footfigure"></div></div>
+<p>
+La IP 80.58.0.33 és a l’Estat espanyol, en la latitud 40 i longitud -4, amb una probabilitat d’un 90%.
+</p>
+
+<p>
+Podem situar la localització al Google Maps (figura <span class="figref"><a href="#ws5"><span>figura</span></a></span>).
+</p>
+<div class="iocfigure"><a name="ws5"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Localització de la IP al Google Maps
+
+</figcaption><img src="../media/seleccio_439.png" alt="" /></figure>
+<div class="footfigure"></div></div></div><input class="btn_solution3" type="button" value="Mostra"></input></form>
+</p>
+
+</div>
+
+<h2><a id="instal_lacio" >Instal·lació</a></h2>
+<div class="level2">
+
+<p>
+L’objectiu d’aquesta activitat és veure com s’instal·la un entorn de desenvolupament de serveis web.
+</p>
+
+<p>
+Instal·leu l’Apache Axis2 per a Java en un servidor Tomcat.
+</p>
+
+<p>
+<form action=""><div class="solution ioccontent">
+<p>
+Es presenta la solució en Linux però és pràcticament idèntica en un altre sistema com Windows.
+</p>
+
+<p>
+La instal·lació requereix tenir l’<strong>SDK de Java</strong> instal·lat en el sistema, i optarem per fer-lo servir mitjançant el Tomcat. També es pot fer fent servir el servidor Jetty que ve amb el paquet de distribució. 
+</p>
+
+<p>
+Instal·lem els paquets necessaris:
+</p>
+<pre class="code bash"><ol><li class="li1"><div class="de1">$ <span class="kw2">sudo</span> <span class="kw2">apt-get install</span> sun-java6-jdk</div></li><li class="li1"><div class="de1">$ <span class="kw2">sudo</span> <span class="kw2">apt-get install</span> tomcat6 tomcat6-docs tomcat6-examples tomcat6-admin</div></li></ol></pre>
+
+<p>
+El Tomcat requereix que li definim qui és l’administrador, de manera que editem l’arxiu /etc/tomcat6/tomcat-users.xml i hi afegim un usuari:
+</p>
+<pre class="code xml"><ol><li class="li1"><div class="de1"><span class="sc3"><span class="re1">&lt;tomcat-users<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1"><span class="sc3"><span class="re1">&lt;role</span> <span class="re0">rolename</span>=<span class="st0">&quot;manager&quot;</span> <span class="re2">/&gt;</span></span></div></li><li class="li1"><div class="de1"><span class="sc3"><span class="re1">&lt;user</span> <span class="re0">username</span>=<span class="st0">&quot;xavier&quot;</span> <span class="re0">password</span>=<span class="st0">&quot;1a1!&quot;</span> <span class="re0">roles</span>=<span class="st0">&quot;admin,manager&quot;</span> <span class="re2">/&gt;</span></span></div></li></ol></pre>
+
+<p>
+Aleshores cal que reinicieu el servei:
+</p>
+<pre class="code bash"><ol><li class="li1"><div class="de1"><span class="co4">$ </span><span class="kw2">sudo</span> service tomcat6 restart</div></li></ol></pre>
+
+<p>
+Comproveu si el Tomcat està engegat visitant l’adreça <a href="http://localhost:8080" class="urlextern" title="http://localhost:8080"  rel="nofollow">http://localhost:8080</a>.
+</p>
+
+<p>
+Un cop teniu l’entorn configurat aneu a preparar l’Apache Axis2. Primer de tot heu de baixar el paquet WAR de l’Apache Axis2, des del seu lloc web:
+</p>
+<div class="iocfigure"><a name=""></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Baixar del web d’Axis
+
+</figcaption><img src="../media/axis2-install1.png" alt="" /></figure>
+<div class="footfigure"></div></div>
+<p>
+Podríeu fer el mateix amb els paquets binaris o de codi font si volguéssiu crear vosaltres mateixos el paquet WAR.
+</p>
+
+<p>
+Aneu a l’àrea d’administració del Tomcat fent servir l’usuari i la contrasenya definida en l’arxiu XML.
+</p>
+<div class="iocfigure"><a name=""></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Àrea d’administració del Tomcat
+
+</figcaption><img src="../media/axis2-install2.png" alt="" /></figure>
+<div class="footfigure"></div></div>
+<p>
+En la part inferior feu servir el botó “Deploy” per pujar l’arxiu WAR de l’Axis2 al sistema.
+</p>
+<div class="iocfigure"><a name=""></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Pujar Axis2 al sistema
+
+</figcaption><img src="../media/axis2-install3.png" alt="" /></figure>
+<div class="footfigure"></div></div>
+<p>
+Un cop pujat el servei apareix llistat en els serveis que ofereix el Tomcat.
+</p>
+<div class="iocfigure"><a name=""></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Pujar l’Axis2 al sistema
+
+</figcaption><img src="../media/axis2-install4.png" alt="" /></figure>
+<div class="footfigure"></div></div>
+<p>
+Comproveu si funciona visitant l’adreça <a href="http://localhost:8080/axis2/" class="urlextern" title="http://localhost:8080/axis2/"  rel="nofollow">http://localhost:8080/axis2/</a>.
+</p>
+<div class="iocfigure"><a name=""></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Pantalla inicial de l’Axis2
+
+</figcaption><img src="../media/axis2-install5.png" alt="" /></figure>
+<div class="footfigure"></div></div></div><input class="btn_solution3" type="button" value="Mostra"></input></form>
+</p>
+
+</div>
+
+<h2><a id="instal_lar_un_servei" >Instal·lar un servei</a></h2>
+<div class="level2">
+
+<p>
+L’objectiu d’aquesta activitat és veure com s’instal·la un servei en un entorn de desenvolupament.
+</p>
+
+<p>
+Instal·leu el servei web Autocars <div class="mediaf filezip"><div class="mediacontent"><a href="../media/autocars.zip">baixeu-lo</a><span> ( 4.3 KB )</span></div></div> a l’Axis2.
+</p>
+
+<p>
+<strong>Important</strong>: tingueu en compte que abans de penjar-lo li heu de canviar l’extensió de .zip a .aar.
+</p>
+
+<p>
+<form action=""><div class="solution ioccontent">
+<p>
+Per instal·lar un servei a l’Axis2 s’ha d’entrar al seu entorn d’administració. Aneu a <a href="http://localhost:8080/axis2/" class="urlextern" title="http://localhost:8080/axis2/"  rel="nofollow">http://localhost:8080/axis2/</a> i cliqueu a “Administració”. 
+</p>
+
+<p>
+La identificació per defecte està definida amb l’usuari <em>admin</em> i la contrasenya <em>axis2</em>.
+</p>
+<div class="iocfigure"><a name=""></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Identificació per entrar a l’entorn d’administració de l’Axis2
+
+</figcaption><img src="../media/axis2-install6.png" alt="" /></figure>
+<div class="footfigure"></div></div>
+<p>
+Un cop dins només cal que cliqueu a “Upload Service” i trieu l’arxiu que heu baixat.
+</p>
+<div class="iocfigure"><a name=""></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Pantalla d’administració de l’Axis2
+
+</figcaption><img src="../media/axis2-install6b.png" alt="" /></figure>
+<div class="footfigure"></div></div>
+<p>
+Un cop estigui instal·lat el veureu, i també la llista de funcions que exporta, a <a href="http://localhost:8080/axis2/services/listServices" class="urlextern" title="http://localhost:8080/axis2/services/listServices"  rel="nofollow">http://localhost:8080/axis2/services/listServices</a>.
+</p>
+<div class="iocfigure"><a name=""></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+El servei d’Autocars afegit a l’Axis2
+
+</figcaption><img src="../media/axis2-install7.png" alt="" /></figure>
+<div class="footfigure"></div></div></div><input class="btn_solution3" type="button" value="Mostra"></input></form>
+</p>
+
+</div>
+
+<h2><a id="soap" >SOAP</a></h2>
+<div class="level2">
+
+<p>
+L’objectiu d’aquesta activitat és fer servir el protocol SOAP per obtenir informació del servei web instal·lat anteriorment tal com ho faria un programa.
+</p>
+
+<p>
+Fent servir el SoapUI, feu les peticions SOAP que calguin contra el servei Autocars que heu instal·lat a l’Axis2 i intenteu aconseguir respondre a la pregunta següent:
+</p>
+
+<p>
+Quin és el bitllet més barat per anar de Figueres a un lloc de la costa en autocar?
+</p>
+
+<p>
+<form action=""><div class="solution ioccontent">
+<p>
+El primer que podeu fer és aconseguir el WSDL i passar-lo al SoapUI perquè us mostri les funcions i els paràmetres que s’han de fer servir.
+</p>
+
+<p>
+Des de la pàgina que mostra els serveis instal·lats a l’Axis2 cliqueu sobre el nom del servei “Autocars” per aconseguir el seu WSDL.
+</p>
+<div class="iocfigure"><a name=""></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+L’Axis2 genera el WSDL automàticament
+
+</figcaption><img src="../media/axis2-install8.png" alt="" /></figure>
+<div class="footfigure"></div></div>
+<p>
+Si creeu un projecte al SoapUI tindrem disponibles les plantilles dels missatges que cal enviar al servei:
+</p>
+<div class="iocfigure"><a name=""></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+El SoapUI amb les funcions a punt de ser usades
+
+</figcaption><img src="../media/axis2-install8b.png" alt="" /></figure>
+<div class="footfigure"></div></div>
+<p>
+Si us fixeu en les funcions, el primer que cal fer és veure on podeu anar des de Figueres amb la funció <code>onPucAnarDesDe</code>, enviant com a paràmetre <em>Figueres</em>.
+</p>
+<div class="iocfigure"><a name=""></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+El resultat de preguntar on es pot anar des de Figueres
+
+</figcaption><img src="../media/axis2-install9.png" alt="" /></figure>
+<div class="footfigure"></div></div>
+<p>
+Ens retorna una llista de pobles: Cabanes, Llançà, Empuriabrava, Cadaqués, Vilafant, l’Escala i Roses.
+</p>
+
+<p>
+Un cop determinades les destinacions intenteu descobrir quines són de costa amb la funció <code>EsDeCosta</code>, i descobrireu que només són de costa Llançà, Empuriabrava, Cadaqués, l’Escala i Roses.
+</p>
+
+<p>
+I ja només queda demanar el preu amb <code>obtenirPreu</code>:
+</p>
+<div class="iocfigure"><a name=""></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Preu per anar de Figueres a Llançà en autocar
+
+</figcaption><img src="../media/axis2-install10.png" alt="" /></figure>
+<div class="footfigure"></div></div>
+<p>
+El resultat és el que mostra la taula següent:
+</p>
+<div class="ioctable ">
+<div class="titletable"><a name=""><span>Taula: </span></a>Preus per anar de Figueres a les poblacions de la costa</div>
+<div class="table tabminheight"><table class="inline">
+	<tr class="row0">
+		<th class="col0 leftalign"> Origen     </th><th class="col1 leftalign"> Destinació          </th><th class="col2 leftalign"> Preu        </th>
+	</tr>
+	<tr class="row1">
+		<td class="col0 centeralign">  Figueres  </td><td class="col1 centeralign">     Llançà     </td><td class="col2 centeralign">     2,3     </td>
+	</tr>
+	<tr class="row2">
+		<td class="col0 centeralign">  Figueres  </td><td class="col1 centeralign">  Empuriabrava  </td><td class="col2 centeralign">     2,0     </td>
+	</tr>
+	<tr class="row3">
+		<td class="col0 centeralign">  Figueres  </td><td class="col1 centeralign">    Cadaqués    </td><td class="col2 centeralign">  No s’hi pot anar  </td>
+	</tr>
+	<tr class="row4">
+		<td class="col0 centeralign">  Figueres  </td><td class="col1 centeralign">    L’Escala    </td><td class="col2 centeralign">     4,0     </td>
+	</tr>
+	<tr class="row5">
+		<td class="col0 centeralign">  Figueres  </td><td class="col1 centeralign">     Roses      </td><td class="col2 centeralign">     2,5     </td>
+	</tr>
+</table></div>
+</div>
+<p>
+Per tant, el més barat és anar <strong>de Figueres a Empuriabrava</strong>.
+</p>
+</div><input class="btn_solution3" type="button" value="Mostra"></input></form>
+</p>
+
+</div>
+
+<h2><a id="rest" >REST</a></h2>
+<div class="level2">
+
+<p>
+L’objectiu és fer servir REST per simular el comportament d’un programa a l’hora d’obtenir una resposta del servei web anterior.
+</p>
+
+<p>
+Fent servir peticions REST contra el servei Autocars que heu instal·lat a l’Axis, intenteu respondre a la pregunta següent:
+</p>
+
+<p>
+Quin és el preu del camí més curt per anar d’Empuriabrava a Cadaqués?
+</p>
+
+<p>
+<form action=""><div class="solution ioccontent">
+<p>
+El primer pas és determinar el camí més curt fins a arribar a Cadaqués. Per tant, mireu on es pot anar des d’Empuriabrava, introduint al navegador l’expressió
+<a href="http://localhost:8080/axis2/services/Autocars/onPucAnarDesDe?origen=Empuriabrava" class="urlextern" title="http://localhost:8080/axis2/services/Autocars/onPucAnarDesDe?origen=Empuriabrava"  rel="nofollow">http://localhost:8080/axis2/services/Autocars/onPucAnarDesDe?origen=Empuriabrava</a>.
+</p>
+<div class="iocfigure"><a name=""></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Llocs als quals es pot anar des d’Empuriabrava
+
+</figcaption><img src="../media/axis2-rest1.png" alt="" /></figure>
+<div class="footfigure"></div></div>
+<p>
+Un cop tingueu les destinacions -i com que cap no és Cadaqués-, torneu a mirar on es pot anar des de cadascuna de les noves destinacions. Si ho representeu en un diagrama deixant els camins que tornen a les poblacions que ja teniu -perquè no poden ser el camí més curt-, tindreu el que mostra la figura següent:  
+</p>
+<div class="iocfigure"><a name=""></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Camí més curt des d’Empuriabrava fins a Cadaqués
+
+</figcaption><img src="../media/cami-curt.png" alt="" /></figure>
+<div class="footfigure"></div></div>
+<p>
+Per tant, el camí més curt és Empuriabrava-Figueres-Cadaqués.
+</p>
+
+<p>
+Descobrim que es pot anar d’Empuriabrava a Figueres amb avioneta i autocar:
+<a href="http://localhost:8080/axis2/services/Autocars/comPucAnarDesDeA?origen=Empuriabrava&amp;desti=Figueres" class="urlextern" title="http://localhost:8080/axis2/services/Autocars/comPucAnarDesDeA?origen=Empuriabrava&amp;desti=Figueres"  rel="nofollow">http://localhost:8080/axis2/services/Autocars/comPucAnarDesDeA?origen=Empuriabrava&amp;desti=Figueres</a>.
+</p>
+
+<p>
+I busquem els dos preus:
+</p>
+<ul>
+<li class="level1"><div class="li"> <a href="http://localhost:8080/axis2/services/Autocars/obtenirPreu?origen=Empuriabrava&amp;desti=Figueres&amp;vehicle=autocar" class="urlextern" title="http://localhost:8080/axis2/services/Autocars/obtenirPreu?origen=Empuriabrava&amp;desti=Figueres&amp;vehicle=autocar"  rel="nofollow">http://localhost:8080/axis2/services/Autocars/obtenirPreu?origen=Empuriabrava&amp;desti=Figueres&amp;vehicle=autocar</a> </div>
+</li>
+<li class="level1"><div class="li"> <a href="http://localhost:8080/axis2/services/Autocars/obtenirPreu?origen=Empuriabrava&amp;desti=Figueres&amp;vehicle=avioneta" class="urlextern" title="http://localhost:8080/axis2/services/Autocars/obtenirPreu?origen=Empuriabrava&amp;desti=Figueres&amp;vehicle=avioneta"  rel="nofollow">http://localhost:8080/axis2/services/Autocars/obtenirPreu?origen=Empuriabrava&amp;desti=Figueres&amp;vehicle=avioneta</a> </div>
+</li>
+</ul>
+
+<p>
+Això deixa clar que el més barat és anar-hi en autocar.
+</p>
+<div class="ioctable ">
+<div class="titletable"><a name=""><span>Taula: </span></a>Preus per anar d’Empuriabrava a Figueres</div>
+<div class="table tabminheight"><table class="inline">
+	<tr class="row0">
+		<th class="col0 leftalign"> Vehicle  </th><th class="col1"> Preu </th>
+	</tr>
+	<tr class="row1">
+		<td class="col0"> Avioneta </td><td class="col1"> 20,0 </td>
+	</tr>
+	<tr class="row2">
+		<td class="col0 leftalign"> Autocar  </td><td class="col1 leftalign"> 2,0  </td>
+	</tr>
+</table></div>
+</div>
+<p>
+Ara feu el mateix per anar de Figueres a Cadaqués per descobrir que només s’hi pot anar en taxi:
+</p>
+
+<p>
+<a href="http://127.0.0.1:8080/axis2/services/Autocars/comPucAnarDesDeA?origen=Figueres&amp;desti=Cadaqu%C3%A9s" class="urlextern" title="http://127.0.0.1:8080/axis2/services/Autocars/comPucAnarDesDeA?origen=Figueres&amp;desti=Cadaqu%C3%A9s"  rel="nofollow">http://127.0.0.1:8080/axis2/services/Autocars/comPucAnarDesDeA?origen=Figueres&amp;desti=Cadaqu%C3%A9s</a>
+</p>
+
+<p>
+I obtenim el preu amb:
+</p>
+
+<p>
+<a href="http://127.0.0.1:8080/axis2/services/Autocars/obtenirPreu?origen=Figueres&amp;desti=Cadaqu%C3%A9s&amp;vehicle=taxi" class="urlextern" title="http://127.0.0.1:8080/axis2/services/Autocars/obtenirPreu?origen=Figueres&amp;desti=Cadaqu%C3%A9s&amp;vehicle=taxi"  rel="nofollow">http://127.0.0.1:8080/axis2/services/Autocars/obtenirPreu?origen=Figueres&amp;desti=Cadaqu%C3%A9s&amp;vehicle=taxi</a>
+</p>
+<div class="ioctable ">
+<div class="titletable"><a name=""><span>Taula: </span></a>Preus per anar de Figueres a Cadaqués</div>
+<div class="table tabminheight"><table class="inline">
+	<tr class="row0">
+		<th class="col0"> Vehicle </th><th class="col1"> Preu </th>
+	</tr>
+	<tr class="row1">
+		<td class="col0 leftalign"> Taxi    </td><td class="col1"> 30,0 </td>
+	</tr>
+</table></div>
+</div>
+<p>
+Per tant, per anar d’Empuriabrava a Cadaqués <strong>el preu més barat és 32 €</strong> (2 € + 30 €).
+</p>
+</div><input class="btn_solution3" type="button" value="Mostra"></input></form>
+</p>
+
+</div>
+
+	 </article>
+     <div class="pnpage">
+      <div class="left-corner"></div>
+      <div id="prevpage">Anar a la p&agrave;gina anterior:<br /><a href="../../../WebContent/u4/a2/continguts.html">Serveis web</a></div>
+      <div id="nextpage">Anar a la p&agrave;gina seg&uuml;ent:<br /><a href="../../../WebContent/u4/a2/exercicis.html">Exercicis d'autoavaluació</a></div>
+      <div class="right-corner"></div>
+     </div>
+    </div>
+    <footer class="footer">
+      <div><small>Aquest document està subjecte a una llicència oberta de Creative Commons, es reserva el dret de reconeixement de l'autoria, d'exigir que no se'n faci cap mena d'ús comercial. Si altereu o transformeu aquesta obra, o en genereu obres derivades, només podeu distribuir l'obra generada amb una llicència idèntica a aquesta.</small></div>
+    </footer>
+ </div>
+ <div id="back_preview" class="hidden"></div>
+ <div id="preview" class="hidden">
+  <div class="prevcontent"></div>
+ </div>
+ <div id="help-tooltips">
+  <div id="help-toc" class="hidden tooltip"><span>Taula de continguts:</span> Ofereix una vista general de l&#39;estructura del m&ograve;dul, que us facilitar&agrave; la navegaci&oacute; a trav&eacute;s dels seus continguts.<span class="arrow-left"></span></div> 
+  <div id="help-settings" class="hidden tooltip"><span>Opcions de format:</span> Permet configurar el format de lectura a partir de les vostres prefer&egrave;ncies, modificant la mida de la lletra, el color del fons, l&#39;amplada de la p&agrave;gina o l&#39;ocultaci&oacute; dels continguts complementaris, entre d&#39;altres.<span class="arrow-left"></span></div>
+  <div id="help-printer" class="hidden tooltip"><span>Imprimir:</span>  Envia el contingut seleccionat a la impressora.<span class="arrow-left"></span></div>
+  <div id="help-favorites" class="hidden tooltip"><span>Prefereits:</span> Permet desar aquelles parts del contingut a les que us interessi accedir en un moment posterior; us permetr&agrave; anar creant un repositori personalitzat de les seccions que considereu m&eacute;s rellevants. Un cop l&#39;hageu començat a fer servir se us mostrar&agrave; a sota un comptador que us informar&agrave; del nombre de preferits que s&#39;hagin emmagatzemat fins al moment.<span class="arrow-left"></span></div>
+  <div id="help-favcounter" class="hidden tooltip"><span>Comptador i llistat de preferits:</span> Indica el nombre de preferits que s&#39;han desat fins el moment; clicant damunt seu accedireu al llistat de preferits, i a trav&eacute;s d&#39;aquest podreu accedir directament als continguts que hageu emmagatzemat.<span class="arrow-left"></span></div>
+  <div id="help-help_icon" class="hidden tooltip"><span>Ajuda:</span> Aquesta opci&oacute; activa la informaci&oacute; de les funcionalitats del web tot situant el punter del ratol&iacute; al damunt dels diferents &iacute;tems.<span class="arrow-left"></span></div>
+  <div id="help-sidebar-hide" class="hidden tooltip"><span>Mostrar/Ocultar barra lateral:</span>  Deshabilita la barra d&#39;opcions, permetent la seva recuperaci&oacute; quan es desitgi.<span class="arrow-left"></span></div>
+  <div id="help-search" class="hidden tooltip"><span>Cerca:</span>  Introdu&iuml;u les paraules clau sobre aquells conceptes que desitgeu localitzar en els continguts del m&ograve;dul. Tamb&eacute; podeu excloure un terme de la cerca tot afegint-hi el signe &#8220;-&#8221; al davant.<span class="arrow-top"></span></div>
+  <div id="help-header" class="hidden tooltip"><span>Cap&ccedil;alera:</span>  Indica l&#39;apartat o secci&oacute; que es mostra en pantalla. Tingueu present que les capçaleres de segon, tercer i quart nivell tamb&eacute; es poden desar com a marcadors.<span class="arrow-left"></span></div>
+</div> 
+</body>
+</html>

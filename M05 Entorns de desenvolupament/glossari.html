@@ -1,0 +1,425 @@
+<!doctype html>
+
+<!--[if lt IE 7 ]> <html class="ie ie6 no-js" lang="ca"> <![endif]-->
+<!--[if IE 7 ]>    <html class="ie ie7 no-js" lang="ca"> <![endif]-->
+<!--[if IE 8 ]>    <html class="ie ie8 no-js" lang="ca"> <![endif]-->
+<!--[if IE 9 ]>    <html class="ie ie9 no-js" lang="ca"> <![endif]-->
+<!--[if gt IE 9]><!--><html class="no-js" lang="ca"><!--<![endif]-->
+<!-- the "no-js" class is for Modernizr. -->
+
+<head id="www-sitename-com" data-template-set="html5-reset">
+
+	<meta charset="utf-8">
+	
+	<!-- Always force latest IE rendering engine (even in intranet) & Chrome Frame -->
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	
+	<title>Entorns de desenvolupament</title>
+	
+<!-- <meta name="title" content=""> --> 
+	<meta name="description" content="">
+	<!-- Google will often use this as its description of your page/site. Make it good. -->
+	
+	<meta name="google-site-verification" content="">
+	<!-- Speaking of Google, don't forget to set your site up: http://google.com/webmasters -->
+	
+	<meta name="author" content="Institut Obert de Catalunya">
+	<meta name="Copyright" content="Copyright Institut Obert de Catalunya 2011. All Rights Reserved.">
+
+	<!-- Dublin Core Metadata : http://dublincore.org/ -->
+	<meta name="DC.title" content="Entorns de desenvolupament">
+	<meta name="DC.subject" content="Informàtica i comunicacions">
+	<meta name="DC.creator" content="Institut Obert de Catalunya">
+	
+	<!--  Mobile Viewport Fix
+	j.mp/mobileviewport & davidbcalhoun.com/2010/viewport-metatag 
+	device-width : Occupy full width of the screen in its current orientation
+	initial-scale = 1.0 retains dimensions instead of zooming out if page height > device height
+	maximum-scale = 1.0 retains dimensions instead of zooming in if page width < device width
+	-->
+	<!-- Uncomment to use � use thoughtfully!
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+	-->
+
+	<link rel="shortcut icon" href="img/favicon.ico">
+	<!-- This is the traditional favicon.
+		 - size: 16x16 or 32x32
+		 - transparency is OK
+		 - see wikipedia for info on browser support: http://mky.be/favicon/ -->
+		 
+	<link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+	<!-- The is the icon for iOS's Web Clip.
+		 - size: 57x57 for older iPhones, 72x72 for iPads, 114x114 for iPhone4's retina display (IMHO, just go ahead and use the biggest one)
+		 - To prevent iOS from applying its styles to the icon name it thusly: apple-touch-icon-precomposed.png
+		 - Transparency is not recommended (iOS will put a black BG behind the icon) -->
+	
+	<!-- CSS: screen, mobile & print are all in the same file -->
+	<link rel="stylesheet" href="_/css/style.css">
+
+	<!-- CSS: jQuery UI -->
+	<link rel="stylesheet" href="_/css/jquery-ui.css">
+	
+	<!-- all our JS is at the bottom of the page, except for Modernizr. -->
+	<script src="_/js/modernizr-1.7.min.js"></script>
+	<script src="_/js/Hyphenator.js" type="text/javascript"></script>
+	<script type="text/javascript">
+	   Hyphenator.config({
+		minwordlength : 4
+	   });
+	   Hyphenator.run();
+	</script>
+    <script src="_/js/build.js" type="text/javascript"></script>
+</head>
+
+<body class="style-newspaper">
+
+<div class="wrapper"><!-- not needed? up to you: http://camendesign.com/code/developpeurs_sans_frontieres -->
+
+	<header id="header">
+		<div class="head"><a href="http://ioc.gencat.cat"><img src="img/logo.png" alt="Institut Obert de Catalunya"/></a><a href="http://creativecommons.org/licenses/by-nc-sa/3.0/es/deed.ca"><img src="img/license.png" alt="Llic&egrave;ncia" class="license"/></a></div>
+		<div class="headdocument"><a href="index.html">Entorns de desenvolupament</a></div>
+        <div id="search" class="search" name="search">
+         <form id="frmsearch" action="search.html" method="get">
+          <input type="text" name="q"/>
+        </form>
+        </div>
+	</header>
+   <div id="upbutton" class="upbutton" style="display:none;"><img src="img/uparrow.png" alt="Pujar a l'inici de p&agrave;gina"/></div>
+   <aside id="aside">
+    <div id="menu">
+      <ul>
+       <li name="toc"><div><img src="img/toc.png" alt="&Iacute;ndex"/></div></li>
+       <li name="settings"><div><img src="img/settings.png" alt="Configuraci&oacute;"/></div></li>
+       <li name="printer"><div><img src="img/printer.png" alt="Imprimir"/></div></li>
+       <li name="favorites"><div><img src="img/favorites.png" alt="Favorits"/></div></li>
+       <li name="help_icon" class="help_icon"><div><img src="img/help_icon.png" alt="Ajuda"/></div></li>
+      </ul>
+     </div>
+   </aside>
+   <div id="sidebar-hide" name="sidebar-hide"><img src="img/arrows.png"/></div>
+   <section>
+     <div id="toc" class="hidden">
+      <div class="menucontent">
+        <ul>
+        <li id="presentacio" class="rootnode"><p><a href="presentacio.html">Presentació</a></p></li><li id="resultats" class="rootnode"><p><a href="resultats.html">Resultats d'aprenentatge</a></p></li><li id="material_pdf" class="rootnode"><p><a href="material_pdf.html">Continguts en PDF</a></p></li><li id="glossari" class="rootnode"><p><a href="glossari.html">Glossari</a></p></li><li id="" class="indexnode"><p><a href="index.html">Anar a l&#39;&iacute;ndex general</a></p></li>
+        </ul>
+      </div>
+    </div>
+   </section>
+   <section>
+   <div id="settings" class="hidden">
+    <div class="menucontent">
+     <div class="allsettings">
+     <div class="settings">
+      <label>Font i Color</label>
+		<div class="setting-option">
+	        <ul class="fontBackground">
+				<li id="style-newspaper" title="Newspaper" class="appearance-style-newspaper"><span>Newspaper</span></li>
+                <li id="style-novel" title="Novel" class="appearance-style-novel"><span>Novel</span></li>
+                <li id="style-ebook" title="eBook" class="appearance-style-ebook"><span>eBook</span></li>
+				<li id="style-inverse" title="Inverse" class="appearance-style-inverse active"><span>Inverse</span></li>
+				<li id="style-athelas" title="Athelas" class="appearance-style-athelas"><span>Athelas</span></li>
+			</ul>
+		</div>
+     </div>
+	<div class="settings">
+      <label>Amplada</label>
+		<div class="setting-option">
+	        <div id="slider-width"></div>
+		</div>
+     </div>
+     <div class="settings">
+      <label>Mida de la font</label>
+		<div class="setting-option">
+	        <div id="slider-font"></div>
+		</div>
+     </div>
+     <div class="settings">
+      <label>Mida de la font</label>
+	  <div class="setting-option">
+       <form action="" class="sett-options">
+		<ul>
+		    <li><input type="checkbox" id="secondary-content" /><label for="secondary-content">Mostra recursos complementaris</label></li>
+		    <li><input type="checkbox" id="main-images" /><label for="main-images">Mostra imatges</label></li>
+		    <li><input type="checkbox" id="text-alignment" /><label for="text-alignment">Text justificat</label></li>
+			<li><input type="checkbox" id="text-hyphen" /><label for="text-hyphen">Partici&oacute; sil·l&agrave;bica</label></li>
+		</ul>
+       </form>
+	  </div>
+     </div>
+     </div>
+    </div>
+   </div>
+   </section>
+ <section>
+ <div id="favorites" class="hidden"></div>
+ </section>   
+ <div id="bridge" class="hidden"></div>
+ <div id="help" class="hidden">
+  <div class="helptitle">Dreceres del teclat<hr></div>
+  <div class="helpsection"><span>General</span>
+   <ul>
+    <li><span class="shortcut">g</span>: Anar al men&uacute; de navegaci&oacute;</li>
+    <li><span class="shortcut">o</span>: Anar a opcions</li>
+    <li><span class="shortcut">s</span>: Guardar la p&agrave;gina actual a favorits</li>
+    <li><span class="shortcut">p</span>: Imprimir la p&agrave;gina actual</li>
+    <li><span class="shortcut">?</span>: Mostrar/Ocultar l&#39;ajuda</li>
+   </ul>
+  </div>
+  <div class="helpsection"><span>Navegaci&oacute;</span>
+   <ul>
+    <li><span class="shortcut">i</span>: Anar a l&#39;&iacute;ndex general</li>
+    <li><span class="shortcut">t</span>: Anar a l&#39;inici de p&agrave;gina</li>
+    <li><span class="shortcut">b</span>: Anar al final de p&agrave;gina</li>
+    <li><span class="shortcut">j</span>: Anar cap endavant dintre la p&agrave;gina</li>
+    <li><span class="shortcut">k</span>: Anar cap enrere dintre la p&agrave;gina</li>
+    <li><span class="shortcut">h</span>: Anar a la p&agrave;gina anterior:</li>
+    <li><span class="shortcut">l</span>: Anar a la p&agrave;gina seg&uuml;ent:</li>
+   </ul>
+   </div>
+ </div>
+ <div id="favcounter" name="favcounter" class="hidden"><span></span></div>
+ <div id="navmenu" class="navmenu"><ul class="webnav"><li><a href="index.html" title="Anar a l&#39;&iacute;ndex general">Inici</a></li><li>Glossari</li></ul></div>
+	<div id="content" lang="ca" class="hyphenate text">
+     <article lang="ca" class="sheet">
+        <h1><a id="glossari"> Glossari </a></h1>
+    	<ul>
+<li class="level1"><div class="li"> <strong>abstracció</strong>. <em>f</em> Procés en el qual se separen les propietats més importants d’un objecte de les que no ho són.</div>
+</li>
+<li class="level1"><div class="li"> <strong>algorisme</strong>. <em>m</em> Conjunt explícit de regles per resoldre un problema en un nombre finit de passos.</div>
+</li>
+<li class="level1"><div class="li"> <strong>anàlisi funcional</strong>. <em>f</em> Fase d’un projecte informàtic de desenvolupament de programari en la qual s’analitzen les diferents solucions proposades per resoldre un problema. </div>
+</li>
+<li class="level1"><div class="li"> <strong>anàlisi prèvia</strong>. <em>f</em> Primera fase d’execució en un projecte informàtic, que consisteix a fer un estudi inicial de la situació actual d’una empresa. </div>
+</li>
+<li class="level1"><div class="li"> <strong>analista funcional</strong>. <em>m i f</em> Persona encarregada de posar-se en contacte amb l’empresa i transmetre les peticions a l’equip de treball. </div>
+</li>
+<li class="level1"><div class="li"> <strong>analista orgànic/a</strong>. <em>m i f</em> Persona encarregada de traduir els requeriments recollits per l’analista funcional a especificacions de programes que s’han de codificar manualment o generar. </div>
+</li>
+<li class="level1"><div class="li"> <strong><acronym title="Application Programming Interface">API</acronym> de Java</strong>. <em>f</em> Inicials d’interfície de programació d’aplicacions (Application Programming Interface, en anglès). En el context del Java, és com es coneix popularment el conjunt de biblioteques que vénen incloses per defecte en l’entorn de treball proporcionat pel Java. En la programació orientada a objectes, les <acronym title="Application Programming Interface">API</acronym> ofereixen funcions i procediments per ser utilitzats per altres aplicacions.</div>
+</li>
+<li class="level1"><div class="li"> <strong>base de dades</strong>. <em>f</em> Conjunt estructurat de dades. El programari especialitzat que gestiona aquestes dades s’anomena sistema gestor de bases de dades (en anglès, DBMS). </div>
+</li>
+<li class="level1"><div class="li"> <strong>cap de projecte</strong>. <em>m i f</em> Màxim responsable del projecte. </div>
+</li>
+<li class="level1"><div class="li"> <strong>cicle de vida</strong>. <em>m</em> Vista de les activitats, en relació amb el programari, que es duen a terme des del moment de la demanda fins a la seva retirada. </div>
+</li>
+<li class="level1"><div class="li"> <strong>Code Completion</strong>. <em>adj</em> Característica dels IDE que consisteix en el reconeixement del codi que s’està escrivint, i ofereix, per exemple, en un objecte o classe els seus atributs, propietats o mètodes perquè el programador seleccioni quin vol referenciar.</div>
+</li>
+<li class="level1"><div class="li"> <strong>codi executable</strong>. <em>m</em> És la traducció completa a codi màquina, duta a terme per l’enllaçador. El codi executable és interpretat directament per l’ordinador.</div>
+</li>
+<li class="level1"><div class="li"> <strong>codi font</strong>. <em>m</em> Conjunt d’instruccions que formen un programa o aplicació informàtica. Escrit en un llenguatge de programació. Es troba en un fitxer o un conjunt de fitxers.</div>
+</li>
+<li class="level1"><div class="li"> <strong>codi objecte</strong>. <em>m</em> Es tracta del codi font traduït (pel compilador) a codi màquina. Aquest codi encara no pot ser executat per l’ordinador. </div>
+</li>
+<li class="level1"><div class="li"> <strong>compilació</strong>. <em>f</em> Acció de compilar, executada pels compiladors.</div>
+</li>
+<li class="level1"><div class="li"> <strong>compiladors</strong>. <em>m</em> Programes que tradueixen el programa escrit amb un llenguatge d’alt nivell al llenguatge màquina que podrà entendre el processador. </div>
+</li>
+<li class="level1"><div class="li"> <strong>depurador</strong>. <em>m</em> Programa que permet provar i depurar el codi font d’un programa, amb la qual cosa es facilita la detecció d’errors. </div>
+</li>
+<li class="level1"><div class="li"> <strong>descomposició</strong>. <em>f</em> Divisió d’una operació en unes altres de més elementals i petites. </div>
+</li>
+<li class="level1"><div class="li"> <strong>diagrama de classes</strong>. <em>m</em> Descriu classificadors de tota mena i els diferents tipus de relacions entre ells abans de fer-los servir en altres diagrames.</div>
+</li>
+<li class="level1"><div class="li"> <strong>diagrama de components</strong>. <em>m</em> Descriu un diagrama de classes i alhora d’estructures compostes simplificat i més adient per a determinades tecnologies de programació. </div>
+</li>
+<li class="level1"><div class="li"> <strong>diagrama de desplegament</strong>. <em>m</em> Descriu la configuració en temps d’execució d’un programari, especificat, normalment, per un diagrama de components.</div>
+</li>
+<li class="level1"><div class="li"> <strong>diagrama de paquets</strong>. <em>m</em> Descriu essencialment les relacions de diferents menes entre els continguts de diferents paquets d’un model. </div>
+</li>
+<li class="level1"><div class="li"> <strong>diagrama de perfil</strong>. <em>m</em> Permet adaptar o personalitzar el model amb construccions que són específiques d’un domini en particular, d’una determinada plataforma, o d’un mètode de desenvolupament de programari… </div>
+</li>
+<li class="level1"><div class="li"> <strong>diagrama d’estructures compostes</strong>. <em>m</em> Descriu casos en què o bé les instàncies d’un classificador tenen com a parts instàncies d’altres, o bé en el comportament executant d’un classificador participen instàncies d’altres.</div>
+</li>
+<li class="level1"><div class="li"> <strong>diagrama d’objectes</strong>. <em>m</em> Descriu les instàncies dels classificadors definits en un diagrama de classes previ i les relacions entre aquestes instàncies.</div>
+</li>
+<li class="level1"><div class="li"> <strong>diagrames d’interacció</strong>. <em>m</em> Descriuen comportaments emergents. Estan compostos pels diagrames de seqüències, els diagrames de comunicacions, els diagrames de temps i els de visió general de la interacció.</div>
+</li>
+<li class="level1"><div class="li"> <strong>diagrama d’activitats</strong>. <em>m</em> Descriu un comportament complex en forma de seqüències condicionals d’activitats components.</div>
+</li>
+<li class="level1"><div class="li"> <strong>diagrama de casos d’ús</strong>. <em>m</em> Descriu els comportaments d’un sistema, principalment des del punt de vista de les interaccions que té amb el món exterior.</div>
+</li>
+<li class="level1"><div class="li"> <strong>diagrama de comunicació</strong>. <em>m</em> Descriu l’estructura composta de les comunicacions entre les diferents instàncies.</div>
+</li>
+<li class="level1"><div class="li"> <strong>diagrama de seqüència</strong>. <em>m</em> Descriu la seqüència temporal de les participacions de les diferents instàncies.</div>
+</li>
+<li class="level1"><div class="li"> <strong>diagrama de temps</strong>. <em>m</em> Descriu un diagrama d’estats previ, o més d’un, i alhora posa èmfasi en els canvis d’estat al llarg del temps.</div>
+</li>
+<li class="level1"><div class="li"> <strong>diagrama de visió general de la interacció</strong>. <em>m</em> Descriu una visió resumida del comportament emergent de les diferents instàncies.</div>
+</li>
+<li class="level1"><div class="li"> <strong>diagrama d’estats</strong>. <em>m</em> Descriu les diferents situacions/estats des del punt de vista dels seus comportaments, de les instàncies d’un classificador, alhora que les causes, condicions i conseqüències dels canvis d’una situació a una altra.</div>
+</li>
+<li class="level1"><div class="li"> <strong>EAR (Enterprise Archive file )</strong>. <em>m</em> Format per empaquetar en un sol arxiu diversos mòduls. Permet desplegar diversos d’aquests mòduls en un servidor d’aplicacions. </div>
+</li>
+<li class="level1"><div class="li"> <strong>Eclipse</strong>. <em>m</em> IDE de codi obert desenvolupat en Java que ajuda al desenvolupament de programari en molts llenguatges de programació (per exemple, C++ Perl, PHP o el mateix Java). És multiplataforma.</div>
+</li>
+<li class="level1"><div class="li"> <strong>encapsulació</strong>. <em>f</em> Permet als objectes triar quina informació és publicada i quina informació és amagada a la resta dels objectes.</div>
+</li>
+<li class="level1"><div class="li"> <strong>enllaçador</strong>. <em>m</em> Encarregat d’inserir al codi objecte les funcions de les llibreries que són necessàries per al programa i efectuar el procés de muntatge, amb la qual cosa es genera un arxiu executable.</div>
+</li>
+<li class="level1"><div class="li"> <strong>ERP</strong>. <em>f</em> Acrònim per Enterprise Resource Planning. És un sistema informàtic que abraça tota una empresa, utilitzat per gestionar tots els seus recursos i per compartir la informació necessària entre els diferents departaments en una única base de dades.</div>
+</li>
+<li class="level1"><div class="li"> <strong><acronym title="Graphical User Interface">GUI</acronym></strong>. <em>f</em> Inicials de Graphic User Interface (interfície gràfica d’usuari), que referencien les interfícies d’usuari que fan servir elements gràfics per a la seva interacció amb els usuaris. </div>
+</li>
+<li class="level1"><div class="li"> <strong>IDE</strong>. <em>m</em> Inicials d’Integrated Development Environment (entorn integrat de desenvolupament), una eina que integra tot el que cal per generar programes d’ordinador, de manera que la feina sigui molt més còmoda. </div>
+</li>
+<li class="level1"><div class="li"> <strong>IEEE</strong>. <em>m</em> Acrònim per a Institute of Electrical and Electronics Engineers, una associació professional sense ànim de lucre que determina la major part dels estàndards en les Enginyeries.</div>
+</li>
+<li class="level1"><div class="li"> <strong>interfície</strong>. <em>f</em> Conjunt de mètodes abstractes i de propietats, en les quals s’especifica què s’ha de fer però no la seva implementació. Les classes que implementin aquestes interfícies seran les que descriguin la lògica del comportament dels mètodes.</div>
+</li>
+<li class="level1"><div class="li"> <strong>interfície d’usuari</strong>. <em>f</em> Conjunt d’elements (maquinari i programari) que actuen com a frontera entre el domini de la persona i el de la màquina. </div>
+</li>
+<li class="level1"><div class="li"> <strong>intèrpret</strong>. <em>m</em> Programa que tradueix el codi d’alt nivell a codi de bytes però, a diferència del compilador, ho fa en temps d’execució.</div>
+</li>
+<li class="level1"><div class="li"> <strong>intèrpret</strong>. <em>m</em> Programa auxiliar que processa el codi font i gestiona la seva execució pel cas dels llenguatges interpretats. </div>
+</li>
+<li class="level1"><div class="li"> <strong>ISO</strong>. <em>f</em> Organització no governamental composta per diferents representants d’organismes de normalització de més de 150 països, que va ser fundada el 23 de febrer de 1947 a Ginebra, i la funció de la qual és elaborar estàndards i normes internacionals per a tots els camps de la indústria i el comerç. </div>
+</li>
+<li class="level1"><div class="li"> <strong>JAR (Java archive)</strong>. <em>m</em> Format d’arxiu d’encapsulament independent de la plataforma, que permet que diversos arxius puguin ser encapsulats dins d’un, la qual cosa permet que aquest pugui ser una aplicació completa de fàcil mobilitat i execució.</div>
+</li>
+<li class="level1"><div class="li"> <strong>JavaDoc</strong>. <em>m</em> Eina auxiliar proporcionada pel Kit de Desenvolupament del Java (JDK), que permet generar automàticament documentació relativa a classes Java a partir de comentaris dins el seu codi font.</div>
+</li>
+<li class="level1"><div class="li"> <strong>jerarquia</strong>. <em>f</em> Permet l’ordenació de les abstraccions. Les dues jerarquies més importants d’un sistema complex són l’herència i l’agregació.</div>
+</li>
+<li class="level1"><div class="li"> <strong>JVM</strong>. <em>f</em> Màquina Virtual de Java. Programari que implementa un model molt determinant de màquina virtual. Es tracta d’un component fonamental de la Plataforma Java. </div>
+</li>
+<li class="level1"><div class="li"> <strong>llenguatge d’assemblador</strong>. <em>m</em> Es tracta del primer llenguatge de programació que utilitza codis mnemotècnics per indicar a la màquina les operacions a efectuar. </div>
+</li>
+<li class="level1"><div class="li"> <strong>llenguatge de màquina</strong>. <em>m</em> Llenguatge de programació format per instruccions en format binari (compostes com a combinacions de valors 0 o 1) capaces de ser interpretades per un model de processador específic.</div>
+</li>
+<li class="level1"><div class="li"> <strong>llenguatge de programació</strong>. <em>m</em> Llenguatge artificial dissenyat expressament per crear algorismes que puguin ser executats per l’ordinador. </div>
+</li>
+<li class="level1"><div class="li"> <strong>llenguatge interpretat</strong>. <em>m</em> Llenguatge de programació en el qual no cal fer una traducció de codi font a codi objecte per a la seva execució.</div>
+</li>
+<li class="level1"><div class="li"> <strong>llenguatges d’alt nivell</strong>. <em>m</em> Aquests llenguatges, més evolucionats, utilitzen paraules i frases relativament fàcils d’entendre per als éssers humans i proporcionen també facilitats per expressar alteracions del flux de control d’una forma bastant senzilla i intuïtiva.</div>
+</li>
+<li class="level1"><div class="li"> <strong>llenguatges de cinquena generació</strong>. <em>m</em> Es tracta de llenguatges específics per al tractament de problemes relacionats amb la intel·ligència artificial i els sistemes experts.</div>
+</li>
+<li class="level1"><div class="li"> <strong>llenguatges de propòsit específic</strong>. <em>m</em> Permeten desenvolupar aplicacions sofisticades en un espai curt de temps, molt inferior al necessari per als llenguatges d’alt nivell.</div>
+</li>
+<li class="level1"><div class="li"> <strong>llibreria</strong>. <em>f</em> Col·lecció de codi predefinit que facilita la labor del programador a l’hora de codificar un programa.</div>
+</li>
+<li class="level1"><div class="li"> <strong>màquina virtual</strong>. <em>f</em> Programari que permet emular el funcionament d’un ordinador dins un altre ordinador.</div>
+</li>
+<li class="level1"><div class="li"> <strong>mètrica</strong>. <em>f</em> Sistematització de les activitats del cicle de vida dels projectes de programari.</div>
+</li>
+<li class="level1"><div class="li"> <strong>mòdul</strong>. <em>m</em> Part independent d’un programa que es dissenya, codifica, prova per separat. </div>
+</li>
+<li class="level1"><div class="li"> <strong>modularitat</strong>. <em>f</em> Permet poder modificar les característiques de les classes que defineixen un objecte, de forma independent de la resta de classes en l’aplicació.</div>
+</li>
+<li class="level1"><div class="li"> <strong>multiplataforma</strong>. <em>adj</em> Capacitat d’un programa de poder ser executat independentment del tipus de maquinari o sistema operatiu.</div>
+</li>
+<li class="level1"><div class="li"> <strong><acronym title="Oh my God">OMG</acronym></strong>. <em>m</em> Inicials de Object Management Group (Grup de gestió d’objectes). És un consorci dedicat al seguiment i validació dels diferents estàndards de tecnologies orientades a objectes, com l’UML, l’XMI o CORBA.</div>
+</li>
+<li class="level1"><div class="li"> <strong>paradigmes de programació</strong>. <em>m</em> És una classificació dels llenguatges de programació atenent a la forma de treballar dels programes i a la filosofia amb què van ser concebuts. Existeixen el paradigma imperatiu o estructurat, el paradigma funcional, el paradigma d’objectes i el paradigma lògic.</div>
+</li>
+<li class="level1"><div class="li"> <strong>part interessada</strong>. <em>f</em> En anglès, <em>stakeholder</em>. En l’àmbit d’un projecte informàtic, es refereix a totes les persones que es veuran afectades pel desenvolupament del projecte.</div>
+</li>
+<li class="level1"><div class="li"> <strong>persistent</strong>. <em>adj</em> Informació que es manté accessible en finalitzar l’execució del programa o fins i tot en apagar l’ordinador.</div>
+</li>
+<li class="level1"><div class="li"> <strong>pla de prova</strong>. <em>m</em> Cadascuna de les proves a què se sotmet cada element de programari desenvolupat. </div>
+</li>
+<li class="level1"><div class="li"> <strong>pla general del projecte</strong>. <em>m</em> Document que guia l’equip del projecte durant tot el procés de creació del programari. </div>
+</li>
+<li class="level1"><div class="li"> <strong>polimorfisme</strong>. <em>m</em> En la programació orientada a objectes es refereix a la possibilitat de disposar de classes diferents que tenen mètodes o atributs anomenats igual.</div>
+</li>
+<li class="level1"><div class="li"> <strong>privat</strong>. <em>adj</em> Cap classe no pot accedir a un atribut o mètode declarat com a privat i utilitzar-lo.</div>
+</li>
+<li class="level1"><div class="li"> <strong>processador</strong>. <em>m</em> Part del maquinari de l’ordinador encarregat d’interpretar les instruccions d’un programa i de traduir-les en ordres a la resta de components.</div>
+</li>
+<li class="level1"><div class="li"> <strong>programa</strong>. <em>m</em> Codificació d’un algorisme en un llenguatge de programació que l’ordinador entengui.</div>
+</li>
+<li class="level1"><div class="li"> <strong>programació modular</strong>. <em>f</em> Vegeu modularitat.</div>
+</li>
+<li class="level1"><div class="li"> <strong>programació orientada a objectes</strong>. <em>f</em> Forma de programar que parteix d’un paradigma de construcció de programes basat en una abstracció del món real.</div>
+</li>
+<li class="level1"><div class="li"> <strong>programador/a</strong>. <em>m i f</em> Persona encarregada de generar els codis, de provar-los un a un i de depurar els errors.</div>
+</li>
+<li class="level1"><div class="li"> <strong>programari</strong>. <em>m</em> Seguit d’ordres que es porten a terme seqüencialment, aplicades sobre un conjunt de dades.</div>
+</li>
+<li class="level1"><div class="li"> <strong>projecte</strong>. <em>m</em> En qualsevol camp, conjunt d’accions destinades a obtenir un resultat final. En el camp de l’enginyeria informàtica, encàrrec, habitualment de programari, que ha de dur a terme un grup de treball. </div>
+</li>
+<li class="level1"><div class="li"> <strong>protegit</strong>. <em>adj</em> Qualsevol classe heretada pot accedir a qualsevol atribut o mètode declarat com a protegit en la classe mare i utilitzar-lo.</div>
+</li>
+<li class="level1"><div class="li"> <strong>prova d’acceptació</strong>. <em>f</em> Prova que fa el client per tal de comprovar la qualitat del funcionament del producte. </div>
+</li>
+<li class="level1"><div class="li"> <strong>prova de capsa blanca</strong>. <em>f</em> Prova per mitjà de la qual es comprova la manera en què un component del programari resol un problema determinat segons els detalls interns d’implementació. </div>
+</li>
+<li class="level1"><div class="li"> <strong>prova de capsa negra</strong>. <em>f</em> Prova per mitjà de la qual es comprova el funcionament d’un component del programari mitjançant la seva interfície, sense entrar a veure’n el funcionament intern. </div>
+</li>
+<li class="level1"><div class="li"> <strong>prova de programa</strong>. <em>f</em> Procés d’execució d’un programa amb la intenció de descobrir un error. </div>
+</li>
+<li class="level1"><div class="li"> <strong>prova d’integració</strong>. <em>f</em> Prova per mitjà de la qual es comprova la funcionalitat del sistema complet. </div>
+</li>
+<li class="level1"><div class="li"> <strong>prova unitària</strong>. <em>f</em> Procediment per provar el funcionament correcte d’un mòdul de codi. </div>
+</li>
+<li class="level1"><div class="li"> <strong>proves alfa</strong>. <em>f</em> Consisteixen a convidar el client que vingui a l’entorn de desenvolupament a provar el sistema. Es treballa en un entorn controlat i el client sempre té un expert a mà per ajudar-lo a usar el sistema i per analitzar els resultats.</div>
+</li>
+<li class="level1"><div class="li"> <strong>proves beta</strong>. <em>f</em> Es desenvolupen després de les proves alfa en l’entorn del client, un entorn que és fora de control per al desenvolupador i el seu equip de treball. Aquí el client es queda tot sol amb el producte i tracta de trobar els errors, dels quals informarà els desenvolupadors.</div>
+</li>
+<li class="level1"><div class="li"> <strong>proves d’usabilitat</strong>. <em>f</em> Serveixen per determinar la qualitat de l’experiència d’un usuari en la manera en què aquest interactua amb el sistema.</div>
+</li>
+<li class="level1"><div class="li"> <strong>proves de fum</strong>. <em>f</em> Serveixen per descriure la validació dels canvis de codi en el programari abans que els canvis en el codi es registrin en la documentació del projecte.</div>
+</li>
+<li class="level1"><div class="li"> <strong>proves de regressió</strong>. <em>f</em> Serveixen per detectar possibles nous errors o problemes que puguin sortir en haver introduït canvis o millores en el programari.</div>
+</li>
+<li class="level1"><div class="li"> <strong>proves de resistència</strong>. <em>f</em> Serveixen per valorar la resistència de l’aplicació desenvolupada per a determinades situacions o estats del sistema on s’integrarà.</div>
+</li>
+<li class="level1"><div class="li"> <strong>proves de seguretat</strong>. <em>f</em> Serveixen per ajudar a determinar els nivells de permisos dels usuaris i les operacions que podran dur a terme.</div>
+</li>
+<li class="level1"><div class="li"> <strong>proves de sistema</strong>. <em>f</em> Serveixen per validar l’aplicació ja validada una vegada ha estat integrada amb la resta del sistema dels usuaris.</div>
+</li>
+<li class="level1"><div class="li"> <strong>proves de validació</strong>. <em>f</em> Serveixen per permetre comprovar si, efectivament, es compleixen els requisits proposats pel nostre sistema.</div>
+</li>
+<li class="level1"><div class="li"> <strong>públic</strong>. <em>adj</em> Qualsevol classe pot accedir a qualsevol atribut o mètode declarat com a públic i utilitzar-lo.</div>
+</li>
+<li class="level1"><div class="li"> <strong>refacció</strong>. <em>f</em> És una tècnica de l’enginyeria de programari per reestructurar un codi font, alterant-ne l’estructura interna sense canviar el seu comportament extern. Es considera un aspecte molt important per al desenvolupament d’aplicacions mitjançant programació extrema.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Syntax Highlighting</strong>. <em>adj</em> Característica dels IDE que consisteix en el reconeixement amb colors de les paraules clau que pertanyen a un determinat llenguatge de programació.</div>
+</li>
+<li class="level1"><div class="li"> <strong>tipus abstractes de dades (TAD)</strong>. <em>m</em> Un TAD especifica una definició d’un conjunt de dades i de mètodes que es poden executar sobre aquestes dades. Aquesta definició és independent de la seva implementació.</div>
+</li>
+<li class="level1"><div class="li"> <strong>UML</strong>. <em>f</em> Inicials de Unified Modeling Language (llenguatge unificat de modelització), que referencien al llenguatge de modelització de sistemes més utilitzat. Té el suport de la <acronym title="Oh my God">OMG</acronym>. És un llenguatge gràfic que, a partir de diagrames, mostra una representació dels sistemes que es volen automatitzar mitjançant programari informàtic. </div>
+</li>
+<li class="level1"><div class="li"> <strong>unitat funcional</strong>. <em>f</em> Subdivisió d’un problema gran en problemes més petits, que és la unitat mínima de tractament en un projecte informàtic. </div>
+</li>
+<li class="level1"><div class="li"> <strong>usabilitat</strong>. <em>f</em> Qualitat d’una pàgina web o d’un programa informàtic de ser fàcil d’usar i de tenir en compte aspectes com ara la llegibilitat dels textos, la rapidesa de la baixada d’informació, la manejabilitat i la capacitat de satisfer les necessitats de l’usuari. </div>
+</li>
+<li class="level1"><div class="li"> <strong>validació del programari</strong>. <em>f</em> Comprovació final del producte, per tal que compleixi els requisits inicials i les necessitats del client. </div>
+</li>
+<li class="level1"><div class="li"> <strong>verificació del programari</strong>. <em>f</em> Comprovació de cada producte intermedi de programari perquè satisfaci les condicions previstes. </div>
+</li>
+<li class="level1"><div class="li"> <strong>WAR (Web Application archive)</strong>. <em>m</em> Format d’arxiu d’encapsulament. Com un arxiu JAR (amb l’extensió WAR) usat per distribuir una col·lecció d’arxius JSP, servlets, classes Java, arxius XML i contingut web estàtic (<acronym title="HyperText Markup Language">HTML</acronym>). En conjunt, constitueixen una aplicació web.</div>
+</li>
+</ul>
+
+	 </article>
+     <div class="pnpage">
+      <div class="left-corner"></div>
+      <div id="prevpage">Anar a la p&agrave;gina anterior:<br /><a href="material_pdf.html">Continguts en PDF</a></div>
+      <div id="nextpage">Anar a la p&agrave;gina seg&uuml;ent:<br /><a href="index.html">&Iacute;ndex general</a></div>
+      <div class="right-corner"></div>
+     </div>
+    </div>
+    <footer class="footer">
+      <div><small>Aquest document està subjecte a una llicència oberta de Creative Commons, es reserva el dret de reconeixement de l'autoria, d'exigir que no se'n faci cap mena d'ús comercial. Si altereu o transformeu aquesta obra, o en genereu obres derivades, només podeu distribuir l'obra generada amb una llicència idèntica a aquesta.</small></div>
+    </footer>
+ </div>
+ <div id="back_preview" class="hidden"></div>
+ <div id="preview" class="hidden">
+  <div class="prevcontent"></div>
+ </div>
+ <div id="help-tooltips">
+  <div id="help-toc" class="hidden tooltip"><span>Taula de continguts:</span> Ofereix una vista general de l&#39;estructura del m&ograve;dul, que us facilitar&agrave; la navegaci&oacute; a trav&eacute;s dels seus continguts.<span class="arrow-left"></span></div> 
+  <div id="help-settings" class="hidden tooltip"><span>Opcions de format:</span> Permet configurar el format de lectura a partir de les vostres prefer&egrave;ncies, modificant la mida de la lletra, el color del fons, l&#39;amplada de la p&agrave;gina o l&#39;ocultaci&oacute; dels continguts complementaris, entre d&#39;altres.<span class="arrow-left"></span></div>
+  <div id="help-printer" class="hidden tooltip"><span>Imprimir:</span>  Envia el contingut seleccionat a la impressora.<span class="arrow-left"></span></div>
+  <div id="help-favorites" class="hidden tooltip"><span>Prefereits:</span> Permet desar aquelles parts del contingut a les que us interessi accedir en un moment posterior; us permetr&agrave; anar creant un repositori personalitzat de les seccions que considereu m&eacute;s rellevants. Un cop l&#39;hageu començat a fer servir se us mostrar&agrave; a sota un comptador que us informar&agrave; del nombre de preferits que s&#39;hagin emmagatzemat fins al moment.<span class="arrow-left"></span></div>
+  <div id="help-favcounter" class="hidden tooltip"><span>Comptador i llistat de preferits:</span> Indica el nombre de preferits que s&#39;han desat fins el moment; clicant damunt seu accedireu al llistat de preferits, i a trav&eacute;s d&#39;aquest podreu accedir directament als continguts que hageu emmagatzemat.<span class="arrow-left"></span></div>
+  <div id="help-help_icon" class="hidden tooltip"><span>Ajuda:</span> Aquesta opci&oacute; activa la informaci&oacute; de les funcionalitats del web tot situant el punter del ratol&iacute; al damunt dels diferents &iacute;tems.<span class="arrow-left"></span></div>
+  <div id="help-sidebar-hide" class="hidden tooltip"><span>Mostrar/Ocultar barra lateral:</span>  Deshabilita la barra d&#39;opcions, permetent la seva recuperaci&oacute; quan es desitgi.<span class="arrow-left"></span></div>
+  <div id="help-search" class="hidden tooltip"><span>Cerca:</span>  Introdu&iuml;u les paraules clau sobre aquells conceptes que desitgeu localitzar en els continguts del m&ograve;dul. Tamb&eacute; podeu excloure un terme de la cerca tot afegint-hi el signe &#8220;-&#8221; al davant.<span class="arrow-top"></span></div>
+  <div id="help-header" class="hidden tooltip"><span>Cap&ccedil;alera:</span>  Indica l&#39;apartat o secci&oacute; que es mostra en pantalla. Tingueu present que les capçaleres de segon, tercer i quart nivell tamb&eacute; es poden desar com a marcadors.<span class="arrow-left"></span></div>
+</div> 
+</body>
+</html>

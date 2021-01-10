@@ -1,0 +1,1899 @@
+<!doctype html>
+
+<!--[if lt IE 7 ]> <html class="ie ie6 no-js" lang="ca"> <![endif]-->
+<!--[if IE 7 ]>    <html class="ie ie7 no-js" lang="ca"> <![endif]-->
+<!--[if IE 8 ]>    <html class="ie ie8 no-js" lang="ca"> <![endif]-->
+<!--[if IE 9 ]>    <html class="ie ie9 no-js" lang="ca"> <![endif]-->
+<!--[if gt IE 9]><!--><html class="no-js" lang="ca"><!--<![endif]-->
+<!-- the "no-js" class is for Modernizr. -->
+
+<head id="www-sitename-com" data-template-set="html5-reset">
+
+	<meta charset="utf-8">
+	
+	<!-- Always force latest IE rendering engine (even in intranet) & Chrome Frame -->
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	
+	<title>Llenguatges de marques i sistemes de gestió d'informació</title>
+	
+<!-- <meta name="title" content=""> --> 
+	<meta name="description" content="">
+	<!-- Google will often use this as its description of your page/site. Make it good. -->
+	
+	<meta name="google-site-verification" content="">
+	<!-- Speaking of Google, don't forget to set your site up: http://google.com/webmasters -->
+	
+	<meta name="author" content="Institut Obert de Catalunya">
+	<meta name="Copyright" content="Copyright Institut Obert de Catalunya 2011. All Rights Reserved.">
+
+	<!-- Dublin Core Metadata : http://dublincore.org/ -->
+	<meta name="DC.title" content="Llenguatges de marques i sistemes de gestió d'informació">
+	<meta name="DC.subject" content="Informàtica i comunicacions">
+	<meta name="DC.creator" content="Institut Obert de Catalunya">
+	
+	<!--  Mobile Viewport Fix
+	j.mp/mobileviewport & davidbcalhoun.com/2010/viewport-metatag 
+	device-width : Occupy full width of the screen in its current orientation
+	initial-scale = 1.0 retains dimensions instead of zooming out if page height > device height
+	maximum-scale = 1.0 retains dimensions instead of zooming in if page width < device width
+	-->
+	<!-- Uncomment to use � use thoughtfully!
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+	-->
+
+	<link rel="shortcut icon" href="../../../img/favicon.ico">
+	<!-- This is the traditional favicon.
+		 - size: 16x16 or 32x32
+		 - transparency is OK
+		 - see wikipedia for info on browser support: http://mky.be/favicon/ -->
+		 
+	<link rel="apple-touch-icon" href="../../../img/apple-touch-icon.png">
+	<!-- The is the icon for iOS's Web Clip.
+		 - size: 57x57 for older iPhones, 72x72 for iPads, 114x114 for iPhone4's retina display (IMHO, just go ahead and use the biggest one)
+		 - To prevent iOS from applying its styles to the icon name it thusly: apple-touch-icon-precomposed.png
+		 - Transparency is not recommended (iOS will put a black BG behind the icon) -->
+	
+	<!-- CSS: screen, mobile & print are all in the same file -->
+	<link rel="stylesheet" href="../../../_/css/style.css">
+
+	<!-- CSS: jQuery UI -->
+	<link rel="stylesheet" href="../../../_/css/jquery-ui.css">
+	
+	<!-- all our JS is at the bottom of the page, except for Modernizr. -->
+	<script src="../../../_/js/modernizr-1.7.min.js"></script>
+	<script src="../../../_/js/Hyphenator.js" type="text/javascript"></script>
+	<script type="text/javascript">
+	   Hyphenator.config({
+		minwordlength : 4
+	   });
+	   Hyphenator.run();
+	</script>
+    <script src="../../../_/js/build.js" type="text/javascript"></script>
+</head>
+
+<body class="style-newspaper">
+
+<div class="wrapper"><!-- not needed? up to you: http://camendesign.com/code/developpeurs_sans_frontieres -->
+
+	<header id="header">
+		<div class="head"><a href="http://ioc.gencat.cat"><img src="../../../img/logo.png" alt="Institut Obert de Catalunya"/></a><a href="http://creativecommons.org/licenses/by-nc-sa/3.0/es/deed.ca"><img src="../../../img/license.png" alt="Llic&egrave;ncia" class="license"/></a></div>
+		<div class="headdocument"><a href="../../../index.html">Llenguatges de marques i sistemes de gestió d'informació</a></div>
+        <div id="search" class="search" name="search">
+         <form id="frmsearch" action="../../../search.html" method="get">
+          <input type="text" name="q"/>
+        </form>
+        </div>
+	</header>
+   <div id="upbutton" class="upbutton" style="display:none;"><img src="../../../img/uparrow.png" alt="Pujar a l'inici de p&agrave;gina"/></div>
+   <aside id="aside">
+    <div id="menu">
+      <ul>
+       <li name="toc"><div><img src="../../../img/toc.png" alt="&Iacute;ndex"/></div></li>
+       <li name="settings"><div><img src="../../../img/settings.png" alt="Configuraci&oacute;"/></div></li>
+       <li name="printer"><div><img src="../../../img/printer.png" alt="Imprimir"/></div></li>
+       <li name="favorites"><div><img src="../../../img/favorites.png" alt="Favorits"/></div></li>
+       <li name="help_icon" class="help_icon"><div><img src="../../../img/help_icon.png" alt="Ajuda"/></div></li>
+      </ul>
+     </div>
+   </aside>
+   <div id="sidebar-hide" name="sidebar-hide"><img src="../../../img/arrows.png"/></div>
+   <section>
+     <div id="toc" class="hidden">
+      <div class="menucontent">
+        <ul>
+        <li id="u3" class="parentnode"><p><a class="unit" href="../../../WebContent/u3/introduccio.html">3. Àmbits d’aplicació de l’XML</a></p><ul class="expander"><li id="u3introduccio"><a href="../../../WebContent/u3/introduccio.html">Introducció</a></li><li id="u3resum"><a href="../../../WebContent/u3/resum.html">Resum</a></li><li id="u3objectius"><a href="../../../WebContent/u3/objectius.html">Resultats d'aprenentatge</a></li><li id="u3referencies"><a href="../../../WebContent/u3/referencies.html">Referències</a></li><li id="u3a1" class="tocsection"><p id='u3a1continguts'><a class="section" href="../../../WebContent/u3/a1/continguts.html">Sindicació de continguts</a><span class="buttonexp"></span></p><ul><li id="u3a1activitats"><a href="../../../WebContent/u3/a1/activitats.html">Activitats</a></li><li id="u3a1exercicis"><a href="../../../WebContent/u3/a1/exercicis.html">Exercicis d'autoavaluació</a></li></ul></li><li id="u3a2" class="tocsection"><p id='u3a2continguts'><a class="section" href="../../../WebContent/u3/a2/continguts.html">Conversió i adaptació de documents XML</a><span class="buttonexp"></span></p><ul><li id="u3a2activitats"><a href="../../../WebContent/u3/a2/activitats.html">Activitats</a></li><li id="u3a2exercicis"><a href="../../../WebContent/u3/a2/exercicis.html">Exercicis d'autoavaluació</a></li></ul></li><li id="u3a3" class="tocsection"><p id='u3a3continguts'><a class="section" href="../../../WebContent/u3/a3/continguts.html">Bases de dades natives XML. Llenguatge de consultes (XQuery)</a><span class="buttonexp"></span></p><ul><li id="u3a3activitats"><a href="../../../WebContent/u3/a3/activitats.html">Activitats</a></li><li id="u3a3exercicis"><a href="../../../WebContent/u3/a3/exercicis.html">Exercicis d'autoavaluació</a></li></ul></li></ul></li><li id="" class="indexnode"><p><a href="../../../index.html">Anar a l&#39;&iacute;ndex general</a></p></li>
+        </ul>
+      </div>
+    </div>
+   </section>
+   <section>
+   <div id="settings" class="hidden">
+    <div class="menucontent">
+     <div class="allsettings">
+     <div class="settings">
+      <label>Font i Color</label>
+		<div class="setting-option">
+	        <ul class="fontBackground">
+				<li id="style-newspaper" title="Newspaper" class="appearance-style-newspaper"><span>Newspaper</span></li>
+                <li id="style-novel" title="Novel" class="appearance-style-novel"><span>Novel</span></li>
+                <li id="style-ebook" title="eBook" class="appearance-style-ebook"><span>eBook</span></li>
+				<li id="style-inverse" title="Inverse" class="appearance-style-inverse active"><span>Inverse</span></li>
+				<li id="style-athelas" title="Athelas" class="appearance-style-athelas"><span>Athelas</span></li>
+			</ul>
+		</div>
+     </div>
+	<div class="settings">
+      <label>Amplada</label>
+		<div class="setting-option">
+	        <div id="slider-width"></div>
+		</div>
+     </div>
+     <div class="settings">
+      <label>Mida de la font</label>
+		<div class="setting-option">
+	        <div id="slider-font"></div>
+		</div>
+     </div>
+     <div class="settings">
+      <label>Mida de la font</label>
+	  <div class="setting-option">
+       <form action="" class="sett-options">
+		<ul>
+		    <li><input type="checkbox" id="secondary-content" /><label for="secondary-content">Mostra recursos complementaris</label></li>
+		    <li><input type="checkbox" id="main-images" /><label for="main-images">Mostra imatges</label></li>
+		    <li><input type="checkbox" id="text-alignment" /><label for="text-alignment">Text justificat</label></li>
+			<li><input type="checkbox" id="text-hyphen" /><label for="text-hyphen">Partici&oacute; sil·l&agrave;bica</label></li>
+		</ul>
+       </form>
+	  </div>
+     </div>
+     </div>
+    </div>
+   </div>
+   </section>
+ <section>
+ <div id="favorites" class="hidden"></div>
+ </section>   
+ <div id="bridge" class="hidden"></div>
+ <div id="help" class="hidden">
+  <div class="helptitle">Dreceres del teclat<hr></div>
+  <div class="helpsection"><span>General</span>
+   <ul>
+    <li><span class="shortcut">g</span>: Anar al men&uacute; de navegaci&oacute;</li>
+    <li><span class="shortcut">o</span>: Anar a opcions</li>
+    <li><span class="shortcut">s</span>: Guardar la p&agrave;gina actual a favorits</li>
+    <li><span class="shortcut">p</span>: Imprimir la p&agrave;gina actual</li>
+    <li><span class="shortcut">?</span>: Mostrar/Ocultar l&#39;ajuda</li>
+   </ul>
+  </div>
+  <div class="helpsection"><span>Navegaci&oacute;</span>
+   <ul>
+    <li><span class="shortcut">i</span>: Anar a l&#39;&iacute;ndex general</li>
+    <li><span class="shortcut">t</span>: Anar a l&#39;inici de p&agrave;gina</li>
+    <li><span class="shortcut">b</span>: Anar al final de p&agrave;gina</li>
+    <li><span class="shortcut">j</span>: Anar cap endavant dintre la p&agrave;gina</li>
+    <li><span class="shortcut">k</span>: Anar cap enrere dintre la p&agrave;gina</li>
+    <li><span class="shortcut">h</span>: Anar a la p&agrave;gina anterior:</li>
+    <li><span class="shortcut">l</span>: Anar a la p&agrave;gina seg&uuml;ent:</li>
+   </ul>
+   </div>
+ </div>
+ <div id="favcounter" name="favcounter" class="hidden"><span></span></div>
+ <div id="navmenu" class="navmenu"><ul class="webnav"><li><a href="../../../index.html" title="Anar a l&#39;&iacute;ndex general">Inici</a></li><li><a href="../introduccio.html">Àmbits d’aplicació de l’XML</a></li><li>Bases de dades natives XML. Llenguatge de consultes (XQuery)</li></ul></div>
+	<div id="content" lang="ca" class="hyphenate text">
+     <article lang="ca" class="sheet">
+        <h1><a id="bases_de_dades_natives_xml_llenguatge_de_consultes_xquery"> Bases de dades natives XML. Llenguatge de consultes (XQuery) </a></h1>
+    	
+<p>
+Els fitxers en XML estan en un format de text estandarditzat que serveix per representar, emmagatzemar i transportar informació estructurada. Per tant l’<strong>XML es pot fer servir com a mètode d’emmagatzematge de dades neutre</strong>, ja que la informació emmagatzemada en fitxers XML es pot moure d’una màquina a una altra sense que hi hagi problemes. Això el fa un mètode ideal per emmagatzemar dades històriques que ens assegura que es podran tornar a llegir en el futur sense problemes.
+</p>
+
+<p>
+Això ha fet que les organitzacions cada vegada tinguin una quantitat més gran de documents XML, i que en conseqüència localitzar els documents en el moment adequat sigui cada cop més complicat. Per tant <strong>cal alguna manera d’organitzar les dades XML</strong> que permeti localitzar-les ràpidament. 
+</p>
+
+<p>
+Però no solament n’hi ha prou de localitzar els documents, ja que sovint el que es busca estarà repartit en diferents documents. També cal alguna manera de poder <strong>consultar i manipular les dades</strong> que contenen els fitxers XML. Aquest sistema de consulta ha de ser capaç de fer cerques en els documents i modificar-ne dades si cal, però sempre mantenint uns <strong>mínims d’eficiència</strong>.
+</p>
+
+<p>
+Davant d’aquestes necessitats la solució se sol donar de dues maneres:
+</p>
+<ol>
+<li class="level1"><div class="li"> Com que majoritàriament les organitzacions ja tenen sistemes d’emmagatzematge organitzats de dades basats en <strong>dades relacionals</strong> una possible solució podria ser <strong>convertir els fitxers XML a dades relacionals</strong>:</div>
+<ul>
+<li class="level2"><div class="li"> L’emmagatzematge de dades serà totalment organitzat i centralitzat en un punt on ja hi ha les altres dades de l’organització.</div>
+</li>
+<li class="level2"><div class="li"> El seu llenguatge de consulta, SQL, és molt conegut i es fa servir molt, de manera que no caldrà que els usuaris aprenguin un nou llenguatge.</div>
+</li>
+</ul>
+</li>
+<li class="level1"><div class="li"> Una altra solució consisteix a <strong>crear un sistema d’emmagatzematge pensat només per als fitxers XML</strong>. Són els sistemes coneguts com a bases de dades natives XML. Aquests:</div>
+<ul>
+<li class="level2"><div class="li"> Proporcionen un lloc per emmagatzemar ordenadament fitxers XML.</div>
+</li>
+<li class="level2"><div class="li"> Tenen el seu llenguatge de consulta propi: XQuery.</div>
+</li>
+</ul>
+</li>
+</ol>
+
+<p>
+Tot i que en la teoria és fàcil fer aquesta distinció, en la pràctica molt sovint les organitzacions fan servir sistemes d’emmagatzemament mixtos, en els quals desen en dades relacionals aquelles dades que han de ser emmagatzemades o consultades, i en XML aquelles dades que han de ser representades en entorns web o que s’han d’intercanviar o transportar a altres sistemes.
+</p>
+
+<p>
+L’objectiu d’aquest mòdul no és ser expert en bases de dades, per tant només veurem alguns exemples de coses que es poden fer en base de dades per treballar amb XML
+</p>
+
+<h2><a id="bases_de_dades_relacionals" >Bases de dades relacionals</a></h2>
+<div class="level2">
+
+<p>
+Gairebé totes les organitzacions tenen les seves dades organitzades amb algun sistema relacional, ja que els sistemes gestors de bases de dades s’han convertit en un element indispensable en el funcionament de les empreses. Es fan servir per controlar moltes de les dades de funcionament de les empreses: facturació, comptabilitat, estocs…
+</p>
+
+<p>
+Per tant, davant de l’aparició d’un nou tipus de dades, un dels raonaments fàcils seria: “si ja tenim un sistema d’organització de dades que funciona bé, per què no podem posar aquestes dades en el mateix sistema?”. D’aquesta manera, les dades que s’obtinguessin dels fitxers XML aconseguirien un sistema molt eficient d’emmagatzematge i un mètode de manipulació d’informació que ha estat molt provat durant molts anys i que coneix molta gent.
+</p>
+
+<p>
+La inclusió dels fitxers XML en els sistemes gestors de bases de dades  relacionals es pot fer de dues maneres:
+</p>
+<ol>
+<li class="level1"><div class="li"> Convertir les dades dels fitxers XML en dades relacionals:</div>
+<ul>
+<li class="level2"><div class="li"> Aquest sistema té l’avantatge que les dades, un cop dins del sistema relacional, seran idèntiques a les ja existents.</div>
+</li>
+<li class="level2"><div class="li"> L’inconvenient més important és que si torna a fer falta el document XML original pot ser molt difícil regenerar-lo, ja que sovint hi haurà informació sobre l’estructura XML que no s’emmagatzemarà.</div>
+</li>
+</ul>
+</li>
+<li class="level1"><div class="li"> Emmagatzemar els documents XML sencers en les bases de dades:</div>
+<ul>
+<li class="level2"><div class="li"> Es posaran els fitxers XML sencers en un camp d’una taula de la base de dades, de manera que serà com les altres dades.</div>
+</li>
+<li class="level2"><div class="li"> Per poder-hi treballar bé caldrà que la base de dades ofereixi alguna manera mitjanament eficient de poder fer cerques en el contingut dels documents XML. </div>
+</li>
+</ul>
+</li>
+</ol>
+
+</div>
+
+<h3><a id="convertir_les_dades_xml_en_relacionals" >Convertir les dades XML en relacionals</a></h3>
+<div class="level3">
+
+<p>
+Una solució que pot semblar senzilla però que en realitat no n’és tant consisteix a agafar les dades dels fitxers XML i transformar-les en dades relacionals. Un cop s’hagin incorporat les dades a la base de dades es podran eliminar els fitxers XML.
+</p>
+
+<p>
+
+</p>
+
+<p>
+Com que en el document XML ja hi ha definida l’estructura de les dades, i sovint els documents XML estaran associats a un vocabulari, tindrem que:
+</p>
+<ul>
+<li class="level1"><div class="li"> Generar l’estructura de taules relacionals es pot fer analitzant l’estructura del document XML.</div>
+</li>
+<li class="level1"><div class="li"> Es poden obtenir els camps de la definició del vocabulari o simplement observant el contingut del document XML.</div>
+</li>
+</ul>
+<div class="iocreference"><div class="ioccontent">
+<p>
+Vegeu XSLT en l’apartat “Conversió i adaptació de documents XML” d’aquesta unitat.
+</p>
+</div></div>
+<p>
+I a més hi ha sistemes que permeten transformar dades XML en altres tipus de fitxers (per exemple, <strong>XSLT</strong>).
+</p>
+<div class="iocexample"><div class="ioccontent"><p class="ioctitle"> Convertir un document XML en dades relacionals</p>
+<p>
+Si es parteix del document XML següent:
+</p>
+<pre class="code xml"><ol><li class="li1"><div class="de1"><span class="sc3"><span class="re1">&lt;?xml</span> <span class="re0">version</span>=<span class="st0">&quot;1.0&quot;</span><span class="re2">?&gt;</span></span></div></li><li class="li1"><div class="de1"><span class="sc3"><span class="re1">&lt;alumnes<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1">    <span class="sc3"><span class="re1">&lt;alumne<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1">         <span class="sc3"><span class="re1">&lt;nom<span class="re2">&gt;</span></span></span>Frederic<span class="sc3"><span class="re1">&lt;/nom<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1">         <span class="sc3"><span class="re1">&lt;cognom<span class="re2">&gt;</span></span></span>Pi<span class="sc3"><span class="re1">&lt;/cognom<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1">    <span class="sc3"><span class="re1">&lt;/alumne<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1">    <span class="sc3"><span class="re1">&lt;alumne<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1">         <span class="sc3"><span class="re1">&lt;nom<span class="re2">&gt;</span></span></span>Filomeno<span class="sc3"><span class="re1">&lt;/nom<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1">         <span class="sc3"><span class="re1">&lt;cognom<span class="re2">&gt;</span></span></span>Garcia<span class="sc3"><span class="re1">&lt;/cognom<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1">    <span class="sc3"><span class="re1">&lt;/alumne<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1"><span class="sc3"><span class="re1">&lt;/alumnes<span class="re2">&gt;</span></span></span></div></li></ol></pre>
+
+<p>
+És relativament senzill veure que l’estructura del document consisteix en una llista d’elements <code>&lt;alumne&gt;</code>. I que els <code>&lt;alumne&gt;</code> tindran dos camps de dades que són <code>&lt;nom&gt;</code> i <code>&lt;cognom&gt;</code>. 
+</p>
+
+<p>
+Per tant, l’estructura relacional d’aquest fitxer serà simplement crear una taula ‘alumne’ que tingui com a dades un nom i un cognom. Això és trivial amb l’ordre CREATE TABLE d’SQL:
+</p>
+<pre class="code sql"><ol><li class="li1"><div class="de1"><span class="kw1">CREATE</span> <span class="kw1">TABLE</span> alumne <span class="br0">&#40;</span>nom <span class="kw1">VARCHAR</span><span class="br0">&#40;</span><span class="nu0">30</span><span class="br0">&#41;</span><span class="sy0">,</span> cognom <span class="kw1">VARCHAR</span><span class="br0">&#40;</span><span class="nu0">30</span><span class="br0">&#41;</span><span class="br0">&#41;</span></div></li></ol></pre>
+
+<p>
+Obtenir les dades per emplenar la taula tampoc no ha de ser un problema gaire gran. Simplement cal fer <code>INSERT</code> de cada camp de dades:
+</p>
+<pre class="code sql"><ol><li class="li1"><div class="de1"><span class="kw1">INSERT</span> <span class="kw1">INTO</span> alumne <span class="kw1">VALUES</span><span class="br0">&#40;</span><span class="st0">&quot;Frederic&quot;</span><span class="sy0">,</span> <span class="st0">&quot;Pi&quot;</span><span class="br0">&#41;</span>;</div></li><li class="li1"><div class="de1"><span class="kw1">INSERT</span> <span class="kw1">INTO</span> alumne <span class="kw1">VALUES</span><span class="br0">&#40;</span><span class="st0">&quot;Filomeno&quot;</span><span class="sy0">,</span> <span class="st0">&quot;Garcia&quot;</span><span class="br0">&#41;</span>;</div></li></ol></pre>
+
+<p>
+Per no haver-ho de fer manualment el més fàcil seria crear una plantilla XSLT que faci la transformació del fitxer XML en les regles SQL.
+</p>
+</div></div>
+<p>
+A pesar de l’aparent senzillesa d’aquest sistema, no sempre és senzill fer aquesta conversió, ja que els sistemes relacionals i XML parteixen de conceptes bastant diferents:
+</p>
+<ul>
+<li class="level1"><div class="li"> El sistema relacional està basat en dades bidimensionals sense jerarquia ni ordre, mentre que el sistema XML està basat en arbres jeràrquics en què l’ordre és significant.</div>
+</li>
+<li class="level1"><div class="li"> En un document XML hi pot haver dades repetides, mentre que els sistemes relacionals fugen de les repeticions.</div>
+</li>
+<li class="level1"><div class="li"> Les relacions i les estructures dins dels documents XML no sempre són òbvies.</div>
+</li>
+<li class="level1"><div class="li"> Què passa si necessitem tenir el document XML de nou? Fer el procés invers no sempre és trivial. Un dels conceptes difícils és determinar quines dades eren atributs i quines elements.</div>
+</li>
+</ul>
+
+<p>
+Per tant, normalment aquest no és el sistema més aconsellable però és un sistema vàlid que pot ser útil en casos concrets.
+</p>
+
+</div>
+
+<h3><a id="sistemes_relacionals_amb_extensions_xml" >Sistemes relacionals amb extensions XML</a></h3>
+<div class="level3">
+
+<p>
+Fins a l’aparició d’XML pràcticament tothom emmagatzemava les dades que s’havien de consultar o modificar ràpidament per mitjà d’algun sistema relacional. Els sistemes gestors de bases de dades han estat durant anys els reis de l’administració de dades en les organitzacions.
+</p>
+
+<p>
+Però l’increment d’informació en XML que s’havia de poder consultar o que es requeria per fer  tasques que abans estaven reservades a les bases de dades relacionals ha provocat que s’hagi hagut d’incloure algun tipus de suport XML en els sistemes gestors de bases de dades.
+</p>
+
+<p>
+Tots els grans sistemes de bases de dades importants com Oracle, IBM DB2 o Microsoft SQL Server tenen algun tipus de suport per a XML, que normalment es concreta en el següent:
+</p>
+<ul>
+<li class="level1"><div class="li"> Permetre exportar les dades relacionals en algun format XML per transportar les dades.</div>
+</li>
+<li class="level1"><div class="li"> Tenir alguna manera de poder emmagatzemar documents XML com a camps en taules relacionals.</div>
+</li>
+<li class="level1"><div class="li"> Permetre fer cerques i canvis en els documents XML emmagatzemats.</div>
+</li>
+<li class="level1"><div class="li"> Generar XML a partir de les dades relacionals de la base de dades.</div>
+</li>
+</ul>
+<div class="iocnote"><div class="ioccontent">
+<p>
+A pesar que SQL/XML forma part de l’estàndard SQL, no tots els gestors de bases de dades el suporten. 
+</p>
+</div></div>
+<p>
+Com que SQL (el llenguatge de consulta de dades relacional per excel·lència) no tenia suport per a XML el 2003, es va modificar l’estàndard del llenguatge SQL per afegir l’<strong>extensió SQL/XML</strong>.
+</p>
+
+</div>
+
+<h4><a id="sql_xml" >SQL/XML</a></h4>
+<div class="level4">
+
+<p>
+SQL/XML és una extensió de l’estàndard SQL que permet treballar amb el llenguatge XML per mitjà d’instruccions SQL.
+</p>
+
+<p>
+Aquesta extensió va ser desenvolupada per un grup en el qual hi havia les grans empreses de bases de dades (Microsoft, Oracle, IBM, SyBase, DataDirect Tecnologies…) i ja està implementada en algun sistema de bases de dades.
+</p>
+<div class="iocnote"><div class="ioccontent">
+<p>
+A pesar de participar en l’elaboració de l’estàndard, Microsoft va anunciar que no tenia intenció d’incorporar SQL/XML en el Microsoft SQL Server. En comptes d’això, el Microsoft SQL Server fa servir un sistema propi anomenat Microsoft SQLXML o OPENXML per treballar amb SQL i XML.
+</p>
+</div></div>
+<p>
+SQL/XML defineix tota una sèrie de funcions per a publicació de fitxers XML a partir de dades relacionals, defineix un tipus de dades XML i una manera de consultar i manipular les dades XML emmagatzemades.
+</p>
+
+</div>
+
+<h5><a id="sql_xml_a_oracle" >SQL/XML a Oracle</a></h5>
+<div class="level5">
+
+<p>
+Oracle és un dels sistemes gestors de bases de dades més importants del mercat i, per tant, no podia no donar suport als documents XML. Per fer-ho defineix el tipus de dades <code>XMLType</code>, que serveix per emmagatzemar XML com si es tractés d’un tipus de dades més en les taules. 
+</p>
+
+<p>
+Per tant, fent servir XMLType es pot crear una taula amb un camp amb documents XML i treballar-hi com si fossin dades relacionals normals.
+</p>
+<pre class="code sql"><ol><li class="li1"><div class="de1"><span class="kw1">CREATE</span> <span class="kw1">TABLE</span> alumnes<span class="br0">&#40;</span>ID <span class="kw1">INT</span> <span class="kw1">NOT</span> <span class="kw1">NULL</span><span class="sy0">,</span> document XMLTYPE<span class="br0">&#41;</span>;</div></li></ol></pre>
+
+<p>
+En la <span class="figref"><a href="#fig130"><span>figura</span></a></span> podem veure la descripció d’una taula SQL que conté XML en Oracle.
+</p>
+<div class="iocfigure"><a name="fig130"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Descripció de la taula amb un camp XMLType
+
+</figcaption><img src="../media/oraclexml.png" alt="" /></figure>
+</div>
+<p>
+XMLType permet emmagatzemar els documents XML amb la definició de l’esquema o sense.
+</p>
+<ol>
+<li class="level1"><div class="li"> Amb l’esquema XSD el sistema pot saber de quin tipus són les dades de cada element XML, i per tant, internament pot organitzar les dades de manera que sigui possible fer-hi cerques més eficients. A més, en conèixer el contingut de les etiquetes es podran fer operacions amb aquestes de la mateixa manera que es fa amb les altres dades</div>
+</li>
+<li class="level1"><div class="li"> Si no es proporciona l’esquema els XML seran tractats com un camp de text i les cerques seran menys eficients.</div>
+</li>
+</ol>
+
+<p>
+L’entrada de dades XML a una taula Oracle es pot fer amb la instrucció habitual però especificant el camp XML amb el tipus XMLTYPE.
+</p>
+<pre class="code sql"><ol><li class="li1"><div class="de1"><span class="kw1">INSERT</span> <span class="kw1">INTO</span> alumnes <span class="kw1">VALUES</span> <span class="br0">&#40;</span><span class="nu0">1</span><span class="sy0">,</span> </div></li><li class="li1"><div class="de1">                  XMLTYPE<span class="br0">&#40;</span><span class="st0">'&lt;persona&gt;&lt;nom&gt;Pere&lt;/nom&gt;&lt;/persona&gt;'</span><span class="br0">&#41;</span><span class="br0">&#41;</span>;</div></li></ol></pre>
+
+<p>
+També es poden consultar els valors XML de la manera habitual (<span class="figref"><a href="#fig131"><span>figura</span></a></span>).
+</p>
+<div class="iocfigure"><a name="fig131"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Consulta dels valors de la base de dades
+
+</figcaption><img src="../media/oraclexml2.png" alt="" /></figure>
+</div>
+<p>
+Per fer cerques Oracle proporciona una sèrie de funcions que permeten que a un camp XML se li puguin extreure dades fent servir XPath, comprovar l’existència de determinats nodes, crear-hi nodes nous, etc…
+</p>
+
+<p>
+Per exemple, es poden extreure tots els elements <code>&lt;nom&gt;</code> d’un camp XML d’una taula fent servir una ordre com la següent (<span class="figref"><a href="#fig132"><span>figura</span></a></span>):
+</p>
+<pre class="code sql"><ol><li class="li1"><div class="de1"><span class="kw1">SELECT</span> <span class="kw1">EXTRACT</span><span class="br0">&#40;</span>document<span class="sy0">,</span><span class="st0">'//nom/text()'</span><span class="br0">&#41;</span> <span class="st0">&quot;noms&quot;</span></div></li><li class="li1"><div class="de1"><span class="kw1">FROM</span> alumnes;</div></li></ol></pre>
+<div class="iocfigure"><a name="fig132"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Consulta SQL amb XPath
+
+</figcaption><img src="../media/oraclexml3.png" alt="" /></figure>
+</div>
+<p>
+També pot caldre generar documents XML a partir de les dades que hi ha emmagatzemades en la base de dades. Oracle ho pot fer de diverses maneres:
+</p>
+<ul>
+<li class="level1"><div class="li"> Per mitjà d’<strong>SQL/XML</strong>.</div>
+</li>
+<li class="level1"><div class="li"> Per mitjà del paquet <strong>DBMS_XMLGEN</strong>, que permet crear XML a partir de consultes.</div>
+</li>
+<li class="level1"><div class="li"> Amb la funció <strong>SYS_XMLGEN</strong>, que crea un document XML per a cada registre resultat d’una consulta.</div>
+</li>
+<li class="level1"><div class="li"> Fent servir la utilitat <strong>XSU</strong>, que és específica per desenvolupar en Java.</div>
+</li>
+</ul>
+
+<p>
+Per exemple, fent servir l’estàndard SQL/XML disposem d’una sèrie de funcions per generar contingut XML, especificant-les en la consulta SQL (<span class="tabref"><a href="#table59"><span>taula</span></a></span>).
+</p>
+<div class="ioctable ">
+<div class="titletable"><a name="table59"><span>Taula: </span></a>Algunes funcions SQL/XML</div>
+<div class="table"><table class="inline">
+	<tr class="row0">
+		<th class="col0 leftalign"> Funció        </th><th class="col1 leftalign"> Ús                                                </th>
+	</tr>
+	<tr class="row1">
+		<td class="col0 leftalign"> XMLELEMENT    </td><td class="col1 leftalign"> Permet crear un element amb un nom determinat     </td>
+	</tr>
+	<tr class="row2">
+		<td class="col0"> XMLATTRIBUTES </td><td class="col1"> Es fa servir per crear atributs dins d’un element </td>
+	</tr>
+	<tr class="row3">
+		<td class="col0 leftalign"> XMLCONCAT     </td><td class="col1 leftalign"> Concatena múltiples etiquetes                     </td>
+	</tr>
+	<tr class="row4">
+		<td class="col0 leftalign"> XMLFOREST     </td><td class="col1"> Crea elements XML a partir d’un grup de resultats </td>
+	</tr>
+</table></div>
+</div>
+<p>
+Amb aquestes funcions es pot generar XML a partir una taula SQL que contingui els camps <em>nom</em> i <em>cognom</em> com la (<span class="figref"><a href="#fig133"><span>figura</span></a></span>).
+</p>
+<div class="iocfigure"><a name="fig133"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Taula relacional ‘Professors’
+
+</figcaption><img src="../media/oraclexml4.png" alt="" /></figure>
+</div>
+<p>
+Amb la instrucció següent: 
+</p>
+<pre class="code sql"><ol><li class="li1"><div class="de1"><span class="kw1">SELECT</span> xmlelement<span class="br0">&#40;</span><span class="st0">'alumne'</span><span class="sy0">,</span> xmlforest<span class="br0">&#40;</span>a<span class="sy0">.</span>nom<span class="sy0">,</span> a<span class="sy0">.</span>cognom<span class="br0">&#41;</span><span class="br0">&#41;</span></div></li><li class="li1"><div class="de1"><span class="kw1">FROM</span> alumnes;</div></li></ol></pre>
+
+<p>
+La <span class="figref"><a href="#fig134"><span>figura</span></a></span> mostra quin és el resultat d’executar-la en l’Oracle.
+</p>
+<div class="iocfigure"><a name="fig134"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+ Generar XML a partir de dades relacionals
+
+</figcaption><img src="../media/oraclexml5.png" alt="" /></figure>
+</div>
+</div>
+
+<h2><a id="xquery" >XQuery</a></h2>
+<div class="level2">
+
+<p>
+Una de les necessitats més bàsiques a l’hora de poder fer cerques en les dades és disposar d’un llenguatge per fer consultes que sigui prou potent per poder cobrir les necessitats dels que l’han de fer servir. Per aquest motiu es va desenvolupar el llenguatge XQuery.
+</p>
+<div class="iocimportant"><div class="ioccontent">
+<p>
+XQuery és un llenguatge de consultes pensat per convertir-se en la manera estàndard de recuperar dades de col·leccions de documents XML. 
+</p>
+</div></div>
+<p>
+Es tracta d’un llenguatge funcional, de manera que en comptes de dir-li quines són les passes per fer una tasca el que es fa és avaluar les expressions contra el fitxer XML i generar un resultat. A diferència dels llenguatges de programació habituals, en XQuery s’especifica què és el que es vol i no la manera com ho ha de fer per obtenir-ho.
+</p>
+<div class="ioctext"><div class="ioccontent"><p class="ioctitle"> Xquery 3.0</p>
+<p>
+Ja està en desenvolupament una nova versió d’XQuery que permetrà incrementar la potència de les consultes tot afegint clàusules noves com <code>group by</code> o el control d’errors dinàmics. La podeu consultar a <a href="http://www.w3.org/TR/xquery-30/" class="urlextern" title="http://www.w3.org/TR/xquery-30/"  rel="nofollow">www.w3.org/TR/xquery-30</a>
+</p>
+</div></div>
+<p>
+Entre les característiques més interessants d’XQuery, aquest permet:
+</p>
+<ul>
+<li class="level1"><div class="li"> Seleccionar la informació segons criteris. Ordenar, agrupar, afegir dades.</div>
+</li>
+<li class="level1"><div class="li"> Filtrar la informació que es vulgui del flux de dades.</div>
+</li>
+<li class="level1"><div class="li"> Cercar informació en un document o en un grup de documents.</div>
+</li>
+<li class="level1"><div class="li"> Unir dades de múltiples documents.</div>
+</li>
+<li class="level1"><div class="li"> Transformar i reestructurar XML.</div>
+</li>
+<li class="level1"><div class="li"> No estar limitat a la cerca, ja que pot fer operacions numèriques i de manipulació de caràcters.</div>
+</li>
+<li class="level1"><div class="li"> Pot treballar amb espais de noms i amb documents definits per mitjà de DTD o XSD.</div>
+</li>
+</ul>
+
+<p>
+Una part important d’XQuery 1.0 és el llenguatge XPath 2.0, que és la part que li permet fer les seleccions d’informació i la navegació pel document.
+</p>
+
+</div>
+
+<h3><a id="processadors_xquery" >Processadors XQuery</a></h3>
+<div class="level3">
+
+<p>
+L’avaluació d’expressions XQuery requerirà disposar d’algun processador XQuery.
+</p>
+<div class="iocimportant"><div class="ioccontent">
+<p>
+Els processadors XQuery agafen els documents XML d’entrada i els apliquen una transformació per generar un resultat.
+</p>
+</div></div>
+<p>
+En la <span class="figref"><a href="#fig135"><span>figura</span></a></span> es pot veure quin és el funcionament d’un processador XQuery.
+</p>
+<div class="iocfigure"><a name="fig135"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Funcionament dels processadors XQuery
+
+</figcaption><img src="../media/asxm04u3_17.png" alt="" /></figure>
+</div>
+<p>
+Normalment els processadors XQuery venen en forma de biblioteques que es poden incorporar als programes. Molts sistemes de base de dades o programes incorporen aquestes biblioteques per poder donar suport XQuery en els seus productes.
+</p>
+
+</div>
+
+<h4><a id="saxon" >Saxon</a></h4>
+<div class="level4">
+
+<p>
+Probablement una de les biblioteques més usades i amb millor suport per a XQuery és <strong>Saxon</strong>. 
+</p>
+
+<p>
+En la seva versió gratuïta (Saxon Home Edition) a part de les biblioteques s’instal·len dos executables que serveixen per fer transformacions i per avaluar expressions XQuery: Transform i Query.
+</p>
+
+<p>
+Podem executar XQuery simplement executant l’executable amb el fitxer amb les expressions:
+</p>
+<pre class="code bash"><ol><li class="li1"><div class="de1">C:\<span class="sy0">&gt;</span> Query consulta.xquery</div></li></ol></pre>
+
+<p>
+Normalment la majoria de distribucions Linux tenen la versió lliure de Saxon en el seu repositori d’aplicacions. Per exemple, per al sistema Ubuntu, es troba en la biblioteca <strong>libsaxonb-java</strong> i la instrucció és <code>saxonb-xquery</code>.
+</p>
+<pre class="code bash"><ol><li class="li1"><div class="de1"><span class="co4">$ </span>saxonb-xquery consulta.xquery</div></li></ol></pre>
+
+</div>
+
+<h5><a id="kernow" >Kernow</a></h5>
+<div class="level5">
+<div class="iocfigure"><a name="fig136"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Avaluació amb el Kernow
+
+</figcaption><img src="../media/kernow.png" alt="" /></figure>
+</div>
+<p>
+El Kernow és un programa molt popular que fa servir Saxon i que permet fer avaluacions XQuery des d’un entorn gràfic per mitjà del que anomena <em>XQuery Sandbox</em> (<span class="figref"><a href="#fig136"><span>figura</span></a></span>). Es pot baixar des de <a href="http://kernowforsaxon.sourceforge.net/" class="urlextern" title="http://kernowforsaxon.sourceforge.net/"  rel="nofollow">http://kernowforsaxon.sourceforge.net/</a>.
+</p>
+
+<p>
+A part d’avaluar expressions XQuery aquest programa també ofereix altres possibilitats de la biblioteca Saxon, com fer transformacions XSLT, etc. 
+</p>
+
+</div>
+
+<h4><a id="xqilla" >XQilla</a></h4>
+<div class="level4">
+
+<p>
+L’XQilla és un programa que corre sobre la biblioteca Xerces i que permet fer avaluacions Xquery des de l’entorn d’instruccions.
+</p>
+<pre class="code bash"><ol><li class="li1"><div class="de1"><span class="co4">$ </span>xqilla consulta.xquery</div></li></ol></pre>
+
+</div>
+
+<h4><a id="altova" >Altova</a></h4>
+<div class="level4">
+
+<p>
+Altova és l’empresa que desenvolupa un editor XML anomenat Altova XMLSpy, que és bastant popular en entorns Windows. Entre les eines gratuïtes que ofereix hi ha unes utilitats per processar XQuery i XSLT des de consola.
+</p>
+
+<p>
+Es pot processar una petició XQuery amb:
+</p>
+<pre class="code">C:\&gt; altovaxml /xquery consulta.xquery</pre>
+
+</div>
+
+<h4><a id="editors_xml" >Editors XML</a></h4>
+<div class="level4">
+
+<p>
+Molts dels editors XML estan enllaçats amb biblioteques per processar XQuery i des de l’entorn mateix de l’editor permeten editar, provar i depurar les peticions XQuery (<span class="figref"><a href="#fig137"><span>figura</span></a></span>).
+</p>
+<div class="iocfigure"><a name="fig137"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Prova d’edicions XQuery en l’oXygen XML Editor
+
+</figcaption><img src="../media/oxygenxquery.png" alt="" /></figure>
+</div>
+<p>
+A més d’altres avantatges com els assistents d’ajuda, hi ha la possibilitat de fer consultes connectant amb bases de dades XML locals o remotes, etc.
+</p>
+
+</div>
+
+<h4><a id="bases_de_dades_xml" >Bases de dades XML</a></h4>
+<div class="level4">
+
+<p>
+Lògicament, com que les bases de dades natives fan servir XQuery com a base en  les seves consultes, resulten ideals per provar expressions XQuery.
+</p>
+
+<p>
+És corrent que aquestes tinguin alguna consola o un entorn en el qual es podran executar les ordres i veure’n el resultat.
+</p>
+
+</div>
+
+<h3><a id="consultes_xquery" >Consultes XQuery</a></h3>
+<div class="level3">
+
+<p>
+Generalment una consulta XQuery consistirà a aconseguir les dades amb les quals es vol treballar, filtrar-les i retornar el resultat com a XML. L’expressió més simple que es pot fer en XQuery és escriure un element buit:
+</p>
+<pre class="code">&lt;Hola /&gt;</pre>
+
+<p>
+En executar aquesta ordre el resultat serà el següent:
+</p>
+<pre class="code xml"><ol><li class="li1"><div class="de1"><span class="sc3"><span class="re1">&lt;?xml</span> <span class="re0">version</span>=<span class="st0">&quot;1.0&quot;</span> <span class="re2">?&gt;</span></span></div></li><li class="li1"><div class="de1"><span class="sc3"><span class="re1">&lt;Hola</span><span class="re2">/&gt;</span></span></div></li></ol></pre>
+
+<p>
+Aquesta és una de les característiques importants d’XQuery: que escriu literalment el text; mentre que si en el resultat s’hi defineixen etiquetes l’expressió només serà correcta si el resultat final és ben format. Per exemple, executar el següent en XQuery donarà un error, ja que el resultat final no és ben format:
+</p>
+<pre class="code xml"><ol><li class="li1"><div class="de1"><span class="sc3"><span class="re1">&lt;a<span class="re2">&gt;</span></span></span></div></li></ol></pre>
+
+<p>
+Però a pesar de poder escriure text, el més corrent és recuperar algun tipus de dades, avaluar-les i retornar el resultat amb un <code>return</code>. La instrucció <code>return</code> s’encarrega de generar les sortides.
+</p>
+
+<p>
+Una altra característica important és que <strong>fa servir variables</strong>. Per exemple la següent és una expressió XQuery correcta que assigna el valor 5 a <code>$a</code> i després en retorna el valor: 
+</p>
+<pre class="code">let $a:=5
+return 5</pre>
+
+<p>
+El resultat d’executar-ho amb XQuery serà:
+</p>
+<pre class="code xml"><ol><li class="li1"><div class="de1"><span class="sc3"><span class="re1">&lt;?xml</span> <span class="re0">version</span>=<span class="st0">&quot;1.0&quot;</span> <span class="re2">?&gt;</span></span></div></li><li class="li1"><div class="de1">5</div></li></ol></pre>
+
+<p>
+A diferència del que passa amb els literals, el <code>return</code> s’executa una vegada per cada valor que rebi, de manera que si hi hagués una expressió que es fes més d’un cop:
+</p>
+<pre class="code">for $a in (1,2)
+return &lt;Hola/&gt;</pre>
+
+<p>
+El <code>return</code> s’executaria més d’un cop:
+</p>
+<pre class="code xml"><ol><li class="li1"><div class="de1"><span class="sc3"><span class="re1">&lt;?xml</span> <span class="re0">version</span>=<span class="st0">&quot;1.0&quot;</span> <span class="re0">encoding</span>=<span class="st0">&quot;UTF-8&quot;</span><span class="re2">?&gt;</span></span></div></li><li class="li1"><div class="de1"><span class="sc3"><span class="re1">&lt;Hola</span><span class="re2">/&gt;</span></span></div></li><li class="li1"><div class="de1"><span class="sc3"><span class="re1">&lt;Hola</span><span class="re2">/&gt;</span></span></div></li></ol></pre>
+
+</div>
+
+<h3><a id="comentaris" >Comentaris</a></h3>
+<div class="level3">
+
+<p>
+Com en gairebé tots els llenguatges, en XQuery també es permeten els comentaris. Com que XQuery no té sintaxi XML els comentaris no es fan de la mateixa manera que en XML sinó que es defineix el seu sistema propi.
+</p>
+<div class="iocimportant"><div class="ioccontent">
+<p>
+Els comentaris es defineixen posant-los entre el símbol ”(:” i el ”:)”.
+</p>
+</div></div><pre class="code">(: Comentari :)</pre>
+
+<p>
+També es poden fer comentaris multilínia
+</p>
+<pre class="code">(:
+Això també
+és un comentari
+:)</pre>
+
+<p>
+Tot el que estigui dins d’un comentari serà ignorat pel processador.
+</p>
+
+</div>
+
+<h3><a id="carrega_de_documents" >Càrrega de documents</a></h3>
+<div class="level3">
+
+<p>
+Una de les coses que caldrà per interrogar un fitxer o fitxers XML és establir específicament a quins documents es vol fer la petició. La càrrega dels fitxers la podem fer amb dues funcions que podem veure a la <span class="tabref"><a href="#table60"><span>taula</span></a></span>.
+</p>
+<div class="ioctable ">
+<div class="titletable"><a name="table60"><span>Taula: </span></a>Funcions per carregar fitxers XML</div>
+<div class="table"><table class="inline">
+	<tr class="row0">
+		<th class="col0 leftalign"> Funció       </th><th class="col1 leftalign"> Ús                                                                                                                                         </th>
+	</tr>
+	<tr class="row1">
+		<td class="col0 leftalign"> doc()        </td><td class="col1 leftalign"> Dir quin és el document que volem consultar.                                                                                                </td>
+	</tr>
+	<tr class="row2">
+		<td class="col0"> collection() </td><td class="col1"> Especificar un grup de documents alhora. Generalment serà un document amb enllaços a d’altres o una adreça d’una base de dades XML. </td>
+	</tr>
+</table></div>
+</div>
+<p>
+Per tant, podem fer servir la funció <code>doc()</code> per carregar un document XML. Amb aquesta instrucció XQuery tornarà tot el document <em>alumnes.xml</em>.
+</p>
+<pre class="code">return doc(&quot;alumnes.xml&quot;)</pre>
+
+<p>
+XQuery conté completament XPath, de manera que es pot fer servir qualsevol expressió XPath per filtrar resultats quan faci falta, i per tant es pot fer que en en el mateix procés de càrrega s’hi apliqui un filtre. Per exemple una expressió XQuery que retorna quins són els noms dels alumnes del fitxer <em>alumnes.xml</em> pot ser la següent:
+</p>
+<pre class="code">return doc(&quot;alumnes.xml&quot;)//nom</pre>
+
+<p>
+Els documents poden estar en qualsevol lloc al qual es pugui arribar. En aquest cas, per exemple, l’expressió XQuery pot ser una <acronym title="Uniform Resource Locator">URL</acronym>:
+</p>
+<pre class="code">return doc(&quot;http://ioc.xtec.cat/alumnes.xml&quot;)</pre>
+
+</div>
+
+<h3><a id="variables" >Variables</a></h3>
+<div class="level3">
+
+<p>
+XQuery és un llenguatge pensat per fer cerca en documents XML, però no solament es pot fer servir per fer cerca, ja que té suport per fer operacions aritmètiques i per treballar amb cadenes de caràcters.
+</p>
+
+<p>
+En aquest exemple fem servir XQuery per fer una operació matemàtica senzilla:
+</p>
+<pre class="code">let $x := 5
+let $y := 4
+return $x + $y</pre>
+
+<p>
+El resultat serà:
+</p>
+<pre class="code xml"><ol><li class="li1"><div class="de1"><span class="sc3"><span class="re1">&lt;?xml</span> <span class="re0">version</span>=<span class="st0">&quot;1.0&quot;</span> <span class="re0">encoding</span>=<span class="st0">&quot;UTF-8&quot;</span><span class="re2">?&gt;</span></span></div></li><li class="li1"><div class="de1">9</div></li></ol></pre>
+
+<p>
+Una característica d’XQuery que el diferencia d’altres llenguatges de cerca és que <strong>disposa de variables</strong>:
+</p>
+<ul>
+<li class="level1"><div class="li"> Les variables en XQuery s’identifiquen perquè comencen sempre amb el símbol <code>$</code>.</div>
+</li>
+<li class="level1"><div class="li"> Poden contenir qualsevol valor: literals numèrics o caràcters, seqüències de nodes…</div>
+</li>
+<li class="level1"><div class="li"> La instrucció per assignar valors a una variable és <strong><code>let</code></strong>.</div>
+</li>
+</ul>
+
+<p>
+Un dels usos fonamentals de les variables és emmagatzemar elements per poder-los fer servir posteriorment. En l’exemple següent s’emmagatzemen els elements <code>&lt;nom&gt;</code> en la variable <code>$alumnes</code> i després en retorna la quantitat d’alumnes:
+</p>
+<pre class="code">let $alumnes := doc(&quot;alumnes.xml&quot;)//alumnes/nom
+return count($alumnes)</pre>
+
+<p>
+Es poden aplicar filtres XPath a les variables:
+</p>
+<pre class="code">let $tot := doc(&quot;classe1.xml&quot;)
+let $profe := $tot//professor
+let $alum := $tot//alumne</pre>
+
+<p>
+Els valors de les variables els podrem comparar amb els operadors de comparació habituals que podem veure a la <span class="tabref"><a href="#table61"><span>taula</span></a></span>.
+</p>
+<div class="ioctable ">
+<div class="titletable"><a name="table61"><span>Taula: </span></a>Operadors de comparació</div>
+<div class="table"><table class="inline">
+	<tr class="row0">
+		<th class="col0"> Operador </th><th class="col1"> Operador2 </th><th class="col2 leftalign"> Ús                       </th>
+	</tr>
+	<tr class="row1">
+		<td class="col0 centeralign">    =     </td><td class="col1 centeralign">    eq     </td><td class="col2 leftalign"> Dos valors són iguals    </td>
+	</tr>
+	<tr class="row2">
+		<td class="col0 centeralign">    !=    </td><td class="col1 centeralign">    ne     </td><td class="col2"> Dos valors són diferents </td>
+	</tr>
+	<tr class="row3">
+		<td class="col0 centeralign">    &gt;     </td><td class="col1 centeralign">    gt     </td><td class="col2 leftalign"> És més gran que l’altre  </td>
+	</tr>
+	<tr class="row4">
+		<td class="col0 centeralign">    &gt;=    </td><td class="col1 centeralign">    ge     </td><td class="col2 leftalign"> És més gran o igual      </td>
+	</tr>
+	<tr class="row5">
+		<td class="col0 centeralign">    &lt;     </td><td class="col1 centeralign">    lt     </td><td class="col2 leftalign"> Més petit                </td>
+	</tr>
+	<tr class="row6">
+		<td class="col0 centeralign">    ⇐    </td><td class="col1 centeralign">    le     </td><td class="col2 leftalign"> Més petit o igual        </td>
+	</tr>
+</table></div>
+</div>
+<p>
+Els operadors <code>eq</code>, <code>ne</code>, <code>gt</code>, <code>ge</code>, <code>lt</code> i <code>le</code> només es poden fer servir per comparar valors individuals, i per tant només es podran fer servir si hi ha un esquema definit.
+</p>
+
+</div>
+
+<h3><a id="expressions_avaluables" >Expressions avaluables</a></h3>
+<div class="level3">
+
+<p>
+XQuery està pensat per poder mesclar les consultes amb qualsevol altre tipus de contingut. Si es mescla amb contingut, les expressions que s’hagin d’avaluar s’han de col·locar entre claus ”{…}”. 
+</p>
+
+<p>
+Per exemple, podem mesclar <acronym title="HyperText Markup Language">HTML</acronym> i XQuery per tal que el processador XQuery generi una pàgina web amb les dades d’un document XML.
+</p>
+<pre class="code html4strict"><ol><li class="li1"><div class="de1"><span class="sc2">&lt;<a href="http://december.com/html/4/element/html.html"><span class="kw2">html</span></a>&gt;</span></div></li><li class="li1"><div class="de1">   <span class="sc2">&lt;<a href="http://december.com/html/4/element/head.html"><span class="kw2">head</span></a>&gt;&lt;<a href="http://december.com/html/4/element/title.html"><span class="kw2">title</span></a>&gt;</span>Llista de classe<span class="sc2">&lt;<span class="sy0">/</span><a href="http://december.com/html/4/element/title.html"><span class="kw2">title</span></a>&gt;&lt;<span class="sy0">/</span><a href="http://december.com/html/4/element/head.html"><span class="kw2">head</span></a>&gt;</span></div></li><li class="li1"><div class="de1">   <span class="sc2">&lt;<a href="http://december.com/html/4/element/body.html"><span class="kw2">body</span></a>&gt;</span></div></li><li class="li1"><div class="de1">   <span class="sc2">&lt;<a href="http://december.com/html/4/element/h1.html"><span class="kw2">h1</span></a>&gt;</span>     </div></li><li class="li1"><div class="de1">{</div></li><li class="li1"><div class="de1">   doc(&quot;classe1.xml&quot;)//assignatura</div></li><li class="li1"><div class="de1">}</div></li><li class="li1"><div class="de1">   <span class="sc2">&lt;<span class="sy0">/</span><a href="http://december.com/html/4/element/h1.html"><span class="kw2">h1</span></a>&gt;</span></div></li><li class="li1"><div class="de1">   <span class="sc2">&lt;<span class="sy0">/</span><a href="http://december.com/html/4/element/body.html"><span class="kw2">body</span></a>&gt;</span></div></li><li class="li1"><div class="de1">   <span class="sc2">&lt;<span class="sy0">/</span><a href="http://december.com/html/4/element/html.html"><span class="kw2">html</span></a>&gt;</span></div></li></ol></pre>
+
+<p>
+En mesclar contingut, el processador XQuery només avaluarà les instruccions que estiguin dins de les claus, i per tant deixarà les etiquetes <acronym title="HyperText Markup Language">HTML</acronym> tal com estan.
+</p>
+
+</div>
+
+<h4><a id="creacio_d_elements_i_atributs" >Creació d&#039;elements i atributs</a></h4>
+<div class="level4">
+
+<p>
+Fent servir les expressions avaluables és fàcil crear nous elements.
+</p>
+<pre class="code">&lt;modul&gt;
+  { doc(&quot;classes.xml&quot;)//modul/text()} 
+&lt;/modul&gt;</pre>
+
+<p>
+També es poden crear atributs (s’ha d’anar en compte de no deixar-se les cometes al voltant del valor que obtindran els atributs).
+</p>
+<pre class="code">&lt;modul nom=&quot;{doc(&quot;classes.xml&quot;)//modul/text()}&quot;/&gt;</pre>
+
+<p>
+Una manera alternativa i més potent de definir elements i atributs és fer servir les paraules clau <strong><code>element</code></strong> i <strong><code>attribute</code></strong>. Aquestes instruccions permeten crear elements i definir-ne el contingut especificant-lo dins de les claus.
+</p>
+<pre class="code">element modul {
+}</pre>
+
+<p>
+Crearia un element <code>&lt;modul&gt;</code> buit:
+</p>
+<pre class="code xml"><ol><li class="li1"><div class="de1"><span class="sc3"><span class="re1">&lt;modul</span> <span class="re2">/&gt;</span></span></div></li></ol></pre>
+
+<p>
+Si volem crear nous elements o atributs dins d’un element definit d’aquesta manera s’han d’especificar dins de les claus. Per exemple, el codi següent:
+</p>
+<pre class="code">element modul {
+    attribute nom {&quot;Llenguatges de marques&quot;},
+    element alumnes { }
+}</pre>
+
+<p>
+Generarà el següent:
+</p>
+<pre class="code xml"><ol><li class="li1"><div class="de1"><span class="sc3"><span class="re1">&lt;modul</span> <span class="re0">nom</span>=<span class="st0">&quot;Llenguatges de marques&quot;</span><span class="re2">&gt;</span></span></div></li><li class="li1"><div class="de1">    <span class="sc3"><span class="re1">&lt;alumnes</span> <span class="re2">/&gt;</span></span></div></li><li class="li1"><div class="de1"><span class="sc3"><span class="re1">&lt;/modul<span class="re2">&gt;</span></span></span></div></li></ol></pre>
+
+<p>
+No hi ha cap limitació a l’hora d’imbricar els elements i atributs per generar resultats tan complexos com calgui, i en qualsevol moment s’hi pot posar una expressió XQuery.
+</p>
+<pre class="code">element modul {
+   attribute nom { doc(&quot;classe.xml&quot;)//modul/text() }
+}</pre>
+
+</div>
+
+<h3><a id="expressions_flwor" >Expressions FLWOR</a></h3>
+<div class="level3">
+
+<p>
+Les expressions FLWOR són la part més potent d’XQuery. Estan formades per cinc instruccions opcionals que permeten fer les consultes i alhora processar-les per seleccionar els ítems que interessin d’una seqüència (<span class="tabref"><a href="#table62"><span>taula</span></a></span>).
+</p>
+<div class="ioctable ">
+<div class="titletable"><a name="table62"><span>Taula: </span></a>Expressions FLWOR</div>
+<div class="table"><table class="inline">
+	<tr class="row0">
+		<th class="col0"> Caràcter </th><th class="col1 leftalign"> Comanda  </th><th class="col2 leftalign"> Ús                                                    </th>
+	</tr>
+	<tr class="row1">
+		<td class="col0 centeralign">    f     </td><td class="col1 leftalign"> <code>for</code>      </td><td class="col2"> Permet passar d’un element a un altre de la seqüència </td>
+	</tr>
+	<tr class="row2">
+		<td class="col0 centeralign">    l     </td><td class="col1 leftalign"> <code>let</code>      </td><td class="col2 leftalign"> Serveix per assignar valors a una variable            </td>
+	</tr>
+	<tr class="row3">
+		<td class="col0 centeralign">    w     </td><td class="col1 leftalign"> <code>where</code>    </td><td class="col2 leftalign"> Permet filtrar els resultats segons condicions        </td>
+	</tr>
+	<tr class="row4">
+		<td class="col0 centeralign">    o     </td><td class="col1"> <code>order by</code> </td><td class="col2 leftalign"> Usat per ordenar els resultats abans de mostrar-los   </td>
+	</tr>
+	<tr class="row5">
+		<td class="col0 centeralign">    r     </td><td class="col1 leftalign"> <code>return</code>   </td><td class="col2 leftalign"> Retorna el resultat de tota l’expressió              </td>
+	</tr>
+</table></div>
+</div>
+</div>
+
+<h4><a id="for__return" >&quot;for ... return&quot;</a></h4>
+<div class="level4">
+
+<p>
+La instrucció <code>for</code> es fa servir per avaluar individualment cada un dels resultats d’una seqüència de nodes. En un <code>for</code> es defineixen dues coses:
+</p>
+<ul>
+<li class="level1"><div class="li"> Una variable, que serà la que anirà agafant els resultats de la seqüència un per un.</div>
+</li>
+<li class="level1"><div class="li"> La paraula clau <code>in</code>, en la qual es defineix quina és la seqüència d’elements per processar.</div>
+</li>
+</ul>
+
+<p>
+La manera més senzilla d’expressió FLWOR és combinar el <code>for</code> amb el <code>return</code> per retornar els valors obtinguts de manera seqüencial:
+</p>
+<pre class="code">for $i in (&#039;Hola&#039;, &#039;Adéu&#039;)
+return $i</pre>
+
+<p>
+Generarà:
+</p>
+<pre class="code">Hola Adéu</pre>
+
+<p>
+Les seqüències de valors poden ser de qualsevol tipus. Per exemple, poden ser nombres:
+</p>
+<pre class="code">for $i in (1,2,3)
+return $i*$i</pre>
+
+<p>
+Que retorna:
+</p>
+<pre class="code">1 4 9</pre>
+
+<p>
+O bé una seqüència de nodes. Per exemple amb l’expressió següent capturem una seqüència de nodes <code>&lt;alumne&gt;</code> i els fem servir per obtenir-ne el cognom:
+</p>
+<pre class="code">for $alumne in doc(&quot;classe.xml&quot;)//alumne
+return &lt;alumne&gt; { $alumne/cognom } &lt;/alumne&gt;</pre>
+
+<p>
+El resultat serà quelcom així:
+</p>
+<pre class="code xml"><ol><li class="li1"><div class="de1"><span class="sc3"><span class="re1">&lt;?xml</span> <span class="re0">version</span>=<span class="st0">&quot;1.0&quot;</span> <span class="re0">encoding</span>=<span class="st0">&quot;UTF-8&quot;</span><span class="re2">?&gt;</span></span></div></li><li class="li1"><div class="de1"><span class="sc3"><span class="re1">&lt;alumne<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1">   <span class="sc3"><span class="re1">&lt;cognom<span class="re2">&gt;</span></span></span>Pi<span class="sc3"><span class="re1">&lt;/cognom<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1"><span class="sc3"><span class="re1">&lt;/alumne<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1"><span class="sc3"><span class="re1">&lt;alumne<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1">   <span class="sc3"><span class="re1">&lt;cognom<span class="re2">&gt;</span></span></span>Garcia<span class="sc3"><span class="re1">&lt;/cognom<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1"><span class="sc3"><span class="re1">&lt;/alumne<span class="re2">&gt;</span></span></span></div></li></ol></pre>
+
+<p>
+S’hi pot veure que els valors del <code>return</code> s’han anat processant un per un i per aquest motiu es repeteixen les etiquetes <code>&lt;alumne&gt;</code>.
+</p>
+
+<p>
+Un aspecte important és que no cal que el <code>for</code> sigui la primera expressió de la consulta. També es pot posar com a paràmetre en una funció XPath.
+</p>
+
+<p>
+Per exemple, l’expressió següent ens tornarà el nombre d’alumnes:
+</p>
+<pre class="code">count (
+ for $alumne in doc(&quot;alumnes.xml&quot;)//nom
+ return $alumne
+)</pre>
+
+</div>
+
+<h5><a id="for__at" >&quot;for ... at&quot;</a></h5>
+<div class="level5">
+
+<p>
+En el <code>for</code> es pot incloure l’operador <strong><code>at</code></strong>, que permet obtenir la posició del node que s’està processant. Amb aquest operador es pot fer que surti el número d’ordre en els resultats.
+</p>
+<pre class="code">for $alumne at $pos in doc(&quot;classe.xml&quot;)//alumne
+return &lt;alumne numero=&quot;{$pos}&quot;&gt;
+         { $alumne/cognom/text() }
+       &lt;/alumne&gt;</pre>
+
+<p>
+Que donarà:
+</p>
+<pre class="code">&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;alumne numero=&quot;1&quot;&gt;Pi&lt;/alumne&gt;
+&lt;alumne numero=&quot;2&quot;&gt;Garcia&lt;/alumne&gt;
+&lt;alumne numero=&quot;3&quot;&gt;Puigdevall&lt;/alumne&gt;</pre>
+
+</div>
+
+<h5><a id="for_amb_multiples_variables" >&quot;for&quot; amb múltiples variables</a></h5>
+<div class="level5">
+
+<p>
+Fins ara només s’ha fet servir una variable en el <code>for</code> però se n’hi poden posar tantes com faci falta separant-les per comes:
+</p>
+<pre class="code">&lt;resultats&gt;
+{
+for $tot in doc(&quot;classe.xml&quot;)/classe,
+    $nom in $tot/alumnes,
+    $modul in $tot/assignatura/text()
+return
+   &lt;modul nom=&quot;{ $modul }&quot;
+          alumnes=&quot;{ count($nom/alumne)}&quot;&gt;
+         { $nom/alumne/nom }
+   &lt;/modul&gt;
+}  
+&lt;/resultats&gt;</pre>
+
+<p>
+Que donarà el resultat següent:
+</p>
+<pre class="code xml"><ol><li class="li1"><div class="de1"><span class="sc3"><span class="re1">&lt;?xml</span> <span class="re0">version</span>=<span class="st0">&quot;1.0&quot;</span> <span class="re0">encoding</span>=<span class="st0">&quot;UTF-8&quot;</span><span class="re2">?&gt;</span></span></div></li><li class="li1"><div class="de1"><span class="sc3"><span class="re1">&lt;resultats<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1">   <span class="sc3"><span class="re1">&lt;modul</span> <span class="re0">alumnes</span>=<span class="st0">&quot;3&quot;</span> <span class="re0">nom</span>=<span class="st0">&quot;Llenguatges de marques&quot;</span><span class="re2">&gt;</span></span></div></li><li class="li1"><div class="de1">      <span class="sc3"><span class="re1">&lt;nom<span class="re2">&gt;</span></span></span>Frederic<span class="sc3"><span class="re1">&lt;/nom<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1">      <span class="sc3"><span class="re1">&lt;nom<span class="re2">&gt;</span></span></span>Filomeno<span class="sc3"><span class="re1">&lt;/nom<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1">      <span class="sc3"><span class="re1">&lt;nom<span class="re2">&gt;</span></span></span>Manel<span class="sc3"><span class="re1">&lt;/nom<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1">   <span class="sc3"><span class="re1">&lt;/modul<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1"><span class="sc3"><span class="re1">&lt;/resultats<span class="re2">&gt;</span></span></span></div></li></ol></pre>
+
+</div>
+
+<h5><a id="for_niuat" >&quot;for&quot; niuat</a></h5>
+<div class="level5">
+<div class="iocnote"><div class="ioccontent">
+<p>
+Imbricant les instruccions <code>for</code> entre elles es poden aconseguir el que SQL anomena <strong><em>outer joins</em></strong>. O sigui que es retonaran sempre tots els resultats de la primera consulta i, només en el cas que hi hagi alguna relació, s’uniran amb els de la segona consulta.
+</p>
+</div></div>
+<p>
+Les ordres <strong>for</strong> es poden imbricar entre elles d’una manera similar a com ho fa SQL per poder aconseguir resultats més complexos que es basin en els resultats obtinguts anteriorment. 
+</p>
+<pre class="code">for $selec in doc(&quot;classe.xml&quot;)//alumne
+return 
+&lt;persona&gt;
+    { $selec/nom }
+    {
+        for $selec2 in $selec
+        return $selec2//cognom
+    }
+&lt;/persona&gt;</pre>
+
+</div>
+
+<h4><a id="let" >let</a></h4>
+<div class="level4">
+
+<p>
+<code>let</code> permet declarar variables i assignar-los un valor. Sobretot es fa servir per emmagatzemar valors que s’han de fer servir més tard.
+</p>
+<pre class="code">let $num := 1
+let $nom := &quot;manel&quot;
+let $i := (1 to 3)</pre>
+
+<p>
+En les expressions FLWOR hi pot haver tants <code>let</code> com calgui.
+</p>
+<pre class="code">for $alumne in doc(&quot;notes.xml&quot;)//alumne
+let $nom := $alumne/nom
+let $nota := $alumne/nota
+return &lt;nom&gt;concat($nom,&quot;:&quot;,$nota)</pre>
+
+<p>
+S’ha d’anar amb compte amb <code>let</code> perquè el seu funcionament és molt diferent del de <code>for</code>:
+</p>
+<ul>
+<li class="level1"><div class="li"> <code>for</code> s’executa per a cada membre d’una seqüència.</div>
+</li>
+<li class="level1"><div class="li"> <code>let</code> fa referència al seu valor en conjunt. Si és una seqüència el que es processa són tots els valors de cop. </div>
+</li>
+</ul>
+
+<p>
+Podem veure la diferència amb un exemple. Aquesta instrucció amb <code>for</code>:
+</p>
+<pre class="code">for $selec in doc(&quot;classes.xml&quot;)//alumne
+return &lt;persona&gt;{$selec/nom}&lt;/persona&gt;</pre>
+
+<p>
+Dóna:
+</p>
+<pre class="code xml"><ol><li class="li1"><div class="de1"><span class="sc3"><span class="re1">&lt;?xml</span> <span class="re0">version</span>=<span class="st0">&quot;1.0&quot;</span> <span class="re0">encoding</span>=<span class="st0">&quot;UTF-8&quot;</span><span class="re2">?&gt;</span></span></div></li><li class="li1"><div class="de1"><span class="sc3"><span class="re1">&lt;persona<span class="re2">&gt;</span></span><span class="re1">&lt;nom<span class="re2">&gt;</span></span></span>Frederic<span class="sc3"><span class="re1">&lt;/nom<span class="re2">&gt;</span></span><span class="re1">&lt;/persona<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1"><span class="sc3"><span class="re1">&lt;persona<span class="re2">&gt;</span></span><span class="re1">&lt;nom<span class="re2">&gt;</span></span></span>Filomeno<span class="sc3"><span class="re1">&lt;/nom<span class="re2">&gt;</span></span><span class="re1">&lt;/persona<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1"><span class="sc3"><span class="re1">&lt;persona<span class="re2">&gt;</span></span><span class="re1">&lt;nom<span class="re2">&gt;</span></span></span>Manel<span class="sc3"><span class="re1">&lt;/nom<span class="re2">&gt;</span></span><span class="re1">&lt;/persona<span class="re2">&gt;</span></span></span></div></li></ol></pre>
+
+<p>
+I en canvi amb <code>let</code>:
+</p>
+<pre class="code">let $selec := doc(&quot;classes.xml&quot;)//alumne
+return &lt;persona&gt;{$selec/nom}&lt;/persona&gt;</pre>
+
+<p>
+Donarà:
+</p>
+<pre class="code">&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;persona&gt;
+   &lt;nom&gt;Frederic&lt;/nom&gt;
+   &lt;nom&gt;Filomeno&lt;/nom&gt;
+   &lt;nom&gt;Manel&lt;/nom&gt;
+&lt;/persona&gt;</pre>
+
+<p>
+Els resultats són bastant diferents! Es pot veure clarament que <code>let</code> ha tractat tots els valors de cop.
+</p>
+
+</div>
+
+<h4><a id="condicions" >Condicions</a></h4>
+<div class="level4">
+
+<p>
+La instrucció <strong><code>where</code></strong> és la part que indicarà quin filtre s’ha de posar a les dades rebudes abans d’enviar-les a la sortida del <code>return</code>. Normalment en el filtre es fa servir algun tipus de predicat XPath:
+</p>
+<pre class="code">for $alumne in doc(&quot;classe.xml&quot;)//alumne
+where $alumne/@aprovat=&quot;si&quot;
+return $alumne/nom</pre>
+
+<p>
+Com que XPath forma part d’XQuery moltes vegades el mateix filtre es pot definir de diverses maneres. Per exemple, aquesta expressió és equivalent a l’anterior:
+</p>
+<pre class="code">for $alumne in doc(&quot;classe.xml&quot;)//alumne[@aprovat=&quot;si&quot;]
+return $alumne/nom</pre>
+
+<p>
+En un <code>where</code> hi pot haver tantes condicions com calgui simplement encadenant-les amb les operacions lògiques <strong><code>and</code></strong>, <strong><code>or</code></strong> o <strong><code>not()</code></strong>. 
+</p>
+
+<p>
+Aquesta expressió retorna el cognom dels alumnes que han aprovat i que es diuen <em>Pere</em>:
+</p>
+<pre class="code">for $alumne in doc(&quot;classe.xml&quot;)//alumne
+where $alumne/@aprovat=&quot;si&quot; and nom=&quot;Pere&quot;
+return $alumne/cognom</pre>
+
+<p>
+El <code>where</code> afegeix més potència del que sembla, ja que ens permet fer els <strong><code>inner joins</code></strong> d’SQL en fitxers XML. Per exemple, a partir de dos fitxers amb les dades de dues classes diferents es poden obtenir només els alumnes que es repeteixen entre les dues classes amb:
+</p>
+<pre class="code">for $alum1 in doc(&quot;classe1.xml&quot;)//alumne
+let $alum2 in doc(&quot;classe2.xml&quot;)//alumne
+where $alum1 = $alum2
+return $alum1</pre>
+
+</div>
+
+<h5><a id="quantificadors_existencials" >Quantificadors existencials</a></h5>
+<div class="level5">
+
+<p>
+A vegades cal comprovar si algun o tots els elements d’una seqüència compleixen una determinada condició, i per això s’han definit les expressions quantificades. Amb les expressions quantificades es poden fer comprovacions sense haver de recórrer a comptadors (<span class="tabref"><a href="#table63"><span>taula</span></a></span>).
+</p>
+<div class="ioctable ">
+<div class="titletable"><a name="table63"><span>Taula: </span></a></div>
+<div class="table"><table class="inline">
+	<tr class="row0">
+		<th class="col0 leftalign"> Quantificador      </th><th class="col1 leftalign"> Serveix per                                                           </th>
+	</tr>
+	<tr class="row1">
+		<td class="col0"> <code>every .. satisfies</code> </td><td class="col1 leftalign"> Comprovar que tots els elements compleixin una condició determinada.   </td>
+	</tr>
+	<tr class="row2">
+		<td class="col0 leftalign"> <code>some .. satisfies</code>  </td><td class="col1"> Comprovar que algun dels elements de la llista compleixin la condició. </td>
+	</tr>
+</table></div>
+</div>
+<p>
+A aquestes expressions els passem una variable que capturarà el valor concret respecte al qual es vol fer la comprovació. Per exemple, amb aquesta expressió només donarà el nom de la classe si tots els alumnes de la seqüència tenen de cognom <em>Pi</em>:
+</p>
+<pre class="code">for $s in doc(&quot;classe.xml&quot;)//alumnes
+where some $e in $s//cognom satisfies ($e=&quot;Pi&quot;)
+return $s/modul</pre>
+
+<p>
+Canviant <code>every</code> per <code>some</code> retornarà el nom de la classe si algun dels alumnes es diu de cognom <em>Pi</em>”:
+</p>
+<pre class="code">for $s in doc(&quot;classe.xml&quot;)//alumnes
+where some $e in $s//cognom satisfies ($e=&quot;Pi&quot;)
+return $s/modul</pre>
+
+<p>
+Aquestes expressions per si soles no serveixen per filtrar contingut, ja que sempre retornen cert o fals. Per aquest motiu sempre se solen fer servir dins d’una clàusula <code>where</code>.
+</p>
+
+</div>
+
+<h4><a id="ordenacio" >Ordenació</a></h4>
+<div class="level4">
+
+<p>
+Una de les operacions habituals en les cerques és representar els resultats en un ordre determinat. Aquesta és la funció que fa <strong><em>order by</em></strong>.
+</p>
+
+<p>
+Es pot ordenar de manera ascendent amb <code>ascending</code> (que és el que fa per defecte) o bé descendent amb <code>descending</code>.
+</p>
+<pre class="code">for $alumne in doc(&quot;classe.xml&quot;)//alumne
+order by $alumne/cognom
+return $alumne</pre>
+
+<p>
+També es poden especificar diferents conceptes en l’ordenació. En aquest exemple els resultats s’ordenaran primer per cognom i després per nom:
+</p>
+<pre class="code">for $alumne in doc(&quot;classe.xml&quot;)//alumne
+order by $alumne/cognom, $alumne/nom
+return $alumne</pre>
+
+<p>
+En aquest altre el cognom s’ordena de manera descendent i el nom de manera ascendent.
+</p>
+<pre class="code">for $alumne in doc(&quot;classe.xml&quot;)//alumne
+order by $alumne/cognom descending, $alumne/nom ascending
+return $alumne</pre>
+
+<p>
+Per defecte ordena com si el contingut de les etiquetes fos text. Si cal obtenir una ordenació numèrica caldrà convertir els valors a nombres amb la funció d’XPath <code>number()</code>.
+</p>
+<pre class="code">for $alumne in doc(&quot;classe.xml&quot;)//alumne
+order by number($numero)
+return $alumne</pre>
+
+</div>
+
+<h3><a id="alternatives" >Alternatives</a></h3>
+<div class="level3">
+
+<p>
+La instrucció <strong><code>if</code></strong> ens permetrà fer una cosa o una altra segons si es compleix la condició especificada o no. Per exemple, podem fer una llista d’alumnes en què s’especifiqui si han aprovat o no a partir del valor que hi ha en l’element <code>&lt;nota&gt;</code>.
+</p>
+<pre class="code">let $doc := doc(&quot;classe1.xml&quot;)
+let $aprovat := 5
+for $b in $doc//alumne
+return
+if ($b/nota &gt;= 5) then
+&lt;data&gt;
+{ $b/nom/text() } està aprovat 
+&lt;/data&gt;
+else
+&lt;data&gt;
+{ $b/nom/text() } no està aprovat 
+&lt;/data&gt;</pre>
+
+<p>
+Això generarà el resultat següent:
+</p>
+<pre class="code xml"><ol><li class="li1"><div class="de1"><span class="sc3"><span class="re1">&lt;data<span class="re2">&gt;</span></span></span>Frederic està aprovat<span class="sc3"><span class="re1">&lt;/data<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1"><span class="sc3"><span class="re1">&lt;data<span class="re2">&gt;</span></span></span>Filomeno no està aprovat<span class="sc3"><span class="re1">&lt;/data<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1"><span class="sc3"><span class="re1">&lt;data<span class="re2">&gt;</span></span></span>Manel està aprovat<span class="sc3"><span class="re1">&lt;/data<span class="re2">&gt;</span></span></span></div></li></ol></pre>
+
+<p>
+La instrucció <strong><code>else</code></strong> és habitual en llenguatges de programació, però a diferència del que passa normalment, en XQuery, encara que no es vulgui fer res, en cas que la condició falli s’hi ha d’especificar l’<strong><code>else</code></strong>. Si no es vol que faci res es deixa en blanc.
+</p>
+<pre class="code">for $classe in doc(&quot;classe1.xml&quot;)//alumne
+return  if ($classe/nota &gt; 5) then 
+         &lt;aprovat/&gt;
+        else ()</pre>
+
+</div>
+
+<h3><a id="el_proleg_xquery" >El pròleg XQuery</a></h3>
+<div class="level3">
+
+<p>
+A pesar que en moltes expressions XQuery no s’especifica cap pròleg, les expressions XQuery estan formades per dues parts:
+</p>
+<ul>
+<li class="level1"><div class="li"> <strong>Pròleg</strong>: és una part opcional i serveix per donar informació al processador per saber com s’ha d’avaluar l’expressió. Exemples típics són declarar espais de noms, variables o funcions, importar esquemes, o definir com s’han de tractar els espais en blanc.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Cos</strong>: és on hi ha el que es vol fer amb l’expressió.</div>
+</li>
+</ul>
+
+<p>
+Un valor que se sol especificar en el pròleg és la versió d’XQuery que s’ha de fer servir en la consulta. És opcional, però si s’hi posa ha de ser la primera línia del fitxer.
+</p>
+<pre class="code">xquery version &quot;1.0&quot;;</pre>
+
+<p>
+També s’hi poden definir altres coses com informació sobre la consulta o dades que posteriorment es podran fer servir en el cos de l’expressió. 
+</p>
+
+<p>
+En aquest exemple, en la capçalera es passa informació al processador sobre com ha de tractar els espais, s’hi declara una variable <code>$alum</code> que contindrà una part del document XML i es defineix un espai de noms <code>ioc</code>. Les variables i l’espai de noms es poden fer servir en l’expressió.
+</p>
+<pre class="code">xquery version &quot;1.0&quot;;
+declare boundary-space preserve;
+declare namespace ioc=&quot;http://ioc.xtec.cat/alum&quot;;
+declare variable $alum := doc(&quot;alumnes.xml&quot;)//alumne;
+
+&lt;ioc:llista&gt;
+{
+   for $nom in $alum/nom
+   return &lt;alumne&gt;{$nom}&lt;/alumne&gt;
+}
+&lt;/ioc:llista&gt;</pre>
+
+<p>
+En executar la consulta el processador afegirà automàticament l’espai de noms al resultat de l’expressió en la definició de <code>&lt;llista&gt;</code>:
+</p>
+<pre class="code xml"><ol><li class="li1"><div class="de1"><span class="sc3"><span class="re1">&lt;?xml</span> <span class="re0">version</span>=<span class="st0">&quot;1.0&quot;</span> <span class="re0">encoding</span>=<span class="st0">&quot;UTF-8&quot;</span><span class="re2">?&gt;</span></span></div></li><li class="li1"><div class="de1"><span class="sc3"><span class="re1">&lt;ioc:llista</span> <span class="re0">xmlns:ioc</span>=<span class="st0">&quot;http://ioc.xtec.cat/alum&quot;</span><span class="re2">&gt;</span></span></div></li><li class="li1"><div class="de1">   <span class="sc3"><span class="re1">&lt;ioc:alumne<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1">      <span class="sc3"><span class="re1">&lt;nom<span class="re2">&gt;</span></span></span>Frederic<span class="sc3"><span class="re1">&lt;/nom<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1">   <span class="sc3"><span class="re1">&lt;/ioc:alumne<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1">   <span class="sc3"><span class="re1">&lt;ioc:alumne<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1">      <span class="sc3"><span class="re1">&lt;nom<span class="re2">&gt;</span></span></span>Filomeno<span class="sc3"><span class="re1">&lt;/nom<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1">   <span class="sc3"><span class="re1">&lt;/ioc:alumne<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1">   <span class="sc3"><span class="re1">&lt;ioc:alumne<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1">      <span class="sc3"><span class="re1">&lt;nom<span class="re2">&gt;</span></span></span>Manel<span class="sc3"><span class="re1">&lt;/nom<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1">   <span class="sc3"><span class="re1">&lt;/ioc:alumne<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1"><span class="sc3"><span class="re1">&lt;/ioc:llista<span class="re2">&gt;</span></span></span></div></li></ol></pre>
+
+<p>
+Un dels usos interessants del pròleg és que permet passar paràmetres a les expressions. Si es declara una variable com <code>external</code>, per poder executar la consulta s’haurà de proporcionar un valor a la variable:
+</p>
+<pre class="code">declare variable $entrada as xs:string external;
+
+&lt;resultat&gt;
+{ $entrada }
+&lt;/resultat&gt;</pre>
+
+<p>
+Per executar la consulta anterior amb la utilitat <code>Query</code> de Saxon s’haurà d’especificar el valor de la variable <code>entrada</code> de la manera següent:
+</p>
+<pre class="code">C:\&gt; Query prova.xquery entrada=Hola
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;resultat&gt;Hola&lt;/resultat&gt;</pre>
+
+<p>
+Un altre ús interessant del pròleg és que permet definir funcions:
+</p>
+<pre class="code">declare function quadrat($numero as xs:integer) return xs:integer
+{
+   return ($numero*$numero)
+};</pre>
+
+<p>
+Aquestes es poden cridar de la mateixa manera que les funcions normals d’XPath:
+</p>
+<pre class="code">quadrat($alumne/nota)</pre>
+
+</div>
+
+<h3><a id="actualitzacions_de_dades" >Actualitzacions de dades</a></h3>
+<div class="level3">
+
+<p>
+Un llenguatge que pretengui ser un estàndard de consulta ha de poder gestionar completament les dades, i per tant necessita alguna manera de fer consultes però també canviar, afegir o esborrar dades. XQuery 1.0 és bàsicament un llenguatge de consultes, i tot i que la majoria de les operacions que es fan en els sistemes de base de dades són consultes, necessita alguna manera de poder actualitzar les dades.
+</p>
+
+<p>
+Per aquest motiu en el <acronym title="World Wide Web Consortium">W3C</acronym> s’ha posat en marxa la creació d’un sistema d’actualitzacions anomenat <strong>xqupdate (XQuery Update Facility 1.0)</strong>, que ha de permetre a XQuery fer les actualitzacions. Alhora també hi ha altres iniciatives per crear un estàndard per actualitzar valors en sistemes XML com el que promociona el grup XMLDB, que s’anomena <strong>XUpdate (<em>XML update language</em>)</strong>.
+</p>
+
+<p>
+La falta d’existència d’un estàndard clar fa que els programes que implementen XQuery, si volen oferir la possibilitat de fer actualitzacions, no sempre tinguin clar quin sistema d’actualitzacions han de fer servir i es decantin pel que els agrada més, per incloure’n diversos o fins i tot per crear el seu propi sistema.
+</p>
+<div class="iocexample"><div class="ioccontent"><p class="ioctitle"> Fer servir XQuery per respondre preguntes sobre documents XML</p>
+<p>
+Partint d’aquest XML d’exemple que representa comandes de llibres:
+</p>
+<pre class="code xml"><ol><li class="li1"><div class="de1"><span class="sc3"><span class="re1">&lt;?xml</span> <span class="re0">version</span>=<span class="st0">&quot;1.0&quot;</span> <span class="re0">encoding</span>=<span class="st0">&quot;UTF-8&quot;</span><span class="re2">?&gt;</span></span></div></li><li class="li1"><div class="de1"><span class="sc3"><span class="re1">&lt;petici</span>ó <span class="re0">llibreria</span>=<span class="st0">&quot;Fantastica SL&quot;</span><span class="re2">&gt;</span></span></div></li><li class="li1"><div class="de1">    <span class="sc3"><span class="re1">&lt;data<span class="re2">&gt;</span></span></span>15-11-2011<span class="sc3"><span class="re1">&lt;/data<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1">    <span class="sc3"><span class="re1">&lt;autor<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1">        <span class="sc3"><span class="re1">&lt;nom<span class="re2">&gt;</span></span></span>Frédérik McCloud<span class="sc3"><span class="re1">&lt;/nom<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1">        <span class="sc3"><span class="re1">&lt;llibres<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1">            <span class="sc3"><span class="re1">&lt;llibre<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1">                <span class="sc3"><span class="re1">&lt;titol<span class="re2">&gt;</span></span></span>Les empentes<span class="sc3"><span class="re1">&lt;/titol<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1">                <span class="sc3"><span class="re1">&lt;quantitat<span class="re2">&gt;</span></span></span>2<span class="sc3"><span class="re1">&lt;/quantitat<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1">            <span class="sc3"><span class="re1">&lt;/llibre<span class="re2">&gt;</span></span></span>            </div></li><li class="li1"><div class="de1">        <span class="sc3"><span class="re1">&lt;/llibres<span class="re2">&gt;</span></span></span>        </div></li><li class="li1"><div class="de1">    <span class="sc3"><span class="re1">&lt;/autor<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1">    <span class="sc3"><span class="re1">&lt;autor<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1">        <span class="sc3"><span class="re1">&lt;nom<span class="re2">&gt;</span></span></span>Corsaro Levy<span class="sc3"><span class="re1">&lt;/nom<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1">        <span class="sc3"><span class="re1">&lt;llibres<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1">            <span class="sc3"><span class="re1">&lt;llibre<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1">                <span class="sc3"><span class="re1">&lt;titol<span class="re2">&gt;</span></span></span>Marxant de la font del gat<span class="sc3"><span class="re1">&lt;/titol<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1">                <span class="sc3"><span class="re1">&lt;quantitat<span class="re2">&gt;</span></span></span>2<span class="sc3"><span class="re1">&lt;/quantitat<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1">            <span class="sc3"><span class="re1">&lt;/llibre<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1">            <span class="sc3"><span class="re1">&lt;llibre<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1">                <span class="sc3"><span class="re1">&lt;titol<span class="re2">&gt;</span></span></span>Bèstia!<span class="sc3"><span class="re1">&lt;/titol<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1">                <span class="sc3"><span class="re1">&lt;quantitat<span class="re2">&gt;</span></span></span>2<span class="sc3"><span class="re1">&lt;/quantitat<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1">            <span class="sc3"><span class="re1">&lt;/llibre<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1">        <span class="sc3"><span class="re1">&lt;/llibres<span class="re2">&gt;</span></span></span>        </div></li><li class="li1"><div class="de1">    <span class="sc3"><span class="re1">&lt;/autor<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1">    <span class="sc3"><span class="re1">&lt;autor<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1">        <span class="sc3"><span class="re1">&lt;nom<span class="re2">&gt;</span></span></span>Marc Blairet<span class="sc3"><span class="re1">&lt;/nom<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1">        <span class="sc3"><span class="re1">&lt;llibres<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1">            <span class="sc3"><span class="re1">&lt;llibre<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1">                <span class="sc3"><span class="re1">&lt;titol<span class="re2">&gt;</span></span></span>Tres de tres<span class="sc3"><span class="re1">&lt;/titol<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1">                <span class="sc3"><span class="re1">&lt;quantitat<span class="re2">&gt;</span></span></span>3<span class="sc3"><span class="re1">&lt;/quantitat<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1">            <span class="sc3"><span class="re1">&lt;/llibre<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1">        <span class="sc3"><span class="re1">&lt;/llibres<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1">    <span class="sc3"><span class="re1">&lt;/autor<span class="re2">&gt;</span></span></span>    </div></li><li class="li1"><div class="de1"><span class="sc3"><span class="re1">&lt;/petici</span>ó<span class="re2">&gt;</span></span></div></li></ol></pre>
+
+<p>
+Es vol respondre la pregunta següent: <strong>de quins autors s’han demanat tres o més llibres?</strong>
+</p>
+
+<p>
+Per respondre aquesta pregunta el primer que cal és separar el document en blocs d’autor i processar-ne cada un de manera diferent. Per tant, es defineix un bucle amb un <code>for</code> per cada autor i s’escriu el nom per pantalla
+</p>
+<pre class="code">for $autor in doc(&quot;llibres.xml&quot;)//autor
+return $autor/nom</pre>
+
+<p>
+Si es passa l’expressió per un processador XQuery el resultat serà una llista de tots els autors:
+</p>
+<pre class="code xml"><ol><li class="li1"><div class="de1"><span class="sc3"><span class="re1">&lt;?xml</span> <span class="re0">version</span>=<span class="st0">&quot;1.0&quot;</span> <span class="re0">encoding</span>=<span class="st0">&quot;UTF-8&quot;</span><span class="re2">?&gt;</span></span></div></li><li class="li1"><div class="de1"><span class="sc3"><span class="re1">&lt;nom<span class="re2">&gt;</span></span></span>Frédérik McCloud<span class="sc3"><span class="re1">&lt;/nom<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1"><span class="sc3"><span class="re1">&lt;nom<span class="re2">&gt;</span></span></span>Corsaro Levy<span class="sc3"><span class="re1">&lt;/nom<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1"><span class="sc3"><span class="re1">&lt;nom<span class="re2">&gt;</span></span></span>Marc Blairet<span class="sc3"><span class="re1">&lt;/nom<span class="re2">&gt;</span></span></span></div></li></ol></pre>
+
+<p>
+Es vol definir una restricció amb la quantitat de llibres que s’han demanat de cada autor; per tant, ho podríem intentar fer amb el <code>where</code>
+</p>
+<pre class="code">for $autor in doc(&quot;llibres.xml&quot;)//autor
+where $autor/llibres/llibre/quantitat &gt;= 3
+return $autor/nom</pre>
+
+<p>
+Aquesta és la llista dels autors que tenen alguna petició de 3 o més llibres
+</p>
+<pre class="code xml"><ol><li class="li1"><div class="de1"><span class="sc3"><span class="re1">&lt;?xml</span> <span class="re0">version</span>=<span class="st0">&quot;1.0&quot;</span> <span class="re0">encoding</span>=<span class="st0">&quot;UTF-8&quot;</span><span class="re2">?&gt;</span></span></div></li><li class="li1"><div class="de1"><span class="sc3"><span class="re1">&lt;nom<span class="re2">&gt;</span></span></span>Marc Blairet<span class="sc3"><span class="re1">&lt;/nom<span class="re2">&gt;</span></span></span></div></li></ol></pre>
+
+<p>
+Però es pot veure que encara no és el demanat, ja que no surt l’autor Corsaro Levy, del qual s’han demanat dues unitats llibres diferents. Per tant, agrupem les quantitats per obtenir el resultat correcte
+</p>
+<pre class="code xml"><ol><li class="li1"><div class="de1">for $autor in doc(&quot;llibres.xml&quot;)//autor</div></li><li class="li1"><div class="de1">where sum($autor/llibres/llibre/quantitat) &gt;= 3</div></li><li class="li1"><div class="de1">return $autor/nom</div></li></ol></pre>
+
+<p>
+Ara el resultat sí que és el correcte:
+</p>
+<pre class="code xml"><ol><li class="li1"><div class="de1"><span class="sc3"><span class="re1">&lt;?xml</span> <span class="re0">version</span>=<span class="st0">&quot;1.0&quot;</span> <span class="re0">encoding</span>=<span class="st0">&quot;UTF-8&quot;</span><span class="re2">?&gt;</span></span></div></li><li class="li1"><div class="de1"><span class="sc3"><span class="re1">&lt;nom<span class="re2">&gt;</span></span></span>Corsaro Levy<span class="sc3"><span class="re1">&lt;/nom<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1"><span class="sc3"><span class="re1">&lt;nom<span class="re2">&gt;</span></span></span>Marc Blairet<span class="sc3"><span class="re1">&lt;/nom<span class="re2">&gt;</span></span></span></div></li></ol></pre>
+
+<p>
+Podem fer que el resultat sigui més “bonic” mostrant les quantitats venudes al costat de cada autor i ordenant de més a menys els resultats.
+</p>
+<pre class="code">for $autor in doc(&quot;llibres.xml&quot;)//autor 
+let $suma := sum($autor/llibres/llibre/quantitat)
+where $suma &gt;=3
+order by $suma descending
+return concat($autor/nom,&quot; : &quot;, $suma)</pre>
+
+<p>
+Es pot veure que per no haver d’escriure diverses vegades l’expressió de suma s’ha definit una variable <code>$suma</code> i d’aquesta manera l’expressió ha quedat més fàcil d’escriure
+</p>
+<pre class="code xml"><ol><li class="li1"><div class="de1"><span class="sc3"><span class="re1">&lt;?xml</span> <span class="re0">version</span>=<span class="st0">&quot;1.0&quot;</span> <span class="re0">encoding</span>=<span class="st0">&quot;UTF-8&quot;</span><span class="re2">?&gt;</span></span></div></li><li class="li1"><div class="de1">Corsaro Levy : 4 </div></li><li class="li1"><div class="de1">Marc Blairet : 3</div></li></ol></pre>
+
+<p>
+La funció <code>concat()</code> ha eliminat les etiquetes XML i ha generat un resultat de text. Si es volgués mantenir una estructura XML es pot crear manualment amb l’ajuda de les expressions avaluables:
+</p>
+<pre class="code">for $autor in doc(&quot;llibres.xml&quot;)//autor 
+let $suma := sum($autor/llibres/llibre/quantitat)
+where $suma &gt;=3
+order by $suma descending
+return &lt;autor&gt; { concat($autor/nom,&quot; : &quot;, $suma) } &lt;/autor&gt;</pre>
+
+<p>
+Que generarà:
+</p>
+<pre class="code xml"><ol><li class="li1"><div class="de1"><span class="sc3"><span class="re1">&lt;?xml</span> <span class="re0">version</span>=<span class="st0">&quot;1.0&quot;</span> <span class="re0">encoding</span>=<span class="st0">&quot;UTF-8&quot;</span><span class="re2">?&gt;</span></span></div></li><li class="li1"><div class="de1"><span class="sc3"><span class="re1">&lt;autor<span class="re2">&gt;</span></span></span>Corsaro Levy : 4<span class="sc3"><span class="re1">&lt;/autor<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1"><span class="sc3"><span class="re1">&lt;autor<span class="re2">&gt;</span></span></span>Marc Blairet : 3<span class="sc3"><span class="re1">&lt;/autor<span class="re2">&gt;</span></span></span></div></li></ol></pre>
+</div></div>
+</div>
+
+<h2><a id="bases_de_dades_natives_xml" >Bases de dades natives XML</a></h2>
+<div class="level2">
+
+<p>
+Si no entrem en detalls tècnics, la definició d’una base de dades és un lloc en el qual es poden emmagatzemar dades. En el cas d’una base de dades en XML, consistiria simplement en emmagatzemar els fitxers XML en un punt concret del sistema operatiu. 
+</p>
+
+<p>
+L’increment de documents XML a emmagatzemar ha fet que, malgrat que l’emmagatzematge es pugui fer manualment, sigui interessant disposar d’alguna manera d’automatitzar el procés. Per facilitar aquesta automatització han aparegut les bases de dades natives XML (NXD).
+</p>
+<div class="iocimportant"><div class="ioccontent">
+<p>
+Quan es parla de bases de dades natives XML es fa referència a bases de dades dissenyades per contenir i emmagatzemar dades en format XML.
+</p>
+</div></div>
+<p>
+A diferència del que passa amb les bases de dades relacionals, que fa molts anys que funcionen i tenen darrere seu una base teòrica important, les NXD no tenen uns estàndards definits per fer les coses i la teoria que les suporta no està gaire definida. Això fa que sovint cada base de dades faci les coses d’una manera que pot ser totalment diferent de com ho fa una altra.
+</p>
+
+<p>
+Les bases de dades natives XML es fan servir sobretot per emmagatzemar dades que contenen:
+</p>
+<ul>
+<li class="level1"><div class="li"> Contingut narratiu.</div>
+</li>
+<li class="level1"><div class="li"> Que són menys previsibles que les que s’emmagatzemen normalment en bases de dades relacionals.</div>
+</li>
+<li class="level1"><div class="li"> Que han de generar sortides per a entorns web.</div>
+</li>
+<li class="level1"><div class="li"> Que s’han de transportar d’un sistema a un altre.</div>
+</li>
+</ul>
+
+</div>
+
+<h3><a id="caracteristiques_mes_importants" >Característiques més importants</a></h3>
+<div class="level3">
+
+<p>
+Els sistemes NXD són molt heterogenis i sovint s’estan desenvolupant en direccions que no sempre coincideixen. Tot i la dispersió, sempre podem trobar punts en comú en la majoria de les bases de dades.
+</p>
+
+</div>
+
+<h4><a id="llenguatge_de_consulta" >Llenguatge de consulta</a></h4>
+<div class="level4">
+
+<p>
+Tots els sistemes NXD suporten com a mínim XPath com a llenguatge de consultes, tot i que la tendència general és adoptar XQuery; és lògic si es té en compte que XPath no va ser pensat per ser un llenguatge de consulta de base de dades, mentre que XQuery sí.
+</p>
+
+<p>
+Tots els sistemes suporten algun tipus d’interfície que permet accedir-hi per mitjà d’algun llenguatge de programació, com ara la interfície XML:DB, o bé per mitjà d’algun protocol de xarxa com HTTP, WebDAV, SOAP…
+</p>
+
+</div>
+
+<h4><a id="organitzacio_i_emmagatzematge" >Organització i emmagatzematge</a></h4>
+<div class="level4">
+
+<p>
+L’organització més habitual de les dades és mitjançant col·leccions de documents XML que sovint intenten generar una estructura semblant a la que ofereixen els directoris dels sistemes operatius. En aquests sistemes una col·lecció és com una carpeta que conté un conjunt de documents XML o fins i tot altres carpetes (<span class="figref"><a href="#fig138"><span>figura</span></a></span>).
+</p>
+<div class="iocfigure"><a name="fig138"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Les col·leccions en eXist són carpetes que contenen fitxers
+
+</figcaption><img src="../media/existcolleccio.png" alt="" /></figure>
+</div>
+<p>
+El tractament de les col·leccions sol ser una de les diferències que hi ha entre bases de dades XML. Algunes forcen que dins d’una col·lecció hi hagi documents del mateix tipus, mentre que altres permeten que s’hi posi qualsevol tipus de document.
+</p>
+
+<p>
+L’emmagatzematge de les dades sol ser el que diferencia més les NXD, ja que la naturalesa dels fitxers XML no els fa ideals per ser emmagatzemats de manera eficient (tenen repeticions, ocupen molt d’espai…). Per aquest motiu totes les NXD intenten optimitzar d’alguna manera aquest emmagatzematge: convertint les dades en fitxers binaris (amb simples compressions de dades o codificant-les), creant estructures d’arbre, o simplement emmagatzemant els fitxers XML sense fer-hi res confiant que la reducció de costos de l’emmagatzematge farà que ocupar espai no sigui un problema.
+</p>
+
+</div>
+
+<h4><a id="indexacio" >Indexació</a></h4>
+<div class="level4">
+
+<p>
+A l’hora de fer servir una base de dades el que importa realment a l’usuari és que faci la cerca en un temps acceptable. Els fitxers de text no són la millor manera  d’emmagatzemar dades si l’objectiu és fer-hi cerques, i per tant les bases de dades XML s’han esforçat a intentar crear algun sistema per fer aquestes cerques més eficients. 
+</p>
+
+<p>
+El més habitual sol ser:
+</p>
+<ul>
+<li class="level1"><div class="li"> Organitzar de manera eficient les col·leccions</div>
+</li>
+<li class="level1"><div class="li"> Fer servir índexos</div>
+</li>
+</ul>
+<div class="iocnote"><div class="ioccontent">
+<p>
+Si som prou organitzats a l’hora de desar els documents XML podria ser que ni ens fes falta tenir una base de dades XML.
+</p>
+</div></div>
+<p>
+Com passa en el món real, pot ser més senzill trobar el que busquem si tenim les dades ben organitzades i ben classificades que si les tenim de manera caòtica. Per tal per buscar les dades només caldrà accedir a la col·lecció adequada i des d’allà fer la cerca.
+</p>
+
+<p>
+Un altre punt de vista consisteix a indexar les dades d’alguna manera per poder aconseguir recórrer la informació en un ordre determinat que permeti accedir a les dades d’una manera més ràpida. A diferència del que passa amb les bases de dades relacionals, en les d’XML no hi ha desenvolupades gaire teories sobre com s’han de crear els índexs, i això fa que els diferents productes facin servir filosofies d’indexació totalment diferents. 
+</p>
+
+<p>
+A pesar d’això el mètode d’indexació més corrent és crear una estructura d’arbre paral·lela als documents XML que contingui les dades que cal que siguin indexades. 
+</p>
+
+</div>
+
+<h4><a id="seguretat" >Seguretat</a></h4>
+<div class="level4">
+
+<p>
+La seguretat és un altre aspecte per tenir en compte en els sistemes NXD. Generalment en un entorn empresarial no tothom pot accedir a les dades que vulgui sinó que a la informació poden accedir només les persones autoritzades (<span class="figref"><a href="#fig139"><span>figura</span></a></span>).
+</p>
+<div class="iocfigure"><a name="fig139"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+eXist demana autorització per permetre la connexió
+
+</figcaption><img src="../media/existlogin.png" alt="" /></figure>
+</div>
+<p>
+La identificació d’usuaris permet implementar els mecanismes bàsics per permetre controlar a quins documents pot accedir cada un dels usuaris de l’organització (<span class="figref"><a href="#fig140"><span>figura</span></a></span>).
+</p>
+<div class="iocfigure"><a name="fig140"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+ Permisos de fitxers
+
+</figcaption><img src="../media/existpermisos.png" alt="" /></figure>
+</div>
+</div>
+
+<h4><a id="actualitzacions_de_les_dades_xml" >Actualitzacions de les dades XML</a></h4>
+<div class="level4">
+
+<p>
+La falta d’un sistema d’actualitzacions dels fitxers XML en la primera versió d’XQuery ha fet que molt sovint els sistemes NXD, en comptes d’actualitzar les dades que han canviat, optin per substituir totalment el document cada vegada que s’hi produeixin canvis.
+</p>
+
+<p>
+Per aquest motiu se solen oferir sistemes de transferència de fitxers via HTTP com WebDAV (<span class="figref"><a href="#fig141"><span>figura</span></a></span>) (<em>Web-based distributed authoring and versioning</em>) o per mitjà de serveis web (SOAP o REST).
+</p>
+<div class="iocfigure"><a name="fig141"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Connexió amb eXist per mitjà de WebDAV
+
+</figcaption><img src="../media/existwebdav.png" alt="" /></figure>
+</div>
+<p>
+A pesar d’això la tendència és que els sistemes s’acullin a alguna de les propostes d’estàndards d’actualització de dades XML com <strong>xqupdate</strong> o <strong>XML:DB XUpdate</strong>.
+</p>
+
+</div>
+
+<h3><a id="exemples_de_bases_de_dades_natives_xml" >Exemples de bases de dades natives XML</a></h3>
+<div class="level3">
+
+<p>
+Hi ha moltes bases de dades XML que s’estan fent servir actualment en entorns professionals:
+</p>
+<ul>
+<li class="level1"><div class="li"> <strong>Tamino</strong>: permet tenir un sistema híbrid d’emmmagatzematge XML i relacional.</div>
+</li>
+<li class="level1"><div class="li"> <strong>eXist-db</strong>: es tracta d’un sistema de codi obert que fa servir una indexació de dades amb BTree en fitxers dividits en pàgines.</div>
+</li>
+<li class="level1"><div class="li"> <strong>TigerLogic XDMS</strong>: es pot fer servir tant per emmagatzemar documents XML com dades multimèdia.</div>
+</li>
+<li class="level1"><div class="li"> <strong>EMC xdb</strong>: una base de dades per a documents XML molt escalable.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Apache XIndice</strong>: es tracta d’un sistema pensat per emmagatzemar grans col·leccions de petits fitxers XML. És de codi obert. </div>
+</li>
+<li class="level1"><div class="li"> <strong>MarkLogic</strong>: ofereix una solució empresarial per emmagatzemar qualsevol tipus de documents, metadades, RSS, correus electrònics, XML…</div>
+</li>
+</ul>
+
+<p>
+Generalment totes ofereixen:
+</p>
+<ul>
+<li class="level1"><div class="li"> Emmagatzematge eficient de documents XML</div>
+</li>
+<li class="level1"><div class="li"> Suport per a consultes XQuery o XPath</div>
+</li>
+<li class="level1"><div class="li"> Alguna forma orientada a recursos d’accés a les dades: HTTP, webDAV, serveis web…</div>
+</li>
+<li class="level1"><div class="li"> Transformació de documents</div>
+</li>
+<li class="level1"><div class="li"> Diverses interfícies d’usuari</div>
+</li>
+</ul>
+
+</div>
+
+<h3><a id="exist-db" >eXist-db</a></h3>
+<div class="level3">
+
+<p>
+De les bases de dades XML de codi obert disponibles, probablement eXist-db és la que està més preparada per ser usada en un entorn professional. Es tracta d’una base de dades nativa XML que està desenvolupada en llenguatge Java, i que:
+</p>
+<ul>
+<li class="level1"><div class="li"> Permet fer operacions amb els llenguatges XQuery 1.0, XPath 2.0 i XSLT 2.0.</div>
+</li>
+<li class="level1"><div class="li"> Pot funcionar tan com una biblioteca que s’incorpora als programes com ser executada per mitjà d’un servidor. </div>
+</li>
+<li class="level1"><div class="li"> Es pot accedir a la base de dades per mitjà de múltiples interfícies estàndards com REST, WebDAV, SOAP, XML-RPC o ATOM. </div>
+</li>
+<li class="level1"><div class="li"> Permet actualitzacions de dades per mitjà de l’<acronym title="Application Programming Interface">API</acronym> XMLDB, XUpdate i XQuery Update Facility.</div>
+</li>
+<li class="level1"><div class="li"> Porta incorporat un sistema de gestió d’usuaris de la base de dades i dels permisos d’accés a les col·leccions semblant al dels sistemes Unix (<span class="figref"><a href="#fig142"><span>figura</span></a></span>).</div>
+</li>
+</ul>
+<div class="iocfigure"><a name="fig142"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Cada fitxer té permisos d’usuari i de grup
+
+</figcaption><img src="../media/existpermisos.png" alt="" /></figure>
+</div>
+<p>
+L’organització de les dades és per mitjà de col·leccions de fitxers XML que s’organitzen d’una manera pràcticament idèntica a com es fa en els fitxers d’un sistema operatiu. Igual que en els sistemes operatius, es poden fer col·leccions dins de col·leccions i s’hi pot navegar amb un sol clic (<span class="figref"><a href="#fig143"><span>figura</span></a></span>).
+</p>
+<div class="iocfigure"><a name="fig143"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+L’organització es fa en col·leccions i són navegables
+
+</figcaption><img src="../media/existcolleccions.png" alt="" /></figure>
+</div>
+</div>
+
+<h4><a id="instal_lacio" >Instal·lació</a></h4>
+<div class="level4">
+
+<p>
+La instal·lació es fa per mitjà d’un senzill sistema d’instal·lació basat en finestres (<span class="figref"><a href="#fig144"><span>figura</span></a></span>).
+</p>
+<div class="iocfigure"><a name="fig144"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+ Instal·lació d’eXist
+
+</figcaption><img src="../media/exist_install.png" alt="" /></figure>
+</div>
+<p>
+En la instal·lació per defecte a més de l’eXist s’hi instal·la el servidor Jetty, que permetrà accedir a la gestió web del sistema amb un navegador en l’adreça http://localhost:8080/exist/.
+</p>
+
+<p>
+Si es fa servir el servidor, l’accés a les consultes i l’administració del sistema es pot fer per mitjà d’un client Java que proporciona, o bé per mitjà de l’entorn web (<span class="figref"><a href="#fig145"><span>figura</span></a></span>).
+</p>
+<div class="iocfigure"><a name="fig145"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+ Client Java per connectar amb la base de dades
+
+</figcaption><img src="../media/existadminclient.png" alt="" /></figure>
+</div>
+<p>
+Tant el client com el client web disposen d’un entorn per poder elaborar consultes XQuery (<span class="figref"><a href="#fig146"><span>figura</span></a></span>).
+</p>
+<div class="iocfigure"><a name="fig146"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+ Consultes Xquery des del client
+
+</figcaption><img src="../media/existquery2.png" alt="" /></figure>
+</div>
+</div>
+
+<h4><a id="treballar_interactivament_amb_l_exist" >Treballar interactivament amb l&#039;eXist</a></h4>
+<div class="level4">
+
+<p>
+Abans de poder començar a treballar amb l’eXist cal que s’hagin entrat les dades en la base de dades. En aquest exemple ens concentrarem en com es pot fer des de l’entorn web però es pot fer d’una manera semblant des del programa client.
+</p>
+
+</div>
+
+<h5><a id="crear_una_col_leccio" >Crear una col·lecció</a></h5>
+<div class="level5">
+
+<p>
+Amb l’eXist en marxa, des de la mateixa màquina on s’ha instal·lat l’eXist obriu un navegador i aneu a l’adreça <a href="http://localhost:8080/exist/" class="urlextern" title="http://localhost:8080/exist/"  rel="nofollow">http://localhost:8080/exist/</a> (figura<span class="figref"><a href="#fig147"><span>figura</span></a></span>).
+</p>
+<div class="iocfigure"><a name="fig147"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Pàgina inicial de l’eXist
+
+</figcaption><img src="../media/existdb.png" alt="" /></figure>
+</div>
+<p>
+En la part inferior de la columna de l’esquerra hi ha un enllaç dins de la secció “Administration” que es diu “Admin” (<span class="figref"><a href="#fig148"><span>figura</span></a></span>).
+</p>
+<div class="iocfigure"><a name="fig148"></a><figure>
+<figcaption><span class="figuretitle">Figura</span></figcaption><img src="../media/existloginweb.png" alt="" /></figure>
+</div>
+<p>
+En clicar-hi us portarà a una finestra on es demana la identificació de l’usuari. El primer cop que s’hi accedeix no hi ha usuaris, i per tant caldrà entrar amb l’usuari <em>admin</em> i la contrasenya especificada en la instal·lació (<span class="figref"><a href="#fig149"><span>figura</span></a></span>).
+</p>
+<div class="iocfigure"><a name="fig149"></a><figure>
+<figcaption><span class="figuretitle">Figura</span></figcaption><img src="../media/existloginweb1.png" alt="" /></figure>
+</div><div class="iocfigure"><a name="fig150"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Pantalla d’administració de l’eXist
+
+</figcaption><img src="../media/existadmin.png" alt="" /></figure>
+</div>
+<p>
+Un cop esteu identificats, entreu en la zona d’administració; al costat esquerre hi ha un menú que permet fer diverses coses, com navegar per les col·leccions i els índexs, aturar el servidor, instal·lar els fitxers d’exemple, crear usuaris… (<span class="figref"><a href="#fig150"><span>figura</span></a></span>).
+</p>
+
+<p>
+Per crear una col·lecció nova cal anar al menú de l’esquerra i clicar en l’opció “Browse collections”. Això farà que aparegui tota la llista de les col·leccions instal·lades en el sistema. Per crear una nova col·lecció anomenada <em>classes</em>, cal que escrigueu el nom en el quadre de text i premeu el botó (<span class="figref"><a href="#fig151"><span>figura</span></a></span>).
+</p>
+<div class="iocfigure"><a name="fig151"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Fer una llista de les col·leccions
+
+</figcaption><img src="../media/existcrea.png" alt="" /></figure>
+</div>
+<p>
+En entrar-hi la col·lecció no té cap fitxer XML: els podeu afegir amb l’ajuda del botó “Upload”; i ja tindreu la col·lecció creada (<span class="figref"><a href="#fig152"><span>figura</span></a></span>).
+</p>
+<div class="iocfigure"><a name="fig152"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Creada la col·lecció classes
+
+</figcaption><img src="../media/existcolleccioclasse.png" alt="" /></figure>
+</div>
+</div>
+
+<h5><a id="fer_consultes_xquery" >Fer consultes XQuery</a></h5>
+<div class="level5">
+
+<p>
+Les consultes XQuery també es poden fer des de qualsevol dels entorns que proporciona l’eXist-db. Per fer-ho des de l’entorn web cal anar a la pàgina principal i en el menú de l’esquerra, dins de l’opció “Example”, escollir l’opció “XQuery SandBox”. 
+</p>
+
+<p>
+
+</p>
+
+<p>
+Aquesta opció us portarà a una pàgina en la qual es poden fer consultes XQuery de les col·leccions o els fitxers XML que hi ha en el sistema (<span class="figref"><a href="#fig153"><span>figura</span></a></span>).
+</p>
+<div class="iocfigure"><a name="fig153"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+XQuery SandBox
+
+</figcaption><img src="../media/existxquerysandbox.png" alt="" /></figure>
+</div>
+<p>
+A partir de la versió 1.5 s’ha afegit l’opció “XQuery IDE (eXide)”, que és un sistema molt més potent que ofereix tota una sèrie d’avantatges afegits: comprova interactivament els errors, permet autoemplenar en temps de disseny, etc. (<span class="figref"><a href="#fig154"><span>figura</span></a></span>).
+</p>
+<div class="iocfigure"><a name="fig154"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+eXide
+
+</figcaption><img src="../media/existexide.png" alt="" /></figure>
+</div>
+<p>
+Sigui quina sigui l’opció triada, en la finestra superior sortirà un espai destinat a escriure la consulta que es vol fer en XQuery (o XPath), i en la part inferior es podran veure els resultats.
+</p>
+
+<p>
+Per exemple, per fer una consulta que retorni el nom dels alumnes de dins de la col·lecció “classes”, podem escriure una expressió XQuery com la següent:
+</p>
+<pre class="code">for $alumne in collection(&quot;/db/classes&quot;)//alumne/nom
+return $alumne/text()</pre>
+
+<p>
+Que donarà el que es veu en la <span class="figref"><a href="#fig155"><span>figura</span></a></span>.
+</p>
+<div class="iocfigure"><a name="fig155"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+ Noms dels alumnes de la col·lecció
+
+</figcaption><img src="../media/existxquerysandbox1.png" alt="" /></figure>
+</div>
+</div>
+
+	 </article>
+     <div class="pnpage">
+      <div class="left-corner"></div>
+      <div id="prevpage">Anar a la p&agrave;gina anterior:<br /><a href="../../../WebContent/u3/a2/exercicis.html">Exercicis d'autoavaluació</a></div>
+      <div id="nextpage">Anar a la p&agrave;gina seg&uuml;ent:<br /><a href="../../../WebContent/u3/a3/activitats.html">Activitats</a></div>
+      <div class="right-corner"></div>
+     </div>
+    </div>
+    <footer class="footer">
+      <div><small>Aquest document està subjecte a una llicència oberta de Creative Commons, es reserva el dret de reconeixement de l'autoria, d'exigir que no se'n faci cap mena d'ús comercial. Si altereu o transformeu aquesta obra, o en genereu obres derivades, només podeu distribuir l'obra generada amb una llicència idèntica a aquesta.</small></div>
+    </footer>
+ </div>
+ <div id="back_preview" class="hidden"></div>
+ <div id="preview" class="hidden">
+  <div class="prevcontent"></div>
+ </div>
+ <div id="help-tooltips">
+  <div id="help-toc" class="hidden tooltip"><span>Taula de continguts:</span> Ofereix una vista general de l&#39;estructura del m&ograve;dul, que us facilitar&agrave; la navegaci&oacute; a trav&eacute;s dels seus continguts.<span class="arrow-left"></span></div> 
+  <div id="help-settings" class="hidden tooltip"><span>Opcions de format:</span> Permet configurar el format de lectura a partir de les vostres prefer&egrave;ncies, modificant la mida de la lletra, el color del fons, l&#39;amplada de la p&agrave;gina o l&#39;ocultaci&oacute; dels continguts complementaris, entre d&#39;altres.<span class="arrow-left"></span></div>
+  <div id="help-printer" class="hidden tooltip"><span>Imprimir:</span>  Envia el contingut seleccionat a la impressora.<span class="arrow-left"></span></div>
+  <div id="help-favorites" class="hidden tooltip"><span>Prefereits:</span> Permet desar aquelles parts del contingut a les que us interessi accedir en un moment posterior; us permetr&agrave; anar creant un repositori personalitzat de les seccions que considereu m&eacute;s rellevants. Un cop l&#39;hageu començat a fer servir se us mostrar&agrave; a sota un comptador que us informar&agrave; del nombre de preferits que s&#39;hagin emmagatzemat fins al moment.<span class="arrow-left"></span></div>
+  <div id="help-favcounter" class="hidden tooltip"><span>Comptador i llistat de preferits:</span> Indica el nombre de preferits que s&#39;han desat fins el moment; clicant damunt seu accedireu al llistat de preferits, i a trav&eacute;s d&#39;aquest podreu accedir directament als continguts que hageu emmagatzemat.<span class="arrow-left"></span></div>
+  <div id="help-help_icon" class="hidden tooltip"><span>Ajuda:</span> Aquesta opci&oacute; activa la informaci&oacute; de les funcionalitats del web tot situant el punter del ratol&iacute; al damunt dels diferents &iacute;tems.<span class="arrow-left"></span></div>
+  <div id="help-sidebar-hide" class="hidden tooltip"><span>Mostrar/Ocultar barra lateral:</span>  Deshabilita la barra d&#39;opcions, permetent la seva recuperaci&oacute; quan es desitgi.<span class="arrow-left"></span></div>
+  <div id="help-search" class="hidden tooltip"><span>Cerca:</span>  Introdu&iuml;u les paraules clau sobre aquells conceptes que desitgeu localitzar en els continguts del m&ograve;dul. Tamb&eacute; podeu excloure un terme de la cerca tot afegint-hi el signe &#8220;-&#8221; al davant.<span class="arrow-top"></span></div>
+  <div id="help-header" class="hidden tooltip"><span>Cap&ccedil;alera:</span>  Indica l&#39;apartat o secci&oacute; que es mostra en pantalla. Tingueu present que les capçaleres de segon, tercer i quart nivell tamb&eacute; es poden desar com a marcadors.<span class="arrow-left"></span></div>
+</div> 
+</body>
+</html>

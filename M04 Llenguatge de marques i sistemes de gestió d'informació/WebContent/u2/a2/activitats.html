@@ -1,0 +1,472 @@
+<!doctype html>
+
+<!--[if lt IE 7 ]> <html class="ie ie6 no-js" lang="ca"> <![endif]-->
+<!--[if IE 7 ]>    <html class="ie ie7 no-js" lang="ca"> <![endif]-->
+<!--[if IE 8 ]>    <html class="ie ie8 no-js" lang="ca"> <![endif]-->
+<!--[if IE 9 ]>    <html class="ie ie9 no-js" lang="ca"> <![endif]-->
+<!--[if gt IE 9]><!--><html class="no-js" lang="ca"><!--<![endif]-->
+<!-- the "no-js" class is for Modernizr. -->
+
+<head id="www-sitename-com" data-template-set="html5-reset">
+
+	<meta charset="utf-8">
+	
+	<!-- Always force latest IE rendering engine (even in intranet) & Chrome Frame -->
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	
+	<title>Llenguatges de marques i sistemes de gestió d'informació</title>
+	
+<!-- <meta name="title" content=""> --> 
+	<meta name="description" content="">
+	<!-- Google will often use this as its description of your page/site. Make it good. -->
+	
+	<meta name="google-site-verification" content="">
+	<!-- Speaking of Google, don't forget to set your site up: http://google.com/webmasters -->
+	
+	<meta name="author" content="Institut Obert de Catalunya">
+	<meta name="Copyright" content="Copyright Institut Obert de Catalunya 2011. All Rights Reserved.">
+
+	<!-- Dublin Core Metadata : http://dublincore.org/ -->
+	<meta name="DC.title" content="Llenguatges de marques i sistemes de gestió d'informació">
+	<meta name="DC.subject" content="Informàtica i comunicacions">
+	<meta name="DC.creator" content="Institut Obert de Catalunya">
+	
+	<!--  Mobile Viewport Fix
+	j.mp/mobileviewport & davidbcalhoun.com/2010/viewport-metatag 
+	device-width : Occupy full width of the screen in its current orientation
+	initial-scale = 1.0 retains dimensions instead of zooming out if page height > device height
+	maximum-scale = 1.0 retains dimensions instead of zooming in if page width < device width
+	-->
+	<!-- Uncomment to use � use thoughtfully!
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+	-->
+
+	<link rel="shortcut icon" href="../../../img/favicon.ico">
+	<!-- This is the traditional favicon.
+		 - size: 16x16 or 32x32
+		 - transparency is OK
+		 - see wikipedia for info on browser support: http://mky.be/favicon/ -->
+		 
+	<link rel="apple-touch-icon" href="../../../img/apple-touch-icon.png">
+	<!-- The is the icon for iOS's Web Clip.
+		 - size: 57x57 for older iPhones, 72x72 for iPads, 114x114 for iPhone4's retina display (IMHO, just go ahead and use the biggest one)
+		 - To prevent iOS from applying its styles to the icon name it thusly: apple-touch-icon-precomposed.png
+		 - Transparency is not recommended (iOS will put a black BG behind the icon) -->
+	
+	<!-- CSS: screen, mobile & print are all in the same file -->
+	<link rel="stylesheet" href="../../../_/css/style.css">
+
+	<!-- CSS: jQuery UI -->
+	<link rel="stylesheet" href="../../../_/css/jquery-ui.css">
+	
+	<!-- all our JS is at the bottom of the page, except for Modernizr. -->
+	<script src="../../../_/js/modernizr-1.7.min.js"></script>
+	<script src="../../../_/js/Hyphenator.js" type="text/javascript"></script>
+	<script type="text/javascript">
+	   Hyphenator.config({
+		minwordlength : 4
+	   });
+	   Hyphenator.run();
+	</script>
+    <script src="../../../_/js/build.js" type="text/javascript"></script>
+</head>
+
+<body class="style-newspaper">
+
+<div class="wrapper"><!-- not needed? up to you: http://camendesign.com/code/developpeurs_sans_frontieres -->
+
+	<header id="header">
+		<div class="head"><a href="http://ioc.gencat.cat"><img src="../../../img/logo.png" alt="Institut Obert de Catalunya"/></a><a href="http://creativecommons.org/licenses/by-nc-sa/3.0/es/deed.ca"><img src="../../../img/license.png" alt="Llic&egrave;ncia" class="license"/></a></div>
+		<div class="headdocument"><a href="../../../index.html">Llenguatges de marques i sistemes de gestió d'informació</a></div>
+        <div id="search" class="search" name="search">
+         <form id="frmsearch" action="../../../search.html" method="get">
+          <input type="text" name="q"/>
+        </form>
+        </div>
+	</header>
+   <div id="upbutton" class="upbutton" style="display:none;"><img src="../../../img/uparrow.png" alt="Pujar a l'inici de p&agrave;gina"/></div>
+   <aside id="aside">
+    <div id="menu">
+      <ul>
+       <li name="toc"><div><img src="../../../img/toc.png" alt="&Iacute;ndex"/></div></li>
+       <li name="settings"><div><img src="../../../img/settings.png" alt="Configuraci&oacute;"/></div></li>
+       <li name="printer"><div><img src="../../../img/printer.png" alt="Imprimir"/></div></li>
+       <li name="favorites"><div><img src="../../../img/favorites.png" alt="Favorits"/></div></li>
+       <li name="help_icon" class="help_icon"><div><img src="../../../img/help_icon.png" alt="Ajuda"/></div></li>
+      </ul>
+     </div>
+   </aside>
+   <div id="sidebar-hide" name="sidebar-hide"><img src="../../../img/arrows.png"/></div>
+   <section>
+     <div id="toc" class="hidden">
+      <div class="menucontent">
+        <ul>
+        <li id="u2" class="parentnode"><p><a class="unit" href="../../../WebContent/u2/introduccio.html">2. Transmissió d'informació a través del web. Mecanismes de validació de documents XML</a></p><ul class="expander"><li id="u2introduccio"><a href="../../../WebContent/u2/introduccio.html">Introducció</a></li><li id="u2resum"><a href="../../../WebContent/u2/resum.html">Resum</a></li><li id="u2objectius"><a href="../../../WebContent/u2/objectius.html">Resultats d'aprenentatge</a></li><li id="u2referencies"><a href="../../../WebContent/u2/referencies.html">Referències</a></li><li id="u2a1" class="tocsection"><p id='u2a1continguts'><a class="section" href="../../../WebContent/u2/a1/continguts.html">Utilització dels llenguatges de marques en entorns web</a><span class="buttonexp"></span></p><ul><li id="u2a1activitats"><a href="../../../WebContent/u2/a1/activitats.html">Activitats</a></li><li id="u2a1exercicis"><a href="../../../WebContent/u2/a1/exercicis.html">Exercicis d'autoavaluació</a></li></ul></li><li id="u2a2" class="tocsection"><p id='u2a2continguts'><a class="section" href="../../../WebContent/u2/a2/continguts.html">Definició d'esquemes i vocabularis en XML</a><span class="buttonexp"></span></p><ul><li id="u2a2activitats"><a href="../../../WebContent/u2/a2/activitats.html">Activitats</a></li><li id="u2a2exercicis"><a href="../../../WebContent/u2/a2/exercicis.html">Exercicis d'autoavaluació</a></li></ul></li></ul></li><li id="" class="indexnode"><p><a href="../../../index.html">Anar a l&#39;&iacute;ndex general</a></p></li>
+        </ul>
+      </div>
+    </div>
+   </section>
+   <section>
+   <div id="settings" class="hidden">
+    <div class="menucontent">
+     <div class="allsettings">
+     <div class="settings">
+      <label>Font i Color</label>
+		<div class="setting-option">
+	        <ul class="fontBackground">
+				<li id="style-newspaper" title="Newspaper" class="appearance-style-newspaper"><span>Newspaper</span></li>
+                <li id="style-novel" title="Novel" class="appearance-style-novel"><span>Novel</span></li>
+                <li id="style-ebook" title="eBook" class="appearance-style-ebook"><span>eBook</span></li>
+				<li id="style-inverse" title="Inverse" class="appearance-style-inverse active"><span>Inverse</span></li>
+				<li id="style-athelas" title="Athelas" class="appearance-style-athelas"><span>Athelas</span></li>
+			</ul>
+		</div>
+     </div>
+	<div class="settings">
+      <label>Amplada</label>
+		<div class="setting-option">
+	        <div id="slider-width"></div>
+		</div>
+     </div>
+     <div class="settings">
+      <label>Mida de la font</label>
+		<div class="setting-option">
+	        <div id="slider-font"></div>
+		</div>
+     </div>
+     <div class="settings">
+      <label>Mida de la font</label>
+	  <div class="setting-option">
+       <form action="" class="sett-options">
+		<ul>
+		    <li><input type="checkbox" id="secondary-content" /><label for="secondary-content">Mostra recursos complementaris</label></li>
+		    <li><input type="checkbox" id="main-images" /><label for="main-images">Mostra imatges</label></li>
+		    <li><input type="checkbox" id="text-alignment" /><label for="text-alignment">Text justificat</label></li>
+			<li><input type="checkbox" id="text-hyphen" /><label for="text-hyphen">Partici&oacute; sil·l&agrave;bica</label></li>
+		</ul>
+       </form>
+	  </div>
+     </div>
+     </div>
+    </div>
+   </div>
+   </section>
+ <section>
+ <div id="favorites" class="hidden"></div>
+ </section>   
+ <div id="bridge" class="hidden"></div>
+ <div id="help" class="hidden">
+  <div class="helptitle">Dreceres del teclat<hr></div>
+  <div class="helpsection"><span>General</span>
+   <ul>
+    <li><span class="shortcut">g</span>: Anar al men&uacute; de navegaci&oacute;</li>
+    <li><span class="shortcut">o</span>: Anar a opcions</li>
+    <li><span class="shortcut">s</span>: Guardar la p&agrave;gina actual a favorits</li>
+    <li><span class="shortcut">p</span>: Imprimir la p&agrave;gina actual</li>
+    <li><span class="shortcut">?</span>: Mostrar/Ocultar l&#39;ajuda</li>
+   </ul>
+  </div>
+  <div class="helpsection"><span>Navegaci&oacute;</span>
+   <ul>
+    <li><span class="shortcut">i</span>: Anar a l&#39;&iacute;ndex general</li>
+    <li><span class="shortcut">t</span>: Anar a l&#39;inici de p&agrave;gina</li>
+    <li><span class="shortcut">b</span>: Anar al final de p&agrave;gina</li>
+    <li><span class="shortcut">j</span>: Anar cap endavant dintre la p&agrave;gina</li>
+    <li><span class="shortcut">k</span>: Anar cap enrere dintre la p&agrave;gina</li>
+    <li><span class="shortcut">h</span>: Anar a la p&agrave;gina anterior:</li>
+    <li><span class="shortcut">l</span>: Anar a la p&agrave;gina seg&uuml;ent:</li>
+   </ul>
+   </div>
+ </div>
+ <div id="favcounter" name="favcounter" class="hidden"><span></span></div>
+ <div id="navmenu" class="navmenu"><ul class="webnav"><li><a href="../../../index.html" title="Anar a l&#39;&iacute;ndex general">Inici</a></li><li><a href="../introduccio.html">Transmissió d'informació a través del web. Mecanismes de validació de ...</a></li><li><a href="continguts.html">Definició d'esquemes i vocabularis en XML</a></li><li>Activitats</li></ul></div>
+	<div id="content" lang="ca" class="hyphenate text">
+     <article lang="ca" class="sheet">
+        <h1><a id="activitats"> Activitats </a></h1>
+    	
+<h2><a id="creacio_d_un_dtd_per_validar_la_matriculacio_d_alumnes" >Creació d&#039;un DTD per validar la matriculació d&#039;alumnes</a></h2>
+<div class="level2">
+
+<p>
+L’objectiu d’aquesta tasca és aprendre a crear un DTD a partir d’un exemple d’XML.
+</p>
+
+<p>
+En un centre reben les dades de matriculació d’alumnes a partir de fitxers XML com aquest <div class="mediaf filezip"><div class="mediacontent"><a href="../media/matricula.xml.zip">baixa</a><span> ( 475 B )</span></div></div> que podeu veure resumit aquí:
+</p>
+<pre class="code xml"><ol><li class="li1"><div class="de1"><span class="sc3"><span class="re1">&lt;?xml</span> <span class="re0">version</span>=<span class="st0">&quot;1.0&quot;</span> <span class="re0">encoding</span>=<span class="st0">&quot;UTF-8&quot;</span> <span class="re0">standalone</span>=<span class="st0">&quot;no&quot;</span><span class="re2">?&gt;</span></span></div></li><li class="li1"><div class="de1"><span class="sc3"><span class="re1">&lt;matricula<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1">  <span class="sc3"><span class="re1">&lt;cicle<span class="re2">&gt;</span></span></span>Administració de sistemes informàtics i xarxes<span class="sc3"><span class="re1">&lt;/cicle<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1">  <span class="sc3"><span class="re1">&lt;alumnes<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1">    <span class="sc3"><span class="re1">&lt;alumne<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1">      <span class="sc3"><span class="re1">&lt;nom<span class="re2">&gt;</span></span></span>Federicu Pi<span class="sc3"><span class="re1">&lt;/nom<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1">      <span class="sc3"><span class="re1">&lt;any<span class="re2">&gt;</span></span></span>2010<span class="sc3"><span class="re1">&lt;/any<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1">      <span class="sc3"><span class="re1">&lt;m</span>òduls<span class="re2">&gt;</span></span></div></li><li class="li1"><div class="de1">        <span class="sc3"><span class="re1">&lt;m</span>òdul<span class="re2">&gt;</span></span>XML<span class="sc3"><span class="re1">&lt;/m</span>òdul<span class="re2">&gt;</span></span></div></li><li class="li1"><div class="de1">        <span class="sc3"><span class="re1">&lt;m</span>òdul<span class="re2">&gt;</span></span>Xarxes Locals<span class="sc3"><span class="re1">&lt;/m</span>òdul<span class="re2">&gt;</span></span></div></li><li class="li1"><div class="de1">      <span class="sc3"><span class="re1">&lt;/m</span>òduls<span class="re2">&gt;</span></span></div></li><li class="li1"><div class="de1">    <span class="sc3"><span class="re1">&lt;/alumne<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1">  <span class="sc3"><span class="re1">&lt;/alumnes<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1"><span class="sc3"><span class="re1">&lt;/matricula<span class="re2">&gt;</span></span></span></div></li></ol></pre>
+
+<p>
+Com que la introducció de dades és manual se solen produir molts errors; per evitar que el programa falli volen comprovar-los abans contra una DTD. Us demanen que el desenvolupeu.
+</p>
+
+<p>
+<form action=""><div class="solution ioccontent"><pre class="code dtd"><ol><li class="li1"><div class="de1">&lt;!ELEMENT matricula (cicle,alumnes)&gt;</div></li><li class="li1"><div class="de1">&lt;!ELEMENT cicle (#PCDATA)&gt;</div></li><li class="li1"><div class="de1">&lt;!ELEMENT alumnes (alumne)+&gt;</div></li><li class="li1"><div class="de1">&lt;!ELEMENT alumne (nom,any,mòduls)&gt;</div></li><li class="li1"><div class="de1">&lt;!ELEMENT nom (#PCDATA)&gt;</div></li><li class="li1"><div class="de1">&lt;!ELEMENT any (#PCDATA)&gt;</div></li><li class="li1"><div class="de1">&lt;!ELEMENT mòduls (mòdul)+&gt;</div></li><li class="li1"><div class="de1">&lt;!ELEMENT mòdul (#PCDATA)&gt;</div></li></ol></pre>
+</div><input class="btn_solution3" type="button" value="Mostra"></input></form>
+</p>
+
+</div>
+
+<h2><a id="creacio_d_un_dtd_per_una_editorial" >Creació d&#039;un DTD per una editorial</a></h2>
+<div class="level2">
+
+<p>
+L’objectiu d’aquesta tasca és aprendre a crear un DTD a partir d’exemples de fitxers XML.
+</p>
+
+<p>
+A una editorial li cal una DTD per validar documents com aquests <div class="mediaf filezip"><div class="mediacontent"><a href="../media/editorial.xml.zip">baixa</a><span> ( 714 B )</span></div></div> i us han demanat que el feu vosaltres
+</p>
+
+<p>
+<form action=""><div class="solution ioccontent"><pre class="code dtd"><ol><li class="li1"><div class="de1">&lt;!ELEMENT biblioteca (editorial)+&gt;</div></li><li class="li1"><div class="de1">&lt;!ELEMENT editorial (raosocial,adreca,(contacte,llibre+)?)&gt;</div></li><li class="li1"><div class="de1">&lt;!ELEMENT raosocial (#PCDATA)&gt;</div></li><li class="li1"><div class="de1">&lt;!ELEMENT contacte (#PCDATA)&gt;</div></li><li class="li1"><div class="de1">&lt;!ELEMENT llibre (titol,publicacio,autor,premis,argument)&gt;</div></li><li class="li1"><div class="de1">&lt;!ELEMENT titol (#PCDATA)&gt;</div></li><li class="li1"><div class="de1">&lt;!ELEMENT publicacio (#PCDATA)&gt;</div></li><li class="li1"><div class="de1">&lt;!ELEMENT autor (nom,cognom+,adreca)&gt;</div></li><li class="li1"><div class="de1">&lt;!ELEMENT premis (premi)+&gt;</div></li><li class="li1"><div class="de1">&lt;!ELEMENT argument (#PCDATA)&gt;</div></li><li class="li1"><div class="de1">&lt;!ELEMENT nom (#PCDATA)&gt;</div></li><li class="li1"><div class="de1">&lt;!ELEMENT cognom (#PCDATA)&gt;</div></li><li class="li1"><div class="de1">&lt;!ELEMENT premi (#PCDATA)&gt;</div></li><li class="li1"><div class="de1">&lt;!ELEMENT adreca (carrer,numero,pis?,codipostal,poblacio)&gt;</div></li><li class="li1"><div class="de1">&lt;!ELEMENT carrer (#PCDATA)&gt;</div></li><li class="li1"><div class="de1">&lt;!ELEMENT numero (#PCDATA)&gt;</div></li><li class="li1"><div class="de1">&lt;!ELEMENT pis (#PCDATA)&gt;</div></li><li class="li1"><div class="de1">&lt;!ELEMENT codipostal (#PCDATA)&gt;</div></li><li class="li1"><div class="de1">&lt;!ELEMENT poblacio (#PCDATA)&gt;</div></li></ol></pre>
+</div><input class="btn_solution3" type="button" value="Mostra"></input></form>
+</p>
+
+</div>
+
+<h2><a id="creacio_d_un_dtd_per_una_bodega" >Creació d&#039;un DTD per una bodega</a></h2>
+<div class="level2">
+
+<p>
+L’objectiu d’aquesta tasca és aprendre a crear un DTD a partir de fitxers XML d’exemple.
+</p>
+
+<p>
+Creeu una DTD que us permeti validar el grup d’arxius que ha generat el programa de facturació d’una bodega: <div class="mediaf filezip"><div class="mediacontent"><a href="../media/bodega.zip">baixa</a><span> ( 1.7 KB )</span></div></div>
+</p>
+
+<p>
+<form action=""><div class="solution ioccontent"><pre class="code dtd"><ol><li class="li1"><div class="de1">&lt;!ELEMENT albara (numero,data,client,articles)&gt;</div></li><li class="li1"><div class="de1">&lt;!ELEMENT numero (#PCDATA)&gt;</div></li><li class="li1"><div class="de1">&lt;!ELEMENT data (#PCDATA)&gt;</div></li><li class="li1"><div class="de1">&lt;!ELEMENT client (nom,poblacio)&gt;</div></li><li class="li1"><div class="de1">&lt;!ATTLIST client id CDATA #REQUIRED&gt;</div></li><li class="li1"><div class="de1">&lt;!ELEMENT articles (compra)+&gt;</div></li><li class="li1"><div class="de1">&lt;!ELEMENT nom (#PCDATA)&gt;</div></li><li class="li1"><div class="de1">&lt;!ELEMENT poblacio (#PCDATA)&gt;</div></li><li class="li1"><div class="de1">&lt;!ELEMENT compra (article,quantitat,descompte?)&gt;</div></li><li class="li1"><div class="de1">&lt;!ELEMENT article (descripcio,(ampolla|granel),preu)&gt;</div></li><li class="li1"><div class="de1">&lt;!ATTLIST article codi CDATA #REQUIRED&gt;</div></li><li class="li1"><div class="de1">&lt;!ELEMENT quantitat (#PCDATA)&gt;</div></li><li class="li1"><div class="de1">&lt;!ELEMENT descompte (#PCDATA)&gt;</div></li><li class="li1"><div class="de1">&lt;!ELEMENT descripcio (#PCDATA)&gt;</div></li><li class="li1"><div class="de1">&lt;!ELEMENT ampolla EMPTY&gt;</div></li><li class="li1"><div class="de1">&lt;!ELEMENT granel EMPTY&gt;</div></li><li class="li1"><div class="de1">&lt;!ELEMENT preu (#PCDATA)&gt;</div></li></ol></pre>
+</div><input class="btn_solution3" type="button" value="Mostra"></input></form>
+</p>
+
+</div>
+
+<h2><a id="crear_un_dtd_per_les_relacions_d_una_empresa" >Crear un DTD per les relacions d&#039;una empresa</a></h2>
+<div class="level2">
+
+<p>
+L’objectiu d’aquesta tasca és crear un DTD a partir d’un exemple d’XML.
+</p>
+
+<p>
+Una empresa on treballen quatre persones (1 director i 3 treballadors) ha d’enviar les seves dades amb un arxiu XML que validi amb aquesta DTD:<div class="mediaf filezip"><div class="mediacontent"><a href="../media/personal.dtd.zip">baixa</a><span> ( 396 B )</span></div></div>
+</p>
+
+<p>
+Genereu un arxiu XML amb quatre treballadors que validi amb la DTD especificada.
+</p>
+
+<p>
+<form action=""><div class="solution ioccontent"><pre class="code xml"><ol><li class="li1"><div class="de1"><span class="sc3"><span class="re1">&lt;?xml</span> <span class="re0">version</span>=<span class="st0">&quot;1.0&quot;</span> <span class="re0">encoding</span>=<span class="st0">&quot;UTF-8&quot;</span><span class="re2">?&gt;</span></span></div></li><li class="li1"><div class="de1"><span class="sc0">&lt;!DOCTYPE personal SYSTEM &quot;personal.dtd&quot;&gt;</span></div></li><li class="li1"><div class="de1"><span class="sc3"><span class="re1">&lt;personal<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1">    <span class="sc3"><span class="re1">&lt;persona</span> <span class="re0">id</span>=<span class="st0">&quot;A&quot;</span><span class="re2">&gt;</span></span></div></li><li class="li1"><div class="de1">        <span class="sc3"><span class="re1">&lt;dades<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1">            <span class="sc3"><span class="re1">&lt;nom<span class="re2">&gt;</span></span></span>Marcelo<span class="sc3"><span class="re1">&lt;/nom<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1">            <span class="sc3"><span class="re1">&lt;cognom<span class="re2">&gt;</span></span></span>Dominguez<span class="sc3"><span class="re1">&lt;/cognom<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1">        <span class="sc3"><span class="re1">&lt;/dades<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1">        <span class="sc3"><span class="re1">&lt;email<span class="re2">&gt;</span></span></span>marcelo@empresa.cat<span class="sc3"><span class="re1">&lt;/email<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1">        <span class="sc3"><span class="re1">&lt;url</span> <span class="re0">href</span>=<span class="st0">&quot;http://www.empresa.cat&quot;</span> <span class="re2">/&gt;</span></span></div></li><li class="li1"><div class="de1">        <span class="sc3"><span class="re1">&lt;relaci</span>ó <span class="re0">treballador</span>=<span class="st0">&quot;B C D&quot;</span> <span class="re2">/&gt;</span></span></div></li><li class="li1"><div class="de1">    <span class="sc3"><span class="re1">&lt;/persona<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1">    <span class="sc3"><span class="re1">&lt;persona</span> <span class="re0">id</span>=<span class="st0">&quot;B&quot;</span><span class="re2">&gt;</span></span></div></li><li class="li1"><div class="de1">        <span class="sc3"><span class="re1">&lt;dades<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1">            <span class="sc3"><span class="re1">&lt;nom<span class="re2">&gt;</span></span></span>Frederic<span class="sc3"><span class="re1">&lt;/nom<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1">            <span class="sc3"><span class="re1">&lt;cognom<span class="re2">&gt;</span></span></span>Pi<span class="sc3"><span class="re1">&lt;/cognom<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1">        <span class="sc3"><span class="re1">&lt;/dades<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1">        <span class="sc3"><span class="re1">&lt;email<span class="re2">&gt;</span></span></span>frederic@empresa.cat<span class="sc3"><span class="re1">&lt;/email<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1">        <span class="sc3"><span class="re1">&lt;relaci</span>ó <span class="re0">treballador</span>=<span class="st0">&quot;C D&quot;</span> <span class="re0">director</span>=<span class="st0">&quot;A&quot;</span> <span class="re2">/&gt;</span></span>        </div></li><li class="li1"><div class="de1">    <span class="sc3"><span class="re1">&lt;/persona<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1">    <span class="sc3"><span class="re1">&lt;persona</span> <span class="re0">id</span>=<span class="st0">&quot;C&quot;</span><span class="re2">&gt;</span></span> </div></li><li class="li1"><div class="de1">        <span class="sc3"><span class="re1">&lt;dades<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1">            <span class="sc3"><span class="re1">&lt;nom<span class="re2">&gt;</span></span></span>Manel<span class="sc3"><span class="re1">&lt;/nom<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1">            <span class="sc3"><span class="re1">&lt;cognom<span class="re2">&gt;</span></span></span>Puigdevall<span class="sc3"><span class="re1">&lt;/cognom<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1">        <span class="sc3"><span class="re1">&lt;/dades<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1">        <span class="sc3"><span class="re1">&lt;email<span class="re2">&gt;</span></span></span>mpuigdevall@empresa.cat<span class="sc3"><span class="re1">&lt;/email<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1">        <span class="sc3"><span class="re1">&lt;relaci</span>ó <span class="re0">treballador</span>=<span class="st0">&quot;B D&quot;</span> <span class="re0">director</span>=<span class="st0">&quot;A&quot;</span> <span class="re2">/&gt;</span></span>               </div></li><li class="li1"><div class="de1">    <span class="sc3"><span class="re1">&lt;/persona<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1">    <span class="sc3"><span class="re1">&lt;persona</span> <span class="re0">id</span>=<span class="st0">&quot;D&quot;</span><span class="re2">&gt;</span></span></div></li><li class="li1"><div class="de1">        <span class="sc3"><span class="re1">&lt;dades<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1">            <span class="sc3"><span class="re1">&lt;nom<span class="re2">&gt;</span></span></span>Maria<span class="sc3"><span class="re1">&lt;/nom<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1">            <span class="sc3"><span class="re1">&lt;cognom<span class="re2">&gt;</span></span></span>Sebastià<span class="sc3"><span class="re1">&lt;/cognom<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1">        <span class="sc3"><span class="re1">&lt;/dades<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1">        <span class="sc3"><span class="re1">&lt;email<span class="re2">&gt;</span></span></span>mari@empresa.cat<span class="sc3"><span class="re1">&lt;/email<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1">        <span class="sc3"><span class="re1">&lt;url</span> <span class="re0">href</span>=<span class="st0">&quot;http://maria.blogspot.com&quot;</span><span class="re2">/&gt;</span></span></div></li><li class="li1"><div class="de1">        <span class="sc3"><span class="re1">&lt;relaci</span>ó <span class="re0">treballador</span>=<span class="st0">&quot;B D&quot;</span> <span class="re0">director</span>=<span class="st0">&quot;A&quot;</span> <span class="re2">/&gt;</span></span>               </div></li><li class="li1"><div class="de1">    <span class="sc3"><span class="re1">&lt;/persona<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1"><span class="sc3"><span class="re1">&lt;/personal<span class="re2">&gt;</span></span></span></div></li></ol></pre>
+</div><input class="btn_solution3" type="button" value="Mostra"></input></form>
+</p>
+
+</div>
+
+<h2><a id="creacio_d_un_dtd_per_validar_les_dades_de_previsio_del_temps" >Creació d&#039;un DTD per validar les dades de previsió del temps</a></h2>
+<div class="level2">
+
+<p>
+L’objectiu d’aquesta tasca és aprendre a crear un DTD a partir d’un exemple d’XML.
+</p>
+
+<p>
+S’ha de crear una DTD que validi un fitxer amb les previsions del temps de diferents poblacions de Catalunya. El fitxer de mostra per una població és el següent:
+</p>
+
+<p>
+<div class="mediaf filezip"><div class="mediacontent"><a href="../media/previsio.xml.zip">baixa</a><span> ( 1.2 KB )</span></div></div>
+</p>
+
+<p>
+<form action=""><div class="solution ioccontent"><pre class="code dtd"><ol><li class="li1"><div class="de1">&lt;!ELEMENT temps (poblacio)+&gt;</div></li><li class="li1"><div class="de1">&lt;!ELEMENT poblacio (nom,comarca,data+)&gt;</div></li><li class="li1"><div class="de1">&lt;!ELEMENT nom (#PCDATA)&gt;</div></li><li class="li1"><div class="de1">&lt;!ELEMENT comarca (#PCDATA)&gt;</div></li><li class="li1"><div class="de1">&lt;!ELEMENT data (maxima,minima,vent,pluja?,previsio+)&gt;</div></li><li class="li1"><div class="de1">&lt;!ATTLIST data dia NMTOKEN #REQUIRED&gt;</div></li><li class="li1"><div class="de1">&lt;!ELEMENT maxima (#PCDATA)&gt;</div></li><li class="li1"><div class="de1">&lt;!ELEMENT minima (#PCDATA)&gt;</div></li><li class="li1"><div class="de1">&lt;!ELEMENT vent (#PCDATA)&gt;</div></li><li class="li1"><div class="de1">&lt;!ELEMENT pluja (#PCDATA)&gt;</div></li><li class="li1"><div class="de1">&lt;!ELEMENT previsio (estat,graus)&gt;</div></li><li class="li1"><div class="de1">&lt;!ATTLIST previsio hora NMTOKEN #REQUIRED&gt;</div></li><li class="li1"><div class="de1">&lt;!ELEMENT estat (#PCDATA)&gt;</div></li><li class="li1"><div class="de1">&lt;!ELEMENT graus (#PCDATA)&gt;</div></li></ol></pre>
+</div><input class="btn_solution3" type="button" value="Mostra"></input></form>
+</p>
+
+</div>
+
+<h2><a id="creacio_d_un_dtd_per_validar_una_facturacio" >Creació d&#039;un DTD per validar una facturació</a></h2>
+<div class="level2">
+
+<p>
+L’objectiu d’aquesta tasca és aprendre a crear un DTD a partir d’un exemple d’XML.
+</p>
+
+<p>
+L’empresa Porquets, SA, es dedica a la venda i fabricació de porquets de xocolata.
+</p>
+
+<p>
+Els informàtics de l’empresa Porquets, SA, han creat un programa que exporta les dades de facturació en format XML.
+</p>
+
+<p>
+<div class="mediaf filezip"><div class="mediacontent"><a href="../media/facturacio.xml.zip">facturacio.xml</a><span> ( 959 B )</span></div></div>
+</p>
+
+<p>
+Com que no estan segurs que el programa no tingui errors els cal alguna manera de determinar que els fitxers XML que genera el programa sempre siguin vàlids. Us han contractat per crear la DTD.
+</p>
+
+<p>
+<form action=""><div class="solution ioccontent"><pre class="code dtd"><ol><li class="li1"><div class="de1">&lt;!ELEMENT facturacio (empresa,factura+)&gt;</div></li><li class="li1"><div class="de1">&lt;!ELEMENT empresa (raosocial)&gt;</div></li><li class="li1"><div class="de1">&lt;!ELEMENT factura (client,rebut+,data,subtotal,iva,total)&gt;</div></li><li class="li1"><div class="de1">&lt;!ATTLIST factura numero CDATA #REQUIRED&gt;</div></li><li class="li1"><div class="de1">&lt;!ELEMENT client (raosocial,idioma?)&gt;</div></li><li class="li1"><div class="de1">&lt;!ELEMENT rebut (data,totalrebut,linies)&gt;</div></li><li class="li1"><div class="de1">&lt;!ATTLIST rebut numero CDATA #REQUIRED&gt;</div></li><li class="li1"><div class="de1">&lt;!ELEMENT subtotal (#PCDATA)&gt;</div></li><li class="li1"><div class="de1">&lt;!ELEMENT iva (#PCDATA)&gt;</div></li><li class="li1"><div class="de1">&lt;!ELEMENT total (#PCDATA)&gt;</div></li><li class="li1"><div class="de1">&lt;!ELEMENT idioma (#PCDATA)&gt;</div></li><li class="li1"><div class="de1">&lt;!ELEMENT totalrebut (#PCDATA)&gt;</div></li><li class="li1"><div class="de1">&lt;!ELEMENT linies (producte)+&gt;</div></li><li class="li1"><div class="de1">&lt;!ELEMENT producte (descripcio,quantitat,preuunitari)&gt;</div></li><li class="li1"><div class="de1">&lt;!ATTLIST producte codi CDATA #REQUIRED&gt;</div></li><li class="li1"><div class="de1">&lt;!ELEMENT descripcio (#PCDATA)&gt;</div></li><li class="li1"><div class="de1">&lt;!ELEMENT quantitat (#PCDATA)&gt;</div></li><li class="li1"><div class="de1">&lt;!ELEMENT preuunitari (#PCDATA)&gt;</div></li><li class="li1"><div class="de1">&lt;!ELEMENT raosocial (nom,cognom*,adreca,codipostal,poblacio,(DNI|NIF))&gt;</div></li><li class="li1"><div class="de1">&lt;!ATTLIST raosocial tipus NMTOKEN #REQUIRED&gt;</div></li><li class="li1"><div class="de1">&lt;!ELEMENT nom (#PCDATA)&gt;</div></li><li class="li1"><div class="de1">&lt;!ELEMENT cognom (#PCDATA)&gt;</div></li><li class="li1"><div class="de1">&lt;!ELEMENT adreca (#PCDATA)&gt;</div></li><li class="li1"><div class="de1">&lt;!ELEMENT codipostal (#PCDATA)&gt;</div></li><li class="li1"><div class="de1">&lt;!ELEMENT poblacio (#PCDATA)&gt;</div></li><li class="li1"><div class="de1">&lt;!ELEMENT DNI (#PCDATA)&gt;</div></li><li class="li1"><div class="de1">&lt;!ELEMENT NIF (#PCDATA)&gt;</div></li><li class="li1"><div class="de1">&lt;!ELEMENT data (#PCDATA)&gt;</div></li></ol></pre>
+</div><input class="btn_solution3" type="button" value="Mostra"></input></form>
+</p>
+
+</div>
+
+<h2><a id="creacio_d_un_xsd" >Creació d&#039;un XSD</a></h2>
+<div class="level2">
+
+<p>
+L’objectiu d’aquesta tasca és crear un fitxer XSD a partir d’un exemple d’XML.
+</p>
+
+<p>
+Aquest any s’han celebrat les eleccions marcianes 2010. Com que els marcians són gent tan avançada han distribuït els resultats en un fitxer XML.
+</p>
+
+<p>
+<div class="mediaf filezip"><div class="mediacontent"><a href="../media/eleccions.xml.zip">Baixa resultats</a><span> ( 404 B )</span></div></div>
+</p>
+
+<p>
+Us demanen que creeu un XSD per poder validar les dades.
+</p>
+
+<p>
+<form action=""><div class="solution ioccontent">
+<p>
+Recordeu que no solament hi ha una solució possible. 
+</p>
+<pre class="code xml"><ol><li class="li1"><div class="de1"><span class="sc3"><span class="re1">&lt;?xml</span> <span class="re0">version</span>=<span class="st0">&quot;1.0&quot;</span> <span class="re0">encoding</span>=<span class="st0">&quot;UTF-8&quot;</span><span class="re2">?&gt;</span></span></div></li><li class="li1"><div class="de1"><span class="sc3"><span class="re1">&lt;xs:schema</span> <span class="re0">xmlns:xs</span>=<span class="st0">&quot;http://www.w3.org/2001/XMLSchema&quot;</span> <span class="re0">elementFormDefault</span>=<span class="st0">&quot;qualified&quot;</span><span class="re2">&gt;</span></span> </div></li><li class="li1"><div class="de1">   <span class="sc3"><span class="re1">&lt;xs:element</span> <span class="re0">name</span>=<span class="st0">&quot;eleccions&quot;</span><span class="re2">&gt;</span></span></div></li><li class="li1"><div class="de1">       <span class="sc3"><span class="re1">&lt;xs:complexType<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1">           <span class="sc3"><span class="re1">&lt;xs:sequence<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1">               <span class="sc3"><span class="re1">&lt;xs:element</span> <span class="re0">name</span>=<span class="st0">&quot;descripcio&quot;</span> <span class="re0">type</span>=<span class="st0">&quot;xs:string&quot;</span><span class="re2">/&gt;</span></span></div></li><li class="li1"><div class="de1">               <span class="sc3"><span class="re1">&lt;xs:element</span> <span class="re0">name</span>=<span class="st0">&quot;dades&quot;</span><span class="re2">&gt;</span></span></div></li><li class="li1"><div class="de1">                   <span class="sc3"><span class="re1">&lt;xs:complexType<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1">                       <span class="sc3"><span class="re1">&lt;xs:sequence<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1">                           <span class="sc3"><span class="re1">&lt;xs:element</span> <span class="re0">name</span>=<span class="st0">&quot;data&quot;</span> <span class="re0">type</span>=<span class="st0">&quot;xs:date&quot;</span><span class="re2">/&gt;</span></span></div></li><li class="li1"><div class="de1">                           <span class="sc3"><span class="re1">&lt;xs:element</span> <span class="re0">name</span>=<span class="st0">&quot;cens&quot;</span> <span class="re0">type</span>=<span class="st0">&quot;xs:integer&quot;</span><span class="re2">/&gt;</span></span></div></li><li class="li1"><div class="de1">                           <span class="sc3"><span class="re1">&lt;xs:element</span> <span class="re0">name</span>=<span class="st0">&quot;abstencio&quot;</span> <span class="re0">type</span>=<span class="st0">&quot;xs:integer&quot;</span><span class="re2">/&gt;</span></span></div></li><li class="li1"><div class="de1">                           <span class="sc3"><span class="re1">&lt;xs:element</span> <span class="re0">name</span>=<span class="st0">&quot;blancs&quot;</span> <span class="re0">type</span>=<span class="st0">&quot;xs:integer&quot;</span><span class="re2">/&gt;</span></span></div></li><li class="li1"><div class="de1">                       <span class="sc3"><span class="re1">&lt;/xs:sequence<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1">                   <span class="sc3"><span class="re1">&lt;/xs:complexType<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1">               <span class="sc3"><span class="re1">&lt;/xs:element<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1">               <span class="sc3"><span class="re1">&lt;xs:element</span> <span class="re0">name</span>=<span class="st0">&quot;resultats&quot;</span><span class="re2">&gt;</span></span></div></li><li class="li1"><div class="de1">                   <span class="sc3"><span class="re1">&lt;xs:complexType<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1">                       <span class="sc3"><span class="re1">&lt;xs:sequence<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1">                           <span class="sc3"><span class="re1">&lt;xs:element</span> <span class="re0">maxOccurs</span>=<span class="st0">&quot;unbounded&quot;</span> <span class="re0">name</span>=<span class="st0">&quot;partit&quot;</span><span class="re2">&gt;</span></span></div></li><li class="li1"><div class="de1">                               <span class="sc3"><span class="re1">&lt;xs:complexType<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1">                                   <span class="sc3"><span class="re1">&lt;xs:sequence<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1">                                       <span class="sc3"><span class="re1">&lt;xs:element</span> <span class="re0">name</span>=<span class="st0">&quot;nom&quot;</span> <span class="re0">type</span>=<span class="st0">&quot;xs:string&quot;</span><span class="re2">/&gt;</span></span></div></li><li class="li1"><div class="de1">                                       <span class="sc3"><span class="re1">&lt;xs:element</span> <span class="re0">name</span>=<span class="st0">&quot;vots&quot;</span> <span class="re0">type</span>=<span class="st0">&quot;xs:integer&quot;</span><span class="re2">/&gt;</span></span></div></li><li class="li1"><div class="de1">                                   <span class="sc3"><span class="re1">&lt;/xs:sequence<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1">                               <span class="sc3"><span class="re1">&lt;/xs:complexType<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1">                           <span class="sc3"><span class="re1">&lt;/xs:element<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1">                       <span class="sc3"><span class="re1">&lt;/xs:sequence<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1">                   <span class="sc3"><span class="re1">&lt;/xs:complexType<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1">               <span class="sc3"><span class="re1">&lt;/xs:element<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1">           <span class="sc3"><span class="re1">&lt;/xs:sequence<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1">       <span class="sc3"><span class="re1">&lt;/xs:complexType<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1">   <span class="sc3"><span class="re1">&lt;/xs:element<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1"><span class="sc3"><span class="re1">&lt;/xs:schema<span class="re2">&gt;</span></span></span></div></li></ol></pre>
+</div><input class="btn_solution3" type="button" value="Mostra"></input></form>
+</p>
+
+</div>
+
+<h2><a id="desenvolupament_d_un_xsd_per_validar_els_resultats_d_un_torneig_de_futbol" >Desenvolupament d&#039;un XSD per validar els resultats d&#039;un torneig de futbol</a></h2>
+<div class="level2">
+
+<p>
+L’objectiu d’aquesta tasca és aprendre a crear un fitxer XSD a partir d’un exemple d’XML.
+</p>
+
+<p>
+El diari esportiu <em>L’Àngel Volador</em> ha organitzat una lliga de futbol entre quatre equips: FC Masarach, UE Cabanes, CE Vilatenim i Reial Vilabertran.
+</p>
+
+<p>
+Els resultats els han expressat en XML.
+</p>
+
+<p>
+<div class="mediaf filezip"><div class="mediacontent"><a href="../media/lliga.xml.zip">Fitxer</a><span> ( 785 B )</span></div></div>
+</p>
+
+<p>
+Creeu el fitxer XSD per validar els documents a partir del de mostra.
+</p>
+
+<p>
+<form action=""><div class="solution ioccontent">
+<p>
+Recordeu que no solament hi ha una solució…
+</p>
+<pre class="code xml"><ol><li class="li1"><div class="de1"><span class="sc3"><span class="re1">&lt;?xml</span> <span class="re0">version</span>=<span class="st0">&quot;1.0&quot;</span> <span class="re0">encoding</span>=<span class="st0">&quot;UTF-8&quot;</span><span class="re2">?&gt;</span></span></div></li><li class="li1"><div class="de1"><span class="sc3"><span class="re1">&lt;xs:schema</span> <span class="re0">xmlns:xs</span>=<span class="st0">&quot;http://www.w3.org/2001/XMLSchema&quot;</span> <span class="re0">elementFormDefault</span>=<span class="st0">&quot;qualified&quot;</span><span class="re2">&gt;</span></span> </div></li><li class="li1"><div class="de1">&nbsp;</div></li><li class="li1"><div class="de1"><span class="sc3"><span class="re1">&lt;xs:element</span> <span class="re0">name</span>=<span class="st0">&quot;lliga&quot;</span><span class="re2">&gt;</span></span></div></li><li class="li1"><div class="de1">    <span class="sc3"><span class="re1">&lt;xs:complexType<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1">        <span class="sc3"><span class="re1">&lt;xs:sequence<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1">            <span class="sc3"><span class="re1">&lt;xs:element</span> <span class="re0">name</span>=<span class="st0">&quot;jornada&quot;</span> <span class="re0">maxOccurs</span>=<span class="st0">&quot;unbounded&quot;</span><span class="re2">&gt;</span></span></div></li><li class="li1"><div class="de1">                <span class="sc3"><span class="re1">&lt;xs:complexType<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1">                    <span class="sc3"><span class="re1">&lt;xs:sequence<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1">                        <span class="sc3"><span class="re1">&lt;xs:element</span> <span class="re0">name</span>=<span class="st0">&quot;partit&quot;</span> <span class="re0">maxOccurs</span>=<span class="st0">&quot;unbounded&quot;</span><span class="re2">&gt;</span></span></div></li><li class="li1"><div class="de1">                            <span class="sc3"><span class="re1">&lt;xs:complexType<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1">                                <span class="sc3"><span class="re1">&lt;xs:sequence<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1">                                    <span class="sc3"><span class="re1">&lt;xs:element</span> <span class="re0">name</span>=<span class="st0">&quot;dia&quot;</span> <span class="re0">type</span>=<span class="st0">&quot;xs:string&quot;</span><span class="re2">/&gt;</span></span></div></li><li class="li1"><div class="de1">                                    <span class="sc3"><span class="re1">&lt;xs:element</span> <span class="re0">name</span>=<span class="st0">&quot;equip&quot;</span> <span class="re0">minOccurs</span>=<span class="st0">&quot;2&quot;</span> <span class="re0">maxOccurs</span>=<span class="st0">&quot;2&quot;</span><span class="re2">&gt;</span></span></div></li><li class="li1"><div class="de1">                                        <span class="sc3"><span class="re1">&lt;xs:complexType<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1">                                            <span class="sc3"><span class="re1">&lt;xs:sequence<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1">                                              <span class="sc3"><span class="re1">&lt;xs:element</span> <span class="re0">name</span>=<span class="st0">&quot;nom&quot;</span> <span class="re0">type</span>=<span class="st0">&quot;xs:string&quot;</span><span class="re2">/&gt;</span></span></div></li><li class="li1"><div class="de1">                                              <span class="sc3"><span class="re1">&lt;xs:element</span> <span class="re0">name</span>=<span class="st0">&quot;resultat&quot;</span> <span class="re0">type</span>=<span class="st0">&quot;xs:integer&quot;</span><span class="re2">/&gt;</span></span></div></li><li class="li1"><div class="de1">                                              <span class="sc3"><span class="re1">&lt;xs:element</span> <span class="re0">name</span>=<span class="st0">&quot;gols&quot;</span><span class="re2">&gt;</span></span></div></li><li class="li1"><div class="de1">                                                  <span class="sc3"><span class="re1">&lt;xs:complexType<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1">                                                      <span class="sc3"><span class="re1">&lt;xs:sequence<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1">                                                         <span class="sc3"><span class="re1">&lt;xs:element</span> <span class="re0">name</span>=<span class="st0">&quot;jugador&quot;</span> <span class="re0">type</span>=<span class="st0">&quot;xs:string&quot;</span> <span class="re0">maxOccurs</span>=<span class="st0">&quot;unbounded&quot;</span> <span class="re0">minOccurs</span>=<span class="st0">&quot;0&quot;</span><span class="re2">/&gt;</span></span></div></li><li class="li1"><div class="de1">                                                      <span class="sc3"><span class="re1">&lt;/xs:sequence<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1">                                                  <span class="sc3"><span class="re1">&lt;/xs:complexType<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1">                                              <span class="sc3"><span class="re1">&lt;/xs:element<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1">                                            <span class="sc3"><span class="re1">&lt;/xs:sequence<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1">                                            <span class="sc3"><span class="re1">&lt;xs:attribute</span> <span class="re0">name</span>=<span class="st0">&quot;juga&quot;</span> <span class="re0">type</span>=<span class="st0">&quot;xs:string&quot;</span><span class="re2">/&gt;</span></span></div></li><li class="li1"><div class="de1">                                        <span class="sc3"><span class="re1">&lt;/xs:complexType<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1">                                    <span class="sc3"><span class="re1">&lt;/xs:element<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1">                                <span class="sc3"><span class="re1">&lt;/xs:sequence<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1">                                <span class="sc3"><span class="re1">&lt;xs:attribute</span> <span class="re0">name</span>=<span class="st0">&quot;num&quot;</span> <span class="re0">type</span>=<span class="st0">&quot;xs:integer&quot;</span><span class="re2">/&gt;</span></span></div></li><li class="li1"><div class="de1">                            <span class="sc3"><span class="re1">&lt;/xs:complexType<span class="re2">&gt;</span></span></span>                            </div></li><li class="li1"><div class="de1">                        <span class="sc3"><span class="re1">&lt;/xs:element<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1">                    <span class="sc3"><span class="re1">&lt;/xs:sequence<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1">                    <span class="sc3"><span class="re1">&lt;xs:attribute</span> <span class="re0">name</span>=<span class="st0">&quot;num&quot;</span> <span class="re0">type</span>=<span class="st0">&quot;xs:integer&quot;</span><span class="re2">/&gt;</span></span></div></li><li class="li1"><div class="de1">                <span class="sc3"><span class="re1">&lt;/xs:complexType<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1">            <span class="sc3"><span class="re1">&lt;/xs:element<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1">        <span class="sc3"><span class="re1">&lt;/xs:sequence<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1">    <span class="sc3"><span class="re1">&lt;/xs:complexType<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1"><span class="sc3"><span class="re1">&lt;/xs:element<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1"><span class="sc3"><span class="re1">&lt;/xs:schema<span class="re2">&gt;</span></span></span></div></li></ol></pre>
+</div><input class="btn_solution3" type="button" value="Mostra"></input></form>
+</p>
+
+</div>
+
+<h2><a id="desenvolupar_un_xsd_per_validar_la_previsio_del_temps" >Desenvolupar un XSD per validar la previsió del temps</a></h2>
+<div class="level2">
+
+<p>
+L’objectiu d’aquesta tasca és aprendre a crear un fitxer XSD a partir d’un exemple d’XML.
+</p>
+
+<p>
+Cal crear un XSD per validar els fitxers de previsió del temps de poblacions de Catalunya que podeu trobar en aquest fitxer: <div class="mediaf filezip"><div class="mediacontent"><a href="../media/previsio.xml.zip">baixa</a><span> ( 1.2 KB )</span></div></div>
+</p>
+
+<p>
+<form action=""><div class="solution ioccontent">
+<p>
+Per fer la solució d’aquesta activitat començarem creant uns tipus especials “preveure”, on hi haurà les repeticions de les previsions, i el tipus “dia” per a repeticions de dies.
+</p>
+
+<p>
+D’aquesta manera serà més simple definir l’element principal.
+</p>
+<pre class="code xml"><ol><li class="li1"><div class="de1"><span class="sc3"><span class="re1">&lt;?xml</span> <span class="re0">version</span>=<span class="st0">&quot;1.0&quot;</span> <span class="re0">encoding</span>=<span class="st0">&quot;UTF-8&quot;</span><span class="re2">?&gt;</span></span></div></li><li class="li1"><div class="de1"><span class="sc3"><span class="re1">&lt;xs:schema</span> <span class="re0">xmlns:xs</span>=<span class="st0">&quot;http://www.w3.org/2001/XMLSchema&quot;</span> <span class="re0">elementFormDefault</span>=<span class="st0">&quot;qualified&quot;</span><span class="re2">&gt;</span></span></div></li><li class="li1"><div class="de1">&nbsp;</div></li><li class="li1"><div class="de1">&nbsp;</div></li><li class="li1"><div class="de1"><span class="sc3"><span class="re1">&lt;xs:complexType</span> <span class="re0">name</span>=<span class="st0">&quot;preveure&quot;</span><span class="re2">&gt;</span></span></div></li><li class="li1"><div class="de1">    <span class="sc3"><span class="re1">&lt;xs:sequence<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1">        <span class="sc3"><span class="re1">&lt;xs:element</span> <span class="re0">name</span>=<span class="st0">&quot;estat&quot;</span> <span class="re0">type</span>=<span class="st0">&quot;xs:string&quot;</span><span class="re2">/&gt;</span></span></div></li><li class="li1"><div class="de1">        <span class="sc3"><span class="re1">&lt;xs:element</span> <span class="re0">name</span>=<span class="st0">&quot;graus&quot;</span> <span class="re0">type</span>=<span class="st0">&quot;xs:integer&quot;</span><span class="re2">/&gt;</span></span></div></li><li class="li1"><div class="de1">    <span class="sc3"><span class="re1">&lt;/xs:sequence<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1">    <span class="sc3"><span class="re1">&lt;xs:attribute</span> <span class="re0">name</span>=<span class="st0">&quot;hora&quot;</span> <span class="re0">type</span>=<span class="st0">&quot;xs:string&quot;</span> <span class="re0">use</span>=<span class="st0">&quot;required&quot;</span> <span class="re2">/&gt;</span></span></div></li><li class="li1"><div class="de1"><span class="sc3"><span class="re1">&lt;/xs:complexType<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1">&nbsp;</div></li><li class="li1"><div class="de1"><span class="sc3"><span class="re1">&lt;xs:complexType</span> <span class="re0">name</span>=<span class="st0">&quot;dia&quot;</span><span class="re2">&gt;</span></span></div></li><li class="li1"><div class="de1">    <span class="sc3"><span class="re1">&lt;xs:sequence<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1">        <span class="sc3"><span class="re1">&lt;xs:element</span> <span class="re0">name</span>=<span class="st0">&quot;maxima&quot;</span> <span class="re0">type</span>=<span class="st0">&quot;xs:integer&quot;</span><span class="re2">/&gt;</span></span></div></li><li class="li1"><div class="de1">        <span class="sc3"><span class="re1">&lt;xs:element</span> <span class="re0">name</span>=<span class="st0">&quot;minima&quot;</span> <span class="re0">type</span>=<span class="st0">&quot;xs:integer&quot;</span><span class="re2">/&gt;</span></span></div></li><li class="li1"><div class="de1">        <span class="sc3"><span class="re1">&lt;xs:element</span> <span class="re0">name</span>=<span class="st0">&quot;vent&quot;</span> <span class="re0">type</span>=<span class="st0">&quot;xs:string&quot;</span><span class="re2">/&gt;</span></span></div></li><li class="li1"><div class="de1">        <span class="sc3"><span class="re1">&lt;xs:element</span> <span class="re0">name</span>=<span class="st0">&quot;pluja&quot;</span> <span class="re0">type</span>=<span class="st0">&quot;xs:string&quot;</span> <span class="re0">minOccurs</span>=<span class="st0">&quot;0&quot;</span><span class="re2">/&gt;</span></span></div></li><li class="li1"><div class="de1">        <span class="sc3"><span class="re1">&lt;xs:element</span> <span class="re0">name</span>=<span class="st0">&quot;previsio&quot;</span> <span class="re0">type</span>=<span class="st0">&quot;preveure&quot;</span> <span class="re0">maxOccurs</span>=<span class="st0">&quot;unbounded&quot;</span><span class="re2">/&gt;</span></span></div></li><li class="li1"><div class="de1">    <span class="sc3"><span class="re1">&lt;/xs:sequence<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1">    <span class="sc3"><span class="re1">&lt;xs:attribute</span> <span class="re0">name</span>=<span class="st0">&quot;dia&quot;</span> <span class="re0">type</span>=<span class="st0">&quot;xs:string&quot;</span> <span class="re0">use</span>=<span class="st0">&quot;required&quot;</span><span class="re2">/&gt;</span></span></div></li><li class="li1"><div class="de1"><span class="sc3"><span class="re1">&lt;/xs:complexType<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1">&nbsp;</div></li><li class="li1"><div class="de1"><span class="sc3"><span class="re1">&lt;xs:element</span> <span class="re0">name</span>=<span class="st0">&quot;temps&quot;</span><span class="re2">&gt;</span></span></div></li><li class="li1"><div class="de1">    <span class="sc3"><span class="re1">&lt;xs:complexType<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1">        <span class="sc3"><span class="re1">&lt;xs:sequence<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1">            <span class="sc3"><span class="re1">&lt;xs:element</span> <span class="re0">name</span>=<span class="st0">&quot;poblacio&quot;</span> <span class="re0">maxOccurs</span>=<span class="st0">&quot;unbounded&quot;</span><span class="re2">&gt;</span></span></div></li><li class="li1"><div class="de1">                <span class="sc3"><span class="re1">&lt;xs:complexType<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1">                    <span class="sc3"><span class="re1">&lt;xs:sequence<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1">                        <span class="sc3"><span class="re1">&lt;xs:element</span> <span class="re0">name</span>=<span class="st0">&quot;nom&quot;</span> <span class="re0">type</span>=<span class="st0">&quot;xs:string&quot;</span><span class="re2">/&gt;</span></span></div></li><li class="li1"><div class="de1">                        <span class="sc3"><span class="re1">&lt;xs:element</span> <span class="re0">name</span>=<span class="st0">&quot;comarca&quot;</span> <span class="re0">type</span>=<span class="st0">&quot;xs:string&quot;</span><span class="re2">/&gt;</span></span></div></li><li class="li1"><div class="de1">                        <span class="sc3"><span class="re1">&lt;xs:element</span> <span class="re0">name</span>=<span class="st0">&quot;data&quot;</span> <span class="re0">type</span>=<span class="st0">&quot;dia&quot;</span> <span class="re0">maxOccurs</span>=<span class="st0">&quot;unbounded&quot;</span><span class="re2">/&gt;</span></span></div></li><li class="li1"><div class="de1">                    <span class="sc3"><span class="re1">&lt;/xs:sequence<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1">                <span class="sc3"><span class="re1">&lt;/xs:complexType<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1">            <span class="sc3"><span class="re1">&lt;/xs:element<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1">        <span class="sc3"><span class="re1">&lt;/xs:sequence<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1">    <span class="sc3"><span class="re1">&lt;/xs:complexType<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1"><span class="sc3"><span class="re1">&lt;/xs:element<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1">&nbsp;</div></li><li class="li1"><div class="de1"><span class="sc3"><span class="re1">&lt;/xs:schema<span class="re2">&gt;</span></span></span></div></li></ol></pre>
+
+<p>
+Com sempre, les possibles solucions són molt diverses.
+</p>
+</div><input class="btn_solution3" type="button" value="Mostra"></input></form>
+</p>
+
+</div>
+
+<h2><a id="creacio_d_un_xsd_per_validar_la_facturacio_d_una_empresa" >Creació d&#039;un XSD per validar la facturació d&#039;una empresa</a></h2>
+<div class="level2">
+
+<p>
+L’objectiu d’aquesta tasca és aprendre a crear un fitxer XSD a partir d’un exemple d’XML.
+</p>
+
+<p>
+L’empresa Porquets, SA, ha despatxat el gerent, el senyor Senglar, i n’han contractat un de nou, que ha quedat espantat perquè s’hagin pagat diners per fer una DTD.
+</p>
+
+<p>
+I per tant, ha decidit que s’ha de canviar. Després de fer els crits corresponents als informàtics de l’empresa (“Antics! Antics!”) us ha trucat a vosaltres perquè els feu l’XML Schema.
+</p>
+
+<p>
+<div class="mediaf filezip"><div class="mediacontent"><a href="../media/facturacio.xml.zip">Baixa XML</a><span> ( 959 B )</span></div></div>
+</p>
+
+<p>
+Com a requisit “extra” vol que us assegureu que el DNI i el NIF segueixen l’estructura correcta d’aquests documents.
+</p>
+
+<p>
+<form action=""><div class="solution ioccontent"><pre class="code xml"><ol><li class="li1"><div class="de1"><span class="sc3"><span class="re1">&lt;?xml</span> <span class="re0">version</span>=<span class="st0">&quot;1.0&quot;</span> <span class="re0">encoding</span>=<span class="st0">&quot;UTF-8&quot;</span><span class="re2">?&gt;</span></span></div></li><li class="li1"><div class="de1"><span class="sc3"><span class="re1">&lt;xs:schema</span> <span class="re0">xmlns:xs</span>=<span class="st0">&quot;http://www.w3.org/2001/XMLSchema&quot;</span> <span class="re0">elementFormDefault</span>=<span class="st0">&quot;qualified&quot;</span><span class="re2">&gt;</span></span> </div></li><li class="li1"><div class="de1">&nbsp;</div></li><li class="li1"><div class="de1"><span class="sc3"><span class="re1">&lt;xs:complexType</span> <span class="re0">name</span>=<span class="st0">&quot;rao&quot;</span><span class="re2">&gt;</span></span></div></li><li class="li1"><div class="de1">    <span class="sc3"><span class="re1">&lt;xs:sequence<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1">        <span class="sc3"><span class="re1">&lt;xs:element</span> <span class="re0">name</span>=<span class="st0">&quot;nom&quot;</span> <span class="re0">type</span>=<span class="st0">&quot;xs:string&quot;</span><span class="re2">/&gt;</span></span></div></li><li class="li1"><div class="de1">        <span class="sc3"><span class="re1">&lt;xs:element</span> <span class="re0">name</span>=<span class="st0">&quot;cognom&quot;</span> <span class="re0">minOccurs</span>=<span class="st0">&quot;0&quot;</span> <span class="re0">maxOccurs</span>=<span class="st0">&quot;unbounded&quot;</span> <span class="re0">type</span>=<span class="st0">&quot;xs:string&quot;</span><span class="re2">/&gt;</span></span></div></li><li class="li1"><div class="de1">        <span class="sc3"><span class="re1">&lt;xs:element</span> <span class="re0">name</span>=<span class="st0">&quot;adreca&quot;</span> <span class="re0">type</span>=<span class="st0">&quot;xs:string&quot;</span><span class="re2">/&gt;</span></span></div></li><li class="li1"><div class="de1">        <span class="sc3"><span class="re1">&lt;xs:element</span> <span class="re0">name</span>=<span class="st0">&quot;codipostal&quot;</span> <span class="re0">type</span>=<span class="st0">&quot;xs:integer&quot;</span><span class="re2">/&gt;</span></span></div></li><li class="li1"><div class="de1">        <span class="sc3"><span class="re1">&lt;xs:element</span> <span class="re0">name</span>=<span class="st0">&quot;poblacio&quot;</span> <span class="re0">type</span>=<span class="st0">&quot;xs:string&quot;</span><span class="re2">/&gt;</span></span></div></li><li class="li1"><div class="de1">        <span class="sc3"><span class="re1">&lt;xs:choice<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1">            <span class="sc3"><span class="re1">&lt;xs:element</span> <span class="re0">name</span>=<span class="st0">&quot;DNI&quot;</span> <span class="re0">type</span>=<span class="st0">&quot;xs:string&quot;</span><span class="re2">/&gt;</span></span></div></li><li class="li1"><div class="de1">            <span class="sc3"><span class="re1">&lt;xs:element</span> <span class="re0">name</span>=<span class="st0">&quot;NIF&quot;</span> <span class="re0">type</span>=<span class="st0">&quot;xs:string&quot;</span><span class="re2">/&gt;</span></span></div></li><li class="li1"><div class="de1">        <span class="sc3"><span class="re1">&lt;/xs:choice<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1">    <span class="sc3"><span class="re1">&lt;/xs:sequence<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1">    <span class="sc3"><span class="re1">&lt;xs:attribute</span> <span class="re0">name</span>=<span class="st0">&quot;tipus&quot;</span> <span class="re0">use</span>=<span class="st0">&quot;required&quot;</span> <span class="re0">type</span>=<span class="st0">&quot;xs:NCName&quot;</span><span class="re2">/&gt;</span></span></div></li><li class="li1"><div class="de1"><span class="sc3"><span class="re1">&lt;/xs:complexType<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1">&nbsp;</div></li><li class="li1"><div class="de1"><span class="sc3"><span class="re1">&lt;xs:complexType</span> <span class="re0">name</span>=<span class="st0">&quot;producte&quot;</span><span class="re2">&gt;</span></span></div></li><li class="li1"><div class="de1">    <span class="sc3"><span class="re1">&lt;xs:sequence<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1">        <span class="sc3"><span class="re1">&lt;xs:element</span> <span class="re0">name</span>=<span class="st0">&quot;descripcio&quot;</span> <span class="re0">type</span>=<span class="st0">&quot;xs:string&quot;</span><span class="re2">/&gt;</span></span></div></li><li class="li1"><div class="de1">        <span class="sc3"><span class="re1">&lt;xs:element</span> <span class="re0">name</span>=<span class="st0">&quot;quantitat&quot;</span> <span class="re0">type</span>=<span class="st0">&quot;xs:integer&quot;</span><span class="re2">/&gt;</span></span></div></li><li class="li1"><div class="de1">        <span class="sc3"><span class="re1">&lt;xs:element</span> <span class="re0">name</span>=<span class="st0">&quot;preuunitari&quot;</span> <span class="re0">type</span>=<span class="st0">&quot;xs:integer&quot;</span><span class="re2">/&gt;</span></span></div></li><li class="li1"><div class="de1">    <span class="sc3"><span class="re1">&lt;/xs:sequence<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1">    <span class="sc3"><span class="re1">&lt;xs:attribute</span> <span class="re0">name</span>=<span class="st0">&quot;codi&quot;</span> <span class="re0">type</span>=<span class="st0">&quot;xs:integer&quot;</span> <span class="re0">use</span>=<span class="st0">&quot;required&quot;</span><span class="re2">&gt;</span><span class="re1">&lt;/xs:attribute<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1"><span class="sc3"><span class="re1">&lt;/xs:complexType<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1">&nbsp;</div></li><li class="li1"><div class="de1"> <span class="sc3"><span class="re1">&lt;xs:complexType</span> <span class="re0">name</span>=<span class="st0">&quot;productes&quot;</span><span class="re2">&gt;</span></span></div></li><li class="li1"><div class="de1">     <span class="sc3"><span class="re1">&lt;xs:sequence<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1">         <span class="sc3"><span class="re1">&lt;xs:element</span> <span class="re0">name</span>=<span class="st0">&quot;producte&quot;</span> <span class="re0">type</span>=<span class="st0">&quot;producte&quot;</span> <span class="re0">maxOccurs</span>=<span class="st0">&quot;unbounded&quot;</span><span class="re2">/&gt;</span></span></div></li><li class="li1"><div class="de1">     <span class="sc3"><span class="re1">&lt;/xs:sequence<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1"> <span class="sc3"><span class="re1">&lt;/xs:complexType<span class="re2">&gt;</span></span></span>   </div></li><li class="li1"><div class="de1">&nbsp;</div></li><li class="li1"><div class="de1"><span class="sc3"><span class="re1">&lt;xs:complexType</span> <span class="re0">name</span>=<span class="st0">&quot;linies&quot;</span><span class="re2">&gt;</span></span></div></li><li class="li1"><div class="de1">    <span class="sc3"><span class="re1">&lt;xs:sequence<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1">        <span class="sc3"><span class="re1">&lt;xs:element</span> <span class="re0">name</span>=<span class="st0">&quot;data&quot;</span> <span class="re0">type</span>=<span class="st0">&quot;xs:string&quot;</span><span class="re2">/&gt;</span></span></div></li><li class="li1"><div class="de1">        <span class="sc3"><span class="re1">&lt;xs:element</span> <span class="re0">name</span>=<span class="st0">&quot;totalrebut&quot;</span> <span class="re0">type</span>=<span class="st0">&quot;xs:string&quot;</span> <span class="re2">/&gt;</span></span></div></li><li class="li1"><div class="de1">        <span class="sc3"><span class="re1">&lt;xs:element</span> <span class="re0">name</span>=<span class="st0">&quot;linies&quot;</span> <span class="re0">type</span>=<span class="st0">&quot;productes&quot;</span><span class="re2">/&gt;</span></span></div></li><li class="li1"><div class="de1">    <span class="sc3"><span class="re1">&lt;/xs:sequence<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1">    <span class="sc3"><span class="re1">&lt;xs:attribute</span> <span class="re0">name</span>=<span class="st0">&quot;numero&quot;</span> <span class="re0">type</span>=<span class="st0">&quot;xs:integer&quot;</span> <span class="re0">use</span>=<span class="st0">&quot;required&quot;</span><span class="re2">/&gt;</span></span></div></li><li class="li1"><div class="de1"><span class="sc3"><span class="re1">&lt;/xs:complexType<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1">&nbsp;</div></li><li class="li1"><div class="de1"><span class="sc3"><span class="re1">&lt;xs:element</span> <span class="re0">name</span>=<span class="st0">&quot;facturacio&quot;</span><span class="re2">&gt;</span></span></div></li><li class="li1"><div class="de1">    <span class="sc3"><span class="re1">&lt;xs:complexType<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1">        <span class="sc3"><span class="re1">&lt;xs:sequence<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1">            <span class="sc3"><span class="re1">&lt;xs:element</span> <span class="re0">name</span>=<span class="st0">&quot;empresa&quot;</span><span class="re2">&gt;</span></span></div></li><li class="li1"><div class="de1">                <span class="sc3"><span class="re1">&lt;xs:complexType<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1">                    <span class="sc3"><span class="re1">&lt;xs:sequence<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1">                        <span class="sc3"><span class="re1">&lt;xs:element</span> <span class="re0">name</span>=<span class="st0">&quot;raosocial&quot;</span> <span class="re0">type</span>=<span class="st0">&quot;rao&quot;</span><span class="re2">/&gt;</span></span>            </div></li><li class="li1"><div class="de1">                    <span class="sc3"><span class="re1">&lt;/xs:sequence<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1">                <span class="sc3"><span class="re1">&lt;/xs:complexType<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1">            <span class="sc3"><span class="re1">&lt;/xs:element<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1">            <span class="sc3"><span class="re1">&lt;xs:element</span> <span class="re0">name</span>=<span class="st0">&quot;factura&quot;</span> <span class="re0">maxOccurs</span>=<span class="st0">&quot;unbounded&quot;</span><span class="re2">&gt;</span></span></div></li><li class="li1"><div class="de1">                <span class="sc3"><span class="re1">&lt;xs:complexType<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1">                    <span class="sc3"><span class="re1">&lt;xs:sequence<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1">                        <span class="sc3"><span class="re1">&lt;xs:element</span> <span class="re0">name</span>=<span class="st0">&quot;client&quot;</span> <span class="re2">&gt;</span></span></div></li><li class="li1"><div class="de1">                            <span class="sc3"><span class="re1">&lt;xs:complexType<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1">                                <span class="sc3"><span class="re1">&lt;xs:sequence<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1">                                    <span class="sc3"><span class="re1">&lt;xs:element</span> <span class="re0">name</span>=<span class="st0">&quot;raosocial&quot;</span> <span class="re0">type</span>=<span class="st0">&quot;rao&quot;</span><span class="re2">/&gt;</span></span></div></li><li class="li1"><div class="de1">                                <span class="sc3"><span class="re1">&lt;/xs:sequence<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1">                            <span class="sc3"><span class="re1">&lt;/xs:complexType<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1">                        <span class="sc3"><span class="re1">&lt;/xs:element<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1">                        <span class="sc3"><span class="re1">&lt;xs:element</span> <span class="re0">name</span>=<span class="st0">&quot;rebut&quot;</span> <span class="re0">type</span>=<span class="st0">&quot;linies&quot;</span> <span class="re0">maxOccurs</span>=<span class="st0">&quot;unbounded&quot;</span><span class="re2">/&gt;</span></span></div></li><li class="li1"><div class="de1">                        <span class="sc3"><span class="re1">&lt;xs:element</span> <span class="re0">name</span>=<span class="st0">&quot;data&quot;</span> <span class="re0">type</span>=<span class="st0">&quot;xs:string&quot;</span> <span class="re2">/&gt;</span></span></div></li><li class="li1"><div class="de1">                        <span class="sc3"><span class="re1">&lt;xs:element</span> <span class="re0">name</span>=<span class="st0">&quot;subtotal&quot;</span> <span class="re0">type</span>=<span class="st0">&quot;xs:float&quot;</span><span class="re2">/&gt;</span></span></div></li><li class="li1"><div class="de1">                        <span class="sc3"><span class="re1">&lt;xs:element</span> <span class="re0">name</span>=<span class="st0">&quot;iva&quot;</span> <span class="re0">type</span>=<span class="st0">&quot;xs:integer&quot;</span><span class="re2">/&gt;</span></span></div></li><li class="li1"><div class="de1">                        <span class="sc3"><span class="re1">&lt;xs:element</span> <span class="re0">name</span>=<span class="st0">&quot;total&quot;</span> <span class="re0">type</span>=<span class="st0">&quot;xs:float&quot;</span><span class="re2">/&gt;</span></span></div></li><li class="li1"><div class="de1">                    <span class="sc3"><span class="re1">&lt;/xs:sequence<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1">                    <span class="sc3"><span class="re1">&lt;xs:attribute</span> <span class="re0">name</span>=<span class="st0">&quot;numero&quot;</span> <span class="re0">type</span>=<span class="st0">&quot;xs:integer&quot;</span> <span class="re0">use</span>=<span class="st0">&quot;required&quot;</span><span class="re2">&gt;</span><span class="re1">&lt;/xs:attribute<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1">                <span class="sc3"><span class="re1">&lt;/xs:complexType<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1">            <span class="sc3"><span class="re1">&lt;/xs:element<span class="re2">&gt;</span></span></span>                        </div></li><li class="li1"><div class="de1">        <span class="sc3"><span class="re1">&lt;/xs:sequence<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1">    <span class="sc3"><span class="re1">&lt;/xs:complexType<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1"><span class="sc3"><span class="re1">&lt;/xs:element<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1"><span class="sc3"><span class="re1">&lt;/xs:schema<span class="re2">&gt;</span></span></span></div></li></ol></pre>
+</div><input class="btn_solution3" type="button" value="Mostra"></input></form>
+</p>
+
+</div>
+
+	 </article>
+     <div class="pnpage">
+      <div class="left-corner"></div>
+      <div id="prevpage">Anar a la p&agrave;gina anterior:<br /><a href="../../../WebContent/u2/a2/continguts.html">Definició d'esquemes i vocabularis en XML</a></div>
+      <div id="nextpage">Anar a la p&agrave;gina seg&uuml;ent:<br /><a href="../../../WebContent/u2/a2/exercicis.html">Exercicis d'autoavaluació</a></div>
+      <div class="right-corner"></div>
+     </div>
+    </div>
+    <footer class="footer">
+      <div><small>Aquest document està subjecte a una llicència oberta de Creative Commons, es reserva el dret de reconeixement de l'autoria, d'exigir que no se'n faci cap mena d'ús comercial. Si altereu o transformeu aquesta obra, o en genereu obres derivades, només podeu distribuir l'obra generada amb una llicència idèntica a aquesta.</small></div>
+    </footer>
+ </div>
+ <div id="back_preview" class="hidden"></div>
+ <div id="preview" class="hidden">
+  <div class="prevcontent"></div>
+ </div>
+ <div id="help-tooltips">
+  <div id="help-toc" class="hidden tooltip"><span>Taula de continguts:</span> Ofereix una vista general de l&#39;estructura del m&ograve;dul, que us facilitar&agrave; la navegaci&oacute; a trav&eacute;s dels seus continguts.<span class="arrow-left"></span></div> 
+  <div id="help-settings" class="hidden tooltip"><span>Opcions de format:</span> Permet configurar el format de lectura a partir de les vostres prefer&egrave;ncies, modificant la mida de la lletra, el color del fons, l&#39;amplada de la p&agrave;gina o l&#39;ocultaci&oacute; dels continguts complementaris, entre d&#39;altres.<span class="arrow-left"></span></div>
+  <div id="help-printer" class="hidden tooltip"><span>Imprimir:</span>  Envia el contingut seleccionat a la impressora.<span class="arrow-left"></span></div>
+  <div id="help-favorites" class="hidden tooltip"><span>Prefereits:</span> Permet desar aquelles parts del contingut a les que us interessi accedir en un moment posterior; us permetr&agrave; anar creant un repositori personalitzat de les seccions que considereu m&eacute;s rellevants. Un cop l&#39;hageu començat a fer servir se us mostrar&agrave; a sota un comptador que us informar&agrave; del nombre de preferits que s&#39;hagin emmagatzemat fins al moment.<span class="arrow-left"></span></div>
+  <div id="help-favcounter" class="hidden tooltip"><span>Comptador i llistat de preferits:</span> Indica el nombre de preferits que s&#39;han desat fins el moment; clicant damunt seu accedireu al llistat de preferits, i a trav&eacute;s d&#39;aquest podreu accedir directament als continguts que hageu emmagatzemat.<span class="arrow-left"></span></div>
+  <div id="help-help_icon" class="hidden tooltip"><span>Ajuda:</span> Aquesta opci&oacute; activa la informaci&oacute; de les funcionalitats del web tot situant el punter del ratol&iacute; al damunt dels diferents &iacute;tems.<span class="arrow-left"></span></div>
+  <div id="help-sidebar-hide" class="hidden tooltip"><span>Mostrar/Ocultar barra lateral:</span>  Deshabilita la barra d&#39;opcions, permetent la seva recuperaci&oacute; quan es desitgi.<span class="arrow-left"></span></div>
+  <div id="help-search" class="hidden tooltip"><span>Cerca:</span>  Introdu&iuml;u les paraules clau sobre aquells conceptes que desitgeu localitzar en els continguts del m&ograve;dul. Tamb&eacute; podeu excloure un terme de la cerca tot afegint-hi el signe &#8220;-&#8221; al davant.<span class="arrow-top"></span></div>
+  <div id="help-header" class="hidden tooltip"><span>Cap&ccedil;alera:</span>  Indica l&#39;apartat o secci&oacute; que es mostra en pantalla. Tingueu present que les capçaleres de segon, tercer i quart nivell tamb&eacute; es poden desar com a marcadors.<span class="arrow-left"></span></div>
+</div> 
+</body>
+</html>

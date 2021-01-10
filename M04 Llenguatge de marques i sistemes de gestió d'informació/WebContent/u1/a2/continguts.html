@@ -1,0 +1,2166 @@
+<!doctype html>
+
+<!--[if lt IE 7 ]> <html class="ie ie6 no-js" lang="ca"> <![endif]-->
+<!--[if IE 7 ]>    <html class="ie ie7 no-js" lang="ca"> <![endif]-->
+<!--[if IE 8 ]>    <html class="ie ie8 no-js" lang="ca"> <![endif]-->
+<!--[if IE 9 ]>    <html class="ie ie9 no-js" lang="ca"> <![endif]-->
+<!--[if gt IE 9]><!--><html class="no-js" lang="ca"><!--<![endif]-->
+<!-- the "no-js" class is for Modernizr. -->
+
+<head id="www-sitename-com" data-template-set="html5-reset">
+
+	<meta charset="utf-8">
+	
+	<!-- Always force latest IE rendering engine (even in intranet) & Chrome Frame -->
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	
+	<title>Llenguatges de marques i sistemes de gestió d'informació</title>
+	
+<!-- <meta name="title" content=""> --> 
+	<meta name="description" content="">
+	<!-- Google will often use this as its description of your page/site. Make it good. -->
+	
+	<meta name="google-site-verification" content="">
+	<!-- Speaking of Google, don't forget to set your site up: http://google.com/webmasters -->
+	
+	<meta name="author" content="Institut Obert de Catalunya">
+	<meta name="Copyright" content="Copyright Institut Obert de Catalunya 2011. All Rights Reserved.">
+
+	<!-- Dublin Core Metadata : http://dublincore.org/ -->
+	<meta name="DC.title" content="Llenguatges de marques i sistemes de gestió d'informació">
+	<meta name="DC.subject" content="Informàtica i comunicacions">
+	<meta name="DC.creator" content="Institut Obert de Catalunya">
+	
+	<!--  Mobile Viewport Fix
+	j.mp/mobileviewport & davidbcalhoun.com/2010/viewport-metatag 
+	device-width : Occupy full width of the screen in its current orientation
+	initial-scale = 1.0 retains dimensions instead of zooming out if page height > device height
+	maximum-scale = 1.0 retains dimensions instead of zooming in if page width < device width
+	-->
+	<!-- Uncomment to use � use thoughtfully!
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+	-->
+
+	<link rel="shortcut icon" href="../../../img/favicon.ico">
+	<!-- This is the traditional favicon.
+		 - size: 16x16 or 32x32
+		 - transparency is OK
+		 - see wikipedia for info on browser support: http://mky.be/favicon/ -->
+		 
+	<link rel="apple-touch-icon" href="../../../img/apple-touch-icon.png">
+	<!-- The is the icon for iOS's Web Clip.
+		 - size: 57x57 for older iPhones, 72x72 for iPads, 114x114 for iPhone4's retina display (IMHO, just go ahead and use the biggest one)
+		 - To prevent iOS from applying its styles to the icon name it thusly: apple-touch-icon-precomposed.png
+		 - Transparency is not recommended (iOS will put a black BG behind the icon) -->
+	
+	<!-- CSS: screen, mobile & print are all in the same file -->
+	<link rel="stylesheet" href="../../../_/css/style.css">
+
+	<!-- CSS: jQuery UI -->
+	<link rel="stylesheet" href="../../../_/css/jquery-ui.css">
+	
+	<!-- all our JS is at the bottom of the page, except for Modernizr. -->
+	<script src="../../../_/js/modernizr-1.7.min.js"></script>
+	<script src="../../../_/js/Hyphenator.js" type="text/javascript"></script>
+	<script type="text/javascript">
+	   Hyphenator.config({
+		minwordlength : 4
+	   });
+	   Hyphenator.run();
+	</script>
+    <script src="../../../_/js/build.js" type="text/javascript"></script>
+</head>
+
+<body class="style-newspaper">
+
+<div class="wrapper"><!-- not needed? up to you: http://camendesign.com/code/developpeurs_sans_frontieres -->
+
+	<header id="header">
+		<div class="head"><a href="http://ioc.gencat.cat"><img src="../../../img/logo.png" alt="Institut Obert de Catalunya"/></a><a href="http://creativecommons.org/licenses/by-nc-sa/3.0/es/deed.ca"><img src="../../../img/license.png" alt="Llic&egrave;ncia" class="license"/></a></div>
+		<div class="headdocument"><a href="../../../index.html">Llenguatges de marques i sistemes de gestió d'informació</a></div>
+        <div id="search" class="search" name="search">
+         <form id="frmsearch" action="../../../search.html" method="get">
+          <input type="text" name="q"/>
+        </form>
+        </div>
+	</header>
+   <div id="upbutton" class="upbutton" style="display:none;"><img src="../../../img/uparrow.png" alt="Pujar a l'inici de p&agrave;gina"/></div>
+   <aside id="aside">
+    <div id="menu">
+      <ul>
+       <li name="toc"><div><img src="../../../img/toc.png" alt="&Iacute;ndex"/></div></li>
+       <li name="settings"><div><img src="../../../img/settings.png" alt="Configuraci&oacute;"/></div></li>
+       <li name="printer"><div><img src="../../../img/printer.png" alt="Imprimir"/></div></li>
+       <li name="favorites"><div><img src="../../../img/favorites.png" alt="Favorits"/></div></li>
+       <li name="help_icon" class="help_icon"><div><img src="../../../img/help_icon.png" alt="Ajuda"/></div></li>
+      </ul>
+     </div>
+   </aside>
+   <div id="sidebar-hide" name="sidebar-hide"><img src="../../../img/arrows.png"/></div>
+   <section>
+     <div id="toc" class="hidden">
+      <div class="menucontent">
+        <ul>
+        <li id="u1" class="parentnode"><p><a class="unit" href="../../../WebContent/u1/introduccio.html">1. Llenguatge de marques</a></p><ul class="expander"><li id="u1introduccio"><a href="../../../WebContent/u1/introduccio.html">Introducció</a></li><li id="u1resum"><a href="../../../WebContent/u1/resum.html">Resum</a></li><li id="u1objectius"><a href="../../../WebContent/u1/objectius.html">Resultats d'aprenentatge</a></li><li id="u1referencies"><a href="../../../WebContent/u1/referencies.html">Referències</a></li><li id="u1a1" class="tocsection"><p id='u1a1continguts'><a class="section" href="../../../WebContent/u1/a1/continguts.html">Introducció als llenguatges de marques. Classificació</a><span class="buttonexp"></span></p><ul><li id="u1a1activitats"><a href="../../../WebContent/u1/a1/activitats.html">Activitats</a></li><li id="u1a1exercicis"><a href="../../../WebContent/u1/a1/exercicis.html">Exercicis d'autoavaluació</a></li></ul></li><li id="u1a2" class="tocsection"><p id='u1a2continguts'><a class="section" href="../../../WebContent/u1/a2/continguts.html">Documents XML</a><span class="buttonexp"></span></p><ul><li id="u1a2activitats"><a href="../../../WebContent/u1/a2/activitats.html">Activitats</a></li><li id="u1a2exercicis"><a href="../../../WebContent/u1/a2/exercicis.html">Exercicis d'autoavaluació</a></li></ul></li></ul></li><li id="" class="indexnode"><p><a href="../../../index.html">Anar a l&#39;&iacute;ndex general</a></p></li>
+        </ul>
+      </div>
+    </div>
+   </section>
+   <section>
+   <div id="settings" class="hidden">
+    <div class="menucontent">
+     <div class="allsettings">
+     <div class="settings">
+      <label>Font i Color</label>
+		<div class="setting-option">
+	        <ul class="fontBackground">
+				<li id="style-newspaper" title="Newspaper" class="appearance-style-newspaper"><span>Newspaper</span></li>
+                <li id="style-novel" title="Novel" class="appearance-style-novel"><span>Novel</span></li>
+                <li id="style-ebook" title="eBook" class="appearance-style-ebook"><span>eBook</span></li>
+				<li id="style-inverse" title="Inverse" class="appearance-style-inverse active"><span>Inverse</span></li>
+				<li id="style-athelas" title="Athelas" class="appearance-style-athelas"><span>Athelas</span></li>
+			</ul>
+		</div>
+     </div>
+	<div class="settings">
+      <label>Amplada</label>
+		<div class="setting-option">
+	        <div id="slider-width"></div>
+		</div>
+     </div>
+     <div class="settings">
+      <label>Mida de la font</label>
+		<div class="setting-option">
+	        <div id="slider-font"></div>
+		</div>
+     </div>
+     <div class="settings">
+      <label>Mida de la font</label>
+	  <div class="setting-option">
+       <form action="" class="sett-options">
+		<ul>
+		    <li><input type="checkbox" id="secondary-content" /><label for="secondary-content">Mostra recursos complementaris</label></li>
+		    <li><input type="checkbox" id="main-images" /><label for="main-images">Mostra imatges</label></li>
+		    <li><input type="checkbox" id="text-alignment" /><label for="text-alignment">Text justificat</label></li>
+			<li><input type="checkbox" id="text-hyphen" /><label for="text-hyphen">Partici&oacute; sil·l&agrave;bica</label></li>
+		</ul>
+       </form>
+	  </div>
+     </div>
+     </div>
+    </div>
+   </div>
+   </section>
+ <section>
+ <div id="favorites" class="hidden"></div>
+ </section>   
+ <div id="bridge" class="hidden"></div>
+ <div id="help" class="hidden">
+  <div class="helptitle">Dreceres del teclat<hr></div>
+  <div class="helpsection"><span>General</span>
+   <ul>
+    <li><span class="shortcut">g</span>: Anar al men&uacute; de navegaci&oacute;</li>
+    <li><span class="shortcut">o</span>: Anar a opcions</li>
+    <li><span class="shortcut">s</span>: Guardar la p&agrave;gina actual a favorits</li>
+    <li><span class="shortcut">p</span>: Imprimir la p&agrave;gina actual</li>
+    <li><span class="shortcut">?</span>: Mostrar/Ocultar l&#39;ajuda</li>
+   </ul>
+  </div>
+  <div class="helpsection"><span>Navegaci&oacute;</span>
+   <ul>
+    <li><span class="shortcut">i</span>: Anar a l&#39;&iacute;ndex general</li>
+    <li><span class="shortcut">t</span>: Anar a l&#39;inici de p&agrave;gina</li>
+    <li><span class="shortcut">b</span>: Anar al final de p&agrave;gina</li>
+    <li><span class="shortcut">j</span>: Anar cap endavant dintre la p&agrave;gina</li>
+    <li><span class="shortcut">k</span>: Anar cap enrere dintre la p&agrave;gina</li>
+    <li><span class="shortcut">h</span>: Anar a la p&agrave;gina anterior:</li>
+    <li><span class="shortcut">l</span>: Anar a la p&agrave;gina seg&uuml;ent:</li>
+   </ul>
+   </div>
+ </div>
+ <div id="favcounter" name="favcounter" class="hidden"><span></span></div>
+ <div id="navmenu" class="navmenu"><ul class="webnav"><li><a href="../../../index.html" title="Anar a l&#39;&iacute;ndex general">Inici</a></li><li><a href="../introduccio.html">Llenguatge de marques</a></li><li>Documents XML</li></ul></div>
+	<div id="content" lang="ca" class="hyphenate text">
+     <article lang="ca" class="sheet">
+        <h1><a id="documents_xml"> Documents XML </a></h1>
+    	<div class="iocreference"><div class="ioccontent">
+<p>
+Vegeu la recomanació de l’<acronym title="World Wide Web Consortium">W3C</acronym> relativa a l’XML en la secció “Adreces d’interès” del web del mòdul.
+</p>
+</div></div><div class="iocimportant"><div class="ioccontent">
+<p>
+XML són les sigles d’<em>extensible markup language</em> (llenguatge d’etiquetatge extensible). És un llenguatge estàndard, una recomanació del World Wide Web Consortium (<acronym title="World Wide Web Consortium">W3C</acronym>, <a href="http://www.w3.org/TR/REC-xml/" class="urlextern" title="http://www.w3.org/TR/REC-xml/"  rel="nofollow">www.w3.org/TR/REC-xml</a>). Està basat en l’estàndard ISO SGML.
+</p>
+</div></div>
+<p>
+L’XML està tan basat en SGML que qualsevol document XML és un alhora un document SGML correcte (encara que a l’inrevés no passa).
+</p>
+
+<p>
+L’XML va sorgir per intentar superar els problemes que tenia l’<acronym title="HyperText Markup Language">HTML</acronym> a l’hora de processar automàticament la informació que contenen les pàgines web, però que a més pogués funcionar de la mateixa manera que es fa servir l’<acronym title="HyperText Markup Language">HTML</acronym>. A més, s’hi van afegir altres requisits, com que:
+</p>
+<ul>
+<li class="level1"><div class="li"> Fos fàcil crear documents XML i que els humans els poguessin llegir i entendre fàcilment.</div>
+</li>
+<li class="level1"><div class="li"> No fos complicat fer programes d’ordinador que treballessin amb XML.</div>
+</li>
+<li class="level1"><div class="li"> L’XML es pogués fer servir en el màxim possible de camps d’aplicació i mantingués la compatibilitat amb SGML.</div>
+</li>
+</ul>
+
+<p>
+El resultat ha estat que l’XML:
+</p>
+<ul>
+<li class="level1"><div class="li"> Defineix la sintaxi genèrica per marcar les dades amb valors comprensibles per als humans.</div>
+</li>
+<li class="level1"><div class="li"> És una manera de donar format als documents que és prou flexible per ser personalitzada per a diferents destinacions: web, impressores, bases de dades, etc.</div>
+</li>
+<li class="level1"><div class="li"> Està pensat perquè tothom el pugui fer servir sigui quina sigui la seva àrea d’interès.</div>
+</li>
+</ul>
+
+<h2><a id="metallenguatge" >Metallenguatge</a></h2>
+<div class="level2">
+
+<p>
+En realitat l’XML no és un llenguatge de marques, sinó que és un llenguatge que ens permetrà definir els nostres llenguatges de marques propis. Això vol dir que podrem definir llenguatges de marques específics per a cada un dels camps d’interès. Si treballem en el món dels gràfics podem definir el nostre llenguatge específic per definir aquests gràfics, i si treballem en el món de la premsa podrem definir el nostre llenguatge per representar les notícies.
+</p>
+
+<p>
+Per aquest motiu sovint es diu que l’XML és un <strong>metallenguatge</strong>, ja que ens permet definir l’estructura i el vocabulari d’altres llenguatges de marques.
+</p>
+<div class="iocimportant"><div class="ioccontent">
+<p>
+L’XML és un llenguatge per crear llenguatges de marques.
+</p>
+</div></div>
+<p>
+Aquesta llibertat a l’hora de definir les marques que ens interessin és un dels punts forts d’XML, que el fan molt més potent i adaptable a les diferents complexitats dels entorns en els quals pugui caldre.
+</p>
+
+</div>
+
+<h2><a id="elements" >Elements</a></h2>
+<div class="level2">
+
+<p>
+La base de l’XML són els elements. Un element normalment estarà format per l’obertura d’una etiqueta –amb atributs o sense–, un contingut –que també pot ser un grup d’etiquetes–, i el tancament de l’etiqueta.
+</p>
+
+<p>
+En aquest exemple podem veure el que acabem de comentar. Definim una etiqueta <code>nom</code>, després el contingut <code>Pere Martí</code> i posteriorment tanquem l’etiqueta:
+</p>
+<pre class="code xml"><ol><li class="li1"><div class="de1"><span class="sc3"><span class="re1">&lt;nom<span class="re2">&gt;</span></span></span>Pere Martí<span class="sc3"><span class="re1">&lt;/nom<span class="re2">&gt;</span></span></span></div></li></ol></pre>
+
+<p>
+Aquest és un dels punts forts de l’XML: queda bastant clar que el contingut de dins de l’etiqueta és un nom.
+</p>
+
+<p>
+Es podria fer l’exemple una mica més complex afegint-hi un atribut. 
+</p>
+<div class="iocimportant"><div class="ioccontent">
+<p>
+Els atributs s’afegeixen sempre en l’obertura de l’etiqueta.
+</p>
+</div></div><pre class="code xml"><ol><li class="li1"><div class="de1"><span class="sc3"><span class="re1">&lt;nom</span> cà<span class="re0">rrec</span>=<span class="st0">&quot;director&quot;</span><span class="re2">&gt;</span></span>Pere Marti<span class="sc3"><span class="re1">&lt;/nom<span class="re2">&gt;</span></span></span></div></li></ol></pre>
+
+<p>
+Un altre dels aspectes bàsics de l’XML és que no es preocupa de la presentació sinó que parteix de la idea que l’important és el contingut de les dades i no la manera com es visualitzaran. Aquesta característica el fa ideal per presentar la informació i posteriorment per mitjà d’algun procés convertir la informació en un format de presentació específic com <acronym title="HyperText Markup Language">HTML</acronym>, PDF, PostScript, etc. A més, aporta una característica molt interessant des del punt de vista de la informàtica: permet tenir les dades separades de la manera de representar-les. 
+</p>
+<div class="iocimportant"><div class="ioccontent">
+<p>
+L’XML permet separar el contingut de la manera com serà presentat aquest contingut als usuaris.
+</p>
+</div></div>
+</div>
+
+<h3><a id="etiquetes" >Etiquetes</a></h3>
+<div class="level3">
+
+<p>
+Les etiquetes es defineixen dins del document XML i es defineix un format per separar-les clarament del contingut de dades. Estrictament  parlant hi ha dos tipus d’etiquetes:
+</p>
+<ul>
+<li class="level1"><div class="li"> <strong>Les etiquetes d’obertura</strong></div>
+</li>
+<li class="level1"><div class="li"> <strong>Les etiquetes de tancament</strong></div>
+</li>
+</ul>
+
+<p>
+La informació es distribueix entre els dos tipus d’etiquetes. Així s’aconsegueix una manera senzilla de definir quines parts del document són dades i quines són estructura. 
+</p>
+
+<p>
+Les <em>etiquetes d’obertura</em> es defineixen amb els símbols de més petit ”&lt;” i més gran ”&gt;” amb un nom d’etiqueta al mig. 
+</p>
+<pre class="code xml"><ol><li class="li1"><div class="de1"><span class="sc3"><span class="re1">&lt;etiqueta<span class="re2">&gt;</span></span></span></div></li></ol></pre>
+
+<p>
+I les <em>etiquetes de tancament</em> es defineixen igual que les d’obertura però a l’hora de començar l’etiqueta s’hi especifiquen dos símbols: un símbol de més petit i una barra ”&lt;/”. D’aquesta manera es poden distingir fàcilment els dos tipus d’etiquetes i queda clar en quin lloc s’ha d’afegir el contingut.
+</p>
+<pre class="code xml"><ol><li class="li1"><div class="de1"><span class="sc3"><span class="re1">&lt;etiqueta<span class="re2">&gt;</span></span></span>Contingut<span class="sc3"><span class="re1">&lt;/etiqueta<span class="re2">&gt;</span></span></span></div></li></ol></pre>
+
+<p>
+L’XML no defineix cap etiqueta sinó que permet que les defineixi cadascú en funció del que necessiti representar. Això fa més senzill crear documents XML, ja que no cal conèixer cap etiqueta per poder començar a treballar i perquè permet adaptar-se a qualsevol tasca.
+</p>
+
+<p>
+A l’hora de definir les etiquetes es pot deixar un espai o un salt de línia darrere del nom de l’etiqueta però mai abans ni al mig. Per tant aquestes etiquetes serien correctes: 
+</p>
+<pre class="code xml"><ol><li class="li1"><div class="de1"><span class="sc3"><span class="re1">&lt;etiqueta1<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1"><span class="sc3"><span class="re1">&lt;etiqueta</span> <span class="re2">&gt;</span></span></div></li><li class="li1"><div class="de1"><span class="sc3"><span class="re1">&lt;/etiqueta<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1"><span class="sc3"><span class="re1">&lt;/etiqueta1</span> <span class="re2">&gt;</span></span></div></li><li class="li1"><div class="de1"><span class="sc3"><span class="re1">&lt;/etiqueta2</span></span></div></li><li class="li1"><div class="de1"><span class="sc3"><span class="re2">&gt;</span></span></div></li></ol></pre>
+
+<p>
+I en canvi aquestes altres no serien correctes:
+</p>
+<pre class="code xml"><ol><li class="li1"><div class="de1"><span class="sc3">&lt; etiqueta<span class="re2">&gt;</span></span></div></li><li class="li1"><div class="de1"><span class="sc3"><span class="re1">&lt;etiqueta</span> 1<span class="re2">&gt;</span></span></div></li><li class="li1"><div class="de1"><span class="sc3">&lt; /etiqueta2<span class="re2">&gt;</span></span></div></li></ol></pre>
+
+<p>
+Com s’acaba de veure, l’especificació XML defineix clarament com s’han de crear les etiquetes en els documents XML, però en canvi no defineix cap tipus ni significat associat a cap de les etiquetes. Si, per exemple, fem servir en <acronym title="HyperText Markup Language">HTML</acronym> l’etiqueta <code>&lt;b&gt;</code>, aquesta ens està indicant que el contingut que contindrà s’haurà de representar en negreta. Això obliga que per fer documents XML s’hagin de conèixer les etiquetes.
+</p>
+
+<p>
+Per a l’XML les etiquetes només són una manera de separar el contingut i definir l’estructura de les dades que conté. La interpretació de què signifiquen les dades i com s’han de representar es deixa a qui llegeixi el document (independentment que aquest sigui un humà o bé un programa).
+</p>
+<div class="iocnote"><div class="ioccontent">
+<p>
+El tractament d’excepcions que s’ha de fer per interpretar <acronym title="HyperText Markup Language">HTML</acronym> és una de les coses que fa més complexa la tasca de programar els navegadors web actuals.
+</p>
+</div></div>
+<p>
+A pesar de la llibertat a l’hora de deixar que els usuaris triïn les seves pròpies etiquetes, l’XML és molt més rigorós que altres llenguatges a l’hora de definir com s’han d’escriure. L’objectiu de tenir regles d’escriptura està determinat per la necessitat que els documents XML en un moment o un altre seran processats per un programa, i els programes es fan més complexos a l’hora de tractar amb excepcions. Per tant, una de les coses que fa l’XML és <strong>evitar les excepcions tant com sigui possible</strong>.
+</p>
+<div class="iocimportant"><div class="ioccontent">
+<p>
+Les etiquetes que s’obrin sempre s’hauran de tancar.
+</p>
+</div></div>
+<p>
+Per evitar les excepcions una de les regles bàsiques d’XML és que qualsevol etiqueta que s’obri <strong>sempre s’ha de tancar</strong>. De manera que aquest no seria un document XML vàlid:
+</p>
+<pre class="code xml"><ol><li class="li1"><div class="de1"><span class="sc3"><span class="re1">&lt;nom<span class="re2">&gt;</span></span></span>Pere Garcia</div></li></ol></pre>
+
+<p>
+I en canvi aquest sí: 
+</p>
+<pre class="code xml"><ol><li class="li1"><div class="de1"><span class="sc3"><span class="re1">&lt;nom<span class="re2">&gt;</span></span></span>Pere Garcia<span class="sc3"><span class="re1">&lt;/nom<span class="re2">&gt;</span></span></span></div></li></ol></pre>
+
+<p>
+A pesar que no hi ha etiquetes definides, ja que l’XML <strong>permet crear les etiquetes que ens facin falta</strong>, per un motiu de llegibilitat i d’interpretació de les dades <strong>es recomana que les etiquetes siguin autoexplicatives i pronunciables</strong>. Això és per evitar coses com la de l’exemple següent:
+</p>
+<pre class="code xml"><ol><li class="li1"><div class="de1"><span class="sc3"><span class="re1">&lt;pccc<span class="re2">&gt;</span></span></span>Figueres<span class="sc3"><span class="re1">&lt;/pccc<span class="re2">&gt;</span></span></span></div></li></ol></pre>
+
+<p>
+Segons aquest segon exemple, com determinem què és “Figueres”? Per a un programa d’ordinador segurament no seria un problema massa gran perquè simplement agafaria la dada i la interpretaria tal com l’hagin programat però en canvi per a un humà un document amb etiquetes com aquesta seria impossible d’interpretar. 
+</p>
+<div class="iocimportant"><div class="ioccontent">
+<p>
+Es recomana triar els noms de les etiquetes de manera que puguin ser interpretades per qui les llegirà independentment de si les processa una persona o un programa.
+</p>
+</div></div>
+<p>
+L’exemple anterior serà més fàcil d’interpretar si canviem l’etiqueta:
+</p>
+<pre class="code xml"><ol><li class="li1"><div class="de1"><span class="sc3"><span class="re1">&lt;ciutat<span class="re2">&gt;</span></span></span>Figueres<span class="sc3"><span class="re1">&lt;/ciutat<span class="re2">&gt;</span></span></span></div></li></ol></pre>
+
+</div>
+
+<h3><a id="contingut" >Contingut</a></h3>
+<div class="level3">
+
+<p>
+El contingut d’un element serà tot allò que hi hagi entre les etiquetes d’obertura i de tancament. En el contingut podem tenir simplement text com aquí:
+</p>
+<pre class="code xml"><ol><li class="li1"><div class="de1"><span class="sc3"><span class="re1">&lt;persona<span class="re2">&gt;</span></span></span>Pere Martí<span class="sc3"><span class="re1">&lt;/persona<span class="re2">&gt;</span></span></span></div></li></ol></pre>
+
+<p>
+O bé el contingut poden ser altres elements. En l’exemple següent l’element <code>&lt;persona&gt;</code> conté dos elements més: <code>&lt;nom&gt;</code> i <code>&lt;cognom&gt;</code>, que a més tenen contingut dins seu:
+</p>
+<pre class="code xml"><ol><li class="li1"><div class="de1"><span class="sc3"><span class="re1">&lt;persona<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1">    <span class="sc3"><span class="re1">&lt;nom<span class="re2">&gt;</span></span></span>Pere<span class="sc3"><span class="re1">&lt;/nom<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1">    <span class="sc3"><span class="re1">&lt;cognom<span class="re2">&gt;</span></span></span>Martí<span class="sc3"><span class="re1">&lt;/cognom<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1"><span class="sc3"><span class="re1">&lt;/persona<span class="re2">&gt;</span></span></span></div></li></ol></pre>
+
+<p>
+Una tercera possibilitat seria combinar els dos casos anteriors i que el contingut sigui una mescla de text i elements.
+</p>
+<pre class="code xml"><ol><li class="li1"><div class="de1"><span class="sc3"><span class="re1">&lt;persona<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1">    Pere Martí</div></li><li class="li1"><div class="de1">    <span class="sc3"><span class="re1">&lt;carrec<span class="re2">&gt;</span></span></span>Director<span class="sc3"><span class="re1">&lt;/carrec<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1"><span class="sc3"><span class="re1">&lt;/persona<span class="re2">&gt;</span></span></span></div></li></ol></pre>
+
+<p>
+També és possible definir etiquetes sense contingut de manera que el seu significat està determinat pel nom de l’etiqueta.
+</p>
+<pre class="code xml"><ol><li class="li1"><div class="de1"><span class="sc3"><span class="re1">&lt;persona<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1"><span class="sc3"><span class="re1">&lt;/persona<span class="re2">&gt;</span></span></span></div></li></ol></pre>
+
+<p>
+Els elements buits també es poden definir fent servir el símbol <code>/&gt;</code> en tancar l’etiqueta. De manera que no hi ha cap diferència entre definir <code>&lt;director&gt;</code> d’aquesta manera:
+</p>
+<pre class="code xml"><ol><li class="li1"><div class="de1"><span class="sc3"><span class="re1">&lt;director</span><span class="re2">/&gt;</span></span></div></li></ol></pre>
+
+<p>
+o d’aquesta:
+</p>
+<pre class="code">&lt;director&gt;&lt;/director&gt;</pre>
+
+<p>
+Els elements buits, encara que es defineixin amb el seu format especial, han de seguir les mateixes normes que els elements normals. Per tant, serien correctes les definicions següents:
+</p>
+<pre class="code xml"><ol><li class="li1"><div class="de1"><span class="sc3"><span class="re1">&lt;director</span> <span class="re2">/&gt;</span></span></div></li><li class="li1"><div class="de1"><span class="sc3"><span class="re1">&lt;director</span></span></div></li><li class="li1"><div class="de1"><span class="sc3"><span class="re2">/&gt;</span></span></div></li></ol></pre>
+
+<p>
+I no ho serien aquestes:
+</p>
+<pre class="code xml"><ol><li class="li1"><div class="de1"><span class="sc3">&lt; director<span class="re2">/&gt;</span></span></div></li><li class="li1"><div class="de1"><span class="sc3"><span class="re1">&lt;director</span>/ <span class="re2">&gt;</span></span></div></li></ol></pre>
+
+<p>
+L’XML no defineix cap restricció a l’hora de definir el contingut dels elements. Per tant:
+</p>
+<ul>
+<li class="level1"><div class="li"> Podem fer servir qualsevol caràcter representable amb el codi de caràcters.</div>
+</li>
+<li class="level1"><div class="li"> El contingut pot ser tan llarg com ens faci falta.</div>
+</li>
+<li class="level1"><div class="li"> Es pot escriure en qualsevol idioma del món.</div>
+</li>
+<li class="level1"><div class="li"> No importa que hi hagi espais en blanc o salts de línia dins del contingut.</div>
+</li>
+</ul>
+
+</div>
+
+<h4><a id="entitats" >Entitats</a></h4>
+<div class="level4">
+
+<p>
+L’única cosa que s’ha de tenir en compte a l’hora de definir continguts és que hi ha una sèrie de caràcters que poden provocar que hi hagi confusions a l’hora d’interpretar el document XML, i per tant s’han declarat il·legals. No cal oblidar que un dels objectius de l’especificació és “que sigui fàcil escriure programes que processin els documents”, i per tant s’han d’evitar les interpretacions.
+</p>
+
+<p>
+Si passem el codi següent a un programa d’ordinador tindrem un problema
+</p>
+<pre class="code xml"><ol><li class="li1"><div class="de1"><span class="sc3"><span class="re1">&lt;algebra<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1">x<span class="sc3"><span class="re1">&lt;y</span> i y<span class="re2">&gt;</span></span>z</div></li><li class="li1"><div class="de1"><span class="sc3"><span class="re1">&lt;/algebra<span class="re2">&gt;</span></span></span></div></li></ol></pre>
+
+<p>
+Per a un humà això no seria un problema perquè pot interpretar les dades per mitjà del seu coneixement, però en canvi un programa en llegir el contingut del document interpretaria que <code>&lt;y i y&gt;</code> és el començament d’una nova etiqueta.
+</p>
+
+<p>
+Per evitar aquest problema s’han definit una sèrie de valors, anomenats <strong>entitats</strong>, que es fan servir per poder incloure els caràcters problemàtics dins del contingut de les etiquetes (<span class="tabref"><a href="#table8"><span>taula</span></a></span>).
+</p>
+<div class="ioctext"><div class="ioccontent"><p class="ioctitle"> Referències de caràcters</p>
+<p>
+En realitat qualsevol caràcter es pot representar com una entitat fent servir el seu valor numèric en Unicode, emprant els símbols <code>&amp;#</code> i els tres dígits del seu valor numèric. Per exemple: &amp;#169
+</p>
+</div></div><div class="ioctable ">
+<div class="titletable"><a name="table8"><span>Taula: </span></a>Entitats definides en XML</div>
+<div class="table"><table class="inline">
+	<tr class="row0">
+		<th class="col0"> Símbol </th><th class="col1"> Substitució </th>
+	</tr>
+	<tr class="row1">
+		<td class="col0 leftalign"> &lt;      </td><td class="col1 leftalign"> &amp;lt;        </td>
+	</tr>
+	<tr class="row2">
+		<td class="col0 leftalign"> &gt;      </td><td class="col1 leftalign"> &amp;gt;        </td>
+	</tr>
+	<tr class="row3">
+		<td class="col0 leftalign"> ”      </td><td class="col1 leftalign"> &amp;quot;      </td>
+	</tr>
+	<tr class="row4">
+		<td class="col0 leftalign"> ’      </td><td class="col1 leftalign"> &amp;apos;      </td>
+	</tr>
+	<tr class="row5">
+		<td class="col0 leftalign"> &amp;      </td><td class="col1 leftalign"> &amp;amp;       </td>
+	</tr>
+</table></div>
+</div>
+</div>
+
+<h4><a id="seccions_cdata" >Seccions CDATA</a></h4>
+<div class="level4">
+
+<p>
+Es pot donar el cas que el contingut d’un element sigui <acronym title="HyperText Markup Language">HTML</acronym> o bé codi en algun llenguatge de programació. Això obligaria a substituir per entitats una gran quantitat de símbols i a més restaria llegibilitat al document. Per evitar-ho l’XML permet fer servir les seccions CDATA dins del contingut d’un element. Tot el que estigui dins d’una secció CDATA no serà interpretat per cap programa.
+</p>
+<div class="iocnote"><div class="ioccontent">
+<p>
+<code>CDATA</code> és un terme heretat d’SGML i resumeix el text <em>character data</em>.
+</p>
+</div></div>
+<p>
+Les seccions CDATA funcionen com les etiquetes normals. Es defineixen començant per <strong>&lt;![CDATA[</strong> abans d’especificar el contingut i s’acaben amb la combinació de caràcters <strong>]]&gt;</strong>. Per tant, podem definir contingut amb símbols prohibits dins de les seccions CDATA sense problemes.
+</p>
+<pre class="code xml"><ol><li class="li1"><div class="de1"><span class="sc3"><span class="re1">&lt;valor<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1">    <span class="sc2">&lt;![CDATA[</span></div></li><li class="li1"><div class="de1"><span class="sc2">        if (x &lt;y and y&gt;z)</span></div></li><li class="li1"><div class="de1"><span class="sc2">        {</span></div></li><li class="li1"><div class="de1"><span class="sc2">            printf(&quot;Correcte!&quot;);</span></div></li><li class="li1"><div class="de1"><span class="sc2">        }</span></div></li><li class="li1"><div class="de1"><span class="sc2">    ]]&gt;</span></div></li><li class="li1"><div class="de1"><span class="sc3"><span class="re1">&lt;/valor<span class="re2">&gt;</span></span></span></div></li></ol></pre>
+
+<p>
+A més es pot veure fàcilment que per a un humà és més difícil interpretar això:
+</p>
+<pre class="code xml"><ol><li class="li1"><div class="de1"><span class="sc3"><span class="re1">&lt;titol<span class="re2">&gt;</span></span></span>Els documents HTML comencen per <span class="sc1">&amp;lt;</span>html<span class="sc1">&amp;gt;</span><span class="sc3"><span class="re1">&lt;/titol<span class="re2">&gt;</span></span></span></div></li></ol></pre>
+
+<p>
+Que el seu equivalent amb CDATA:
+</p>
+<pre class="code xml"><ol><li class="li1"><div class="de1"><span class="sc3"><span class="re1">&lt;titol<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1">  <span class="sc2">&lt;![CDATA[</span></div></li><li class="li1"><div class="de1"><span class="sc2">    Els documents HTML comencen per &lt;HTML&gt;</span></div></li><li class="li1"><div class="de1"><span class="sc2">  ]]&gt;</span></div></li><li class="li1"><div class="de1"><span class="sc3"><span class="re1">&lt;/titol<span class="re2">&gt;</span></span></span></div></li></ol></pre>
+
+<p>
+Un altre problema que solucionen les seccions CDATA és que permeten afegir contingut en un llenguatge de marques que no cal que estigui ben format. Per exemple, si el contingut té etiquetes que no es tanquen només es poden definir en una secció CDATA o bé el programa les interpretarà com a etiquetes del document i donarà un error.
+</p>
+
+<p>
+Les seccions CDATA normalment es fan servir per al següent:
+</p>
+<ul>
+<li class="level1"><div class="li"> Definir grans fragments de text que requereixin moltes substitucions d’entitats.</div>
+</li>
+<li class="level1"><div class="li"> Si s’ha d’incloure contingut en <acronym title="HyperText Markup Language">HTML</acronym>, Javascript o algun llenguatge similar. La substitució amb entitats li resta llegibilitat.</div>
+</li>
+<li class="level1"><div class="li"> Si el contingut està en un llenguatge de marques i no està ben format.</div>
+</li>
+</ul>
+
+</div>
+
+<h3><a id="atributs" >Atributs</a></h3>
+<div class="level3">
+
+<p>
+Una manera alternativa d’afegir contingut als documents XML és per mitjà dels atributs. Els atributs són un parell de valors separats per un <code>=</code> que <strong>només s’especifiquen en les etiquetes d’obertura</strong>. 
+</p>
+
+<p>
+El primer valor del parell ens indica quin és el nom del contingut i es farà servir per interpretar què indiquen les dades que té associades, mentre que el segon ens definirà el contingut de l’atribut.
+</p>
+<pre class="code xml"><ol><li class="li1"><div class="de1"><span class="sc3"><span class="re1">&lt;nom</span> <span class="re0">carrec</span>=<span class="st0">&quot;professor&quot;</span><span class="re2">&gt;</span></span>Frederic Garcia<span class="sc3"><span class="re1">&lt;/nom<span class="re2">&gt;</span></span></span></div></li></ol></pre>
+
+<p>
+Es pot veure com l’atribut <code>carrec</code> dóna un nivell més d’informació a <code>nom</code>. Ara se sap que fa referència al nom d’un professor.
+</p>
+<div class="iocnote"><div class="ioccontent">
+<p>
+Per especificar els atributs es poden fer servir tant les comentes dobles com les cometes simples. Això sí, sempre s’ha de tancar les cometes tal com s’han obert. 
+<code>&lt;corredor posicio=“1”&gt;</code> o <code>&lt;corredor posicio=‘1’&gt;</code> però mai <code>&lt;corredor posicio=“1’&gt;</code>
+</p>
+</div></div>
+<p>
+A diferència del que passa en altres llenguatges de marques com l’<acronym title="HyperText Markup Language">HTML</acronym>, l’XML és molt més estricte i obliga que <strong>tots els valors dels atributs han d’estar envoltats per cometes</strong>. En altres llenguatges de marques es permet que els valors numèrics no vagin entre comentes però en XML no es pot fer. Per tant l’exemple següent seria incorrecte perquè l’atribut no té cometes.
+</p>
+<pre class="code xml"><ol><li class="li1"><div class="de1"><span class="sc3"><span class="re1">&lt;corredor</span> <span class="re0">posicio</span>=1<span class="re2">&gt;</span></span>Manel Roure<span class="sc3"><span class="re1">&lt;/corredor<span class="re2">&gt;</span></span></span></div></li></ol></pre>
+
+<p>
+Si es vol especificar s’ha de posar entre cometes simples:
+</p>
+<pre class="code xml"><ol><li class="li1"><div class="de1"><span class="sc3"><span class="re1">&lt;corredor</span> <span class="re0">posicio</span>=<span class="st0">'1'</span><span class="re2">&gt;</span></span>Manel Roure<span class="sc3"><span class="re1">&lt;/corredor<span class="re2">&gt;</span></span></span></div></li></ol></pre>
+
+<p>
+o dobles:
+</p>
+<pre class="code xml"><ol><li class="li1"><div class="de1"><span class="sc3"><span class="re1">&lt;corredor</span> <span class="re0">posicio</span>=<span class="st0">&quot;1&quot;</span><span class="re2">&gt;</span></span>Manel Roure<span class="sc3"><span class="re1">&lt;/corredor<span class="re2">&gt;</span></span></span></div></li></ol></pre>
+
+<p>
+Fins i tot quan els atributs no cal que tinguin cap valor, perquè es considera que ja se’n pot interpretar el significat pel nom de l’atribut, s’hi ha d’especificar valor entre cometes. Per tant, l’exemple següent no seria correcte perquè l’atribut no té valor:
+</p>
+<pre class="code xml"><ol><li class="li1"><div class="de1"><span class="sc3"><span class="re1">&lt;alumne</span> delegat<span class="re2">&gt;</span></span>Jaume Ravent<span class="sc3"><span class="re1">&lt;/alumne<span class="re2">&gt;</span></span></span></div></li></ol></pre>
+
+<p>
+Ho hauríem d’especificar amb la cadena buida:
+</p>
+<pre class="code xml"><ol><li class="li1"><div class="de1"><span class="sc3"><span class="re1">&lt;alumne</span> <span class="re0">delegat</span>=<span class="st0">&quot;&quot;</span><span class="re2">&gt;</span></span>Jaume Ravent<span class="sc3"><span class="re1">&lt;/alumne<span class="re2">&gt;</span></span></span></div></li></ol></pre>
+
+<p>
+O posant-hi algun valor:
+</p>
+<pre class="code xml"><ol><li class="li1"><div class="de1"><span class="sc3"><span class="re1">&lt;alumne</span> <span class="re0">delegat</span>=<span class="st0">&quot;si&quot;</span><span class="re2">&gt;</span></span>Jaume Ravent<span class="sc3"><span class="re1">&lt;/alumne<span class="re2">&gt;</span></span></span></div></li></ol></pre>
+
+<p>
+L’XML <strong>permet definir tants atributs com faci falta</strong> sense cap tipus de restricció. Les úniques condicions que hem de seguir és que cada un dels atributs ha d’estar separat dels altres almenys per un espai.
+</p>
+<pre class="code xml"><ol><li class="li1"><div class="de1"><span class="sc3"><span class="re1">&lt;persona</span> <span class="re0">nom</span>=<span class="st0">&quot;Xavier&quot;</span> <span class="re0">cognom</span>=<span class="st0">&quot;Sala&quot;</span><span class="re2">/&gt;</span></span></div></li></ol></pre>
+
+<p>
+<strong>L’ordre en què apareixen els atributs no té cap importància</strong>, de manera que els dos codis següents serien equivalents:
+</p>
+<pre class="code xml"><ol><li class="li1"><div class="de1"><span class="sc3"><span class="re1">&lt;persona</span> <span class="re0">nom</span>=<span class="st0">&quot;Xavier&quot;</span> <span class="re0">cognom</span>=<span class="st0">&quot;Sala&quot;</span> <span class="re2">/&gt;</span></span></div></li></ol></pre>
+<pre class="code xml"><ol><li class="li1"><div class="de1"><span class="sc3"><span class="re1">&lt;persona</span> <span class="re0">cognom</span>=<span class="st0">&quot;Sala&quot;</span> <span class="re0">nom</span>=<span class="st0">&quot;Xavier&quot;</span> <span class="re2">/&gt;</span></span></div></li></ol></pre>
+
+<p>
+
+</p>
+<div class="ioctextl"><div class="ioccontent"><p class="ioctitle"> Quan s&#039;han de fer servir atributs i quan elements?</p>
+<p>
+Hi ha hagut molts debats sobre quan s’han de fer servir atributs i quan s’han de fer servir elements sense que s’hagi trobat cap argument totalment acceptat per tothom. 
+</p>
+
+<p>
+Al final el resultat pràctic és que és virtualment el mateix fer això: 
+</p>
+<pre class="code xml"><ol><li class="li1"><div class="de1"><span class="sc3"><span class="re1">&lt;persona</span> <span class="re0">nom</span>=<span class="st0">&quot;Pere&quot;</span> <span class="re2">/&gt;</span></span></div></li></ol></pre>
+
+<p>
+Que fer:
+</p>
+<pre class="code xml"><ol><li class="li1"><div class="de1"><span class="sc3"><span class="re1">&lt;persona<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1">   <span class="sc3"><span class="re1">&lt;nom<span class="re2">&gt;</span></span></span>Pere<span class="sc3"><span class="re1">&lt;/nom<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1"><span class="sc3"><span class="re1">&lt;/persona<span class="re2">&gt;</span></span></span></div></li></ol></pre>
+
+<p>
+I per tant sempre es pot fer servir el mètode que ens agradi més.
+</p>
+</div></div>
+<p>
+Una altra característica important dels atributs és que <strong>no es poden repetir els noms dels atributs dins d’un mateix element</strong>. De manera que no és correcte especificar dos atributs <code>carrec</code>:
+</p>
+<pre class="code xml"><ol><li class="li1"><div class="de1"><span class="sc3"><span class="re1">&lt;politic</span> <span class="re0">carrec</span>=<span class="st0">&quot;alcalde&quot;</span> <span class="re0">carrec</span>=<span class="st0">&quot;diputat&quot;</span><span class="re2">&gt;</span></span>Jordi Rufi<span class="sc3"><span class="re1">&lt;/pol</span>ític<span class="re2">&gt;</span></span></div></li></ol></pre>
+
+<p>
+Per tant, s’ha de buscar una altra manera d’especificar-ho. Per exemple, amb una llista de valors:
+</p>
+<pre class="code xml"><ol><li class="li1"><div class="de1"><span class="sc3"><span class="re1">&lt;politic</span> <span class="re0">carrec</span>=<span class="st0">&quot;alcalde diputat&quot;</span><span class="re2">&gt;</span></span>Jordi Rufi<span class="sc3"><span class="re1">&lt;/pol</span>ític<span class="re2">&gt;</span></span></div></li></ol></pre>
+
+<p>
+o bé posant noms d’atributs diferents:
+</p>
+<pre class="code xml"><ol><li class="li1"><div class="de1"><span class="sc3"><span class="re1">&lt;politic</span> <span class="re0">alcalde</span>=<span class="st0">&quot;si&quot;</span> <span class="re0">diputat</span>=<span class="st0">&quot;si&quot;</span><span class="re2">&gt;</span></span>Jordi Rufi<span class="sc3"><span class="re1">&lt;/pol</span>ític<span class="re2">&gt;</span></span></div></li></ol></pre>
+
+</div>
+
+<h4><a id="atribut_xmllang" >Atribut xml:lang</a></h4>
+<div class="level4">
+
+<p>
+L’atribut <code>xml:lang</code> és un atribut predefinit i serveix per especificar l’idioma que s’ha fet servir per escriure el contingut tant de l’element com dels altres atributs. 
+</p>
+<div class="iocreference"><div class="ioccontent">
+<p>
+Vegeu les formes definides per l’IETF en el BCP 47 en la secció “Adreces d’interès” del web del mòdul.
+</p>
+</div></div>
+<p>
+El valor de l’atribut <code>xml:lang</code> pot ser buit o bé ha d’estar en una de les formes definides per l’IETF en el BCP 47 (<a href="http://www.rfc-editor.org/rfc/bcp/bcp47.txt" class="urlextern" title="http://www.rfc-editor.org/rfc/bcp/bcp47.txt"  rel="nofollow">www.rfc-editor.org/rfc/bcp/bcp47.txt</a>), que fan servir els codis ISO que defineixen les regions i els idiomes. Sense entrar-hi en profunditat això implica que hi podem definir el codi ISO d’un idioma o bé una combinació de codis ISO que defineixin la regió i l’idioma. 
+</p>
+<div class="iocimportant"><div class="ioccontent">
+<p>
+L’atribut <code>xml:lang</code> ens permet definir en quin idioma està el contingut d’un element o d’un document XML.
+</p>
+</div></div>
+<p>
+Per tant, el valor de l’atribut <code>xml:lang</code> d’aquest exemple seria vàlid perquè el codi ISO 639 de dues lletres per a la llengua catalana és <code>ca</code>.
+</p>
+<pre class="code xml"><ol><li class="li1"><div class="de1"><span class="sc3"><span class="re1">&lt;missatge</span> <span class="re0">xml:lang</span>=<span class="st0">&quot;ca&quot;</span><span class="re2">&gt;</span></span>Hola<span class="sc3"><span class="re1">&lt;/missatge<span class="re2">&gt;</span></span></span></div></li></ol></pre>
+
+<p>
+Però també seria vàlid fer servir qualsevol de les combinacions de regió i idioma: 
+</p>
+<pre class="code xml"><ol><li class="li1"><div class="de1"><span class="sc3"><span class="re1">&lt;missatge</span> <span class="re0">xml:lang</span>=<span class="st0">&quot;ca-ES&quot;</span><span class="re2">&gt;</span></span>Hola<span class="sc3"><span class="re1">&lt;/missatge<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1"><span class="sc3"><span class="re1">&lt;missatge</span> <span class="re0">xml:lang</span>=<span class="st0">&quot;ca-AD&quot;</span><span class="re2">&gt;</span></span>Salut<span class="sc3"><span class="re1">&lt;/missatge<span class="re2">&gt;</span></span></span></div></li></ol></pre>
+
+<p>
+L’atribut només fa referència a l’element en què s’ha especificat i al seu contingut, de manera que aquí:
+</p>
+<pre class="code xml"><ol><li class="li1"><div class="de1"><span class="sc3"><span class="re1">&lt;saludar</span> <span class="re0">xml:lang</span>=<span class="st0">&quot;ca&quot;</span><span class="re2">&gt;</span></span></div></li><li class="li1"><div class="de1">  <span class="sc3"><span class="re1">&lt;arribar<span class="re2">&gt;</span></span></span>Hola<span class="sc3"><span class="re1">&lt;/arribar<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1">  <span class="sc3"><span class="re1">&lt;marxar<span class="re2">&gt;</span></span></span>Adéu<span class="sc3"><span class="re1">&lt;/marxar<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1"><span class="sc3"><span class="re1">&lt;/saludar<span class="re2">&gt;</span></span></span></div></li></ol></pre>
+
+<p>
+es pot considerar que els elements <code>arribar</code> i <code>marxar</code> tenen també l’atribut <code>xml:lang</code> perquè són contingut de <code>&lt;saludar&gt;</code>, i per tant el seu contingut i el valor dels seus atributs està en català. 
+</p>
+
+<p>
+Sempre es pot evitar aquesta forma d’herència de l’atribut redefinint l’atribut <code>xml:lang</code> com en aquest exemple:
+</p>
+<pre class="code xml"><ol><li class="li1"><div class="de1"><span class="sc3"><span class="re1">&lt;saludar</span> <span class="re0">xml:lang</span>=<span class="st0">&quot;ca&quot;</span><span class="re2">&gt;</span></span></div></li><li class="li1"><div class="de1">  <span class="sc3"><span class="re1">&lt;arribar<span class="re2">&gt;</span></span></span>Hola<span class="sc3"><span class="re1">&lt;/arribar<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1">  <span class="sc3"><span class="re1">&lt;arribar</span> <span class="re0">xml:lang</span>=<span class="st0">&quot;en&quot;</span><span class="re2">&gt;</span></span>Hello<span class="sc3"><span class="re1">&lt;/arribar<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1"><span class="sc3"><span class="re1">&lt;/saludar<span class="re2">&gt;</span></span></span></div></li></ol></pre>
+
+<p>
+S’hi defineixen dos elements <code>arribar</code>, un que té el contingut en català, ja que l’ha heretat de l’element <code>saludar</code>, que els conté, i l’altre que té el contingut en anglès perquè se l’hi ha especificat l’idioma explícitament.
+</p>
+
+<p>
+L’objectiu de l’atribut <code>xml:lang</code> és permetre que els programes puguin interpretar l’idioma en el qual hi ha el contingut dels documents o dels elements XML. Hi ha molts programes que fan servir aquesta característica per poder fer que els programes adaptin el contingut que han de mostrar en l’idioma del qui els fa servir. 
+</p>
+
+<p>
+Si es té un programa que vol mostrar missatges per pantalla en l’idioma que faci servir l’usuari se li podria preparar un fitxer de dades com el següent, que li permetria fer-ho un cop hagués determinat l’idioma del sistema operatiu:
+</p>
+<pre class="code xml"><ol><li class="li1"><div class="de1"><span class="sc3"><span class="re1">&lt;programa<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1">   <span class="sc3"><span class="re1">&lt;missatge</span> <span class="re0">xml:lang</span>=<span class="st0">&quot;ca&quot;</span><span class="re2">&gt;</span></span>Benvingut<span class="sc3"><span class="re1">&lt;/missatge<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1">   <span class="sc3"><span class="re1">&lt;missatge</span> <span class="re0">xml:lang</span>=<span class="st0">&quot;es&quot;</span><span class="re2">&gt;</span></span>Bienvenido<span class="sc3"><span class="re1">&lt;/missatge<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1">   <span class="sc3"><span class="re1">&lt;missatge</span> <span class="re0">xml:lang</span>=<span class="st0">&quot;fr&quot;</span><span class="re2">&gt;</span></span>Soyez le bienvenu<span class="sc3"><span class="re1">&lt;/missatge<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1">   <span class="sc3"><span class="re1">&lt;missatge</span> <span class="re0">xml:lang</span>=<span class="st0">&quot;en&quot;</span><span class="re2">&gt;</span></span>Welcome<span class="sc3"><span class="re1">&lt;/missatge<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1"><span class="sc3"><span class="re1">&lt;/programa<span class="re2">&gt;</span></span></span></div></li></ol></pre>
+
+</div>
+
+<h4><a id="l_atribut_xmlspace" >L&#039;atribut &#039;&#039;xml:space&#039;&#039;</a></h4>
+<div class="level4">
+
+<p>
+L’atribut <code>xml:space</code> fa referència a com s’han de tractar els espais que hi ha en el contingut d’un element determinat. 
+</p>
+
+<p>
+Quan algú edita un document XML és corrent que faci servir espais i salts de línia perquè el document sigui més “bonic” però realment aquests espais i salts de línia no formen part del contingut. <strong>Amb l’ús de l’atribut <code>xml:space</code> es defineix si aquests espais són part del contingut o no</strong>.
+</p>
+
+<p>
+Només hi ha dos valors acceptats per a l’atribut <code>xml:space</code>: <strong>default</strong> i <strong>preserve</strong> (<span class="tabref"><a href="#table9"><span>taula</span></a></span>).
+</p>
+<div class="ioctable ">
+<div class="titletable"><a name="table9"><span>Taula: </span></a>Valors acceptats per a l’atribut <code>xml:space</code></div>
+<div class="table"><table class="inline">
+	<tr class="row0">
+		<th class="col0"> Valor </th><th class="col1"> Significat </th>
+	</tr>
+	<tr class="row1">
+		<td class="col0"> <strong>default</strong> </td><td class="col1"> Implica que el document ha de mostrar només un sol espai de separació entre les paraules. Qualsevol altra cosa ha de ser suprimida. </td>
+	</tr>
+	<tr class="row2">
+		<td class="col0"> <strong>preserve</strong> </td><td class="col1"> Fa que els espais es deixin tal com  estan en el document. Per tant, si hi ha 5 espais després d’una paraula en el contingut s’han de preservar aquests espais. </td>
+	</tr>
+</table></div>
+</div>
+<p>
+Qualsevol altre valor es considerarà un error lleu i no es tindrà en compte.
+</p>
+
+<p>
+Seguint el que hem definit, en el document següent: 
+</p>
+<pre class="code xml"><ol><li class="li1"><div class="de1"><span class="sc3"><span class="re1">&lt;missatge</span> <span class="re0">xml:space</span>=<span class="st0">&quot;default&quot;</span><span class="re2">&gt;</span></span></div></li><li class="li1"><div class="de1">Hola: </div></li><li class="li1"><div class="de1">    Com va tot?</div></li><li class="li1"><div class="de1"><span class="sc3"><span class="re1">&lt;/missatge<span class="re2">&gt;</span></span></span></div></li></ol></pre>
+
+<p>
+Com que l’element <code>&lt;missatge&gt;</code> té de paràmetre <code>xml:space=“default”</code>, li estem especificant que se suprimeixin els espais, o sigui, que seria com tenir:
+</p>
+<pre class="code xml"><ol><li class="li1"><div class="de1"><span class="sc3"><span class="re1">&lt;missatge<span class="re2">&gt;</span></span></span>Hola: Com va tot?<span class="sc3"><span class="re1">&lt;/missatge<span class="re2">&gt;</span></span></span></div></li></ol></pre>
+
+<p>
+En canvi, si l’atribut hagués estat <code>preserve</code> el valor del contingut de  <code>&lt;missatge&gt;</code> seria interpretat respectant els espais i els salts de línia.
+</p>
+<pre class="code xml"><ol><li class="li1"><div class="de1"><span class="sc3"><span class="re1">&lt;missatge<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1">Hola: </div></li><li class="li1"><div class="de1">    Com va tot?</div></li><li class="li1"><div class="de1"><span class="sc3"><span class="re1">&lt;/missatge<span class="re2">&gt;</span></span></span></div></li></ol></pre>
+<div class="iocimportant"><div class="ioccontent">
+<p>
+Els processadors XML han de passar tots els espais que no siguin etiquetes al programa que llegeixi el document. Per tant, a pesar del nom per defecte es fa servir <code>preserve</code>.
+</p>
+</div></div>
+</div>
+
+<h3><a id="noms_valids_xml" >Noms vàlids XML</a></h3>
+<div class="level3">
+
+<p>
+L’XML permet definir les nostres etiquetes i atributs lliurement però no totes les combinacions possibles són acceptables. Els noms de les etiquetes i dels atributs han de complir unes regles per ser considerats “correctes”. 
+</p>
+<div class="iocnote"><div class="ioccontent">
+<p>
+Tot i que els dos punts estan acceptats no es recomana que es facin servir en la creació d’etiquetes perquè es reserven per ser usats en <em>espais de noms</em>.
+</p>
+</div></div>
+<p>
+Les regles per definir noms correctes són senzilles:
+</p>
+<ol>
+<li class="level1"><div class="li"> Els noms han de començar per una lletra de l’alfabet, el caràcter de subratllat (_) o un guió (-). També s’accepta el caràcter de dos punts (:), però està reservat.</div>
+</li>
+<li class="level1"><div class="li"> Els caràcters en majúscules són diferents dels caràcters en minúscules.</div>
+</li>
+<li class="level1"><div class="li"> No hi pot haver espais enmig del nom.</div>
+</li>
+<li class="level1"><div class="li"> No poden començar per la paraula <em>XML</em> tant si qualsevol de les lletres està en majúscules o en minúscules. Aquestes paraules es reserven per a estandarditzacions futures.</div>
+</li>
+</ol>
+
+<p>
+Seguint aquestes regles tindrem que l’exemple següent:
+</p>
+<pre class="code xml"><ol><li class="li1"><div class="de1"><span class="sc3"><span class="re1">&lt;Ciutat</span> <span class="re0">comarca</span>=<span class="st0">&quot;Alt Empordà&quot;</span><span class="re2">&gt;</span></span>Figueres<span class="sc3"><span class="re1">&lt;/Ciutat<span class="re2">&gt;</span></span></span></div></li></ol></pre>
+
+<p>
+L’etiqueta <code>&lt;Ciutat&gt;</code> és correcta perquè compleix totes les regles. La primera lletra del nom comença per un caràcter de l’alfabet, <code>C</code>, no hi ha cap espai enmig del nom, i no comença per les lletres <code>xml</code>.
+</p>
+
+<p>
+Alhora, l’atribut <code>comarca</code> també és correcte perquè comença amb un caràcter de l’alfabet, <code>c</code>, no té espais i no comença per <code>xml</code>.
+</p>
+
+<p>
+En canvi no és correcta l’etiqueta <code>&lt;Alt Empordà&gt;</code> perquè té espais enmig del nom:
+</p>
+<pre class="code xml"><ol><li class="li1"><div class="de1"><span class="sc3"><span class="re1">&lt;Alt</span> Empordà<span class="re2">&gt;</span><span class="re1">&lt;/Alt</span> Empordà<span class="re2">&gt;</span></span></div></li></ol></pre>
+
+<p>
+Ni ho serien les etiquetes <code>&lt;1aPosicio&gt;</code> i <code>&lt;2aPosicio&gt;</code>, ja que comencen per un dígit:
+</p>
+<pre class="code xml"><ol><li class="li1"><div class="de1"><span class="sc3"><span class="re1">&lt;carrera<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1">  <span class="sc3">&lt;1aPosicio<span class="re2">&gt;</span></span>Manel Garcia<span class="sc3">&lt;/1aPosicio<span class="re2">&gt;</span></span></div></li><li class="li1"><div class="de1">  <span class="sc3">&lt;2aPosicio<span class="re2">&gt;</span></span>Pere Pi<span class="sc3">&lt;/2aPosicio<span class="re2">&gt;</span></span></div></li><li class="li1"><div class="de1"><span class="sc3"><span class="re1">&lt;/carrera<span class="re2">&gt;</span></span></span></div></li></ol></pre>
+
+<p>
+En la <span class="tabref"><a href="#table10"><span>taula</span></a></span> hi ha exemples d’etiquetes correctes i incorrectes.
+</p>
+<div class="ioctable ">
+<div class="titletable"><a name="table10"><span>Taula: </span></a>Exemples d’etiquetes correctes i incorrectes</div>
+<div class="table"><table class="inline">
+	<tr class="row0">
+		<th class="col0"> Etiquetes correctes </th><th class="col1"> Etiquetes incorrectes </th>
+	</tr>
+	<tr class="row1">
+		<td class="col0"> &lt;correu1/&gt; </td><td class="col1"> &lt;1Correu/&gt; </td>
+	</tr>
+	<tr class="row2">
+		<td class="col0"> &lt;correu-electronic/&gt; </td><td class="col1"> &lt;correu electronic/&gt;</td>
+	</tr>
+	<tr class="row3">
+		<td class="col0 leftalign"> &lt;element /&gt;          </td><td class="col1"> &lt; element/&gt; </td>
+	</tr>
+	<tr class="row4">
+		<td class="col0 leftalign"> &lt;_Carai/&gt;            </td><td class="col1"> &lt;%descompte/&gt; </td>
+	</tr>
+	<tr class="row5">
+		<td class="col0 leftalign"> &lt;svg:rectangle /&gt;     </td><td class="col1"> &lt;xml-rectangle/&gt; </td>
+	</tr>
+</table></div>
+</div>
+<p>
+A pesar d’aquestes restriccions la llibertat que permet l’estàndard és prou important.
+</p>
+<div class="iocnote"><div class="ioccontent">
+<p>
+La versió 1.1 d’XML permet que siguin vàlids tota una sèrie de caràcters extra per adaptar-se a les noves versions de Unicode, però en general no aporten res si no fem servir algun idioma asiàtic.
+</p>
+</div></div>
+<p>
+Una de les coses que no s’ha d’oblidar mai és que un dels objectius d’XML és fer que els documents amb XML puguin ser llegits i entesos fàcilment per les persones i, per tant, es recomana que no es facin servir noms que no tinguin sentit o que siguin difícilment entesos per una persona.
+</p>
+
+</div>
+
+<h3><a id="comentaris" >Comentaris</a></h3>
+<div class="level3">
+
+<p>
+Sovint en els documents XML s’especifiquen dades extra que realment no formen part del document. Aquestes dades s’anomenen <em>comentaris</em> i es fan servir per a moltes coses diverses, com ara:
+</p>
+<ul>
+<li class="level1"><div class="li"> Generar documentació sobre el document.</div>
+</li>
+<li class="level1"><div class="li"> Indicar a la gent que pugui rebre el document què es volia fer en crear-lo.</div>
+</li>
+<li class="level1"><div class="li"> Altres.</div>
+</li>
+</ul>
+<div class="iocnote"><div class="ioccontent">
+<p>
+Els analitzadors XML són programes que, a partir de l’estructura dels documents XML, ens permeten l’accés al contingut a partir de les seves etiquetes.
+</p>
+
+<p>
+El més habitual sol ser processar el document per generar-ne una sortida que pugui ser visualitzada més fàcilment, etc..
+</p>
+</div></div>
+<p>
+Generalment els analitzadors XML simplement solen descartar els comentaris, ja que l’especificació XML diu que no cal que siguin processats.
+</p>
+
+<p>
+Els comentaris s’especifiquen encloent-los entre els símbols <code>&lt;!&mdash;</code> i <code>&mdash;&gt;</code> i es poden posar comentaris en qualsevol lloc del document XML excepte dins de les etiquetes. Com a exemple, en el document següent s’ha inclòs el comentari “Llista d’alumnes” per a indicar en quin lloc comença la llista d’alumnes:
+</p>
+<pre class="code xml"><ol><li class="li1"><div class="de1"><span class="sc3"><span class="re1">&lt;professors<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1">   <span class="sc3"><span class="re1">&lt;nom<span class="re2">&gt;</span></span></span>Marcel Alaba<span class="sc3"><span class="re1">&lt;/nom<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1"><span class="sc3"><span class="re1">&lt;/professors<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1"><span class="sc-1">&lt;!-- Llista d'alumnes --&gt;</span></div></li><li class="li1"><div class="de1"><span class="sc3"><span class="re1">&lt;alumnes<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1">   <span class="sc3"><span class="re1">&lt;nom<span class="re2">&gt;</span></span></span>Frederic Garcia<span class="sc3"><span class="re1">&lt;/nom<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1">   <span class="sc3"><span class="re1">&lt;nom<span class="re2">&gt;</span></span></span>Federicu Pi<span class="sc3"><span class="re1">&lt;/nom<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1"><span class="sc3"><span class="re1">&lt;/alumnes<span class="re2">&gt;</span></span></span></div></li></ol></pre>
+
+</div>
+
+<h3><a id="instruccions_de_proces" >Instruccions de procés</a></h3>
+<div class="level3">
+
+<p>
+Les instruccions de procés són una manera de donar instruccions als programes que llegiran el document. Es defineixen dins dels símbols ”&lt;?” i posteriorment <strong>sempre s’hi ha d’especificar a quin programa van dirigides</strong> amb l’única restricció que no poden ser les lletres “XML” en qualsevol combinació de majúscules o minúscules.
+</p>
+
+<p>
+Per tant, per afegir informació que vagi destinada a un programa anomenat <code>php</code> s’han de definir les instruccions de procés amb una instrucció de procés:
+</p>
+<pre class="code xml"><ol><li class="li1"><div class="de1"><span class="sc3"><span class="re1">&lt;?php</span> ... <span class="re2">?&gt;</span></span></div></li></ol></pre>
+
+<p>
+Aquest sistema permet que en un document XML es puguin afegir instruccions de procés diferents per a programes diferents:
+</p>
+<pre class="code xml"><ol><li class="li1"><div class="de1"><span class="sc3"><span class="re1">&lt;?programa1</span> ... <span class="re2">?&gt;</span></span></div></li><li class="li1"><div class="de1"><span class="sc3"><span class="re1">&lt;?programa2</span> ... <span class="re2">?&gt;</span></span></div></li></ol></pre>
+
+<p>
+El contingut de les dades pot ser qualsevol cosa que tingui sentit per al programa que les llegirà, i per tant no necessàriament ha de tenir sentit per als processadors XML. Com que no formen part del document XML en si poden aparèixer en qualsevol lloc del document excepte en mig d’una etiqueta.
+</p>
+
+</div>
+
+<h2><a id="declaracio_xml" >Declaració XML</a></h2>
+<div class="level2">
+
+<p>
+L’especificació és una línia que defineix una manera d’identificar que un document és XML per mitjà d’una etiqueta especial anomenada <em>declaració XML</em>, que serveix per indicar que un document és XML. 
+</p>
+<pre class="code xml"><ol><li class="li1"><div class="de1"><span class="sc3"><span class="re1">&lt;?xml</span> <span class="re0">version</span>=<span class="st0">&quot;1.0&quot;</span><span class="re2">?&gt;</span></span></div></li></ol></pre>
+
+<p>
+<strong>La declaració XML és opcional, tot i que es considera recomanable</strong>, ja que té alguns atributs que poden ajudar als programes a entendre característiques del document com el codi de caràcters que s’hi fa servir, la versió d’XML que s’ha usat, etc.
+</p>
+
+<p>
+Si la declaració és present s’ha de tenir en compte que:
+</p>
+<ul>
+<li class="level1"><div class="li"> La declaració ha d’estar en la primera línia del document i ha de començar en el primer caràcter del document.</div>
+</li>
+<li class="level1"><div class="li"> Ha de tenir obligatòriament l’atribut <code>version</code>, que actualment només pot ser <code>1.0</code> o <code>1.1</code>.</div>
+</li>
+</ul>
+
+<p>
+Per tant, la declaració següent és errònia perquè deixa una línia en blanc, deixa espais davant de la declaració i no defineix l’atribut <code>version</code>:
+</p>
+<pre class="code">.
+  &lt;?xml ?&gt;</pre>
+
+<p>
+Com que la declaració és opcional podem trobar documents XML sense aquesta declaració. Si això passa els programes que llegeixin el document han de suposar que és tracta d’un document XML versió 1.0. 
+</p>
+
+</div>
+
+<h3><a id="atributs_de_la_declaracio_xml" >Atributs de la declaració XML</a></h3>
+<div class="level3">
+
+<p>
+La declaració XML permet definir tres atributs (<span class="tabref"><a href="#table14"><span>taula</span></a></span>).
+</p>
+<div class="ioctable ">
+<div class="titletable"><a name="table14"><span>Taula: </span></a>Atributs de la declaració XML</div>
+<div class="table"><table class="inline">
+	<tr class="row0">
+		<th class="col0"> Atribut </th><th class="col1"> Objectiu </th><th class="col2"> Obligatori ? </th>
+	</tr>
+	<tr class="row1">
+		<td class="col0"> <strong>version</strong> </td><td class="col1"> Defineix quina versió d’XML s’ha fet servir per crear el document. </td><td class="col2"> Sí </td>
+	</tr>
+	<tr class="row2">
+		<td class="col0"> <strong>encoding</strong> </td><td class="col1"> Defineix el codi de caràcters que fa servir el document. </td><td class="col2"> No </td>
+	</tr>
+	<tr class="row3">
+		<td class="col0"> <strong>standalone</strong> </td><td class="col1"> Serveix per indicar si el document no depèn d’altres documents. </td><td class="col2"> No </td>
+	</tr>
+</table></div>
+</div>
+</div>
+
+<h4><a id="atribut_version" >Atribut &#039;&#039;version&#039;&#039;</a></h4>
+<div class="level4">
+
+<p>
+L’atribut <code>version</code> serveix per especificar mitjançant quina versió d’XML s’ha d’interpretar el document. Tot i que la definició XML és opcional, si hi és aquest atribut esdevé obligatòria. 
+</p>
+
+<p>
+Per tant, si es carrega el document següent en un programa li estem donant instruccions que ha de tractar el document segons les especificacions de la versió 1.1.
+</p>
+<pre class="code xml"><ol><li class="li1"><div class="de1"><span class="sc3"><span class="re1">&lt;?xml</span> <span class="re0">version</span>=<span class="st0">&quot;1.1&quot;</span> <span class="re2">?&gt;</span></span></div></li><li class="li1"><div class="de1"><span class="sc3"><span class="re1">&lt;nom<span class="re2">&gt;</span></span></span>Pere Garcia<span class="sc3"><span class="re1">&lt;/nom<span class="re2">&gt;</span></span></span></div></li></ol></pre>
+
+<p>
+Si no s’especifica la definició o bé el valor és incorrecte els programes poden ignorar el que hi hagi i suposar que la versió és la 1.0. Per tant, els dos documents següents han de ser interpretats com a 1.0: 
+</p>
+<pre class="code xml"><ol><li class="li1"><div class="de1"><span class="sc3"><span class="re1">&lt;?xml</span> <span class="re0">version</span>=<span class="st0">&quot;1.9&quot;</span> <span class="re2">?&gt;</span></span></div></li><li class="li1"><div class="de1"><span class="sc3"><span class="re1">&lt;nom<span class="re2">&gt;</span></span></span>Pere Garcia<span class="sc3"><span class="re1">&lt;/nom<span class="re2">&gt;</span></span></span></div></li></ol></pre>
+<pre class="code xml"><ol><li class="li1"><div class="de1"><span class="sc3"><span class="re1">&lt;nom<span class="re2">&gt;</span></span></span>Pere Garcia<span class="sc3"><span class="re1">&lt;/nom<span class="re2">&gt;</span></span></span></div></li></ol></pre>
+
+</div>
+
+<h4><a id="atribut_encoding" >Atribut encoding</a></h4>
+<div class="level4">
+
+<p>
+L’atribut <code>encoding</code> permet definir amb quin codi de caràcters s’han codificat les dades. 
+</p>
+
+<p>
+Per defecte tots els programes que llegeixin XML han de poder interpretar els codis de caràcters que estiguin en UTF-8 i UTF-16 i fins i tot detectar en quina de les dues codificacions està fet el document. Això implica que si el document està creat amb alguna d’aquestes codificacions no caldria especificar l’atribut <code>encoding</code>. Tot i això, per motius de llegibilitat del document sovint s’hi especifica igualment.
+</p>
+<div class="iocnote"><div class="ioccontent">
+<p>
+Com que l’estàndard <acronym title="American Standard Code for Information Interchange">ASCII</acronym> és un subconjunt d’UTF-8 els documents que estiguin en <acronym title="American Standard Code for Information Interchange">ASCII</acronym> tampoc no requereixen cap declaració.
+</p>
+</div></div>
+<p>
+En canvi, si el document segueix alguna altra codificació l’atribut s’ha d’especificar explícitament. Per un document creat fent servir el codi de caràcters ISO-8859-15 és obligatori tenir definit l’atribut que indiqui el codi de caràcters que s’ha fet servir:
+</p>
+<pre class="code xml"><ol><li class="li1"><div class="de1"><span class="sc3"><span class="re1">&lt;?xml</span> <span class="re0">version</span>=<span class="st0">&quot;1.0&quot;</span> <span class="re0">encoding</span>=<span class="st0">&quot;ISO-8859-15&quot;</span><span class="re2">?&gt;</span></span></div></li></ol></pre>
+
+<p>
+Es poden fer servir les abreviacions de codis de caràcters de la <span class="tabref"><a href="#table11"><span>taula</span></a></span>.
+</p>
+<div class="ioctable ">
+<div class="titletable"><a name="table11"><span>Taula: </span></a>abreviacions de codis de caràcters acceptades per l’XML</div>
+<div class="table"><table class="inline">
+	<tr class="row0">
+		<th class="col0 leftalign"> Tipus            </th><th class="col1 leftalign"> Codis de caràcters                                    </th>
+	</tr>
+	<tr class="row1">
+		<td class="col0 leftalign"> Unicode          </td><td class="col1"> UTF-8, UTF-16, ISO-10646-UCS-2, i ISO-10646-UCS-4 </td>
+	</tr>
+	<tr class="row2">
+		<td class="col0"> <acronym title="American Standard Code for Information Interchange">ASCII</acronym> i variants </td><td class="col1 leftalign"> ISO-8859-1, ISO-8859-2, …, ISO-8859-n               </td>
+	</tr>
+	<tr class="row3">
+		<td class="col0 leftalign"> JIS X-0208-1997  </td><td class="col1 leftalign"> ISO-2022-JP, Shitf_JIS, EUC-JP                        </td>
+	</tr>
+</table></div>
+</div><div class="iocreference"><div class="ioccontent">
+<p>
+Vegeu la definició de codificacions de l’IANA en la secció “Adreces d’interès” del web del mòdul.
+</p>
+</div></div>
+<p>
+Per a altres codis de caràcters es recomana fer servir els noms que defineix l’IANA (<a href="http://www.iana.org/assignments/character-sets" class="urlextern" title="http://www.iana.org/assignments/character-sets"  rel="nofollow">www.iana.org/assignments/character-sets</a>). 
+</p>
+
+<p>
+Si a pesar d’això el codi de caràcters que es fa servir no està en la llista s’ha de fer començar el nom amb <code>x-</code>.
+</p>
+
+</div>
+
+<h4><a id="atribut_standalone" >Atribut &#039;&#039;standalone&#039;&#039;</a></h4>
+<div class="level4">
+
+<p>
+Els documents d’esquemes poden fer que algunes de les etiquetes les hagin de tractar de manera diferent els programes. Per exemple, definint atributs per defecte en algunes etiquetes i que, per tant, no cal que siguin específicament declarades en el document XML. 
+</p>
+
+<p>
+En la definició del vocabulari es pot definir que l’element <code>&lt;persona&gt;</code> té un atribut <code>versió</code> que per defecte és <code>home</code>. En crear el document es podria definir l’etiqueta sense especificar-ne l’atribut perquè el seu valor està implícit.
+</p>
+<pre class="code xml"><ol><li class="li1"><div class="de1"><span class="sc3"><span class="re1">&lt;persona<span class="re2">&gt;</span></span></span>Joan<span class="sc3"><span class="re1">&lt;/persona<span class="re2">&gt;</span></span></span></div></li></ol></pre>
+
+<p>
+Si un programa tracta aquest document ha de tenir en compte aquest valor, i per tant haurà de llegir el document que declara els atributs per defecte.
+</p>
+
+<p>
+Amb l’atribut <code>standalone</code> s’està definint si el document XML es pot entendre per si sol o bé necessita que sigui interpretat amb l’ajuda d’algun altre document, i per aquest motiu només té dos valors possibles (<span class="tabref"><a href="#table12"><span>taula</span></a></span>).
+</p>
+<div class="ioctable ">
+<div class="titletable"><a name="table12"><span>Taula: </span></a>Valors possibles de l’atribut standalone</div>
+<div class="table"><table class="inline">
+	<tr class="row0">
+		<th class="col0"> Valor </th><th class="col1"> Significat </th>
+	</tr>
+	<tr class="row1">
+		<td class="col0 leftalign"> yes   </td><td class="col1"> El document és complet, i per tant no li calen altres documents per ser interpretat. </td>
+	</tr>
+	<tr class="row2">
+		<td class="col0 leftalign"> no    </td><td class="col1"> El document no es pot entendre per si sol i n’hem de llegir d’altres per poder-lo entendre. </td>
+	</tr>
+</table></div>
+</div>
+<p>
+Si l’atribut no s’especifica es considera que el valor de l’atribut <code>standalone</code> és <strong>no</strong>.
+</p>
+
+</div>
+
+<h2><a id="correctesa" >Correctesa</a></h2>
+<div class="level2">
+
+<p>
+Els programes d’ordinador no tenen la flexibilitat que tenen els documents XML i necessiten poder treballar amb dades molt pautades, i precisament això és el que intenten fer les regles, evitar que hi hagi parts del document que puguin ser malinterpretades. Com que la majoria de les vegades els documents XML hauran de ser llegits per programes, és molt important tenir alguna manera de comprovar que aquest document XML estigui ben format, que compleixi les regles de definició de l’XML.
+</p>
+<div class="iocimportant"><div class="ioccontent">
+<p>
+Comprovar la correctesa d’un document XML és comprovar que no s’incompleix cap de les regles de definició d’XML.
+</p>
+</div></div>
+<p>
+Es considera que un document és correcte o ben format si compleix amb les regles bàsiques de creació d’un document XML. En general podem definir aquestes regles com:
+</p>
+<ul>
+<li class="level1"><div class="li"> Només hi pot haver un element arrel.</div>
+</li>
+<li class="level1"><div class="li"> Totes les etiquetes que s’obren s’han de tancar.</div>
+</li>
+<li class="level1"><div class="li"> Les etiquetes han d’estar imbricades correctament.</div>
+</li>
+<li class="level1"><div class="li"> Els noms de les etiquetes han de ser correctes.</div>
+</li>
+<li class="level1"><div class="li"> Els valors dels atributs han d’estar entre cometes.</div>
+</li>
+</ul>
+
+</div>
+
+<h3><a id="nomes_hi_pot_haver_un_element_arrel" >Només hi pot haver un element arrel</a></h3>
+<div class="level3">
+
+<p>
+En l’exemple següent:
+</p>
+<pre class="code xml"><ol><li class="li1"><div class="de1"><span class="sc3"><span class="re1">&lt;persona<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1">   <span class="sc3"><span class="re1">&lt;nom<span class="re2">&gt;</span></span></span>Pere<span class="sc3"><span class="re1">&lt;/nom<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1">   <span class="sc3"><span class="re1">&lt;cognom<span class="re2">&gt;</span></span></span>Garcia<span class="sc3"><span class="re1">&lt;/cognom<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1"><span class="sc3"><span class="re1">&lt;/persona<span class="re2">&gt;</span></span></span></div></li></ol></pre>
+
+<p>
+L’etiqueta que surt en primer lloc, <code>&lt;persona&gt;</code>, i que acaba al final, <code>&lt;/persona&gt;</code>, defineix el que s’anomena <strong>element arrel</strong>. Que un element sigui arrel vol dir que no té cap element que el contingui. 
+</p>
+
+<p>
+En aquest altre exemple, en canvi, hi ha dos elements arrel, <code>&lt;persona&gt;</code> i <code>&lt;gos&gt;</code>:
+</p>
+<pre class="code xml"><ol><li class="li1"><div class="de1"><span class="sc3"><span class="re1">&lt;persona<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1">   <span class="sc3"><span class="re1">&lt;nom<span class="re2">&gt;</span></span></span>Pere Garcia<span class="sc3"><span class="re1">&lt;/nom<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1"><span class="sc3"><span class="re1">&lt;/persona<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1"><span class="sc3"><span class="re1">&lt;gos<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1">   <span class="sc3"><span class="re1">&lt;nom<span class="re2">&gt;</span></span></span>Rufy<span class="sc3"><span class="re1">&lt;/nom<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1"><span class="sc3"><span class="re1">&lt;/gos<span class="re2">&gt;</span></span></span></div></li></ol></pre>
+
+<p>
+Es pot veure que tant <code>&lt;persona&gt;</code> com <code>&lt;gos&gt;</code> no tenen cap element que els contingui i, per tant, tots dos són elements arrel. <strong>Això fa que no sigui un document XML ben format</strong>.
+</p>
+
+<p>
+També hi ha dos elements arrel en el cas en què les etiquetes siguin les mateixes. Per exemple, en el document següent tenim dos elements arrel <code>&lt;persona&gt;</code>. Per aquest motiu, aquest document tampoc no està ben format.
+</p>
+<pre class="code xml"><ol><li class="li1"><div class="de1"><span class="sc3"><span class="re1">&lt;persona<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1">   <span class="sc3"><span class="re1">&lt;nom<span class="re2">&gt;</span></span></span>Pere<span class="sc3"><span class="re1">&lt;/nom<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1">   <span class="sc3"><span class="re1">&lt;cognom<span class="re2">&gt;</span></span></span> Pérez <span class="sc3"><span class="re1">&lt;/cognom<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1"><span class="sc3"><span class="re1">&lt;/persona<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1"><span class="sc3"><span class="re1">&lt;persona<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1">   <span class="sc3"><span class="re1">&lt;nom<span class="re2">&gt;</span></span></span>Marià<span class="sc3"><span class="re1">&lt;/nom<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1">   <span class="sc3"><span class="re1">&lt;cognom<span class="re2">&gt;</span></span></span>Garcia<span class="sc3"><span class="re1">&lt;/cognom<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1"><span class="sc3"><span class="re1">&lt;/persona<span class="re2">&gt;</span></span></span></div></li></ol></pre>
+
+<p>
+Si es volgués convertir el document anterior en un document ben format es podria posar un element nou que englobés els dos elements arrel. Per exemple, s’hi s’afegeix un element <code>&lt;persones&gt;</code> i així es crea un document XML ben format:
+</p>
+<pre class="code xml"><ol><li class="li1"><div class="de1"><span class="sc3"><span class="re1">&lt;persones<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1">    <span class="sc3"><span class="re1">&lt;persona<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1">       <span class="sc3"><span class="re1">&lt;nom<span class="re2">&gt;</span></span></span>Pere<span class="sc3"><span class="re1">&lt;/nom<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1">       <span class="sc3"><span class="re1">&lt;cognom<span class="re2">&gt;</span></span></span> Pérez <span class="sc3"><span class="re1">&lt;/cognom<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1">    <span class="sc3"><span class="re1">&lt;/persona<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1">    <span class="sc3"><span class="re1">&lt;persona<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1">        <span class="sc3"><span class="re1">&lt;nom<span class="re2">&gt;</span></span></span>Marià<span class="sc3"><span class="re1">&lt;/nom<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1">        <span class="sc3"><span class="re1">&lt;cognom<span class="re2">&gt;</span></span></span>Garcia<span class="sc3"><span class="re1">&lt;/cognom<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1">    <span class="sc3"><span class="re1">&lt;/persona<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1"><span class="sc3"><span class="re1">&lt;/persones<span class="re2">&gt;</span></span></span></div></li></ol></pre>
+
+</div>
+
+<h3><a id="totes_les_etiquetes_que_s_obren_s_han_de_tancar" >Totes les etiquetes que s&#039;obren s&#039;han de tancar</a></h3>
+<div class="level3">
+
+<p>
+A pesar del que passa en altres llenguatges de marques, per exemple <acronym title="HyperText Markup Language">HTML</acronym>, en l’XML totes les etiquetes que s’obrin han de ser tancades obligatòriament. Per tant, aquest seria un exemple correcte:
+</p>
+<pre class="code xml"><ol><li class="li1"><div class="de1"><span class="sc3"><span class="re1">&lt;nom<span class="re2">&gt;</span></span></span>Pere<span class="sc3"><span class="re1">&lt;/nom<span class="re2">&gt;</span></span></span></div></li></ol></pre>
+
+<p>
+Mentre que aquest no seria correcte:
+</p>
+<pre class="code xml"><ol><li class="li1"><div class="de1"><span class="sc3"><span class="re1">&lt;nom<span class="re2">&gt;</span></span></span>Pere</div></li></ol></pre>
+
+<p>
+En alguns moments pot caldre reflectir alguna dada que no requereixi cap valor. Per exemple si tenim una llista d’alumnes ens podria interessar marcar quin d’ells és el delegat. Per definir-ho no ens caldria cap dada, ja que simplement l’alumne que tingui l’etiqueta <code>&lt;delegat&gt;</code> és el delegat. Per tant, per definir que en Frederic Pi és el delegat podríem estar temptats de fer això:
+</p>
+<pre class="code xml"><ol><li class="li1"><div class="de1"><span class="sc3"><span class="re1">&lt;alumnes<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1">    <span class="sc3"><span class="re1">&lt;alumne<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1">        <span class="sc3"><span class="re1">&lt;nom<span class="re2">&gt;</span></span></span>Pere Garcia<span class="sc3"><span class="re1">&lt;/nom<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1">    <span class="sc3"><span class="re1">&lt;/alumne<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1">    <span class="sc3"><span class="re1">&lt;alumne<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1">        <span class="sc3"><span class="re1">&lt;nom<span class="re2">&gt;</span></span></span>Frederic Pi<span class="sc3"><span class="re1">&lt;/nom<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1">        <span class="sc3"><span class="re1">&lt;delegat<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1">    <span class="sc3"><span class="re1">&lt;/alumne<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1">    <span class="sc3"><span class="re1">&lt;alumne<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1">        <span class="sc3"><span class="re1">&lt;nom<span class="re2">&gt;</span></span></span>Maria Puigdevall<span class="sc3"><span class="re1">&lt;/nom<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1">    <span class="sc3"><span class="re1">&lt;/alumne<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1"><span class="sc3"><span class="re1">&lt;/alumnes<span class="re2">&gt;</span></span></span></div></li></ol></pre>
+
+<p>
+Això és incorrecte. Si obrim una etiqueta l’hem de tancar; per tant, hauríem de fer:
+</p>
+<pre class="code xml"><ol><li class="li1"><div class="de1">...</div></li><li class="li1"><div class="de1"><span class="sc3"><span class="re1">&lt;alumne<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1">   <span class="sc3"><span class="re1">&lt;nom<span class="re2">&gt;</span></span></span>Frederic Pi<span class="sc3"><span class="re1">&lt;/nom<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1">   <span class="sc3"><span class="re1">&lt;delegat<span class="re2">&gt;</span></span><span class="re1">&lt;/delegat<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1"><span class="sc3"><span class="re1">&lt;/alumne<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1">...</div></li></ol></pre>
+
+<p>
+O bé fer servir la versió de definició d’etiquetes buides acabant l’etiqueta amb ”/&gt;”:
+</p>
+<pre class="code xml"><ol><li class="li1"><div class="de1">...</div></li><li class="li1"><div class="de1"><span class="sc3"><span class="re1">&lt;alumne<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1">    <span class="sc3"><span class="re1">&lt;nom<span class="re2">&gt;</span></span></span>Frederic Pi<span class="sc3"><span class="re1">&lt;/nom<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1">    <span class="sc3"><span class="re1">&lt;delegat</span><span class="re2">/&gt;</span></span></div></li><li class="li1"><div class="de1"><span class="sc3"><span class="re1">&lt;/alumne<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1">...</div></li></ol></pre>
+
+</div>
+
+<h3><a id="les_etiquetes_han_d_estar_imbricades_correctament" >Les etiquetes han d&#039;estar imbricades correctament</a></h3>
+<div class="level3">
+
+<p>
+Per mantenir la jerarquia, l’XML defineix que les etiquetes no es poden tancar si encara hi ha alguna etiqueta que forma part del contingut que no ha estat tancada. Això és perquè no es permet que un element tingui una part del seu contingut en un element i una altra part en un altre, ja que això trencaria la jerarquia de dades.
+</p>
+<div class="ioctext"><div class="ioccontent"><p class="ioctitle"> Tancament de les etiquetes desordenat</p>
+<p>
+Alguns llenguatges de marques sí que permeten obrir i tancar les etiquetes en qualsevol ordre. Per exemple, les versions anteriors a la 4.0 d’<acronym title="HyperText Markup Language">HTML</acronym> permetien obrir i tancar etiquetes en l’ordre que volguéssim sempre que s’acabessin tancant totes. Però a partir de la versió 4.0 ja no s’accepta, a pesar que la majoria dels navegadors sí que ho permeten.
+</p>
+</div></div>
+<p>
+Per tant, sempre que s’obri una etiqueta dins d’un element aquesta ha de ser tancada abans d’acabar l’element. Aquest exemple seria correcte perquè l’element <code>&lt;persona&gt;</code> en el seu contingut obre l’etiqueta <code>&lt;nom&gt;</code> però abans d’acabar tanca <code>&lt;/nom&gt;</code>:
+</p>
+<pre class="code xml"><ol><li class="li1"><div class="de1"><span class="sc3"><span class="re1">&lt;persona<span class="re2">&gt;</span></span><span class="re1">&lt;nom<span class="re2">&gt;</span></span></span>Pere<span class="sc3"><span class="re1">&lt;/nom<span class="re2">&gt;</span></span><span class="re1">&lt;/persona<span class="re2">&gt;</span></span></span></div></li></ol></pre>
+
+<p>
+En canvi, si les etiquetes no es tanquen en l’ordre correcte, encara que es compleixi la regla que s’han de tancar totes les etiquetes, no tenim un document XML ben format.
+</p>
+<pre class="code xml"><ol><li class="li1"><div class="de1"><span class="sc3"><span class="re1">&lt;persona<span class="re2">&gt;</span></span><span class="re1">&lt;nom<span class="re2">&gt;</span></span></span>Pere<span class="sc3"><span class="re1">&lt;/persona<span class="re2">&gt;</span></span><span class="re1">&lt;/nom<span class="re2">&gt;</span></span></span></div></li></ol></pre>
+
+<p>
+En l’exemple que acabem de veure s’està creant un bucle, ja que <code>&lt;persona&gt;</code> conté una part de <code>&lt;nom&gt;</code> i alhora <code>&lt;nom&gt;</code> conté una part de <code>&lt;persona&gt;</code>. Això trenca amb la idea de jerarquia de les dades que defineix l’XML i, per tant, no és correcte.
+</p>
+
+<p>
+Per facilitar l’escriptura de documents XML i minimitzar els possibles errors per culpa de tancaments desordenats, els documents XML <strong>sovint es representen sagnats</strong>. 
+</p>
+<div class="ioctext"><div class="ioccontent"><p class="ioctitle">Sagnia</p>
+<p>
+La sagnia consisteix a escriure les etiquetes de manera sagnada en funció del seu nivell dins de la jerarquia d’elements. A mesura que es van creant nous elements dins d’altres es van afegint sagnies. 
+</p>
+</div></div>
+<p>
+En l’XML la sagnia es fa en funció del nivell en què es troben les dades. En general cada un dels fills fa que s’incrementi la sagnia. Per exemple:
+</p>
+<pre class="code xml"><ol><li class="li1"><div class="de1"><span class="sc3"><span class="re1">&lt;alumne<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1">    <span class="sc3"><span class="re1">&lt;persona<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1">        <span class="sc3"><span class="re1">&lt;nom<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1">        <span class="sc3"><span class="re1">&lt;/nom<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1">    <span class="sc3"><span class="re1">&lt;/persona<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1"><span class="sc3"><span class="re1">&lt;/alumne<span class="re2">&gt;</span></span></span></div></li></ol></pre>
+
+<p>
+Fent servir la sagnia és més fàcil determinar en quin lloc s’ha produït un error de tancament d’etiquetes i arreglar-ho. Com podem veure en l’exemple següent, si les etiquetes de tancament no estan en la mateixa columna que les d’obertura és que hi ha alguna cosa malament.
+</p>
+<pre class="code xml"><ol><li class="li1"><div class="de1"><span class="sc3"><span class="re1">&lt;institut<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1">    <span class="sc3"><span class="re1">&lt;classe<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1">        <span class="sc3"><span class="re1">&lt;alumne<span class="re2">&gt;</span></span></span>Pere<span class="sc3"><span class="re1">&lt;/alumne<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1">        <span class="sc3"><span class="re1">&lt;alumne<span class="re2">&gt;</span></span></span>Joan<span class="sc3"><span class="re1">&lt;/alumne<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1">    <span class="sc3"><span class="re1">&lt;/institut<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1"><span class="sc3"><span class="re1">&lt;/classe<span class="re2">&gt;</span></span></span></div></li></ol></pre>
+
+<p>
+En general la sagnia aporta dos avantatges a l’XML:
+</p>
+<ol>
+<li class="level1"><div class="li"> Evita que es cometin errors a l’hora de tancar les etiquetes.</div>
+</li>
+<li class="level1"><div class="li"> Fa que sigui més fàcil veure d’un cop d’ull l’estructura del document.</div>
+</li>
+</ol>
+
+</div>
+
+<h3><a id="els_noms_de_les_etiquetes_i_dels_atributs_han_de_ser_correctes" >Els noms de les etiquetes i dels atributs han de ser correctes</a></h3>
+<div class="level3">
+
+<p>
+L’XML dóna molta llibertat a l’hora de definir els noms dels elements i dels atributs però no tots els noms són acceptats. 
+</p>
+<div class="iocreference"><div class="ioccontent">
+<p>
+Vegeu l’apartat “Noms vàlids XML” en aquest apartat.
+</p>
+</div></div>
+<p>
+En general tindrem que:
+</p>
+<ul>
+<li class="level1"><div class="li"> No es poden posar noms que no comencin per un caràcter ni que continguin espais dins seu.</div>
+</li>
+<li class="level1"><div class="li"> Les majúscules i les minúscules són caràcters diferents per a XML.</div>
+</li>
+<li class="level1"><div class="li"> Els noms que comencin per <code>xml</code> estan reservats.</div>
+</li>
+</ul>
+
+<p>
+Per tant, seria incorrecte escriure una etiqueta en minúscules i després tancar-la en majúscules:
+</p>
+<pre class="code xml"><ol><li class="li1"><div class="de1"><span class="sc3"><span class="re1">&lt;persona<span class="re2">&gt;</span></span></span>Pere<span class="sc3"><span class="re1">&lt;/Persona<span class="re2">&gt;</span></span></span></div></li></ol></pre>
+
+<p>
+Els noms han d’estar escrits de la mateixa manera:
+</p>
+<pre class="code xml"><ol><li class="li1"><div class="de1"><span class="sc3"><span class="re1">&lt;persona<span class="re2">&gt;</span></span></span>Pere<span class="sc3"><span class="re1">&lt;/persona<span class="re2">&gt;</span></span></span></div></li></ol></pre>
+
+<p>
+No es poden posar etiquetes ni atributs que comencin per <code>xml</code> perquè estan reservats per l’estàndard. 
+</p>
+
+<p>
+En l’exemple següent hi ha un error en el nom de l’atribut <code>xmlpersona</code>: 
+</p>
+<pre class="code xml"><ol><li class="li1"><div class="de1"><span class="sc3"><span class="re1">&lt;persona</span> <span class="re0">xmlpersona</span>=<span class="st0">&quot;si&quot;</span><span class="re2">&gt;</span></span>Pere<span class="sc3"><span class="re1">&lt;/persona<span class="re2">&gt;</span></span></span></div></li></ol></pre>
+
+<p>
+De fet, ja hi ha alguns atributs començats per <code>xml</code> que s’accepten perquè estan definits en l’estàndard i tenen un objectiu clar: <code>xml:lang</code>, <code>xml:space</code>, <code>xmlns</code>…
+</p>
+
+</div>
+
+<h3><a id="els_valors_dels_atributs_han_d_estar_entre_cometes" >Els valors dels atributs han d&#039;estar entre cometes</a></h3>
+<div class="level3">
+
+<p>
+En l’apartat de definició dels atributs ja es comenta que els valors dels atributs sempre han d’anar entre cometes però podem resumir el més important.
+</p>
+<div class="iocreference"><div class="ioccontent">
+<p>
+Vegeu l’apartat “Atributs” en aquest apartat.
+</p>
+</div></div>
+<p>
+No importa quines siguin les cometes que fem servir, dobles o simples, sempre que es facin servir les mateixes en obrir que en tancar. 
+</p>
+<pre class="code xml"><ol><li class="li1"><div class="de1"><span class="sc3"><span class="re1">&lt;classe</span> <span class="re0">nom</span>=<span class="st0">&quot;Llenguatges de marques&quot;</span><span class="re2">&gt;</span></span></div></li><li class="li1"><div class="de1">    <span class="sc3"><span class="re1">&lt;alumne</span> <span class="re0">delegat</span>=<span class="st0">'si'</span><span class="re2">&gt;</span></span>Pere Garcia<span class="sc3"><span class="re1">&lt;/alumne<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1">    <span class="sc3"><span class="re1">&lt;alumne<span class="re2">&gt;</span></span></span>Frederic Pi<span class="sc3"><span class="re1">&lt;/alumne<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1"><span class="sc3"><span class="re1">&lt;/classe<span class="re2">&gt;</span></span></span></div></li></ol></pre>
+
+<p>
+Encara que el contingut dels atributs sigui un valor numèric s’ha d’especificar entre cometes: 
+</p>
+<pre class="code xml"><ol><li class="li1"><div class="de1"><span class="sc3"><span class="re1">&lt;alumne</span> <span class="re0">nota</span>=<span class="st0">&quot;10&quot;</span><span class="re2">&gt;</span></span>Maria Puigdevall<span class="sc3"><span class="re1">&lt;/nom<span class="re2">&gt;</span></span></span></div></li></ol></pre>
+
+<p>
+Podem especificar tants atributs com calgui en una etiqueta i l’ordre en què s’especifiquen no té importància:
+</p>
+<pre class="code xml"><ol><li class="li1"><div class="de1"><span class="sc3"><span class="re1">&lt;alumne</span> <span class="re0">nom</span>=<span class="st0">&quot;Pere&quot;</span> <span class="re0">cognom</span>=<span class="st0">&quot;Garcia&quot;</span> <span class="re0">nota</span>=<span class="st0">&quot;6&quot;</span> <span class="re2">/&gt;</span></span></div></li></ol></pre>
+
+</div>
+
+<h3><a id="processadors_xml" >Processadors XML</a></h3>
+<div class="level3">
+
+<p>
+L’objectiu principal de totes les regles que defineixen com s’ha d’escriure un document XML és definir una manera d’escriure documents XML que puguin ser llegits i interpretats per un programa d’ordinador. Els programes encarregats de detectar si un document XML està ben format s’anomenen genèricament <strong>processadors d’XML</strong>, tot i que sovint es fa servir el nom en anglès, <strong><em>parsers</em></strong>.
+</p>
+
+<p>
+Un processador d’XML és un programa que permet llegir un document XML i accedir-ne a l’estructura i a les dades que conté. Això ho fa llegint tot el document i determinant quins dels caràcters que hi troba són part de l’estructura i quins són realment dades.
+</p>
+<div class="ioctextl"><div class="ioccontent"><p class="ioctitle">Vocabularis</p>
+<p>
+XML permet definir etiquetes sense cap restricció però en canvi els programes només poden funcionar amb les etiquetes per les que han estat programats. 
+</p>
+
+<p>
+Per aquest motiu els programes defineixen quins conjunts d’etiquetes accepten. La llista d’etiquetes que s’accepten en un determinat llenguatge s’anomenen  <strong>vocabularis</strong>.
+</p>
+</div></div>
+<p>
+Generalment es classifiquen els processadors en dos grans grups:
+</p>
+<ul>
+<li class="level1"><div class="li"> <strong>Processadors validadors</strong>: comproven que els documents compleixen les regles i restriccions definides en l’esquema del vocabulari que se li ha associat i, per tant, a part de la lectura del document XML també han de llegir l’esquema contra el qual es valida.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Processadors no validadors</strong>: revisen que el document no incompleix cap de les normes i regles de definició d’XML.</div>
+</li>
+</ul>
+
+<p>
+Sempre que no es tingui cap tipus de definició de vocabulari associada a un document XML es pot comprovar que el document és correcte amb un processador que no validi. En canvi, si tenim el vocabulari ens caldrà un processador validador que comprovarà que realment estem posant les etiquetes allà on poden anar.
+</p>
+
+<p>
+Les tasques dels processadors XML es fan sempre <strong>abans</strong> que el programa que ha de treballar realment amb les dades faci res. Per tant, el procediment sempre serà: primer passar el document pel processador, i si el processador el dóna per correcte llavors es passa al programa (<span class="figref"><a href="#fig8"><span>figura</span></a></span>).
+</p>
+<div class="iocfigure"><a name="fig8"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+ Pas d’un document XML a un programa
+
+</figcaption><img src="../media/asxm04u1_01.png" alt="" /></figure>
+</div>
+</div>
+
+<h4><a id="errors" >Errors</a></h4>
+<div class="level4">
+
+<p>
+A part de definir com s’han de crear els fitxers XML l’especificació també defineix com han de reaccionar els processadors davant dels diferents errors que puguin detectar en tractar un fitxer XML. Els errors es defineixen en dos grups:
+</p>
+<ul>
+<li class="level1"><div class="li"> <strong>Errors lleus</strong>: els errors lleus són els que incompleixen alguna de les regles definides com a <em>recomanacions</em>. Si algun document XML incompleix alguna recomanació l’analitzador pot continuar analitzant el document intentant recuperar-se de l’error.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Errors greus</strong>: es generen quan s’incompleix alguna de les regles <em>obligatòries</em> de l’especificació. Es defineix que en cas de trobar algun error greu l’analitzador s’ha d’aturar immediatament i no continuar amb el procés d’anàlisi. En general qualsevol error que faci que el document no sigui “ben format” serà un error d’aquest tipus.</div>
+</li>
+</ul>
+
+</div>
+
+<h4><a id="navegadors_web" >Navegadors web</a></h4>
+<div class="level4">
+
+<p>
+Un cop s’ha creat un document XML normalment caldrà comprovar que aquest document està <strong>ben format</strong> segons les regles d’XML fent servir un processador XML. 
+</p>
+
+<p>
+La manera més senzilla de comprovar que un document està ben format és carregar-lo des d’un navegador. La majoria dels navegadors porten un processador XML incorporat i detecten automàticament que un document és XML i el comproven (<span class="figref"><a href="#fig9"><span>figura</span></a></span>).
+</p>
+<div class="iocfigure"><a name="fig9"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+ Document correcte des d’un navegador
+
+</figcaption><img src="../media/xml-navegadors1.png" alt="" /></figure>
+</div>
+<p>
+En cas de produir-se un error els navegadors mostren quin error s’hi ha produït i en quina línia es troba l’error (<span class="figref"><a href="#fig10"><span>figura</span></a></span>).
+</p>
+<div class="iocfigure"><a name="fig10"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+ En carregar un document XML incorrecte en el navegador Google Chrome ens mostra els errors.
+
+</figcaption><img src="../media/xml-navegadors-error.png" alt="" /></figure>
+</div>
+</div>
+
+<h4><a id="processadors_xml1" >Processadors XML</a></h4>
+<div class="level4">
+
+<p>
+En comptes de fer servir un navegador web per comprovar els documents XML sovint es fa servir un processador. La majoria dels processadors formen part de biblioteques que els programadors poden usar des dels seus programes per carregar els documents XML i comprovar-los. 
+</p>
+
+<p>
+A vegades els processadors porten utilitats que permetran comprovar ràpidament si un document està ben format o no sense haver de desenvolupar un programa per fer-ho.
+</p>
+
+<p>
+Volem destacar els processadors següents:
+</p>
+<ul>
+<li class="level1"><div class="li"> libxml2</div>
+</li>
+<li class="level1"><div class="li"> Apache Xerces</div>
+</li>
+<li class="level1"><div class="li"> Expat</div>
+</li>
+<li class="level1"><div class="li"> MSXML</div>
+</li>
+</ul>
+
+</div>
+
+<h5><a id="libxml2" >libxml2</a></h5>
+<div class="level5">
+
+<p>
+<em>libxml2</em> forma part del projecte Gnome i és un processador de codi obert que està escrit en llenguatge C, però que es pot fer servir des de diferents llenguatges de programació com Perl, Ruby, Python, C#, PHP… i des de diferents sistemes operatius com Windows, Linux o Mac <acronym title="Operating System">OS</acronym> X. Està instal·lat per defecte en moltes de les distribucions de Linux.
+</p>
+
+<p>
+Entre les utilitats que inclou n’hi ha una que funciona des de l’entorn d’ordres, anomenada <strong>xmllint</strong>, que és un analitzador i validador de documents XML.
+</p>
+
+<p>
+
+</p>
+
+<p>
+Es pot comprovar si un document està ben format simplement especificant-lo com a paràmetre. Per validar el document següent:
+</p>
+<pre class="code xml"><ol><li class="li1"><div class="de1"><span class="sc3"><span class="re1">&lt;?xml</span> <span class="re0">version</span>=<span class="st0">&quot;1.0&quot;</span><span class="re2">?&gt;</span></span></div></li><li class="li1"><div class="de1"><span class="sc3"><span class="re1">&lt;persona<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1">  <span class="sc3"><span class="re1">&lt;nom<span class="re2">&gt;</span></span></span>Pere<span class="sc3"><span class="re1">&lt;/nom<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1"><span class="sc3"><span class="re1">&lt;/persona<span class="re2">&gt;</span></span></span></div></li></ol></pre>
+
+<p>
+Executarem l’ordre:
+</p>
+<pre class="code bash"><ol><li class="li1"><div class="de1"><span class="co4">$ </span>xmllint persona.xml</div></li></ol></pre>
+
+<p>
+Si el document és correcte mostrarà el document XML per pantalla (es pot evitar aquest comportament amb el paràmetre <code>–noout</code>): 
+</p>
+<pre class="code bash"><ol><li class="li1"><div class="de1">$ xmllint persona.xml</div></li><li class="li1"><div class="de1"><span class="sy0">&lt;</span>?xml <span class="re2">version</span>=<span class="st0">&quot;1.0&quot;</span>?<span class="sy0">&gt;</span></div></li><li class="li1"><div class="de1"><span class="sy0">&lt;</span>persona<span class="sy0">&gt;</span></div></li><li class="li1"><div class="de1">  <span class="sy0">&lt;</span>nom<span class="sy0">&gt;</span>Pere<span class="sy0">&lt;/</span>nom<span class="sy0">&gt;</span></div></li><li class="li1"><div class="de1"><span class="sy0">&lt;/</span>persona<span class="sy0">&gt;</span></div></li></ol></pre>
+
+<p>
+En el cas que hi hagi algun error es mostrarà per pantalla i donarà informació sobre en quin lloc es troba i quin és l’error. Si modifiquem el document XML perquè tingui un error:
+</p>
+<pre class="code xml"><ol><li class="li1"><div class="de1"><span class="sc3"><span class="re1">&lt;persona<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1">    <span class="sc3"><span class="re1">&lt;nom<span class="re2">&gt;</span></span></span>Pere</div></li><li class="li1"><div class="de1"><span class="sc3"><span class="re1">&lt;/persona<span class="re2">&gt;</span></span></span></div></li></ol></pre>
+
+<p>
+Quan el passem a <code>xmllint</code>, aquest ens informarà que hi ha un error a la línia 3 perquè ha detectat que s’ha tancat <code>&lt;persona&gt;</code> però <code>&lt;nom&gt;</code> no està tancat.
+</p>
+<pre class="code bash"><ol><li class="li1"><div class="de1">$ xmllint persona.xml </div></li><li class="li1"><div class="de1">persona.xml:<span class="nu0">3</span>: parser error : Opening and ending tag mismatch: nom line <span class="nu0">2</span> and persona</div></li><li class="li1"><div class="de1"><span class="sy0">&lt;/</span>persona<span class="sy0">&gt;</span></div></li><li class="li1"><div class="de1">          ^</div></li><li class="li1"><div class="de1">persona.xml:<span class="nu0">4</span>: parser error : Premature end of data <span class="kw1">in</span> tag persona line <span class="nu0">1</span></div></li><li class="li1"><div class="de1">^</div></li></ol></pre>
+
+<p>
+També es pot fer servir <code>xmllint</code> per veure que els processadors intenten arreglar els errors lleus que hi pugui haver en un document. Si eliminem la declaració XML del document (no estem provocant cap error, ja que la declaració només és una recomanació):
+</p>
+<pre class="code xml"><ol><li class="li1"><div class="de1"><span class="sc3"><span class="re1">&lt;persona<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1">    <span class="sc3"><span class="re1">&lt;nom<span class="re2">&gt;</span></span></span>Pere<span class="sc3"><span class="re1">&lt;/nom<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1"><span class="sc3"><span class="re1">&lt;/persona<span class="re2">&gt;</span></span></span></div></li></ol></pre>
+
+<p>
+En passar-lo per xmllint es pot veure que ha detectat que la declaració no hi era i l’ha afegida automàticament:
+</p>
+<pre class="code bash"><ol><li class="li1"><div class="de1">$ xmllint  persona.xml</div></li><li class="li1"><div class="de1"><span class="sy0">&lt;</span>?xml <span class="re2">version</span>=<span class="st0">&quot;1.0&quot;</span>?<span class="sy0">&gt;</span></div></li><li class="li1"><div class="de1"><span class="sy0">&lt;</span>persona<span class="sy0">&gt;</span></div></li><li class="li1"><div class="de1">    <span class="sy0">&lt;</span>nom<span class="sy0">&gt;</span>Pere<span class="sy0">&lt;/</span>nom<span class="sy0">&gt;</span></div></li><li class="li1"><div class="de1"><span class="sy0">&lt;/</span>persona<span class="sy0">&gt;</span></div></li></ol></pre>
+
+</div>
+
+<h5><a id="apache_xerces" >Apache Xerces</a></h5>
+<div class="level5">
+
+<p>
+Sota el nom de Xerces la fundació Apache manté un projecte de desenvolupament de processadors XML per a Java, C++ i Perl. Es tracta d’una de les biblioteques més usades per processar XML.
+</p>
+
+</div>
+
+<h5><a id="expat" >Expat</a></h5>
+<div class="level5">
+
+<p>
+XML Parser Toolkit són unes biblioteques per fer servir XML des del llenguatge de programació C i Perl. 
+</p>
+
+<p>
+El fan servir alguns dels programes d’ús comú, com per exemple el servidor web Apache HTTP Server, el navegador Mozilla i les biblioteques dels llenguatges de programació Perl, Python i PHP.
+</p>
+
+<p>
+Per exemple, en l’Ubuntu, en instal·lar la biblioteca, també s’instal·la un programa anomenat <em>xmlwf</em> que permet comprovar si un document està ben format des de la línia d’ordres. Si no diu res el fitxer està ben format.
+</p>
+<pre class="code bash"><ol><li class="li1"><div class="de1"><span class="co4">$ </span>xmlwf persona.xml</div></li></ol></pre>
+
+<p>
+En cas d’error mostrarà en quina línia i columna es troba:
+</p>
+<pre class="code bash"><ol><li class="li1"><div class="de1">$ xmlwf persona.xml</div></li><li class="li1"><div class="de1">persona.xml:<span class="nu0">3</span>:<span class="nu0">2</span>: mismatched tag</div></li></ol></pre>
+
+</div>
+
+<h5><a id="msxml" >MSXML</a></h5>
+<div class="level5">
+
+<p>
+Microsoft XML Parser és la biblioteca oficial per processar XML en molts dels productes de Microsoft. Es tracta d’una biblioteca inclosa en el sistema operatiu, i per tant s’actualitza via Windows Update. N’han anat sortint versions en què s’han anat afegint funcions. Es pot fer servir des de diferents llenguatges de programació, llenguatges de <em>scripts</em> o des de llenguatges basats en .NET
+</p>
+
+<p>
+Fan servir MSXML productes com Microsoft Windows, Microsoft Office, Microsoft SQL Server, Microsoft Internet Explorer…
+</p>
+
+<p>
+Molts dels programes que processen XML en sistemes Windows solen fer servir aquesta biblioteca (especialment si treballen en .NET).
+</p>
+
+<p>
+Com que Internet Explorer fa servir aquesta biblioteca, simplement carregant un document XML amb Internet Explorer en realitat s’està comprovant amb l’MSXML (<span class="figref"><a href="#fig11"><span>figura</span></a></span>).
+</p>
+<div class="iocfigure"><a name="fig11"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+L’Internet Explorer ens permet comprovar documents amb l’MSXML
+
+</figcaption><img src="../media/ie-parsing.png" alt="" /></figure>
+</div>
+</div>
+
+<h2><a id="estructura_dels_documents_xml" >Estructura dels documents XML</a></h2>
+<div class="level2">
+
+<p>
+Una de les coses que s’aconsegueixen en forçar que els documents XML segueixin les seves normes és fer que la informació que conté un document s’organitzi de manera jeràrquica. 
+</p>
+
+<p>
+Per exemple, tenim el document XML següent:
+</p>
+<pre class="code xml"><ol><li class="li1"><div class="de1"><span class="sc3"><span class="re1">&lt;?xml</span> versió<span class="re0">n</span>=<span class="st0">&quot;1.0&quot;</span> <span class="re0">encoding</span>=<span class="st0">&quot;UTF-8&quot;</span> <span class="re2">?&gt;</span></span></div></li><li class="li1"><div class="de1"><span class="sc3"><span class="re1">&lt;classe<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1">   <span class="sc3"><span class="re1">&lt;professor<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1">       <span class="sc3"><span class="re1">&lt;nom<span class="re2">&gt;</span></span></span>Marcel<span class="sc3"><span class="re1">&lt;/nom<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1">       <span class="sc3"><span class="re1">&lt;cognom<span class="re2">&gt;</span></span></span>Puig<span class="sc3"><span class="re1">&lt;/cognom<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1">   <span class="sc3"><span class="re1">&lt;/professor<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1">   <span class="sc3"><span class="re1">&lt;alumnes<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1">       <span class="sc3"><span class="re1">&lt;alumne<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1">           <span class="sc3"><span class="re1">&lt;nom<span class="re2">&gt;</span></span></span>Filomeno<span class="sc3"><span class="re1">&lt;/nom<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1">           <span class="sc3"><span class="re1">&lt;cognom<span class="re2">&gt;</span></span></span>Garcia<span class="sc3"><span class="re1">&lt;/cognom<span class="re2">&gt;</span></span></span>           </div></li><li class="li1"><div class="de1">       <span class="sc3"><span class="re1">&lt;/alumne<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1">       <span class="sc3"><span class="re1">&lt;alumne<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1">           <span class="sc3"><span class="re1">&lt;nom<span class="re2">&gt;</span></span></span>Frederic<span class="sc3"><span class="re1">&lt;/nom<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1">           <span class="sc3"><span class="re1">&lt;cognom<span class="re2">&gt;</span></span></span>Pi<span class="sc3"><span class="re1">&lt;/cognom<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1">       <span class="sc3"><span class="re1">&lt;/alumne<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1">       <span class="sc3"><span class="re1">&lt;alumne<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1">           <span class="sc3"><span class="re1">&lt;nom<span class="re2">&gt;</span></span></span>Manel<span class="sc3"><span class="re1">&lt;/nom<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1">           <span class="sc3"><span class="re1">&lt;cognom<span class="re2">&gt;</span></span></span>Puigdevall<span class="sc3"><span class="re1">&lt;/cognom<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1">           <span class="sc3"><span class="re1">&lt;delegat</span><span class="re2">/&gt;</span></span></div></li><li class="li1"><div class="de1">       <span class="sc3"><span class="re1">&lt;/alumne<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1">   <span class="sc3"><span class="re1">&lt;/alumnes<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1"><span class="sc3"><span class="re1">&lt;/classe<span class="re2">&gt;</span></span></span></div></li></ol></pre>
+
+<p>
+Gràcies al fet que les etiquetes tenen noms clars es pot deduir que en aquest document XML s’estan definint estructuradament una classe amb un professor i tres alumnes. Hi ha un element arrel anomenat <code>&lt;classe&gt;</code> que engloba tot el document, i com a contingut té dos elements més, <code>&lt;professor&gt;</code> i <code>&lt;alumnes&gt;</code>. 
+</p>
+<div class="iocimportant"><div class="ioccontent">
+<p>
+Els elements que formen part del contingut d’un node s’anomenen fills.
+</p>
+</div></div>
+<p>
+Per tant, <code>&lt;classe&gt;</code> té dos elements <strong>fills</strong>: <code>&lt;professor&gt;</code> i <code>&lt;alumnes&gt;</code>. Alhora l’element <code>&lt;professor&gt;</code>, que és un dels fills de <code>&lt;classe&gt;</code>, també té dos fills: <code>&lt;nom&gt;</code> i <code>&lt;cognom&gt;</code>.
+</p>
+<pre class="code xml"><ol><li class="li1"><div class="de1">...</div></li><li class="li1"><div class="de1">    <span class="sc3"><span class="re1">&lt;professor<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1">        <span class="sc3"><span class="re1">&lt;nom<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1">            Marcel</div></li><li class="li1"><div class="de1">        <span class="sc3"><span class="re1">&lt;/nom<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1">        <span class="sc3"><span class="re1">&lt;cognom<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1">            Puig</div></li><li class="li1"><div class="de1">        <span class="sc3"><span class="re1">&lt;/cognom<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1">    <span class="sc3"><span class="re1">&lt;/professor<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1">...</div></li></ol></pre>
+
+<p>
+Per equivalència amb les relacions humanes els fills dels fills d’un element s’anomenen <strong>néts</strong>. Per tant, <code>&lt;nom&gt;</code> i <code>&lt;cognom&gt;</code> són fills de <code>&lt;professor&gt;</code> i <strong>néts</strong> de <code>classe</code>:
+</p>
+<pre class="code">classe -&gt; professor -&gt; nom</pre>
+
+<p>
+Els elements <code>&lt;nom&gt;</code> i <code>&lt;cognom&gt;</code> no tenen nodes fills sinó que contenen les dades del document. En aquest cas dues cadenes de text <code>Marcel</code> i <code>Puig</code>. Els nodes finals s’anomenen <strong>fulles</strong> i generalment seran sempre nodes de dades.
+</p>
+
+<p>
+Es pot fer amb l’altre element fill de <code>&lt;classe&gt;</code>, però amb la diferència que té un nivell més. Ara es té una estructura més llarga:
+</p>
+<pre class="code">classe -&gt; alumnes -&gt; alumne -&gt; nom</pre>
+
+<p>
+Tots els elements que pengen d’un element s’anomenen genèricament <strong>descendents</strong>. Per tant, <code>&lt;alumnes&gt;</code>, <code>&lt;alumne&gt;</code> i <code>&lt;nom&gt;</code> són descendents de <code>&lt;classe&gt;</code>.
+</p>
+
+<p>
+Com podeu veure, és relativament senzill interpretar quines són les dades que conté un document XML, gràcies al fet que es fan servir noms d’etiqueta que tenen sentit per a un possible lector, però també es pot deduir quina és l’estructura de les dades i les relacions que tindran aquestes dades entre si.
+</p>
+
+<p>
+El fet de seguir aquest sistema, que és flexible en determinats moments, però estricte en d’altres, ens permet fer que un programa d’ordinador també pugui de manera senzilla detectar ràpidament quina part del document són dades i quina són metadades, però que a més pugui establir quina és la relació entre aquestes dades.
+</p>
+
+<p>
+En cap moment no s’ha especificat res sobre de quina manera s’hauran de representar les dades, ja que aquesta és una de les bases fonamentals del llenguatge XML:
+</p>
+<div class="iocimportant"><div class="ioccontent">
+<p>
+L’objectiu de l’XML és representar l’estructura de les dades oblidant-se de com es farà per presentar-les.
+</p>
+</div></div>
+</div>
+
+<h3><a id="representacio_en_forma_d_arbre" >Representació en forma d&#039;arbre</a></h3>
+<div class="level3">
+
+<p>
+Una de les característiques interessants dels documents XML és que, en tenir les dades estructurades de manera jeràrquica, aquesta jerarquia fa que els documents XML puguin ser representats gràficament en forma d’arbre. La representació en arbre és útil per comprendre millor quina és l’estructura del document.
+</p>
+
+<p>
+Per fer la representació en forma d’arbre sempre es parteix del node arrel, que en aquest cas és <code>classe</code> (<span class="figref"><a href="#fig12"><span>figura</span></a></span>).
+</p>
+<div class="iocfigure"><a name="fig12"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+ Es comença definint l’element arrel com un node
+
+</figcaption><img src="../media/asxm04u1_02.png" alt="" /></figure>
+</div>
+<p>
+A partir del node arrel s’agafen els fills directes que tingui i s’enllacen amb un arc, que serà el que indicarà la relació que tenen els elements entre ells (<span class="figref"><a href="#fig13"><span>figura</span></a></span>).
+</p>
+<div class="iocfigure"><a name="fig13"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+ S’hi afegeixen els fills 
+
+</figcaption><img src="../media/asxm04u1_03.png" alt="" /></figure>
+</div>
+<p>
+El mateix es pot fer per als fills de cada un dels nodes. Per exemple, <code>professor</code> té dos fills més, que són <code>nom</code> i <code>cognom</code>, que s’uniran a <code>professor</code> amb un arc per indicar que tenen relació pare/fill (<span class="figref"><a href="#fig14"><span>figura</span></a></span>). De fet, es fa és més o menys el mateix que es faria per crear un arbre genealògic. 
+</p>
+<div class="iocfigure"><a name="fig14"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+ I es va fent el mateix amb els fills de cada node
+
+</figcaption><img src="../media/asxm04u1_04.png" alt="" /></figure>
+</div>
+<p>
+Com que ja no hi ha més elements per representar ja es poden pintar els nodes de dades, que generalment s’acostumen a pintar de color diferent (<span class="figref"><a href="#fig15"><span>figura</span></a></span>).
+</p>
+<div class="iocfigure"><a name="fig15"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+ Els nodes de dades se solen representar d’una manera especial
+
+</figcaption><img src="../media/asxm04u1_05.png" alt="" /></figure>
+</div>
+<p>
+Si se segueix amb el document el resultat serà un arbre que ens representarà gràficament la relació que tenen els elements entre si (<span class="figref"><a href="#fig16"><span>figura</span></a></span>).
+</p>
+<div class="iocfigure"><a name="fig16"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+ El resultat és la representació del document en forma d’arbre
+
+</figcaption><img src="../media/asxm04u1_06.png" alt="" /></figure>
+</div>
+</div>
+
+<h3><a id="representacio_en_els_navegadors" >Representació en els navegadors</a></h3>
+<div class="level3">
+
+<p>
+Una representació semblant a la de l’arbre és la que han triat els navegadors per mostrar els documents XML si no els diem el contrari afegint-hi algun full d’estil. Quan s’obre un document XML en un navegador automàticament és representa sagnat i s’hi afegeixen nodes davant dels elements pares que permetran mostrar o ocultar els fills que conté (<span class="figref"><a href="#fig17"><span>figura</span></a></span>). 
+</p>
+<div class="iocfigure"><a name="fig17"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+ Representació d’un document XML correcte en el navegador Mozilla Firefox
+
+</figcaption><img src="../media/xml-navegadors1.png" alt="" /></figure>
+</div>
+<p>
+En la vista d’arbre que ofereixen els navegadors normalment es poden plegar i desplegar els fills dels nodes per poder personalitzar la visió del document (<span class="figref"><a href="#fig17b"><span>figura</span></a></span>).
+</p>
+<div class="iocfigure"><a name="fig17b"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+ El Firefox permet plegar i desplegar els fills dels nodes
+
+</figcaption><img src="../media/xml-navegadors2.png" alt="" /></figure>
+</div>
+</div>
+
+<h2><a id="creacio_de_documents_xml" >Creació de documents XML</a></h2>
+<div class="level2">
+
+<p>
+Generalment els documents XML seran creats i llegits des de programes d’ordinador, però algunes vegades també es pot donar el cas que s’hagin de crear manualment. 
+</p>
+
+<p>
+Crear un document XML manualment és molt més senzill que crear un document binari, ja que no difereix gaire de crear un document de text. Simplement necessitem un editor de text que no enriqueixi el text.
+</p>
+
+</div>
+
+<h3><a id="editors" >Editors</a></h3>
+<div class="level3">
+
+<p>
+Els documents XML són simples documents de text en què hem afegit algun tipus de metadades. Això permet que la creació de documents XML sigui realment senzilla, ja que es pot fer servir l’editor més senzill que trobem en qualsevol sistema operatiu per poder crear els nostres documents.
+</p>
+
+<p>
+A pesar d’això també han aparegut tota una sèrie d’editors pensats per fer l’edició de documents XML més senzilla. Aquests editors són molt diversos i normalment ofereixen diferents tipus d’assistència per evitar que es cometin errors en crear el document: comprovar interactivament que el document sigui correcte, aconsellar etiquetes, acolorir…
+</p>
+
+<p>
+Molts dels editors especialitzats en XML normalment a més ofereixen moltes altres funcions com generació d’expressions XPath, creació de fulls d’estil, depurament de transformacions, peticions XQuery…
+</p>
+
+</div>
+
+<h4><a id="editors_de_text" >Editors de text</a></h4>
+<div class="level4">
+
+<p>
+L’única cosa que cal per crear un document XML és un editor de text normal i corrent que no enriqueixi el text. Els documents de text que permeten afegir format, com ara text en negreta, canviar el tipus de lletra, etc., com per exemple el Microsoft Word, l’OpenOffice.org Writer, el LibreOffice Writer, etc., solen generar documents de text enriquit que es concentren més en com s’ha de mostrar el document que no pas en les dades. A més, aquests programes sovint canvien automàticament alguns caràcters del text que anem escrivint (les cometes solen ser canviades sistemàticament) per fer-lo més “agradable” a l’hora d’imprimir-lo, com es pot veure a la <span class="figref"><a href="#fig18"><span>figura</span></a></span>.
+</p>
+<div class="iocfigure"><a name="fig18"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+ L’OpenOffice.org modifica les cometes per fer-les més “agradables” a la vista
+
+</figcaption><img src="../media/openoffice.org_writer.png" alt="" /></figure>
+</div>
+<p>
+Per tant, aquests programes no són els més adequats per crear documents XML, tot i que és possible fer-ho si a l’hora de desar els documents es va amb compte d’especificar que es volen desar com a “text” (<span class="figref"><a href="#fig19"><span>figura</span></a></span>).
+</p>
+<div class="iocfigure"><a name="fig19"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+ Es pot fer servir l’OpenOffice.org però anant en compte a l’hora de desar el document
+
+</figcaption><img src="../media/openoffice.org_writer2.png" alt="" /></figure>
+</div>
+<p>
+La realitat és que per crear documents XML van molt millor els editors més senzills (Gedit, Bloc de notes, <em>vi</em>, etc.) que no pas els editors de text enriquit.
+</p>
+
+<p>
+En alguns casos aquests editors més senzills fins i tot detecten que s’està editant un document XML i marquen amb colors diferents les etiquetes i les dades (<span class="figref"><a href="#fig20"><span>figura</span></a></span>). 
+</p>
+<div class="iocfigure"><a name="fig20"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+L’editor Gedit de Gnome fins i tot ofereix acoloriment de text en els fitxers XML
+
+</figcaption><img src="../media/gedit.png" alt="" /></figure>
+</div>
+</div>
+
+<h4><a id="editors_amb_suport_d_xml" >Editors amb suport d&#039;XML</a></h4>
+<div class="level4">
+
+<p>
+També hi ha un segon grup d’editors que, tot i no estar especialitzats en XML, hi poden tenir suport. Aquests editors normalment ofereixen una assistència mínima en editar XML, com acoloriment de les diferents seccions, comprovació automàtica del tancament de les etiquetes, o fins i tot se’n poden trobar amb autocompletament d’etiquetes. 
+</p>
+
+<p>
+Aquest comportament és típic dels editors pensats per ser usats pels programadors, com per exemple el Komodo IDE (<span class="figref"><a href="#fig21"><span>figura</span></a></span>), l’Eclipse o el Visual Studio.
+</p>
+
+<p>
+L’èxit d’XML ha fet que alguns editors hagin incrementat el seu suport per a XML. Per exemple, les noves versions del Microsoft Visual Studio a més de l’autocompletament d’etiquetes permeten definir esquemes i depurar transformacions des de l’entorn integrat (<span class="figref"><a href="#fig22"><span>figura</span></a></span>).
+</p>
+<div class="iocfigure"><a name="fig21"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+ Molts dels editors dels entorns de programació ofereixen suport als documents XML. Per exemple, l’editor de codi obert Komodo
+
+</figcaption><img src="../media/komodo_edit_6.png" alt="" /></figure>
+</div><div class="iocfigure"><a name="fig22"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+ Microsoft ha afegit al Visual Studio suport per a diverses tecnologies XML
+
+</figcaption><img src="../media/visualstudio.png" alt="" /></figure>
+</div>
+</div>
+
+<h4><a id="editors_especialitzats_en_xml" >Editors especialitzats en XML</a></h4>
+<div class="level4">
+
+<p>
+Tot i que amb els altres editors es poden crear documents XML, quan es vol fer un treball professional normalment s’ha d’acabar recorrent a un editor d’XML. Aquests editors estan dissenyats específicament per crear i editar documents XML de manera eficient i senzilla minimitzant les possibilitats que es cometin errors en l’edició. Generalment tots ofereixen un entorn amb un grup de finestres amb diferents vistes de l’edició per intentar que no es perdi la visió de conjunt del que s’està creant (<span class="figref"><a href="#fig23"><span>figura</span></a></span>).
+</p>
+<div class="iocfigure"><a name="fig23"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+ L’editor EditiX ens va creant l’arbre XML alhora que anem escrivint el document XML
+
+</figcaption><img src="../media/asxm04u1_07.png" alt="" /></figure>
+</div>
+<p>
+A part de la simple edició de documents XML, aquests editors permeten tot un ampli ventall de tasques amb les tecnologies relacionades amb l’XML com editar documents XML restringint les etiquetes que s’hi fan servir; definir un esquema; crear, convertir i depurar esquemes XML, XSLT, XPath, XQuery, WSDL, SOAP… També ofereixen ajudes per crear documents en vocabularis basats en XML, etc.
+</p>
+
+<p>
+Una característica interessant que ofereixen és la possibilitat d’editar documents XML des de diferents punts de vista. El més corrent sol ser fer-ho per mitjà de vistes de text o diferents vistes gràfiques destinades a amagar la complexitat dels documents XML als usuaris que fan servir l’editor.
+</p>
+
+<p>
+L’edició en la <strong>vista de text</strong> (<span class="figref"><a href="#fig24"><span>figura</span></a></span>) no sol diferir gaire de l’edició en un editor normal i corrent però sol oferir alguns avantatges afegits com autocompletament d’etiquetes, acoloriment del contingut, finestres d’ajuda que mostren l’estructura del document, etc.
+</p>
+<div class="iocfigure"><a name="fig24"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+ La vista de text és la ideal per editar els arxius veient clarament el format XML
+
+</figcaption><img src="../media/editorsespecialitzats2.png" alt="" /></figure>
+</div>
+<p>
+A part de l’edició de text molts editors també ofereixen vistes que permeten que un usuari pugui crear dades estructurades de manera gràfica sense que l’usuari ni tant sols sàpiga que està creant un document XML. Una d’aquestes vistes alternatives és la <strong>vista d’arbre</strong> (<span class="figref"><a href="#fig23"><span>figura</span></a></span>). La vista d’arbre permet editar el document visualment a partir de l’estructura jeràrquica, de manera que no cal que el que està creant l’arbre conegui la sintaxi XML. Mentre l’usuari va creant l’arbre, l’editor en segon pla va creant el document XML corresponent (<span class="figref"><a href="#fig25"><span>figura</span></a></span> i <span class="figref"><a href="#fig26"><span>figura</span></a></span>).
+</p>
+<div class="iocfigure"><a name="fig25"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+ L’usuari va creant les dades de manera estructurada i l’editor crea el document XML per ell
+
+</figcaption><img src="../media/editorsespecialitzats1.png" alt="" /></figure>
+</div><div class="iocfigure"><a name="fig26"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+ La vista d’arbre està pensada per als usuaris que no coneixen el llenguatge XML
+
+</figcaption><img src="../media/editorsespecialitzats3.png" alt="" /></figure>
+</div>
+<p>
+Amb la mateixa idea de fer que l’edició dels documents XML sigui més fàcil per als usuaris no especialitzats, també hi ha la <strong>vista de graella</strong> (<span class="figref"><a href="#fig27"><span>figura</span></a></span>). 
+</p>
+<div class="iocfigure"><a name="fig27"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+ Vista de graella
+
+</figcaption><img src="../media/editorsespecialitzats4.png" alt="" /></figure>
+<div class="footfigure"> La vista de graella està pensada per a usuaris que només es volen preocupar de l'estructura del document i no de com crear-lo.</div></div>
+<p>
+La popularitat del format XML està fent que el nombre d’editors especialitzats no pari de créixer i que per tant es faci difícil triar l’editor que s’adapta més bé a les necessitats que un usuari pugui tenir. Afortunadament la majoria dels editors comercials ofereixen un temps de prova abans d’obligar a comprar el programa, i per tant es poden provar diferents editors abans de decidir quin és el que s’adapta millor a les necessitats que tenim. A més, alguns editors tenen versions limitades gratuïtes o de codi obert que en molts casos poden ser suficients per satisfer les necessitats que es puguin tenir.
+</p>
+
+<p>
+ Entre els editors comercials normalment es destaquen aquests:
+</p>
+<ul>
+<li class="level1"><div class="li"> <strong>oXygen XML Editor</strong> (Windows, Linux, Mac <acronym title="Operating System">OS</acronym> X)</div>
+</li>
+<li class="level1"><div class="li"> <strong>Editix XML Editor</strong> (Windows, Linux, Mac <acronym title="Operating System">OS</acronym> X)</div>
+</li>
+<li class="level1"><div class="li"> <strong>Altova XMLSpy XML editor</strong> (Windows)</div>
+</li>
+<li class="level1"><div class="li"> <strong>Stylus Studio</strong> (Windows)</div>
+</li>
+<li class="level1"><div class="li"> <strong>XMLmind</strong> (Windows, Linux, Mac <acronym title="Operating System">OS</acronym> X)</div>
+</li>
+<li class="level1"><div class="li"> <strong>XMLwriter</strong> (Windows)</div>
+</li>
+<li class="level1"><div class="li"> <strong>Liquid XML Studio</strong> (Windows)</div>
+</li>
+<li class="level1"><div class="li"> <strong>Serna Enterprise XML Document Editor</strong> (Windows, Linux, Mac <acronym title="Operating System">OS</acronym> X, Solaris)</div>
+</li>
+</ul>
+
+<p>
+També n’hi ha algun de codi obert però sovint les seves prestacions solen ser molt inferiors:
+</p>
+<ul>
+<li class="level1"><div class="li"> <strong>Serna Free Open Source XML Editor</strong> (Windows, Linux, Mac <acronym title="Operating System">OS</acronym> X, Solaris)</div>
+</li>
+<li class="level1"><div class="li"> <strong>XML Copy Editor</strong> (Linux)</div>
+</li>
+</ul>
+
+</div>
+
+<h5><a id="edicio_d_un_document_amb_un_editor_d_xml" >Edició d&#039;un document amb un editor d&#039;XML</a></h5>
+<div class="level5">
+
+<p>
+Si bé és cert que podem crear un document XML amb un editor de text senzill, en aquest exemple es farà servir un editor especialitzat per veure’n les possibilitats. L’editor que farem servir per fer l’exemple és l’oXygen XML Editor.
+</p>
+<div class="iocnote"><div class="ioccontent">
+<p>
+A pesar que en l’exemple es fa servir l’oXygen, la majoria dels editors funcionen d’una manera similar.
+</p>
+</div></div>
+<p>
+Generalment els editors d’XML divideixen l’espai de treball en finestres en les quals cada una té una funció específica (<span class="figref"><a href="#fig28"><span>figura</span></a></span>). 
+</p>
+<div class="iocfigure"><a name="fig28"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+ Pantalla inicial de l’oXygen XML Editor, on es veuen els diferents espais
+
+</figcaption><img src="../media/oxygen1.png" alt="" /></figure>
+</div>
+<p>
+A l’hora de crear un fitxer nou els editors d’XML normalment obren un assistent (<span class="figref"><a href="#fig29"><span>figura</span></a></span>) que permet crear fitxers de diversos tipus, de manera que un cop se n’ha triat un se li afegiran automàticament les opcions predeterminades del tipus de document triat.
+</p>
+<div class="iocfigure"><a name="fig29"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+ Assistent de creació d’arxius de l’oXygen
+
+</figcaption><img src="../media/oxygen2.png" alt="" /></figure>
+</div>
+<p>
+En crear un document XML s’afegeix la capçalera XML automàticament (<span class="figref"><a href="#fig30"><span>figura</span></a></span>).
+</p>
+<div class="iocfigure"><a name="fig30"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+ Document XML creat per l’assistent d’oXygen
+
+</figcaption><img src="../media/oxygen3.png" alt="" /></figure>
+</div>
+<p>
+En editar, un assistent anirà oferint les possibilitats que consideri adients en cada punt concret (<span class="figref"><a href="#fig31"><span>figura</span></a></span>).
+</p>
+<div class="iocfigure"><a name="fig31"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+L’assistent d’edició ens indicarà què podem escriure en cada punt del document
+
+</figcaption><img src="../media/oxygen4.png" alt="" /></figure>
+</div>
+<p>
+L’edició no té secrets, ja que el que es fa és simplement editar un arxiu de text amb un assistent que ofereix ajudes diverses:
+</p>
+<ul>
+<li class="level1"><div class="li"> En crear una etiqueta d’obertura es crearà l’etiqueta de tancament.</div>
+</li>
+<li class="level1"><div class="li"> Mentre s’edita es van comprovant automàticament els errors que sorgeixin.</div>
+</li>
+<li class="level1"><div class="li"> Hi sol haver alguna manera de comprovar si un document està ben format, i un panell en el qual es poden veure els errors (<span class="figref"><a href="#fig32"><span>figura</span></a></span>).</div>
+</li>
+</ul>
+<div class="iocfigure"><a name="fig32"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+ Els errors en l’edició
+
+</figcaption><img src="../media/oxygen5.png" alt="" /></figure>
+<div class="footfigure"> Els errors en l'edició són detectats per l'editor en escriure o bé quan li demanem que comprovi si el document està ben format.</div></div>
+</div>
+
+<h3><a id="creacio_d_un_document_xml" >Creació d&#039;un document XML</a></h3>
+<div class="level3">
+
+<p>
+A l’hora de definir un grup de dades dins d’un document XML caldrà fer tota una sèrie de passes prèvies que permetin determinar quines són les dades que cal emmagatzemar i posteriorment definir quina és l’estructura que s’ha de donar a aquestes dades; així doncs: 
+</p>
+<ol>
+<li class="level1"><div class="li"> Determinació de les dades</div>
+</li>
+<li class="level1"><div class="li"> Determinació de l’estructura</div>
+</li>
+</ol>
+
+</div>
+
+<h4><a id="determinacio_de_les_dades" >Determinació de les dades</a></h4>
+<div class="level4">
+
+<p>
+És bàsic abans de crear un document XML saber clarament quines són les dades que s’hi han de posar. Sovint això estarà determinat pel programa que les ha de processar posteriorment, però també pot ser que el programa encara no existeixi i per tant la creació estigui determinada per les preferències personals, etc.
+</p>
+
+<p>
+Si no s’està restringit per un programa que ja determini l’estructura del document XML, el que cal és determinar quines dades s’han d’emmagatzemar. Hi ha molts sistemes per fer-ho però el més senzill és fer una llista amb totes les dades rellevants.
+</p>
+<div class="iocexample"><div class="ioccontent"><p class="ioctitle"> Document XML per desar les dades d&#039;una biblioteca</p>
+<p>
+Volem crear una biblioteca en què es puguin emmagatzemar les dades dels llibres que hi ha. Per tant, fem una llista amb les dades que considerem que cal que hi hagi en el document:
+</p>
+<ul>
+<li class="level1"><div class="li"> Títol</div>
+</li>
+<li class="level1"><div class="li"> Subtítol</div>
+</li>
+<li class="level1"><div class="li"> Autor</div>
+</li>
+<li class="level1"><div class="li"> Any de publicació</div>
+</li>
+<li class="level1"><div class="li"> Editorial</div>
+</li>
+<li class="level1"><div class="li"> Nom de la col·lecció</div>
+</li>
+<li class="level1"><div class="li"> Idioma</div>
+</li>
+</ul>
+</div></div>
+</div>
+
+<h4><a id="determinacio_de_l_estructura" >Determinació de l&#039;estructura</a></h4>
+<div class="level4">
+
+<p>
+Una altra de les coses bàsiques a l’hora de crear un document XML és definir quina és l’estructura que hauran de tenir les dades. Aquesta estructura estarà determinada per les necessitats del programa o de la persona que farà servir el document XML. De manera que les possibilitats a l’hora de crear una estructura per a les dades que volem fer servir són moltes: agrupar per autor, agrupar per llibre, agrupar per editorial, agrupar per tema…
+</p>
+<div class="iocexample"><div class="ioccontent"><p class="ioctitle"> Tria de l&#039;estructura</p>
+<p>
+En una biblioteca podem fer l’estructura des de molts punts de vista. Per exemple, la podem fer a partir dels autors, com aquesta:
+</p>
+<ul>
+<li class="level1"><div class="li"> autor 1</div>
+<ul>
+<li class="level2"><div class="li"> llibre 1</div>
+</li>
+<li class="level2"><div class="li"> llibre 2</div>
+</li>
+</ul>
+</li>
+<li class="level1"><div class="li"> autor 2</div>
+<ul>
+<li class="level2"><div class="li"> llibre 1</div>
+</li>
+</ul>
+</li>
+<li class="level1"><div class="li"> etc.</div>
+</li>
+</ul>
+
+<p>
+O bé podem la fer a partir dels llibres d’aquesta manera:
+</p>
+<ul>
+<li class="level1"><div class="li"> llibre 1</div>
+<ul>
+<li class="level2"><div class="li"> autor 1</div>
+</li>
+</ul>
+</li>
+<li class="level1"><div class="li"> llibre 2</div>
+<ul>
+<li class="level2"><div class="li"> autor 1</div>
+</li>
+</ul>
+</li>
+<li class="level1"><div class="li"> etc.</div>
+</li>
+</ul>
+
+<p>
+La primera opció és la que s’ha triat per desenvolupar en aquest exemple.
+</p>
+</div></div>
+</div>
+
+<h4><a id="creacio_del_document" >Creació del document</a></h4>
+<div class="level4">
+
+<p>
+Com que s’ha triat una forma d’organització per mitjà dels autors el que queda clar és que el primer nivell serà una llista d’elements <code>autor</code> més o menys d’aquesta manera:
+</p>
+<pre class="code xml"><ol><li class="li1"><div class="de1"><span class="sc3"><span class="re1">&lt;biblioteca<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1">    <span class="sc3"><span class="re1">&lt;autor<span class="re2">&gt;</span></span><span class="re1">&lt;/autor<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1">    <span class="sc3"><span class="re1">&lt;autor<span class="re2">&gt;</span></span><span class="re1">&lt;/autor<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1">    <span class="sc3"><span class="re1">&lt;autor<span class="re2">&gt;</span></span><span class="re1">&lt;/autor<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1">    ... </div></li><li class="li1"><div class="de1"><span class="sc3"><span class="re1">&lt;/biblioteca<span class="re2">&gt;</span></span></span></div></li></ol></pre>
+
+<p>
+Dins de cada un dels autors les dades per emmagatzemar seran les dades personals de l’autor (el nom, en el nostre exemple) i la llista dels llibres de l’autor que hi hagi a la biblioteca:
+</p>
+<pre class="code xml"><ol><li class="li1"><div class="de1"><span class="sc3"><span class="re1">&lt;autor<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1">   <span class="sc3"><span class="re1">&lt;nom<span class="re2">&gt;</span></span></span>Nom de l'autor<span class="sc3"><span class="re1">&lt;/nom<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1">   <span class="sc3"><span class="re1">&lt;llibres<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1">       Llista de llibres</div></li><li class="li1"><div class="de1">   <span class="sc3"><span class="re1">&lt;/llibres<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1"><span class="sc3"><span class="re1">&lt;/autor<span class="re2">&gt;</span></span></span></div></li></ol></pre>
+
+<p>
+En el darrer nivell es poden posar totes les dades del llibre obviant les que ja estan implícites perquè estan en etiquetes superiors. En l’exemple, l’autor ja queda implícit i, per tant, no cal tornar-lo a posar:
+</p>
+<pre class="code xml"><ol><li class="li1"><div class="de1"><span class="sc3"><span class="re1">&lt;llibre<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1">    <span class="sc3"><span class="re1">&lt;titol<span class="re2">&gt;</span></span></span>Titol del llibre<span class="sc3"><span class="re1">&lt;/titol<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1">    <span class="sc3"><span class="re1">&lt;subtitol<span class="re2">&gt;</span></span></span>Subtítol<span class="sc3"><span class="re1">&lt;/subtitol<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1">    <span class="sc3"><span class="re1">&lt;any<span class="re2">&gt;</span></span></span>Any en què s'ha publicat el llibre<span class="sc3"><span class="re1">&lt;/any<span class="re2">&gt;</span></span></span>    </div></li><li class="li1"><div class="de1">    <span class="sc3"><span class="re1">&lt;idioma<span class="re2">&gt;</span></span></span>Idioma en què està escrit<span class="sc3"><span class="re1">&lt;/idioma<span class="re2">&gt;</span></span></span>    </div></li><li class="li1"><div class="de1">    <span class="sc3"><span class="re1">&lt;editorial<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1">        <span class="sc3"><span class="re1">&lt;nom<span class="re2">&gt;</span></span></span>Nom de l'editorial<span class="sc3"><span class="re1">&lt;/nom<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1">        <span class="sc3"><span class="re1">&lt;col</span>·lecció<span class="re2">&gt;</span></span>Adreça de l'editorial<span class="sc3"><span class="re1">&lt;/col</span>·lecció<span class="re2">&gt;</span></span></div></li><li class="li1"><div class="de1">    <span class="sc3"><span class="re1">&lt;/editorial<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1"><span class="sc3"><span class="re1">&lt;/llibre<span class="re2">&gt;</span></span></span></div></li></ol></pre>
+
+<p>
+En qualsevol moment es poden crear nivells nous per agrupar les dades segons algun sentit que interessi marcar. Per exemple, això és el que s’ha fet amb l’editorial.
+</p>
+
+<p>
+Cal tenir en compte que no cal preocupar-se gaire que en alguns casos les dades no tinguin sentit o no existeixin, ja que en crear el document simplement es poden eliminar les etiquetes que no tinguin sentit.
+</p>
+
+<p>
+Per tant, el document final podria quedar d’aquesta manera: 
+</p>
+<pre class="code xml"><ol><li class="li1"><div class="de1"><span class="sc3"><span class="re1">&lt;biblioteca<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1">    <span class="sc3"><span class="re1">&lt;autor<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1">        <span class="sc3"><span class="re1">&lt;nom<span class="re2">&gt;</span></span></span>John Ronald Reuel Tolkien<span class="sc3"><span class="re1">&lt;/nom<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1">        <span class="sc3"><span class="re1">&lt;llibres<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1">          <span class="sc3"><span class="re1">&lt;llibre<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1">              <span class="sc3"><span class="re1">&lt;titol<span class="re2">&gt;</span></span></span>El Hòbbit<span class="sc3"><span class="re1">&lt;/titol<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1">              <span class="sc3"><span class="re1">&lt;any<span class="re2">&gt;</span></span></span>2010<span class="sc3"><span class="re1">&lt;/any<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1">              <span class="sc3"><span class="re1">&lt;idioma<span class="re2">&gt;</span></span></span>català<span class="sc3"><span class="re1">&lt;/idioma<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1">              <span class="sc3"><span class="re1">&lt;editorial<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1">                  <span class="sc3"><span class="re1">&lt;nom<span class="re2">&gt;</span></span></span>Edicions de la magrana<span class="sc3"><span class="re1">&lt;/nom<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1">                  <span class="sc3"><span class="re1">&lt;col</span>·lecció<span class="re2">&gt;</span></span>L'Esparver<span class="sc3"><span class="re1">&lt;/col</span>·lecció<span class="re2">&gt;</span></span></div></li><li class="li1"><div class="de1">              <span class="sc3"><span class="re1">&lt;/editorial<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1">          <span class="sc3"><span class="re1">&lt;/llibre<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1">          <span class="sc3"><span class="re1">&lt;llibre<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1">              <span class="sc3"><span class="re1">&lt;titol<span class="re2">&gt;</span></span></span>El senyor dels anells<span class="sc3"><span class="re1">&lt;/titol<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1">              <span class="sc3"><span class="re1">&lt;subtitol<span class="re2">&gt;</span></span></span>La germandat de l'anell<span class="sc3"><span class="re1">&lt;/subtitol<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1">              <span class="sc3"><span class="re1">&lt;any<span class="re2">&gt;</span></span></span>2002<span class="sc3"><span class="re1">&lt;/any<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1">              <span class="sc3"><span class="re1">&lt;idioma<span class="re2">&gt;</span></span></span>català<span class="sc3"><span class="re1">&lt;/idioma<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1">              <span class="sc3"><span class="re1">&lt;editorial<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1">                  <span class="sc3"><span class="re1">&lt;nom<span class="re2">&gt;</span></span></span>Editorial Vicens Vives<span class="sc3"><span class="re1">&lt;/nom<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1">              <span class="sc3"><span class="re1">&lt;/editorial<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1">          <span class="sc3"><span class="re1">&lt;/llibre<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1">        <span class="sc3"><span class="re1">&lt;/llibres<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1">    <span class="sc3"><span class="re1">&lt;/autor<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1">    <span class="sc3"><span class="re1">&lt;autor<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1">        <span class="sc3"><span class="re1">&lt;nom<span class="re2">&gt;</span></span></span>Isaac Asimov<span class="sc3"><span class="re1">&lt;/nom<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1">        <span class="sc3"><span class="re1">&lt;llibre<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1">              <span class="sc3"><span class="re1">&lt;titol<span class="re2">&gt;</span></span></span>Jo, robot<span class="sc3"><span class="re1">&lt;/titol<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1">              <span class="sc3"><span class="re1">&lt;any<span class="re2">&gt;</span></span></span>2001<span class="sc3"><span class="re1">&lt;/any<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1">              <span class="sc3"><span class="re1">&lt;idioma<span class="re2">&gt;</span></span></span>català<span class="sc3"><span class="re1">&lt;/idioma<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1">              <span class="sc3"><span class="re1">&lt;editorial<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1">                  <span class="sc3"><span class="re1">&lt;nom<span class="re2">&gt;</span></span></span>Edicions Proa<span class="sc3"><span class="re1">&lt;/nom<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1">                  <span class="sc3"><span class="re1">&lt;col</span>·lecció<span class="re2">&gt;</span></span>Proa Butxaca<span class="sc3"><span class="re1">&lt;/col</span>·lecció<span class="re2">&gt;</span></span></div></li><li class="li1"><div class="de1">              <span class="sc3"><span class="re1">&lt;/editorial<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1">        <span class="sc3"><span class="re1">&lt;/llibre<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1">    <span class="sc3"><span class="re1">&lt;/autor<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1"><span class="sc3"><span class="re1">&lt;/biblioteca<span class="re2">&gt;</span></span></span></div></li></ol></pre>
+
+</div>
+
+<h2><a id="espais_de_noms" >Espais de noms</a></h2>
+<div class="level2">
+
+<p>
+Amb l’XML es poden crear les etiquetes amb el nom que es vulgui en el moment en què calguin. Per tant, si tenim un document XML en el qual s’especifiquen habitacions de lloguer podríem tenir un document com aquest:
+</p>
+<pre class="code xml"><ol><li class="li1"><div class="de1"><span class="sc3"><span class="re1">&lt;lloguer<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1">    <span class="sc3"><span class="re1">&lt;adreca<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1">        <span class="sc3"><span class="re1">&lt;carrer<span class="re2">&gt;</span></span></span>Escudillers, 23<span class="sc3"><span class="re1">&lt;/carrer<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1">        <span class="sc3"><span class="re1">&lt;ciutat<span class="re2">&gt;</span></span></span>Figueres<span class="sc3"><span class="re1">&lt;/ciutat<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1">        <span class="sc3"><span class="re1">&lt;codi_postal<span class="re2">&gt;</span></span></span>17600<span class="sc3"><span class="re1">&lt;/codi_postal<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1">    <span class="sc3"><span class="re1">&lt;/adreca<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1">    <span class="sc3"><span class="re1">&lt;habitacio<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1">        <span class="sc3"><span class="re1">&lt;rect<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1">            <span class="sc3"><span class="re1">&lt;finestres<span class="re2">&gt;</span></span></span>2<span class="sc3"><span class="re1">&lt;/finestres<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1">            <span class="sc3"><span class="re1">&lt;portes<span class="re2">&gt;</span></span></span>1<span class="sc3"><span class="re1">&lt;/portes<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1">        <span class="sc3"><span class="re1">&lt;/rect<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1">    <span class="sc3"><span class="re1">&lt;/habitacio<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1"><span class="sc3"><span class="re1">&lt;/lloguer<span class="re2">&gt;</span></span></span></div></li></ol></pre>
+
+<p>
+O sigui, en el darrer document XML estem especificant que hi ha una habitació de lloguer al carrer Escudillers, 23, de Figueres, que té forma rectangular amb dues finestres i una porta.
+</p>
+
+<p>
+Tot i que teòricament el sistema sembla perfecte, en la pràctica té el problema que <strong>el llenguatge humà és limitat</strong> i a més moltes vegades hi ha paraules amb diversos sentits. Això fa que molta gent pugui triar les mateixes etiquetes per fer coses que siguin totalment diferents. Això d’entrada no és un problema fins que cal mesclar documents que vénen de fonts diferents.
+</p>
+
+<p>
+En XML hi ha un llenguatge estàndard que serveix per representar gràfics 2D anomenat <em>SVG</em> (<em>scalable vector gràfics</em>). SVG serveix per definir gràfics vectorials, o sigui, que en comptes de desar els punts que formen les imatges es desa com s’han de dibuixar els gràfics fent servir figures geomètriques. Es poden veure alguns dels elements de SVG a la <span class="tabref"><a href="#table13"><span>taula</span></a></span>.
+</p>
+<div class="ioctable ">
+<div class="titletable"><a name="table13"><span>Taula: </span></a>Etiquetes bàsiques del format SVG per representar gràfics vectorials</div>
+<div class="table"><table class="inline">
+	<tr class="row0">
+		<th class="col0"> Etiqueta </th><th class="col1 leftalign"> Ús                                                                              </th>
+	</tr>
+	<tr class="row1">
+		<td class="col0 leftalign"> svg      </td><td class="col1 leftalign"> L’arrel dels documents SVG.                                                     </td>
+	</tr>
+	<tr class="row2">
+		<td class="col0 leftalign"> line     </td><td class="col1 leftalign"> Serveix per definir línies d’un punt a un altre.                                </td>
+	</tr>
+	<tr class="row3">
+		<td class="col0 leftalign"> rect     </td><td class="col1 leftalign"> Es fa servir per definir rectangles a partir de quatre punts.                   </td>
+	</tr>
+	<tr class="row4">
+		<td class="col0 leftalign"> circle   </td><td class="col1"> Amb aquesta etiqueta es defineixen cercles a partir del punt central i el radi. </td>
+	</tr>
+	<tr class="row5">
+		<td class="col0 leftalign"> ellipse  </td><td class="col1 leftalign"> Ens permet definir el·lipses a partir del punt central i els dos radis.         </td>
+	</tr>
+	<tr class="row6">
+		<td class="col0 leftalign"> polygon  </td><td class="col1 leftalign"> Permet dibuixar polígons a partir d’un grup de punts.                           </td>
+	</tr>
+</table></div>
+</div>
+<p>
+Per tant, algú podria decidir que el document milloraria si s’hi afegeix una representació gràfica de la planta dels pisos, i que es pot aprofitar el llenguatge SVG per fer-la. 
+</p>
+
+<p>
+Com que l’XML permet mesclar diferents vocabularis, simplement s’hi afegeix. Per fer-ho més estructurat, a més, s’ha definit l’etiqueta <code>&lt;imatge&gt;</code>:
+</p>
+<pre class="code xml"><ol><li class="li1"><div class="de1"><span class="sc3"><span class="re1">&lt;lloguer<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1">    <span class="sc3"><span class="re1">&lt;adreca<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1">        <span class="sc3"><span class="re1">&lt;carrer<span class="re2">&gt;</span></span></span>Escudillers, 23<span class="sc3"><span class="re1">&lt;/carrer<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1">        <span class="sc3"><span class="re1">&lt;ciutat<span class="re2">&gt;</span></span></span>Figueres<span class="sc3"><span class="re1">&lt;/ciutat<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1">        <span class="sc3"><span class="re1">&lt;codi_postal<span class="re2">&gt;</span></span></span>17600<span class="sc3"><span class="re1">&lt;/codi_postal<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1">    <span class="sc3"><span class="re1">&lt;/adreca<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1">    <span class="sc3"><span class="re1">&lt;habitacio<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1">        <span class="sc3"><span class="re1">&lt;rect<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1">            <span class="sc3"><span class="re1">&lt;finestres<span class="re2">&gt;</span></span></span>2<span class="sc3"><span class="re1">&lt;/finestres<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1">            <span class="sc3"><span class="re1">&lt;portes<span class="re2">&gt;</span></span></span>1<span class="sc3"><span class="re1">&lt;/portes<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1">        <span class="sc3"><span class="re1">&lt;/rect<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1">    <span class="sc3"><span class="re1">&lt;/habitacio<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1">    <span class="sc3"><span class="re1">&lt;imatge<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1">        <span class="sc3"><span class="re1">&lt;svg<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1">            <span class="sc3"><span class="re1">&lt;rect</span> <span class="re0">x</span>=<span class="st0">&quot;0&quot;</span> <span class="re0">y</span>=<span class="st0">&quot;0&quot;</span> <span class="re0">width</span>=<span class="st0">&quot;30&quot;</span> <span class="re0">height</span>=<span class="st0">&quot;60&quot;</span> <span class="re2">/&gt;</span></span></div></li><li class="li1"><div class="de1">        <span class="sc3"><span class="re1">&lt;/svg<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1">    <span class="sc3"><span class="re1">&lt;/imatge<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1"><span class="sc3"><span class="re1">&lt;/lloguer<span class="re2">&gt;</span></span></span></div></li></ol></pre>
+
+<p>
+Per un a lector humà en llegir-ho no hi hauria cap problema perquè ràpidament pot detectar que la imatge està dins de l’element <code>&lt;imatge&gt;</code>, però per a un programa, determinar si l’etiqueta és del vocabulari original o bé d’SVG, és pràcticament impossible. Això vol dir que cal algun sistema de poder definir a quin vocabulari pertanyen les etiquetes. Això és el que fan els <strong>espais de noms</strong>.
+</p>
+<div class="iocimportant"><div class="ioccontent">
+<p>
+Els espais de noms permeten mesclar llenguatges XML en el mateix document i a més definir clarament a quin vocabulari pertany cada etiqueta. 
+</p>
+</div></div>
+<p>
+El que fan els espais de noms és canviar els noms de les etiquetes perquè siguin únics. En teoria es podria fer servir qualsevol combinació de caràcters, però com que hi hauria el mateix problema que amb les etiquetes (algú les podria usar) generalment es fa per mitjà d’una <acronym title="Uniform Resource Locator">URL</acronym> (<em>uniform resource locator</em>), que en principi són úniques. Així es podria definir una <acronym title="Uniform Resource Locator">URL</acronym> única al nostre espai de noms (http://www.ioc.cat/lloguer) i la <acronym title="Uniform Resource Locator">URL</acronym> d’SVG (<a href="http://www.w3.org/2000/svg" class="urlextern" title="http://www.w3.org/2000/svg"  rel="nofollow">http://www.w3.org/2000/svg</a>) davant dels elements i el programa ja no tindrà problemes per determinar a quin vocabulari pertany cada etiqueta:
+</p>
+<pre class="code xml"><ol><li class="li1"><div class="de1"><span class="sc3"><span class="re1">&lt;http:</span>//www.ioc.cat/lloguer:lloguer<span class="re2">&gt;</span></span></div></li><li class="li1"><div class="de1">    <span class="sc3"><span class="re1">&lt;http:</span>//www.ioc.cat/lloguer:adreça<span class="re2">&gt;</span></span></div></li><li class="li1"><div class="de1">        <span class="sc3"><span class="re1">&lt;http:</span>//www.ioc.cat/lloguer:carrer<span class="re2">&gt;</span></span>Escudillers, 23<span class="sc3"><span class="re1">&lt;/http:</span>//www.ioc.cat/lloguer:carrer<span class="re2">&gt;</span></span></div></li><li class="li1"><div class="de1">        <span class="sc3"><span class="re1">&lt;http:</span>//www.ioc.cat/lloguer:ciutat<span class="re2">&gt;</span></span>Figueres<span class="sc3"><span class="re1">&lt;/http:</span>//www.ioc.cat/lloguer:ciutat<span class="re2">&gt;</span></span></div></li><li class="li1"><div class="de1">        <span class="sc3"><span class="re1">&lt;http:</span>//www.ioc.cat/lloguer:codi_postal<span class="re2">&gt;</span></span>17600<span class="sc3"><span class="re1">&lt;/http:</span>//www.ioc.cat/lloguer:codi_postal<span class="re2">&gt;</span></span></div></li><li class="li1"><div class="de1">    <span class="sc3"><span class="re1">&lt;/http:</span>//www.ioc.cat/lloguer:adreca<span class="re2">&gt;</span></span></div></li><li class="li1"><div class="de1">    <span class="sc3"><span class="re1">&lt;http:</span>//www.ioc.cat/lloguer:habitacio<span class="re2">&gt;</span></span></div></li><li class="li1"><div class="de1">        <span class="sc3"><span class="re1">&lt;http:</span>//www.ioc.cat/lloguer:rect<span class="re2">&gt;</span></span></div></li><li class="li1"><div class="de1">            <span class="sc3"><span class="re1">&lt;http:</span>//www.ioc.cat/lloguer:finestres<span class="re2">&gt;</span></span>2<span class="sc3"><span class="re1">&lt;/http:</span>//www.ioc.cat/lloguer:finestres<span class="re2">&gt;</span></span></div></li><li class="li1"><div class="de1">            <span class="sc3"><span class="re1">&lt;http:</span>//www.ioc.cat/lloguer:portes<span class="re2">&gt;</span></span>1<span class="sc3"><span class="re1">&lt;/http:</span>//www.ioc.cat/lloguer:portes<span class="re2">&gt;</span></span></div></li><li class="li1"><div class="de1">        <span class="sc3"><span class="re1">&lt;/http:</span>//www.ioc.cat/lloguer:rect<span class="re2">&gt;</span></span></div></li><li class="li1"><div class="de1">    <span class="sc3"><span class="re1">&lt;/http:</span>//www.ioc.cat/lloguer:habitacio<span class="re2">&gt;</span></span></div></li><li class="li1"><div class="de1">    <span class="sc3"><span class="re1">&lt;http:</span>//www.ioc.cat/lloguer:imatge<span class="re2">&gt;</span></span></div></li><li class="li1"><div class="de1">        <span class="sc3"><span class="re1">&lt;http:</span>//www.w3.org/2000/svg:svg<span class="re2">&gt;</span></span></div></li><li class="li1"><div class="de1">            <span class="sc3"><span class="re1">&lt;http:</span>//www.w3.org/2000/svg:rect <span class="re0">x</span>=<span class="st0">&quot;0&quot;</span> <span class="re0">y</span>=<span class="st0">&quot;0&quot;</span> <span class="re0">width</span>=<span class="st0">&quot;30&quot;</span> <span class="re0">height</span>=<span class="st0">&quot;60&quot;</span> <span class="re2">/&gt;</span></span></div></li><li class="li1"><div class="de1">        <span class="sc3"><span class="re1">&lt;/http:</span>//www.w3.org/2000/svg:svg<span class="re2">&gt;</span></span>    </div></li><li class="li1"><div class="de1">    <span class="sc3"><span class="re1">&lt;/http:</span>//www.ioc.cat/lloguer:imatge<span class="re2">&gt;</span></span></div></li><li class="li1"><div class="de1"><span class="sc3"><span class="re1">&lt;/http:</span>//www.ioc.cat/lloguer:lloguer<span class="re2">&gt;</span></span></div></li></ol></pre>
+
+<p>
+Com que escriure totes les adreces cada vegada fa que es perdi la llegibilitat del document, l’XML permet definir àlies per a cada una de les <acronym title="Uniform Resource Locator">URL</acronym>. Els àlies es defineixen per mitjà de l’atribut <strong><code>xmlns</code></strong> dels elements i s’hereten a tot el contingut de l’element:
+</p>
+<pre class="code xml"><ol><li class="li1"><div class="de1">  <span class="sc3"><span class="re1">&lt;element</span> <span class="re0">xmlns:alies</span>=<span class="st0">&quot;http://adreca&quot;</span><span class="re2">/&gt;</span></span></div></li></ol></pre>
+
+<p>
+Per tant, si es defineix l’atribut en l’arrel del document s’heretaran els àlies a tots els elements del document.
+</p>
+<pre class="code xml"><ol><li class="li1"><div class="de1"><span class="sc3"><span class="re1">&lt;lloguer</span> <span class="re0">xmlns:lloguer</span>=<span class="st0">&quot;http://www.ioc.cat/lloguer&quot;</span></span></div></li><li class="li1"><div class="de1"><span class="sc3">         <span class="re0">xmlns:svg</span>=<span class="st0">&quot;http://www.w3.org/2000/svg&quot;</span> <span class="re2">&gt;</span></span></div></li><li class="li1"><div class="de1">    <span class="sc3"><span class="re1">&lt;lloguer:adreca<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1">        <span class="sc3"><span class="re1">&lt;lloguer:carrer<span class="re2">&gt;</span></span></span>Escudillers, 23<span class="sc3"><span class="re1">&lt;/lloguer:carrer<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1">        <span class="sc3"><span class="re1">&lt;lloguer:ciutat<span class="re2">&gt;</span></span></span>Figueres<span class="sc3"><span class="re1">&lt;/lloguer:ciutat<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1">        <span class="sc3"><span class="re1">&lt;lloguer:codi_postal<span class="re2">&gt;</span></span></span>17600<span class="sc3"><span class="re1">&lt;/lloguer:codi_postal<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1">    <span class="sc3"><span class="re1">&lt;/lloguer:adreca<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1">    <span class="sc3"><span class="re1">&lt;lloguer:habitacio<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1">        <span class="sc3"><span class="re1">&lt;lloguer:rect<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1">            <span class="sc3"><span class="re1">&lt;lloguer:finestres<span class="re2">&gt;</span></span></span>2<span class="sc3"><span class="re1">&lt;/lloguer:finestres<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1">            <span class="sc3"><span class="re1">&lt;lloguer:portes<span class="re2">&gt;</span></span></span>1<span class="sc3"><span class="re1">&lt;/lloguer:portes<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1">        <span class="sc3"><span class="re1">&lt;/lloguer:rect<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1">    <span class="sc3"><span class="re1">&lt;/lloguer:habitacio<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1">    <span class="sc3"><span class="re1">&lt;lloguer:imatge<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1">        <span class="sc3"><span class="re1">&lt;svg:svg<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1">            <span class="sc3"><span class="re1">&lt;svg:rect</span> <span class="re0">x</span>=<span class="st0">&quot;0&quot;</span> <span class="re0">y</span>=<span class="st0">&quot;0&quot;</span> <span class="re0">width</span>=<span class="st0">&quot;30&quot;</span> <span class="re0">height</span>=<span class="st0">&quot;60&quot;</span> <span class="re2">/&gt;</span></span></div></li><li class="li1"><div class="de1">        <span class="sc3"><span class="re1">&lt;/svg<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1">    <span class="sc3"><span class="re1">&lt;/lloguer:imatge<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1"><span class="sc3"><span class="re1">&lt;/lloguer:lloguer<span class="re2">&gt;</span></span></span></div></li></ol></pre>
+
+<p>
+<code>xmlns</code> també permet un espai de noms per defecte i que, per tant, podrà fer servir les seves etiquetes sense àlies. <strong>Si algun atribut <code>xmlns</code> no defineix àlies es converteix en l’espai de noms per defecte</strong>.
+</p>
+<pre class="code xml"><ol><li class="li1"><div class="de1"><span class="sc3"><span class="re1">&lt;lloguer</span> <span class="re0">xmlns</span>=<span class="st0">&quot;http://www.ioc.cat/lloguer&quot;</span></span></div></li><li class="li1"><div class="de1"><span class="sc3">         <span class="re0">xmlns:svg</span>=<span class="st0">&quot;http://www.w3.org/2000/svg&quot;</span> <span class="re2">&gt;</span></span></div></li><li class="li1"><div class="de1">    <span class="sc3"><span class="re1">&lt;adreca<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1">        <span class="sc3"><span class="re1">&lt;carrer<span class="re2">&gt;</span></span></span>Escudillers, 23<span class="sc3"><span class="re1">&lt;/carrer<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1">        <span class="sc3"><span class="re1">&lt;ciutat<span class="re2">&gt;</span></span></span>Figueres<span class="sc3"><span class="re1">&lt;/ciutat<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1">        <span class="sc3"><span class="re1">&lt;codi_postal<span class="re2">&gt;</span></span></span>17600<span class="sc3"><span class="re1">&lt;/codi_postal<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1">    <span class="sc3"><span class="re1">&lt;/adreca<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1">    <span class="sc3"><span class="re1">&lt;habitacio<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1">        <span class="sc3"><span class="re1">&lt;rect<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1">            <span class="sc3"><span class="re1">&lt;finestres<span class="re2">&gt;</span></span></span>2<span class="sc3"><span class="re1">&lt;/finestres<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1">            <span class="sc3"><span class="re1">&lt;portes<span class="re2">&gt;</span></span></span>1<span class="sc3"><span class="re1">&lt;/portes<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1">        <span class="sc3"><span class="re1">&lt;/rect<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1">    <span class="sc3"><span class="re1">&lt;/habitacio<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1">    <span class="sc3"><span class="re1">&lt;imatge<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1">        <span class="sc3"><span class="re1">&lt;svg:svg<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1">            <span class="sc3"><span class="re1">&lt;svg:rect</span> <span class="re0">x</span>=<span class="st0">&quot;0&quot;</span> <span class="re0">y</span>=<span class="st0">&quot;0&quot;</span> <span class="re0">width</span>=<span class="st0">&quot;30&quot;</span> <span class="re0">height</span>=<span class="st0">&quot;60&quot;</span> <span class="re2">/&gt;</span></span></div></li><li class="li1"><div class="de1">        <span class="sc3"><span class="re1">&lt;/svg:svg<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1">    <span class="sc3"><span class="re1">&lt;/imatge<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1"><span class="sc3"><span class="re1">&lt;/lloguer<span class="re2">&gt;</span></span></span></div></li></ol></pre>
+
+<p>
+Com que els espais de noms es poden definir en qualsevol element, una possibilitat alternativa seria <strong>definir els espais de noms en les etiquetes adequades</strong>:
+</p>
+<pre class="code xml"><ol><li class="li1"><div class="de1"><span class="sc3"><span class="re1">&lt;lloguer</span> <span class="re0">xmlns</span>=<span class="st0">&quot;http://www.ioc.cat/lloguer&quot;</span><span class="re2">&gt;</span></span></div></li><li class="li1"><div class="de1">    <span class="sc3"><span class="re1">&lt;adreca<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1">        <span class="sc3"><span class="re1">&lt;carrer<span class="re2">&gt;</span></span></span>Escudillers, 23<span class="sc3"><span class="re1">&lt;/carrer<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1">        <span class="sc3"><span class="re1">&lt;ciutat<span class="re2">&gt;</span></span></span>Figueres<span class="sc3"><span class="re1">&lt;/ciutat<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1">        <span class="sc3"><span class="re1">&lt;codi_postal<span class="re2">&gt;</span></span></span>17600<span class="sc3"><span class="re1">&lt;/codi_postal<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1">    <span class="sc3"><span class="re1">&lt;/adreca<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1">    <span class="sc3"><span class="re1">&lt;habitacio<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1">        <span class="sc3"><span class="re1">&lt;rect<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1">            <span class="sc3"><span class="re1">&lt;finestres<span class="re2">&gt;</span></span></span>2<span class="sc3"><span class="re1">&lt;/finestres<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1">            <span class="sc3"><span class="re1">&lt;portes<span class="re2">&gt;</span></span></span>1<span class="sc3"><span class="re1">&lt;/portes<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1">        <span class="sc3"><span class="re1">&lt;/rect<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1">    <span class="sc3"><span class="re1">&lt;/habitacio<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1">    <span class="sc3"><span class="re1">&lt;imatge<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1">        <span class="sc3"><span class="re1">&lt;svg</span> <span class="re0">xmlns</span>=<span class="st0">&quot;http://www.w3c.org/2000/svg&quot;</span><span class="re2">&gt;</span></span></div></li><li class="li1"><div class="de1">            <span class="sc3"><span class="re1">&lt;rect</span> <span class="re0">x</span>=<span class="st0">&quot;0&quot;</span> <span class="re0">y</span>=<span class="st0">&quot;0&quot;</span> <span class="re0">width</span>=<span class="st0">&quot;30&quot;</span> <span class="re0">height</span>=<span class="st0">&quot;60&quot;</span> <span class="re2">/&gt;</span></span></div></li><li class="li1"><div class="de1">        <span class="sc3"><span class="re1">&lt;/svg<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1">    <span class="sc3"><span class="re1">&lt;/imatge<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1"><span class="sc3"><span class="re1">&lt;/lloguer<span class="re2">&gt;</span></span></span></div></li></ol></pre>
+
+<p>
+D’aquesta manera tots els descendents de l’element <code>&lt;lloguer&gt;</code> segueixen el seu espai de noms excepte quan s’arriba a l’element <code>&lt;svg&gt;</code>, el qual canvia l’espai de noms per defecte per a ell i per als seus descendents.
+</p>
+
+</div>
+
+	 </article>
+     <div class="pnpage">
+      <div class="left-corner"></div>
+      <div id="prevpage">Anar a la p&agrave;gina anterior:<br /><a href="../../../WebContent/u1/a1/exercicis.html">Exercicis d'autoavaluació</a></div>
+      <div id="nextpage">Anar a la p&agrave;gina seg&uuml;ent:<br /><a href="../../../WebContent/u1/a2/activitats.html">Activitats</a></div>
+      <div class="right-corner"></div>
+     </div>
+    </div>
+    <footer class="footer">
+      <div><small>Aquest document està subjecte a una llicència oberta de Creative Commons, es reserva el dret de reconeixement de l'autoria, d'exigir que no se'n faci cap mena d'ús comercial. Si altereu o transformeu aquesta obra, o en genereu obres derivades, només podeu distribuir l'obra generada amb una llicència idèntica a aquesta.</small></div>
+    </footer>
+ </div>
+ <div id="back_preview" class="hidden"></div>
+ <div id="preview" class="hidden">
+  <div class="prevcontent"></div>
+ </div>
+ <div id="help-tooltips">
+  <div id="help-toc" class="hidden tooltip"><span>Taula de continguts:</span> Ofereix una vista general de l&#39;estructura del m&ograve;dul, que us facilitar&agrave; la navegaci&oacute; a trav&eacute;s dels seus continguts.<span class="arrow-left"></span></div> 
+  <div id="help-settings" class="hidden tooltip"><span>Opcions de format:</span> Permet configurar el format de lectura a partir de les vostres prefer&egrave;ncies, modificant la mida de la lletra, el color del fons, l&#39;amplada de la p&agrave;gina o l&#39;ocultaci&oacute; dels continguts complementaris, entre d&#39;altres.<span class="arrow-left"></span></div>
+  <div id="help-printer" class="hidden tooltip"><span>Imprimir:</span>  Envia el contingut seleccionat a la impressora.<span class="arrow-left"></span></div>
+  <div id="help-favorites" class="hidden tooltip"><span>Prefereits:</span> Permet desar aquelles parts del contingut a les que us interessi accedir en un moment posterior; us permetr&agrave; anar creant un repositori personalitzat de les seccions que considereu m&eacute;s rellevants. Un cop l&#39;hageu començat a fer servir se us mostrar&agrave; a sota un comptador que us informar&agrave; del nombre de preferits que s&#39;hagin emmagatzemat fins al moment.<span class="arrow-left"></span></div>
+  <div id="help-favcounter" class="hidden tooltip"><span>Comptador i llistat de preferits:</span> Indica el nombre de preferits que s&#39;han desat fins el moment; clicant damunt seu accedireu al llistat de preferits, i a trav&eacute;s d&#39;aquest podreu accedir directament als continguts que hageu emmagatzemat.<span class="arrow-left"></span></div>
+  <div id="help-help_icon" class="hidden tooltip"><span>Ajuda:</span> Aquesta opci&oacute; activa la informaci&oacute; de les funcionalitats del web tot situant el punter del ratol&iacute; al damunt dels diferents &iacute;tems.<span class="arrow-left"></span></div>
+  <div id="help-sidebar-hide" class="hidden tooltip"><span>Mostrar/Ocultar barra lateral:</span>  Deshabilita la barra d&#39;opcions, permetent la seva recuperaci&oacute; quan es desitgi.<span class="arrow-left"></span></div>
+  <div id="help-search" class="hidden tooltip"><span>Cerca:</span>  Introdu&iuml;u les paraules clau sobre aquells conceptes que desitgeu localitzar en els continguts del m&ograve;dul. Tamb&eacute; podeu excloure un terme de la cerca tot afegint-hi el signe &#8220;-&#8221; al davant.<span class="arrow-top"></span></div>
+  <div id="help-header" class="hidden tooltip"><span>Cap&ccedil;alera:</span>  Indica l&#39;apartat o secci&oacute; que es mostra en pantalla. Tingueu present que les capçaleres de segon, tercer i quart nivell tamb&eacute; es poden desar com a marcadors.<span class="arrow-left"></span></div>
+</div> 
+</body>
+</html>

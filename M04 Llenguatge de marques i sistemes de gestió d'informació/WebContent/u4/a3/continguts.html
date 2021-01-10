@@ -1,0 +1,933 @@
+<!doctype html>
+
+<!--[if lt IE 7 ]> <html class="ie ie6 no-js" lang="ca"> <![endif]-->
+<!--[if IE 7 ]>    <html class="ie ie7 no-js" lang="ca"> <![endif]-->
+<!--[if IE 8 ]>    <html class="ie ie8 no-js" lang="ca"> <![endif]-->
+<!--[if IE 9 ]>    <html class="ie ie9 no-js" lang="ca"> <![endif]-->
+<!--[if gt IE 9]><!--><html class="no-js" lang="ca"><!--<![endif]-->
+<!-- the "no-js" class is for Modernizr. -->
+
+<head id="www-sitename-com" data-template-set="html5-reset">
+
+	<meta charset="utf-8">
+	
+	<!-- Always force latest IE rendering engine (even in intranet) & Chrome Frame -->
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	
+	<title>Llenguatges de marques i sistemes de gestió d'informació</title>
+	
+<!-- <meta name="title" content=""> --> 
+	<meta name="description" content="">
+	<!-- Google will often use this as its description of your page/site. Make it good. -->
+	
+	<meta name="google-site-verification" content="">
+	<!-- Speaking of Google, don't forget to set your site up: http://google.com/webmasters -->
+	
+	<meta name="author" content="Institut Obert de Catalunya">
+	<meta name="Copyright" content="Copyright Institut Obert de Catalunya 2011. All Rights Reserved.">
+
+	<!-- Dublin Core Metadata : http://dublincore.org/ -->
+	<meta name="DC.title" content="Llenguatges de marques i sistemes de gestió d'informació">
+	<meta name="DC.subject" content="Informàtica i comunicacions">
+	<meta name="DC.creator" content="Institut Obert de Catalunya">
+	
+	<!--  Mobile Viewport Fix
+	j.mp/mobileviewport & davidbcalhoun.com/2010/viewport-metatag 
+	device-width : Occupy full width of the screen in its current orientation
+	initial-scale = 1.0 retains dimensions instead of zooming out if page height > device height
+	maximum-scale = 1.0 retains dimensions instead of zooming in if page width < device width
+	-->
+	<!-- Uncomment to use � use thoughtfully!
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+	-->
+
+	<link rel="shortcut icon" href="../../../img/favicon.ico">
+	<!-- This is the traditional favicon.
+		 - size: 16x16 or 32x32
+		 - transparency is OK
+		 - see wikipedia for info on browser support: http://mky.be/favicon/ -->
+		 
+	<link rel="apple-touch-icon" href="../../../img/apple-touch-icon.png">
+	<!-- The is the icon for iOS's Web Clip.
+		 - size: 57x57 for older iPhones, 72x72 for iPads, 114x114 for iPhone4's retina display (IMHO, just go ahead and use the biggest one)
+		 - To prevent iOS from applying its styles to the icon name it thusly: apple-touch-icon-precomposed.png
+		 - Transparency is not recommended (iOS will put a black BG behind the icon) -->
+	
+	<!-- CSS: screen, mobile & print are all in the same file -->
+	<link rel="stylesheet" href="../../../_/css/style.css">
+
+	<!-- CSS: jQuery UI -->
+	<link rel="stylesheet" href="../../../_/css/jquery-ui.css">
+	
+	<!-- all our JS is at the bottom of the page, except for Modernizr. -->
+	<script src="../../../_/js/modernizr-1.7.min.js"></script>
+	<script src="../../../_/js/Hyphenator.js" type="text/javascript"></script>
+	<script type="text/javascript">
+	   Hyphenator.config({
+		minwordlength : 4
+	   });
+	   Hyphenator.run();
+	</script>
+    <script src="../../../_/js/build.js" type="text/javascript"></script>
+</head>
+
+<body class="style-newspaper">
+
+<div class="wrapper"><!-- not needed? up to you: http://camendesign.com/code/developpeurs_sans_frontieres -->
+
+	<header id="header">
+		<div class="head"><a href="http://ioc.gencat.cat"><img src="../../../img/logo.png" alt="Institut Obert de Catalunya"/></a><a href="http://creativecommons.org/licenses/by-nc-sa/3.0/es/deed.ca"><img src="../../../img/license.png" alt="Llic&egrave;ncia" class="license"/></a></div>
+		<div class="headdocument"><a href="../../../index.html">Llenguatges de marques i sistemes de gestió d'informació</a></div>
+        <div id="search" class="search" name="search">
+         <form id="frmsearch" action="../../../search.html" method="get">
+          <input type="text" name="q"/>
+        </form>
+        </div>
+	</header>
+   <div id="upbutton" class="upbutton" style="display:none;"><img src="../../../img/uparrow.png" alt="Pujar a l'inici de p&agrave;gina"/></div>
+   <aside id="aside">
+    <div id="menu">
+      <ul>
+       <li name="toc"><div><img src="../../../img/toc.png" alt="&Iacute;ndex"/></div></li>
+       <li name="settings"><div><img src="../../../img/settings.png" alt="Configuraci&oacute;"/></div></li>
+       <li name="printer"><div><img src="../../../img/printer.png" alt="Imprimir"/></div></li>
+       <li name="favorites"><div><img src="../../../img/favorites.png" alt="Favorits"/></div></li>
+       <li name="help_icon" class="help_icon"><div><img src="../../../img/help_icon.png" alt="Ajuda"/></div></li>
+      </ul>
+     </div>
+   </aside>
+   <div id="sidebar-hide" name="sidebar-hide"><img src="../../../img/arrows.png"/></div>
+   <section>
+     <div id="toc" class="hidden">
+      <div class="menucontent">
+        <ul>
+        <li id="u4" class="parentnode"><p><a class="unit" href="../../../WebContent/u4/introduccio.html">4. Sistemes de gestió empresarial</a></p><ul class="expander"><li id="u4introduccio"><a href="../../../WebContent/u4/introduccio.html">Introducció</a></li><li id="u4resum"><a href="../../../WebContent/u4/resum.html">Resum</a></li><li id="u4objectius"><a href="../../../WebContent/u4/objectius.html">Resultats d'aprenentatge</a></li><li id="u4referencies"><a href="../../../WebContent/u4/referencies.html">Referències</a></li><li id="u4a1" class="tocsection"><p id='u4a1continguts'><a class="section" href="../../../WebContent/u4/a1/continguts.html">Sistemes empresarials de gestió d'informació</a><span class="buttonexp"></span></p><ul><li id="u4a1activitats"><a href="../../../WebContent/u4/a1/activitats.html">Activitats</a></li><li id="u4a1exercicis"><a href="../../../WebContent/u4/a1/exercicis.html">Exercicis d'autoavaluació</a></li></ul></li><li id="u4a2" class="tocsection"><p id='u4a2continguts'><a class="section" href="../../../WebContent/u4/a2/continguts.html">Serveis web</a><span class="buttonexp"></span></p><ul><li id="u4a2activitats"><a href="../../../WebContent/u4/a2/activitats.html">Activitats</a></li><li id="u4a2exercicis"><a href="../../../WebContent/u4/a2/exercicis.html">Exercicis d'autoavaluació</a></li></ul></li><li id="u4a3" class="tocsection"><p id='u4a3continguts'><a class="section" href="../../../WebContent/u4/a3/continguts.html">Informàtica en núvol</a><span class="buttonexp"></span></p><ul><li id="u4a3activitats"><a href="../../../WebContent/u4/a3/activitats.html">Activitats</a></li><li id="u4a3exercicis"><a href="../../../WebContent/u4/a3/exercicis.html">Exercicis d'autoavaluació</a></li></ul></li></ul></li><li id="" class="indexnode"><p><a href="../../../index.html">Anar a l&#39;&iacute;ndex general</a></p></li>
+        </ul>
+      </div>
+    </div>
+   </section>
+   <section>
+   <div id="settings" class="hidden">
+    <div class="menucontent">
+     <div class="allsettings">
+     <div class="settings">
+      <label>Font i Color</label>
+		<div class="setting-option">
+	        <ul class="fontBackground">
+				<li id="style-newspaper" title="Newspaper" class="appearance-style-newspaper"><span>Newspaper</span></li>
+                <li id="style-novel" title="Novel" class="appearance-style-novel"><span>Novel</span></li>
+                <li id="style-ebook" title="eBook" class="appearance-style-ebook"><span>eBook</span></li>
+				<li id="style-inverse" title="Inverse" class="appearance-style-inverse active"><span>Inverse</span></li>
+				<li id="style-athelas" title="Athelas" class="appearance-style-athelas"><span>Athelas</span></li>
+			</ul>
+		</div>
+     </div>
+	<div class="settings">
+      <label>Amplada</label>
+		<div class="setting-option">
+	        <div id="slider-width"></div>
+		</div>
+     </div>
+     <div class="settings">
+      <label>Mida de la font</label>
+		<div class="setting-option">
+	        <div id="slider-font"></div>
+		</div>
+     </div>
+     <div class="settings">
+      <label>Mida de la font</label>
+	  <div class="setting-option">
+       <form action="" class="sett-options">
+		<ul>
+		    <li><input type="checkbox" id="secondary-content" /><label for="secondary-content">Mostra recursos complementaris</label></li>
+		    <li><input type="checkbox" id="main-images" /><label for="main-images">Mostra imatges</label></li>
+		    <li><input type="checkbox" id="text-alignment" /><label for="text-alignment">Text justificat</label></li>
+			<li><input type="checkbox" id="text-hyphen" /><label for="text-hyphen">Partici&oacute; sil·l&agrave;bica</label></li>
+		</ul>
+       </form>
+	  </div>
+     </div>
+     </div>
+    </div>
+   </div>
+   </section>
+ <section>
+ <div id="favorites" class="hidden"></div>
+ </section>   
+ <div id="bridge" class="hidden"></div>
+ <div id="help" class="hidden">
+  <div class="helptitle">Dreceres del teclat<hr></div>
+  <div class="helpsection"><span>General</span>
+   <ul>
+    <li><span class="shortcut">g</span>: Anar al men&uacute; de navegaci&oacute;</li>
+    <li><span class="shortcut">o</span>: Anar a opcions</li>
+    <li><span class="shortcut">s</span>: Guardar la p&agrave;gina actual a favorits</li>
+    <li><span class="shortcut">p</span>: Imprimir la p&agrave;gina actual</li>
+    <li><span class="shortcut">?</span>: Mostrar/Ocultar l&#39;ajuda</li>
+   </ul>
+  </div>
+  <div class="helpsection"><span>Navegaci&oacute;</span>
+   <ul>
+    <li><span class="shortcut">i</span>: Anar a l&#39;&iacute;ndex general</li>
+    <li><span class="shortcut">t</span>: Anar a l&#39;inici de p&agrave;gina</li>
+    <li><span class="shortcut">b</span>: Anar al final de p&agrave;gina</li>
+    <li><span class="shortcut">j</span>: Anar cap endavant dintre la p&agrave;gina</li>
+    <li><span class="shortcut">k</span>: Anar cap enrere dintre la p&agrave;gina</li>
+    <li><span class="shortcut">h</span>: Anar a la p&agrave;gina anterior:</li>
+    <li><span class="shortcut">l</span>: Anar a la p&agrave;gina seg&uuml;ent:</li>
+   </ul>
+   </div>
+ </div>
+ <div id="favcounter" name="favcounter" class="hidden"><span></span></div>
+ <div id="navmenu" class="navmenu"><ul class="webnav"><li><a href="../../../index.html" title="Anar a l&#39;&iacute;ndex general">Inici</a></li><li><a href="../introduccio.html">Sistemes de gestió empresarial</a></li><li>Informàtica en núvol</li></ul></div>
+	<div id="content" lang="ca" class="hyphenate text">
+     <article lang="ca" class="sheet">
+        <h1><a id="informatica_en_nuvol"> Informàtica en núvol </a></h1>
+    	
+<p>
+En l’àmbit de la informàtica s’està posant de moda en els darrers anys el que s’anomena <strong>informàtica en núvol</strong> (<em>cloud computing</em>). A pesar del que pot semblar no es tracta de cap innovació tecnològica, sinó més aviat de l’evolució de diferents tecnologies. 
+</p>
+<div class="iocimportant"><div class="ioccontent">
+<p>
+La informàtica en núvol fa referència a un conjunt de tecnologies que permeten emmagatzemar tots els recursos a Internet. Allà, els proveïdors dels serveis s’organitzen per aprofitar al màxim les seves infraestructures i proveir servei a múltiples usuaris alhora; d’aquesta manera els clients poden aconseguir serveis que s’adaptin perfectament a les seves necessitats sense haver de fer despeses en infraestructura informàtica.
+</p>
+</div></div>
+<p>
+La paraula estrella d’aquestes tecnologies és <em>núvol</em>. Es fa servir aquesta idea per referir-se a totes aquestes tecnologies, ja que el símbol del núvol sempre s’ha fet servir en els diagrames de xarxa per indicar xarxes o simbolitzar les connexions a Internet (<span class="figref"><a href="#fig216"><span>figura</span></a></span>).
+</p>
+<div class="iocfigure"><a name="fig216"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Diagrama de xarxa
+
+</figcaption><img src="../media/asxm04u4_20.png" alt="" /></figure>
+</div><div class="ioctext"><div class="ioccontent"><p class="ioctitle">BOINC</p>
+<p>
+El programa BOINC (<a href="http://boinc.berkeley.edu/" class="urlextern" title="http://boinc.berkeley.edu/"  rel="nofollow">boinc.berkeley.edu</a>) permet fer servir el temps d’inactivitat dels PC, dels usuaris que ho permetin, per dur a terme projectes científics com curar malalties, estudiar l’escalfament global o descobrir púlsars. 
+</p>
+
+<p>
+Per exemple, el BOINC el fan servir els projectes SETI@home, Climateprediction.net, Rosetta@home o World Community Grid però es pot fer servir per incrementar la potència de càlcul de qualsevol tasca.
+</p>
+</div></div>
+<p>
+Una de les tasques que la informàtica en núvol simplifica és la distribució de càrregues de treball. Els programes que s’ofereixen per Internet cada vegada són més complexos i requereixen fer tasques que sovint exigeixen distribuir la càrrega de treball entre diferents màquines. Això no és especialment nou ja que fa anys que en els sistemes oberts d’Unix ja existia la idea de <em>processament distribuït</em>. La idea era combinar diferents sistemes a partir de les xarxes locals o esteses per repartir una tasca entre diversos servidors i estacions de treball, i així obtenir resultats semblants als que s’obtindrien en una màquina molt potent i que serien impossibles si es fes servir un sol ordinador. 
+</p>
+
+<p>
+Tampoc la idea de llogar ordinadors no és especialment nova ja que algunes grans empreses com IBM o HP fa anys oferien serveis de processament i emmagatzematge en bases de dades per a grans empreses en el que anomenaven <em>computing on demand</em>. Llogaven el temps dels seus ordinadors centrals (<em>mainframes</em>) per fer tasques complexes que difícilment s’haurien pogut fer amb ordinadors personals a empreses que no podien pagar la compra d’una d’aquestes computadores.
+</p>
+
+<p>
+La gran innovació de la informàtica en núvol és que parteix de l’evolució d’aquestes tecnologies i d’altres com la <strong>virtualització</strong>, l’<strong>increment de les velocitats d’accés</strong> a Internet, o la proliferació de <strong>dispositius mòbils</strong>, que han desembocat en la seva creació. Amb la informàtica en núvol les organitzacions poden construir la seva infraestructura informàtica d’una manera totalment diferent de com ho feien fins ara. Ja no cal que les empreses tinguin grans instal·lacions informàtiques, ni experts en administració de sistemes, ja que això ho poden obtenir del núvol.
+</p>
+
+<p>
+La idea es va portar a la pràctica per primer cop a finals dels anys noranta quan des de la llibreria en línia Amazon es van adonar que tenien una infraestructura informàtica molt potent per poder donar servei als seus clients, però que en realitat l’ús que se’n feia era inferior al 20%. La realitat és que la majoria dels sistemes informàtics no solen anar a ple rendiment (<span class="figref"><a href="#217"><span>figura</span></a></span>).
+</p>
+<div class="iocfigure"><a name="fig217"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Ús de CPU d’un sistema
+
+</figcaption><img src="../media/cpu.png" alt="" /></figure>
+<div class="footfigure"></div></div>
+<p>
+Intentant aprofitar d’alguna manera aquesta capacitat “sobrant” es va crear el primer servei d’informàtica en núvol, que es va anomenar <strong>Amazon Web Services</strong>.
+</p>
+
+<p>
+La idea era mirar de treure un rendiment al 80% dels recursos que no s’estaven usant en la seva infraestructura, valent-se de la virtualització. Per exemple, el servei Amazon EC2 (Elastic Compute Cloud) permet llogar els recursos de maquinari en forma de màquina virtual, ampliables, fent servir els recursos que Amazon no estigui usant. 
+</p>
+
+<p>
+A més, la tecnologia de màquines virtuals és prou dinàmica per permetre que els  clients del seu servei <strong>puguin anar dimensionant els recursos virtuals que volen fer servir segons les necessitats de cada moment</strong>.
+</p>
+
+<h2><a id="caracteristiques" >Característiques</a></h2>
+<div class="level2">
+
+<p>
+La informàtica en núvol ofereix una sèrie de característiques i possibilitats que la fan molt atractiva per a les empreses, ja que permet crear amb poca inversió econòmica infraestructures que s’adapten a les necessitats puntuals de cada organització i a les quals es pot accedir des de qualsevol lloc per Internet.
+</p>
+
+</div>
+
+<h3><a id="ubiqueitat" >Ubiqüitat</a></h3>
+<div class="level3">
+
+<p>
+Quan es parla d’informàtica en núvol es defineix un sistema d’<strong>obtenció de serveis o recursos sense necessitat de saber en quin lloc es troben</strong>. Al client, doncs, no li cal saber quina és l’arquitectura de xarxa, ni les característiques tècniques del núvol; simplement hi accedeix i en fa servir els serveis que necessita. Això fa que el conjunt pugui ser altament escalable, és a dir, que pugui créixer fàcilment. 
+</p>
+
+<p>
+Els errors del maquinari del proveïdor en principi no afecten el client, ja que, com que el client no necessita saber on s’estava connectant, en cas de fallada el servei pot ser reubicat en alguna altra màquina de manera totalment transparent. Això fa que la informàtica en núvol sigui bastant <strong>tolerant a fallades</strong>.
+</p>
+
+<p>
+El fet que sigui accessible per Internet també aporta tota una sèrie d’avantatges afegits: <strong>es pot accedir al sistema des de qualsevol lloc</strong> sempre que es tingui accés a Internet, i com que normalment es controla des d’un navegador web s’hi pot accedir amb ordinadors però també des de qualsevol dispositiu que s’hi pugui connectar (<span class="figref"><a href="#fig218"><span>figura</span></a></span>).
+</p>
+<div class="iocfigure"><a name="fig218"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Accés des de qualsevol lloc i amb qualsevol dispositiu
+
+</figcaption><img src="../media/asxm04u4_21.png" alt="" /></figure>
+<div class="footfigure"></div></div>
+</div>
+
+<h3><a id="infraestructura_informatica" >Infraestructura informàtica</a></h3>
+<div class="level3">
+
+<p>
+El <em>cloud computing</em> fa que <strong>no calgui una gran infraestructura informàtica en l’organització</strong>. Des del principi de la informàtica els requeriments de maquinari dels programes no han fet sinó créixer i això ha obligat les empreses a renovar periòdicament el parc de maquinari per poder-se adaptar als nous requeriments. 
+</p>
+
+<p>
+Fent servir la informàtica en núvol es pot aconseguir <strong>crear una infraestructura informàtica completa sense pràcticament haver de tenir un parc informàtic</strong> important. Amb un sol ordinador es pot controlar una infraestructura informàtica completa que abans hauria requerit milers d’euros d’inversió (<span class="figref"><a href="#fig219"><span>figura</span></a></span>).
+</p>
+<div class="iocfigure"><a name="fig219"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Un PC controla el núvol
+
+</figcaption><img src="../media/asxm04u4_22.png" alt="" /></figure>
+<div class="footfigure"></div></div>
+<p>
+Això trenca el cicle de renovació de maquinari que s’ha anat seguint tradicionalment per adaptar la infraestructura als nous requeriments del programari. Amb la informàtica en núvol ja no cal fer grans despeses en maquinari ni s’han de renovar els equips: n’hi ha prou amb <strong>contractar més recursos</strong>. Això permet que les infraestructures en el núvol siguin molt escalables: poden créixer tant com calgui per fer front a les demandes del servei.
+</p>
+
+<p>
+I com que els clients no necessiten màquines importants per gestionar la seva infraestructura en el núvol el més habitual és fer servir un sistema de gestió que no en consumeixi gaires. L’accés a la gestió dels recursos gairebé sempre es fa mitjançant una aplicació web, de manera que <strong>no cal instal·lar cap tipus de programari en l’ordinador del client</strong> perquè amb un navegador n’hi ha prou per poder començar a treballar i gestionar els recursos en el núvol.
+</p>
+
+</div>
+
+<h3><a id="adaptacio_a_les_necessitats" >Adaptació a les necessitats</a></h3>
+<div class="level3">
+
+<p>
+Els sistemes d’informàtica en núvol, com que es basen en tecnologia de màquines virtuals, són molt més àgils que els serveis tradicionals. Fins a l’entrada en escena de la informàtica en núvol, quan algú volia contractar recursos per Internet definia quins eren els que estava contractant i aquests eren els que se li assignaven, a menys que es canviés el contracte (<span class="figref"><a href="#fig220"><span>figura</span></a></span>).
+</p>
+<div class="iocfigure"><a name="fig220"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Allotjament tradicional
+
+</figcaption><img src="../media/hosting.png" alt="" /></figure>
+<div class="footfigure"></div></div>
+<p>
+La informàtica en núvol trenca amb aquesta manera de funcionar, ja que <strong>permet canviar les característiques de la infraestructura contractada en pocs minuts</strong> i sense haver de comunicar-ho al proveïdor (<span class="figref"><a href="#fig220b"><span>figura</span></a></span>). 
+</p>
+<div class="iocfigure"><a name="fig220b"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Informàtica en núvol
+
+</figcaption><img src="../media/nuvolpreu.png" alt="" /></figure>
+<div class="footfigure"></div></div>
+<p>
+Com que es basa en la virtualització, aconseguir que la màquina que s’hagi contractat tingui més o menys recursos de memòria, espai de disc o CPU no requereix sinó fer uns quants clics. Això aporta un nou avantatge perquè no cal perdre temps comunicant amb el proveïdor per fer canvis en el contracte existent (ja que les condicions canvien), ni cal esperar que tingui a punt el nou pla contractat.
+</p>
+
+<p>
+Sovint en molts negocis la demanda sol ser variable fins i tot en un mateix dia, en què segons l’hora hi solen haver més o menys peticions. Amb la informàtica en núvol es pot canviar la capacitat de la infraestructura informàtica de l’empresa perquè reflecteixi aquesta variabilitat i per tant adaptar la <strong>infraestructura informàtica a les necessitats de cada moment</strong>. 
+</p>
+
+<p>
+Abans de l’aparició de la informàtica en núvol, intentar fer front als pics de demanda regulars requeria fer inversions en maquinari el funcionament del qual era clar que no s’optimitzaria. Amb el <em>cloud computing</em> s’aconsegueix la capacitat d’<strong>ajustar al màxim els costos en infraestructura</strong>.
+</p>
+
+</div>
+
+<h3><a id="reduccio_de_costos" >Reducció de costos</a></h3>
+<div class="level3">
+
+<p>
+Una de les característiques que defineix més bé la manera com s’ha implementat la informàtica en núvol és en la manera com es paga. Com que els proveïdors el que fan és revendre capacitat que altrament no farien servir, han optat per fer que <strong>els clients només paguin per l’ús que facin dels serveis</strong>. Això ha fet que un bon nombre d’autors, com Nicholas Carr, afirmin que aquestes tecnologies situen la informàtica en un punt molt proper al d’altres serveis com l’electricitat o l’aigua.
+</p>
+
+<p>
+Però hi ha una diferència molt gran entre els serveis que ofereix la informàtica en núvol i els altres serveis: la immediatesa. Per fer canvis en el contracte de potència elèctrica cal anar a la companyia proveïdora a modificar el contracte i un cop s’han fet les comprovacions adients es proveeix la nova capacitat. En canvi, en la informàtica en núvol aquest canvi és gestionat directament pel client i s’aconsegueix en pocs minuts.
+</p>
+<div class="iocnote"><div class="ioccontent">
+<p>
+El consum energètic és tan important que en el moment de crear nous CPD (centres de procés de dades) algunes de les grans empreses han optat per instal·lar-se en els llocs del planeta on l’energia és més econòmica i fàcil de produir.
+</p>
+</div></div>
+<p>
+També s’ha de tenir en compte un dels costos associats a l’ús de sistemes informàtics, que és <strong>el consum d’energia elèctrica</strong>. Els centres de procés de dades són grans consumidors d’energia elèctrica i els departaments d’informàtica de moltes empreses veuen que bona part del seu pressupost s’ha de destinar a l’energia elèctrica i a mantenir els equips en bones condicions de refrigeració. Per tant, des del punt de vista econòmic, la informàtica en núvol ofereix un estalvi afegit en forma d’un consum d’energia elèctrica inferior.
+</p>
+
+</div>
+
+<h2><a id="classificacio" >Classificació</a></h2>
+<div class="level2">
+
+<p>
+A pesar que les classificacions solen tenir zones difuses, una de les maneres més senzilles per entendre quines són les diferents possibilitats que ofereix la informàtica en núvol és mitjançant classificacions. El més habitual en aquest àmbit és fer la classificació de dues maneres:
+</p>
+<ol>
+<li class="level1"><div class="li"> Segons qui té la <strong>propietat</strong> del núvol.</div>
+</li>
+<li class="level1"><div class="li"> Segons el nivell de <strong>serveis</strong> que s’ofereixen.</div>
+</li>
+</ol>
+
+</div>
+
+<h3><a id="segons_la_propietat" >Segons la propietat</a></h3>
+<div class="level3">
+
+<p>
+La primera classificació dels sistemes d’informàtica en núvol es basa en qui és el propietari dels recursos o serveis que s’ofereixen. Si bé la idea general es basa a fer servir recursos que “són” dins del núvol i que per tant són públics, han anat apareixent altres alternatives per donar solucions a totes aquelles persones i organitzacions que no s’acaben de refiar de perdre el control total de les seves infraestructures.
+</p>
+<div class="ioctextl"><div class="ioccontent"><p class="ioctitle">Resistència als serveis en núvol</p>
+<p>
+La sensació de “pèrdua de poder” és un dels factors que ocasiona més resistència a la implantació dels serveis en núvol. 
+</p>
+
+<p>
+Amb el sistema tradicional una organització podia tenir la certesa de que les dades estaven dins de l’organització, i per tant podia invertir recursos en la seva protecció i control d’accés. En canvi, al posar-les en el núvol, aquestes dades ja no estan físicament en l’empresa, i qui s’encarregarà de proporcionar-ne la seguretat serà el proveïdor en núvol. Això fa que tot i els contractes que hi pugui haver hi hagi la sensació de que es perd una part del poder sobre les dades, ja que qui les té realment és el proveïdor.
+</p>
+
+<p>
+En certa manera és un problema similar al problema amb què es va trobar Microsoft a l’hora d’intentar que els usuaris de Windows XP no fessin servir el compte d’usuari de l’administrador. La majoria dels usuaris no en va fer cas perquè implicava perdre un suposat “poder” en la seva màquina. Per aquest motiu les noves versions de Windows han abordat el problema des d’una altra perspectiva: el sistema només executa els programes amb privilegis de l’administrador quan li és absolutament necessari.
+</p>
+</div></div>
+<p>
+Basant-nos en qui té la propietat de les infraestructures del núvol podem definir tres grans grups de núvols:
+</p>
+<ul>
+<li class="level1"><div class="li"> Privats. </div>
+</li>
+<li class="level1"><div class="li"> Públics.</div>
+</li>
+<li class="level1"><div class="li"> Híbrids.</div>
+</li>
+</ul>
+
+</div>
+
+<h4><a id="publics" >Públics</a></h4>
+<div class="level4">
+
+<p>
+Quan algú pensa en la informàtica en núvol el primer que li ve al cap són els núvols públics. 
+</p>
+<div class="iocimportant"><div class="ioccontent">
+<p>
+Es consideren <em>núvols públics</em> tots aquells núvols que són administrats per un proveïdor i no pel client que en fa ús.
+</p>
+</div></div>
+<p>
+Els núvols públics ofereixen diversos avantatges, entre els quals destaquem que <strong>no requereixen una gran inversió en infraestructura per part del client</strong> ja que el client simplement defineix quina és la infraestructura que li fa falta i al cap de poca estona ja la pot començar a fer servir. Això fa que qualsevol usuari, sense haver de proveir cap mena d’espai físic per instal·lar el maquinari i sense haver comprar els equips informàtics ni haver-hi d’aplicar cap mena de manteniment, pot aconseguir una infraestructura informàtica que abans poques empreses es podien permetre.
+</p>
+
+<p>
+A més, com que la infraestructura és en el CPD del proveïdor també és aquest proveïdor el qui s’ha d’encarregar del manteniment i de les actualitzacions de maquinari, de contractar personal tècnic…
+</p>
+
+<p>
+El més normal és que els núvols públics es comparteixin entre diferents clients dins de la infraestructura del proveïdor, de manera que cadascun dels clients obtingui només els recursos que necessita en cada moment.
+</p>
+
+<p>
+L’exemple clàssic són els serveis que ofereix l’empresa Amazon amb el que anomena Amazon Web Services (AWS). Aquest producte ofereix múltiples serveis que es poden contractar i que van des del simple espai d’emmagatzematge fins a màquines virtuals.
+</p>
+
+</div>
+
+<h4><a id="comunitaris" >Comunitaris</a></h4>
+<div class="level4">
+<div class="iocimportant"><div class="ioccontent">
+<p>
+La idea dels núvols comunitaris rau a compartir la infraestructura no amb tot el món sinó només amb un grup d’organitzacions d’una comunitat específica amb uns objectius comuns.
+</p>
+</div></div>
+<p>
+En general el que es fa és compartir una infraestructura d’aplicacions que, en cas que fos gestionada per cada organització, seria massa cara, ineficient o complexa.
+</p>
+
+<p>
+L’administració del núvol pot ser tan privada com pública però els costos i els beneficis es reparteixen entre els membres de la comunitat. Normalment se sol cobrar per l’ús que en faci cadascuna de les organitzacions.
+</p>
+
+<p>
+La cooperació entre competidors és més habitual del que pot semblar en les empreses i per això la informàtica en núvol els ofereix tota una sèrie de possibilitats de creació d’infraestructures que els serien molt cares d’implementar separadament. 
+</p>
+
+<p>
+Un exemple d’aquest tipus de núvols és el format per les empreses Ford, Chrysler i General Motors, anomenat USCAR, que està pensat per a la recerca de materials per fabricar vehicles.
+</p>
+
+</div>
+
+<h4><a id="privats" >Privats</a></h4>
+<div class="level4">
+
+<p>
+Moltes empreses encara recelen de posar les seves dades i infraestructura crítica al núvol sota control d’un tercer. Per aquest motiu alguns dels problemes que tenen els núvols públics s’han intentat solucionar fent servir la mateixa tecnologia per crear <strong>núvols privats</strong>. 
+</p>
+
+<p>
+Amb aquests núvols s’aconsegueix aprofitar millor els recursos de què es disposa en la xarxa local i s’aconsegueixen part dels avantatges de la informàtica en núvol, sense perdre mai el control de l’aplicació ni les seves dades, sense dependre de tercers i mantenint el control total sobre els recursos.
+</p>
+<div class="iocimportant"><div class="ioccontent">
+<p>
+El terme <em>privat</em> implica que <strong>només el client fa servir el núvol</strong> i que <strong>no es comparteix aquesta infraestructura amb cap empresa externa</strong>.
+</p>
+</div></div>
+<p>
+Això comporta que els sistemes han de ser administrats pel client com en un sistema tradicional i que per tant s’ha de renovar el maquinari i fa falta invertir en infraestructures i manteniment.
+</p>
+
+<p>
+En general els preus baixos dels núvols públics són deguts al fet que el que fan és vendre les capacitats de computació, memòria i disc que els sobren de les seves pròpies infraestructures. En general les màquines del sistema no treballen intensament sinó que, tot i que en moments puntuals exprimeixen els recursos computacionals, normalment no ho fan.
+</p>
+
+<p>
+Per tant, amb un núvol privat s’aconsegueix fer que els sistemes facin <strong>un ús més eficient dels recursos de què es disposa</strong>. Crear un núvol privat en la infraestructura de l’empresa fa que es puguin redirigir algunes de les tasques dels ordinadors més ocupats a d’altres que no treballen intensament per optimitzar el rendiment i l’ús del sistema. 
+</p>
+
+<p>
+A més, la creació d’un núvol privat deixa la porta oberta a la possibilitat que, en cas que calgui, es puguin reduir costos fent el mateix que fan els proveïdors públics: revendre els recursos sobrants a altres empreses.
+</p>
+
+<p>
+Els núvols privats permeten optimitzar els recursos propis però suposen la pèrdua de dos grans avantatges d’aquesta tecnologia: la baixa inversió i la possibilitat d’adaptació del sistema informàtic a les necessitats del moment. En un sistema privat els recursos són els que són, i si en un moment puntual es requereixen més recursos dels que es disposa, no es té la capacitat d’adaptar-se ràpidament als nous requeriments; de la mateixa manera, si les previsions han estat massa optimistes i la infraestructura és massa gran, tampoc no s’hi pot fer res perquè la inversió ja està feta.
+</p>
+
+<p>
+La llista de programari que permet crear núvols privats no para de créixer, tant en l’àmbit del codi propietari com en el del codi obert: VMware vSphere, Citrix OpenCloud, OpenNebula, OpenStack, Eucalyptus, Nimbus… Sovint aquest programari també es pot fer servir per crear núvols públics o bé interactuar-hi d’alguna manera.
+</p>
+
+</div>
+
+<h4><a id="hibrids" >Híbrids</a></h4>
+<div class="level4">
+
+<p>
+Els núvols híbrids van sorgir per intentar obtenir els avantatges dels núvols privats i dels públics. Es basen a disposar una part de la infraestructura en núvols públics i una altra en privats, de manera que es tingui una part de la informàtica fora de l’empresa i una altra a dins. 
+</p>
+<div class="iocnote"><div class="ioccontent">
+<p>
+Sovint la comunicació entre els núvols es fa mitjançant serveis web REST o SOAP.
+</p>
+</div></div>
+<p>
+Per aprofitar els avantatges cal que els núvols privats i públics es puguin “entendre”, i per això és essencial que disposin d’alguna forma d’interacció entre si. L’objectiu és que en el moment en què la infraestructura privada no pugui fer front a la càrrega de treball es puguin contractar automàticament recursos en el núvol públic.  
+</p>
+<div class="ioctextl"><div class="ioccontent"><p class="ioctitle">Intercloud</p>
+<p>
+Basant-se en la idea dels núvols híbrids, Cisco Systems va definir la idea  d’Intercloud. Es tracta de recrear Internet però prenent com a components bàsics els núvols i no pas les màquines. 
+</p>
+
+<p>
+Intercloud és un <em>núvol de núvols</em> interconnectats basant-se en estàndards oberts que puguin oferir una forma oberta d’implementar un entorn universal interoperable.
+</p>
+
+<p>
+El gran repte està a poder aconseguir que hi hagi estàndards d’interoperativitat i portabilitat entre núvols públics i privats, de manera que es puguin passar recursos d’un núvol a un altre fàcilment. Això vol dir que un núvol hauria de rebre prou informació per poder desplegar l’aplicació (recursos, seguretat, localització…).
+</p>
+
+<p>
+Aquests estàndards oberts encara no existeixen i no és clar quan succeirà però la majoria de les empreses estan d’acord que en un moment o altre s’hi acabarà arribant.
+</p>
+</div></div>
+<p>
+Per exemple, la implementació de codi obert Eucalyptus permet implementar un núvol privat que és compatible amb Amazon EC2, de manera que el núvol privat es pot comunicar amb un de públic que sigui en la infraestructura d’Amazon.
+</p>
+
+<p>
+Els núvols híbrids fins ara s’han mostrat ideals per a diverses tasques com les còpies de seguretat remotes o la implementació de plans de contingència, però tothom espera que la seva importància creixerà amb el pas dels anys.
+</p>
+
+</div>
+
+<h3><a id="segons_els_nivells_de_servei_ofert" >Segons els nivells de servei ofert</a></h3>
+<div class="level3">
+
+<p>
+És important tenir present que no tots els serveis en el núvol ofereixen les mateixes capacitats. En aquest àmbit s’ofereix des de maquinari (normalment en forma de màquines virtuals) fins a serveis de programari més o menys complexos. 
+</p>
+
+<p>
+Per tant, és important definir algun tipus de classificació dels serveis oferts en el núvol. La classificació més acceptada sol dividir els serveis en tres grans grups:
+</p>
+<ul>
+<li class="level1"><div class="li"> SaaS (programari com a servei o <em>software as a service</em>).</div>
+</li>
+<li class="level1"><div class="li"> PaaS (plataforma com a servei o <em>platform as a service</em>).</div>
+</li>
+<li class="level1"><div class="li"> IaaS (infraestructura com a servei o <em>infrastructure as a service</em>).</div>
+</li>
+</ul>
+
+<p>
+La diferència entre els serveis està en el nivell d’abstracció respecte al maquinari i sobretot en la dependència del programari que ofereixen. En IaaS disposem d’una màquina que podem personalitzar i en la qual instal·lem el nostre propi programari mentre que en SaaS tenim un programa ja desenvolupat per fer-lo servir.
+</p>
+
+<p>
+Aquesta classificació deixa clar que abans que algú triï un sistema o un altre ha de determinar quin és el sistema que s’ajusta més als seus objectius.
+</p>
+
+</div>
+
+<h4><a id="iaas" >IaaS</a></h4>
+<div class="level4">
+<div class="iocnote"><div class="ioccontent">
+<p>
+Hi ha alguns autors que anomenen aquest grup HaaS (maquinari com a servei o <em>hardware as a service</em>) però independentment del nom que hi posin, la idea final és la mateixa.
+</p>
+</div></div>
+<p>
+Els IaaS són el nivell més baix d’informàtica en núvol. El que fan els proveïdors és permetre que una part de la seva potència de càlcul i del seu emmagatzematge sigui oferta als clients en forma d’instàncies de màquines virtuals. 
+</p>
+<div class="iocimportant"><div class="ioccontent">
+<p>
+Els sistemes classificats com a IaaS el que ofereixen és la possibilitat de crear la infraestructura informàtica de l’organització en el núvol.
+</p>
+</div></div>
+<p>
+Per a l’usuari del servei, a part que no veu físicament el servidor, no hi ha cap més diferència entre tenir un servidor en les seves instal·lacions o accedir-hi mitjançant el núvol. El control total de la màquina implica que és el client qui s’encarrega de definir quin sistema operatiu i programes hi instal·la, i qui s’encarrega de controlar i gestionar el sistema.
+</p>
+
+<p>
+Per tant, això porta associades una sèrie d’obligacions ja que el proveïdor cedeix completament el control de la màquina virtual i és l’usuari qui es fa responsable de les operacions. Si la màquina arriba al límit de capacitat és l’usuari el responsable de modificar-la per adaptar-se a les noves necessitats.
+</p>
+
+<p>
+La diferència entre obtenir un servidor de núvol o instal·lar-lo en la nostra infraestructura està en els costos. S’aconsegueix tenir un sistema que es pot controlar de la mateixa manera que si fos físicament a l’empresa però:
+</p>
+<ul>
+<li class="level1"><div class="li"> No cal fer cap inversió en maquinari ni pensar quan s’ha de renovar o expandir.</div>
+</li>
+<li class="level2"><div class="li"> No s’ha d’invertir en les infraestructures de xarxa necessàries per connectar-lo. I difícilment una empresa es podrà permetre tenir una infraestructura de xarxa de la qualitat de les d’Amazon o Google.</div>
+</li>
+<li class="level2"><div class="li"> No cal tenir grans coneixements d’administració de xarxes ja que és el proveïdor qui gestionarà aquest àmbit.</div>
+</li>
+</ul>
+
+<p>
+Fins a l’aparició de la informàtica en núvol, quan algú volia externalitzar algun dels seus serveis els contractava a un proveïdor d’allotjament (<em>hosting</em>), el qual normalment oferia entorns preinstal·lats amb limitacions pel que fa a sistemes operatius, espai de disc i taxa de transferència de dades. El client es veia obligat a adaptar-se al “paquet” que oferia el proveïdor que més bé s’adaptés a les seves necessitats del moment. Aquest sistema tenia diverses limitacions:
+</p>
+<ul>
+<li class="level1"><div class="li"> Canviar les característiques del sistema normalment requeria un procés de negociació amb el proveïdor i era molt complicat aconseguir canviar el servei per a moments puntuals en què la demanda pogués créixer.</div>
+</li>
+<li class="level1"><div class="li"> El control del sistema era relativament reduït ja que la gestió estava en mans del proveïdor i no se’n solia cedir el control.</div>
+</li>
+<li class="level1"><div class="li"> Com que l’entorn ofert era fix els preus també solien ser fixos.</div>
+</li>
+</ul>
+
+<p>
+Amb IaaS s’aconsegueix que qualsevol pugui crear la seva pròpia infraestructura de maquinari:
+</p>
+<ul>
+<li class="level1"><div class="li"> Escollir quines són les característiques concretes que ha de tenir el sistema i modificar-les tant a l’alça com a la baixa en pocs minuts.</div>
+</li>
+<li class="level1"><div class="li"> Instal·lar el sistema operatiu i el programari que es vulgui en cada moment.</div>
+</li>
+<li class="level1"><div class="li"> Gestionar totalment el sistema operatiu incloent-hi els mecanismes de seguretat. </div>
+</li>
+<li class="level1"><div class="li"> Triar entre una oferta de preus en relació amb l’ús i amb la capacitat contractada, de manera que s’obtenen preus variables.</div>
+</li>
+</ul>
+
+<p>
+El proveïdor de IaaS que té més quota de mercat avui en dia és sense cap mena de dubte <strong>Amazon</strong> amb el seu producte EC2 (Elastic Compute Cloud), però d’ençà la popularització de la informàtica en núvol n’han aparegut molts d’altres, com per exemple <strong>Rackspace</strong> o <strong>GoGrid</strong>.
+</p>
+
+</div>
+
+<h4><a id="paas" >PaaS</a></h4>
+<div class="level4">
+<div class="iocimportant"><div class="ioccontent">
+<p>
+Els serveis del núvol que ofereixen PaaS el que fan és oferir un entorn de desenvolupament en què un usuari pot desenvolupar les seves pròpies aplicacions, i un entorn de desplegament per poder desplegar les aplicacions desenvolupades.
+</p>
+</div></div>
+<p>
+En l’entorn s’hi inclou tot el que cal a un programador per crear prototipus, i també desenvolupar, provar, documentar, analitzar i posar en funcionament les aplicacions. 
+</p>
+
+<p>
+Normalment aquests sistemes ofereixen algun tipus d’<acronym title="Application Programming Interface">API</acronym> (interfície de programació d’aplicacions o <em>application programming interface</em>) que <strong>simplifica notablement el desenvolupament de les aplicacions</strong> en la infraestructura a pesar que limiten els llenguatges de programació que s’hi poden fer servir. Alhora aquest avantatge a vegades és vist com un inconvenient perquè fa que <strong>canviar de proveïdor sigui molt més complicat</strong>, ja que l’<acronym title="Application Programming Interface">API</acronym> sol ser específica de cada proveïdor. Això fa per exemple que sigui complicat canviar un programa emprat amb l’<acronym title="Application Programming Interface">API</acronym> de Google per adaptar-lo a la infraestructura de Microsoft Azure.
+</p>
+
+<p>
+En general en tots hi sol haver:
+</p>
+<ul>
+<li class="level1"><div class="li"> Un servei de base de dades.</div>
+</li>
+<li class="level1"><div class="li"> Un espai d’emmagatzematge.</div>
+</li>
+<li class="level1"><div class="li"> Algun sistema de desenvolupament col·laboratiu per permetre a diferents desenvolupadors treballar alhora.</div>
+</li>
+</ul>
+
+<p>
+En general el PaaS ofereix abstracció dels detalls tècnics de l’entorn en què s’executa l’aplicació, i permet així que el desenvolupador només s’hagi de concentrar en els detalls concrets de l’aplicació que vol desenvolupar.
+</p>
+
+<p>
+El contracte sol incloure la garantia que el sistema és escalable (no caldrà canviar l’aplicació quan creixi) i també la disponibilitat del servei. També sol estipular que el proveïdor s’ha d’encarregar de fer còpies de seguretat perquè l’usuari no se n’hagi de preocupar.
+</p>
+
+<p>
+A més, no cal que el client faci cap despesa en la compra de nou maquinari ni programari, i tampoc no tindrà despeses en llicències de programari, i podrà treballar des de qualsevol lloc i en qualsevol dispositiu que tingui accés a Internet i un navegador web.
+</p>
+
+<p>
+Entre els proveïdors de PaaS més importants hi ha Google, amb el Google App Engine; Microsoft, amb Windows Azure; o Salesforce, amb Force.com:
+</p>
+<ul>
+<li class="level1"><div class="li"> <strong>Google App Engine</strong> permet desenvolupar i desplegar aplicacions en la infraestructura de Google. Entre les restriccions que té, el programa ha d’estar escrit en Python o Java i valent-se només d’algunes biblioteques. Disposa de diverses <acronym title="Application Programming Interface">API</acronym> que tenen desenvolupades tasques crítiques de manera eficient i transparent.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Windows Azure</strong> és la PaaS patrocinada per Microsoft i permet executar, desenvolupar i provar aplicacions desenvolupades en qualsevol dels llenguatges .NET tot i que també pot fer servir altres llenguatges com Ruby, PHP o Python. Incorpora una base de dades en la mateixa plataforma i permet comunicacions fent servir el protocol SOAP i REST.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Salesforce</strong> va ser una de les primeres empreses a crear un sistema PaaS i el seu sistema Force.com permet desenvolupar qualsevol tipus d’aplicació empresarial lligada a la seva plataforma. Hi ha força restriccions sobre què es pot fer.</div>
+</li>
+</ul>
+
+</div>
+
+<h4><a id="saas" >SaaS</a></h4>
+<div class="level4">
+
+<p>
+El SaaS (programari com a servei) és el servei més conegut de la informàtica en núvol perquè és el que fan servir més els usuaris finals. Per fer servir SaaS no cal tenir cap mena de coneixements d’administració ni cal ser desenvolupador; només cal saber fer servir el programa.
+</p>
+<div class="iocimportant"><div class="ioccontent">
+<p>
+El SaaS fa referència a aplicacions instal·lades pel proveïdor en el seu sistema i que estan preparades perquè les usin els clients en qualsevol moment.
+</p>
+</div></div>
+<p>
+La idea és que en comptes de comprar una còpia d’un determinat programari -per exemple, un editor de textos com Microsoft Word- el que es fa és pagar un lloguer -a un preu molt més baix- per tenir dret a usar-lo durant un determinat període. No cal instal·lar cap tipus de programa en el sistema del client sinó que s’hi accedeix mitjançant un navegador, i per tant es pot editar des de qualsevol lloc o des de qualsevol dispositiu que tingui accés a Internet.
+</p>
+
+<p>
+El que caracteritza més aquest servei és que el client no ha d’instal·lar cap tipus de programari en el seu sistema, sinó que simplement amb un navegador i una connexió a Internet pot aconseguir treballar amb el programari com si el tingués instal·lat en la seva màquina.
+</p>
+
+<p>
+El SaaS <strong>permet que el client es despreocupi de tots els aspectes relacionats amb la tecnologia</strong>: no  li cal instal·lar el programa, ni comprovar si han aparegut actualitzacions de programari o si el programa funciona correctament. De les actualitzacions, el suport i la disponibilitat del programari se n’encarrega el proveïdor.
+</p>
+
+<p>
+Com que el pagament s’estableix segons l’ús que se’n fa <strong>no requereix els costos inicials associats al programa</strong>. Les despeses inicials solen ser molt baixes en comparació de les que es requereixen en cas de voler muntar la infraestructura en la instal·lació pròpia, ja que no cal que es facin despeses en maquinari, ni en llicències de programari, ni cal ni tenir personal informàtic, perquè qualsevol amb una formació mínima pot fer servir les aplicacions.
+</p>
+<div class="ioctext"><div class="ioccontent"><p class="ioctitle">ERP i CRM en núvol</p>
+<p>
+En entorns de gestió empresarial, quan es parla de SaaS es fa referència a un ERP o un CRM que no estan instal·lats en els servidors del client sinó que estan allotjats en el servidor d’un proveïdor. Molts dels grans proveïdors de programes empresarials (SAP, Oracle, Microsoft…) ja ofereixen o planegen oferir productes que funcionen en el núvol. Un dels que té més èxit és el CRM de Salesforce, que s’ha convertit en una referència mundial.
+</p>
+</div></div>
+<p>
+Aquest darrer aspecte és especialment important en entorns empresarials ja que els programes per a empreses sempre han tingut la tendència a ser complexos, cars i normalment no solen ser senzills d’instal·lar. No és estrany que calgui un equip d’experts per instal·lar, configurar i provar el programari abans de poder-lo posar en producció, i sempre cal fer un seguiment del producte per mantenir-lo actualitzat, solucionar-ne els possibles errors…
+</p>
+
+<p>
+En els darrers anys hi hagut programes de tota mena que han començat a oferir els seus serveis en el núvol i ja s’hi poden trobar aplicacions de tot tipus: sistemes de còpies de seguretat, programes d’ofimàtica, ERP…
+</p>
+
+<p>
+Amb una visió més general, pràcticament totes les aplicacions web que ofereixin un servei es poden considerar SaaS. Els serveis de correu electrònic en el Web com Gmail o Hotmail, o els paquets d’ofimàtica en línia com Google Docs o Microsoft Office 360 es poden considerar SaaS.
+</p>
+
+</div>
+
+<h2><a id="resistencies_a_l_adopcio_de_la_informatica_en_nuvol" >Resistències a l&#039;adopció de la informàtica en núvol</a></h2>
+<div class="level2">
+
+<p>
+Els sistemes en el núvol ofereixen tota una sèrie d’avantatges en la gestió eficaç dels recursos, en l’estalvi en inversió en equipament informàtic i en les possibilitats d’escalabilitat de la infraestructura, que superen notablement el sistema tradicional de creació d’infraestructures en local. Aleshores, si els sistemes en el núvol ofereixen tants avantatges, per què no els estan adoptant massivament les empreses?
+</p>
+
+<p>
+
+</p>
+
+<p>
+A part de la resistència dels departaments d’informàtica, que solen veure com un competidor els serveis en el núvol, els motius més importants solen respondre a tres grans aspectes:
+</p>
+<ul>
+<li class="level1"><div class="li"> Seguretat i disponibilitat de les dades.</div>
+</li>
+<li class="level1"><div class="li"> Captivitat en un proveïdor.</div>
+</li>
+<li class="level1"><div class="li"> Aspectes legals de l’emmagatzematge de dades.</div>
+</li>
+</ul>
+
+</div>
+
+<h3><a id="privacitat_i_seguretat_de_les_dades" >Privacitat i seguretat de les dades</a></h3>
+<div class="level3">
+
+<p>
+Les empreses han destinat grans quantitats de diners a la compra, instal·lació i renovació dels sistemes informàtics, que s’han convertit en un aspecte fonamental de les organitzacions, i les dades que s’emmagatzemen en aquests sistemes són l’actiu principal de les companyies. 
+</p>
+
+<p>
+Per aquest motiu les organitzacions solen ser reticents a desar dades que poden ser vitals per a la seva supervivència en un sistema que pot ser a l’altra banda del món. Mentre la informació resideix dins de l’empresa ningú es no preocupa, perquè se sap on és i sempre és disponible; però en el moment en què les dades crítiques s’emmagatzemen fora de l’empresa comencen les pors.
+</p>
+
+<p>
+Entre les pors més importants hi ha les següents:
+</p>
+<ul>
+<li class="level1"><div class="li"> Es pot accedir a les dades sempre que es vulgui?</div>
+</li>
+<li class="level1"><div class="li"> Pot ser que algun dia el proveïdor tanqui? En aquest cas, com es poden recuperar les dades?</div>
+</li>
+<li class="level1"><div class="li"> Com es pot garantir que les dades no són accessibles per a un tercer?</div>
+</li>
+</ul>
+
+</div>
+
+<h4><a id="es_pot_accedir_a_les_dades_sempre_que_es_vulgui" >Es pot accedir a les dades sempre que es vulgui?</a></h4>
+<div class="level4">
+
+<p>
+Els sistemes en el núvol posen la informació de les organitzacions que els contracten en mans dels diferents proveïdors que hi estan implicats. Això representa que es depèn no solament del <strong>proveïdor dels serveis</strong> en el núvol sinó també del <strong>proveïdor de connexions a Internet</strong>.
+</p>
+
+<p>
+Si una empresa té tot el programari en el núvol, una fallada en el sistema de connexió a Internet pot provocar que aquesta empresa quedi paralitzada. Tot i que les comunicacions han millorat, la majoria de les companyies de comunicacions no poden garantir un determinat grau de qualitat en el servei i això pot ser un problema per a determinades empreses o en determinats llocs.
+</p>
+
+<p>
+L’altre possible punt de fallada està en els proveïdors de serveis en el núvol. Malgrat que solen garantir disponibilitats del seu sistema superiors al 90%, com que no tenen el programari i les dades en una infraestructura local, tot el sistema informàtic de l’empresa pot quedar inoperant si sorgeix un determinat problema fins que el proveïdor no soluciona aquest problema.
+</p>
+
+<p>
+A més, si es dóna la circumstància que es produeix un desastre, no es podrà fer servir cap dels sistemes tradicionals de recuperació de dades ja que no hi ha cap lloc per a aplicar-los, i es depèn de les capacitats tècniques del proveïdor, i també de les còpies de seguretat que aquest proveïdor hagi fet.
+</p>
+
+</div>
+
+<h4><a id="pot_ser_que_algun_dia_el_proveidor_tanqui_en_aquest_cas_com_es_poden_recuperar_les_dades" >Pot ser que algun dia el proveïdor tanqui? En aquest cas, com es poden recuperar les dades?</a></h4>
+<div class="level4">
+
+<p>
+Es tracta d’un problema que les empreses ja afronten habitualment. Què passaria, per exemple, si tanca una entitat bancària en què l’empresa diposita els seus diners? És gairebé tan difícil que tanquin alguns dels grans proveïdors de serveis en el núvol -com Google, Amazon o Microsoft- com que tanqui el banc amb què s’està treballant. 
+</p>
+
+<p>
+Com en qualsevol altre servei, contractar en el núvol requereix que s’investigui prèviament si el proveïdor té prou estabilitat i capacitat per garantir la continuïtat futura del negoci.
+</p>
+
+</div>
+
+<h4><a id="com_es_pot_garantir_que_les_dades_no_son_accessibles_per_a_un_tercer" >Com es pot garantir que les dades no són accessibles per a un tercer?</a></h4>
+<div class="level4">
+
+<p>
+Per a molts experts en seguretat la informàtica en núvol té una vulnerabilitat inherent que es deriva del fet que, com que els servidors són accessibles des de qualsevol lloc, també poden ser atacats des de qualsevol lloc. 
+</p>
+
+<p>
+A més, alguns dels problemes de seguretat habituals en els sistemes quan aquests sistemes són en local esdevenen més importants quan el programa passa al núvol. Que un usuari faci servir una contrasenya dèbil com <code>123456</code> és un problema de seguretat en un sistema local, però es converteix en una porta oberta al públic si el sistema és obert a la Xarxa.
+</p>
+
+</div>
+
+<h3><a id="captivitat_en_el_proveidor" >Captivitat en el proveïdor</a></h3>
+<div class="level3">
+
+<p>
+Un dels problemes que té actualment la informàtica en núvol és que no sempre tots els núvols són compatibles entre si. En aquest moment no existeix un estàndard d’interoperativitat entre núvols i per tant cada proveïdor fa les coses a la seva manera.
+</p>
+
+<p>
+La falta d’un estàndard d’interoperativitat que segueixin tots els proveïdors fa que si tenim un núvol en un determinat proveïdor i volem canviar-nos a un altre no sempre sigui senzill, ja que aquest pas requereix:
+</p>
+<ul>
+<li class="level1"><div class="li"> Configurar la xarxa i els mecanismes de seguretat en el nou proveïdor, adaptant-se a les seves eines.</div>
+</li>
+<li class="level1"><div class="li"> Tornar a crear l’aplicació en el nou proveïdor.</div>
+</li>
+<li class="level1"><div class="li"> Posar en funcionament l’aplicació en el nou proveïdor i comprovar que funciona igual que en l’anterior.</div>
+</li>
+<li class="level1"><div class="li"> Moure les dades del proveïdor original al nou amb els mecanismes de seguretat adequats.</div>
+</li>
+</ul>
+
+<p>
+Les complicacions del procés solen provocar que sovint, tot i que es consideri que seria positiu, el canvi no es dugui a terme i per tant l’empresa quedi a mercè d’un proveïdor concret.
+</p>
+
+<p>
+És probable que en un futur proper la interoperativitat entre núvols acabi existint; ja hi ha veus que reclamen la creació d’estàndards en el núvol que garanteixin la interoperativitat.
+</p>
+
+</div>
+
+<h3><a id="aspectes_legals" >Aspectes Legals</a></h3>
+<div class="level3">
+
+<p>
+Un aspecte que s’ha de tenir en compte són els problemes de compliment de la legislació existent en cada país. Internet és una xarxa internacional sense fronteres i per tant les dades que emmagatzemem al núvol poden anar des del país en què s’han generat fins a qualsevol altre punt del món. 
+</p>
+
+<p>
+La ubicació física on s’emmagatzemen les dades és un factor determinant des d’un punt de vista legal, ja que l’emmagatzematge de dades que continguin informació de caràcter personal és regulat per la Llei orgànica de protecció de dades de caràcter personal (LOPD).
+</p>
+
+<p>
+La LOPD estableix que no es poden fer transferències internacionals de dades a països que no tinguin una legislació internacional semblant a la que hi ha a l’Estat espanyol. I per tant no es consideren transferències internacionals de dades l’enviament a qualsevol país de la Unió Europea o un grup de països que han signat un conveni com l’Argentina o Suïssa. S’ha de tenir en compte, per tant, que cal tenir clar en quin lloc s’emmagatzemaran les dades per no tenir problemes legals. 
+</p>
+<div class="iocnote"><div class="ioccontent">
+<p>
+No tots els països tenen una legislació semblant pel que fa a protecció de dades. Per exemple, els Estats Units no la tenen, tot i que s’accepta que es facin transferències les empreses americanes que s’han adherit al <em>safe harbor</em>.
+</p>
+</div></div>
+<p>
+La LOPD també té altres aspectes que s’han de tenir en compte a l’hora de posar les dades en el núvol:
+</p>
+<ul>
+<li class="level1"><div class="li"> Obliga a tenir un responsable de les dades que és qui s’ha d’encarregar d’<strong>establir tota una sèrie de mecanismes de seguretat</strong> destinats a garantir la integritat i la confidencialitat de les dades que s’emmagatzemen. Com pot saber el responsable de seguretat que això s’està fent si les dades són a l’altra punta del món?</div>
+</li>
+<li class="level1"><div class="li"> Posar les dades a disposició del proveïdor de serveis en el núvol es pot considerar <strong>tractament de dades per un tercer</strong> i per tant s’han de complir tota una sèrie de normes i mecanismes que ha de dur a terme el proveïdor.</div>
+</li>
+</ul>
+
+<p>
+Tots aquests problemes legals es poden esquivar definint clàusules  en els contractes amb els proveïdors en el núvol que s’adaptin a la legislació espanyola. Això requereix que les organitzacions abans de contractar un servei en el núvol es vegin obligades a repassar el contracte de serveis per veure si realment aquest contracte s’adapta a la legislació local o no.
+</p>
+
+</div>
+
+	 </article>
+     <div class="pnpage">
+      <div class="left-corner"></div>
+      <div id="prevpage">Anar a la p&agrave;gina anterior:<br /><a href="../../../WebContent/u4/a2/exercicis.html">Exercicis d'autoavaluació</a></div>
+      <div id="nextpage">Anar a la p&agrave;gina seg&uuml;ent:<br /><a href="../../../WebContent/u4/a3/activitats.html">Activitats</a></div>
+      <div class="right-corner"></div>
+     </div>
+    </div>
+    <footer class="footer">
+      <div><small>Aquest document està subjecte a una llicència oberta de Creative Commons, es reserva el dret de reconeixement de l'autoria, d'exigir que no se'n faci cap mena d'ús comercial. Si altereu o transformeu aquesta obra, o en genereu obres derivades, només podeu distribuir l'obra generada amb una llicència idèntica a aquesta.</small></div>
+    </footer>
+ </div>
+ <div id="back_preview" class="hidden"></div>
+ <div id="preview" class="hidden">
+  <div class="prevcontent"></div>
+ </div>
+ <div id="help-tooltips">
+  <div id="help-toc" class="hidden tooltip"><span>Taula de continguts:</span> Ofereix una vista general de l&#39;estructura del m&ograve;dul, que us facilitar&agrave; la navegaci&oacute; a trav&eacute;s dels seus continguts.<span class="arrow-left"></span></div> 
+  <div id="help-settings" class="hidden tooltip"><span>Opcions de format:</span> Permet configurar el format de lectura a partir de les vostres prefer&egrave;ncies, modificant la mida de la lletra, el color del fons, l&#39;amplada de la p&agrave;gina o l&#39;ocultaci&oacute; dels continguts complementaris, entre d&#39;altres.<span class="arrow-left"></span></div>
+  <div id="help-printer" class="hidden tooltip"><span>Imprimir:</span>  Envia el contingut seleccionat a la impressora.<span class="arrow-left"></span></div>
+  <div id="help-favorites" class="hidden tooltip"><span>Prefereits:</span> Permet desar aquelles parts del contingut a les que us interessi accedir en un moment posterior; us permetr&agrave; anar creant un repositori personalitzat de les seccions que considereu m&eacute;s rellevants. Un cop l&#39;hageu començat a fer servir se us mostrar&agrave; a sota un comptador que us informar&agrave; del nombre de preferits que s&#39;hagin emmagatzemat fins al moment.<span class="arrow-left"></span></div>
+  <div id="help-favcounter" class="hidden tooltip"><span>Comptador i llistat de preferits:</span> Indica el nombre de preferits que s&#39;han desat fins el moment; clicant damunt seu accedireu al llistat de preferits, i a trav&eacute;s d&#39;aquest podreu accedir directament als continguts que hageu emmagatzemat.<span class="arrow-left"></span></div>
+  <div id="help-help_icon" class="hidden tooltip"><span>Ajuda:</span> Aquesta opci&oacute; activa la informaci&oacute; de les funcionalitats del web tot situant el punter del ratol&iacute; al damunt dels diferents &iacute;tems.<span class="arrow-left"></span></div>
+  <div id="help-sidebar-hide" class="hidden tooltip"><span>Mostrar/Ocultar barra lateral:</span>  Deshabilita la barra d&#39;opcions, permetent la seva recuperaci&oacute; quan es desitgi.<span class="arrow-left"></span></div>
+  <div id="help-search" class="hidden tooltip"><span>Cerca:</span>  Introdu&iuml;u les paraules clau sobre aquells conceptes que desitgeu localitzar en els continguts del m&ograve;dul. Tamb&eacute; podeu excloure un terme de la cerca tot afegint-hi el signe &#8220;-&#8221; al davant.<span class="arrow-top"></span></div>
+  <div id="help-header" class="hidden tooltip"><span>Cap&ccedil;alera:</span>  Indica l&#39;apartat o secci&oacute; que es mostra en pantalla. Tingueu present que les capçaleres de segon, tercer i quart nivell tamb&eacute; es poden desar com a marcadors.<span class="arrow-left"></span></div>
+</div> 
+</body>
+</html>

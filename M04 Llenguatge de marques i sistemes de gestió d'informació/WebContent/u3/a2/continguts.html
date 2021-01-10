@@ -1,0 +1,1887 @@
+<!doctype html>
+
+<!--[if lt IE 7 ]> <html class="ie ie6 no-js" lang="ca"> <![endif]-->
+<!--[if IE 7 ]>    <html class="ie ie7 no-js" lang="ca"> <![endif]-->
+<!--[if IE 8 ]>    <html class="ie ie8 no-js" lang="ca"> <![endif]-->
+<!--[if IE 9 ]>    <html class="ie ie9 no-js" lang="ca"> <![endif]-->
+<!--[if gt IE 9]><!--><html class="no-js" lang="ca"><!--<![endif]-->
+<!-- the "no-js" class is for Modernizr. -->
+
+<head id="www-sitename-com" data-template-set="html5-reset">
+
+	<meta charset="utf-8">
+	
+	<!-- Always force latest IE rendering engine (even in intranet) & Chrome Frame -->
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	
+	<title>Llenguatges de marques i sistemes de gestió d'informació</title>
+	
+<!-- <meta name="title" content=""> --> 
+	<meta name="description" content="">
+	<!-- Google will often use this as its description of your page/site. Make it good. -->
+	
+	<meta name="google-site-verification" content="">
+	<!-- Speaking of Google, don't forget to set your site up: http://google.com/webmasters -->
+	
+	<meta name="author" content="Institut Obert de Catalunya">
+	<meta name="Copyright" content="Copyright Institut Obert de Catalunya 2011. All Rights Reserved.">
+
+	<!-- Dublin Core Metadata : http://dublincore.org/ -->
+	<meta name="DC.title" content="Llenguatges de marques i sistemes de gestió d'informació">
+	<meta name="DC.subject" content="Informàtica i comunicacions">
+	<meta name="DC.creator" content="Institut Obert de Catalunya">
+	
+	<!--  Mobile Viewport Fix
+	j.mp/mobileviewport & davidbcalhoun.com/2010/viewport-metatag 
+	device-width : Occupy full width of the screen in its current orientation
+	initial-scale = 1.0 retains dimensions instead of zooming out if page height > device height
+	maximum-scale = 1.0 retains dimensions instead of zooming in if page width < device width
+	-->
+	<!-- Uncomment to use � use thoughtfully!
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+	-->
+
+	<link rel="shortcut icon" href="../../../img/favicon.ico">
+	<!-- This is the traditional favicon.
+		 - size: 16x16 or 32x32
+		 - transparency is OK
+		 - see wikipedia for info on browser support: http://mky.be/favicon/ -->
+		 
+	<link rel="apple-touch-icon" href="../../../img/apple-touch-icon.png">
+	<!-- The is the icon for iOS's Web Clip.
+		 - size: 57x57 for older iPhones, 72x72 for iPads, 114x114 for iPhone4's retina display (IMHO, just go ahead and use the biggest one)
+		 - To prevent iOS from applying its styles to the icon name it thusly: apple-touch-icon-precomposed.png
+		 - Transparency is not recommended (iOS will put a black BG behind the icon) -->
+	
+	<!-- CSS: screen, mobile & print are all in the same file -->
+	<link rel="stylesheet" href="../../../_/css/style.css">
+
+	<!-- CSS: jQuery UI -->
+	<link rel="stylesheet" href="../../../_/css/jquery-ui.css">
+	
+	<!-- all our JS is at the bottom of the page, except for Modernizr. -->
+	<script src="../../../_/js/modernizr-1.7.min.js"></script>
+	<script src="../../../_/js/Hyphenator.js" type="text/javascript"></script>
+	<script type="text/javascript">
+	   Hyphenator.config({
+		minwordlength : 4
+	   });
+	   Hyphenator.run();
+	</script>
+    <script src="../../../_/js/build.js" type="text/javascript"></script>
+</head>
+
+<body class="style-newspaper">
+
+<div class="wrapper"><!-- not needed? up to you: http://camendesign.com/code/developpeurs_sans_frontieres -->
+
+	<header id="header">
+		<div class="head"><a href="http://ioc.gencat.cat"><img src="../../../img/logo.png" alt="Institut Obert de Catalunya"/></a><a href="http://creativecommons.org/licenses/by-nc-sa/3.0/es/deed.ca"><img src="../../../img/license.png" alt="Llic&egrave;ncia" class="license"/></a></div>
+		<div class="headdocument"><a href="../../../index.html">Llenguatges de marques i sistemes de gestió d'informació</a></div>
+        <div id="search" class="search" name="search">
+         <form id="frmsearch" action="../../../search.html" method="get">
+          <input type="text" name="q"/>
+        </form>
+        </div>
+	</header>
+   <div id="upbutton" class="upbutton" style="display:none;"><img src="../../../img/uparrow.png" alt="Pujar a l'inici de p&agrave;gina"/></div>
+   <aside id="aside">
+    <div id="menu">
+      <ul>
+       <li name="toc"><div><img src="../../../img/toc.png" alt="&Iacute;ndex"/></div></li>
+       <li name="settings"><div><img src="../../../img/settings.png" alt="Configuraci&oacute;"/></div></li>
+       <li name="printer"><div><img src="../../../img/printer.png" alt="Imprimir"/></div></li>
+       <li name="favorites"><div><img src="../../../img/favorites.png" alt="Favorits"/></div></li>
+       <li name="help_icon" class="help_icon"><div><img src="../../../img/help_icon.png" alt="Ajuda"/></div></li>
+      </ul>
+     </div>
+   </aside>
+   <div id="sidebar-hide" name="sidebar-hide"><img src="../../../img/arrows.png"/></div>
+   <section>
+     <div id="toc" class="hidden">
+      <div class="menucontent">
+        <ul>
+        <li id="u3" class="parentnode"><p><a class="unit" href="../../../WebContent/u3/introduccio.html">3. Àmbits d’aplicació de l’XML</a></p><ul class="expander"><li id="u3introduccio"><a href="../../../WebContent/u3/introduccio.html">Introducció</a></li><li id="u3resum"><a href="../../../WebContent/u3/resum.html">Resum</a></li><li id="u3objectius"><a href="../../../WebContent/u3/objectius.html">Resultats d'aprenentatge</a></li><li id="u3referencies"><a href="../../../WebContent/u3/referencies.html">Referències</a></li><li id="u3a1" class="tocsection"><p id='u3a1continguts'><a class="section" href="../../../WebContent/u3/a1/continguts.html">Sindicació de continguts</a><span class="buttonexp"></span></p><ul><li id="u3a1activitats"><a href="../../../WebContent/u3/a1/activitats.html">Activitats</a></li><li id="u3a1exercicis"><a href="../../../WebContent/u3/a1/exercicis.html">Exercicis d'autoavaluació</a></li></ul></li><li id="u3a2" class="tocsection"><p id='u3a2continguts'><a class="section" href="../../../WebContent/u3/a2/continguts.html">Conversió i adaptació de documents XML</a><span class="buttonexp"></span></p><ul><li id="u3a2activitats"><a href="../../../WebContent/u3/a2/activitats.html">Activitats</a></li><li id="u3a2exercicis"><a href="../../../WebContent/u3/a2/exercicis.html">Exercicis d'autoavaluació</a></li></ul></li><li id="u3a3" class="tocsection"><p id='u3a3continguts'><a class="section" href="../../../WebContent/u3/a3/continguts.html">Bases de dades natives XML. Llenguatge de consultes (XQuery)</a><span class="buttonexp"></span></p><ul><li id="u3a3activitats"><a href="../../../WebContent/u3/a3/activitats.html">Activitats</a></li><li id="u3a3exercicis"><a href="../../../WebContent/u3/a3/exercicis.html">Exercicis d'autoavaluació</a></li></ul></li></ul></li><li id="" class="indexnode"><p><a href="../../../index.html">Anar a l&#39;&iacute;ndex general</a></p></li>
+        </ul>
+      </div>
+    </div>
+   </section>
+   <section>
+   <div id="settings" class="hidden">
+    <div class="menucontent">
+     <div class="allsettings">
+     <div class="settings">
+      <label>Font i Color</label>
+		<div class="setting-option">
+	        <ul class="fontBackground">
+				<li id="style-newspaper" title="Newspaper" class="appearance-style-newspaper"><span>Newspaper</span></li>
+                <li id="style-novel" title="Novel" class="appearance-style-novel"><span>Novel</span></li>
+                <li id="style-ebook" title="eBook" class="appearance-style-ebook"><span>eBook</span></li>
+				<li id="style-inverse" title="Inverse" class="appearance-style-inverse active"><span>Inverse</span></li>
+				<li id="style-athelas" title="Athelas" class="appearance-style-athelas"><span>Athelas</span></li>
+			</ul>
+		</div>
+     </div>
+	<div class="settings">
+      <label>Amplada</label>
+		<div class="setting-option">
+	        <div id="slider-width"></div>
+		</div>
+     </div>
+     <div class="settings">
+      <label>Mida de la font</label>
+		<div class="setting-option">
+	        <div id="slider-font"></div>
+		</div>
+     </div>
+     <div class="settings">
+      <label>Mida de la font</label>
+	  <div class="setting-option">
+       <form action="" class="sett-options">
+		<ul>
+		    <li><input type="checkbox" id="secondary-content" /><label for="secondary-content">Mostra recursos complementaris</label></li>
+		    <li><input type="checkbox" id="main-images" /><label for="main-images">Mostra imatges</label></li>
+		    <li><input type="checkbox" id="text-alignment" /><label for="text-alignment">Text justificat</label></li>
+			<li><input type="checkbox" id="text-hyphen" /><label for="text-hyphen">Partici&oacute; sil·l&agrave;bica</label></li>
+		</ul>
+       </form>
+	  </div>
+     </div>
+     </div>
+    </div>
+   </div>
+   </section>
+ <section>
+ <div id="favorites" class="hidden"></div>
+ </section>   
+ <div id="bridge" class="hidden"></div>
+ <div id="help" class="hidden">
+  <div class="helptitle">Dreceres del teclat<hr></div>
+  <div class="helpsection"><span>General</span>
+   <ul>
+    <li><span class="shortcut">g</span>: Anar al men&uacute; de navegaci&oacute;</li>
+    <li><span class="shortcut">o</span>: Anar a opcions</li>
+    <li><span class="shortcut">s</span>: Guardar la p&agrave;gina actual a favorits</li>
+    <li><span class="shortcut">p</span>: Imprimir la p&agrave;gina actual</li>
+    <li><span class="shortcut">?</span>: Mostrar/Ocultar l&#39;ajuda</li>
+   </ul>
+  </div>
+  <div class="helpsection"><span>Navegaci&oacute;</span>
+   <ul>
+    <li><span class="shortcut">i</span>: Anar a l&#39;&iacute;ndex general</li>
+    <li><span class="shortcut">t</span>: Anar a l&#39;inici de p&agrave;gina</li>
+    <li><span class="shortcut">b</span>: Anar al final de p&agrave;gina</li>
+    <li><span class="shortcut">j</span>: Anar cap endavant dintre la p&agrave;gina</li>
+    <li><span class="shortcut">k</span>: Anar cap enrere dintre la p&agrave;gina</li>
+    <li><span class="shortcut">h</span>: Anar a la p&agrave;gina anterior:</li>
+    <li><span class="shortcut">l</span>: Anar a la p&agrave;gina seg&uuml;ent:</li>
+   </ul>
+   </div>
+ </div>
+ <div id="favcounter" name="favcounter" class="hidden"><span></span></div>
+ <div id="navmenu" class="navmenu"><ul class="webnav"><li><a href="../../../index.html" title="Anar a l&#39;&iacute;ndex general">Inici</a></li><li><a href="../introduccio.html">Àmbits d’aplicació de l’XML</a></li><li>Conversió i adaptació de documents XML</li></ul></div>
+	<div id="content" lang="ca" class="hyphenate text">
+     <article lang="ca" class="sheet">
+        <h1><a id="conversio_i_adaptacio_de_documents_xml"> Conversió i adaptació de documents XML </a></h1>
+    	
+<p>
+A pesar que l’XML és un format relativament llegible en ser visualitzat, aquest no és un dels seus objectius principals, i menys si es té en compte que als humans els agrada llegir les dades col·locades en determinats formats que els facin la lectura més agradable –mentre que l’especificació XML exposa que en cap cas no s’ha d’incloure informació sobre la visualització en els documents.
+</p>
+
+<p>
+En determinats casos pot caldre transformar els documents XML perquè siguin més fàcils de visualitzar, o també adaptar-los perquè puguin ser llegits per programes específics.
+</p>
+
+<p>
+XML està pensat sobretot per a <strong>emmagatzemar i intercanviar informació</strong>, de manera que si cal representar les dades d’una manera diferent per optimitzar un procés o per millorar-ne la visualització hi haurà diverses possibilitats:
+</p>
+<ol>
+<li class="level1"><div class="li"> <strong>Desenvolupar un programa</strong>: com que és relativament senzill treballar amb XML, es podria desenvolupar un programa que agafi les dades XML i generi la sortida tal com la volem. Això té l’inconvenient que caldrà tenir coneixements de programació i que pot representar molta feina encara que el que calgui fer sigui trivial.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Fer servir <acronym title="Cascading Style Sheets">CSS</acronym></strong>: en molts casos una solució senzilla seria fer servir <acronym title="Cascading Style Sheets">CSS</acronym> per representar la informació de manera més amigable fent servir un navegador. Però només serveix per canviar la visualització, no per canviar el document.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Transformar el document</strong>: una solució alternativa consisteix a transformar el document en un altre que estigui pensat per ser visualitzat. Hi ha molt formats que estan pensats sobretot per ser visualitzats: PDF, <acronym title="HyperText Markup Language">HTML</acronym>, XHTML, etc.</div>
+</li>
+</ol>
+
+<h2><a id="us_de_css" >Ús de CSS</a></h2>
+<div class="level2">
+
+<p>
+En molts casos si l’objectiu és que el document sigui visualitzat d’una manera més agradable la solució més senzilla pot ser visualitzar-lo mitjançant <acronym title="Cascading Style Sheets">CSS</acronym>.
+</p>
+
+<p>
+<acronym title="Cascading Style Sheets">CSS</acronym> és interessant sobretot quan es vulguin fer adaptacions senzilles. Si es té un document XML com aquest:
+</p>
+<pre class="code xml"><ol><li class="li1"><div class="de1"><span class="sc3"><span class="re1">&lt;?xml</span> <span class="re0">version</span>=<span class="st0">&quot;1.0&quot;</span> <span class="re2">?&gt;</span></span></div></li><li class="li1"><div class="de1"><span class="sc3"><span class="re1">&lt;professor<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1">    <span class="sc3"><span class="re1">&lt;nom<span class="re2">&gt;</span></span></span>Marcel<span class="sc3"><span class="re1">&lt;/nom<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1">    <span class="sc3"><span class="re1">&lt;cognom<span class="re2">&gt;</span></span></span>Garcia<span class="sc3"><span class="re1">&lt;/cognom<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1">    <span class="sc3"><span class="re1">&lt;departament<span class="re2">&gt;</span></span></span>Departament d'Informàtica<span class="sc3"><span class="re1">&lt;/departament<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1">    <span class="sc3"><span class="re1">&lt;carrecs<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1">       <span class="sc3"><span class="re1">&lt;carrec<span class="re2">&gt;</span></span></span>Cap de Departament<span class="sc3"><span class="re1">&lt;/carrec<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1">       <span class="sc3"><span class="re1">&lt;carrec<span class="re2">&gt;</span></span></span>Tutor<span class="sc3"><span class="re1">&lt;/carrec<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1">    <span class="sc3"><span class="re1">&lt;/carrecs<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1"><span class="sc3"><span class="re1">&lt;/professor<span class="re2">&gt;</span></span></span></div></li></ol></pre>
+
+<p>
+…i es vol representar com una targeta de vista, es pot fer servir un document <acronym title="Cascading Style Sheets">CSS</acronym> que contingui aquestes línies:
+</p>
+<pre class="code css"><ol><li class="li1"><div class="de1">professor <span class="br0">&#123;</span></div></li><li class="li1"><div class="de1">    <span class="kw1">padding</span><span class="sy0">:</span> <span class="re3">30px</span><span class="sy0">;</span></div></li><li class="li1"><div class="de1">    <span class="kw1">margin</span><span class="sy0">:</span> <span class="re3">30px</span><span class="sy0">;</span></div></li><li class="li1"><div class="de1">    <span class="kw1">border</span><span class="sy0">:</span> <span class="re3">4px</span> <span class="kw1">black</span> <span class="kw2">solid</span><span class="sy0">;</span></div></li><li class="li1"><div class="de1">    <span class="kw1">width</span><span class="sy0">:</span> <span class="re3">40%</span><span class="sy0">;</span></div></li><li class="li1"><div class="de1"><span class="br0">&#125;</span></div></li><li class="li1"><div class="de1">&nbsp;</div></li><li class="li1"><div class="de1">nom<span class="sy0">,</span>cognom <span class="br0">&#123;</span> </div></li><li class="li1"><div class="de1">    <span class="kw1">font-size</span><span class="sy0">:</span><span class="re3">30px</span><span class="sy0">;</span> </div></li><li class="li1"><div class="de1"><span class="br0">&#125;</span></div></li><li class="li1"><div class="de1">&nbsp;</div></li><li class="li1"><div class="de1">departament <span class="br0">&#123;</span></div></li><li class="li1"><div class="de1">    <span class="kw1">padding-top</span><span class="sy0">:</span><span class="re3">20px</span><span class="sy0">;</span></div></li><li class="li1"><div class="de1">    <span class="kw1">display</span><span class="sy0">:</span><span class="kw2">block</span><span class="sy0">;</span></div></li><li class="li1"><div class="de1">    <span class="kw1">font-weight</span><span class="sy0">:</span><span class="kw2">bold</span><span class="sy0">;</span></div></li><li class="li1"><div class="de1"><span class="br0">&#125;</span></div></li><li class="li1"><div class="de1">&nbsp;</div></li><li class="li1"><div class="de1">carrec<span class="br0">&#123;</span>    </div></li><li class="li1"><div class="de1">    <span class="kw1">font-style</span><span class="sy0">:</span> <span class="kw2">italic</span><span class="sy0">;</span></div></li><li class="li1"><div class="de1">    <span class="kw1">padding-left</span><span class="sy0">:</span><span class="re3">10px</span><span class="sy0">;</span></div></li><li class="li1"><div class="de1"><span class="br0">&#125;</span></div></li><li class="li1"><div class="de1">&nbsp;</div></li><li class="li1"><div class="de1">carrec<span class="re2">:after </span><span class="br0">&#123;</span> <span class="kw1">content</span><span class="sy0">:</span><span class="st0">&quot;,&quot;</span><span class="sy0">;</span> <span class="br0">&#125;</span></div></li></ol></pre>
+
+<p>
+Així, es representarà el document XML com en la <span class="figref"><a href="#fig114"><span>figura</span></a></span>.
+</p>
+<div class="iocfigure"><a name="fig114"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Resultat de la transformació
+
+</figcaption><img src="../media/css.png" alt="" /></figure>
+</div>
+<p>
+Malgrat això, <acronym title="Cascading Style Sheets">CSS</acronym> té moltes limitacions a l’hora de presentar la informació:
+</p>
+<ol>
+<li class="level1"><div class="li"> La informació no pot ser reordenada con vulguem. L’única manera de simular el canvi d’ordre és fer servir posicionaments absoluts.</div>
+</li>
+<li class="level1"><div class="li"> Els atributs es poden mostrar però hi ha moltes limitacions per fer-ho.</div>
+</li>
+<li class="level1"><div class="li"> No es poden afegir estructures noves producte de càlculs o de procés de les dades del document.</div>
+</li>
+<li class="level1"><div class="li"> No té maneres senzilles de formatar les dades en pàgines de text per ser impreses.</div>
+</li>
+</ol>
+
+<p>
+Si l’objectiu final no és simplement decorar el fitxer sinó transformar-lo en un altre document totalment diferent, <acronym title="Cascading Style Sheets">CSS</acronym> no serveix. <acronym title="Cascading Style Sheets">CSS</acronym> no transforma el document sinó que simplement canvia la manera com es visualitza.
+</p>
+
+</div>
+
+<h2><a id="transformacio_de_documents" >Transformació de documents</a></h2>
+<div class="level2">
+
+<p>
+Per intentar aconseguir fer tot allò que <acronym title="Cascading Style Sheets">CSS</acronym> no podia fer es va crear un nou llenguatge de plantilles: XSL (<em>extensible stylesheet language</em>).
+</p>
+
+<p>
+Inicialment es van concentrar a poder representar la informació de manera que pogués ser mostrada en documents impresos i en pantalla però després es va acabar definint un sistema per fer transformacions genèriques de documents XML en altres coses: documents de text, documents XML, pàgines web, etc.
+</p>
+<div class="iocimportant"><div class="ioccontent">
+<p>
+Actualment XSL és una família de llenguatges que serveixen per definir transformacions i presentacions de documents XML.
+</p>
+</div></div>
+<p>
+La família XSL està formada per tres llenguatges:
+</p>
+<ul>
+<li class="level1"><div class="li"> <strong>XSL-FO</strong> (<em>XSL formatting objects</em>): un llenguatge per definir el format que s’ha d’aplicar a un document.</div>
+</li>
+<li class="level1"><div class="li"> <strong>XSLT</strong> (<em>XSL transformations</em>): un llenguatge per transformar documents XML.</div>
+</li>
+<li class="level1"><div class="li"> <strong>XPath</strong>: un llenguatge per accedir a parts dels documents XML. </div>
+</li>
+</ul>
+
+</div>
+
+<h3><a id="xsl-fo" >XSL-FO</a></h3>
+<div class="level3">
+
+<p>
+XSL-FO és un llenguatge basat en XML que està pensat per donar format als documents XML, però a diferència d’altres llenguatges amb objectius similars, com <acronym title="Cascading Style Sheets">CSS</acronym> o XHTML, està pensat per generar sortides tant per a formats de pantalla com per a formats paginats.
+</p>
+
+<p>
+XSL-FO és un llenguatge que:
+</p>
+<ul>
+<li class="level1"><div class="li"> Permet especificar amb molta precisió el contingut d’un document (paginació, organització, estil, etc.).</div>
+</li>
+<li class="level1"><div class="li"> Permet crear documents d’alta qualitat.</div>
+</li>
+<li class="level1"><div class="li"> És ideal per generar documents amb dades que canvien sovint.</div>
+</li>
+</ul>
+
+<p>
+XSL-FO sobretot es fa servir per generar documents en formats pensats per ser impresos com PDF o Postcript.
+</p>
+<div class="ioctext"><div class="ioccontent"><p class="ioctitle">Generació de PDF</p>
+<p>
+Un dels processadors d’XSL-FO més populars és l’Apache FOP, que permet crear documents en PDF a partir de documents XSL-FO.
+</p>
+</div></div>
+<p>
+És corrent que la generació del document es faci en dues fases (<span class="figref"><a href="#fig115"><span>figura</span></a></span>):
+</p>
+<ol>
+<li class="level1"><div class="li"> Transformació del document XML en un document XSL-FO amb el llenguatge de transformacions XSLT.</div>
+</li>
+<li class="level1"><div class="li"> Transformació del document XSL-FO en el format que volem amb un processador XSL-FO.</div>
+</li>
+</ol>
+<div class="iocfigure"><a name="fig115"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+ Transformació d’un document XML en PDF i <acronym title="HyperText Markup Language">HTML</acronym>
+
+</figcaption><img src="../media/asxm04u3_05.png" alt="" /></figure>
+</div>
+<p>
+Per tant, els processadors XSL-FO s’encarreguen de generar el format que volem a partir de les dades especificades en els documents XSL-FO.
+</p>
+
+</div>
+
+<h2><a id="processadors_xpath_o_xslt" >Processadors XPath o XSLT</a></h2>
+<div class="level2">
+
+<p>
+En general els processadors XPath o XSLT es proporcionaran per mitjà de biblioteques que podran ser cridades des dels programes. 
+</p>
+
+<p>
+Això permet simplificar tot el procés de creació de programes que facin servir XPath o XSLT, ja que quan una aplicació es vulgui aprofitar de les característiques d’algun d’aquests llenguatges no ho haurà d’implementar tot de nou sinó simplement fer servir les biblioteques.
+</p>
+
+</div>
+
+<h3><a id="biblioteques" >Biblioteques</a></h3>
+<div class="level3">
+
+<p>
+En alguns casos les biblioteques tindran suport tant per a XSLT com per a XPath, i en d’altres casos s’haurà de recórrer a dues biblioteques diferents. Per exemple, en el cas del <strong>suport XML del projecte Gnome</strong>, per poder tenir suport XPath i XSLT hem de recórrer a dues biblioteques diferents:
+</p>
+<ul>
+<li class="level1"><div class="li"> <strong>libxml2</strong>: ofereix suport per processar XML i XPath. </div>
+</li>
+<li class="level1"><div class="li"> <strong>libxslt</strong>: agafa de base libxml2 per permetre fer transformacions XSLT.</div>
+</li>
+</ul>
+
+<p>
+Mentre que amb <strong>Saxon</strong> el suport XPath i XSLT està en la mateixa biblioteca. 
+</p>
+
+<p>
+Les biblioteques més usades són:
+</p>
+<ul>
+<li class="level1"><div class="li"> libxml2 i libxslt</div>
+</li>
+<li class="level1"><div class="li"> Apache Xalan</div>
+</li>
+<li class="level1"><div class="li"> Saxon</div>
+</li>
+<li class="level1"><div class="li"> MSXML</div>
+</li>
+</ul>
+
+<p>
+A l’hora de triar una biblioteca o una altra cal tenir clar si necessitem el suport per a les versions 2.0 d’aquests llenguatges, ja que no hi sol haver gaire problemes per fer transformacions amb les versions 1.0, i tots els processadors les solen suportar; no sempre passa el mateix amb les versions 2.0.
+</p>
+
+</div>
+
+<h4><a id="libxml2_i_libxslt" >libxml2 i libxslt</a></h4>
+<div class="level4">
+
+<p>
+Del projecte GNOME han sortit les biblioteques <em>libxml2</em> i <em>libxslt</em>, que són biblioteques que permeten tenir suport per a XML, XPath i transformacions XSLT. 
+</p>
+
+<p>
+La utilitat <em>xmllint</em> de <em>libxml2</em> permet executar expressions XPath de dues maneres. De manera interactiva amb el paràmetre <code>–shell</code>. Amb aquest paràmetre entrem en un entorn d’ordres que ens permet executar ordres contra el fitxer. 
+</p>
+
+<p>
+Una de les ordres possibles dins d’aquest entorn és <code>xpath</code>, que ens donarà informació sobre com seran els resultats.
+</p>
+<pre class="code bash"><ol><li class="li1"><div class="de1">$ xmllint <span class="re5">--shell</span> persones.xml </div></li><li class="li1"><div class="de1"><span class="sy0">/</span> <span class="sy0">&gt;</span> xpath <span class="sy0">//</span>nom </div></li><li class="li1"><div class="de1">Object is a Node Set :</div></li><li class="li1"><div class="de1">Set contains <span class="nu0">4</span> nodes:</div></li><li class="li1"><div class="de1"><span class="nu0">1</span>  ELEMENT nom</div></li><li class="li1"><div class="de1"><span class="nu0">2</span>  ELEMENT nom</div></li><li class="li1"><div class="de1"><span class="nu0">3</span>  ELEMENT nom</div></li><li class="li1"><div class="de1"><span class="nu0">4</span>  ELEMENT nom</div></li></ol></pre>
+
+<p>
+Per veure els resultats d’una manera més amigable és més útil fer servir <code>cat</code>.
+</p>
+<pre class="code bash"><ol><li class="li1"><div class="de1">$ xmllint <span class="re5">--shell</span> persones.xml </div></li><li class="li1"><div class="de1"><span class="sy0">/</span> <span class="sy0">&gt;</span> <span class="kw2">cat</span> <span class="sy0">//</span>nom</div></li><li class="li1"><div class="de1"> <span class="re5">-------</span></div></li><li class="li1"><div class="de1"><span class="sy0">&lt;</span>nom<span class="sy0">&gt;</span>Marcel Puig<span class="sy0">&lt;/</span>nom<span class="sy0">&gt;</span></div></li><li class="li1"><div class="de1"> <span class="re5">-------</span></div></li><li class="li1"><div class="de1"><span class="sy0">&lt;</span>nom<span class="sy0">&gt;</span>Frederic Pi<span class="sy0">&lt;/</span>nom<span class="sy0">&gt;</span></div></li><li class="li1"><div class="de1"> <span class="re5">-------</span></div></li><li class="li1"><div class="de1"><span class="sy0">&lt;</span>nom<span class="sy0">&gt;</span>Filomeno Garcia<span class="sy0">&lt;/</span>nom<span class="sy0">&gt;</span></div></li><li class="li1"><div class="de1"> <span class="re5">-------</span></div></li><li class="li1"><div class="de1"><span class="sy0">&lt;</span>nom<span class="sy0">&gt;</span>Manel Puigdevall<span class="sy0">&lt;/</span>nom<span class="sy0">&gt;</span></div></li></ol></pre>
+
+<p>
+L’altra possibilitat consisteix a especificar l’expressió XPath en la línia d’ordres fent servir el paràmetre <code>–xpath</code>:
+</p>
+<pre class="code bash"><ol><li class="li1"><div class="de1">$ xmllint <span class="re5">--xpath</span> <span class="sy0">//</span>nom persones.xml </div></li><li class="li1"><div class="de1"><span class="sy0">&lt;</span>nom<span class="sy0">&gt;</span>Marcel Puig<span class="sy0">&lt;/</span>nom<span class="sy0">&gt;</span></div></li><li class="li1"><div class="de1"><span class="sy0">&lt;</span>nom<span class="sy0">&gt;</span>Frederic Pi<span class="sy0">&lt;/</span>nom<span class="sy0">&gt;</span></div></li><li class="li1"><div class="de1"><span class="sy0">&lt;</span>nom<span class="sy0">&gt;</span>Filomeno Garcia<span class="sy0">&lt;/</span>nom<span class="sy0">&gt;</span></div></li><li class="li1"><div class="de1"><span class="sy0">&lt;</span>nom<span class="sy0">&gt;</span>Manel Puigdevall<span class="sy0">&lt;/</span>nom<span class="sy0">&gt;</span></div></li></ol></pre>
+
+<p>
+La biblioteca <em>libxslt</em> porta una utilitat des de l’entorn d’ordres que permet fer transformacions XSLT, que s’anomena <strong>xsltproc</strong>. 
+</p>
+
+<p>
+Amb <strong>xsltproc</strong> es pot transformar un fitxer en un altre passant-li com a paràmetres el fitxer per transformar i la plantilla.
+</p>
+<pre class="code bash"><ol><li class="li1"><div class="de1"><span class="co4">$ </span>xsltproc fitxer.xml fitxer.xsl <span class="re5">-o</span> sortida</div></li></ol></pre>
+
+<p>
+Es poden trobar versions d’<strong>xsltproc</strong> compilades per a Windows i que funcionaran de la mateixa manera.
+</p>
+
+</div>
+
+<h5><a id="apache_xalan" >Apache Xalan</a></h5>
+<div class="level5">
+
+<p>
+Apache Xalan és un intent de fer unes biblioteques de C++ i de Java de qualitat comercial, lliures i multiplataforma.
+</p>
+
+<p>
+En els exemples que vénen amb la biblioteca es pot trobar un programa d’exemple amb el qual es poden fer transformacions XPath anomenat <strong>XPathResolver</strong>.
+</p>
+
+<p>
+En el mateix paquet es pot trobar una utilitat d’entorn d’ordres que permet fer transformació de documents.
+</p>
+<pre class="code bash"><ol><li class="li1"><div class="de1"><span class="co4">$ </span>xalan <span class="re5">-in</span> fitxer.xml <span class="re5">-xsl</span> fitxer.xsl <span class="re5">-out</span> sortida</div></li></ol></pre>
+
+</div>
+
+<h5><a id="saxon" >Saxon</a></h5>
+<div class="level5">
+
+<p>
+Saxon és el processador més complet de tots, ja que està desenvolupat per un dels especificadors d’XSLT, i per tant segueix fidelment l’estàndard.
+</p>
+
+<p>
+Hi ha dues versions de Saxon, una per a Java i una per a .NET. Té una versió de les biblioteques de codi obert, Saxon-HE (Home Edition), i dues de comercials, Saxon-PE (Professional Edition) i Saxon-EE (Enterprise Edition).
+</p>
+
+<p>
+Amb la biblioteca es poden trobar exemples d’ús que es poden fer servir per fer proves i transformacions.
+</p>
+
+<p>
+En sistemes basats en Debian, com l’Ubuntu, després d’instal·lar el paquet <em>libsaxonb-java</em> es pot executar una consulta XPath passant l’expressió amb <code>echo</code> a <code>saxonb-xquery</code>.
+</p>
+<pre class="code bash"><ol><li class="li1"><div class="de1"><span class="co4">$ </span><span class="kw3">echo</span> <span class="sy0">//</span>nom <span class="sy0">|</span> saxonb-xquery <span class="re5">-s</span> persones.xml -</div></li></ol></pre>
+
+<p>
+Es poden fer transformacións XSLT amb l’ordre <code>saxonb-xslt</code> passant-hi el fitxer XML i el fitxer de plantilles XSLT
+</p>
+<pre class="code bash"><ol><li class="li1"><div class="de1"><span class="co4">$ </span>saxonb-xslt <span class="re5">-o</span> sortida persones.xml persones.xsl</div></li></ol></pre>
+
+</div>
+
+<h5><a id="microsoft_xml_parser" >Microsoft XML Parser</a></h5>
+<div class="level5">
+
+<p>
+Es tracta del més usat en el món de la programació en .NET. Es pot descarregar des del web de Microsoft.
+</p>
+
+<p>
+L’execució des de consola no difereix gaire de les dels altres processadors. Per exemple, per fer transformacions podem fer:
+</p>
+<pre class="code bash"><ol><li class="li1"><div class="de1">c:\<span class="sy0">&gt;</span> msxml fitxer.xml fitxer.xsl <span class="re5">-o</span> sortida</div></li></ol></pre>
+
+</div>
+
+<h2><a id="xpath" >XPath</a></h2>
+<div class="level2">
+<div class="iocimportant"><div class="ioccontent">
+<p>
+XPath (<em>XML path language</em>) és una manera d’especificar parts d’un document XML que té eines per manipular el contingut de les dades de text, numèriques, etc.
+</p>
+</div></div>
+<p>
+XPath és una recomanació del <acronym title="World Wide Web Consortium">W3C</acronym> (<a href="http://www.w3.org/TR/xpath" class="urlextern" title="http://www.w3.org/TR/xpath"  rel="nofollow">www.w3.org/TR/xpath</a>), que tot i que serveix per treballar amb XML no és un llenguatge XML. La idea és que en no estar basat en XML es podrà incloure en altres llenguatges XML sense haver de preocupar-se de si el resultat està ben format o no. 
+</p>
+
+<p>
+La base del funcionament d’XPath és l’avaluació d’expressions. Una expressió que s’avaluarà contra un document XML i ens donarà un resultat que pot ser de diferents tipus:
+</p>
+<ol>
+<li class="level1"><div class="li"> Un boleà: cert o fals</div>
+</li>
+<li class="level1"><div class="li"> Un nombre</div>
+</li>
+<li class="level1"><div class="li"> Una cadena de caràcters</div>
+</li>
+<li class="level1"><div class="li"> Un grup d’elements</div>
+</li>
+</ol>
+
+<p>
+XPath està desenvolupat pels comitès de creació d’XSL i XQuery i s’ha convertit en un component essencial per a diferents llenguatges XML com XLinks, XSLT i XQuery, com es pot veure en la <span class="figref"><a href="#fig116"><span>figura</span></a></span>.
+</p>
+<div class="iocfigure"><a name="fig116"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Relació d’XPath amb diferents llenguatges XML
+
+</figcaption><img src="../media/asxm04u3_06.png" alt="" /></figure>
+</div>
+<p>
+La versió 2.0 d’XPath està tan integrada dins d’XQuery que qualsevol expressió XPath és també automàticament una expressió XQuery correcta.
+</p>
+
+</div>
+
+<h3><a id="vista_d_arbre" >Vista d&#039;arbre</a></h3>
+<div class="level3">
+
+<p>
+XPath tracta tots els documents XML des del punt de vista d’un arbre de nodes en què hi ha <strong>una arrel</strong> que no es correspon amb l’arrel del document, sinó que <strong>és el document</strong> i es representa amb el símbol “<strong>/</strong>”.
+</p>
+
+<p>
+A part de l’arrel també hi ha nodes per representar els <strong>elements</strong>, els <strong>atributs</strong>, els nodes de <strong>dades</strong>, els <strong>comentaris</strong>, les <strong>instruccions de procés</strong> i els <strong>espais de noms</strong>.
+</p>
+
+<p>
+L’exemple següent XML:
+</p>
+<pre class="code xml"><ol><li class="li1"><div class="de1"><span class="sc3"><span class="re1">&lt;?xml</span> <span class="re0">version</span>=”1.0” <span class="re2">?&gt;</span></span></div></li><li class="li1"><div class="de1"><span class="sc3"><span class="re1">&lt;classe<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1">    <span class="sc3"><span class="re1">&lt;assignatura<span class="re2">&gt;</span></span></span>Llenguatges de marques<span class="sc3"><span class="re1">&lt;/assignatura<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1">    <span class="sc3"><span class="re1">&lt;professor</span> <span class="re0">Especialitat</span>=<span class="st0">&quot;507&quot;</span><span class="re2">&gt;</span></span></div></li><li class="li1"><div class="de1">        <span class="sc3"><span class="re1">&lt;nom<span class="re2">&gt;</span></span></span>Marcel<span class="sc3"><span class="re1">&lt;/nom<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1">        <span class="sc3"><span class="re1">&lt;cognoms<span class="re2">&gt;</span></span></span>Puig<span class="sc3"><span class="re1">&lt;/cognoms<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1">    <span class="sc3"><span class="re1">&lt;/professor<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1">    <span class="sc3"><span class="re1">&lt;alumnes<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1">        <span class="sc3"><span class="re1">&lt;alumne<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1">            <span class="sc3"><span class="re1">&lt;nom<span class="re2">&gt;</span></span></span>Frederic<span class="sc3"><span class="re1">&lt;/nom<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1">            <span class="sc3"><span class="re1">&lt;cognoms<span class="re2">&gt;</span></span></span>Pi<span class="sc3"><span class="re1">&lt;/cognoms<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1">        <span class="sc3"><span class="re1">&lt;/alumne<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1">        <span class="sc3"><span class="re1">&lt;alumne<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1">            <span class="sc3"><span class="re1">&lt;nom<span class="re2">&gt;</span></span></span>Filomeno<span class="sc3"><span class="re1">&lt;/nom<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1">            <span class="sc3"><span class="re1">&lt;cognoms<span class="re2">&gt;</span></span></span>Garcia<span class="sc3"><span class="re1">&lt;/cognoms<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1">        <span class="sc3"><span class="re1">&lt;/alumne<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1">    <span class="sc3"><span class="re1">&lt;/alumnes<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1"><span class="sc3"><span class="re1">&lt;/classe<span class="re2">&gt;</span></span></span></div></li></ol></pre>
+
+<p>
+Es representarà en XPath amb un arbre com el de la <span class="figref"><a href="#fig117"><span>figura</span></a></span>.
+</p>
+<div class="iocfigure"><a name="fig117"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Arbre XPath 
+
+</figcaption><img src="../media/asxm04u3_07.png" alt="" /></figure>
+</div>
+<p>
+En un arbre XPath els atributs no són considerats nodes fills sinó que són “<strong>propietats</strong>” del node que els conté i els nodes de dades són nodes <strong>sense nom</strong> que només contenen les dades.
+</p>
+
+</div>
+
+<h3><a id="programari_per_avaluar_xpath" >Programari per avaluar XPath</a></h3>
+<div class="level3">
+
+<p>
+Molts programes permeten executar una consulta XPath contra un document XML. Hi ha programes específics, editors XML, components dels navegadors web, pàgines web online, etc.
+</p>
+
+<p>
+És impossible mostrar tots els programes que permeten treballar amb XPath i, per tant, només se’n mostraran alguns exemples.
+</p>
+
+</div>
+
+<h4><a id="xpath1" >&quot;xpath&quot;</a></h4>
+<div class="level4">
+
+<p>
+La instal·lació per defecte d’Ubuntu instal·la automàticament una ordre basada en Perl anomenada <code>xpath</code> que permet comprovar les ordres XPath des de la consola. L’expressió es posa rere el paràmetre <code>-e</code>.
+</p>
+<pre class="code bash"><ol><li class="li1"><div class="de1">$ xpath <span class="re5">-q</span> <span class="re5">-e</span> <span class="sy0">//</span>nom persones.xml</div></li><li class="li1"><div class="de1"><span class="sy0">&lt;</span>nom<span class="sy0">&gt;</span>Marcel Puig<span class="sy0">&lt;/</span>nom<span class="sy0">&gt;</span></div></li><li class="li1"><div class="de1"><span class="sy0">&lt;</span>nom<span class="sy0">&gt;</span>Frederic Pi<span class="sy0">&lt;/</span>nom<span class="sy0">&gt;</span></div></li><li class="li1"><div class="de1"><span class="sy0">&lt;</span>nom<span class="sy0">&gt;</span>Filomeno Garcia<span class="sy0">&lt;/</span>nom<span class="sy0">&gt;</span></div></li><li class="li1"><div class="de1"><span class="sy0">&lt;</span>nom<span class="sy0">&gt;</span>Manel Puigdevall<span class="sy0">&lt;/</span>nom<span class="sy0">&gt;</span> </div></li></ol></pre>
+
+</div>
+
+<h4><a id="xpath_checker" >XPath Checker</a></h4>
+<div class="level4">
+
+<p>
+Una utilitat molt interessant és un component del Firefox anomenat <code>XPath Checker</code>, que permet fer consultes XPath interactivament, tant en pàgines <acronym title="HyperText Markup Language">HTML</acronym> com en documents XML que s’hagin visualitzat en el navegador.
+</p>
+
+<p>
+Un cop instal·lat el component i carregat el document per avaluar amb el botó dret del ratolí, es tria l’opció “View XPath” (<span class="figref"><a href="#figure118"><span>figura</span></a></span>).
+</p>
+<div class="iocfigure"><a name="figure118"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+ Engegar XPath Checker
+
+</figcaption><img src="../media/xpathchecker1.png" align="right" alt="" /></figure>
+</div>
+<p>
+S’obrirà una finestra nova on es poden anar executant expressions XPath i també es mostra el resultat de la consulta en la part inferior de manera interactiva (<span class="figref"><a href="#figure119"><span>figura</span></a></span>).
+</p>
+<div class="iocfigure"><a name="figure119"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+ Els resultats van canviant en funció de l’expressió que s’especifiqui
+
+</figcaption><img src="../media/xpathchecker2.png" align="right" alt="" /></figure>
+</div>
+</div>
+
+<h4><a id="editors_xml" >Editors XML</a></h4>
+<div class="level4">
+
+<p>
+L’opció més professional és fer servir algun dels editors especialitzats en XML. Aquests editors permeten avaluar expressions XPath des d’un entorn gràfic amb tot tipus d’assistències en la creació de les expressions, possibilitats de depuració, etc. En la imatge següent es pot veure un exemple de l’assistent de l’oXygen XML Editor (<span class="figref"><a href="#fig119b"><span>figura</span></a></span>).
+</p>
+<div class="iocfigure"><a name="fig119b"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+ Assistent de creació d’expressions XPath
+
+</figcaption><img src="../media/xpathcrear.png" alt="" /></figure>
+</div>
+</div>
+
+<h3><a id="navegacio" >Navegació</a></h3>
+<div class="level3">
+
+<p>
+
+</p>
+
+<p>
+Com que la representació interna del document XML per XPath serà un arbre, s’hi pot navegar especificant-hi camins d’una manera semblant a com es fa en els directoris dels sistemes operatius.
+</p>
+<div class="iocnote"><div class="ioccontent">
+<p>
+Expressar camins en XPath s’assembla tant a com ho fan els sistemes operatius que fins i tot es fan servir símbols semblants.
+</p>
+</div></div>
+<p>
+El més important per tenir en compte a l’hora de crear una expressió XPath és saber el node en el qual està situat el procés (<strong>node de context</strong>), ja que és des d’aquest que s’avaluarà l’expressió.  El node de context al principi és en l’arrel però es va movent a mesura que es van avaluant les expressions, i per tant podem expressar els camins XPath de dues maneres:
+</p>
+<ul>
+<li class="level1"><div class="li"> <strong>Camins absoluts</strong></div>
+</li>
+<li class="level1"><div class="li"> <strong>Camins relatius</strong> </div>
+</li>
+</ul>
+
+<p>
+Els <strong>camins absoluts</strong> són camins que sempre comencen en l’arrel de l’arbre. Es poden identificar perquè el primer caràcter de l’expressió sempre serà l’arrel ”/”. No importa quin sigui el node de context si es fan servir camins absoluts, perquè el resultat sempre serà el mateix.
+</p>
+
+<p>
+En canvi, els <strong>camins relatius</strong> parteixen des del node en el qual estem situats.
+</p>
+
+<p>
+Per exemple, es pot obtenir el node <code>&lt;nom&gt;</code> del professor de l’exemple que hem especificat anteriorment fent servir l’expressió XPath següent: 
+</p>
+<pre class="code">/classe/professor/nom</pre>
+
+<p>
+Podem veure com s’avalua l’expressió en l’arbre XPath en la <span class="figref"><a href="#fig120"><span>figura</span></a></span>.
+</p>
+<div class="iocfigure"><a name="fig120"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Avaluació de l’expressió /classe/professor/nom
+
+</figcaption><img src="../media/asxm04u3_08.png" alt="" /></figure>
+</div>
+<p>
+Cal tenir en compte que el resultat d’aquesta expressió no és només el contingut de l’element sinó tot l’element <code>&lt;nom&gt;</code>.
+</p>
+<pre class="code xml"><ol><li class="li1"><div class="de1"><span class="sc3"><span class="re1">&lt;nom<span class="re2">&gt;</span></span></span>Marcel<span class="sc3"><span class="re1">&lt;/nom<span class="re2">&gt;</span></span></span></div></li></ol></pre>
+
+<p>
+Mai no s’ha d’oblidar que l’expressió sempre intenta aconseguir el nombre màxim de camins correctes i, per tant, no necessàriament ha de retornar només un sol valor. Per exemple, si l’expressió per avaluar fos la següent:
+</p>
+<pre class="code">/classe/alumnes/alumne/nom</pre>
+
+<p>
+XPath l’avaluaria intentant aconseguir tots els camins que quadrin amb l’expressió, tal com podeu veure visualment en la <span class="figref"><a href="#fig121"><span>figura</span></a></span>.
+</p>
+<div class="iocfigure"><a name="fig121"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Avaluació de l’expressió /classe/alumnes/alumne/nom
+
+</figcaption><img src="../media/asxm04u3_09.png" alt="" /></figure>
+</div>
+<p>
+El resultat seran els dos resultats possibles:
+</p>
+<pre class="code xml"><ol><li class="li1"><div class="de1"><span class="sc3"><span class="re1">&lt;nom<span class="re2">&gt;</span></span></span>Frederic<span class="sc3"><span class="re1">&lt;/nom<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1"><span class="sc3"><span class="re1">&lt;nom<span class="re2">&gt;</span></span></span>Filomeno<span class="sc3"><span class="re1">&lt;/nom<span class="re2">&gt;</span></span></span></div></li></ol></pre>
+
+<p>
+A pesar que en els exemples anteriors sempre s’han retornat nodes finals això no necessàriament ha de ser així, ja que XPath pot retornar qualsevol tipus d’element com a resultat. 
+</p>
+<pre class="code">/classe/alumnes</pre>
+
+<p>
+La navegació per l’arbre no difereix gaire dels altres casos (<span class="figref"><a href="#fig122"><span>figura</span></a></span>):
+</p>
+<div class="iocfigure"><a name="fig122"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Avaluació de l’expressió /classe/alumnes
+
+</figcaption><img src="../media/asxm04u3_10.png" alt="" /></figure>
+</div>
+<p>
+En aquest cas el resultat no és un element simple sinó que és tot un subarbre d’elements.
+</p>
+<pre class="code xml"><ol><li class="li1"><div class="de1"><span class="sc3"><span class="re1">&lt;alumnes<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1">    <span class="sc3"><span class="re1">&lt;alumne<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1">        <span class="sc3"><span class="re1">&lt;nom<span class="re2">&gt;</span></span></span>Frederic<span class="sc3"><span class="re1">&lt;/nom<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1">        <span class="sc3"><span class="re1">&lt;cognom<span class="re2">&gt;</span></span></span>Pi<span class="sc3"><span class="re1">&lt;/cognom<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1">    <span class="sc3"><span class="re1">&lt;/alumne<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1">    <span class="sc3"><span class="re1">&lt;alumne<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1">        <span class="sc3"><span class="re1">&lt;nom<span class="re2">&gt;</span></span></span>Filomeno<span class="sc3"><span class="re1">&lt;/nom<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1">        <span class="sc3"><span class="re1">&lt;cognom<span class="re2">&gt;</span></span></span>Garcia<span class="sc3"><span class="re1">&lt;/cognom<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1">    <span class="sc3"><span class="re1">&lt;/alumne<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1"><span class="sc3"><span class="re1">&lt;/alumnes<span class="re2">&gt;</span></span></span></div></li></ol></pre>
+
+<p>
+Si se sap que una expressió retornarà diversos resultats però només se’n vol un d’específic es pot fer servir un nombre envoltat per claudàtors quadrats ”[]” per indicar quin és el que es vol aconseguir. Per retornar només el primer alumne podeu fer el següent:
+</p>
+<pre class="code">/classe/alumnes/alumne[1]</pre>
+
+<p>
+Dels dos nodes disponibles com a fills de <code>&lt;alumnes&gt;</code>, només se seleccionarà el primer (<span class="figref"><a href="#fig123"><span>figura</span></a></span>).
+</p>
+<div class="iocfigure"><a name="fig123"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Avaluació de l’expressió /classe/alumnes/alumne/nom
+
+</figcaption><img src="../media/asxm04u3_11.png" alt="" /></figure>
+</div>
+<p>
+O sigui:
+</p>
+<pre class="code xml"><ol><li class="li1"><div class="de1"><span class="sc3"><span class="re1">&lt;alumne<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1">   <span class="sc3"><span class="re1">&lt;nom<span class="re2">&gt;</span></span></span>Frederic<span class="sc3"><span class="re1">&lt;/nom<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1">   <span class="sc3"><span class="re1">&lt;cognom<span class="re2">&gt;</span></span></span>Pi<span class="sc3"><span class="re1">&lt;/cognom<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1"><span class="sc3"><span class="re1">&lt;/alumne<span class="re2">&gt;</span></span></span></div></li></ol></pre>
+
+<p>
+Es poden fer servir els claudàtors en qualsevol lloc de l’expressió per fer determinar quina de les branques es triarà. Per exemple, es pot obtenir només el <code>nom</code> del segon alumne amb una expressió com aquesta:
+</p>
+<pre class="code">/classe/alumnes/alumne[2]/nom</pre>
+
+<p>
+
+</p>
+
+<p>
+Sempre s’ha d’anar en compte en escriure les expressions XPath, ja que si el camí especificat no es correspon amb un camí <strong>real</strong> dins de l’arbre no es retornarà cap resultat.
+</p>
+<pre class="code xml"><ol><li class="li1"><div class="de1">/classe/nom</div></li></ol></pre>
+
+<p>
+Com que en arribar al node <code>classe</code> no n’hi trobarà cap d’anomenat <code>&lt;nom&gt;</code>, no retornarà cap resultat, com podeu veure si seguiu l’arbre (<span class="figref"><a href="#fig124"><span>figura</span></a></span>).
+</p>
+<div class="iocfigure"><a name="fig124"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Avaluació de l’expressió /classe/alumnes
+
+</figcaption><img src="../media/asxm04u3_12.png" alt="" /></figure>
+</div>
+</div>
+
+<h4><a id="obtenir_els_atributs_d_un_element" >Obtenir els atributs d&#039;un element</a></h4>
+<div class="level4">
+
+<p>
+Els valors dels atributs es poden aconseguir especificant el símbol <code><strong>@</strong></code> davant del nom un cop s’hagi arribat a l’element que el conté (<span class="figref"><a href="#fig125"><span>figura</span></a></span>).
+</p>
+<pre class="code">/classe/professor/@especialitat</pre>
+<div class="iocfigure"><a name="fig125"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+ Avaluació de l’expressió /classe/professor/@especialitat
+
+</figcaption><img src="../media/asxm04u3_13.png" alt="" /></figure>
+</div>
+<p>
+S’ha de tenir en compte que a diferència del que passa amb els elements, en obtenir un atribut no tindrem un element sinó només el seu valor:
+</p>
+<pre class="code">507</pre>
+
+</div>
+
+<h4><a id="obtenir_el_contingut_d_un_element" >Obtenir el contingut d&#039;un element</a></h4>
+<div class="level4">
+
+<p>
+Per a aquells casos en què només vulguem el contingut de l’element, s’ha definit la funció  <strong>text()</strong> per obtenir aquest contingut. Això s’ha fet així perquè d’altra manera, com que els nodes de text no tenen nom, no s’hi podria accedir.
+</p>
+
+<p>
+De manera que si a un element que tingui contingut de dades se li afegeix <em>text()</em>:
+</p>
+<pre class="code">/classe/professor/nom/text()</pre>
+
+<p>
+…retornarà el contingut del node sense les etiquetes:
+</p>
+<pre class="code xml"><ol><li class="li1"><div class="de1">Marcel</div></li></ol></pre>
+
+</div>
+
+<h4><a id="comodins" >Comodins</a></h4>
+<div class="level4">
+
+<p>
+De la mateixa manera que en els sistemes operatius, es poden fer servir comodins diversos en les expressions XPath. Es poden veure els comodins en la <span class="tabref"><a href="#table55"><span>taula</span></a></span>.
+</p>
+<div class="ioctable ">
+<div class="titletable"><a name="table55"><span>Taula: </span></a>Comodins en XPath</div>
+<div class="table"><table class="inline">
+	<tr class="row0">
+		<th class="col0"> Comodí </th><th class="col1 leftalign"> Significat                                                                   </th>
+	</tr>
+	<tr class="row1">
+		<td class="col0 leftalign"> *      </td><td class="col1"> L’asterisc es fa servir per indicar tots els elements d’un determinat nivell. </td>
+	</tr>
+	<tr class="row2">
+		<td class="col0 leftalign"> .      </td><td class="col1 leftalign"> Com en els directoris dels sistemes operatius el punt serveix per indicar el node actual.                                           </td>
+	</tr>
+	<tr class="row3">
+		<td class="col0 leftalign"> ..     </td><td class="col1 leftalign"> Es fa servir per indicar el pare del node en el qual estem.                    </td>
+	</tr>
+	<tr class="row4">
+		<td class="col0 leftalign"> / /    </td><td class="col1 leftalign"> Les dobles barres indiquen que quadrarà amb qualsevol cosa des del node en el qual estem. Pot ser un sol element o un arbre de nodes.                                                                             </td>
+	</tr>
+</table></div>
+</div>
+<p>
+Amb l’asterisc es poden obtenir tots els elements d’un determinat nivell. Amb aquesta expressió es poden obtenir tots els elements de dins del node <code>professor</code>.
+</p>
+<pre class="code">/classe/professor/*</pre>
+
+<p>
+Aquesta expressió retornarà per separat els dos nodes fills de <code>&lt;professor&gt;</code> (<code>&lt;nom&gt;</code> i <code>&lt;cognom&gt;</code>).
+</p>
+<pre class="code xml"><ol><li class="li1"><div class="de1"><span class="sc3"><span class="re1">&lt;nom<span class="re2">&gt;</span></span></span>Marcel<span class="sc3"><span class="re1">&lt;/nom<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1"><span class="sc3"><span class="re1">&lt;cognoms<span class="re2">&gt;</span></span></span>Puig<span class="sc3"><span class="re1">&lt;/cognoms<span class="re2">&gt;</span></span></span></div></li></ol></pre>
+
+<p>
+O bé fer servir les dobles barres (//) per obtenir tots els elements <code>&lt;nom&gt;</code> del fitxer independentment del lloc on siguin dins del document XML.
+</p>
+<pre class="code">//nom</pre>
+
+<p>
+El resultat serà:
+</p>
+<pre class="code xml"><ol><li class="li1"><div class="de1"><span class="sc3"><span class="re1">&lt;nom<span class="re2">&gt;</span></span></span>Marcel<span class="sc3"><span class="re1">&lt;/nom<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1"><span class="sc3"><span class="re1">&lt;nom<span class="re2">&gt;</span></span></span>Frederic<span class="sc3"><span class="re1">&lt;/nom<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1"><span class="sc3"><span class="re1">&lt;nom<span class="re2">&gt;</span></span></span>Filomeno<span class="sc3"><span class="re1">&lt;/nom<span class="re2">&gt;</span></span></span></div></li></ol></pre>
+
+<p>
+Es poden posar les dobles barres en qualsevol lloc dins de l’expressió per indicar que hi pot haver qualsevol cosa enmig a partir del lloc on apareguin.
+</p>
+<pre class="code">/classe/alumnes//nom</pre>
+
+<p>
+Donarà els dos noms dels alumnes:
+</p>
+<pre class="code xml"><ol><li class="li1"><div class="de1"><span class="sc3"><span class="re1">&lt;nom<span class="re2">&gt;</span></span></span>Frederic<span class="sc3"><span class="re1">&lt;/nom<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1"><span class="sc3"><span class="re1">&lt;nom<span class="re2">&gt;</span></span></span>Filomeno<span class="sc3"><span class="re1">&lt;/nom<span class="re2">&gt;</span></span></span></div></li></ol></pre>
+
+<p>
+Tot i que facilita la creació d’expressions no és gaire recomanable abusar del comodí // per motius d’eficiència. Les expressions amb aquest comodí requeriran molts més càlculs per ser avaluades, i per tant les expressions trigaràn més a donar resultats.
+</p>
+
+</div>
+
+<h4><a id="eixos_xpath" >Eixos XPath</a></h4>
+<div class="level4">
+
+<p>
+Per avaluar les expressions XPath s’explora un arbre, de manera que també es proporcionen una sèrie d’elements per fer referència a parts de l’arbre. Aquests elements s’anomenen <strong>eixos XPath</strong> (<span class="tabref"><a href="#table56"><span>taula</span></a></span>).
+</p>
+<div class="ioctable ">
+<div class="titletable"><a name="table56"><span>Taula: </span></a>Eixos XPath</div>
+<div class="table"><table class="inline">
+	<tr class="row0">
+		<th class="col0 leftalign"> Eix         </th><th class="col1 leftalign"> Significat                                                  </th>
+	</tr>
+	<tr class="row1">
+		<td class="col0 leftalign"> self::      </td><td class="col1 leftalign"> El node en el qual està el procés (fa el mateix que el punt)  </td>
+	</tr>
+	<tr class="row2">
+		<td class="col0 leftalign"> child::     </td><td class="col1 leftalign"> Fill de l’element actual                                    </td>
+	</tr>
+	<tr class="row3">
+		<td class="col0 leftalign"> parent::    </td><td class="col1 leftalign"> El pare de l’element actual (idèntic a fer servir <code>..</code>)       </td>
+	</tr>
+	<tr class="row4">
+		<td class="col0"> attribute:: </td><td class="col1"> Es fa servir per obtenir un atribut de l’element actual (@) </td>
+	</tr>
+</table></div>
+</div>
+<p>
+Alguns d’aquests eixos pràcticament no es fan servir perquè generalment és més còmode i curt definir les expressions a partir del símbol. Tothom prefereix fer servir una expressió com aquesta:
+</p>
+<pre class="code">/classe/professor/nom</pre>
+
+<p>
+Que no pas la seva versió equivalent fent servir els eixos:
+</p>
+<pre class="code">/child::classe/child::professor/child::nom</pre>
+
+<p>
+A part dels vistos en la <span class="tabref"><a href="#table56"><span>taula</span></a></span> n’hi ha d’altres, que en aquest cas no tenen cap símbol que els simplifiqui (<span class="tabref"><a href="#table57"><span>taula</span></a></span>).
+</p>
+<div class="ioctable ">
+<div class="titletable"><a name="table57"><span>Taula: </span></a>Eixos XPath</div>
+<div class="table"><table class="inline">
+	<tr class="row0">
+		<th class="col0 leftalign"> Eix                  </th><th class="col1 leftalign"> Significat                                   </th>
+	</tr>
+	<tr class="row1">
+		<td class="col0 leftalign"> descendant::         </td><td class="col1 leftalign"> Tots els descendents del node actual         </td>
+	</tr>
+	<tr class="row2">
+		<td class="col0"> desdendant-or-self:: </td><td class="col1 leftalign"> El node actual i els seus descendents       </td>
+	</tr>
+	<tr class="row3">
+		<td class="col0 leftalign"> ancestor::           </td><td class="col1 leftalign"> Els ascendents del node                      </td>
+	</tr>
+	<tr class="row4">
+		<td class="col0 leftalign"> ancestor-or-self::   </td><td class="col1 leftalign"> El node actual i els seus ascendents         </td>
+	</tr>
+	<tr class="row5">
+		<td class="col0 leftalign"> prededint::          </td><td class="col1"> Tots els elements precedents al node actual </td>
+	</tr>
+	<tr class="row6">
+		<td class="col0 leftalign"> preceding-sibling::  </td><td class="col1 leftalign"> Tots els germans precedents                  </td>
+	</tr>
+	<tr class="row7">
+		<td class="col0 leftalign"> following::          </td><td class="col1 leftalign"> Elements que segueixen el node actual        </td>
+	</tr>
+	<tr class="row8">
+		<td class="col0 leftalign"> following-sibling::  </td><td class="col1 leftalign"> Germans posteriors al node actual            </td>
+	</tr>
+	<tr class="row9">
+		<td class="col0 leftalign"> namespace::          </td><td class="col1 leftalign"> Conté l’espai de noms del node actual        </td>
+	</tr>
+</table></div>
+</div>
+</div>
+
+<h4><a id="condicions" >Condicions</a></h4>
+<div class="level4">
+
+<p>
+Un apartat interessant de les expressions XPath és poder afegir condicions per a la selecció de nodes. A qualsevol expressió XPath se li poden afegir condicions per obtenir només els nodes que compleixin la condició especificada. 
+</p>
+<div class="iocimportant"><div class="ioccontent">
+<p>
+La selecció de nodes es fa especificant un predicat XPath dins de claudàtors.
+</p>
+</div></div>
+<p>
+Per exemple, aquesta expressió selecciona només els professors que tinguin un element <code>&lt;nom&gt;</code> com a fill de <code>&lt;professor&gt;</code>:
+</p>
+<pre class="code">/classe/professor[nom]</pre>
+
+<p>
+Si s’aplica l’expressió a l’exemple que hem  fet servir per fer la vista d’arbre, el resultat serà el node <code>&lt;professor&gt;</code> que té dins seu <code>&lt;nom&gt;</code>.
+</p>
+<pre class="code xml"><ol><li class="li1"><div class="de1"><span class="sc3"><span class="re1">&lt;professor</span> <span class="re0">especialitat</span>=<span class="st0">&quot;507&quot;</span><span class="re2">&gt;</span></span></div></li><li class="li1"><div class="de1">  <span class="sc3"><span class="re1">&lt;nom<span class="re2">&gt;</span></span></span>Marcel<span class="sc3"><span class="re1">&lt;/nom<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1">  <span class="sc3"><span class="re1">&lt;cognoms<span class="re2">&gt;</span></span></span>Puig<span class="sc3"><span class="re1">&lt;/cognoms<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1"><span class="sc3"><span class="re1">&lt;/professor<span class="re2">&gt;</span></span></span></div></li></ol></pre>
+
+<p>
+En el valor de l’expressió s’hi especifiquen camins relatius des del node que tingui la condició. Fent servir condicions es pot fer una expressió que només retorni el professor si té alumnes.
+</p>
+<pre class="code xml"><ol><li class="li1"><div class="de1">/classe/professor[../alumnes/alumne]</div></li></ol></pre>
+
+<p>
+Normalment la complexitat de les condicions va més enllà de comprovar si el node existeix, i es fan servir per comprovar si un node té un valor determinat. Per exemple, per obtenir els professors que es diguin “Marcel”:
+</p>
+<pre class="code">/classe/professor[nom=&quot;Marcel&quot;]</pre>
+
+<p>
+Les condicions es poden posar en qualsevol lloc del camí i n’hi pot haver tantes com calgui. Per obtenir el cognom del professor que es diu “Marcel” es pot fer servir una expressió com aquesta.
+</p>
+<pre class="code">/classe/professor[nom=&quot;Marcel&quot;]/cognoms</pre>
+
+<p>
+Que donarà de resultat:
+</p>
+<pre class="code xml"><ol><li class="li1"><div class="de1"><span class="sc3"><span class="re1">&lt;cognoms<span class="re2">&gt;</span></span></span>Puig<span class="sc3"><span class="re1">&lt;/cognoms<span class="re2">&gt;</span></span></span></div></li></ol></pre>
+
+<p>
+De la mateixa manera que per obtenir-ne els valors, es poden fer comparacions amb els valors dels atributs especificant el seu nom rere el símbol <code>@</code>. Per saber si un element té l’atribut ‘especialitat’:
+</p>
+<pre class="code">/classe/professor[@especialitat]</pre>
+
+<p>
+Retornarà:
+</p>
+<pre class="code xml"><ol><li class="li1"><div class="de1"><span class="sc3"><span class="re1">&lt;professor</span> <span class="re0">especialitat</span>=<span class="st0">&quot;507&quot;</span><span class="re2">&gt;</span></span></div></li><li class="li1"><div class="de1">    <span class="sc3"><span class="re1">&lt;nom<span class="re2">&gt;</span></span></span>Marcel<span class="sc3"><span class="re1">&lt;/nom<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1">    <span class="sc3"><span class="re1">&lt;cognom<span class="re2">&gt;</span></span></span>Puig<span class="sc3"><span class="re1">&lt;/cognom<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1"><span class="sc3"><span class="re1">&lt;/professor<span class="re2">&gt;</span></span></span></div></li></ol></pre>
+
+<p>
+De la mateixa manera que amb els elements, es poden posar condicions als atributs per saber si el seu valor té un determinat valor, etc.
+</p>
+<pre class="code">/classe/professor[@especialitat=&quot;507&quot;]</pre>
+<pre class="code">/classe/professor[@especialitat&gt;=507]</pre>
+
+<p>
+Es poden mesclar les expressions amb condicions sobre atributs i sobre elements per aconseguir expressions més complexes especificant-les una al costat de l’altra. Per exemple, podem obtenir el professor que té l’atribut especialitat a “507” i que es diu “Marcel” amb l’expressió:
+</p>
+<pre class="code">/classe/professor[@especialitat=&quot;507&quot;][nom=&quot;Marcel&quot;]</pre>
+
+<p>
+La funció <strong>not()</strong> es fa servir per negar les condicions:
+</p>
+<pre class="code">/classe/professor[not(@especialitat)]</pre>
+
+<p>
+L’expressió pot ser tan complexa com calgui. Per exemple es pot obtenir la llista dels cognoms dels alumnes del professor de tipus “507” que es diu “Marcel”:
+</p>
+<pre class="code">/classe/professor[@Especialitat=&quot;507&quot;][nom=&quot;Marcel&quot;]/../alumnes/alumne/cognoms</pre>
+
+<p>
+Que retornarà els dos cognoms:
+</p>
+<pre class="code xml"><ol><li class="li1"><div class="de1"><span class="sc3"><span class="re1">&lt;cognoms<span class="re2">&gt;</span></span></span>Pi<span class="sc3"><span class="re1">&lt;/cognoms<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1"><span class="sc3"><span class="re1">&lt;cognoms<span class="re2">&gt;</span></span></span>Garcia<span class="sc3"><span class="re1">&lt;/cognoms<span class="re2">&gt;</span></span></span></div></li></ol></pre>
+
+</div>
+
+<h3><a id="sequeencies" >Seqüències</a></h3>
+<div class="level3">
+
+<p>
+Una seqüència és una expressió XPath que retorna més d’un element. S’assemblen bastant a les llistes d’altres llenguatges:
+</p>
+<ul>
+<li class="level1"><div class="li"> Tenen ordre</div>
+</li>
+<li class="level1"><div class="li"> Permeten duplicats</div>
+</li>
+<li class="level1"><div class="li"> Poden contenir valors de tipus diferent en cada terme</div>
+</li>
+</ul>
+<div class="iocnote"><div class="ioccontent">
+<p>
+La creació dinàmica de seqüències funciona a partir d’XPath 2.0.
+</p>
+</div></div>
+<p>
+És fàcil crear seqüències, ja que només cal tancar-les entre parèntesi i separar cada un dels termes amb comes. L’expressió següent aplicada a qualsevol document:
+</p>
+<pre class="code">(1,2,3,4)</pre>
+
+<p>
+Retorna la seqüència de nombres d’un en un:
+</p>
+<pre class="code xml"><ol><li class="li1"><div class="de1">1</div></li><li class="li1"><div class="de1">2</div></li><li class="li1"><div class="de1">3</div></li><li class="li1"><div class="de1">4</div></li></ol></pre>
+
+<p>
+També es poden crear seqüències a partir d’expressions XPath. En aquest cas s’avaluarà primer la primera expressió, després la segona, etc.
+</p>
+<pre class="code">(//nom/text(), //cognoms/text())</pre>
+
+<p>
+Aplicat al nostre exemple retornarà primer tots els noms i després tots els cognoms:
+</p>
+<pre class="code xml"><ol><li class="li1"><div class="de1">Marcel</div></li><li class="li1"><div class="de1">Frederic</div></li><li class="li1"><div class="de1">Filomeno</div></li><li class="li1"><div class="de1">Puig</div></li><li class="li1"><div class="de1">Pi</div></li><li class="li1"><div class="de1">Garcia</div></li></ol></pre>
+
+</div>
+
+<h4><a id="unio_interseccio_i_disjuncio" >Unió, intersecció i disjunció</a></h4>
+<div class="level4">
+
+<p>
+També es pot operar amb les seqüències d’elements. Una manera seria fer servir els operadors d’unió (<strong>union</strong>), intersecció (<strong>intersec</strong>) o disjunció (<strong>except</strong>).
+</p>
+
+<p>
+Per exemple, l’expressió següent ens retornaria els cognoms dels alumnes que coincideixin amb els d’un professor:
+</p>
+<pre class="code">(//alumne/nom) intersect (//professor/nom)</pre>
+
+<p>
+Amb la unió es poden unir les llistes de manera que en quedi una de sola sense duplicats:
+</p>
+<pre class="code">(//alumne/nom) union (//professor/nom)</pre>
+
+<p>
+I amb la disjunció obtenim els noms de la primera seqüència que no surten en la segona:
+</p>
+<pre class="code">(//alumne/nom) except (//professor/nom)</pre>
+
+</div>
+
+<h3><a id="funcions" >Funcions</a></h3>
+<div class="level3">
+<div class="iocimportant"><div class="ioccontent">
+<p>
+XPath ofereix una gran quantitat de funcions destinades a manipular els resultats obtinguts.
+</p>
+</div></div>
+<p>
+Les funcions que ofereix XPath es classifiquen en diferents grups:
+</p>
+<ul>
+<li class="level1"><div class="li"> <strong>Per manipular conjunts de nodes</strong>: es pot obtenir el nom dels nodes, treballar amb les posicions, comptar-los, etc.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Per treballar amb cadenes de caràcters</strong>: permeten extreure caràcters, concatenar, comparar… les cadenes de caràcters.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Per fer operacions numèriques</strong>: es poden convertir els resultats a valors numèrics, comptar els nodes, fer-hi operacions, etc. </div>
+</li>
+<li class="level1"><div class="li"> <strong>Funcions boleanes</strong>: permeten fer operacions boleanes amb els nodes.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Funcions per dates</strong>: permeten fer operacions diverses amb dates i hores.</div>
+</li>
+</ul>
+
+<p>
+És impossible especificar-les totes aquí, de manera que el millor és consultar l’especificació XPath (<a href="http://www.w3.org/TR/xpath-functions/" class="urlextern" title="http://www.w3.org/TR/xpath-functions/"  rel="nofollow">http://www.w3.org/TR/xpath-functions</a>) per veure quines funcions es poden fer servir. 
+</p>
+
+<p>
+Entre totes les funcions podem destacar les que surten en la <span class="tabref"><a href="#table58"><span>taula</span></a></span>.
+</p>
+<div class="ioctable ">
+<div class="titletable"><a name="table58"><span>Taula: </span></a>Funcions XPath destacades</div>
+<div class="table"><table class="inline">
+	<tr class="row0">
+		<th class="col0 leftalign"> Funció            </th><th class="col1 leftalign"> Ús                                                     </th>
+	</tr>
+	<tr class="row1">
+		<td class="col0 leftalign"> name()            </td><td class="col1 leftalign"> Retorna el nom del node                                </td>
+	</tr>
+	<tr class="row2">
+		<td class="col0 leftalign"> sum()             </td><td class="col1 leftalign"> Retorna la suma d’una seqüència de nodes o de valors   </td>
+	</tr>
+	<tr class="row3">
+		<td class="col0 leftalign"> count()           </td><td class="col1 leftalign"> Retorna el nombre de nodes que hi ha en una seqüència  </td>
+	</tr>
+	<tr class="row4">
+		<td class="col0 leftalign"> avg()             </td><td class="col1 leftalign"> Fa la mitjana dels valors de la seqüència              </td>
+	</tr>
+	<tr class="row5">
+		<td class="col0 leftalign"> max()             </td><td class="col1 leftalign"> Retorna el valor màxim de la seqüència                 </td>
+	</tr>
+	<tr class="row6">
+		<td class="col0 leftalign"> min()             </td><td class="col1 leftalign"> Dóna el valor mínim de la seqüència                    </td>
+	</tr>
+	<tr class="row7">
+		<td class="col0 leftalign"> position()        </td><td class="col1 leftalign"> Diu en quina posició es troba el node actual               </td>
+	</tr>
+	<tr class="row8">
+		<td class="col0 leftalign"> last()            </td><td class="col1 leftalign"> Retorna si el node actual és l’últim                   </td>
+	</tr>
+	<tr class="row9">
+		<td class="col0"> distinct-values() </td><td class="col1 leftalign"> Retorna els elements de la seqüència sense duplicats   </td>
+	</tr>
+	<tr class="row10">
+		<td class="col0 leftalign"> concat()          </td><td class="col1 leftalign"> Uneix dues cadenes de caràcters                        </td>
+	</tr>
+	<tr class="row11">
+		<td class="col0 leftalign"> starts-with()     </td><td class="col1"> Retorna si la cadena comença amb els caràcters marcats </td>
+	</tr>
+	<tr class="row12">
+		<td class="col0 leftalign"> contains()        </td><td class="col1 leftalign"> Ens diu si el resultat conté el valor                  </td>
+	</tr>
+	<tr class="row13">
+		<td class="col0 leftalign"> string-length()   </td><td class="col1 leftalign"> Retorna la llargada de la cadena                       </td>
+	</tr>
+	<tr class="row14">
+		<td class="col0 leftalign"> substring()       </td><td class="col1 leftalign"> Permet extreure una subcadena del resultat             </td>
+	</tr>
+	<tr class="row15">
+		<td class="col0 leftalign"> string-join()     </td><td class="col1 leftalign"> Uneix la seqüència amb el separador especificat        </td>
+	</tr>
+	<tr class="row16">
+		<td class="col0 leftalign"> current-date()    </td><td class="col1 leftalign"> Ens retornarà l’hora actual                           </td>
+	</tr>
+	<tr class="row17">
+		<td class="col0 leftalign"> not()             </td><td class="col1 leftalign"> Inverteix el valors booleans                            </td>
+	</tr>
+</table></div>
+</div>
+<p>
+Amb les funcions es podran fer peticions que retornin valors numèrics. Per exemple, “quants alumnes tenim?”:
+</p>
+<pre class="code">count(/classe/alumnes/alumne)</pre>
+
+<p>
+Que tornarà el nombre d’alumnes del fitxer:
+</p>
+<pre class="code">2</pre>
+
+<p>
+O bé retornar cadenes de caràcters. Per exemple, unir tots els noms separant-los per una coma:
+</p>
+<pre class="code">string-join(//nom,&quot;,&quot;)</pre>
+
+<p>
+Que retornarà en un únic resultat els noms separats per una coma:
+</p>
+<pre class="code">Marcel,Frederic,Filomeno</pre>
+
+<p>
+També es poden posar les funcions en els predicats. Per exemple, aquesta expressió ens retornarà els alumnes amb cognom que comenci per <em>p</em>.
+</p>
+<pre class="code">/classe/alumnes/alumne[starts-with(cognoms,&quot;P&quot;)]</pre>
+
+<p>
+En aquesta expressió volem obtenir el segon alumne de la llista:
+</p>
+<pre class="code">/classe/alumnes/alumne[position()=2]</pre>
+
+</div>
+
+<h2><a id="xslt" >XSLT</a></h2>
+<div class="level2">
+<div class="iocimportant"><div class="ioccontent">
+<p>
+XSLT (<em>extensible stylesheet language for transformations</em>) és un llenguatge de plantilles basat en XML que permet convertir l’estructura dels elements XML en altres documents.
+</p>
+</div></div>
+<p>
+Es tracta d’una recomanació del <acronym title="World Wide Web Consortium">W3C</acronym> (World Wide Web Consortium), com ho és <acronym title="Cascading Style Sheets">CSS</acronym>, però XSLT va molt més enllà, ja que supera moltes de les limitacions de <acronym title="Cascading Style Sheets">CSS</acronym>. 
+</p>
+
+<p>
+Amb XSLT es poden fer transformacions que canviïn totalment l’estructura del document, pot reordenar la informació del document XML, afegir-hi informació nova on sigui, prendre decisions en funció de la informació que s’hi trobi, fer càlculs, etc.
+</p>
+
+<p>
+XSLT es recolza en altres tecnologies XML per funcionar:
+</p>
+<ul>
+<li class="level1"><div class="li"> Fa servir XPath per determinar les plantilles per aplicar en cada moment (i per tant s’integra en XQuery).</div>
+</li>
+<li class="level1"><div class="li"> Suporta XML Schemas per definir els tipus de dades.</div>
+</li>
+</ul>
+
+<p>
+Tot i que hi ha la versió 2.0 d’XSLT, la que es fa servir més és la 1.0.
+</p>
+
+<p>
+La versió 2.0 de XSLT afegeix tota una sèrie de característiques que encara fan més potent XSLT:
+</p>
+<ul>
+<li class="level1"><div class="li"> Suporta els tipus de dades d’XML Schemas</div>
+</li>
+<li class="level1"><div class="li"> Inclou elements nous que permeten agrupar resultats, etc.</div>
+</li>
+<li class="level1"><div class="li"> Pot generar múltiples sortides en una sola transformació</div>
+</li>
+<li class="level1"><div class="li"> Afegeix un grup de funcions noves a més de les d’XPath 2.0</div>
+</li>
+<li class="level1"><div class="li"> Pot processar fitxers que no siguin XML</div>
+</li>
+</ul>
+
+<p>
+Cada vegada es fan servir més les plantilles XSLT per generar vistes personalitzades d’un document XML per ser visualitzades en diferents destinacions (impressora, pantalla d’ordinador, telèfon mòbil…). D’aquesta manera n’hi ha prou només tenint el document XML original, i els altres es crearan sota demanda (<span class="figref"><a href="#fig126"><span>figura</span></a></span>).
+</p>
+<div class="iocfigure"><a name="fig126"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+ L’ús més corrent és transformar documents en funció de la destinació
+
+</figcaption><img src="../media/asxm04u3_14.png" alt="" /></figure>
+</div>
+<p>
+Una de les limitacions d’XSLT és que el document d’entrada ha de ser sempre XML, a pesar que la sortida no té aquesta limitació i pot acabar essent en qualsevol format: text, <acronym title="HyperText Markup Language">HTML</acronym>, XML, etc.
+</p>
+
+</div>
+
+<h3><a id="programes" >Programes</a></h3>
+<div class="level3">
+
+<p>
+A pesar que les biblioteques XSLT tenen utilitats que es poden fer servir en temps de creació per provar que la plantilla fa el que ha de fer, normalment les transformacions es faran internament des de programes. És per aquest motiu que la majoria de les implementacions XSLT estan en forma de biblioteques.
+</p>
+
+<p>
+Uns dels programes d’ús corrent que tenen incorporades biblioteques XSLT són els navegadors web (Firefox, Internet Explorer, Google Chrome, i d’altres). Si es carrega un document XML que té associada una transformació XSLT en un navegador web es transformarà automàticament i s’hi mostrarà el resultat transformat.
+</p>
+
+<p>
+Les plantilles XSLT són documents XML que es poden crear fent servir editors de text o bé editors especialitzats en XML. En la creació de plantilles XSLT, els avantatges que ofereixen els editors XML són tan importants (depuradors  d’expressions, ajudes…) que els fan una eina molt valuosa per treballar-hi professionalment (<span class="figref"><a href="#fig127"><span>figura</span></a></span>).
+</p>
+<div class="iocfigure"><a name="fig127"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+El depurador XSLT incorporat a l’oXygen XML Editor
+
+</figcaption><img src="../media/xsltdepurar.png" alt="" /></figure>
+</div>
+</div>
+
+<h3><a id="el_proces_de_transformacio" >El procés de transformació</a></h3>
+<div class="level3">
+
+<p>
+Una transformació XSLT consisteix a passar un document XML i una plantilla per un processador XSLT, el qual aplicarà les regles que trobi en la plantilla al document per generar un document nou (<span class="figref"><a href="#fig128"><span>figura</span></a></span>). El fitxer de resultat de la transformació pot ser tant un document XML com en qualsevol altre format.
+</p>
+
+<p>
+Per associar un document XML a una plantilla XSLT específica es fa servir l’etiqueta <code>&lt;?xml-stylesheet ?&gt;</code>. 
+</p>
+
+<p>
+Per exemple si volem associar la plantilla XSLT <em>alumnes.xsl</em> a un document cal editar-lo i afegir-hi l’etiqueta <code>&lt;?xml-stylesheet ?&gt;</code> rere la declaració xml:
+</p>
+<pre class="code xml"><ol><li class="li1"><div class="de1"><span class="sc3"><span class="re1">&lt;?xml-stylesheet</span> <span class="re0">href</span>=<span class="st0">&quot;alumnes.xsl&quot;</span> <span class="re0">type</span>=<span class="st0">&quot;text/xsl&quot;</span> <span class="re2">?&gt;</span></span></div></li></ol></pre>
+<div class="iocfigure"><a name="fig128"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Processar XSLT
+
+</figcaption><img src="../media/asxm04u3_15.png" alt="" /></figure>
+</div>
+</div>
+
+<h4><a id="l_arrel_del_document_xslt" >L&#039;arrel del document XSLT</a></h4>
+<div class="level4">
+
+<p>
+Les plantilles XSLT són documents XML, i per tant, han de complir les regles dels documents XML. Això vol dir que han de tenir un element arrel:
+</p>
+<div class="iocimportant"><div class="ioccontent">
+<p>
+L’arrel de les plantilles XSLT és l’element <code>&lt;stylesheet&gt;</code>.
+</p>
+</div></div>
+<p>
+L’element arrel <code>&lt;stylesheet&gt;</code> ha de tenir obligatòriament dos atributs:
+</p>
+<ul>
+<li class="level1"><div class="li"> L’atribut <strong>version</strong>, que especificarà quina és la versió d’XSLT que s’ha fet servir per crear la plantilla i que es farà servir per fer la transformació.</div>
+</li>
+<li class="level1"><div class="li"> L’espai de noms de XSLT, que normalment s’associa amb l’àlies ‘xsl’.</div>
+</li>
+</ul>
+
+<p>
+Per exemple, per a la versió 2.0 d’XSLT la definició de l’arrel seria una cosa com aquesta:
+</p>
+<pre class="code xml"><ol><li class="li1"><div class="de1"><span class="sc3"><span class="re1">&lt;?xml</span> <span class="re0">version</span>=<span class="st0">&quot;1.0&quot;</span> <span class="re0">encoding</span>=<span class="st0">&quot;UTF-8&quot;</span><span class="re2">?&gt;</span></span></div></li><li class="li1"><div class="de1"><span class="sc3"><span class="re1">&lt;xsl:stylesheet</span> <span class="re0">xmlns:xsl</span>=<span class="st0">&quot;http://www.w3.org/1999/XSL/Transform&quot;</span></span></div></li><li class="li1"><div class="de1"><span class="sc3">    <span class="re0">xmlns:xs</span>=<span class="st0">&quot;http://www.w3.org/2001/XMLSchema&quot;</span></span></div></li><li class="li1"><div class="de1"><span class="sc3">    <span class="re0">version</span>=<span class="st0">&quot;2.0&quot;</span><span class="re2">&gt;</span></span></div></li><li class="li1"><div class="de1">&nbsp;</div></li><li class="li1"><div class="de1"><span class="sc3"><span class="re1">&lt;/xsl:stylesheet<span class="re2">&gt;</span></span></span></div></li></ol></pre>
+
+<p>
+Dins de l’arrel es definiran les plantilles que determinaran quina és la transformació que es vol fer en el document original.
+</p>
+
+</div>
+
+<h4><a id="crear_una_plantilla" >Crear una plantilla</a></h4>
+<div class="level4">
+
+<p>
+El procés de transformació es farà intentant aplicar alguna plantilla als nodes del document original.
+</p>
+<div class="iocimportant"><div class="ioccontent">
+<p>
+Qualsevol element que no es pugui processar amb una plantilla es transformarà amb el funcionament per defecte:
+</p>
+<ul>
+<li class="level1"><div class="li"> Si el node té contingut es retornarà el contingut del node</div>
+</li>
+<li class="level1"><div class="li"> Si el node no té contingut es retornarà sense escriure res</div>
+</li>
+</ul>
+</div></div>
+<p>
+Per tant l’element bàsic per fer les transformacions són les plantilles. Les plantilles es defineixen amb l’element <strong><code>&lt;xsl:template&gt;</code></strong>. 
+</p>
+
+<p>
+L’element de plantilla pot tenir diversos atributs però el més corrent és <strong><code>match</code></strong>. L’atribut <strong><code>match</code></strong> serveix per determinar a quins nodes s’ha d’aplicar aquesta plantilla per mitjà d’una expressió XPath.
+</p>
+
+<p>
+En el contingut de l’element de plantilla s’especificarà quina és la transformació que cal aplicar als elements. La transformació més senzilla consisteix a escriure un text literal. Per exemple, en la plantilla següent s’està definint que en arribar algun element <code>&lt;nom&gt;</code> es desi en el fitxer de destinació la lletra <em>A</em>:
+</p>
+<pre class="code xml"><ol><li class="li1"><div class="de1"><span class="sc3"><span class="re1">&lt;xsl:template</span> <span class="re0">match</span>=<span class="st0">&quot;nom&quot;</span><span class="re2">&gt;</span></span></div></li><li class="li1"><div class="de1">    A</div></li><li class="li1"><div class="de1"><span class="sc3"><span class="re1">&lt;/xsl:template<span class="re2">&gt;</span></span></span></div></li></ol></pre>
+
+<p>
+Per tant si s’aplica la plantilla anterior a aquest document:
+</p>
+<pre class="code xml"><ol><li class="li1"><div class="de1"><span class="sc3"><span class="re1">&lt;persona<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1">    <span class="sc3"><span class="re1">&lt;nom<span class="re2">&gt;</span></span></span>Pere Garcia<span class="sc3"><span class="re1">&lt;/nom<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1"><span class="sc3"><span class="re1">&lt;/persona<span class="re2">&gt;</span></span></span></div></li></ol></pre>
+
+<p>
+El processador anirà analitzant els nodes del document original i primer intentarà buscar una plantilla per a l’element <code>&lt;persona&gt;</code>, i com que no en trobarà cap recorrerà al comportament per defecte i escriurà una línia en blanc.
+</p>
+
+<p>
+Després intentarà trobar una plantilla per a l’element <code>&lt;nom&gt;</code> que, segons la plantilla, s’ha de transformar en una lletra <em>A</em>.
+</p>
+
+<p>
+Com que no hi ha més nodes el resultat serà aquest:
+</p>
+<pre class="code">_
+    A</pre>
+
+<p>
+Cal tenir en compte que un cop un element ha estat processat per una plantilla se’n processa tot el seu contingut amb ell (i, per tant, també els elements que pugui contenir). Si canviem la plantilla anterior per la següent:
+</p>
+<pre class="code xml"><ol><li class="li1"><div class="de1"><span class="sc3"><span class="re1">&lt;xsl:template</span> <span class="re0">match</span>=<span class="st0">&quot;persona&quot;</span><span class="re2">&gt;</span></span></div></li><li class="li1"><div class="de1">    Persona</div></li><li class="li1"><div class="de1"><span class="sc3"><span class="re1">&lt;/xsl:template<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1">&nbsp;</div></li><li class="li1"><div class="de1"><span class="sc3"><span class="re1">&lt;xsl:template</span> <span class="re0">match</span>=<span class="st0">&quot;nom&quot;</span><span class="re2">&gt;</span></span></div></li><li class="li1"><div class="de1">    A</div></li><li class="li1"><div class="de1"><span class="sc3"><span class="re1">&lt;/xsl:template<span class="re2">&gt;</span></span></span></div></li></ol></pre>
+
+<p>
+
+</p>
+
+<p>
+En aplicar-la al mateix XML primer processarà l’element <code>&lt;persona&gt;</code> i el transformarà en “Persona” en el document de sortida, però com que <code>&lt;persona&gt;</code> conté tots els altres elements, la transformació s’acabarà. 
+</p>
+<pre class="code">    Persona</pre>
+
+</div>
+
+<h5><a id="afegir_elements" >Afegir elements</a></h5>
+<div class="level5">
+
+<p>
+El fet de poder fer transformacions fent servir text literal fa que també es pugui fer servir el mateix sistema per crear etiquetes noves. Si es modifica la plantilla anterior per una com la següent:
+</p>
+<pre class="code xml"><ol><li class="li1"><div class="de1"><span class="sc3"><span class="re1">&lt;xsl:template</span> <span class="re0">match</span>=<span class="st0">&quot;nom&quot;</span><span class="re2">&gt;</span></span></div></li><li class="li1"><div class="de1">    <span class="sc3"><span class="re1">&lt;senyor<span class="re2">&gt;</span></span></span>Manel<span class="sc3"><span class="re1">&lt;/senyor<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1"><span class="sc3"><span class="re1">&lt;/xsl:template<span class="re2">&gt;</span></span></span></div></li></ol></pre>
+
+<p>
+El resultat serà que el transformarà en aquest:
+</p>
+<pre class="code xml"><ol><li class="li1"><div class="de1"><span class="sc3"><span class="re1">&lt;senyor<span class="re2">&gt;</span></span></span>Manel<span class="sc3"><span class="re1">&lt;/senyor<span class="re2">&gt;</span></span></span></div></li></ol></pre>
+
+<p>
+S’ha d’anar amb compte quan s’especifiquen etiquetes literals, ja que no es poden crear etiquetes <strong>que deixin la plantilla mal formada</strong>. La plantilla següent que només obre l’etiqueta <code>&lt;senyor&gt;</code> no es pot fer servir, perquè deixa la plantilla mal formada:
+</p>
+<pre class="code xml"><ol><li class="li1"><div class="de1"><span class="sc3"><span class="re1">&lt;xsl:template</span> <span class="re0">match</span>=<span class="st0">&quot;nom&quot;</span><span class="re2">&gt;</span></span></div></li><li class="li1"><div class="de1">    <span class="sc3"><span class="re1">&lt;senyor<span class="re2">&gt;</span></span></span>Manel</div></li><li class="li1"><div class="de1"><span class="sc3"><span class="re1">&lt;/xsl:template<span class="re2">&gt;</span></span></span></div></li></ol></pre>
+
+<p>
+Una manera alternativa de crear elements en una transformació és fer servir <strong><code>&lt;xs:element&gt;</code></strong>. Entre els atributs que pot tenir, l’únic obligatori és <strong>name</strong>, que defineix el nom que tindrà l’etiqueta.
+</p>
+
+<p>
+Per exemple, amb la plantilla següent creem un element <code>&lt;senyor&gt;</code> que sempre tindrà de contingut “Pere” per a cada element <code>&lt;nom&gt;</code> que es trobi en el document.
+</p>
+<pre class="code xml"><ol><li class="li1"><div class="de1"><span class="sc3"><span class="re1">&lt;xsl:template</span> <span class="re0">match</span>=<span class="st0">&quot;nom&quot;</span><span class="re2">&gt;</span></span></div></li><li class="li1"><div class="de1">    <span class="sc3"><span class="re1">&lt;xs:element</span> <span class="re0">name</span>=<span class="st0">&quot;senyor&quot;</span><span class="re2">&gt;</span></span>Pere<span class="sc3"><span class="re1">&lt;/xs:element<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1"><span class="sc3"><span class="re1">&lt;/xsl:template<span class="re2">&gt;</span></span></span></div></li></ol></pre>
+
+<p>
+O sigui, que la sortida de cada element <code>&lt;nom&gt;</code> serà:
+</p>
+<pre class="code">&lt;senyor&gt;Pere&lt;/senyor&gt;</pre>
+
+</div>
+
+<h5><a id="afegir_atributs" >Afegir atributs</a></h5>
+<div class="level5">
+
+<p>
+Els atributs es poden definir dins d’un nou element amb <strong><code>&lt;xsl:attribute&gt;</code></strong> i de la mateixa manera que amb els nous elements, l’únic atribut obligatori és <strong>name</strong>.
+</p>
+
+<p>
+Una transformació que tingués això:
+</p>
+<pre class="code xml"><ol><li class="li1"><div class="de1"><span class="sc3"><span class="re1">&lt;xs:element</span> <span class="re0">name</span>=<span class="st0">&quot;persona&quot;</span><span class="re2">&gt;</span></span></div></li><li class="li1"><div class="de1">   <span class="sc3"><span class="re1">&lt;xsl:attribute</span> <span class="re0">name</span>=<span class="st0">&quot;home&quot;</span><span class="re2">&gt;</span></span>Si<span class="sc3"><span class="re1">&lt;/xsl:attribute<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1">   Marcel</div></li><li class="li1"><div class="de1"><span class="sc3"><span class="re1">&lt;/xsl:element<span class="re2">&gt;</span></span></span></div></li></ol></pre>
+
+<p>
+Generaria el següent:
+</p>
+<pre class="code xml"><ol><li class="li1"><div class="de1"><span class="sc3"><span class="re1">&lt;persona</span> <span class="re0">home</span>=<span class="st0">&quot;Si&quot;</span><span class="re2">&gt;</span></span>Marcel<span class="sc3"><span class="re1">&lt;/persona<span class="re2">&gt;</span></span></span></div></li></ol></pre>
+
+</div>
+
+<h5><a id="control_de_les_sortides_de_text" >Control de les sortides de text</a></h5>
+<div class="level5">
+
+<p>
+En comptes de fer servir literals també es poden fer transformacions en text fent servir l’element <strong><code>&lt;xsl:text&gt;</code></strong>. Aquest element és important quan es volen controlar millor els espais i els salts de línia que hi haurà en les sortides.
+</p>
+
+<p>
+Podem fer que surtin 5 espais darrere de la lletra <em>A</em> definint la plantilla de la manera següent:
+</p>
+<pre class="code xml"><ol><li class="li1"><div class="de1"><span class="sc3"><span class="re1">&lt;xsl:template</span> <span class="re0">match</span>=<span class="st0">&quot;nom&quot;</span><span class="re2">&gt;</span></span></div></li><li class="li1"><div class="de1">    <span class="sc3"><span class="re1">&lt;xsl:text<span class="re2">&gt;</span></span></span>A     <span class="sc3"><span class="re1">&lt;/xsl:text<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1"><span class="sc3"><span class="re1">&lt;/xsl:template<span class="re2">&gt;</span></span></span></div></li></ol></pre>
+
+<p>
+Si no ho féssim amb <code>&lt;xsl:text&gt;</code> els espais de darrere la <code>A</code> es perdrien.
+</p>
+
+</div>
+
+<h4><a id="obtenir_valors" >Obtenir valors</a></h4>
+<div class="level4">
+
+<p>
+Una tasca habitual a l’hora de fer una transformació sol ser obtenir els valors dels elements del document d’origen per posar-los en l’element de destinació. Es poden obtenir el valor dels elements d’origen fent servir <strong><code>&lt;xsl:value-of&gt;</code></strong>.
+</p>
+
+<p>
+Aquest element avalua l’expressió XPath de l’atribut <strong>select</strong> i en genera una sortida amb el seu contingut. 
+</p>
+
+<p>
+Per exemple, a partir de l’XML següent:
+</p>
+<pre class="code xml"><ol><li class="li1"><div class="de1"><span class="sc3"><span class="re1">&lt;xsl:template</span> <span class="re0">match</span>=<span class="st0">&quot;persona&quot;</span><span class="re2">&gt;</span></span></div></li><li class="li1"><div class="de1">    <span class="sc3"><span class="re1">&lt;xsl:value-of</span> <span class="re0">select</span>=<span class="st0">&quot;nom&quot;</span><span class="re2">&gt;</span></span></div></li><li class="li1"><div class="de1"><span class="sc3"><span class="re1">&lt;/xsl:template<span class="re2">&gt;</span></span></span></div></li></ol></pre>
+
+<p>
+Afegirà el valor de l’element <code>&lt;nom&gt;</code> en el fitxer de sortida:
+</p>
+<pre class="code">Pere Garcia</pre>
+
+<p>
+Però s’ha de tenir en compte que només avalua el primer element que compleixi la condició, o sigui, que si el fitxer de mostra fos el següent:
+</p>
+<pre class="code xml"><ol><li class="li1"><div class="de1"><span class="sc3"><span class="re1">&lt;?xml</span> <span class="re0">version</span>=<span class="st0">&quot;1.0&quot;</span> <span class="re2">?&gt;</span></span></div></li><li class="li1"><div class="de1"><span class="sc3"><span class="re1">&lt;persona<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1">    <span class="sc3"><span class="re1">&lt;nom</span> <span class="re0">tipus</span>=<span class="st0">&quot;Professor&quot;</span><span class="re2">&gt;</span></span>Pere Garcia<span class="sc3"><span class="re1">&lt;/nom<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1">    <span class="sc3"><span class="re1">&lt;nom<span class="re2">&gt;</span></span></span>Frederic Pi<span class="sc3"><span class="re1">&lt;/nom<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1">    <span class="sc3"><span class="re1">&lt;nom<span class="re2">&gt;</span></span></span>Manel Puig<span class="sc3"><span class="re1">&lt;/nom<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1"><span class="sc3"><span class="re1">&lt;/persona<span class="re2">&gt;</span></span></span></div></li></ol></pre>
+
+<p>
+…la sortida d’aplicar la mateixa plantilla només seria el primer dels noms i no tots dos, perquè agafaria només el primer <code>&lt;nom&gt;</code> de <code>&lt;persona&gt;</code>:
+</p>
+<pre class="code">Pere Garcia</pre>
+
+<p>
+Per tant és molt important triar bé quines són les expressions XPath de les plantilles per evitar aquest comportament. En aquest cas la solució podria ser escollir <code>&lt;nom&gt;</code> en comptes de <code>&lt;persona&gt;</code>:
+</p>
+<pre class="code xml"><ol><li class="li1"><div class="de1"><span class="sc3"><span class="re1">&lt;xsl:template</span> <span class="re0">match</span>=<span class="st0">&quot;nom&quot;</span><span class="re2">&gt;</span></span></div></li><li class="li1"><div class="de1">    <span class="sc3"><span class="re1">&lt;xsl:value-of</span> <span class="re0">select</span>=<span class="st0">&quot;.&quot;</span><span class="re2">/&gt;</span></span></div></li><li class="li1"><div class="de1"><span class="sc3"><span class="re1">&lt;/xsl:template<span class="re2">&gt;</span></span></span></div></li></ol></pre>
+
+<p>
+Com a resultat de l’element <code>&lt;xsl:value-of&gt;</code> s’hi pot posar qualsevol expressió XPath. Per tant, també es poden obtenir els valors dels atributs afegint ”@” davant del nom.
+</p>
+<pre class="code xml"><ol><li class="li1"><div class="de1"><span class="sc3"><span class="re1">&lt;xsl:template</span> <span class="re0">match</span>=<span class="st0">&quot;nom&quot;</span><span class="re2">&gt;</span></span></div></li><li class="li1"><div class="de1">    <span class="sc3"><span class="re1">&lt;xsl:value-of</span> <span class="re0">select</span>=<span class="st0">&quot;.&quot;</span><span class="re2">/&gt;</span></span> ( <span class="sc3"><span class="re1">&lt;xsl:value-of</span> <span class="re0">select</span>=<span class="st0">&quot;@tipus&quot;</span> <span class="re2">/&gt;</span></span> )</div></li><li class="li1"><div class="de1"><span class="sc3"><span class="re1">&lt;/xsl:template<span class="re2">&gt;</span></span></span></div></li></ol></pre>
+
+<p>
+Que generarà:
+</p>
+<pre class="code">Pere Garcia ( Professor )
+Frederic Pi (  )
+Manel Puig (  )</pre>
+
+<p>
+I també es poden fer servir les funcions XPath. Per tant, es pot generar una sortida amb el total de les persones del fitxer:
+</p>
+<pre class="code xml"><ol><li class="li1"><div class="de1"><span class="sc3"><span class="re1">&lt;xsl:template</span> <span class="re0">match</span>=<span class="st0">&quot;/&quot;</span><span class="re2">&gt;</span></span></div></li><li class="li1"><div class="de1">    Total: <span class="sc3"><span class="re1">&lt;xsl:value-of</span> <span class="re0">select</span>=<span class="st0">&quot;count(//nom)&quot;</span><span class="re2">/&gt;</span></span></div></li><li class="li1"><div class="de1"><span class="sc3"><span class="re1">&lt;/xsl:template<span class="re2">&gt;</span></span></span></div></li></ol></pre>
+
+<p>
+Que donarà de resultat:
+</p>
+<pre class="code">Total: 3</pre>
+
+</div>
+
+<h4><a id="reenviar_nodes_a_una_altra_plantilla" >Reenviar nodes a una altra plantilla</a></h4>
+<div class="level4">
+
+<p>
+Un altre ús habitual de les plantilles és el de fer-les servir per cridar-ne d’altres quan es volen processar alguns dels nodes obtinguts per la plantilla quan aquesta n’obté diversos. 
+</p>
+
+<p>
+Les crides a plantilles es poden fer amb l’element <strong><code>&lt;xsl:apply-templates&gt;</code></strong>. Amb aquest element es pot fer que el diferents resultats d’una expressió XPath es vagin processant un a un, buscant una plantilla on aplicar-se.
+</p>
+
+<p>
+Si partim d’aquest codi XML:
+</p>
+<pre class="code xml"><ol><li class="li1"><div class="de1"><span class="sc3"><span class="re1">&lt;classe<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1">    <span class="sc3"><span class="re1">&lt;nom<span class="re2">&gt;</span></span></span>Frederic Pi<span class="sc3"><span class="re1">&lt;/nom<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1">    <span class="sc3"><span class="re1">&lt;nom<span class="re2">&gt;</span></span></span>Filomeno Garcia<span class="sc3"><span class="re1">&lt;/nom<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1">    <span class="sc3"><span class="re1">&lt;nom<span class="re2">&gt;</span></span></span>Manel Puigdevall<span class="sc3"><span class="re1">&lt;/nom<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1"><span class="sc3"><span class="re1">&lt;/classe<span class="re2">&gt;</span></span></span></div></li></ol></pre>
+
+<p>
+I el full de plantilles següent:
+</p>
+<pre class="code xml"><ol><li class="li1"><div class="de1"><span class="sc3"><span class="re1">&lt;xsl:template</span> <span class="re0">match</span>=<span class="st0">&quot;/&quot;</span><span class="re2">&gt;</span></span></div></li><li class="li1"><div class="de1">    <span class="sc3"><span class="re1">&lt;xsl:apply-templates</span> <span class="re0">select</span>=<span class="st0">&quot;classe/nom&quot;</span><span class="re2">/&gt;</span></span></div></li><li class="li1"><div class="de1"><span class="sc3"><span class="re1">&lt;/xsl:template<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1">&nbsp;</div></li><li class="li1"><div class="de1"><span class="sc3"><span class="re1">&lt;xsl:template</span> <span class="re0">match</span>=<span class="st0">&quot;nom&quot;</span><span class="re2">&gt;</span></span></div></li><li class="li1"><div class="de1">    <span class="sc3"><span class="re1">&lt;xsl:value-of</span> <span class="re0">select</span>=<span class="st0">&quot;.&quot;</span><span class="re2">/&gt;</span></span></div></li><li class="li1"><div class="de1"><span class="sc3"><span class="re1">&lt;/xsl:template<span class="re2">&gt;</span></span></span></div></li></ol></pre>
+
+<p>
+Al executar-se l’<em>apply-templates</em> s’avalua l’expressió XPath que conté, <em>classe/nom</em>, que retorna tres resultats:
+</p>
+<ol>
+<li class="level1"><div class="li"> &lt;nom&gt;Frederic Pi&lt;/nom&gt;</div>
+</li>
+<li class="level1"><div class="li"> &lt;nom&gt;Filomeno Garcia&lt;/nom&gt;</div>
+</li>
+<li class="level1"><div class="li"> &lt;nom&gt;Manel Puigdevall&lt;/nom&gt;</div>
+</li>
+</ol>
+
+<p>
+Cada un d’aquests resultats individualment intentarà trobar una plantilla on aplicar-se. De manera que es processarà tres vegades el segon <em>&lt;xsl:template&gt;</em>, ja que és qui captura <code>nom</code>, i donarà com a resultat:
+</p>
+<pre class="code">Frederic Pi
+Filomeno Garcia
+Manel Puigdevall</pre>
+
+<p>
+Una de les característiques interessants és que <code>&lt;apply-templates&gt;</code> també es pot fer servir per reordenar el contingut. Per exemple, amb l’XML següent:
+</p>
+<pre class="code xml"><ol><li class="li1"><div class="de1"><span class="sc3"><span class="re1">&lt;classe<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1">   <span class="sc3"><span class="re1">&lt;professors<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1">       <span class="sc3"><span class="re1">&lt;nom<span class="re2">&gt;</span></span></span>Marcel Puig<span class="sc3"><span class="re1">&lt;/nom<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1">       <span class="sc3"><span class="re1">&lt;nom<span class="re2">&gt;</span></span></span>Maria Sabartés<span class="sc3"><span class="re1">&lt;/nom<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1">   <span class="sc3"><span class="re1">&lt;/professors<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1">   <span class="sc3"><span class="re1">&lt;alumnes<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1">       <span class="sc3"><span class="re1">&lt;nom<span class="re2">&gt;</span></span></span>Frederic Pi<span class="sc3"><span class="re1">&lt;/nom<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1">       <span class="sc3"><span class="re1">&lt;nom<span class="re2">&gt;</span></span></span>Filomeno Garcia<span class="sc3"><span class="re1">&lt;/nom<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1">       <span class="sc3"><span class="re1">&lt;nom<span class="re2">&gt;</span></span></span>Manel Puigdevall<span class="sc3"><span class="re1">&lt;/nom<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1">   <span class="sc3"><span class="re1">&lt;/alumnes<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1"><span class="sc3"><span class="re1">&lt;/classe<span class="re2">&gt;</span></span></span></div></li></ol></pre>
+
+<p>
+Es poden obtenir tots els nodes amb una plantilla que capturi l’arrel i que primer mostri els noms dels alumnes i després els dels professors, de la següent manera:
+</p>
+<pre class="code xml"><ol><li class="li1"><div class="de1"><span class="sc3"><span class="re1">&lt;xsl:template</span> <span class="re0">match</span>=<span class="st0">&quot;classe&quot;</span><span class="re2">&gt;</span></span></div></li><li class="li1"><div class="de1">    Alumnes</div></li><li class="li1"><div class="de1">    ----------</div></li><li class="li1"><div class="de1">    <span class="sc3"><span class="re1">&lt;xsl:apply-templates</span> <span class="re0">select</span>=<span class="st0">&quot;alumnes/nom&quot;</span><span class="re2">/&gt;</span></span></div></li><li class="li1"><div class="de1">    Professors</div></li><li class="li1"><div class="de1">    ----------</div></li><li class="li1"><div class="de1">    <span class="sc3"><span class="re1">&lt;xsl:apply-templates</span> <span class="re0">select</span>=<span class="st0">&quot;professors/nom&quot;</span><span class="re2">/&gt;</span></span></div></li><li class="li1"><div class="de1"><span class="sc3"><span class="re1">&lt;/xsl:template<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1">&nbsp;</div></li><li class="li1"><div class="de1"><span class="sc3"><span class="re1">&lt;xsl:template</span> <span class="re0">match</span>=<span class="st0">&quot;nom&quot;</span><span class="re2">&gt;</span></span></div></li><li class="li1"><div class="de1">    <span class="sc3"><span class="re1">&lt;xsl:value-of</span> <span class="re0">select</span>=<span class="st0">&quot;.&quot;</span><span class="re2">/&gt;</span></span></div></li><li class="li1"><div class="de1"><span class="sc3"><span class="re1">&lt;/xsl:template<span class="re2">&gt;</span></span></span></div></li></ol></pre>
+
+<p>
+Que generarà:
+</p>
+<pre class="code">Alumnes
+----------
+Frederic Pi
+Filomeno Garcia
+Manel Puigdevall
+
+Professors
+----------
+Marcel Puig
+Maria Sabartés</pre>
+
+<p>
+Es pot veure que un dels usos d’aquest element pot ser reordenar els resultats. En l’exemple, els alumnes en el document original estaven darrere dels professors, i en canvi en el que hem obtingut estan davant. 
+</p>
+
+</div>
+
+<h5><a id="processar_els_nodes_per_fer_tasques_diferents" >Processar els nodes per fer tasques diferents</a></h5>
+<div class="level5">
+
+<p>
+A vegades pot interessar processar els mateixos nodes diverses vegades per obtenir diferents resultats. Per poder fer això es poden definir les plantilles que tinguin l’atribut <strong>mode</strong>. 
+</p>
+
+<p>
+Si es defineix una plantilla amb l’atribut <strong>mode</strong> per activar la plantilla no n’hi haurà prou que quadri amb l’atribut <strong>match</strong>, sinó que també caldrà que s’hi passi l’atribut <strong>mode</strong>.
+</p>
+<pre class="code xml"><ol><li class="li1"><div class="de1"><span class="sc3"><span class="re1">&lt;template</span> <span class="re0">match</span>=<span class="st0">&quot;nom&quot;</span> <span class="re0">mode</span>=<span class="st0">&quot;resultat&quot;</span><span class="re2">&gt;</span></span></div></li><li class="li1"><div class="de1">     ...</div></li><li class="li1"><div class="de1"><span class="sc3"><span class="re1">&lt;/template<span class="re2">&gt;</span></span></span></div></li></ol></pre>
+
+<p>
+Les plantilles amb l’atribut <strong>mode</strong> han de ser cridades específicament. Per exemple, amb <code>&lt;apply-templates&gt;</code>:
+</p>
+<pre class="code xml"><ol><li class="li1"><div class="de1"><span class="sc3"><span class="re1">&lt;xsl:apply-templates</span> <span class="re0">select</span>=<span class="st0">&quot;nom&quot;</span> <span class="re0">mode</span>=<span class="st0">&quot;resultat&quot;</span><span class="re2">/&gt;</span></span></div></li></ol></pre>
+
+<p>
+Això permet fer dues coses diferents amb l’element <code>&lt;alumnes&gt;</code> de l’exercici anterior: comptar els alumnes i fer-ne una llista.
+</p>
+<pre class="code xml"><ol><li class="li1"><div class="de1"><span class="sc3"><span class="re1">&lt;xsl:template</span> <span class="re0">match</span>=<span class="st0">&quot;classe&quot;</span><span class="re2">&gt;</span></span></div></li><li class="li1"><div class="de1">    <span class="sc3"><span class="re1">&lt;xsl:apply-templates</span> <span class="re0">select</span>=<span class="st0">&quot;//alumnes&quot;</span> <span class="re0">mode</span>=<span class="st0">&quot;resultat&quot;</span><span class="re2">/&gt;</span></span></div></li><li class="li1"><div class="de1">    <span class="sc3"><span class="re1">&lt;xsl:apply-templates</span> <span class="re0">select</span>=<span class="st0">&quot;//alumnes&quot;</span><span class="re2">/&gt;</span></span></div></li><li class="li1"><div class="de1"><span class="sc3"><span class="re1">&lt;/xsl:template<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1">&nbsp;</div></li><li class="li1"><div class="de1"><span class="sc3"><span class="re1">&lt;xsl:template</span> <span class="re0">match</span>=<span class="st0">&quot;alumnes&quot;</span><span class="re2">&gt;</span></span></div></li><li class="li1"><div class="de1">    <span class="sc3"><span class="re1">&lt;xsl:apply-templates</span> <span class="re0">select</span>=<span class="st0">&quot;nom&quot;</span> <span class="re2">/&gt;</span></span></div></li><li class="li1"><div class="de1"><span class="sc3"><span class="re1">&lt;/xsl:template<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1">&nbsp;</div></li><li class="li1"><div class="de1"><span class="sc3"><span class="re1">&lt;xsl:template</span> <span class="re0">match</span>=<span class="st0">&quot;alumnes&quot;</span> <span class="re0">mode</span>=<span class="st0">&quot;resultat&quot;</span><span class="re2">&gt;</span></span></div></li><li class="li1"><div class="de1">    Total: <span class="sc3"><span class="re1">&lt;xsl:value-of</span> <span class="re0">select</span>=<span class="st0">&quot;count(nom)&quot;</span><span class="re2">/&gt;</span></span></div></li><li class="li1"><div class="de1"><span class="sc3"><span class="re1">&lt;/xsl:template<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1">&nbsp;</div></li><li class="li1"><div class="de1"><span class="sc3"><span class="re1">&lt;xsl:template</span> <span class="re0">match</span>=<span class="st0">&quot;nom&quot;</span><span class="re2">&gt;</span></span></div></li><li class="li1"><div class="de1">    <span class="sc3"><span class="re1">&lt;xsl:value-of</span> <span class="re0">select</span>=<span class="st0">&quot;.&quot;</span><span class="re2">/&gt;</span></span></div></li><li class="li1"><div class="de1"><span class="sc3"><span class="re1">&lt;/xsl:template<span class="re2">&gt;</span></span></span></div></li></ol></pre>
+
+<p>
+El resultat serà:
+</p>
+<pre class="code">Total: 3            
+Frederic Pi            
+Filomeno Garcia            
+Manel Puigdevall</pre>
+
+</div>
+
+<h4><a id="forcar_el_tipus_de_sortida" >Forçar el tipus de sortida</a></h4>
+<div class="level4">
+
+<p>
+XSLT està pensat per generar sortides en text, XML, <acronym title="HyperText Markup Language">HTML</acronym> i XHTML. Per defecte considera que la sortida serà un altre document XML i, per tant, si es vol generar un document XML no cal especificar res.
+</p>
+<div class="iocnote"><div class="ioccontent">
+<p>
+Molts processadors interpreten que la sortida serà <acronym title="HyperText Markup Language">HTML</acronym> si la primera etiqueta que troben és <code>&lt;html&gt;</code>.
+</p>
+</div></div>
+<p>
+Podem forçar que la sortida sigui una altra amb <strong><code>&lt;xsl:output&gt;</code></strong>. Per exemple podem fer que la sortida sigui interpretada com a text pla amb:
+</p>
+<pre class="code">&lt;xsl:output type=&quot;text&quot;&gt;</pre>
+
+<p>
+Si l’atribut <code>type</code> no és “xml” no sortirà la capçalera XML en el resultat final.
+</p>
+
+<p>
+Però a part de <code>type</code> hi ha altres atributs que permeten controlar de quina manera es generaran els resultats. Per exemple, <strong><code>indent</code></strong> serveix per formatar les sortides, <strong><code>encoding</code></strong> per definir la codificació que cal fer servir, etc.
+</p>
+
+</div>
+
+<h4><a id="instruccions_de_control" >Instruccions de control</a></h4>
+<div class="level4">
+
+<p>
+XSLT proporciona una manera de processar els resultats molt semblant a com ho fan els llenguatges de programació. Com molts llenguatges de programació, incorpora instruccions per processar els resultats.
+</p>
+
+</div>
+
+<h5><a id="expressions_condicionals" >Expressions condicionals</a></h5>
+<div class="level5">
+
+<p>
+<strong><code>&lt;xsl:if&gt;</code></strong> permet afegir els resultats al fitxer només si es compleix una determinada condició.
+</p>
+
+<p>
+Per exemple, davant d’un document com el següent:
+</p>
+<pre class="code xml"><ol><li class="li1"><div class="de1"><span class="sc3"><span class="re1">&lt;alumnes<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1">    <span class="sc3"><span class="re1">&lt;alumne</span> <span class="re0">nota</span>=<span class="st0">&quot;5&quot;</span><span class="re2">&gt;</span></span>Pere Garcia<span class="sc3"><span class="re1">&lt;/nota<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1">    <span class="sc3"><span class="re1">&lt;alumne</span> <span class="re0">nota</span>=<span class="st0">&quot;3&quot;</span><span class="re2">&gt;</span></span>Manel Puigdevall<span class="sc3"><span class="re1">&lt;/nota<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1"><span class="sc3"><span class="re1">&lt;/alumnes<span class="re2">&gt;</span></span></span></div></li></ol></pre>
+
+<p>
+Amb <code>&lt;xsl:if&gt;</code> es pot aconseguir posar algun text només en els alumnes que tinguin una nota superior a 5.
+</p>
+<pre class="code xml"><ol><li class="li1"><div class="de1"><span class="sc3"><span class="re1">&lt;xsl:if</span> <span class="re0">test</span>=<span class="st0">&quot;@nota&gt;</span></span>=5&quot;&gt;</div></li><li class="li1"><div class="de1">   (aprovat)</div></li><li class="li1"><div class="de1"><span class="sc3"><span class="re1">&lt;/xsl<span class="re2">&gt;</span></span></span></div></li></ol></pre>
+
+<p>
+Hi ha altres funcions per expressar alternatives, com <strong><code>&lt;xsl:choose&gt;</code></strong>, que permet explicitar múltiples alternatives.
+</p>
+<pre class="code xml"><ol><li class="li1"><div class="de1"><span class="sc3"><span class="re1">&lt;xsl:choose<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1">    <span class="sc3"><span class="re1">&lt;xsl:when</span> <span class="re0">select</span>=<span class="st0">&quot;@nota=10&quot;</span><span class="re2">&gt;</span></span> (excel·lent) <span class="sc3"><span class="re1">&lt;/xsl:when<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1">    <span class="sc3"><span class="re1">&lt;xsl:when</span> <span class="re0">select</span>=<span class="st0">&quot;@nota&gt;</span></span>=5&quot;&gt; (aprovat)    <span class="sc3"><span class="re1">&lt;/xsl:when<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1">    <span class="sc3"><span class="re1">&lt;xsl:otherwise<span class="re2">&gt;</span></span></span> (suspès) <span class="sc3"><span class="re1">&lt;/xsl:</span></span></div></li><li class="li1"><div class="de1"><span class="sc3">otherwis</span></div></li><li class="li1"><div class="de1"><span class="sc3">e<span class="re2">&gt;</span></span>    </div></li><li class="li1"><div class="de1"><span class="sc3"><span class="re1">&lt;/xsl:choose<span class="re2">&gt;</span></span></span></div></li></ol></pre>
+
+</div>
+
+<h5><a id="iteracions" >Iteracions</a></h5>
+<div class="level5">
+
+<p>
+<strong>&lt;xsl:for-each&gt;</strong> serveix per processar una seqüència de nodes un per un per fer alguna acció en cada un:
+</p>
+<pre class="code xml"><ol><li class="li1"><div class="de1"><span class="sc3"><span class="re1">&lt;xsl:for-each</span> <span class="re0">select</span>=<span class="st0">&quot;/classe/alumnes/nom&quot;</span><span class="re2">&gt;</span></span></div></li><li class="li1"><div class="de1">    <span class="sc3"><span class="re1">&lt;xsl:value-of</span> <span class="re0">select</span>=<span class="st0">&quot;.&quot;</span><span class="re2">/&gt;</span></span></div></li><li class="li1"><div class="de1"><span class="sc3"><span class="re1">&lt;/xsl:for-each<span class="re2">&gt;</span></span></span></div></li></ol></pre>
+
+</div>
+
+<h4><a id="altres" >Altres</a></h4>
+<div class="level4">
+
+<p>
+Hi ha etiquetes que permeten fer tasques de transformació elaborades per poder ajustar les transformacions als diferents requisits que es puguin donar:
+</p>
+<ul>
+<li class="level1"><div class="li"> Ordenar: <code>&lt;xsl:sort&gt;</code>.</div>
+</li>
+<li class="level1"><div class="li"> Numerar una llista de resultats: <code>&lt;xsl:number&gt;</code>.</div>
+</li>
+<li class="level1"><div class="li"> Crear variables: <code>&lt;xsl:variable&gt;</code>.</div>
+</li>
+<li class="level1"><div class="li"> Passar paràmetres a les plantilles: <code>&lt;xsl:param&gt;</code>, <code>&lt;xsl:with-param&gt;</code>, <code>&lt;xsl:call-template&gt;</code>.</div>
+</li>
+<li class="level1"><div class="li"> Copiar dades directament: <code>&lt;xsl:copy&gt;</code>, <code>&lt;xsl:copy-of&gt;</code>.</div>
+</li>
+<li class="level1"><div class="li"> Carregar XSL des d’altres arxius: <code>&lt;xsl:import&gt;</code> / <code>&lt;xsl:include&gt;</code>.</div>
+</li>
+<li class="level1"><div class="li"> Definir les nostres funcions: <code>&lt;xsl:function&gt;</code>.</div>
+</li>
+</ul>
+
+<p>
+En cas que calgui alguna tasca molt específica, és important tenir a mà l’especificació per comprovar si hi ha algun element que pugui simplificar el procés de creació de la plantilla:
+</p>
+<ul>
+<li class="level1"><div class="li"> XSLT 1.0: <a href="http://www.w3.org/TR/xslt" class="urlextern" title="http://www.w3.org/TR/xslt"  rel="nofollow">www.w3.org/TR/xslt</a></div>
+</li>
+<li class="level1"><div class="li"> XSLT 2.0: <a href="http://www.w3.org/TR/xslt20/" class="urlextern" title="http://www.w3.org/TR/xslt20/"  rel="nofollow">www.w3.org/TR/xslt20/</a></div>
+</li>
+</ul>
+
+<p>
+A més, com que XSLT està basat en XML també s’hi poden afegir extensions per ampliar-ne les possibilitats a l’hora de fer transformacions. En aquest sentit són bastant populars les extensions que afegeix el grup <strong>EXSTL</strong> o les del processador <strong>Saxon</strong>.
+</p>
+
+</div>
+
+<h3><a id="exemple" >Exemple</a></h3>
+<div class="level3">
+
+<p>
+Per poder traspassar les dades d’un programa a un altre hem de convertir l’estructura d’un document XML en una altra de diferent. 
+</p>
+
+<p>
+En una editorial reben les comandes dels llibres en un format XML. El format en què es reben les comandes és un XML agrupat per autors com aquest:
+</p>
+<pre class="code xml"><ol><li class="li1"><div class="de1"><span class="sc3"><span class="re1">&lt;peticio</span> <span class="re0">biblioteca</span>=<span class="st0">&quot;Fantastica SL&quot;</span><span class="re2">&gt;</span></span></div></li><li class="li1"><div class="de1">    <span class="sc3"><span class="re1">&lt;data<span class="re2">&gt;</span></span></span>15-11-2011<span class="sc3"><span class="re1">&lt;/data<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1">    <span class="sc3"><span class="re1">&lt;autor<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1">        <span class="sc3"><span class="re1">&lt;nom<span class="re2">&gt;</span></span></span>Frédérik McCloud<span class="sc3"><span class="re1">&lt;/nom<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1">        <span class="sc3"><span class="re1">&lt;llibres<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1">            <span class="sc3"><span class="re1">&lt;llibre<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1">                <span class="sc3"><span class="re1">&lt;titol<span class="re2">&gt;</span></span></span>Les empentes<span class="sc3"><span class="re1">&lt;/titol<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1">                <span class="sc3"><span class="re1">&lt;quantitat<span class="re2">&gt;</span></span></span>2<span class="sc3"><span class="re1">&lt;/quantitat<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1">            <span class="sc3"><span class="re1">&lt;/llibre<span class="re2">&gt;</span></span></span>            </div></li><li class="li1"><div class="de1">        <span class="sc3"><span class="re1">&lt;/llibres<span class="re2">&gt;</span></span></span>        </div></li><li class="li1"><div class="de1">    <span class="sc3"><span class="re1">&lt;/autor<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1">    <span class="sc3"><span class="re1">&lt;autor<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1">        <span class="sc3"><span class="re1">&lt;nom<span class="re2">&gt;</span></span></span>Corsaro Levy<span class="sc3"><span class="re1">&lt;/nom<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1">        <span class="sc3"><span class="re1">&lt;llibres<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1">            <span class="sc3"><span class="re1">&lt;llibre<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1">                <span class="sc3"><span class="re1">&lt;titol<span class="re2">&gt;</span></span></span>Marxant de la font del gat<span class="sc3"><span class="re1">&lt;/titol<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1">                <span class="sc3"><span class="re1">&lt;quantitat<span class="re2">&gt;</span></span></span>1<span class="sc3"><span class="re1">&lt;/quantitat<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1">            <span class="sc3"><span class="re1">&lt;/llibre<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1">            <span class="sc3"><span class="re1">&lt;llibre<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1">                <span class="sc3"><span class="re1">&lt;titol<span class="re2">&gt;</span></span></span>Bèstia!<span class="sc3"><span class="re1">&lt;/titol<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1">                <span class="sc3"><span class="re1">&lt;quantitat<span class="re2">&gt;</span></span></span>1<span class="sc3"><span class="re1">&lt;/quantitat<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1">            <span class="sc3"><span class="re1">&lt;/llibre<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1">        <span class="sc3"><span class="re1">&lt;/llibres<span class="re2">&gt;</span></span></span>        </div></li><li class="li1"><div class="de1">    <span class="sc3"><span class="re1">&lt;/autor<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1"><span class="sc3"><span class="re1">&lt;/peticio<span class="re2">&gt;</span></span></span></div></li></ol></pre>
+
+<p>
+Però com que l’editorial té els llibres organitzats per títols i no per autors, volen que es converteixi en un format que els faci més còmode treballar-hi.
+</p>
+
+<p>
+L’editorial vol que tingui una part en què s’identifiqui la data de la comanda i el nom de la llibreria i després que hi hagi la llista de llibres. L’equivalent de l’arxiu anterior seria aquest:
+</p>
+<pre class="code xml"><ol><li class="li1"><div class="de1"><span class="sc3"><span class="re1">&lt;comanda<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1">   <span class="sc3"><span class="re1">&lt;llibreria</span> <span class="re0">data</span>=<span class="st0">&quot;15-11-2011&quot;</span><span class="re2">&gt;</span></span>Fantastica SL<span class="sc3"><span class="re1">&lt;/llibreria<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1">   <span class="sc3"><span class="re1">&lt;llibre</span> <span class="re0">quantitat</span>=<span class="st0">&quot;2&quot;</span><span class="re2">&gt;</span></span></div></li><li class="li1"><div class="de1">      <span class="sc3"><span class="re1">&lt;nom<span class="re2">&gt;</span></span></span>Les empentes<span class="sc3"><span class="re1">&lt;/nom<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1">      <span class="sc3"><span class="re1">&lt;autor<span class="re2">&gt;</span></span></span>Frédérik McCloud<span class="sc3"><span class="re1">&lt;/autor<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1">   <span class="sc3"><span class="re1">&lt;/llibre<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1">   <span class="sc3"><span class="re1">&lt;llibre</span> <span class="re0">quantitat</span>=<span class="st0">&quot;1&quot;</span><span class="re2">&gt;</span></span></div></li><li class="li1"><div class="de1">      <span class="sc3"><span class="re1">&lt;nom<span class="re2">&gt;</span></span></span>Marxant de la font del gat<span class="sc3"><span class="re1">&lt;/nom<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1">      <span class="sc3"><span class="re1">&lt;autor<span class="re2">&gt;</span></span></span>Corsaro Levy<span class="sc3"><span class="re1">&lt;/autor<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1">   <span class="sc3"><span class="re1">&lt;/llibre<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1">   <span class="sc3"><span class="re1">&lt;llibre</span> <span class="re0">quantitat</span>=<span class="st0">&quot;1&quot;</span><span class="re2">&gt;</span></span></div></li><li class="li1"><div class="de1">      <span class="sc3"><span class="re1">&lt;nom<span class="re2">&gt;</span></span></span>Bèstia!<span class="sc3"><span class="re1">&lt;/nom<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1">      <span class="sc3"><span class="re1">&lt;autor<span class="re2">&gt;</span></span></span>Corsaro Levy<span class="sc3"><span class="re1">&lt;/autor<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1">   <span class="sc3"><span class="re1">&lt;/llibre<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1"><span class="sc3"><span class="re1">&lt;/comanda<span class="re2">&gt;</span></span></span></div></li></ol></pre>
+
+</div>
+
+<h4><a id="resolucio" >Resolució</a></h4>
+<div class="level4">
+
+<p>
+Es crea un arxiu amb la capçalera XML i s’hi defineix l’arrel dels fitxers XSLT.
+</p>
+<pre class="code xml"><ol><li class="li1"><div class="de1"><span class="sc3"><span class="re1">&lt;?xml</span> <span class="re0">version</span>=<span class="st0">&quot;1.0&quot;</span> <span class="re0">encoding</span>=<span class="st0">&quot;UTF-8&quot;</span><span class="re2">?&gt;</span></span></div></li><li class="li1"><div class="de1"><span class="sc3"><span class="re1">&lt;xsl:stylesheet</span> <span class="re0">xmlns:xsl</span>=<span class="st0">&quot;http://www.w3.org/1999/XSL/Transform&quot;</span></span></div></li><li class="li1"><div class="de1"><span class="sc3">    <span class="re0">version</span>=<span class="st0">&quot;2.0&quot;</span><span class="re2">&gt;</span></span></div></li><li class="li1"><div class="de1">&nbsp;</div></li><li class="li1"><div class="de1"><span class="sc3"><span class="re1">&lt;/xsl:stylesheet<span class="re2">&gt;</span></span></span></div></li></ol></pre>
+
+<p>
+Com que es vol tenir totalment controlada tota la sortida el més fàcil és capturar tot el document amb una plantilla que capturi l’arrel.
+</p>
+<pre class="code xml"><ol><li class="li1"><div class="de1"><span class="sc3"><span class="re1">&lt;xsl:template</span> <span class="re0">match</span>=<span class="st0">&quot;/&quot;</span><span class="re2">&gt;</span></span></div></li><li class="li1"><div class="de1">&nbsp;</div></li><li class="li1"><div class="de1"><span class="sc3"><span class="re1">&lt;/xsl:template<span class="re2">&gt;</span></span></span></div></li></ol></pre>
+
+<p>
+Dins d’aquesta plantilla ja es pot definir la primera part de l’estructura del document, l’arrel <code>&lt;comanda&gt;</code> i l’element <code>&lt;llibreria&gt;</code>. En ser definits de nou no cal obtenir les dades del fitxer i es poden especificar com a literals.
+</p>
+<pre class="code xml"><ol><li class="li1"><div class="de1"><span class="sc3"><span class="re1">&lt;xsl:template</span> <span class="re0">match</span>=<span class="st0">&quot;/&quot;</span><span class="re2">&gt;</span></span></div></li><li class="li1"><div class="de1">    <span class="sc3"><span class="re1">&lt;comanda<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1">          <span class="sc3"><span class="re1">&lt;llibreria<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1">&nbsp;</div></li><li class="li1"><div class="de1">          <span class="sc3"><span class="re1">&lt;/llibreria<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1">&nbsp;</div></li><li class="li1"><div class="de1">    <span class="sc3"><span class="re1">&lt;/comanda<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1"><span class="sc3"><span class="re1">&lt;/xsl:template<span class="re2">&gt;</span></span></span></div></li></ol></pre>
+
+<p>
+Dins d’aquesta plantilla caldrà aconseguir la llista de tots els llibres i les dades de la llibreria. Com que s’ha capturat l’arrel, les dades de l’etiqueta <code>&lt;llibreria&gt;</code> són fàcils d’aconseguir amb XPath:
+</p>
+<ul>
+<li class="level1"><div class="li"> El nom de la llibreria està a <code>/peticio/@llibreria</code>.</div>
+</li>
+<li class="level1"><div class="li"> La data de la petició a <code>/peticio/data</code>. </div>
+</li>
+</ul>
+
+<p>
+Com que la data ha d’estar en un atribut, la posem dins d’un element <code>&lt;xsl:attribute&gt;</code> en el qual es defineix el nom <code>dia</code>:
+</p>
+<pre class="code xml"><ol><li class="li1"><div class="de1"><span class="sc3"><span class="re1">&lt;xsl:template</span> <span class="re0">match</span>=<span class="st0">&quot;/&quot;</span><span class="re2">&gt;</span></span></div></li><li class="li1"><div class="de1">    <span class="sc3"><span class="re1">&lt;comanda<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1">        <span class="sc3"><span class="re1">&lt;llibreria<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1">          <span class="sc3"><span class="re1">&lt;xsl:attribute</span> <span class="re0">name</span>=<span class="st0">&quot;dia&quot;</span><span class="re2">&gt;</span></span></div></li><li class="li1"><div class="de1">              <span class="sc3"><span class="re1">&lt;xsl:value-of</span> <span class="re0">select</span>=<span class="st0">&quot;/peticio/data&quot;</span><span class="re2">/&gt;</span></span></div></li><li class="li1"><div class="de1">          <span class="sc3"><span class="re1">&lt;/xsl:attribute<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1">          <span class="sc3"><span class="re1">&lt;xsl:value-of</span> <span class="re0">select</span>=<span class="st0">&quot;/peticio/@llibreria&quot;</span><span class="re2">/&gt;</span></span></div></li><li class="li1"><div class="de1">        <span class="sc3"><span class="re1">&lt;/llibreria<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1">    <span class="sc3"><span class="re1">&lt;/comanda<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1"><span class="sc3"><span class="re1">&lt;/xsl:template<span class="re2">&gt;</span></span></span></div></li></ol></pre>
+
+<p>
+Si provem el codi que hem fet veurem que ja genera la primera part del que es vol obtenir. Apareix l’element llibreria i té els valors del document.
+</p>
+<pre class="code xml"><ol><li class="li1"><div class="de1"><span class="sc3"><span class="re1">&lt;comanda<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1">   <span class="sc3"><span class="re1">&lt;llibreria</span> <span class="re0">data</span>=<span class="st0">&quot;15-11-2011&quot;</span><span class="re2">&gt;</span></span>Fantastica SL<span class="sc3"><span class="re1">&lt;/llibreria<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1"><span class="sc3"><span class="re1">&lt;/comanda<span class="re2">&gt;</span></span></span></div></li></ol></pre>
+
+<p>
+Només ens falta obtenir la llista de llibres. Com que es tracta d’una repetició de dades ho podem fer de dues maneres, amb un <code>for-each</code> o cridant una plantilla nova amb <code>apply-templates</code> que s’encarregui de fer cada llibre.
+</p>
+
+<p>
+El més simple és fer-ho amb una plantilla a la qual anirem passant els nodes <code>&lt;titol&gt;</code> del document, i a partir d’aquests nodes obtindrem les dades.
+</p>
+
+<p>
+Per tant darrere del tancament de l’element <code>&lt;llibreria&gt;</code> es fa una crida a una plantilla que capturarà tots els elements <code>&lt;titol&gt;</code> del document (en XPath ho podem expressar com &#039;&#039;//titol&#039;&#039;:
+</p>
+<pre class="code xml"><ol><li class="li1"><div class="de1"><span class="sc3"><span class="re1">&lt;xsl:apply-templates</span> <span class="re0">select</span>=<span class="st0">&quot;//titol&quot;</span><span class="re2">/&gt;</span></span></div></li></ol></pre>
+
+<p>
+Falta definir la plantilla que rebrà la llista d’elements <code>&lt;titol&gt;</code>. Com que tots els títols estan dins d’una etiqueta <code>&lt;llibre&gt;</code> ja es pot definir:
+</p>
+<pre class="code xml"><ol><li class="li1"><div class="de1"><span class="sc3"><span class="re1">&lt;xsl:template</span> <span class="re0">match</span>=<span class="st0">&quot;titol&quot;</span><span class="re2">&gt;</span></span></div></li><li class="li1"><div class="de1">  <span class="sc3"><span class="re1">&lt;llibre<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1">  <span class="sc3"><span class="re1">&lt;/llibre<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1"><span class="sc3"><span class="re1">&lt;/xsl:template<span class="re2">&gt;</span></span></span></div></li></ol></pre>
+
+<p>
+Els valors que ens calen es poden aconseguir fàcilment:
+</p>
+<ul>
+<li class="level1"><div class="li"> El títol és el valor del node en el qual estem. O sigui, en XPath seria <code>.</code></div>
+</li>
+<li class="level1"><div class="li"> La quantitat de llibres demanats és el node germà del qual estem. Per tant, reculem fins al pare amb <code>..</code> i després entrem en el node <code>quantitat</code>. L’expressió XPath és <code>../quantitat</code>.</div>
+</li>
+<li class="level1"><div class="li"> El nom de l’autor es pot aconseguir amb una expressió una mica més llarga. Cal recular tres nivells fins a arribar al node <code>&lt;autor&gt;</code>, com es pot veure en la figura (<span class="figref"><a href="#fig129"><span>figura</span></a></span>). Per tant, l’expressió XPath serà <code>../../../nom</code>.</div>
+</li>
+</ul>
+<div class="iocfigure"><a name="fig129"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Per obtenir l’autor reculem tres nivells i entrem a <code>nom</code>
+
+</figcaption><img src="../media/asxm04u3_16.png" alt="" /></figure>
+</div>
+<p>
+Només falta emplenar les dades dins de la nova plantilla: posar la quantitat com a atribut i crear les noves etiquetes per a l’autor i el títol, que podem definir com a literals.
+</p>
+<pre class="code xml"><ol><li class="li1"><div class="de1"><span class="sc3"><span class="re1">&lt;xsl:template</span> <span class="re0">match</span>=<span class="st0">&quot;titol&quot;</span><span class="re2">&gt;</span></span></div></li><li class="li1"><div class="de1">    <span class="sc3"><span class="re1">&lt;llibre<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1">        <span class="sc3"><span class="re1">&lt;xsl:attribute</span> <span class="re0">name</span>=<span class="st0">&quot;quantitat&quot;</span><span class="re2">&gt;</span></span></div></li><li class="li1"><div class="de1">            <span class="sc3"><span class="re1">&lt;xsl:value-of</span> <span class="re0">select</span>=<span class="st0">&quot;../quantitat&quot;</span><span class="re2">/&gt;</span></span></div></li><li class="li1"><div class="de1">        <span class="sc3"><span class="re1">&lt;/xsl:attribute<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1">&nbsp;</div></li><li class="li1"><div class="de1">        <span class="sc3"><span class="re1">&lt;nom<span class="re2">&gt;</span></span><span class="re1">&lt;xsl:value-of</span> <span class="re0">select</span>=<span class="st0">&quot;.&quot;</span><span class="re2">/&gt;</span><span class="re1">&lt;/nom<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1">        <span class="sc3"><span class="re1">&lt;autor<span class="re2">&gt;</span></span><span class="re1">&lt;xsl:value-of</span> <span class="re0">select</span>=<span class="st0">&quot;../../../nom&quot;</span><span class="re2">/&gt;</span><span class="re1">&lt;/autor<span class="re2">&gt;</span></span></span>            </div></li><li class="li1"><div class="de1">    <span class="sc3"><span class="re1">&lt;/llibre<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1"><span class="sc3"><span class="re1">&lt;/xsl:template<span class="re2">&gt;</span></span></span></div></li></ol></pre>
+
+<p>
+La plantilla final quedarà d’aquesta manera:
+</p>
+<pre class="code xml"><ol><li class="li1"><div class="de1"><span class="sc3"><span class="re1">&lt;?xml</span> <span class="re0">version</span>=<span class="st0">&quot;1.0&quot;</span> <span class="re0">encoding</span>=<span class="st0">&quot;UTF-8&quot;</span><span class="re2">?&gt;</span></span></div></li><li class="li1"><div class="de1"><span class="sc3"><span class="re1">&lt;xsl:stylesheet</span> <span class="re0">xmlns:xsl</span>=<span class="st0">&quot;http://www.w3.org/1999/XSL/Transform&quot;</span></span></div></li><li class="li1"><div class="de1"><span class="sc3">    <span class="re0">version</span>=<span class="st0">&quot;2.0&quot;</span><span class="re2">&gt;</span></span></div></li><li class="li1"><div class="de1">    <span class="sc3"><span class="re1">&lt;xsl:output</span> <span class="re0">indent</span>=<span class="st0">&quot;yes&quot;</span><span class="re2">/&gt;</span></span></div></li><li class="li1"><div class="de1">    <span class="sc3"><span class="re1">&lt;xsl:template</span> <span class="re0">match</span>=<span class="st0">&quot;/&quot;</span><span class="re2">&gt;</span></span></div></li><li class="li1"><div class="de1">        <span class="sc3"><span class="re1">&lt;comanda<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1">            <span class="sc3"><span class="re1">&lt;llibreria<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1">                <span class="sc3"><span class="re1">&lt;xsl:attribute</span> <span class="re0">name</span>=<span class="st0">&quot;data&quot;</span><span class="re2">&gt;</span></span></div></li><li class="li1"><div class="de1">                    <span class="sc3"><span class="re1">&lt;xsl:value-of</span> <span class="re0">select</span>=<span class="st0">&quot;peticio/data&quot;</span><span class="re2">/&gt;</span></span>                    </div></li><li class="li1"><div class="de1">                <span class="sc3"><span class="re1">&lt;/xsl:attribute<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1">                <span class="sc3"><span class="re1">&lt;xsl:value-of</span> <span class="re0">select</span>=<span class="st0">&quot;peticio/@llibreria&quot;</span><span class="re2">/&gt;</span></span></div></li><li class="li1"><div class="de1">            <span class="sc3"><span class="re1">&lt;/llibreria<span class="re2">&gt;</span></span></span> </div></li><li class="li1"><div class="de1">            <span class="sc3"><span class="re1">&lt;xsl:apply-templates</span> <span class="re0">select</span>=<span class="st0">&quot;//titol&quot;</span><span class="re2">/&gt;</span></span>            </div></li><li class="li1"><div class="de1">        <span class="sc3"><span class="re1">&lt;/comanda<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1">    <span class="sc3"><span class="re1">&lt;/xsl:template<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1">&nbsp;</div></li><li class="li1"><div class="de1">    <span class="sc3"><span class="re1">&lt;xsl:template</span> <span class="re0">match</span>=<span class="st0">&quot;titol&quot;</span><span class="re2">&gt;</span></span></div></li><li class="li1"><div class="de1">        <span class="sc3"><span class="re1">&lt;llibre<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1">            <span class="sc3"><span class="re1">&lt;xsl:attribute</span> <span class="re0">name</span>=<span class="st0">&quot;quantitat&quot;</span><span class="re2">&gt;</span></span></div></li><li class="li1"><div class="de1">                <span class="sc3"><span class="re1">&lt;xsl:value-of</span> <span class="re0">select</span>=<span class="st0">&quot;../quantitat&quot;</span><span class="re2">/&gt;</span></span></div></li><li class="li1"><div class="de1">            <span class="sc3"><span class="re1">&lt;/xsl:attribute<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1">            <span class="sc3"><span class="re1">&lt;nom<span class="re2">&gt;</span></span><span class="re1">&lt;xsl:value-of</span> <span class="re0">select</span>=<span class="st0">&quot;.&quot;</span><span class="re2">/&gt;</span><span class="re1">&lt;/nom<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1">            <span class="sc3"><span class="re1">&lt;autor<span class="re2">&gt;</span></span><span class="re1">&lt;xsl:value-of</span> <span class="re0">select</span>=<span class="st0">&quot;../../../nom&quot;</span><span class="re2">/&gt;</span><span class="re1">&lt;/autor<span class="re2">&gt;</span></span></span>            </div></li><li class="li1"><div class="de1">        <span class="sc3"><span class="re1">&lt;/llibre<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1">    <span class="sc3"><span class="re1">&lt;/xsl:template<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1"><span class="sc3"><span class="re1">&lt;/xsl:stylesheet<span class="re2">&gt;</span></span></span></div></li></ol></pre>
+
+</div>
+
+	 </article>
+     <div class="pnpage">
+      <div class="left-corner"></div>
+      <div id="prevpage">Anar a la p&agrave;gina anterior:<br /><a href="../../../WebContent/u3/a1/exercicis.html">Exercicis d'autoavaluació</a></div>
+      <div id="nextpage">Anar a la p&agrave;gina seg&uuml;ent:<br /><a href="../../../WebContent/u3/a2/activitats.html">Activitats</a></div>
+      <div class="right-corner"></div>
+     </div>
+    </div>
+    <footer class="footer">
+      <div><small>Aquest document està subjecte a una llicència oberta de Creative Commons, es reserva el dret de reconeixement de l'autoria, d'exigir que no se'n faci cap mena d'ús comercial. Si altereu o transformeu aquesta obra, o en genereu obres derivades, només podeu distribuir l'obra generada amb una llicència idèntica a aquesta.</small></div>
+    </footer>
+ </div>
+ <div id="back_preview" class="hidden"></div>
+ <div id="preview" class="hidden">
+  <div class="prevcontent"></div>
+ </div>
+ <div id="help-tooltips">
+  <div id="help-toc" class="hidden tooltip"><span>Taula de continguts:</span> Ofereix una vista general de l&#39;estructura del m&ograve;dul, que us facilitar&agrave; la navegaci&oacute; a trav&eacute;s dels seus continguts.<span class="arrow-left"></span></div> 
+  <div id="help-settings" class="hidden tooltip"><span>Opcions de format:</span> Permet configurar el format de lectura a partir de les vostres prefer&egrave;ncies, modificant la mida de la lletra, el color del fons, l&#39;amplada de la p&agrave;gina o l&#39;ocultaci&oacute; dels continguts complementaris, entre d&#39;altres.<span class="arrow-left"></span></div>
+  <div id="help-printer" class="hidden tooltip"><span>Imprimir:</span>  Envia el contingut seleccionat a la impressora.<span class="arrow-left"></span></div>
+  <div id="help-favorites" class="hidden tooltip"><span>Prefereits:</span> Permet desar aquelles parts del contingut a les que us interessi accedir en un moment posterior; us permetr&agrave; anar creant un repositori personalitzat de les seccions que considereu m&eacute;s rellevants. Un cop l&#39;hageu començat a fer servir se us mostrar&agrave; a sota un comptador que us informar&agrave; del nombre de preferits que s&#39;hagin emmagatzemat fins al moment.<span class="arrow-left"></span></div>
+  <div id="help-favcounter" class="hidden tooltip"><span>Comptador i llistat de preferits:</span> Indica el nombre de preferits que s&#39;han desat fins el moment; clicant damunt seu accedireu al llistat de preferits, i a trav&eacute;s d&#39;aquest podreu accedir directament als continguts que hageu emmagatzemat.<span class="arrow-left"></span></div>
+  <div id="help-help_icon" class="hidden tooltip"><span>Ajuda:</span> Aquesta opci&oacute; activa la informaci&oacute; de les funcionalitats del web tot situant el punter del ratol&iacute; al damunt dels diferents &iacute;tems.<span class="arrow-left"></span></div>
+  <div id="help-sidebar-hide" class="hidden tooltip"><span>Mostrar/Ocultar barra lateral:</span>  Deshabilita la barra d&#39;opcions, permetent la seva recuperaci&oacute; quan es desitgi.<span class="arrow-left"></span></div>
+  <div id="help-search" class="hidden tooltip"><span>Cerca:</span>  Introdu&iuml;u les paraules clau sobre aquells conceptes que desitgeu localitzar en els continguts del m&ograve;dul. Tamb&eacute; podeu excloure un terme de la cerca tot afegint-hi el signe &#8220;-&#8221; al davant.<span class="arrow-top"></span></div>
+  <div id="help-header" class="hidden tooltip"><span>Cap&ccedil;alera:</span>  Indica l&#39;apartat o secci&oacute; que es mostra en pantalla. Tingueu present que les capçaleres de segon, tercer i quart nivell tamb&eacute; es poden desar com a marcadors.<span class="arrow-left"></span></div>
+</div> 
+</body>
+</html>

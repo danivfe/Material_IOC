@@ -1,0 +1,536 @@
+<!doctype html>
+
+<!--[if lt IE 7 ]> <html class="ie ie6 no-js" lang="ca"> <![endif]-->
+<!--[if IE 7 ]>    <html class="ie ie7 no-js" lang="ca"> <![endif]-->
+<!--[if IE 8 ]>    <html class="ie ie8 no-js" lang="ca"> <![endif]-->
+<!--[if IE 9 ]>    <html class="ie ie9 no-js" lang="ca"> <![endif]-->
+<!--[if gt IE 9]><!--><html class="no-js" lang="ca"><!--<![endif]-->
+<!-- the "no-js" class is for Modernizr. -->
+
+<head id="www-sitename-com" data-template-set="html5-reset">
+
+	<meta charset="utf-8">
+	
+	<!-- Always force latest IE rendering engine (even in intranet) & Chrome Frame -->
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	
+	<title>Llenguatges de marques i sistemes de gestió d'informació</title>
+	
+<!-- <meta name="title" content=""> --> 
+	<meta name="description" content="">
+	<!-- Google will often use this as its description of your page/site. Make it good. -->
+	
+	<meta name="google-site-verification" content="">
+	<!-- Speaking of Google, don't forget to set your site up: http://google.com/webmasters -->
+	
+	<meta name="author" content="Institut Obert de Catalunya">
+	<meta name="Copyright" content="Copyright Institut Obert de Catalunya 2011. All Rights Reserved.">
+
+	<!-- Dublin Core Metadata : http://dublincore.org/ -->
+	<meta name="DC.title" content="Llenguatges de marques i sistemes de gestió d'informació">
+	<meta name="DC.subject" content="Informàtica i comunicacions">
+	<meta name="DC.creator" content="Institut Obert de Catalunya">
+	
+	<!--  Mobile Viewport Fix
+	j.mp/mobileviewport & davidbcalhoun.com/2010/viewport-metatag 
+	device-width : Occupy full width of the screen in its current orientation
+	initial-scale = 1.0 retains dimensions instead of zooming out if page height > device height
+	maximum-scale = 1.0 retains dimensions instead of zooming in if page width < device width
+	-->
+	<!-- Uncomment to use � use thoughtfully!
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+	-->
+
+	<link rel="shortcut icon" href="../../../img/favicon.ico">
+	<!-- This is the traditional favicon.
+		 - size: 16x16 or 32x32
+		 - transparency is OK
+		 - see wikipedia for info on browser support: http://mky.be/favicon/ -->
+		 
+	<link rel="apple-touch-icon" href="../../../img/apple-touch-icon.png">
+	<!-- The is the icon for iOS's Web Clip.
+		 - size: 57x57 for older iPhones, 72x72 for iPads, 114x114 for iPhone4's retina display (IMHO, just go ahead and use the biggest one)
+		 - To prevent iOS from applying its styles to the icon name it thusly: apple-touch-icon-precomposed.png
+		 - Transparency is not recommended (iOS will put a black BG behind the icon) -->
+	
+	<!-- CSS: screen, mobile & print are all in the same file -->
+	<link rel="stylesheet" href="../../../_/css/style.css">
+
+	<!-- CSS: jQuery UI -->
+	<link rel="stylesheet" href="../../../_/css/jquery-ui.css">
+	
+	<!-- all our JS is at the bottom of the page, except for Modernizr. -->
+	<script src="../../../_/js/modernizr-1.7.min.js"></script>
+	<script src="../../../_/js/Hyphenator.js" type="text/javascript"></script>
+	<script type="text/javascript">
+	   Hyphenator.config({
+		minwordlength : 4
+	   });
+	   Hyphenator.run();
+	</script>
+    <script src="../../../_/js/build.js" type="text/javascript"></script>
+</head>
+
+<body class="style-newspaper">
+
+<div class="wrapper"><!-- not needed? up to you: http://camendesign.com/code/developpeurs_sans_frontieres -->
+
+	<header id="header">
+		<div class="head"><a href="http://ioc.gencat.cat"><img src="../../../img/logo.png" alt="Institut Obert de Catalunya"/></a><a href="http://creativecommons.org/licenses/by-nc-sa/3.0/es/deed.ca"><img src="../../../img/license.png" alt="Llic&egrave;ncia" class="license"/></a></div>
+		<div class="headdocument"><a href="../../../index.html">Llenguatges de marques i sistemes de gestió d'informació</a></div>
+        <div id="search" class="search" name="search">
+         <form id="frmsearch" action="../../../search.html" method="get">
+          <input type="text" name="q"/>
+        </form>
+        </div>
+	</header>
+   <div id="upbutton" class="upbutton" style="display:none;"><img src="../../../img/uparrow.png" alt="Pujar a l'inici de p&agrave;gina"/></div>
+   <aside id="aside">
+    <div id="menu">
+      <ul>
+       <li name="toc"><div><img src="../../../img/toc.png" alt="&Iacute;ndex"/></div></li>
+       <li name="settings"><div><img src="../../../img/settings.png" alt="Configuraci&oacute;"/></div></li>
+       <li name="printer"><div><img src="../../../img/printer.png" alt="Imprimir"/></div></li>
+       <li name="favorites"><div><img src="../../../img/favorites.png" alt="Favorits"/></div></li>
+       <li name="help_icon" class="help_icon"><div><img src="../../../img/help_icon.png" alt="Ajuda"/></div></li>
+      </ul>
+     </div>
+   </aside>
+   <div id="sidebar-hide" name="sidebar-hide"><img src="../../../img/arrows.png"/></div>
+   <section>
+     <div id="toc" class="hidden">
+      <div class="menucontent">
+        <ul>
+        <li id="u3" class="parentnode"><p><a class="unit" href="../../../WebContent/u3/introduccio.html">3. Àmbits d’aplicació de l’XML</a></p><ul class="expander"><li id="u3introduccio"><a href="../../../WebContent/u3/introduccio.html">Introducció</a></li><li id="u3resum"><a href="../../../WebContent/u3/resum.html">Resum</a></li><li id="u3objectius"><a href="../../../WebContent/u3/objectius.html">Resultats d'aprenentatge</a></li><li id="u3referencies"><a href="../../../WebContent/u3/referencies.html">Referències</a></li><li id="u3a1" class="tocsection"><p id='u3a1continguts'><a class="section" href="../../../WebContent/u3/a1/continguts.html">Sindicació de continguts</a><span class="buttonexp"></span></p><ul><li id="u3a1activitats"><a href="../../../WebContent/u3/a1/activitats.html">Activitats</a></li><li id="u3a1exercicis"><a href="../../../WebContent/u3/a1/exercicis.html">Exercicis d'autoavaluació</a></li></ul></li><li id="u3a2" class="tocsection"><p id='u3a2continguts'><a class="section" href="../../../WebContent/u3/a2/continguts.html">Conversió i adaptació de documents XML</a><span class="buttonexp"></span></p><ul><li id="u3a2activitats"><a href="../../../WebContent/u3/a2/activitats.html">Activitats</a></li><li id="u3a2exercicis"><a href="../../../WebContent/u3/a2/exercicis.html">Exercicis d'autoavaluació</a></li></ul></li><li id="u3a3" class="tocsection"><p id='u3a3continguts'><a class="section" href="../../../WebContent/u3/a3/continguts.html">Bases de dades natives XML. Llenguatge de consultes (XQuery)</a><span class="buttonexp"></span></p><ul><li id="u3a3activitats"><a href="../../../WebContent/u3/a3/activitats.html">Activitats</a></li><li id="u3a3exercicis"><a href="../../../WebContent/u3/a3/exercicis.html">Exercicis d'autoavaluació</a></li></ul></li></ul></li><li id="" class="indexnode"><p><a href="../../../index.html">Anar a l&#39;&iacute;ndex general</a></p></li>
+        </ul>
+      </div>
+    </div>
+   </section>
+   <section>
+   <div id="settings" class="hidden">
+    <div class="menucontent">
+     <div class="allsettings">
+     <div class="settings">
+      <label>Font i Color</label>
+		<div class="setting-option">
+	        <ul class="fontBackground">
+				<li id="style-newspaper" title="Newspaper" class="appearance-style-newspaper"><span>Newspaper</span></li>
+                <li id="style-novel" title="Novel" class="appearance-style-novel"><span>Novel</span></li>
+                <li id="style-ebook" title="eBook" class="appearance-style-ebook"><span>eBook</span></li>
+				<li id="style-inverse" title="Inverse" class="appearance-style-inverse active"><span>Inverse</span></li>
+				<li id="style-athelas" title="Athelas" class="appearance-style-athelas"><span>Athelas</span></li>
+			</ul>
+		</div>
+     </div>
+	<div class="settings">
+      <label>Amplada</label>
+		<div class="setting-option">
+	        <div id="slider-width"></div>
+		</div>
+     </div>
+     <div class="settings">
+      <label>Mida de la font</label>
+		<div class="setting-option">
+	        <div id="slider-font"></div>
+		</div>
+     </div>
+     <div class="settings">
+      <label>Mida de la font</label>
+	  <div class="setting-option">
+       <form action="" class="sett-options">
+		<ul>
+		    <li><input type="checkbox" id="secondary-content" /><label for="secondary-content">Mostra recursos complementaris</label></li>
+		    <li><input type="checkbox" id="main-images" /><label for="main-images">Mostra imatges</label></li>
+		    <li><input type="checkbox" id="text-alignment" /><label for="text-alignment">Text justificat</label></li>
+			<li><input type="checkbox" id="text-hyphen" /><label for="text-hyphen">Partici&oacute; sil·l&agrave;bica</label></li>
+		</ul>
+       </form>
+	  </div>
+     </div>
+     </div>
+    </div>
+   </div>
+   </section>
+ <section>
+ <div id="favorites" class="hidden"></div>
+ </section>   
+ <div id="bridge" class="hidden"></div>
+ <div id="help" class="hidden">
+  <div class="helptitle">Dreceres del teclat<hr></div>
+  <div class="helpsection"><span>General</span>
+   <ul>
+    <li><span class="shortcut">g</span>: Anar al men&uacute; de navegaci&oacute;</li>
+    <li><span class="shortcut">o</span>: Anar a opcions</li>
+    <li><span class="shortcut">s</span>: Guardar la p&agrave;gina actual a favorits</li>
+    <li><span class="shortcut">p</span>: Imprimir la p&agrave;gina actual</li>
+    <li><span class="shortcut">?</span>: Mostrar/Ocultar l&#39;ajuda</li>
+   </ul>
+  </div>
+  <div class="helpsection"><span>Navegaci&oacute;</span>
+   <ul>
+    <li><span class="shortcut">i</span>: Anar a l&#39;&iacute;ndex general</li>
+    <li><span class="shortcut">t</span>: Anar a l&#39;inici de p&agrave;gina</li>
+    <li><span class="shortcut">b</span>: Anar al final de p&agrave;gina</li>
+    <li><span class="shortcut">j</span>: Anar cap endavant dintre la p&agrave;gina</li>
+    <li><span class="shortcut">k</span>: Anar cap enrere dintre la p&agrave;gina</li>
+    <li><span class="shortcut">h</span>: Anar a la p&agrave;gina anterior:</li>
+    <li><span class="shortcut">l</span>: Anar a la p&agrave;gina seg&uuml;ent:</li>
+   </ul>
+   </div>
+ </div>
+ <div id="favcounter" name="favcounter" class="hidden"><span></span></div>
+ <div id="navmenu" class="navmenu"><ul class="webnav"><li><a href="../../../index.html" title="Anar a l&#39;&iacute;ndex general">Inici</a></li><li><a href="../introduccio.html">Àmbits d’aplicació de l’XML</a></li><li><a href="continguts.html">Conversió i adaptació de documents XML</a></li><li>Activitats</li></ul></div>
+	<div id="content" lang="ca" class="hyphenate text">
+     <article lang="ca" class="sheet">
+        <h1><a id="activitats"> Activitats </a></h1>
+    	
+<h2><a id="consultes_xpath" >Consultes XPath</a></h2>
+<div class="level2">
+
+<p>
+L’objectiu d’aquesta activitat és fer servir expressions XPath per extreure resultats d’un document XML.
+</p>
+
+<p>
+Tenim un fitxer XML que conté informació de les notes finals de diferents alumnes i de diferents cicles:
+</p>
+
+<p>
+<div class="mediaf filezip"><div class="mediacontent"><a href="../media/notes-centre.xml.zip">Fitxer XML</a><span> ( 1.1 KB )</span></div></div>
+</p>
+
+<p>
+i se us demana que genereu les expressions XPath que responen les preguntes següents:
+</p>
+
+<p>
+1) Quins cicles formatius s’imparteixen en l’institut?
+<form action=""><div class="solution ioccontent"><pre class="code">//especialitat/cicle/text()</pre>
+</div><input class="btn_solution3" type="button" value="Mostra"></input></form>
+</p>
+
+<p>
+2) Quins cicles formatius de grau mitjà s’imparteixen en l’institut?
+<form action=""><div class="solution ioccontent"><pre class="code">/institut/cicles/especialitat/cicle[@grau=&quot;Mig&quot;]</pre>
+</div><input class="btn_solution3" type="button" value="Mostra"></input></form>
+</p>
+
+<p>
+3) Quins són els noms dels alumnes suspesos?
+<form action=""><div class="solution ioccontent"><pre class="code">//alumne[@aprovat=&quot;NO&quot;]/nom</pre>
+</div><input class="btn_solution3" type="button" value="Mostra"></input></form>
+</p>
+
+<p>
+4) Quantes dones cursen el cicle d’ASIX?
+<form action=""><div class="solution ioccontent"><pre class="code">//classe[@nom=&quot;ASIX&quot;]/alumne[genere=&quot;Dona&quot;]</pre>
+</div><input class="btn_solution3" type="button" value="Mostra"></input></form>
+</p>
+
+<p>
+5) Quins alumnes suspesos tenen un compte a Hotmail?
+<form action=""><div class="solution ioccontent"><pre class="code">//alumne[@aprovat=&quot;NO&quot; and contains(email,&quot;hotmail&quot;)]/email/text()</pre>
+</div><input class="btn_solution3" type="button" value="Mostra"></input></form>
+</p>
+
+<p>
+6) Quina és la llista de classe d’SMX? 
+<form action=""><div class="solution ioccontent"><pre class="code">//classe[@nom=&quot;ASIX&quot;]/alumne/nom/text()</pre>
+</div><input class="btn_solution3" type="button" value="Mostra"></input></form>
+</p>
+
+<p>
+7) En quins cicles hi ha alumnes que han tret un 10?
+<form action=""><div class="solution ioccontent"><pre class="code">//alumne[nota=&quot;10&quot;]/../@nom</pre>
+</div><input class="btn_solution3" type="button" value="Mostra"></input></form>
+</p>
+
+<p>
+8) Quants alumnes han aprovat ASIX?
+<form action=""><div class="solution ioccontent"><pre class="code">count(//classe[@nom=&quot;ASIX&quot;]/alumne[@aprovat=&quot;SI&quot;]) </pre>
+</div><input class="btn_solution3" type="button" value="Mostra"></input></form>
+</p>
+
+<p>
+9) Quin percentatge d’aprovats té el centre?
+<form action=""><div class="solution ioccontent"><pre class="code">count(//alumne[@aprovat=&quot;SI&quot;]) div count(//alumne) * 100</pre>
+</div><input class="btn_solution3" type="button" value="Mostra"></input></form>
+</p>
+
+</div>
+
+<h2><a id="consultes_xpath1" >Consultes XPath</a></h2>
+<div class="level2">
+
+<p>
+L’objectiu d’aquesta activitat és fer servir expressions XPath per extreure resultats d’un document XML.
+</p>
+
+<p>
+En la lliga dels Rovellons s’emmagatzemen els resultats del campionat en un document XML:
+</p>
+
+<p>
+<div class="mediaf filezip"><div class="mediacontent"><a href="../media/lligar-1.xml.zip">Document XML</a><span> ( 986 B )</span></div></div>
+</p>
+
+<p>
+A partir d’aquest fitxer es volen obtenir tota una sèrie de respostes a partir d’expressions XPath:
+</p>
+
+<p>
+1) Quants partits han jugat els Vermells?
+<form action=""><div class="solution ioccontent"><pre class="code">count(//equip[nom=&#039;Vermells&#039;])</pre>
+</div><input class="btn_solution3" type="button" value="Mostra"></input></form>
+</p>
+
+<p>
+2) Quins partits han jugat a casa els Blancs? 
+<form action=""><div class="solution ioccontent"><pre class="code">//equip[nom=&#039;Blancs&#039; and @juga=&quot;local&quot;]</pre>
+</div><input class="btn_solution3" type="button" value="Mostra"></input></form>
+</p>
+
+<p>
+3) Quants jugadors han marcat gols abans de la mitja part (minut 45) tot jugant com a locals?
+<form action=""><div class="solution ioccontent"><pre class="code">//equip[@juga=&quot;local&quot;]/gols/jugador[@minut&lt;45]    </pre>
+</div><input class="btn_solution3" type="button" value="Mostra"></input></form>
+</p>
+
+<p>
+4) Quants partits en els quals jugaven els Blancs han quedat empatats?
+<form action=""><div class="solution ioccontent"><pre class="code">count(//partit[equip[1]/resultat = equip[2]/resultat]/equip[nom=&quot;Blancs&quot;])</pre>
+</div><input class="btn_solution3" type="button" value="Mostra"></input></form>
+</p>
+
+<p>
+5) En quines jornades els Verds han jugat a casa?
+<form action=""><div class="solution ioccontent"><pre class="code">//equip[nom=&quot;Verds&quot; and @juga=&quot;local&quot;]/../../@num</pre>
+</div><input class="btn_solution3" type="button" value="Mostra"></input></form>
+</p>
+
+<p>
+6) En quina jornada s’han fet més gols?
+<form action=""><div class="solution ioccontent"><pre class="code">//jornada[partit/equip[resultat=max(//partit/equip/resultat)]]</pre>
+</div><input class="btn_solution3" type="button" value="Mostra"></input></form>
+</p>
+
+<p>
+7) Quina és la mitjana de gols per partit dels Vermells?
+<form action=""><div class="solution ioccontent"><pre class="code">sum(//equip[nom=&quot;Vermells&quot;]/resultat) div count(//equip[nom=&quot;Vermells&quot;])</pre>
+</div><input class="btn_solution3" type="button" value="Mostra"></input></form>
+</p>
+
+<p>
+8) Quants punts han fet els Blaus?
+<form action=""><div class="solution ioccontent"><pre class="code">18 - count(//equip[nom=&quot;Blaus&quot; and resultat = min(./../equip/resultat)])*3 + count(//partit[equip[1]/resultat = equip[2]/resultat]/equip[nom=&quot;Blaus&quot;])</pre>
+</div><input class="btn_solution3" type="button" value="Mostra"></input></form>
+</p>
+
+</div>
+
+<h2><a id="consultes_xpath2" >Consultes XPath</a></h2>
+<div class="level2">
+
+<p>
+L’objectiu d’aquesta activitat és fer servir expressions XPath per extreure resultats d’un document XML.
+</p>
+
+<p>
+A partir d’un XML que conté informació sobre les previsions del temps de diferents poblacions de Catalunya durant el maig de 2018:
+</p>
+
+<p>
+<div class="mediaf filezip"><div class="mediacontent"><a href="../media/previsio.xml.zip">Fitxer XML</a><span> ( 1.2 KB )</span></div></div>
+</p>
+
+<p>
+elaboreu les expressions XPath que responguin les preguntes següents: 
+</p>
+
+<p>
+1) Quin temps farà a Girona el 23 de maig a les 14.00? 
+<form action=""><div class="solution ioccontent"><pre class="code">//poblacio[nom=&quot;Girona&quot;]/data[@dia=&quot;22-05-2018&quot;]/previsio[@hora=&quot;14:00&quot;]/estat/text()</pre>
+</div><input class="btn_solution3" type="button" value="Mostra"></input></form>
+</p>
+
+<p>
+2) Quina quantitat de pluja caurà a Salt el dia 22 de maig? 
+<form action=""><div class="solution ioccontent"><pre class="code">//poblacio[nom=&quot;Salt&quot;]/data[@dia=&quot;22-05-2018&quot;]/pluja/text()</pre>
+</div><input class="btn_solution3" type="button" value="Mostra"></input></form>
+</p>
+
+<p>
+3) Quins dies plourà a Olot?
+<form action=""><div class="solution ioccontent"><pre class="code">//poblacio[nom=&quot;Olot&quot;]/data[pluja]/@dia</pre>
+</div><input class="btn_solution3" type="button" value="Mostra"></input></form>
+</p>
+
+<p>
+4) En quines poblacions plourà durant aquests dies?
+<form action=""><div class="solution ioccontent"><pre class="code">//pluja/../../nom/text()</pre>
+</div><input class="btn_solution3" type="button" value="Mostra"></input></form>
+</p>
+
+<p>
+5) Quines són totes les temperatures previstes per a les 8 del matí a Camprodon?
+<form action=""><div class="solution ioccontent"><pre class="code">/temps/poblacio[nom=&quot;Camprodon&quot;]/data/previsio[@hora=&quot;08:00&quot;]/graus/</pre>
+</div><input class="btn_solution3" type="button" value="Mostra"></input></form>
+</p>
+
+<p>
+6) En quina població hi haurà 24 graus a les 8 del matí?
+<form action=""><div class="solution ioccontent"><pre class="code">//previsio[@hora=&quot;08:00&quot;][graus=&quot;24&quot;]/../../nom/text()</pre>
+</div><input class="btn_solution3" type="button" value="Mostra"></input></form>
+</p>
+
+<p>
+7) Quina és la mitjana de temperatures de l’Alt Empordà?
+<form action=""><div class="solution ioccontent"><pre class="code">sum(//poblacio[comarca=&quot;Alt Empordà&quot;]/data/previsio/graus) div count(//poblacio[comarca=&quot;Alt Empordà&quot;]/data/previsio)</pre>
+</div><input class="btn_solution3" type="button" value="Mostra"></input></form>
+</p>
+
+<p>
+8) En quin lloc hi haurà la temperatura més alta?
+<form action=""><div class="solution ioccontent"><pre class="code">//poblacio/nom[../data/maxima=max(//maxima)]/text()</pre>
+</div><input class="btn_solution3" type="button" value="Mostra"></input></form>
+</p>
+
+</div>
+
+<h2><a id="transformar_un_document_xml_en_text" >Transformar un document XML en text</a></h2>
+<div class="level2">
+
+<p>
+L’objectiu d’aquesta tasca és aprendre a transformar un document XML en un document de text.
+</p>
+
+<p>
+En un centre educatiu tenen un document XML
+</p>
+
+<p>
+<div class="mediaf filezip"><div class="mediacontent"><a href="../media/notes-departament.xml.zip">Document XML</a><span> ( 557 B )</span></div></div>
+</p>
+
+<p>
+que conté les notes de diferents mòduls. 
+</p>
+
+<p>
+Els cal una llista de notes del mòdul de <em>Llenguatge de marques</em> que tingui aquesta forma:
+</p>
+<pre class="code">Notes de //Llenguatges de marques//
+--------------------------------
+Federicu Garcia : 6            
+Filomenu Pi : 10            
+Manolito Puigdevall : 2            
+Bernat Alegria : 5            
+Filibert Blanch : 7            
+Magdalena Roig : 5                    </pre>
+
+<p>
+Creeu la plantilla XSLT per fer la transformació.
+</p>
+
+<p>
+<form action=""><div class="solution ioccontent"><pre class="code xml"><ol><li class="li1"><div class="de1"><span class="sc3"><span class="re1">&lt;?xml</span> <span class="re0">version</span>=<span class="st0">&quot;1.0&quot;</span> <span class="re0">encoding</span>=<span class="st0">&quot;UTF-8&quot;</span><span class="re2">?&gt;</span></span></div></li><li class="li1"><div class="de1"><span class="sc3"><span class="re1">&lt;xsl:stylesheet</span> <span class="re0">xmlns:xsl</span>=<span class="st0">&quot;http://www.w3.org/1999/XSL/Transform&quot;</span></span></div></li><li class="li1"><div class="de1"><span class="sc3">    <span class="re0">version</span>=<span class="st0">&quot;1.0&quot;</span><span class="re2">&gt;</span></span></div></li><li class="li1"><div class="de1"><span class="sc3"><span class="re1">&lt;xsl:template</span> <span class="re0">match</span>=<span class="st0">&quot;/&quot;</span><span class="re2">&gt;</span></span></div></li><li class="li1"><div class="de1">   Notes de Llenguatges de marques</div></li><li class="li1"><div class="de1">   --------------------------------</div></li><li class="li1"><div class="de1">   <span class="sc3"><span class="re1">&lt;xsl:apply-templates</span> <span class="re0">select</span>=<span class="st0">&quot;//credit[nom='Llenguatges de marques']&quot;</span><span class="re2">/&gt;</span></span></div></li><li class="li1"><div class="de1"><span class="sc3"><span class="re1">&lt;/xsl:template<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1">&nbsp;</div></li><li class="li1"><div class="de1"><span class="sc3"><span class="re1">&lt;xsl:template</span> <span class="re0">match</span>=<span class="st0">&quot;credit&quot;</span><span class="re2">&gt;</span></span></div></li><li class="li1"><div class="de1">    <span class="sc3"><span class="re1">&lt;xsl:value-of</span> <span class="re0">select</span>=<span class="st0">&quot;../../nom&quot;</span><span class="re2">/&gt;</span><span class="re1">&lt;xsl:text<span class="re2">&gt;</span></span></span> <span class="sc3"><span class="re1">&lt;/xsl:text<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1">    <span class="sc3"><span class="re1">&lt;xsl:value-of</span> <span class="re0">select</span>=<span class="st0">&quot;../../cognom&quot;</span><span class="re2">/&gt;</span></span> : <span class="sc3"><span class="re1">&lt;xsl:value-of</span> <span class="re0">select</span>=<span class="st0">&quot;nota&quot;</span><span class="re2">/&gt;</span></span></div></li><li class="li1"><div class="de1">    <span class="sc3"><span class="re1">&lt;xsl:text<span class="re2">&gt;</span></span></span>            </div></li><li class="li1"><div class="de1">    <span class="sc3"><span class="re1">&lt;/xsl:text<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1"><span class="sc3"><span class="re1">&lt;/xsl:template<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1"><span class="sc3"><span class="re1">&lt;/xsl:stylesheet<span class="re2">&gt;</span></span></span></div></li></ol></pre>
+</div><input class="btn_solution3" type="button" value="Mostra"></input></form>
+</p>
+
+</div>
+
+<h2><a id="transformar_un_document_xml" >Transformar un document XML</a></h2>
+<div class="level2">
+
+<p>
+L’objectiu d’aquesta activitat és transformar un document XML en un altre del que només se’n té l’especificació.
+</p>
+
+<p>
+Tenim una agenda en un format XML
+</p>
+
+<p>
+<div class="mediaf filezip"><div class="mediacontent"><a href="../media/agenda.xml.zip">Document XML</a><span> ( 609 B )</span></div></div>
+</p>
+
+<p>
+i la volem transformar a un altre format que es pugui validar amb aquest DTD:
+</p>
+<pre class="code dtd"><ol><li class="li1"><div class="de1">&lt;!ELEMENT agenda (cita*)&gt;</div></li><li class="li1"><div class="de1">&lt;!ELEMENT cita (quan, perque,ambqui?)&gt;</div></li><li class="li1"><div class="de1">&lt;!ELEMENT quan (data, hora)&gt;</div></li><li class="li1"><div class="de1">&lt;!ELEMENT data (#PCDATA)&gt;</div></li><li class="li1"><div class="de1">&lt;!ELEMENT hora (#PCDATA)&gt;</div></li><li class="li1"><div class="de1">&lt;!ELEMENT perque (motiu, comentari)&gt;</div></li><li class="li1"><div class="de1">&lt;!ELEMENT motiu (#PCDATA)&gt;</div></li><li class="li1"><div class="de1">&lt;!ELEMENT comentari (#PCDATA)&gt;</div></li><li class="li1"><div class="de1">&lt;!ELEMENT ambqui (nom+)&gt;</div></li><li class="li1"><div class="de1">&lt;!ELEMENT nom (#PCDATA)&gt;</div></li><li class="li1"><div class="de1">&lt;!ATTLIST nom correu CDATA #IMPLIED &gt;</div></li></ol></pre>
+
+<p>
+Creeu una plantilla XSLT per fer la transformació d’un format a l’altre.
+</p>
+
+<p>
+<form action=""><div class="solution ioccontent">
+<p>
+L’única “trampa” d’aquest codi és el fet de que l’element <code>&lt;ambqui&gt;</code> no sempre ha de sortir. Per aquest motiu es pot fer servir <code>&lt;xsl:if&gt;</code> per evitar posar-lo quan no cal.
+</p>
+<pre class="code xml"><ol><li class="li1"><div class="de1"><span class="sc3"><span class="re1">&lt;?xml</span> <span class="re0">version</span>=<span class="st0">&quot;1.0&quot;</span> <span class="re0">encoding</span>=<span class="st0">&quot;UTF-8&quot;</span><span class="re2">?&gt;</span></span></div></li><li class="li1"><div class="de1"><span class="sc3"><span class="re1">&lt;xsl:stylesheet</span> <span class="re0">xmlns:xsl</span>=<span class="st0">&quot;http://www.w3.org/1999/XSL/Transform&quot;</span></span></div></li><li class="li1"><div class="de1"><span class="sc3">    <span class="re0">version</span>=<span class="st0">&quot;1.0&quot;</span><span class="re2">&gt;</span></span></div></li><li class="li1"><div class="de1">    <span class="sc3"><span class="re1">&lt;xsl:output</span> <span class="re0">indent</span>=<span class="st0">&quot;yes&quot;</span><span class="re2">/&gt;</span></span></div></li><li class="li1"><div class="de1">    <span class="sc3"><span class="re1">&lt;xsl:template</span> <span class="re0">match</span>=<span class="st0">&quot;/&quot;</span><span class="re2">&gt;</span></span></div></li><li class="li1"><div class="de1">        <span class="sc3"><span class="re1">&lt;agenda<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1">            <span class="sc3"><span class="re1">&lt;xsl:apply-templates</span> <span class="re0">select</span>=<span class="st0">&quot;//cita&quot;</span><span class="re2">/&gt;</span></span></div></li><li class="li1"><div class="de1">        <span class="sc3"><span class="re1">&lt;/agenda<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1">    <span class="sc3"><span class="re1">&lt;/xsl:template<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1">&nbsp;</div></li><li class="li1"><div class="de1">    <span class="sc3"><span class="re1">&lt;xsl:template</span> <span class="re0">match</span>=<span class="st0">&quot;cita&quot;</span><span class="re2">&gt;</span></span></div></li><li class="li1"><div class="de1">        <span class="sc3"><span class="re1">&lt;cita<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1">            <span class="sc3"><span class="re1">&lt;quan<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1">                <span class="sc3"><span class="re1">&lt;data<span class="re2">&gt;</span></span><span class="re1">&lt;xsl:value-of</span> <span class="re0">select</span>=<span class="st0">&quot;../@dia&quot;</span><span class="re2">/&gt;</span><span class="re1">&lt;/data<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1">                <span class="sc3"><span class="re1">&lt;hora<span class="re2">&gt;</span></span><span class="re1">&lt;xsl:value-of</span> <span class="re0">select</span>=<span class="st0">&quot;@hora&quot;</span><span class="re2">/&gt;</span><span class="re1">&lt;/hora<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1">            <span class="sc3"><span class="re1">&lt;/quan<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1">            <span class="sc3"><span class="re1">&lt;perque<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1">                <span class="sc3"><span class="re1">&lt;motiu<span class="re2">&gt;</span></span><span class="re1">&lt;xsl:value-of</span> <span class="re0">select</span>=<span class="st0">&quot;titol&quot;</span><span class="re2">/&gt;</span><span class="re1">&lt;/motiu<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1">                <span class="sc3"><span class="re1">&lt;comentari<span class="re2">&gt;</span></span><span class="re1">&lt;xsl:value-of</span> <span class="re0">select</span>=<span class="st0">&quot;comentari/text&quot;</span><span class="re2">/&gt;</span><span class="re1">&lt;/comentari<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1">            <span class="sc3"><span class="re1">&lt;/perque<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1">            <span class="sc3"><span class="re1">&lt;xsl:if</span> <span class="re0">test</span>=<span class="st0">&quot;count(comentari/contacte)&quot;</span><span class="re2">&gt;</span></span></div></li><li class="li1"><div class="de1">                <span class="sc3"><span class="re1">&lt;ambqui<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1">                    <span class="sc3"><span class="re1">&lt;xsl:apply-templates</span> <span class="re0">select</span>=<span class="st0">&quot;comentari/contacte&quot;</span><span class="re2">/&gt;</span></span></div></li><li class="li1"><div class="de1">                <span class="sc3"><span class="re1">&lt;/ambqui<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1">            <span class="sc3"><span class="re1">&lt;/xsl:if<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1">        <span class="sc3"><span class="re1">&lt;/cita<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1">    <span class="sc3"><span class="re1">&lt;/xsl:template<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1">&nbsp;</div></li><li class="li1"><div class="de1">    <span class="sc3"><span class="re1">&lt;xsl:template</span> <span class="re0">match</span>=<span class="st0">&quot;contacte&quot;</span><span class="re2">&gt;</span></span></div></li><li class="li1"><div class="de1">        <span class="sc3"><span class="re1">&lt;nom<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1">            <span class="sc3"><span class="re1">&lt;xsl:attribute</span> <span class="re0">name</span>=<span class="st0">&quot;correu&quot;</span><span class="re2">&gt;</span></span></div></li><li class="li1"><div class="de1">                <span class="sc3"><span class="re1">&lt;xsl:value-of</span> <span class="re0">select</span>=<span class="st0">&quot;correu&quot;</span><span class="re2">/&gt;</span></span></div></li><li class="li1"><div class="de1">            <span class="sc3"><span class="re1">&lt;/xsl:attribute<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1">            <span class="sc3"><span class="re1">&lt;xsl:value-of</span> <span class="re0">select</span>=<span class="st0">&quot;nom&quot;</span><span class="re2">/&gt;</span></span></div></li><li class="li1"><div class="de1">        <span class="sc3"><span class="re1">&lt;/nom<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1">    <span class="sc3"><span class="re1">&lt;/xsl:template<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1">&nbsp;</div></li><li class="li1"><div class="de1"><span class="sc3"><span class="re1">&lt;/xsl:stylesheet<span class="re2">&gt;</span></span></span></div></li></ol></pre>
+</div><input class="btn_solution3" type="button" value="Mostra"></input></form>
+</p>
+
+</div>
+
+<h2><a id="transformar_un_document_xml1" >Transformar un document XML</a></h2>
+<div class="level2">
+
+<p>
+L’objectiu d’aquesta activitat és generar un document XSL per transformar documents XML d’un format a un altre.
+</p>
+
+<p>
+La cadena de televisió Un TV rep un fitxer amb les audiències dels programes de totes les cadenes en format XML:
+</p>
+
+<p>
+<div class="mediaf filezip"><div class="mediacontent"><a href="../media/tele-audiencia.xml.zip">Document XML</a><span> ( 643 B )</span></div></div>
+</p>
+
+<p>
+Una TV té un programa de gestió que permet importar les dades en XML però lamentablement necessita que estigui en un format diferent del que rep. Aquest és un exemple del format que necessiten:
+</p>
+<pre class="code xml"><ol><li class="li1"><div class="de1"><span class="sc3"><span class="re1">&lt;?xml</span> <span class="re0">version</span>=<span class="st0">&quot;1.0&quot;</span> <span class="re0">encoding</span>=<span class="st0">&quot;UTF-8&quot;</span><span class="re2">?&gt;</span></span></div></li><li class="li1"><div class="de1"><span class="sc3"><span class="re1">&lt;cadena<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1">   <span class="sc3"><span class="re1">&lt;nom<span class="re2">&gt;</span></span></span>Un TV<span class="sc3"><span class="re1">&lt;/nom<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1">   <span class="sc3"><span class="re1">&lt;programes<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1">      <span class="sc3"><span class="re1">&lt;programa</span> <span class="re0">hora</span>=<span class="st0">&quot;15:00&quot;</span><span class="re2">&gt;</span></span></div></li><li class="li1"><div class="de1">         <span class="sc3"><span class="re1">&lt;nom-programa<span class="re2">&gt;</span></span></span>Un TV<span class="sc3"><span class="re1">&lt;/nom-programa<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1">         <span class="sc3"><span class="re1">&lt;audiencia<span class="re2">&gt;</span></span></span>22<span class="sc3"><span class="re1">&lt;/audiencia<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1">      <span class="sc3"><span class="re1">&lt;/programa<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1">      <span class="sc3"><span class="re1">&lt;programa</span> <span class="re0">hora</span>=<span class="st0">&quot;18:00&quot;</span><span class="re2">&gt;</span></span></div></li><li class="li1"><div class="de1">         <span class="sc3"><span class="re1">&lt;nom-programa<span class="re2">&gt;</span></span></span>Un TV<span class="sc3"><span class="re1">&lt;/nom-programa<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1">         <span class="sc3"><span class="re1">&lt;audiencia<span class="re2">&gt;</span></span></span>13<span class="sc3"><span class="re1">&lt;/audiencia<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1">      <span class="sc3"><span class="re1">&lt;/programa<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1">      <span class="sc3"><span class="re1">&lt;programa</span> <span class="re0">hora</span>=<span class="st0">&quot;22:00&quot;</span><span class="re2">&gt;</span></span></div></li><li class="li1"><div class="de1">         <span class="sc3"><span class="re1">&lt;nom-programa<span class="re2">&gt;</span></span></span>Un TV<span class="sc3"><span class="re1">&lt;/nom-programa<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1">         <span class="sc3"><span class="re1">&lt;audiencia<span class="re2">&gt;</span></span></span>9<span class="sc3"><span class="re1">&lt;/audiencia<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1">      <span class="sc3"><span class="re1">&lt;/programa<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1">      <span class="sc3"><span class="re1">&lt;programa</span> <span class="re0">hora</span>=<span class="st0">&quot;24:00&quot;</span><span class="re2">&gt;</span></span></div></li><li class="li1"><div class="de1">         <span class="sc3"><span class="re1">&lt;nom-programa<span class="re2">&gt;</span></span></span>Un TV<span class="sc3"><span class="re1">&lt;/nom-programa<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1">         <span class="sc3"><span class="re1">&lt;audiencia<span class="re2">&gt;</span></span></span>0,1<span class="sc3"><span class="re1">&lt;/audiencia<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1">      <span class="sc3"><span class="re1">&lt;/programa<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1">   <span class="sc3"><span class="re1">&lt;/programes<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1"><span class="sc3"><span class="re1">&lt;/cadena<span class="re2">&gt;</span></span></span></div></li></ol></pre>
+
+<p>
+Us demanen que creeu un fitxer de transformació XSL que adapti el fitxer original a les necessitats de la cadena.
+</p>
+
+<p>
+<form action=""><div class="solution ioccontent"><pre class="code xml"><ol><li class="li1"><div class="de1"><span class="sc3"><span class="re1">&lt;?xml</span> <span class="re0">version</span>=<span class="st0">&quot;1.0&quot;</span> <span class="re0">encoding</span>=<span class="st0">&quot;UTF-8&quot;</span><span class="re2">?&gt;</span></span></div></li><li class="li1"><div class="de1"><span class="sc3"><span class="re1">&lt;xsl:stylesheet</span> <span class="re0">xmlns:xsl</span>=<span class="st0">&quot;http://www.w3.org/1999/XSL/Transform&quot;</span> <span class="re0">version</span>=<span class="st0">&quot;1.0&quot;</span><span class="re2">&gt;</span></span></div></li><li class="li1"><div class="de1">&nbsp;</div></li><li class="li1"><div class="de1">    <span class="sc3"><span class="re1">&lt;xsl:output</span> <span class="re0">indent</span>=<span class="st0">&quot;yes&quot;</span><span class="re2">/&gt;</span></span></div></li><li class="li1"><div class="de1">&nbsp;</div></li><li class="li1"><div class="de1">    <span class="sc3"><span class="re1">&lt;xsl:template</span> <span class="re0">match</span>=<span class="st0">&quot;/&quot;</span><span class="re2">&gt;</span></span></div></li><li class="li1"><div class="de1">        <span class="sc3"><span class="re1">&lt;cadena<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1">            <span class="sc3"><span class="re1">&lt;nom<span class="re2">&gt;</span></span></span>Un TV<span class="sc3"><span class="re1">&lt;/nom<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1">            <span class="sc3"><span class="re1">&lt;programes<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1">            <span class="sc3"><span class="re1">&lt;xsl:apply-templates</span> <span class="re0">select</span>=<span class="st0">&quot;//cadena[@nom='Un TV']&quot;</span><span class="re2">/&gt;</span></span></div></li><li class="li1"><div class="de1">            <span class="sc3"><span class="re1">&lt;/programes<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1">        <span class="sc3"><span class="re1">&lt;/cadena<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1">    <span class="sc3"><span class="re1">&lt;/xsl:template<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1">&nbsp;</div></li><li class="li1"><div class="de1">    <span class="sc3"><span class="re1">&lt;xsl:template</span> <span class="re0">match</span>=<span class="st0">&quot;cadena&quot;</span><span class="re2">&gt;</span></span></div></li><li class="li1"><div class="de1">        <span class="sc3"><span class="re1">&lt;programa<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1">            <span class="sc3"><span class="re1">&lt;xsl:attribute</span> <span class="re0">name</span>=<span class="st0">&quot;hora&quot;</span><span class="re2">&gt;</span></span></div></li><li class="li1"><div class="de1">                 <span class="sc3"><span class="re1">&lt;xsl:value-of</span> <span class="re0">select</span>=<span class="st0">&quot;../../hora&quot;</span><span class="re2">/&gt;</span><span class="re1">&lt;/xsl:attribute<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1">            <span class="sc3"><span class="re1">&lt;nom-programa<span class="re2">&gt;</span></span><span class="re1">&lt;xsl:value-of</span> <span class="re0">select</span>=<span class="st0">&quot;@nom&quot;</span><span class="re2">/&gt;</span><span class="re1">&lt;/nom-programa<span class="re2">&gt;</span></span></span>            </div></li><li class="li1"><div class="de1">            <span class="sc3"><span class="re1">&lt;audiencia<span class="re2">&gt;</span></span><span class="re1">&lt;xsl:value-of</span> <span class="re0">select</span>=<span class="st0">&quot;@percentatge&quot;</span><span class="re2">/&gt;</span><span class="re1">&lt;/audiencia<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1">        <span class="sc3"><span class="re1">&lt;/programa<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1">    <span class="sc3"><span class="re1">&lt;/xsl:template<span class="re2">&gt;</span></span></span></div></li><li class="li1"><div class="de1">&nbsp;</div></li><li class="li1"><div class="de1"><span class="sc3"><span class="re1">&lt;/xsl:stylesheet<span class="re2">&gt;</span></span></span></div></li></ol></pre>
+</div><input class="btn_solution3" type="button" value="Mostra"></input></form>
+</p>
+
+</div>
+
+	 </article>
+     <div class="pnpage">
+      <div class="left-corner"></div>
+      <div id="prevpage">Anar a la p&agrave;gina anterior:<br /><a href="../../../WebContent/u3/a2/continguts.html">Conversió i adaptació de documents XML</a></div>
+      <div id="nextpage">Anar a la p&agrave;gina seg&uuml;ent:<br /><a href="../../../WebContent/u3/a2/exercicis.html">Exercicis d'autoavaluació</a></div>
+      <div class="right-corner"></div>
+     </div>
+    </div>
+    <footer class="footer">
+      <div><small>Aquest document està subjecte a una llicència oberta de Creative Commons, es reserva el dret de reconeixement de l'autoria, d'exigir que no se'n faci cap mena d'ús comercial. Si altereu o transformeu aquesta obra, o en genereu obres derivades, només podeu distribuir l'obra generada amb una llicència idèntica a aquesta.</small></div>
+    </footer>
+ </div>
+ <div id="back_preview" class="hidden"></div>
+ <div id="preview" class="hidden">
+  <div class="prevcontent"></div>
+ </div>
+ <div id="help-tooltips">
+  <div id="help-toc" class="hidden tooltip"><span>Taula de continguts:</span> Ofereix una vista general de l&#39;estructura del m&ograve;dul, que us facilitar&agrave; la navegaci&oacute; a trav&eacute;s dels seus continguts.<span class="arrow-left"></span></div> 
+  <div id="help-settings" class="hidden tooltip"><span>Opcions de format:</span> Permet configurar el format de lectura a partir de les vostres prefer&egrave;ncies, modificant la mida de la lletra, el color del fons, l&#39;amplada de la p&agrave;gina o l&#39;ocultaci&oacute; dels continguts complementaris, entre d&#39;altres.<span class="arrow-left"></span></div>
+  <div id="help-printer" class="hidden tooltip"><span>Imprimir:</span>  Envia el contingut seleccionat a la impressora.<span class="arrow-left"></span></div>
+  <div id="help-favorites" class="hidden tooltip"><span>Prefereits:</span> Permet desar aquelles parts del contingut a les que us interessi accedir en un moment posterior; us permetr&agrave; anar creant un repositori personalitzat de les seccions que considereu m&eacute;s rellevants. Un cop l&#39;hageu començat a fer servir se us mostrar&agrave; a sota un comptador que us informar&agrave; del nombre de preferits que s&#39;hagin emmagatzemat fins al moment.<span class="arrow-left"></span></div>
+  <div id="help-favcounter" class="hidden tooltip"><span>Comptador i llistat de preferits:</span> Indica el nombre de preferits que s&#39;han desat fins el moment; clicant damunt seu accedireu al llistat de preferits, i a trav&eacute;s d&#39;aquest podreu accedir directament als continguts que hageu emmagatzemat.<span class="arrow-left"></span></div>
+  <div id="help-help_icon" class="hidden tooltip"><span>Ajuda:</span> Aquesta opci&oacute; activa la informaci&oacute; de les funcionalitats del web tot situant el punter del ratol&iacute; al damunt dels diferents &iacute;tems.<span class="arrow-left"></span></div>
+  <div id="help-sidebar-hide" class="hidden tooltip"><span>Mostrar/Ocultar barra lateral:</span>  Deshabilita la barra d&#39;opcions, permetent la seva recuperaci&oacute; quan es desitgi.<span class="arrow-left"></span></div>
+  <div id="help-search" class="hidden tooltip"><span>Cerca:</span>  Introdu&iuml;u les paraules clau sobre aquells conceptes que desitgeu localitzar en els continguts del m&ograve;dul. Tamb&eacute; podeu excloure un terme de la cerca tot afegint-hi el signe &#8220;-&#8221; al davant.<span class="arrow-top"></span></div>
+  <div id="help-header" class="hidden tooltip"><span>Cap&ccedil;alera:</span>  Indica l&#39;apartat o secci&oacute; que es mostra en pantalla. Tingueu present que les capçaleres de segon, tercer i quart nivell tamb&eacute; es poden desar com a marcadors.<span class="arrow-left"></span></div>
+</div> 
+</body>
+</html>
